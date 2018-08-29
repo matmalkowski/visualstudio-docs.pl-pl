@@ -1,6 +1,6 @@
 ---
-title: Znane problemy dotyczące kontenerów
-description: Dowiedz się więcej o znanych problemach, które mogą wystąpić podczas instalowania programu Visual Studio kompilacji 2017 narzędzia do kontenera systemu Windows.
+title: Znane problemy z kontenerami
+description: Dowiedz się więcej o znanych problemach, które mogą wystąpić podczas instalowania programu Visual Studio kompilacji narzędzia 2017 do kontenera Windows.
 ms.custom: ''
 ms.date: 04/18/2018
 ms.technology: vs-acquisition
@@ -12,49 +12,40 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 06da94f4f2920aa7ce87822482a762a1451e9acb
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: c94c6756e1272b08136f624e9cde63523d630b35
+ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36282499"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43139148"
 ---
-# <a name="known-issues-for-containers"></a>Znane problemy dotyczące kontenerów
+# <a name="known-issues-for-containers"></a>Znane problemy z kontenerami
 
-Istnieje kilka problemów podczas instalowania programu Visual Studio w kontenerze Docker.
+Istnieje kilka kwestii, podczas instalowania programu Visual Studio w kontenerze platformy Docker.
 
-## <a name="windows-container"></a>Kontener systemu Windows
+## <a name="windows-container"></a>Kontener Windows
 
-Następujące znane problemy występować po zainstalowaniu programu Visual Studio kompilacji 2017 narzędzia do kontenera systemu Windows.
+Następujące znane problemy, które występują po zainstalowaniu programu Visual Studio kompilacji narzędzia 2017 do kontenera Windows.
 
-* Nie można zainstalować programu Visual Studio do kontenera oparte na microsoft/windowsservercore:10.0.14393.1593 obrazu. Obrazy z systemu Windows w wersji starszej lub nowszej powinna działać.
-* Nie można zainstalować zestaw Windows SDK w wersji wcześniejszej niż 10.0.14393. Niektóre pakiety nie można zainstalować i obciążeń, które są zależne od tych pakietów nie będzie działać.
-* Przekaż `-m 2GB` (lub więcej) podczas tworzenia obrazu. Niektóre obciążenia wymagają więcej pamięci niż domyślna 1 GB, podczas instalacji.
-* Skonfiguruj Docker do dysków o większych niż domyślne 20 GB.
-* Przekaż `--norestart` w wierszu polecenia. Zgodnie z tym próba ponownego uruchomienia kontenera systemu Windows z poziomu kontenera zwraca `ERROR_TOO_MANY_OPEN_FILES` do hosta.
-* Jeśli obraz jest oparty bezpośrednio na program microsoft/windowsservercore, .NET Framework nie może poprawnie zainstalowany i błąd instalacji nie zostanie zgłoszony. Zarządzany kod może nie działać po zakończeniu instalacji. Zamiast tego, na podstawie obrazu [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) lub nowszej. Na przykład może zostać wyświetlony błąd podczas kompilowania przy użyciu programu MSBuild, takich jak:
+* Nie można zainstalować programu Visual Studio w kontenerze, oparte na microsoft/windowsservercore:10.0.14393.1593 obrazu. Obrazy oznakowane za pomocą Windows w wersji starszej lub nowszej powinna działać.
+* Nie można zainstalować zestawu Windows SDK w wersji wcześniejszej niż 10.0.14393. Nie można zainstalować niektórych pakietów i obciążeń, które są zależne od tych pakietów nie będzie działać.
+* Przekaż `-m 2GB` (lub więcej) podczas tworzenia obrazu. Niektóre obciążenia wymaga więcej pamięci niż domyślna 1 GB, podczas instalacji.
+* Konfigurowanie platformy Docker, aby korzystać z dysków większych niż domyślne 20 GB.
+* Przekaż `--norestart` w wierszu polecenia. Zgodnie z pisania tego dokumentu, podjęciem próby ponownego uruchomienia kontenera Windows z poziomu kontenera zwraca `ERROR_TOO_MANY_OPEN_FILES` do hosta.
+* Jeśli obraz jest oparty bezpośrednio na microsoft/windowsservercore, .NET Framework nie może być poprawnie zainstalowany i błąd instalacji nie zostanie zgłoszony. Kod zarządzany może nie działać po zakończeniu instalacji. Zamiast tego należy utworzyć obraz na [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) lub nowszej. Na przykład może zostać wyświetlony błąd podczas kompilowania przy użyciu programu MSBuild, takich jak:
 
-  > C:\BuildTools\MSBuild\15.0\bin\Roslyn\Microsoft.CSharp.Core.TARGETS(84,5): błąd MSB6003: nie można uruchomić pliku wykonywalnego "csc.exe" określonego zadania. Nie można załadować pliku lub zestawu ' System.IO.FileSystem, wersja = 4.0.1.0, Culture = neutral, PublicKeyToken = b03f5f7f11d50a3a' lub jednej z jego zależności. W systemie nie można odnaleźć określonego pliku.
+  > C:\BuildTools\MSBuild\15.0\bin\Roslyn\Microsoft.CSharp.Core.TARGETS(84,5): błąd MSB6003: nie można uruchomić pliku wykonywalnego "csc.exe" określone zadanie. Nie można załadować pliku lub zestawu ' System.IO.FileSystem, wersja = 4.0.1.0, Culture = neutral, PublicKeyToken = b03f5f7f11d50a3a "lub jednej z jego zależności. W systemie nie można odnaleźć określonego pliku.
 
-## <a name="build-tools-container"></a>Kontener narzędzia kompilacji
+## <a name="build-tools-container"></a>Tworzenie kontenera narzędzia
 
-Następujące znane problemy mogą wystąpić, jeśli używasz kontenera Build Tools. Zobacz, czy zostały rozwiązane problemy lub jeśli istnieją inne znanych problemów, odwiedź witrynę https://developercommunity.visualstudio.com.
+Korzystając z narzędzia Build Tools kontenera, mogą wystąpić następujące znane problemy. Aby zobaczyć, czy problemy zostały rozwiązane w przypadku innych znanych problemach, odwiedź stronę https://developercommunity.visualstudio.com.
 
-* Funkcja IntelliTrace nie może działać w [Niektóre scenariusze](https://github.com/Microsoft/vstest/issues/940) w kontenerze.
+* IntelliTrace może nie działać [Niektóre scenariusze](https://github.com/Microsoft/vstest/issues/940) w kontenerze.
 
-## <a name="get-support"></a>Uzyskaj pomoc techniczną
-
-Czasami może wystąpienia problemów. W przypadku niepowodzenia instalacji programu Visual Studio, zobacz [problemy dotyczące instalacji i uaktualniania Rozwiązywanie problemów z programu Visual Studio 2017](troubleshooting-installation-issues.md) strony. Jeśli żaden z kroki rozwiązywania problemów, można skontaktować się nam przez rozmów na żywo, aby uzyskać pomoc przy instalacji (tylko w języku angielskim). Aby uzyskać więcej informacji, zobacz [strony pomocy technicznej programu Visual Studio](https://visualstudio.microsoft.com/vs/support/#talktous).
-
-Poniżej przedstawiono kilka więcej opcji pomocy technicznej:
-
-* Problemy z produktu może raportować do nas za pomocą [zgłosić Problem](../ide/how-to-report-a-problem-with-visual-studio-2017.md) narzędzia, która pojawia się zarówno w Instalatorze programu Visual Studio, jak i w środowisku IDE programu Visual Studio.
-* Można udostępniać sugestię produktu z nami na [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Można śledzić problemy z produktu i odpowiedzi w [Visual Studio Developer Community](https://developercommunity.visualstudio.com/).
-* Można również kontaktowaniu się z nami i innymi deweloperami Visual Studio za pomocą [konwersacji programu Visual Studio w społeczności Gitter](https://gitter.im/Microsoft/VisualStudio). (Ta opcja wymaga [GitHub](https://github.com/) konta.)
+[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>Zobacz także
 
 * [Instalowanie narzędzi do kompilacji w kontenerze](build-tools-container.md)
 * [Zaawansowany przykład dotyczący kontenerów](advanced-build-tools-container.md)
-* [Visual Studio kompilacji narzędzia 2017 obciążenia i składnik identyfikatorów](workload-component-id-vs-build-tools.md)
+* [Visual Studio 2017 kompilacji narzędzia obciążeń i składników identyfikatorów](workload-component-id-vs-build-tools.md)

@@ -1,6 +1,6 @@
 ---
-title: Zmień lokalizację instalacji w programie Visual Studio 2017 r.
-description: Dowiedz się, jak ograniczyć wpływ instalacji na dysku systemowym, zmieniając lokalizację pamięci podręcznej pobierania, udostępniane składniki, zestawy SDK i narzędzi na różnych dyskach.
+title: Zmiana lokalizacji instalacji programu Visual Studio 2017
+description: Dowiedz się, jak zmniejszyć rozmiar instalacji na dysku systemowym, zmieniając lokalizację pamięci podręcznej pobierania, składników udostępnionych, zestawy SDK i narzędzi na różnych dyskach.
 ms.date: 05/07/2018
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
@@ -13,59 +13,50 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a6d8741982efd5329e7c14f0a32fb66bbdd377f5
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 87698421c4992d0349e04740c120d491aa54fcc3
+ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36282063"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43138969"
 ---
-# <a name="change-the-installation-locations-in-visual-studio-2017"></a>Zmień lokalizację instalacji w programie Visual Studio 2017 r.
+# <a name="change-the-installation-locations-in-visual-studio-2017"></a>Zmiana lokalizacji instalacji programu Visual Studio 2017
 
-**Nowość w 15.7**: można ograniczyć wpływ instalacji na dysku systemowym przez przeniesienie pamięć podręczną pobierania, udostępniane składniki, zestawy SDK i narzędzi na różnych dyskach.
+**Nowość w wersji 15.7**: może zmniejszyć miejsca zajmowanego przez instalację na dysku systemowym przez przeniesienie pamięci podręcznej pobierania, składników udostępnionych, zestawy SDK i narzędzi na różnych dyskach.
 
 Poniżej przedstawiono sposób.
 
-1. Po zainstalowaniu programu Visual Studio wybierz **opcje instalacji** kartę.
+1. Po zainstalowaniu programu Visual Studio, wybierz **opcje instalacji** kartę.
 
-  ![Visual Studio 2017 — Zmień lokalizację instalacji](media/installation-options-by-location.png "Zmień lokalizację instalacji")
+  ![Program Visual Studio 2017 — zmiana lokalizacji instalacji](media/installation-options-by-location.png "zmiana lokalizacji instalacji")
 
   > [!IMPORTANT]
-  > Jeśli instalacji wstrzymać i wznowić jego, Visual Studio przejmuje miejsca, w którym. Innymi słowy pozostało do pobrania i zainstalowania i nie rozpoczyna się od poprzedniej liczba dotyczy jego postęp instalacji.
+  > Jeśli wstrzymać instalację, a później je wznowić, Visual Studio przejmuje tam, gdzie ją przerwaliśmy. Oznacza to co pozostało do pobrania i zainstalowania, a nie rozpoczyna się od poprzedniego dotyczy jego postęp instalacji.
 
-2. W **programu Visual Studio IDE** pozycję Zaakceptuj wartość domyślną. Instaluje produkt core i zawiera pliki, które są specyficzne dla tej wersji programu Visual Studio.
+2. W **środowiska IDE programu Visual Studio** sekcji, zaakceptuj wartość domyślną. Instaluje produkt core i zawiera pliki, które są specyficzne dla tej wersji programu Visual Studio.
 
  > [!IMPORTANT]
- > Jeśli dysk systemowy jest dysków półprzewodnikowych (SSD), w tym miejscu jego Dlaczego zalecamy zaakceptuj lokalizację domyślną na dysku systemowym: podczas pracy z programem Visual Studio, możesz z do odczytu i zapisu wiele plików, co zwiększa dysku operacje wejścia/wyjścia.  Najlepiej wybrać dysk najszybszy obsłużyć obciążenia.
+ > Jeśli dysk systemowy jest dysków półprzewodnikowych (SSD), w tym miejscu firmy Dlaczego firma Microsoft zaleca zaakceptuj lokalizację domyślną na dysku systemowym: podczas tworzenia za pomocą programu Visual Studio możesz z do odczytu i zapisu wiele plików, co zwiększa dysku, operacje wejścia / wyjścia.  Najlepiej wybrać dysk najszybszy do obsługi obciążenia.
 
-2. W **pobrać pamięci podręcznej** sekcji, jeśli chcesz zachować pamięć podręczną pobierania, a następnie zaznacz lub usuń zaznaczenie **pamięć podręczną pobierania Zachowaj** odpowiednio. <br><br>Jeśli nie chcesz przechowywać pamięć podręczną pobierania, tylko tymczasowo użyć lokalizacji. Ta akcja nie będzie również wpływać na lub usuwania plików z poprzedniej instalacji. (Aby wyczyścić wszystkie pakiety instalacyjne, należy zmodyfikować poprzedniej instalacji oddzielnie.)
+2. W **pamięć podręczna pobierania** sekcji, zdecyduj, czy chcesz zachować pamięci podręcznej pobierania, a następnie zaznacz lub wyczyść **pamięci podręcznej pobierania Zachowaj** odpowiednio. <br><br>Jeśli nie chcesz przechowywać w pamięci podręcznej pobierania, ta lokalizacja będzie używana tylko tymczasowo. Ta akcja nie będzie także mają wpływ na lub usuwania plików z poprzedniej instalacji. (Aby wyczyścić wszystkie pakiety instalacyjne, należy zmodyfikować poprzedniej instalacji oddzielnie.)
 
-3. W **pobrać pamięci podręcznej** sekcji, określić dysk, na którym chcesz przechowywać pliki instalacyjne i manifestów. <br><br>Na przykład w przypadku wybrania obciążenie "Pulpitu Programowanie w języku C++" tymczasowo wymagany rozmiar jest 1.58 GB na dysku systemowym, który następnie zostanie zwolniona zaraz po zakończeniu instalacji.
+3. W **pamięć podręczna pobierania** sekcji, określ dysk, na którym chcesz przechowywać pliki instalacyjne i manifesty. <br><br>Na przykład jeśli wybierzesz obciążenie "Programowanie aplikacji klasycznych w języku C++", tymczasowo wymagany rozmiar jest 1.58 GB na dysku systemowym, który następnie zostanie zwolniony, zaraz po zakończeniu instalacji.
 
  > [!NOTE]
- > Pliki są najpierw pobierany do folderu tymczasowego na dysku systemowym i później usunięta po Visual Studio weryfikuje i przenosi je do folderu pamięci podręcznej pobierania. Jeśli wybierzesz opcję Zachowaj pamięć podręczną pobierania na inny dysk, Visual Studio nadal wymaga miejsca na dysku jest odpowiednikiem rozmiar pamięci podręcznej pobierania na dysku systemowym.
+ > Pliki są najpierw pobrany do folderu tymczasowego na dysku systemowym i później usunięta po programu Visual Studio sprawdza i przenosi je do folderu pamięci podręcznej pobierania. Jeśli wybrano opcję zachowania pamięci podręcznej pobierania na inny dysk, program Visual Studio nadal wymaga miejsca na dysku, który jest odpowiednikiem rozmiar pamięci podręcznej pobierania na dysku systemowym.
  > [!IMPORTANT]
- > Lokalizacja została skonfigurowana przy instalacji pierwszego i nie można zmienić później z Instalatorem interfejsu użytkownika. Zamiast tego należy [używania parametrów wiersza polecenia](use-command-line-parameters-to-install-visual-studio.md) można przenieść pamięć podręczną pobierania
+ > Lokalizacja została ustawiona za pomocą przez pierwszą instalację i nie można zmienić później z poziomu interfejsu użytkownika Instalatora. Zamiast tego należy [użyć parametrów wiersza polecenia](use-command-line-parameters-to-install-visual-studio.md) przenieść pamięci podręcznej pobierania
 
-4. W **udostępnionych składników, narzędzia i zestawy SDK** sekcji, określić dysk, na którym chcesz przechowywać pliki, które są udostępniane przez side-by-side instalacje programu Visual Studio. Zestawy SDK i narzędzia, które pozwalają Instalator programu Visual Studio można zmienić lokalizacji instalacji również przechowywane w tym katalogu.
+4. W **udostępnione składniki, narzędzia i zestawy SDK** sekcji, określ dysk, na którym chcesz przechowywać pliki, które są współużytkowane przez instalacje programu Visual Studio side-by-side. Zestawy SDK i narzędzia umożliwiające Instalatora programu Visual Studio należy zmienić jego lokalizację instalacji, również są przechowywane w tym katalogu.
 
  > [!NOTE]
- > Istnieją pewne narzędzia i zestawy SDK, które mają różne zasady na, gdzie mogą być są zainstalowane. Te narzędzia i zestawy SDK będzie nadal można zainstalować na dysku systemowym, nawet jeśli wybierz inną lokalizację.)
+ > Istnieją pewne narzędzia i zestawy SDK, które mają różne reguły na, gdzie mogą być są zainstalowane. Te narzędzia i zestawy SDK pozostaną zainstalowane na dysku systemowym, nawet jeśli wybierz inną lokalizację.)
 
-## <a name="get-support"></a>Uzyskaj pomoc techniczną
-
-Czasami może wystąpienia problemów. W przypadku niepowodzenia instalacji programu Visual Studio, zobacz [problemy dotyczące instalacji i uaktualniania Rozwiązywanie problemów z programu Visual Studio 2017](troubleshooting-installation-issues.md) strony, aby uzyskać pomoc. Można również skontaktować się nam pomocy instalacji przez [komunikatora](https://visualstudio.microsoft.com/vs/support/#talktous) (tylko angielski); Aby uzyskać więcej informacji, zobacz [programu Visual Studio "Skontaktuj się z nami" strony](https://visualstudio.microsoft.com/vs/support/#talktous).
-
-Poniżej przedstawiono kilka więcej opcji pomocy technicznej:
-
-* Problemy z produktu może raportować do nas za pomocą [zgłosić Problem](../ide/how-to-report-a-problem-with-visual-studio-2017.md) narzędzia, która pojawia się zarówno w Instalatorze programu Visual Studio, jak i w środowisku IDE programu Visual Studio.
-* Można udostępniać sugestię produktu z nami na [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Można śledzić problemy z produktu i odpowiedzi w [Visual Studio Developer Community](https://developercommunity.visualstudio.com/).
-* Można również kontaktowaniu się z nami i innymi deweloperami Visual Studio za pomocą [konwersacji programu Visual Studio w społeczności Gitter](https://gitter.im/Microsoft/VisualStudio). (Ta opcja wymaga [GitHub](https://github.com/) konta.)
+[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>Zobacz także
 
-* [Zainstaluj program Visual Studio 2017 r.](install-visual-studio.md)
+* [Instalowanie programu Visual Studio 2017](install-visual-studio.md)
 * [Update Visual Studio 2017](update-visual-studio.md)
-* [Modyfikowanie 2027 usługi Visual Studio](update-visual-studio.md)
-* [Odinstaluj program Visual Studio 2017 r.](uninstall-visual-studio.md)
+* [Modyfikowanie programu Visual Studio 2027](update-visual-studio.md)
+* [Odinstaluj program Visual Studio 2017](uninstall-visual-studio.md)

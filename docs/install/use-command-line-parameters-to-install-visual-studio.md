@@ -1,6 +1,6 @@
 ---
 title: Korzystanie z parametrów wiersza polecenia do zainstalowania programu Visual Studio
-description: Informacje o sposobie używania parametrów wiersza polecenia, aby kontrolować lub dostosować instalację programu Visual Studio.
+description: Dowiedz się, jak użyć parametrów wiersza polecenia, aby kontrolować lub dostosować instalację programu Visual Studio.
 ms.custom: ''
 ms.date: 05/07/2018
 ms.technology: vs-acquisition
@@ -16,22 +16,22 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 24793c3801167572a96fb272c73964a58c5ebd7f
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 3822e7d3c4ac027dbb010c642de6d9bf0ff1d13a
+ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36296317"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43138927"
 ---
-# <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>Korzystanie z parametrów wiersza polecenia do zainstalowania programu Visual Studio 2017 r.
+# <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>Użyj parametrów wiersza polecenia, aby zainstalować program Visual Studio 2017
 
-Po zainstalowaniu programu Visual Studio 2017 z wiersza polecenia, można użyć różnych parametrów wiersza polecenia kontroli lub dostosowanie instalacji. W wierszu polecenia można wykonywać następujące czynności:
+Po zainstalowaniu programu Visual Studio 2017 z poziomu wiersza polecenia można użyć różnych parametrów wiersza polecenia do kontrolowania lub dostosować instalację. W wierszu polecenia należy wykonać następujące czynności:
 
 - Rozpocznij instalację z określonymi opcjami wstępnie wybrane.
-- Zautomatyzowanie procesu instalacji.
-- Tworzenie pamięci podręcznej (układ) plików instalacji do późniejszego użycia.
+- Zautomatyzuj proces instalacji.
+- Tworzenie pamięci podręcznej (układ) plików instalacyjnych do późniejszego użycia.
 
-Opcje wiersza polecenia są używane w połączeniu z program inicjujący Instalatora, czyli pliku małych (około 1MB), który inicjuje proces pobierania. Program inicjujący jest pierwszy plik wykonywalny, który jest uruchamiany, gdy można pobrać z witryny programu Visual Studio. Aby uzyskać bezpośredniego łącza do najnowszej wersji inicjujący dla wersji produktu, który jest instalowany, użyj następujących łączy:
+Opcje wiersza polecenia są używane w połączeniu z program inicjujący Instalatora, który jest plikiem mała liczba godzin (około 1MB), który inicjuje proces pobierania. Program inicjujący jest pierwszy plik wykonywalny, który jest uruchamiany, gdy można pobrać z witryny Visual Studio. Aby uzyskać bezpośredni link do najnowszej wersji program inicjujący dla wydanie produktu, który instalujesz, użyj następujących linków:
 
 * [Visual Studio 2017 Enterprise](https://aka.ms/vs/15/release/vs_enterprise.exe)
 * [Visual Studio 2017 Professional](https://aka.ms/vs/15/release/vs_professional.exe)
@@ -39,16 +39,16 @@ Opcje wiersza polecenia są używane w połączeniu z program inicjujący Instal
 
 ## <a name="list-of-command-line-parameters"></a>Lista parametrów wiersza polecenia
 
- Visual Studio parametry wiersza polecenia jest rozróżniana wielkość liter.
+ Visual Studio, parametry wiersza polecenia jest rozróżniana wielkość liter.
 
 > Składnia: `vs_enterprise.exe [command] <options>...`
 
-(Zastąp `vs_enterprise.exe` odpowiednio dla wersji produktu instalujesz.)
+(Zastąp `vs_enterprise.exe` jako właściwe dla wersji produktu instalujesz.)
 
 >[!TIP]
-> Więcej przykładów dotyczących sposobu instalacji programu Visual Studio 2017 za pomocą wiersza polecenia, zobacz [przykłady parametru wiersza polecenia](command-line-parameter-examples.md) strony.)
+> Aby uzyskać więcej przykładów dotyczących sposobów użyć wiersza polecenia do zainstalowania programu Visual Studio 2017, zobacz [przykładowe parametry wiersza polecenia](command-line-parameter-examples.md) strony.)
 
-| **polecenie** | **Opis** |
+| **Polecenie** | **Opis** |
 | ----------------------- | --------------- |
 | (pusty) | Instaluje produkt. |
 | `modify` | Modyfikuje zainstalowany produkt. |
@@ -58,107 +58,98 @@ Opcje wiersza polecenia są używane w połączeniu z program inicjujący Instal
 
 | **Opcję instalacji** | **Opis** |
 | ----------------------- | --------------- |
-| `--installPath <dir>` | Katalog instalacyjny dla wystąpienia działanie. W przypadku polecenia install jest **opcjonalnie** i gdzie zostaną zainstalowane wystąpienie. W przypadku innych poleceń jest **wymagane** i zainstalowanym uprzednio zainstalowanego wystąpienia. |
-| `--addProductLang <language-locale>` | **Opcjonalne**: podczas instalacji lub zmodyfikować operacji, określa pakiety językowe interfejsu użytkownika, które są zainstalowane do tego produktu. Wiele razy może być wyświetlany w wierszu polecenia, aby dodać wiele pakietów językowych. Jeśli nie istnieje, instalacja korzysta z ustawień regionalnych komputera. Aby uzyskać więcej informacji, zobacz [listę ustawień regionalnych języka](#list-of-language-locales) sekcji na tej stronie.|
-| `--removeProductLang <language-locale>` | **Opcjonalne**: podczas instalacji lub zmodyfikować operacji, określa pakiety językowe interfejsu użytkownika, które mają zostać usunięte z produktu. Wiele razy może być wyświetlany w wierszu polecenia, aby dodać wiele pakietów językowych. Aby uzyskać więcej informacji, zobacz [listę ustawień regionalnych języka](#list-of-language-locales) sekcji na tej stronie.|
-| `--add <one or more workload or component IDs>` | **Opcjonalne**: obciążenia lub identyfikatory składników do dodania. Zainstalowano składniki wymagane artefaktu, ale nie zalecane lub opcjonalne składniki. Można kontrolować dodatkowe składniki za pomocą `--includeRecommended` i/lub `--includeOptional`. Aby dołączyć wiele obciążeń lub składniki, powtórz `--add` polecenia (na przykład `--add Workload1 --add Workload2`). Precyzyjny system kontroli, możesz dołączyć `;includeRecommended` lub `;includeOptional` dla identyfikatora (na przykład `--add Workload1;includeRecommended` lub `--add Workload2;includeRecommended;includeOptional`). Aby uzyskać więcej informacji, zobacz [obciążenia i identyfikatory składników](workload-and-component-ids.md) strony. Ta opcja, w razie potrzeby można powtórzyć.|
-| `--remove <one or more workload or component IDs>` | **Opcjonalne**: obciążenia lub identyfikatory składników do usunięcia. Aby uzyskać więcej informacji, zobacz nasze [obciążenia i identyfikatory składników](workload-and-component-ids.md) strony. Ta opcja, w razie potrzeby można powtórzyć.|
-| `--in <path>` | **Opcjonalne**: identyfikator URI lub ścieżka do pliku odpowiedzi.  |
-| `--all` | **Opcjonalne**: Określa, czy zainstalować obciążeń i wszystkie składniki produktu. |
-| `--allWorkloads` | **Opcjonalne**: instaluje obciążeń i wszystkie składniki, żadne składniki opcjonalne lub zalecane. |
-| `--includeRecommended` | **Opcjonalne**: zawiera składniki zalecane dla dowolnych zadań, które są zainstalowane, ale nie składników opcjonalnych. Obciążenia są określone za pomocą `--allWorkloads` lub `--add`. |
-| `--includeOptional` | **Opcjonalne**: zawiera składniki opcjonalne dla dowolnych zadań, które są zainstalowane, ale nie zalecane składniki. Obciążenia są określone za pomocą `--allWorkloads` lub `--add`.  |
-| `--quiet, -q` | **Opcjonalne**: interfejs użytkownika nie są wyświetlane podczas przeprowadzania instalacji. |
-| `--passive, -p` | **Opcjonalne**: wyświetlanie interfejsu użytkownika, ale nie Żądaj interakcji użytkownika. |
-| `--norestart` | **Opcjonalne**: Jeśli jest obecny, poleceń z `--passive` lub `--quiet` nie uruchamia ponownie komputer (w razie potrzeby).  To jest ignorowana, jeśli żadna `--passive` ani `--quiet` zostały określone.  |
-| `--nickname <name>` | **Opcjonalne**: definiuje pseudonim można przypisać do zainstalowany produkt. Pseudonim nie może być dłuższa niż 10 znaków.  |
-| `--productKey` | **Opcjonalne**: Określa klucz produktu do użycia na potrzeby zainstalowany produkt. Składa się z 25 alfanumeryczne znaki w formacie `xxxxx-xxxxx-xxxxx-xxxxx-xxxxx` lub `xxxxxxxxxxxxxxxxxxxxxxxxx`. |
-| `--help, --?, -h, -?` | Wyświetlanie w trybie offline wersję tej strony. |
+| `--installPath <dir>` | Katalogu instalacyjnego dla wystąpienia wykonywane działania. W przypadku polecenia install jest **opcjonalnie** i zainstalowanym wystąpieniem. W przypadku innych poleceń jest **wymagane** i zainstalowanym uprzednio zainstalowanego wystąpienia. |
+| `--addProductLang <language-locale>` | **Opcjonalnie**: podczas instalacji lub zmodyfikować działanie, ta wartość określa pakiety językowe interfejsu użytkownika, które są instalowane z produktem. Może występować wiele razy w wierszu polecenia, aby dodać wiele pakietów językowych. Jeśli nie występuje instalacja używa ustawień regionalnych komputera. Aby uzyskać więcej informacji, zobacz [listę ustawień regionalnych języka](#list-of-language-locales) sekcji na tej stronie.|
+| `--removeProductLang <language-locale>` | **Opcjonalnie**: podczas instalacji lub zmodyfikować działanie, ta wartość określa pakiety językowe interfejsu użytkownika, które mają zostać usunięte z produktu. Może występować wiele razy w wierszu polecenia, aby dodać wiele pakietów językowych. Aby uzyskać więcej informacji, zobacz [listę ustawień regionalnych języka](#list-of-language-locales) sekcji na tej stronie.|
+| `--add <one or more workload or component IDs>` | **Opcjonalnie**: obciążenia lub identyfikatory składników do dodania. Wymagane składniki artefaktu są zainstalowane, ale nie na składnikach zalecane lub opcjonalne. Można kontrolować dodatkowych składników przy użyciu `--includeRecommended` i/lub `--includeOptional`. Aby dołączyć wielu obciążeń i składników, powtórz `--add` polecenia (na przykład `--add Workload1 --add Workload2`). Aby uzyskać bardziej szczegółowej kontroli można dołączyć `;includeRecommended` lub `;includeOptional` identyfikator (na przykład `--add Workload1;includeRecommended` lub `--add Workload2;includeRecommended;includeOptional`). Aby uzyskać więcej informacji, zobacz [obciążenia i identyfikatory składników](workload-and-component-ids.md) strony. Możesz powtórzyć tę opcję, zgodnie z potrzebami.|
+| `--remove <one or more workload or component IDs>` | **Opcjonalnie**: obciążenia lub identyfikatory składników do usunięcia. Aby uzyskać więcej informacji, zobacz nasze [obciążenia i identyfikatory składników](workload-and-component-ids.md) strony. Możesz powtórzyć tę opcję, zgodnie z potrzebami.|
+| `--in <path>` | **Opcjonalnie**: identyfikator URI lub ścieżkę do pliku odpowiedzi.  |
+| `--all` | **Opcjonalnie**: Określa, czy zainstalować wszystkie obciążenia i składniki dla produktu. |
+| `--allWorkloads` | **Opcjonalnie**: instaluje wszystkich obciążeń i składników, nie zalecanych lub dodatkowych składników. |
+| `--includeRecommended` | **Opcjonalnie**: obejmuje składniki zalecane dla dowolnych obciążeń, które są zainstalowane, ale nie składniki opcjonalne. Obciążenia są określane za pomocą `--allWorkloads` lub `--add`. |
+| `--includeOptional` | **Opcjonalnie**: obejmuje składniki opcjonalne dla dowolnych obciążeń, które są zainstalowane, ale nie na składnikach zalecane. Obciążenia są określane za pomocą `--allWorkloads` lub `--add`.  |
+| `--quiet, -q` | **Opcjonalnie**: nie wyświetlają żadnego interfejsu użytkownika podczas wykonywania instalacji. |
+| `--passive, -p` | **Opcjonalnie**: wyświetlanie interfejsu użytkownika, ale nie poprosić interakcji użytkownika. |
+| `--norestart` | **Opcjonalnie**: Jeśli jest obecny, polecenia za pomocą `--passive` lub `--quiet` nie uruchamia automatycznie ponownie komputera (w razie potrzeby).  To jest ignorowana, jeśli żadna `--passive` ani `--quiet` zostały określone.  |
+| `--nickname <name>` | **Opcjonalnie**: definiuje pseudonim w celu przypisania do zainstalowanego produktu. Pseudonim nie może być dłuższa niż 10 znaków.  |
+| `--productKey` | **Opcjonalnie**: Określa klucz produktu na potrzeby zainstalowany produkt. Składa się z 25 alfanumeryczne znaki w formacie `xxxxx-xxxxx-xxxxx-xxxxx-xxxxx` lub `xxxxxxxxxxxxxxxxxxxxxxxxx`. |
+| `--help, --?, -h, -?` | Wyświetl w trybie offline wersję tej strony. |
 
-> Uwaga: W przypadku określania wielu obciążeń i składników, należy powtórzyć `--add` lub `--remove` przełącznik wiersza polecenia dla każdego elementu.
+> Uwaga: Podczas określania wielu obciążeń i składników, należy powtórzyć `--add` lub `--remove` przełącznik wiersza polecenia dla każdego elementu.
 
 | **Opcje układu** | **Opis** |
 | ----------------------- | --------------- |
-| `--layout <dir>` | Określa katalog można utworzyć w trybie offline Zainstaluj pamięci podręcznej. Aby uzyskać więcej informacji, zobacz [utworzyć sieciowej instalację programu Visual Studio](create-a-network-installation-of-visual-studio.md).|
-| `--lang <one or more language-locales>` | **Opcjonalne**: używane z `--layout` przygotować w trybie offline Zainstaluj pamięci podręcznej z pakietów zasobów z określonego języki. Aby uzyskać więcej informacji, zobacz [listę ustawień regionalnych języka](#list-of-language-locales) sekcji na tej stronie.|
-| `--add <one or more workload or component IDs>` | **Opcjonalne**: obciążenia lub identyfikatory składników do dodania. Zainstalowano składniki wymagane artefaktu, ale nie zalecane lub opcjonalne składniki. Można kontrolować dodatkowe składniki za pomocą `--includeRecommended` i/lub `--includeOptional`. Precyzyjny system kontroli, możesz dołączyć `;includeRecommended` lub `;includeOptional` dla identyfikatora (na przykład `--add Workload1;includeRecommended` lub `--add Workload2;includeOptional`). Aby uzyskać więcej informacji, zobacz [obciążenia i identyfikatory składników](workload-and-component-ids.md) strony. <br/>**Uwaga**: Jeśli `--add` jest używana, tylko określonym obciążeń i składników oraz ich zależności zostaną pobrane. Jeśli `--add` nie zostanie określony, obciążeń i wszystkie składniki są pobierane do układu.|
-| `--includeRecommended` | **Opcjonalne**: zawiera składniki zalecane dla dowolnych zadań, które są zainstalowane, ale nie składników opcjonalnych. Obciążenia są określone za pomocą `--allWorkloads` lub `--add`. |
-| `--includeOptional` | **Opcjonalne**: zawiera zalecanej *i* opcjonalne składniki wszystkie obciążenia są uwzględniane w układzie. Obciążenia są określane za pomocą `--add`.  |
-| `--keepLayoutVersion` | **Nowość w 15 ustęp 3, opcjonalnie**: zmiany układu bez aktualizowania wersji układu. |
-| `--verify` | **Nowość w 15 ustęp 3, opcjonalnie**: Sprawdź zawartość układ. Pliki uszkodzone lub brakujące są wyświetlane. |
-| `--fix` | **Nowość w 15 ustęp 3, opcjonalnie**: Sprawdź zawartość układ.  Jeśli pliki znajdują się być uszkodzony lub nie ma, są ponownego pobrania ich. Dostęp do Internetu jest wymagana do napraw układ. |
-| `--clean <one or more paths to catalogs>` | **Nowość w 15 ustęp 3, opcjonalnie**: usuwa stare wersje składników z układu, który został zaktualizowany do nowszej wersji. |
+| `--layout <dir>` | Określa katalog do utworzenia w trybie offline instalować pamięci podręcznej. Aby uzyskać więcej informacji, zobacz [utworzenie instalacji sieciowej programu Visual Studio](create-a-network-installation-of-visual-studio.md).|
+| `--lang <one or more language-locales>` | **Opcjonalnie**: używany z `--layout` przygotować offline instalowanie pamięci podręcznej przy użyciu pakietów zasobów przy użyciu określonego języki. Aby uzyskać więcej informacji, zobacz [listę ustawień regionalnych języka](#list-of-language-locales) sekcji na tej stronie.|
+| `--add <one or more workload or component IDs>` | **Opcjonalnie**: obciążenia lub identyfikatory składników do dodania. Wymagane składniki artefaktu są zainstalowane, ale nie na składnikach zalecane lub opcjonalne. Można kontrolować dodatkowych składników przy użyciu `--includeRecommended` i/lub `--includeOptional`. Aby uzyskać bardziej szczegółowej kontroli można dołączyć `;includeRecommended` lub `;includeOptional` identyfikator (na przykład `--add Workload1;includeRecommended` lub `--add Workload2;includeOptional`). Aby uzyskać więcej informacji, zobacz [obciążenia i identyfikatory składników](workload-and-component-ids.md) strony. <br/>**Uwaga**: Jeśli `--add` jest używany, tylko określony obciążeń i składników oraz ich zależności są pobierane. Jeśli `--add` nie zostanie określony, wszystkie obciążenia i składniki, które są pobierane do układu.|
+| `--includeRecommended` | **Opcjonalnie**: obejmuje składniki zalecane dla dowolnych obciążeń, które są zainstalowane, ale nie składniki opcjonalne. Obciążenia są określane za pomocą `--allWorkloads` lub `--add`. |
+| `--includeOptional` | **Opcjonalnie**: obejmuje zalecanym *i* składniki opcjonalne dla dowolnych obciążeń, które są uwzględniane w układzie. Obciążenia są określane za pomocą `--add`.  |
+| `--keepLayoutVersion` | **Nowość w wersji 15.3, opcjonalnie**: Zastosuj zmiany do układu bez aktualizowania wersji układu. |
+| `--verify` | **Nowość w wersji 15.3, opcjonalnie**: Sprawdź zawartość układu. Są wyświetlane wszystkie pliki niepoprawne lub nieobecne. |
+| `--fix` | **Nowość w wersji 15.3, opcjonalnie**: Sprawdź zawartość układu.  Jeśli pliki znajdują się być uszkodzony lub nie ma, są ponownego pobrania ich. Dostęp do Internetu jest wymagany do napraw układu. |
+| `--clean <one or more paths to catalogs>` | **Nowość w wersji 15.3, opcjonalnie**: usuwa stare wersje składników z układu, który został zaktualizowany do nowszej wersji. |
 
 | **Opcje zaawansowane instalacji** | **Opis** |
 | ----------------------- | --------------- |
-| `--channelId <id>` | **Opcjonalne**: identyfikator dla tego wystąpienia kanału do zainstalowania. Jest to wymagane dla polecenia install ignorowany dla innych poleceń, jeśli `--installPath` jest określona. |
-| `--channelUri <uri>` | **Opcjonalne**: identyfikator URI kanału manifestu. Jeśli aktualizacje nie są potrzebne, `--channelUri` może wskazywać na plik nie istnieje. (na przykład--channelUri C:\doesntExist.chman) Może być używany dla polecenia install; jest on ignorowany dla innych poleceń. |
-| `--installChannelUri <uri>` | **Opcjonalne**: identyfikator URI kanału manifestu do użycia podczas instalacji. Identyfikator URI określony przez `--channelUri` (która musi być określona gdy `--installChannelUri` określono) jest używana do wykrywania aktualizacji. Może być używany dla polecenia install; jest on ignorowany dla innych poleceń. |
-| `--installCatalogUri <uri>` | **Opcjonalne**: identyfikator URI manifestu katalogu do użycia podczas instalacji. Jeśli zostanie określona, Menedżer kanałów prób pobrania manifest katalogu z tego identyfikatora URI przed rozpoczęciem korzystania z identyfikatora URI w manifeście kanału instalacji. Ten parametr jest używany do obsługi instalacji w trybie offline, w której zostanie utworzony układ pamięci podręcznej z katalogu produktów już pobrane. Może być używany dla polecenia install; jest on ignorowany dla innych poleceń. |
-| `--productId <id>` | **Opcjonalne** identyfikator produktu dla tego wystąpienia, który zostanie zainstalowany. To jest wypełniana wstępnie w warunkach normalnej instalacji. |
-| `--wait` | **Opcjonalne**: proces będzie zaczekać na ukończenie instalacji przed zwróceniem kod zakończenia. Jest to przydatne, gdy zainstalować automatyzacji instalacji, gdzie należy poczekać na zakończenie obsługi kod powrotny od tej instalacji. |
-| `--locale <language-locale>` | **Opcjonalne**: Zmienianie języka wyświetlania interfejsu użytkownika samego Instalatora. Ustawienia zostaną utrwalone. Aby uzyskać więcej informacji, zobacz [listę ustawień regionalnych języka](#list-of-language-locales) sekcji na tej stronie.|
-| `--cache` | **Nowość w 15,2 opcjonalne**: Jeśli jest obecny, pakiety zostaną zachowane po zainstalowaniu dla kolejnych naprawy. Przesłania globalne ustawienia do zastosowania w przypadku kolejnych instaluje, naprawia lub zmiany zasad. Domyślna zasada jest pakiety w pamięci podręcznej. To jest ignorowany dla polecenia dezinstalacji. Jak do odczytu do [wyłączone lub Przenieś pamięć podręczną pakietów](disable-or-move-the-package-cache.md) Aby uzyskać więcej informacji. |
-| `--nocache` | **Nowość w 15,2 opcjonalne**: Jeśli jest obecny, pakiety zostaną usunięte po zainstalować lub naprawić. Tylko wtedy, gdy są potrzebne i usuwane ponownie po użyciu będzie można ponownie pobrać. Przesłania globalne ustawienia do zastosowania w przypadku kolejnych instaluje, naprawia lub zmiany zasad. Domyślna zasada jest pakiety w pamięci podręcznej. To jest ignorowany dla polecenia dezinstalacji. Jak do odczytu do [wyłączone lub Przenieś pamięć podręczną pakietów](disable-or-move-the-package-cache.md) Aby uzyskać więcej informacji. |
-| `--noUpdateInstaller` | **Nowość w 15,2 opcjonalne**: Jeśli jest obecny, Instalatorowi na aktualizowanie się, gdy określono cichy. Instalator niepowodzenie polecenia i zwraca kod zakończenia inną niż zero, jeśli noUpdateInstaller zostanie określony z okna, gdy wymagana jest aktualizacja Instalatora. |
-| `--noWeb` | **Nowość w 15 ustęp 3, opcjonalnie**: Instalator pobierze teraz żadnej zawartości, który jest instalowany z Internetu.  Cała zawartość, który jest instalowany musi być dostępny w układzie w trybie offline.  Układu nie ma zawartości, instalacja zakończy się niepowodzeniem.  Aby uzyskać więcej informacji, zobacz [wdrażania z instalacji sieciowej](create-a-network-installation-of-visual-studio.md). |
-| `--path <name>=<path>` | **Nowość w 15.7 opcjonalne**: służy do określania ścieżki instalacji niestandardowej instalacji. Obsługiwana ścieżka, których nazwy są udostępniane, pamięci podręcznej i instalacji. |
-| `--path cache=<path>` | **Nowość w 15.7 opcjonalne**: używa lokalizacji określ pobierania plików instalacyjnych. Tej lokalizacji można ustawić tylko po raz pierwszy jest zainstalowany program Visual Studio. Przykład: `--path cache="C:\VS\cache"` |
-| `--path shared=<path>` | **Nowość w 15.7 opcjonalne**: zawiera pliki udostępnione do instalacji programu Visual Studio side-by-side. Niektóre narzędzia i zestawy SDK zainstalować produkt w lokalizacji na dysku, podczas gdy inne mogą zastąpić to ustawienie, zainstaluj na inny dysk. Przykład: `--path shared="C:\VS\shared"` <br><br>Ważne: To można ustawić tylko raz i zainstalowaniu programu Visual Studio po raz pierwszy. |
-| `--path install=<path>` | **Nowość w 15.7 opcjonalne**: odpowiednikiem `–-installPath`. W szczególności `--installPath "C:\VS"` i `--path install="C:\VS"` są równoważne. Jednocześnie można użyć tylko jeden z tych. |
+| `--channelId <id>` | **Opcjonalnie**: identyfikator kanału dla tego wystąpienia do zainstalowania. Jest to wymagane dla polecenia install ignorowany dla innych poleceń, jeśli `--installPath` jest określony. |
+| `--channelUri <uri>` | **Opcjonalnie**: identyfikator URI manifestu kanału. Jeśli aktualizacje nie są potrzebne `--channelUri` może wskazywać plik nie istnieje. (na przykład--channelUri C:\doesntExist.chman) Może być używany dla polecenia install; jest on ignorowany dla pozostałych poleceń. |
+| `--installChannelUri <uri>` | **Opcjonalnie**: identyfikator URI manifestu kanału do użycia podczas instalacji. Identyfikator URI określony przez `--channelUri` (który musi być określony, gdy `--installChannelUri` określono) służy do wykrywania aktualizacji. Może być używany dla polecenia install; jest on ignorowany dla pozostałych poleceń. |
+| `--installCatalogUri <uri>` | **Opcjonalnie**: identyfikator URI manifestu katalogu do użycia podczas instalacji. Jeśli zostanie określony, menedżera kanałów próbuje pobrać manifestu katalogu z tego identyfikatora URI, przed rozpoczęciem korzystania z identyfikatora URI w manifeście kanału instalacji. Ten parametr jest używany do obsługi instalacji w trybie offline, w której pamięci podręcznej układu zostanie utworzona z katalogu produktów już pobrane. Może być używany dla polecenia install; jest on ignorowany dla pozostałych poleceń. |
+| `--productId <id>` | **Opcjonalnie** identyfikator produktu dla tego wystąpienia, który zostanie zainstalowany. To są wstępnie wypełnione w warunkach normalnej instalacji. |
+| `--wait` | **Opcjonalnie**: proces będzie czekać, aż do zakończenia instalacji, zanim zwróci kod zakończenia. Jest to przydatne podczas instalacji automatyzację, gdzie jeden musi czekać na instalacji na zakończenie obsługi kod powrotny od tej instalacji. |
+| `--locale <language-locale>` | **Opcjonalnie**: zmianę języka wyświetlania interfejsu użytkownika Instalatora, sam. Ustawienia zostaną utrwalone. Aby uzyskać więcej informacji, zobacz [listę ustawień regionalnych języka](#list-of-language-locales) sekcji na tej stronie.|
+| `--cache` | **Nowość w 15.2 opcjonalne**: Jeśli jest obecny, pakiety zostaną zachowane po zainstalowaniu dla kolejnych naprawy. Zastępuje to ustawienie ma być używany dla kolejnych instalacji, napraw lub modyfikacji zasad globalnych. Domyślne zasady to do pamięci podręcznej pakietów. To jest ignorowany dla polecenia dezinstalacji. Przeczytaj, jak do [wyłączone lub przenoszenie pamięci podręcznej pakietu](disable-or-move-the-package-cache.md) Aby uzyskać więcej informacji. |
+| `--nocache` | **Nowość w 15.2 opcjonalne**: Jeśli jest obecny, pakiety zostaną usunięte po zainstalować lub naprawić. Tylko wtedy, gdy są potrzebne, a następnie ponownie usunięte użycia będzie można ponownie pobrać. Zastępuje to ustawienie ma być używany dla kolejnych instalacji, napraw lub modyfikacji zasad globalnych. Domyślne zasady to do pamięci podręcznej pakietów. To jest ignorowany dla polecenia dezinstalacji. Przeczytaj, jak do [wyłączone lub przenoszenie pamięci podręcznej pakietu](disable-or-move-the-package-cache.md) Aby uzyskać więcej informacji. |
+| `--noUpdateInstaller` | **Nowość w 15.2 opcjonalne**: Jeśli jest obecny, zapobiega sam aktualizacji, gdy określono quiet Instalator. Instalator spowoduje niepowodzenie polecenia i zwróci kod zakończenia różny od zera, jeśli noUpdateInstaller jest określony za pomocą cichy, gdy wymagana jest aktualizacja Instalatora. |
+| `--noWeb` | **Nowość w wersji 15.3, opcjonalnie**: Instalator pobierze teraz żadnej zawartości, który jest instalowany z Internetu.  Cała zawartość, która jest w trakcie instalacji musi być dostępny w układzie w trybie offline.  Jeśli układ ma zawartość, instalacja kończy się niepowodzeniem.  Aby uzyskać więcej informacji, zobacz [wdrażania z instalacji sieciowej](create-a-network-installation-of-visual-studio.md). |
+| `--path <name>=<path>` | **Nowość w wersji 15.7 opcjonalne**: używany do określenia ścieżki instalacji niestandardowej instalacji. Obsługiwana ścieżka, których nazwy są udostępniane, pamięci podręcznej i instalacji. |
+| `--path cache=<path>` | **Nowość w wersji 15.7 opcjonalne**: korzysta z lokalizacji, należy określić, aby pobrać pliki instalacyjne. Tę lokalizację można ustawić tylko przy pierwszym jest zainstalowany program Visual Studio. Przykład: `--path cache="C:\VS\cache"` |
+| `--path shared=<path>` | **Nowość w wersji 15.7 opcjonalne**: zawiera pliki udostępnione dla instalacji programu Visual Studio side-by-side. Niektóre narzędzia i zestawy SDK zainstalować lokalizacji na tym dysku, podczas gdy inne mogą zastąpić to ustawienie i instalowane na innym dysku. Przykład: `--path shared="C:\VS\shared"` <br><br>Ważne: To można ustawić tylko raz, w pierwszym, który jest zainstalowany program Visual Studio. |
+| `--path install=<path>` | **Nowość w wersji 15.7 opcjonalne**: odpowiednikiem `–-installPath`. W szczególności `--installPath "C:\VS"` i `--path install="C:\VS"` są równoważne. Tylko jeden z nich może służyć w danym momencie. |
 
 ## <a name="list-of-workload-ids-and-component-ids"></a>Lista identyfikatorów obciążenia i identyfikatory składników
 
-Listę obciążenia i identyfikatory składników posortowane według produktu Visual Studio, zobacz [obciążenia 2017 r w usłudze Visual Studio i identyfikatory składników](workload-and-component-ids.md) strony.
+Aby uzyskać listę obciążenia i identyfikatorów składników, posortowane według produktu Visual Studio, zobacz [Visual Studio 2017 obciążenia i identyfikatory składników](workload-and-component-ids.md) strony.
 
-## <a name="list-of-language-locales"></a>Lista ustawień regionalnych języka
+## <a name="list-of-language-locales"></a>Listę ustawień regionalnych języka
 
-| **Ustawienia regionalne języka** | **Język** |
+| **Ustawienia regionalne na język** | **Język** |
 | ----------------------- | --------------- |
 | CS-cz | czeski |
-| De-de | niemiecki |
-| en-us | Angielski |
+| De-de. | niemiecki |
+| En-us | Angielski |
 | Es-es | Hiszpański |
 | Fr-fr | Francuski |
 | IT-it | Włoski |
 | Ja-jp | japoński |
 | Ko-kr | koreański |
 | Pl-pl | polski |
-| Pt-br | Portugalski (Brazylia) |
+| pt-br | Portugalski (Brazylia) |
 | Ru-ru | Rosyjski |
-| TR-tr | turecki |
-| Zh-cn | Chiński (uproszczony) |
-| Zh-tw. | Chiński — tradycyjny |
+| Wersja turecka | turecki |
+| Nazwy zh-cn | Chiński (uproszczony) |
+| Nazwy zh-tw | Chiński — tradycyjny |
 
 ## <a name="error-codes"></a>Kody błędów
 
-W zależności od wyniku operacji `%ERRORLEVEL%` zmienna środowiskowa jest ustawiona na jedną z następujących wartości:
+W zależności od wyniku operacji `%ERRORLEVEL%` zmienna środowiskowa jest ustawiony na jedną z następujących wartości:
 
 | **Wartość** | **wynik** |
 | --------- | ---------- |
-| 0 | Operacja została wykonana pomyślnie |
+| 0 | Operacja została ukończona pomyślnie |
 | 1602 | Operacja została anulowana |
-| 3010 | Operacja zakończyła się pomyślnie, ale instalacja wymaga ponownego uruchomienia, zanim będzie można go używać. |
+| 3010 | Operacja ukończona pomyślnie, ale instalacja wymaga ponownego uruchomienia, zanim będzie można jej używać. |
 | 5004 | Operacja została anulowana |
-| 5007 | Operacja została zablokowana - komputer nie spełnia wymagań |
-| Inne | Wystąpił błąd warunku — Sprawdź dzienniki, aby uzyskać więcej informacji |
+| 5007 | Operacja została zablokowana — komputer nie spełnia wymagań |
+| Inne | Wystąpił błąd warunek — Sprawdź dzienniki Aby uzyskać więcej informacji |
 
-Każda operacja generuje kilka plików dziennika w `%TEMP%` katalogu, który wskazuje postęp instalacji. Sortowanie folderu według daty i wyszukaj pliki, które zaczynają się od `dd_bootstrapper`, `dd_client`, i `dd_setup` dla programu inicjującego, Instalator aplikacji i ustawień aparatu, odpowiednio.
+Każda operacja generuje kilka plików dziennika w `%TEMP%` katalogu, który wskazuje postęp instalacji. Folder posortować według daty i poszukać plików, które zaczynają się od `dd_bootstrapper`, `dd_client`, i `dd_setup` dla programu inicjującego i instalację aplikacji Instalatora aparatu, odpowiednio.
 
-## <a name="get-support"></a>Uzyskaj pomoc techniczną
-
-Czasami może wystąpienia problemów. W przypadku niepowodzenia instalacji programu Visual Studio, zobacz [problemy dotyczące instalacji i uaktualniania Rozwiązywanie problemów z programu Visual Studio 2017](troubleshooting-installation-issues.md) strony. Jeśli żaden z kroki rozwiązywania problemów, można skontaktować się nam przez rozmów na żywo, aby uzyskać pomoc przy instalacji (tylko w języku angielskim). Aby uzyskać więcej informacji, zobacz [strony pomocy technicznej programu Visual Studio](https://visualstudio.microsoft.com/vs/support/#talktous).
-
-Poniżej przedstawiono kilka więcej opcji pomocy technicznej:
-
-* Problemy z produktu może raportować do nas za pomocą [zgłosić Problem](../ide/how-to-report-a-problem-with-visual-studio-2017.md) narzędzia, która pojawia się zarówno w Instalatorze programu Visual Studio, jak i w środowisku IDE programu Visual Studio.
-* Można udostępniać sugestię produktu z nami na [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Można śledzić problemy z produktu i odpowiedzi w [Visual Studio Developer Community](https://developercommunity.visualstudio.com/).
-* Można również kontaktowaniu się z nami i innymi deweloperami Visual Studio za pomocą [konwersacji programu Visual Studio w społeczności Gitter](https://gitter.im/Microsoft/VisualStudio). (Ta opcja wymaga [GitHub](https://github.com/) konta.)
+[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>Zobacz także
 
-* [Przykłady parametru wiersza polecenia do instalacji programu Visual Studio 2017 r.](command-line-parameter-examples.md)
-* [Tworzenie w trybie offline instalację programu Visual Studio 2017 r.](create-an-offline-installation-of-visual-studio.md)
+* [Przykładowe parametry wiersza polecenia dla instalacji programu Visual Studio 2017](command-line-parameter-examples.md)
+* [Tworzenie instalacji offline programu Visual Studio 2017](create-an-offline-installation-of-visual-studio.md)
 * [Zautomatyzowana instalacja programu Visual Studio przy użyciu pliku odpowiedzi](automated-installation-with-response-file.md)
-* [Visual Studio 2017 obciążenia i składnik identyfikatorów](workload-and-component-ids.md)
+* [Visual Studio 2017 obciążeń i składników identyfikatorów](workload-and-component-ids.md)
