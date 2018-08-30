@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 04/14/2017
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
-ms.openlocfilehash: 84079e15a15f86527c15b28a05ba905bfeccad31
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 10bfb61ae9e3750926dad39ad3c614d8daf8f867
+ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42623992"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43224965"
 ---
 # <a name="extending-visual-studio-for-mac"></a>Rozszerzanie programu Visual Studio dla komputerów Mac
 
@@ -56,7 +56,7 @@ Mają również odpowiadające im `assembly:AddinDependency ` atrybuty dodawane 
 
 ## <a name="extensions-and-extension-points"></a>Rozszerzenia i punkty rozszerzenia
 
-Punkt rozszerzenia jest symbolem zastępczym, który definiuje strukturę danych (typ), podczas rozszerzenie definiuje danych, który jest zgodny do struktury, określony przez punkt określonego rozszerzenia. Punkty rozszerzenia Określ, jaki typ rozszerzenia mogą akceptować w jego deklaracji. Rozszerzenia są zadeklarowane za pomocą nazwy typu lub ścieżki rozszerzenia. Zobacz [odwołania punktu rozszerzenia](http://monoaddins.codeplex.com/wikipage?title=Extension%20Points&referringTitle=Description%20of%20Add-ins%20and%20Add-in%20Roots) dla uzyskać szczegółowe informacje na temat tworzenia punktu rozszerzenia, które są potrzebne.
+Punkt rozszerzenia jest symbolem zastępczym, który definiuje strukturę danych (typ), podczas rozszerzenie definiuje danych, który jest zgodny do struktury, określony przez punkt określonego rozszerzenia. Punkty rozszerzenia Określ, jaki typ rozszerzenia mogą akceptować w jego deklaracji. Rozszerzenia są zadeklarowane za pomocą nazwy typu lub ścieżki rozszerzenia. Zobacz [odwołania punktu rozszerzenia](https://github.com/mono/mono-addins/wiki/Extension-Points) dla uzyskać szczegółowe informacje na temat tworzenia punktu rozszerzenia, które są potrzebne.
 
 Architektura punktu rozszerzenia/rozszerzenia przechowuje rozwoju Visual Studio dla komputerów Mac, szybka, modularna. 
 
