@@ -15,7 +15,7 @@ ms.openlocfilehash: c80ee0791c1c073c82681e59e124c5c45b378a07
 ms.sourcegitcommit: e2373d40ca9829cee63519152a97172763471e21
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/04/2018
+ms.lasthandoff: 09/05/2018
 ms.locfileid: "34335710"
 ---
 # <a name="f1-help"></a>F1 Pomoc

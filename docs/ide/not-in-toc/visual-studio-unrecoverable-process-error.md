@@ -13,25 +13,25 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: ebd530b9db139cb232f735f7d6401199cab2f6fd
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.sourcegitcommit: e2373d40ca9829cee63519152a97172763471e21
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/22/2018
+ms.lasthandoff: 09/05/2018
 ms.locfileid: "36325705"
 ---
-# Błąd nieodwracalny proces programu Visual Studio
+# <a name="visual-studio-unrecoverable-process-error"></a>Błąd nieodwracalny procesu programu Visual Studio
 
-Visual Studio 2017 używa wielu procesów poza procesem do wykonania zadania w tle wymagane, takie jak testy jednostkowe na żywo, code analizatory i inne. Te procesy są uruchamiane poza procesem umożliwiają zalety wydajności programu Visual Studio, np. włączenie szybszym reagowaniu podczas długo, uruchamiania zadań intensywnie zasobów programu Visual Studio. Ponieważ program Visual Studio jest proces 32-bitowy, uruchamianie poza procesem procesów daje również pracy intensywnie wykorzystujących pamięć większą przestrzeń pamięci działania.
+Program Visual Studio 2017 używa kilka procesów procesem do wykonania zadania w tle wymagane, takie jak testy jednostkowe na żywo, analizatory i więcej kodu. Te procesy są uruchamiane procesem zapewnienie korzyści związanych z wydajnością programu Visual Studio, takich jak włączenie programu Visual Studio do szybszego reagowania na podczas long, uruchamiania zadań intensywnie korzystających z zasobów. Ponadto ponieważ program Visual Studio jest proces 32-bitowy, uruchomione procesy-procesem zapewnia pracy o znacznym wykorzystaniu pamięci większy obszar pamięci, w którym będą wykonywane.
 
-Jeśli *ServiceHub.RoslynCodeAnalysisService.exe* lub *ServiceHub.RoslynCodeAnalysisService32.exe* procesu jakiegoś powodu paska informacji wyskakujące pojawia się następujący komunikat o błędzie:
+Jeśli *ServiceHub.RoslynCodeAnalysisService.exe* lub *ServiceHub.RoslynCodeAnalysisService32.exe* zakończeniu procesu jakiegoś powodu pasek informacji wyskakujące pojawia się następujący komunikat o błędzie:
 
-**"Niestety, proces używany przez Visual Studio napotkał nieodwracalny błąd. Zalecamy zapisywanie Twojej pracy, a następnie zamknięcie i ponowne uruchomienie programu Visual Studio."**
+**"Niestety, proces używany przez program Visual Studio napotkał nieodwracalny błąd. Zalecamy Zapisywanie swojej pracy, a następnie zamknięcie i ponowne uruchomienie programu Visual Studio."**
 
-Ten komunikat zostanie wyświetlony, należy zapisać pracę i następnie zamknij i uruchom ponownie program Visual Studio.
+Ten komunikat jest wyświetlony, należy zapisać swoją pracę i następnie zamknij i ponownie uruchom program Visual Studio.
 
-## Lista procesów
+## <a name="list-of-processes"></a>Lista procesów
 
-Poniżej przedstawiono listę procesów poza procesem, używany przez Visual Studio. Ta lista jest tym procesy, które są uruchamiane w określonym przepływy pracy lub scenariuszy, a więc w większości przypadków te nie są wszystkie uruchomione w tym samym czasie.
+Poniżej przedstawiono listę-procesem stosowanym przez program Visual Studio. Ta lista obejmuje procesy, które są uruchamiane w określonych przepływów pracy lub scenariuszy, a więc w większości przypadków są nie są wszystkie uruchomione w tym samym czasie.
 
 - Microsoft.Alm.Shared.Remoting.RemoteContainer.dll
 - Microsoft.CodeAnalysis.LiveUnitTesting.EntryPoint
@@ -47,4 +47,4 @@ Poniżej przedstawiono listę procesów poza procesem, używany przez Visual Stu
 - WindowsAzureTelemetryService.exe
 - WaAppAgent.exe
 
-Jeśli dowolne z tych procesów zakończy się nieoczekiwanie, niektóre funkcje w programie Visual Studio przestanie działać. Dla niektórych procesów może być nieważny utratę funkcji. Dla innych osób dotyczy stabilności programu Visual Studio i jest wyświetlany komunikat o błędzie.
+Jeśli dowolny z tych procesów zostaje nieoczekiwanie zamknięty, niektóre funkcje programu Visual Studio przestaje działać. Dla niektórych procesów utratę funkcji mogą być nieistotne. Dla innych osób dotyczy stabilności programu Visual Studio i jest wyświetlany komunikat o błędzie.
