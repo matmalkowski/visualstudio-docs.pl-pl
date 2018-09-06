@@ -16,41 +16,41 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bef95cbd79a403cf224387e754337de886a893dd
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 36b7da02830375161af08bda301e3ead98321741
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35256949"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35677471"
 ---
 # <a name="how-to-programmatically-close-workbooks"></a>Porady: programowane zamykanie skoroszytów
-  Możesz zamknąć aktywnym skoroszycie lub można określić skoroszytu, aby zamknąć.  
+  Możesz zamknąć aktywny skoroszyt, lub można określić skoroszytu, aby zamknąć.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
-## <a name="close-the-active-workbook"></a>Zamknij aktywnego skoroszytu  
- Istnieją dwie procedury zamknięcia aktywnym skoroszycie: jeden dla Dostosowywanie na poziomie dokumentu i jeden dla dodatków VSTO.  
+## <a name="close-the-active-workbook"></a>Zamknij aktywny skoroszyt  
+ Istnieją dwie procedury do zamykania aktywnym skoroszycie: jeden dla dostosowywania poziomie dokumentu i jeden dla dodatków narzędzi VSTO.  
   
-### <a name="to-close-the-active-workbook-in-a-document-level-customization"></a>Aby zamknąć aktywnym skoroszycie w dostosowaniu poziomie dokumentu  
+### <a name="to-close-the-active-workbook-in-a-document-level-customization"></a>Aby zamknąć aktywnym skoroszycie w dostosowaniu na poziomie dokumentu  
   
-1.  Wywołanie <xref:Microsoft.Office.Tools.Excel.Workbook.Close%2A> metodę, aby zamknąć skoroszytu służącej do dostosowywania. Aby użyć w poniższym przykładzie kodu, uruchom go `Sheet1` klasy w projektach na poziomie dokumentu dla programu Excel.  
+1.  Wywołaj <xref:Microsoft.Office.Tools.Excel.Workbook.Close%2A> metodę, aby zamknąć skoroszyt służącej do dostosowywania. Aby użyć w poniższym przykładzie kodu, należy uruchomić go `Sheet1` klasy w projekcie poziomie dokumentu dla programu Excel.  
   
      [!code-csharp[Trin_VstcoreExcelAutomation#3](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#3)]
      [!code-vb[Trin_VstcoreExcelAutomation#3](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#3)]  
   
-### <a name="to-close-the-active-workbook-in-a-vsto-add-in"></a>Aby zamknąć aktywny skoroszyt w dodatku VSTO  
+### <a name="to-close-the-active-workbook-in-a-vsto-add-in"></a>Aby zamknąć aktywnym skoroszycie w dodatku narzędzi VSTO  
   
-1.  Wywołanie <xref:Microsoft.Office.Interop.Excel._Workbook.Close%2A> metody, aby zamknąć aktywny skoroszyt. Aby użyć w poniższym przykładzie kodu, uruchom go `ThisAddIn` klasy w projekcie dodatku narzędzi VSTO dla programu Excel.  
+1.  Wywołaj <xref:Microsoft.Office.Interop.Excel._Workbook.Close%2A> metodę, aby zamknąć aktywny skoroszyt. Aby użyć w poniższym przykładzie kodu, należy uruchomić go `ThisAddIn` klasy w projekcie dodatku narzędzi VSTO dla programu Excel.  
   
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#1](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#1)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#1](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#1)]  
   
-## <a name="close-a-workbook-that-you-specify-by-name"></a>Zamknij skoroszyt, który jest określany na podstawie nazwy  
- Sposób, w jaki zamknięciu skoroszytu, który jest określany na podstawie nazwy jest taki sam dla dodatków VSTO i dostosowywanie na poziomie dokumentu.  
+## <a name="close-a-workbook-that-you-specify-by-name"></a>Zamknij skoroszyt zawierający według nazwy  
+ Sposób, w jaki Zamknij skoroszyt zawierający według nazwy jest taka sama dla dodatków narzędzi VSTO dla programów i dostosowań na poziomie dokumentu.  
   
-### <a name="to-close-a-workbook-that-you-specify-by-name"></a>Aby zamknąć skoroszytu, który jest określany na podstawie nazwy  
+### <a name="to-close-a-workbook-that-you-specify-by-name"></a>Aby zamknąć skoroszyt zawierający według nazwy  
   
-1.  Określ nazwę skoroszytu jako argument <xref:Microsoft.Office.Interop.Excel.Workbooks> kolekcji. Poniższy przykład kodu zakłada, że skoroszytu o nazwie **NewWorkbook** jest otwarty w programie Excel.  
+1.  Określ nazwę skoroszytu jako argument do <xref:Microsoft.Office.Interop.Excel.Workbooks> kolekcji. Poniższy przykład kodu zakłada, że skoroszyt o nazwie **NewWorkbook** jest otwarty w programie Excel.  
   
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#2](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#2)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#2](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#2)]  
@@ -59,8 +59,8 @@ ms.locfileid: "35256949"
  [Praca ze skoroszytami](../vsto/working-with-workbooks.md)   
  [Porady: programowane zapisywanie skoroszytów](../vsto/how-to-programmatically-save-workbooks.md)   
  [Porady: programowane otwieranie skoroszytów](../vsto/how-to-programmatically-open-workbooks.md)   
- [Ograniczenia programowe elementów hosta i formantów hosta](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
+ [Ograniczenia programowe elementów hosta i kontrolek hosta](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [Parametry opcjonalne w rozwiązaniach pakietu Office](../vsto/optional-parameters-in-office-solutions.md)   
- [Obiekty hosta i informacje o formantach hosta](../vsto/host-items-and-host-controls-overview.md)  
+ [Host formantów Przegląd obiektów hosta i](../vsto/host-items-and-host-controls-overview.md)  
   
   

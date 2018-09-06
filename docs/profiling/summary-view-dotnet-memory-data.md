@@ -12,42 +12,43 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 174f8612dd4f0678d8bbdc8be5c6a9b37cfc8b61
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 98b56eece1a51db94482a0a58d54ca877e47e0c1
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35677204"
 ---
-# <a name="summary-view---net-memory-data"></a>Widok podsumowania - dane pamięci .NET
-Widok podsumowania Wyświetla informacje o funkcji .NET i typy, które przydzielone najwięcej pamięci i typy, które zostały utworzone na większości czas przebiegu profilowania. Aby uzyskać więcej informacji, łącznie z opisem łącza powiadomień i listy raport, zobacz [widoku podsumowania](../profiling/summary-view.md).  
+# <a name="summary-view---net-memory-data"></a>Widok podsumowania - dane pamięci platformy .NET
+Widok podsumowania Wyświetla informacje o funkcje platformy .NET i typy, które są przydzielane najwięcej pamięci oraz typy, które zostały utworzone w większości przypadków w przebiegu profilowania. Aby uzyskać więcej informacji, łącznie z opisem powiadomienie łącza i listy raportów, zobacz [widok podsumowania](../profiling/summary-view.md).  
   
-## <a name="timeline-graph"></a>Oś czasu wykresu  
- Oś czasu wykresu w widoku Podsumowanie zawiera użycie procesora (CPU) przez aplikację PROFILOWANEGO wraz z upływem czasu, który wystąpił profilowania. Oś czasu wykresu umożliwia filtrowanie widoku w wybranym okresie. Aby uzyskać więcej informacji, zobacz [porady: Filtr widoków raportu z podsumowania osi czasu](../profiling/how-to-filter-report-views-from-the-summary-timeline.md).  
+## <a name="timeline-graph"></a>Wykres osi czasu  
+ Wykres osi czasu w widoku podsumowania przedstawia użycie procesora (CPU) według profilowanej aplikacji wraz z upływem czasu, który wystąpił profilowania. Wykres osi czasu można użyć do filtrowania widoku, aby w wybranym okresie. Aby uzyskać więcej informacji, zobacz [porady: filtrowanie widoków raportu z podsumowania osi czasu](../profiling/how-to-filter-report-views-from-the-summary-timeline.md).  
   
 ## <a name="functions-allocating-most-memory"></a>Funkcje przydzielające najwięcej pamięci  
- Zawiera listę funkcji, które przydzielone największą liczbę bajtów pamięci w przebiegu profilowania.  
+ Wyświetla listę funkcji, które przydzielane największą liczbę bajtów pamięci w trakcie uruchomienia profilowania.  
   
 |Kolumny|Opis|  
 |------------|-----------------|  
 |**Nazwa**|Nazwa funkcji.|  
-|**% Bajtów**|Procent wszystkich przydzielonych bajtów w przebiegu profilowania przydzielone przez tej funkcji lub funkcji podrzędnej, która została wywołana przez tę funkcję.|  
+|**% Bajtów**|Procent wszystkich przydzielonych bajtów podczas uruchomienia profilowania, które zostały przydzielone przez tę funkcję, lub funkcji podrzędnej, która została wywołana przez tę funkcję.|  
   
 ## <a name="types-with-most-memory-allocated"></a>Typy z największą ilością przydzielonej pamięci  
- Wyświetla listę typów, dla których największą liczbę bajtów pamięci przydzielone w przebiegu profilowania.  
+ Wyświetla listę typów, dla których największą liczbę bajtów pamięci przydzielonych podczas uruchomienia profilowania.  
   
 |Kolumny|Opis|  
 |------------|-----------------|  
 |**Nazwa**|Nazwa typu.|  
-|**% Bajtów**|Procent wszystkich przydzielonych bajtów w przebiegu profilowania, które zostały przyznane dla tego typu.|  
+|**% Bajtów**|Procent wszystkich przydzielonych bajtów podczas uruchomienia profilowania, które zostały przydzielone dla tego typu.|  
   
 ## <a name="types-with-most-instances"></a>Typy z największą liczbą wystąpień  
- Wyświetla listę typów, które zostały utworzone najbardziej razy podczas przebiegu profilowania. Gdyby  
+ Wyświetla listę typów, które zostały utworzone najwięcej czasu podczas uruchomienia profilowania. Gdyby  
   
 |Kolumny|Opis|  
 |------------|-----------------|  
 |**Nazwa**|Nazwa typu.|  
-|**% Wystąpień**|Wartość procentowa łączna liczba obiektów of.NET utworzonych w przebiegu, który profilowania były wystąpień tego typu.|  
+|**% Wystąpień**|Całkowita liczba obiektów of.NET, które zostały utworzone w profilowania, wartość procentowa były wystąpień tego typu.|  
   
-## <a name="see-also"></a>Zobacz też  
- [Widok podsumowania](../profiling/summary-view-sampling-data.md)   
- [Widok podsumowania](../profiling/summary-view-instrumentation-data.md)
+## <a name="see-also"></a>Zobacz także  
+ [Widok podsumowania — dane próbkowania](../profiling/summary-view-sampling-data.md)   
+ [Widok podsumowania - dane Instrumentacji](../profiling/summary-view-instrumentation-data.md)

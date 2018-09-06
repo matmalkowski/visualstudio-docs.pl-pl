@@ -1,5 +1,5 @@
 ---
-title: Zapisywanie i eksportowanie wydajności narzędzi danych | Dokumentacja firmy Microsoft
+title: Zapisywanie i eksportowanie wydajności danych dotyczących narzędzi | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -12,84 +12,85 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2cd52c97d78c4b2b08244e7f4a8f626a536c8d04
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8136369a09145c46c7989bebe12796642851a7b0
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35676404"
 ---
-# <a name="saving-and-exporting-performance-tools-data"></a>Zapisywanie i eksportowanie wydajności narzędzi danych
-W tym temacie opisano sposób zapisania i wyeksportowane pliki danych wydajności.  
+# <a name="save-and-export-performance-tools-data"></a>Zapisywanie i eksportowanie danych dotyczących narzędzi wydajności
+W tym artykule opisano, jak zapisywanie i eksportowanie plików danych dotyczących wydajności.  
   
-##  <a name="BKMK_Save_Profiler_Data_Files_As_Analyzed_Report_Files"></a> Porady: zapisywanie plików danych wydajności jako pliki raportu analizy  
- Możesz zapisać filtrowane lub niefiltrowane widoki profilowania pliki danych (Vsp) jako pliki raportu analizy (vsps). Plik raportu analizy mogą być wyświetlane w oknie widoku raportu i jest znacznie mniejszy niż oryginalny plik Vsp. Nie można jednak zastosować filtr do danych pliku vsps. W Eksploratorze wydajności można utworzyć pliku raportu analizy, bez konieczności otwierania pliku w zintegrowane środowisko programistyczne (IDE), lub można otwierać i plik Vsp filtru i następnie zapisz wyniki.  
+## <a name="how-to-save-performance-data-files-as-analyzed-report-files"></a>Porady: zapisywanie plików danych wydajności jako pliki przeanalizowany raport  
+ Możesz zapisać filtrowane lub niefiltrowane widoki danych profilowania (. *Vsp*) plików, ile przeanalizowane raportu (. *vsps*) plików. Plik przeanalizowany raport można wyświetlić w oknie Widok raportu i jest znacznie mniejszy niż oryginalny. *vsp* pliku. Jednak nie można zastosować filtr do danych. *vsps* pliku. Można utworzyć plik przeanalizowany raport z poziomu Eksploratora wydajności bez konieczności otwierania pliku w zintegrowanym środowisku programistycznym (IDE) lub możesz otworzyć i filtrowania. *vsp* pliku, a następnie zapisz wyniki.  
   
-#### <a name="to-save-an-analyzed-performance-report-from-the-performance-explorer"></a>Aby zapisać raport analizy wydajności z Eksploratora wydajności  
+#### <a name="to-save-an-analyzed-performance-report-from-the-performance-explorer"></a>Aby zapisać raport analizy wydajności z poziomu Eksploratora wydajności  
   
-1.  W obszarze **raporty**, kliknij prawym przyciskiem myszy plik danych profilowania, który chcesz przeanalizować, a następnie kliknij przycisk **zapisać przeanalizowane**.  
+1.  W obszarze **raporty**, kliknij prawym przyciskiem myszy plik danych profilowania, który chcesz analizować, a następnie kliknij przycisk **Zapisz przeanalizowany**.  
   
-2.  W **zapisania analizy danych** okna dialogowego wprowadź określ katalog, a następnie wpisz nazwę pliku.  
+2.  W **zapisać dane przeanalizowane** okna dialogowego pole, określ katalog, a następnie wpisz nazwę pliku.  
   
-3.  Kliknij przycisk **zapisać.**  
+3.  Kliknij przycisk **Zapisz.**  
   
 #### <a name="to-save-an-analyzed-performance-report-from-the-report-view-window"></a>Aby zapisać raport analizy wydajności z okna widoku raportu  
   
-1.  Otwórz plik danych (Vsp) profilowania w oknie widoku raportu.  
+1.  Otwieranie danych profilowania (. *Vsp*) pliku w oknie Widok raportu.  
   
-2.  (Opcjonalnie) Zastosuj filtr do danych. Aby uzyskać więcej informacji, zobacz [filtr widoku raportów wydajności](../profiling/performance-report-view-filter.md).  
+2.  (Opcjonalnie) Zastosowanie filtru do danych. Aby uzyskać więcej informacji, zobacz [filtr widoku raportów wydajności](../profiling/performance-report-view-filter.md).  
   
-3.  Kliknij przycisk **zapisać przeanalizowane** na pasku narzędzi okna widoku raportu.  
+3.  Kliknij przycisk **Zapisz przeanalizowany** na pasku narzędzi okna widoku raportu.  
   
-4.  W **zapisania analizy danych** okna dialogowego wprowadź określ katalog, a następnie wpisz nazwę pliku.  
+4.  W **zapisać dane przeanalizowane** okna dialogowego pole, określ katalog, a następnie wpisz nazwę pliku.  
   
-5.  Kliknij przycisk **zapisać.**  
+5.  Kliknij przycisk **Zapisz.**  
   
-## <a name="how-to-export-profiling-tools-reports-to-an-xml-or-csv-file"></a>Porady: narzędzi profilowania eksportowania raportów. XML lub. Plik CSV  
- Co najmniej jeden widok raportu można eksportować z pliku Vsp lub vsps pliku danych profilowania jako albo rozdzielonych przecinkami lub plik XML. Można filtrować dane w oknie widoku raportu, przed eksportowania lub wyeksportować widoków raportu w pliku danych z **Eksplorator wydajności** okna.  
+## <a name="how-to-export-profiling-tools-reports-to-an-xml-or-csv-file"></a>Instrukcje: eksportowanie, narzędzia profilowania raportów do pliku .xml lub .csv  
+ Możesz wyeksportować jeden lub więcej widoków raportu z. *vsp* pliku lub. *vsps* profilowania plik danych jako rozdzielany przecinkami lub plik XML. Można filtrować dane w oknie Widok raportu, możesz wyeksportować lub możesz wyeksportować raport widoki całego pliku danych z **Eksplorator wydajności** okna.  
   
 > [!NOTE]
->  Można również skopiuj i wklej zaznaczone wiersze z okna wyświetlania raportu jako wartości rozdzielane tabulatorami.  
+>  Można również skopiuj i Wklej wybrane wiersze z okna widoku raportu jako wartości rozdzielane tabulatorami.  
   
-#### <a name="to-export-performance-reports-from-the-performance-explorer-window"></a>Raporty wydajności można eksportować z okno Eksploratora wydajności  
+#### <a name="to-export-performance-reports-from-the-performance-explorer-window"></a>Aby eksportować raporty dotyczące wydajności w oknie Eksploratora wydajności  
   
-1.  W **Eksplorator wydajności**, wybierz raport, a następnie kliknij prawym przyciskiem myszy i wybierz **wyeksportować**.  
+1.  W **Eksplorator wydajności**, wybierz raport, kliknij prawym przyciskiem myszy i wybierz pozycję **wyeksportować**.  
   
-     **Eksportowanie raportu** zostanie wyświetlone okno dialogowe.  
+     **Eksportowanie raportu** pojawi się okno dialogowe.  
   
 2.  Wybierz widoki raportu, który chcesz wyeksportować.  
   
-3.  W obszarze **prefiksu raport o**, określ prefiks, które chcesz dodać do nazwy raportu.  
+3.  W obszarze **prefiks raportu**, określ prefiks, którego chcesz dodać do nazwy raportu.  
   
 4.  W obszarze **lokalizację dla eksportowanego raportu**, określ katalog.  
   
-5.  W obszarze **format raportu eksportować**, wybierz (rozdzielany przecinkami) (\*CSV\), lub danych XML (\*.xml\).  
+5.  W obszarze **format raportu wyeksportowanych**, wybierz (rozdzielany przecinkami) (\*CSV\), lub danych XML (\*.xml\).  
   
 6.  Kliknij przycisk **wyeksportować**.  
   
-     Każdy widok raport jest zapisywany do osobnego pliku o nazwie \<prefiks > _\<nazwy widoku raportu >.\< CSV&#124;xml >  
+     Każdy widok raport jest zapisywany do pliku o nazwie \<prefiksu > _\<nazwy widoku raportu >.\< CSV&#124;xml >  
   
-#### <a name="to-export-performance-reports-from-the-report-view-window"></a>Raporty wydajności można eksportować z okno widoku raportu  
+#### <a name="to-export-performance-reports-from-the-report-view-window"></a>Raporty można eksportować wydajności z okna widoku raportu  
   
-1.  Otwórz plik Vsp w oknie widoku raportu.  
+1.  Otwórz. *vsp* pliku w oknie Widok raportu.  
   
-2.  (Opcjonalnie) Zastosuj filtr do danych. Aby uzyskać więcej informacji, zobacz [filtr widoku raportów wydajności](../profiling/performance-report-view-filter.md).  
+2.  (Opcjonalnie) Zastosowanie filtru do danych. Aby uzyskać więcej informacji, zobacz [filtr widoku raportów wydajności](../profiling/performance-report-view-filter.md).  
   
 3.  Kliknij przycisk **Eksportowanie raportu** na pasku narzędzi okna widoku raportu.  
   
 4.  Wybierz widoki raportu, który chcesz wyeksportować.  
   
-5.  W obszarze **prefiksu raport o**, określ prefiks, które chcesz dodać do nazwy raportu.  
+5.  W obszarze **prefiks raportu**, określ prefiks, którego chcesz dodać do nazwy raportu.  
   
 6.  W obszarze **lokalizację dla eksportowanego raportu**, określ katalog.  
   
-7.  W obszarze **format raportu eksportować**, wybierz (rozdzielany przecinkami) (\*CSV), lub danych XML (\*.xml).  
+7.  W obszarze **format raportu wyeksportowanych**, wybierz (rozdzielany przecinkami) (\*CSV), lub danych XML (\*.xml).  
   
 8.  Kliknij przycisk **wyeksportować**.  
   
-     Każdy widok raport jest zapisywany do osobnego pliku o nazwie \<prefiks > _\<nazwy widoku raportu >.\< CSV&#124;xml >  
+     Każdy widok raport jest zapisywany do pliku o nazwie \<prefiksu > _\<nazwy widoku raportu >.\< CSV&#124;xml >  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Eksplorator wydajności](../profiling/performance-explorer.md)   
- [Analizowanie wydajności narzędzi danych](../profiling/analyzing-performance-tools-data.md)   
- [Porównywanie plików danych wydajności](../profiling/comparing-performance-data-files.md)   
+ [Analizowanie danych dotyczących narzędzi wydajności](../profiling/analyzing-performance-tools-data.md)   
+ [Porównywanie plików danych dotyczących wydajności](../profiling/comparing-performance-data-files.md)   
  [VSPerfReport](../profiling/vsperfreport.md)

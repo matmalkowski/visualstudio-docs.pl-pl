@@ -1,5 +1,5 @@
 ---
-title: Microsoft Office Word klawiatury, ustawienia klawiatury Microsoft Office, opcje ― Okno dialogowe | Dokumentacja firmy Microsoft
+title: Microsoft Office Word klawiatura, ustawienia klawiatury Microsoft Office — okno dialogowe
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -19,26 +19,26 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9edd5cd987eb6a4e93b02c8e774adefbc7f969d2
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 2f0785ec339da51f4f6b52e2093c1bb2ba273285
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34572114"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35676168"
 ---
 # <a name="microsoft-office-word-keyboard-microsoft-office-keyboard-settings-options-dialog-box"></a>Microsoft Office Word klawiatura, ustawienia klawiatury Microsoft Office — okno dialogowe
-  Program Microsoft Word pakietu Office i programu Visual Studio zarówno obsługi klawiszy skrótów. Inne polecenia w programie Word i w programie Visual Studio może zastąpić tej samej kombinacji klawiszy skrótów. Gdy program Word jest otwarty w projektach na poziomie dokumentu w programie Visual Studio, tylko jedną aplikację naraz odbiera poleceń klawiszy skrótów. Domyślnie program Visual Studio odbiera wszystkie polecenia klawiszy skrótu, ale można wprowadzić ich odbierania, gdy dokument ma fokus, wybierając Word **schemat klawiatury dynamiczne**.  
+  Microsoft Word pakietu Office i programu Visual Studio jednocześnie obsługiwać klawiszy skrótów. Uruchomić ten sam klawisz skrótu dla różnych poleceń w programie Word i w programie Visual Studio. Gdy program Word jest otwarty w projekcie na poziomie dokumentu, w programie Visual Studio, tylko jedną aplikację naraz otrzymuje polecenia klawiszy skrótów. Domyślnie program Visual Studio odbiera wszystkie polecenia klawiszy skrótów, ale możesz wprowadzać Word ich otrzymywania, gdy dokument ma fokus, wybierając **dynamiczny schemat klawiatury**.  
   
- Jeśli używasz klawisz skrótu, który nie jest przypisany do polecenia w aplikacji, która obecnie obsługuje klawiszy skrótów klawisz skrótu są przekazywane do innych aplikacji.  
+ Jeśli używasz klawisza skrótu, który nie jest przypisany do polecenia w aplikacji, która obecnie obsługuje klawiszy skrótów, klawisz skrótu jest przekazywane do innych aplikacji.  
   
- Należy wybrać opcję będą obowiązywać dla projektów programu Word dopóki nie zostanie zmieniony. Zaznaczenie nie ma wpływu na projektów programu Microsoft Office Excel; należy zmiany dla programu Excel, korzystając z opcji Microsoft Office Excel klawiatury.  
+ Możesz wybrać opcję będzie obowiązywać dla projektów programu Word do momentu zmiany. Zaznaczenie nie ma wpływu na projekty programu Microsoft Office Excel; należy wszelkie zmiany dla programu Excel, korzystając z opcji klawiatura programu Microsoft Office Excel.  
   
 ## <a name="uielement-list"></a>Lista elementów interfejsu użytkownika  
  **Schemat klawiatury w usłudze Visual Studio**  
- Visual Studio odbiera wszystkich poleceń klawiszy skrótów, nawet jeśli dokument programu Word ma fokus. Na przykład, jeśli naciśniesz klawisz funkcji **F5** podczas dokument ma fokus, Visual Studio rozpoczyna debugowanie rozwiązania.  
+ Program Visual Studio odbiera wszystkie polecenia klawiszy skrótów, nawet wtedy, gdy dokument programu Word jest ustawiony fokus. Na przykład, jeśli naciśniesz klawisz funkcji **F5** podczas dokument ma fokus, Visual Studio uruchomiony zostanie program debugowania rozwiązania.  
   
- **Schemat klawiatury dynamiczne**  
- Visual Studio odbiera poleceń klawiszy skrótów tylko wtedy, gdy fokus. Po aktywowaniu dokument programu Word, wyraz odbiera wszystkich poleceń klawiszy skrótów. Na przykład, jeśli naciśniesz klawisz funkcji **F5** podczas dokument programu Word ma fokus, wyświetlane jest okno **Znajdź i Zamień** okno dialogowe z **przejdź do** kartę zaznaczone. Jeśli naciśniesz **F5** podczas pracy programu Visual Studio ma fokus, Visual Studio rozpoczyna debugowanie rozwiązania.  
+ **Dynamiczny schemat klawiatury**  
+ Program Visual Studio otrzymuje polecenia klawiszy skrótów, tylko wtedy, gdy ma ona fokus. Po aktywowaniu w dokumencie programu Word, wyraz odbiera wszystkie polecenia klawiszy skrótów. Na przykład, jeśli naciśniesz klawisz funkcji **F5** podczas dokument programu Word jest ustawiony fokus, wyświetlane jest okno **Znajdź i Zamień** okno dialogowe z **przejdź do** wybraną kartą. Jeśli użytkownik naciśnie klawisz **F5** Chociaż program Visual Studio ma fokus, Visual Studio uruchomiony zostanie program debugowania rozwiązania.  
   
 ## <a name="see-also"></a>Zobacz także  
  [Microsoft Office Excel klawiatura, ustawienia klawiatury Microsoft Office — okno dialogowe](../vsto/microsoft-office-excel-keyboard-microsoft-office-keyboard-settings-options-dialog-box.md)  

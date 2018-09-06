@@ -1,5 +1,5 @@
 ---
-title: 'Porady: programowane wyszukiwanie tekstu w zakresach arkusza | Dokumentacja firmy Microsoft'
+title: 'Porady: programowane wyszukiwanie tekstu w zakresach arkusza'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,47 +17,48 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2749834f459085b8d182b58f12a4c372f7493cba
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ba3c4cea78e2c5c32d1bb7159243155e18fd01ce
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35676402"
 ---
-# <a name="how-to-programmatically-search-for-text-in-worksheet-ranges"></a>Porady: Programowane wyszukiwanie tekstu w zakresach arkusza
-  <xref:Microsoft.Office.Interop.Excel.Range.Find%2A> Metody <xref:Microsoft.Office.Interop.Excel.Range> obiektu umożliwia wyszukiwanie tekstu w zakresie. Ten tekst również może być ciągów błędów, które mogą być wyświetlane w komórce arkusza takich jak `#NULL!` lub `#VALUE!`. Aby uzyskać więcej informacji na temat ciągów błąd, zobacz [wartości błędów komórki](http://msdn.microsoft.com/library/office/ff839168.aspx).  
+# <a name="how-to-programmatically-search-for-text-in-worksheet-ranges"></a>Porady: programowane wyszukiwanie tekstu w zakresach arkusza
+  <xref:Microsoft.Office.Interop.Excel.Range.Find%2A> Metody <xref:Microsoft.Office.Interop.Excel.Range> obiektu umożliwia wyszukiwanie tekstu w zakresie. Ten tekst może być również dowolne ciągi błędów, które mogą wystąpić w komórce arkusza, takich jak `#NULL!` lub `#VALUE!`. Aby uzyskać więcej informacji na temat ciągi błędów, zobacz [komórki wartości błędów](http://msdn.microsoft.com/library/office/ff839168.aspx).  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
- Poniższy przykład wyszukuje zakres o nazwie `Fruits` i modyfikuje czcionkę dla komórki zawierające słowo "jabłek". Ta procedura używa również <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> metodę, która używa uprzednio ustawione ustawienia powtórzeń wyszukiwania wyszukiwania. Określ komórki, po upływie którego do wyszukiwania i <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> metoda obsługuje pozostałe.  
+ Poniższy przykład wyszukuje zakres o nazwie `Fruits` i modyfikuje czcionki komórek zawierających wyraz "apples". Ta procedura korzysta również <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> metody, która korzysta z poprzednio ustawionych ustawienia, aby powtórzyć wyszukiwanie wyszukiwania. Określ komórki, po którym do wyszukiwania, a <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> obsługiwała pozostałe.  
   
 > [!NOTE]  
->  <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> Metody wyszukiwania opakowuje powrót do początku zakresu wyszukiwania po osiągnięciu końca zakresu. Kodu musi zapewnić, że wyszukiwanie otacza w pętli nieskończonej. Przykładowa procedura przedstawia sposób rozwiązać przy użyciu <xref:Microsoft.Office.Interop.Excel.Range.Address%2A> właściwości.  
+>  <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> Metody wyszukiwania jest zawijany do początku zakresu wyszukiwania po osiągnięciu końca zakresu. Kod należy się upewnić, że wyszukiwanie nie otacza w pętli nieskończonej. Przykładowa procedura pokazuje, jak rozwiązać przy użyciu <xref:Microsoft.Office.Interop.Excel.Range.Address%2A> właściwości.  
   
- ![łącze do wideo](../vsto/media/playvideo.gif "łącze do wideo") dla powiązanych pokaz wideo, zobacz [jak I: Użyj metody Znajdź w dodatku Excel?](http://go.microsoft.com/fwlink/?LinkID=130294).  
+ ![Link do wideo](../vsto/media/playvideo.gif "link do wideo") powiązane demonstracyjne wideo – zobacz [jak I: Użyj metody Find w dodatku programu Excel?](http://go.microsoft.com/fwlink/?LinkID=130294).  
   
-### <a name="to-search-for-text-in-a-worksheet-range"></a>Aby wyszukać tekst w zakresie arkusza  
+## <a name="to-search-for-text-in-a-worksheet-range"></a>Aby wyszukać tekst w zakresie arkusza  
   
-1.  Zadeklaruj zmienne dla śledzenia całego zakresu, pierwszy znaleziony zakres i znaleziono bieżącego zakresu.  
+1.  Zadeklaruj zmienne do śledzenia całego zakresu, pierwszy znaleziony zakres i znaleziono bieżącego zakresu.  
   
      [!code-csharp[Trin_VstcoreExcelAutomation#58](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#58)]
      [!code-vb[Trin_VstcoreExcelAutomation#58](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#58)]  
   
-2.  Wyszukiwanie pierwszego dopasowania określenia wszystkich parametrów, z wyjątkiem komórki do wyszukiwania po.  
+2.  Wyszukaj pierwsze dopasowanie, określając wszystkie parametry z wyjątkiem komórki do wyszukiwania po.  
   
      [!code-csharp[Trin_VstcoreExcelAutomation#59](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#59)]
      [!code-vb[Trin_VstcoreExcelAutomation#59](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#59)]  
   
-3.  Kontynuować wyszukiwanie, tak długo, jak długo są zgodne.  
+3.  Kontynuuj wyszukiwanie, tak długo, jak są zgodne.  
   
      [!code-csharp[Trin_VstcoreExcelAutomation#60](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#60)]
      [!code-vb[Trin_VstcoreExcelAutomation#60](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#60)]  
   
-4.  Porównanie pierwszego zakresu znaleziono (`firstFind`) do **nic**. Jeśli `firstFind` nie zawiera wartości, magazynów kodu optymalizacji znaleziono zakresu (`currentFind`).  
+4.  Porównaj pierwszego znaleziono zakresu (`firstFind`) do **nic**. Jeśli `firstFind` nie zawiera wartości, natychmiast magazynów kodu znaleziono zakresu (`currentFind`).  
   
      [!code-csharp[Trin_VstcoreExcelAutomation#61](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#61)]
      [!code-vb[Trin_VstcoreExcelAutomation#61](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#61)]  
   
-5.  Zamknij pętli, jeśli adres zakresu znaleziono zgodny z adresem pierwszy znaleziony zakresu.  
+5.  Wyjście z pętli, jeśli adres znaleziono zakresu jest zgodny z adresem, pierwszy znaleziony zakresu.  
   
      [!code-csharp[Trin_VstcoreExcelAutomation#62](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#62)]
      [!code-vb[Trin_VstcoreExcelAutomation#62](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#62)]  
@@ -67,21 +68,21 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[Trin_VstcoreExcelAutomation#63](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#63)]
      [!code-vb[Trin_VstcoreExcelAutomation#63](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#63)]  
   
-7.  Wykonaj wyszukiwanie w innym.  
+7.  Wykonaj innych kryteriów wyszukiwania.  
   
      [!code-csharp[Trin_VstcoreExcelAutomation#64](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#64)]
      [!code-vb[Trin_VstcoreExcelAutomation#64](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#64)]  
   
- W poniższym przykładzie przedstawiono metody ukończenia.  
+ Poniższy przykład pokazuje całą metodę.  
   
 ## <a name="example"></a>Przykład  
  [!code-csharp[Trin_VstcoreExcelAutomation#57](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#57)]
  [!code-vb[Trin_VstcoreExcelAutomation#57](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#57)]  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Praca z zakresami](../vsto/working-with-ranges.md)   
  [Porady: programowane stosowanie stylów do zakresów arkusza w skoroszycie](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
  [Porady: programowane odwoływanie do zakresów arkusza w kodzie](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)   
- [Parametry opcjonalne w rozwiązaniach Office](../vsto/optional-parameters-in-office-solutions.md)  
+ [Parametry opcjonalne w rozwiązaniach pakietu Office](../vsto/optional-parameters-in-office-solutions.md)  
   
   

@@ -1,5 +1,5 @@
 ---
-title: Dostosowywanie funkcji interfejsu użytkownika korzystając z rozszerzalności interfejsów
+title: Dostosowywanie funkcji interfejsu użytkownika, korzystając z rozszerzalności interfejsów
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -23,64 +23,65 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6d9fd69cb747c235f78be8065d07f03f5b39d66b
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 15d666ed4e2896a1645f1f47a5a310dc3151309f
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35677196"
 ---
-# <a name="customize-ui-features-by-using-extensibility-interfaces"></a>Dostosowywanie funkcji interfejsu użytkownika korzystając z rozszerzalności interfejsów
-  Narzędzia Office development w Visual Studio Podaj klas i projektantów, które obsługują wiele szczegóły implementacji używanych do tworzenia niestandardowych okienek zadań, dostosowań Wstążki i regionów formularzy programu Outlook w dodatku VSTO. Jednak można też wdrożyć *rozszerzalności interfejsu* dla każdej funkcji samodzielnie, jeśli mają szczególne wymagania.  
+# <a name="customize-ui-features-by-using-extensibility-interfaces"></a>Dostosowywanie funkcji interfejsu użytkownika, korzystając z rozszerzalności interfejsów
+  Narzędzi programistycznych pakietu Office w programie Visual Studio zawierają klasy i projektantów, które obsługują wiele szczegółów implementacji, gdy ich użyć do tworzenia niestandardowych okienek zadań, dostosowań Wstążki i regionach formularzy programu Outlook w dodatku VSTO. Jednak możesz również wdrożyć *interfejsu rozszerzalności* dla każdej funkcji samodzielnie, jeśli masz specjalne wymagania.  
   
  [!INCLUDE[appliesto_allapp](../vsto/includes/appliesto-allapp-md.md)]  
   
-## <a name="overview-of-extensibility-interfaces"></a>Przegląd rozszerzalności interfejsów  
- Microsoft Office definiuje zestaw rozszerzalności interfejsów, które dodatków COM VSTO można zaimplementować w celu dostosowania niektórych funkcji, takich jak wstążki. Te interfejsy zapewniają pełną kontrolę nad funkcje, które zapewniają dostęp do. Jednak implementacja te interfejsy rutynowych współdziałanie COM w kodzie zarządzanym. W niektórych przypadkach model programowania z tych interfejsów również nie jest intuicyjne dla deweloperów, którzy są przystosowane do programu .NET Framework.  
+## <a name="overview-of-extensibility-interfaces"></a>Omówienie rozszerzalności interfejsów  
+ Microsoft Office definiuje zestaw rozszerzalności interfejsów, które można zaimplementować dodatki COM, VSTO, aby dostosować niektóre funkcje, takie jak wstążki. Te interfejsy zapewniają pełną kontrolę nad funkcjami, które zapewniają dostęp do. Jednak wdrażanie tych interfejsów wymaga pewną wiedzę na temat współdziałania COM w kodzie zarządzanym. W niektórych przypadkach model programowania tych interfejsów również nie jest intuicyjna dla deweloperów, którzy są przyzwyczajeni do programu .NET Framework.  
   
- Podczas tworzenia dodatku VSTO przy użyciu szablonów projektu pakietu Office w Visual Studio, nie trzeba implementować interfejsów rozszerzalności, aby dostosować funkcje, takie jak wstążki. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Implementuje te interfejsy dla Ciebie. Zamiast tego można użyć bardziej intuicyjne klasy i projektantów dostarczane przez program Visual Studio. Jednak nadal zaimplementowaniem rozszerzalności interfejsów bezpośrednio w dodatku VSTO z aby.  
+ Podczas tworzenia dodatku narzędzi VSTO przy użyciu szablonów projektów pakietu Office w programie Visual Studio, nie trzeba implementować interfejsy rozszerzalności, aby dostosować funkcje, takie jak wstążki. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Implementuje te interfejsy dla Ciebie. Zamiast tego można użyć bardziej intuicyjne klasy i projektanci dostarczane przez program Visual Studio. Jednak możesz nadal zaimplementować rozszerzalności interfejsów bezpośrednio w dodatku narzędzi VSTO dla programów, jeśli chcesz.  
   
- Aby uzyskać więcej informacji na temat klas i projektantów, których program Visual Studio udostępnia tych funkcji, zobacz [niestandardowego okienka zadań](../vsto/custom-task-panes.md), [projektanta wstążki](../vsto/ribbon-designer.md), i [utworzyć regionach formularzy programu Outlook](../vsto/creating-outlook-form-regions.md).  
+ Aby uzyskać więcej informacji o klasach i projektantów, udostępnianych przez program Visual Studio w ramach tych funkcji, zobacz [niestandardowych okienek zadań](../vsto/custom-task-panes.md), [projektanta wstążki](../vsto/ribbon-designer.md), i [tworzenie regionach formularzy programu Outlook](../vsto/creating-outlook-form-regions.md).  
   
-## <a name="extensibility-interfaces-you-can-implement-in-a-vsto-add-in"></a>Rozszerzalność interfejsów, które można zaimplementować w dodatku VSTO  
+## <a name="extensibility-interfaces-you-can-implement-in-a-vsto-add-in"></a>Rozszerzalność interfejsów, które można zaimplementować w dodatku narzędzi VSTO  
  W poniższej tabeli wymieniono rozszerzalności interfejsów, które można zaimplementować i aplikacje, które je obsługują.  
   
 |Interface|Opis|Aplikacje|  
 |---------------|-----------------|------------------|  
-|<xref:Microsoft.Office.Core.IRibbonExtensibility>|Implementuje ten interfejs do dostosowywania wstążki interfejsu użytkownika. **Uwaga:** można dodać **wstążki (XML)** elementu do projektu, aby wygenerować domyślną <xref:Microsoft.Office.Core.IRibbonExtensibility> implementacja użytkownika dodatku VSTO. Aby uzyskać więcej informacji, zobacz [kodu XML wstążki](../vsto/ribbon-xml.md).|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> InfoPath 2010<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Projekt<br /><br /> Visio<br /><br /> Word|  
+|<xref:Microsoft.Office.Core.IRibbonExtensibility>|Implementuje ten interfejs, aby dostosować interfejs użytkownika wstążki. **Uwaga:** można dodać **wstążki (XML)** elementu do projektu, aby wygenerować domyślny <xref:Microsoft.Office.Core.IRibbonExtensibility> implementacji w dodatku VSTO. Aby uzyskać więcej informacji, zobacz [kodu XML wstążki](../vsto/ribbon-xml.md).|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> InfoPath 2010<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Projekt<br /><br /> Visio<br /><br /> Word|  
 |<xref:Microsoft.Office.Core.ICustomTaskPaneConsumer>|Implementuje ten interfejs do tworzenia niestandardowego okienka zadań.|Excel<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Word|  
 |<xref:Microsoft.Office.Interop.Outlook.FormRegionStartup>|Implementuje ten interfejs do tworzenia regionów formularzy programu Outlook.|Outlook|  
   
- Istnieje kilka interfejsy rozszerzeń, w których są definiowane przez Microsoft Office, takich jak <xref:Microsoft.Office.Core.IBlogExtensibility>, <xref:Microsoft.Office.Core.EncryptionProvider>, i <xref:Microsoft.Office.Core.SignatureProvider>. Program Visual Studio nie obsługuje wdrażanie tych interfejsów w Add VSTO utworzone przy użyciu szablonów projektu pakietu Office.  
+ Istnieje kilka interfejsów rozszerzalności, w które są definiowane przez Microsoft Office, takich jak <xref:Microsoft.Office.Core.IBlogExtensibility>, <xref:Microsoft.Office.Core.EncryptionProvider>, i <xref:Microsoft.Office.Core.SignatureProvider>. Program Visual Studio nie obsługuje wykonywania tych interfejsów w dodatku narzędzi VSTO utworzone przy użyciu szablonów projektów pakietu Office.  
   
-## <a name="use-extensibility-interfaces"></a>Używanie rozszerzalności interfejsów  
- Aby dostosowywanie funkcji interfejsu użytkownika przy użyciu interfejsu rozszerzalności, zaimplementuj odpowiedni interfejs w projekcie dodatku VSTO. Następnie zastąp <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> sposób zwrócenia wystąpienia klasy, która implementuje interfejs.  
+## <a name="use-extensibility-interfaces"></a>Użyj rozszerzalności interfejsów  
+ Dostosowywanie funkcji interfejsu użytkownika przy użyciu interfejsu rozszerzalności, należy zaimplementować odpowiedni interfejs w projekcie dodatku narzędzi VSTO. Następnie zastąp <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> metodę, aby zwrócić wystąpienia klasy, która implementuje interfejs.  
   
- Przykładową aplikację prezentującą implementowania <xref:Microsoft.Office.Core.IRibbonExtensibility>, <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer>, i <xref:Microsoft.Office.Interop.Outlook.FormRegionStartup> interfejsy w dodatku VSTO dla programu Outlook, zobacz przykład interfejsu użytkownika menedżera w [Office development ― przykłady](../vsto/office-development-samples.md).  
+ Dla przykładowej aplikacji, który demonstruje sposób implementacji <xref:Microsoft.Office.Core.IRibbonExtensibility>, <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer>, i <xref:Microsoft.Office.Interop.Outlook.FormRegionStartup> interfejsy w dodatku narzędzi VSTO dla programu Outlook, zobacz przykład interfejsu użytkownika menedżera w [Office development ― przykłady](../vsto/office-development-samples.md).  
   
-### <a name="example-of-implementing-an-extensibility-interface"></a>Przykład Implementowanie interfejsu rozszerzalności  
- W poniższym przykładzie kodu pokazano prosty implementacja <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer> interfejs do tworzenia niestandardowego okienka zadań. W tym przykładzie definiuje dwie klasy:  
+### <a name="example-of-implementing-an-extensibility-interface"></a>Przykład implementacji interfejsów rozszerzalności  
+ Poniższy przykład kodu demonstruje proste wdrażanie <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer> interfejs do tworzenia niestandardowego okienka zadań. Ten przykład definiuje dwie klasy:  
   
--   `TaskPaneHelper` Klasa implementuje <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer> można tworzyć i wyświetlać niestandardowego okienka zadań.  
+-   `TaskPaneHelper` Klasy implementuje <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer> zostać utworzony i wyświetlony niestandardowego okienka zadań.  
   
--   `TaskPaneUI` Klasa udostępnia interfejs użytkownika w okienku zadań. Wartości atrybutów `TaskPaneUI` klasy uwidaczniania klasy COM, który umożliwia aplikacjom Microsoft Office odnajdywanie klasy. W tym przykładzie interfejsu użytkownika jest pusta <xref:System.Windows.Forms.UserControl>, ale można dodawać formanty modyfikacji kodu.  
+-   `TaskPaneUI` Klasa udostępnia interfejs użytkownika okienka zadań. Wartości atrybutów `TaskPaneUI` klasy widoczności klasy COM, który umożliwia aplikacji Microsoft Office odnaleźć klasy. W tym przykładzie interfejs użytkownika jest pusta <xref:System.Windows.Forms.UserControl>, ale można dodać formanty, modyfikując kod.  
   
     > [!NOTE]  
-    >  Do udostępnienia `TaskPaneUI` klasy dla modelu COM, należy także ustawić **Zarejestruj dla międzyoperacyjności z modelem COM** właściwości projektu.  
+    >  Aby udostępnić `TaskPaneUI` klasy dla modelu COM, należy także ustawić **Zarejestruj dla współdziałania COM** właściwość dla projektu.  
   
  [!code-vb[Trin_SimpleExtensibilityInterface#1](../vsto/codesnippet/VisualBasic/Trin_SimpleExtensibilityInterface/ThisAddIn.vb#1)]
  [!code-csharp[Trin_SimpleExtensibilityInterface#1](../vsto/codesnippet/CSharp/Trin_SimpleExtensibilityInterface/ThisAddIn.cs#1)]  
   
- Aby uzyskać więcej informacji o implementacji <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer>, zobacz [Tworzenie niestandardowych okienek zadań w pakiecie Office system 2007](http://msdn.microsoft.com/en-us/256313db-18cc-496c-a961-381ed9ca94be) w dokumentacji programu Microsoft Office.  
+ Aby uzyskać więcej informacji o implementowaniu <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer>, zobacz [Tworzenie niestandardowych okienek zadań w 2007 Office system](http://msdn.microsoft.com/256313db-18cc-496c-a961-381ed9ca94be) w dokumentacji programu Microsoft Office.  
   
-### <a name="example-of-overriding-the-requestservice-method"></a>Przykład przesłaniania metody RequestService  
- W poniższym przykładzie pokazano, jak zastąpić <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> sposób zwrócenia wystąpienia klasy `TaskPaneHelper` klasy z poprzednim przykładzie kodu. Sprawdza wartość *serviceGuid* parametr, aby ustalić, który interfejs, który jest wymagany, a następnie zwraca obiekt, który implementuje ten interfejs.  
+### <a name="example-of-overriding-the-requestservice-method"></a>Zastępowanie metody RequestService przykład  
+ Poniższy przykład kodu demonstruje sposób zastąpienia <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> metodę, aby zwrócić wystąpienia `TaskPaneHelper` klasy z poprzedniego przykładu kodu. Sprawdza wartość *serviceGuid* parametru, aby określić, który interfejs jest wymagana, a następnie zwraca obiekt, który implementuje ten interfejs.  
   
  [!code-vb[Trin_SimpleExtensibilityInterface#2](../vsto/codesnippet/VisualBasic/Trin_SimpleExtensibilityInterface/ThisAddIn.vb#2)]
  [!code-csharp[Trin_SimpleExtensibilityInterface#2](../vsto/codesnippet/CSharp/Trin_SimpleExtensibilityInterface/ThisAddIn.cs#2)]  
   
 ## <a name="see-also"></a>Zobacz także  
- [Office development ― przykłady i wskazówki](../vsto/office-development-samples-and-walkthroughs.md)   
- [Program dodatków VSTO](../vsto/programming-vsto-add-ins.md)   
+ [Office development ― przykłady i przewodniki](../vsto/office-development-samples-and-walkthroughs.md)   
+ [Program dodatków narzędzi VSTO](../vsto/programming-vsto-add-ins.md)   
  [Opracowywania rozwiązań pakietu Office](../vsto/developing-office-solutions.md)   
  [Wywoływanie kodu w dodatkach VSTO z innych rozwiązań pakietu Office](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)   
  [Porady: tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   

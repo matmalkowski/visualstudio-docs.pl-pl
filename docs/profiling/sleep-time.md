@@ -14,14 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b9a3894097c553d8505fd61f15fbdec8c188e79
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b94b1695eb36aa8f55847c21a14d72357d51a405
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35677457"
 ---
 # <a name="sleep-time"></a>Czas uśpienia
-Te segmenty na osi czasu są skojarzone z blokowaniem czas, który jest skategoryzowany jako uśpienia. Kategoria uśpienia oznacza to, że wątek dobrowolnie udzielił się jego rdzenia logicznego jest bezczynne. W tym czasie wątek został zablokowany w interfejsie API, który Concurrency Visualizer jest liczy się jako uśpienia. Interfejsy API, takich jak `Sleep()` i `SwitchToThread()` należą do tej grupy.  
+Te segmenty na osi czasu są skojarzone z czasu blokowania, które należą do kategorii uśpienia. Kategoria uśpienia oznacza, że wątek dobrowolnie dało się jego rdzeń logiczny i wykonując żadnej pracy. W tym czasie wątek został zablokowany w interfejsie API, który Concurrency Visualizer jest liczy się jako uśpienia. Interfejsy API, takie jak `Sleep()` i `SwitchToThread()` należą do tej grupy.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Widok wątków](../profiling/threads-view-parallel-performance.md)

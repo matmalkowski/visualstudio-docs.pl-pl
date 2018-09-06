@@ -1,5 +1,5 @@
 ---
-title: Niezarządzany wykaz interfejsów API (Office development w Visual Studio)
+title: Niezarządzany wykaz interfejsów API (Office development w programie Visual Studio)
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,21 +16,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 97388073d63b25bb17a7f49f4e2c5fb96bf2f572
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 9b0f48ea5997c2c8c2dd7d90eebde8322fad8a7a
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34767900"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35676348"
 ---
-# <a name="unmanaged-api-reference-office-development-in-visual-studio"></a>Niezarządzany wykaz interfejsów API (Office development w Visual Studio)
-  Począwszy od systemu Microsoft Office 2007, użyj aplikacji pakietu Office [imanagedaddin — interfejs](../vsto/imanagedaddin-interface.md) interfejs do wywołania w dodatku VSTO modułu ładującego składnik, który jest dołączony do [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Ten składnik umożliwiają załadowanie zarządzanych dodatków VSTO. Możesz utworzyć własne składnika dodatku VSTO modułu ładującego z zastosowaniem tego interfejsu.  
+# <a name="unmanaged-api-reference-office-development-in-visual-studio"></a>Niezarządzany wykaz interfejsów API (Office development w programie Visual Studio)
+  Począwszy od systemu Microsoft Office 2007, aplikacji pakietu Office korzysta [imanagedaddin — interfejs](../vsto/imanagedaddin-interface.md) interfejs do wywołania w dodatku narzędzi VSTO programu ładującego składnik, który jest dołączony do [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Ten składnik ułatwiają zarządzane ładowania dodatków narzędzi VSTO. Możesz utworzyć własne składnika dodatku narzędzi VSTO dla programów modułu ładującego poprzez implementację tego interfejsu.  
   
 > [!NOTE]  
->  Pytań dotyczących projektowania rozwiązań, które rozszerzają możliwości pakietu Office przez [wielu platform](https://dev.office.com/add-in-availability)? Zapoznaj się z nowym [modelu dodatków pakietu Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Dodatków pakietu Office mieć niewielkie rozmiary w porównaniu do dodatków VSTO i rozwiązań i można ich tworzyć przy użyciu prawie każdego technologii, takich jak HTML5, CSS3, JavaScript i XML programowanie dla sieci web.  
+>  Zainteresowanych opracowywaniem rozwiązań, które rozszerzają możliwości pakietu Office w [wiele platform](https://dev.office.com/add-in-availability)? Zapoznaj się z nowym [modelu dodatków pakietu Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Dodatki pakietu Office mieć o niewielkich rozmiarach, w porównaniu do dodatków narzędzi VSTO dla programów i rozwiązań, a następnie utworzyć je przy użyciu niemal dowolnej technologii, takich jak HTML5, JavaScript, CSS3 i XML programowanie dla sieci web.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
  [Imanagedaddin — interfejs](../vsto/imanagedaddin-interface.md)  
- Interfejs COM, który można zaimplementować w celu ładowanie i zwalnianie zarządzane dodatków VSTO w aplikacjach pakietu Office.  
+ To interfejs modelu COM, który można zaimplementować, aby załadować i rozładować zarządzanych dodatków narzędzi VSTO dla programów w aplikacjach pakietu Office.  
   
   

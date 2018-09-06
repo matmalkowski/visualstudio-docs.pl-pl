@@ -1,6 +1,6 @@
 ---
-title: R Tools for Visual Studio — Zapraszamy
-description: Podsumowanie dla deweloperów, którzy zainstalowali R narzędzi dla programu Visual Studio.
+title: Narzędzia języka R dla programu Visual Studio — Zapraszamy
+description: Informacje podsumowujące dla deweloperów, którzy zainstalowali R Tools for Visual Studio.
 ms.date: 01/24/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-rtvs
@@ -10,30 +10,31 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 5370a399ba5d66a868f3804106e062c214e4fe30
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 2dd23b87bc3d362f7d198cdd0e5d63e0ebac26d5
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35667057"
 ---
-# <a name="welcome-to-r-tools-for-visual-studio"></a>R Tools for Visual Studio — Zapraszamy
+# <a name="welcome-to-r-tools-for-visual-studio"></a>Narzędzia języka R dla programu Visual Studio — Zapraszamy
 
-Dziękujemy za zainstalowanie R narzędzi dla programu Visual Studio (RTVS)! Go wyewidencjonować i Daj nam znać, co myślisz przy użyciu łącza w obszarze [zasobów](#resources).
+Dziękujemy za zainstalowanie narzędzia R Tools for Visual Studio (RTVS)! Sprawdź go i Daj nam znać, co myślisz, korzystając z linków w obszarze [zasobów](#resources).
 
 ![Zrzut ekranu RTVS](media/installer-screenshot.png)
 
-## <a name="resources"></a>Zasoby
+## <a name="resources"></a>Resources
 
 - [Dokumentacja](index.md)
-- [Kroki instalacji](installing-r-tools-for-visual-studio.md)
-- [Prześlij i Przeglądaj usterek i żądania funkcji na GitHib](https://github.com/Microsoft/RTVS/issues)
-- [Eksploruj i przyczyniają się do kodu źródłowego](https://github.com/Microsoft/RTVS/blob/master/LICENSE)
-- Aby wysłać opinię, bez korzystania z usługi Github (która jest preferowana), należy użyć **narzędzia R > opinie** menu w programie Visual Studio.
+- [Jak zainstalować narzędzia języka R dla programu Visual Studio](installing-r-tools-for-visual-studio.md)
+- [Przesyłaj i Przeglądaj usterki i sugestie funkcji na GitHib](https://github.com/Microsoft/RTVS/issues)
+- [Eksploruj i Współtworzenie kodu źródłowego](https://github.com/Microsoft/RTVS/blob/master/LICENSE)
+- Aby wysłać opinię, bez korzystania z usługi Github (czyli preferowany), należy użyć **R Tools > opinii** menu w programie Visual Studio.
 
-## <a name="microsoft-r-distributions"></a>Dystrybucje R firmy Microsoft
+## <a name="microsoft-r-distributions"></a>Microsoft R dystrybucji
 
-RTVS obsługuje R sieci CRAN, a dystrybucje R firmy Microsoft, łącznie z wersją R są dystrybuowane z programu SQL Server 2016. Poniższe linki udostępniają więcej informacji na różne dystrybucje R firmy Microsoft:
+RTVS obsługuje CRAN języka R i Microsoft R dystrybucji, w tym wersję R są dystrybuowane za pomocą programu SQL Server 2016. Poniższe linki zawierają dodatkowe informacje w różnych dystrybucjach R firmy Microsoft:
 
-- [Otwórz program Microsoft R](https://mran.microsoft.com/download/)
+- [Microsoft R Open](https://mran.microsoft.com/download/)
 - [Microsoft R Client](/machine-learning-server/r-client/what-is-microsoft-r-client)
-- [Microsoft Machine Learning serwer (dawniej R)](/machine-learning-server/)
+- [Serwer Microsoft Machine Learning (dawniej program R Server)](/machine-learning-server/)

@@ -1,5 +1,5 @@
 ---
-title: Namedrange — formant | Dokumentacja firmy Microsoft
+title: NamedRange — formant
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -20,40 +20,40 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7ea0b0f59731f711dc32258aea31358626825f5d
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 9c9bc4ff5b3515d5dcd4dab1eef81bf5c9abf979
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34573092"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35677517"
 ---
 # <a name="namedrange-control"></a>NamedRange — formant
-  <xref:Microsoft.Office.Tools.Excel.NamedRange> Kontroli jest zakresem, który ma unikatową nazwę, opisuje zdarzenia i może być powiązany z danymi. Aby uzyskać więcej informacji, zobacz [model obiektu Excel ― omówienie](../vsto/excel-object-model-overview.md).  
+  <xref:Microsoft.Office.Tools.Excel.NamedRange> Kontrolka jest w zakresie, który ma unikatową nazwę, udostępnia zdarzenia i może być powiązana z danymi. Aby uzyskać więcej informacji, zobacz [model obiektu Excel ― omówienie](../vsto/excel-object-model-overview.md).  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
 ## <a name="create-the-control"></a>Tworzenie formantu  
- Możesz dodać <xref:Microsoft.Office.Tools.Excel.NamedRange> formantów do arkusza w czasie projektowania lub w czasie wykonywania w projektach na poziomie dokumentu programu Microsoft Office Excel.  
+ Możesz dodać <xref:Microsoft.Office.Tools.Excel.NamedRange> kontrolek do arkusza programu Microsoft Office Excel, w czasie projektowania lub w czasie wykonywania w projektach na poziomie dokumentu.  
   
- Możesz dodać <xref:Microsoft.Office.Tools.Excel.NamedRange> formantów do arkusza w czasie wykonywania w dodatku VSTO. Aby uzyskać więcej informacji, zobacz [porady: formanty dodać NamedRange do arkuszy](../vsto/how-to-add-namedrange-controls-to-worksheets.md).  
+ Możesz dodać <xref:Microsoft.Office.Tools.Excel.NamedRange> kontrolek do arkusza w czasie wykonywania w dodatku VSTO. Aby uzyskać więcej informacji, zobacz [jak: Określa, Dodaj NamedRange do arkuszy](../vsto/how-to-add-namedrange-controls-to-worksheets.md).  
   
 > [!NOTE]  
->  Domyślnie utworzony dynamicznie nazwane zakresy nie są zachowywane w arkuszu zgodnie z formanty hosta po zamknięciu arkusza. Aby uzyskać więcej informacji, zobacz [dodawanie formantów do dokumentów pakietu Office w czasie wykonywania](../vsto/adding-controls-to-office-documents-at-run-time.md).  
+>  Domyślnie przez utworzony dynamicznie nazwane zakresy nie są zachowywane w arkuszu zgodnie z kontrolki hosta po zamknięciu arkusza. Aby uzyskać więcej informacji, zobacz [dodawanie formantów do dokumentów pakietu Office w środowisku uruchomieniowym](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
- <xref:Microsoft.Office.Tools.Excel.NamedRange> Formanty może zawierać tylko zakresów określonych arkuszy. <xref:Microsoft.Office.Tools.Excel.NamedRange> formanty nie może mieć nazwy względne, które są stosowane do wszystkich arkuszy, a nie składają się z zakresów, obejmującej dwa lub więcej arkuszy w skoroszycie (zakresy 3-).  
+ <xref:Microsoft.Office.Tools.Excel.NamedRange> Formanty może zawierać wyłącznie z zakresów określonych arkuszy. <xref:Microsoft.Office.Tools.Excel.NamedRange> kontrolki nie mogą mieć względne nazwy, które są stosowane do wszystkich arkuszy, a nie składają się one z zakresów, które rozciągają się dwa lub więcej arkuszy w skoroszycie (3-zakresami).  
   
 ## <a name="bind-data-to-the-control"></a>Wiązanie danych do kontrolki  
- Nazwany zakres wydają się być odpowiednimi kandydatami do złożonych danych powiązania, ponieważ może mieć wiele komórek. jednak zakres jest tylko Kolekcja komórek, których nie można łatwo można zamapować do określonej kolumny z zestawu danych. W związku z tym <xref:Microsoft.Office.Tools.Excel.NamedRange> formanty obsługują tylko proste powiązanie danych. <xref:Microsoft.Office.Tools.Excel.ListObject> Formantu można używać dla złożone powiązanie danych. Aby uzyskać więcej informacji, zobacz [ListObject — formant](../vsto/listobject-control.md).  
+ Nazwany zakres wydają się być dobrym kandydatem do złożonych danych powiązania, ponieważ może mieć wiele komórek. jednak zakres jest tylko kolekcja komórki, które nie łatwo można mapować do określonej kolumny zestawu danych. W związku z tym <xref:Microsoft.Office.Tools.Excel.NamedRange> formantów obsługują tylko proste powiązanie danych. <xref:Microsoft.Office.Tools.Excel.ListObject> Kontroli może służyć do złożone powiązanie danych. Aby uzyskać więcej informacji, zobacz [kontrolki ListObject](../vsto/listobject-control.md).  
   
- <xref:Microsoft.Office.Tools.Excel.NamedRange> Formantu można powiązać źródła danych przy użyciu <xref:System.Windows.Forms.Control.DataBindings%2A> właściwości. Domyślna właściwość powiązania danych z <xref:Microsoft.Office.Tools.Excel.NamedRange> formant jest <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A>.  
+ <xref:Microsoft.Office.Tools.Excel.NamedRange> Kontroli można powiązać źródła danych przy użyciu <xref:System.Windows.Forms.Control.DataBindings%2A> właściwości. Domyślne właściwości powiązania danych z <xref:Microsoft.Office.Tools.Excel.NamedRange> formant jest <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A>.  
   
- Jeśli dane w zestawie danych powiązane są aktualizowane przy użyciu dowolnego mechanizmu <xref:Microsoft.Office.Tools.Excel.NamedRange> kontroli odzwierciedla zmiany.  
+ Jeśli dane w zestawie danych powiązane są aktualizowane przy użyciu dowolnego mechanizmu <xref:Microsoft.Office.Tools.Excel.NamedRange> kontroli zmiany zostały uwzględnione.  
   
 ## <a name="formatting"></a>Formatowanie  
- Formatowanie, które mogą być stosowane do <xref:Microsoft.Office.Interop.Excel.Range> można zastosować do <xref:Microsoft.Office.Tools.Excel.NamedRange> formantu. W tym obramowania, czcionki i formatu liczbowego style.  
+ Formatowanie, które mogą być stosowane do <xref:Microsoft.Office.Interop.Excel.Range> mogą być stosowane do <xref:Microsoft.Office.Tools.Excel.NamedRange> kontroli. W tym obramowania, czcionki, formaty liczb i stylów.  
   
-## <a name="rename-the-control"></a>Nazwy formantu  
- Po dodaniu <xref:Microsoft.Office.Tools.Excel.NamedRange> formantu do arkusza z **przybornika**, Visual Studio automatycznie generuje nazwę dla formantu. Można zmienić nazwę w **właściwości** okna.  
+## <a name="rename-the-control"></a>Zmień nazwę kontrolki  
+ Po dodaniu <xref:Microsoft.Office.Tools.Excel.NamedRange> formantu do arkusza z **przybornika**, program Visual Studio automatycznie generuje nazwę dla formantu. Możesz zmienić nazwę w **właściwości** okna.  
   
 ## <a name="events"></a>Zdarzenia  
  Następujące zdarzenia są dostępne dla <xref:Microsoft.Office.Tools.Excel.NamedRange> sterowania:  
@@ -76,15 +76,15 @@ ms.locfileid: "34573092"
   
 ## <a name="see-also"></a>Zobacz także  
  [Automatyzowanie programu Excel za pomocą obiektów rozszerzonych](../vsto/automating-excel-by-using-extended-objects.md)   
- [Office development ― przykłady i wskazówki](../vsto/office-development-samples-and-walkthroughs.md)   
- [Wiązanie danych do formantów w rozwiązaniach pakietu Office](../vsto/binding-data-to-controls-in-office-solutions.md)   
+ [Office development ― przykłady i przewodniki](../vsto/office-development-samples-and-walkthroughs.md)   
+ [Wiązanie danych do kontrolek w rozwiązaniach pakietu Office](../vsto/binding-data-to-controls-in-office-solutions.md)   
  [Rozszerzanie dokumentów programu Word i skoroszytów programu Excel w dodatkach VSTO w czasie wykonywania](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)   
  [Formanty w dokumentach pakietu Office](../vsto/controls-on-office-documents.md)   
  [Dodawanie formantów do dokumentów pakietu Office w czasie wykonywania](../vsto/adding-controls-to-office-documents-at-run-time.md)   
  [Porady: dodawanie formantów NamedRange do arkuszy](../vsto/how-to-add-namedrange-controls-to-worksheets.md)   
  [Porady: zmiana rozmiaru formantów NamedRange](../vsto/how-to-resize-namedrange-controls.md)   
- [Wiązanie danych do formantów w rozwiązaniach pakietu Office](../vsto/binding-data-to-controls-in-office-solutions.md)   
- [Wskazówki: Program w odniesieniu do zdarzeń formantu NamedRange](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)   
- [Ograniczenia programowe elementów hosta i formantów hosta](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
+ [Wiązanie danych do kontrolek w rozwiązaniach pakietu Office](../vsto/binding-data-to-controls-in-office-solutions.md)   
+ [Wskazówki: Programowanie zdarzeń formantu NamedRange](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)   
+ [Ograniczenia programowe elementów hosta i kontrolek hosta](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
   
   

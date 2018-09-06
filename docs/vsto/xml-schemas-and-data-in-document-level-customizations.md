@@ -1,5 +1,5 @@
 ---
-title: Schematy XML i danych na poziomie dokumentu
+title: Schematy XML i dane dostosowywane na poziomie dokumentu
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -19,71 +19,71 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 705afa49ff4209553a56d9c292682207d87d9e28
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: e62a8a7bef72ce34c46621b63188f9d71512be20
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35258645"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35677121"
 ---
-# <a name="xml-schemas-and-data-in-document-level-customizations"></a>Schematy XML i danych na poziomie dokumentu
-  **Ważne** informacji zawartych w tym temacie dotyczące programu Microsoft Word jest przedstawioną wyłącznie do korzyści i użyj osób i organizacji, które znajdują się poza Stanami Zjednoczonymi i jego terytoriów lub używający lub tworzenie programy, które działają na, produktów Microsoft Word, które są licencjonowane przez firmę Microsoft przed 2010 stycznia, po usunięciu implementację funkcji określonej przez Microsoft związane z niestandardowy plik XML z programu Microsoft Word. Te informacje dotyczące programu Microsoft Word może nie być odczytywane lub używane przez osoby lub organizacji w Stanach Zjednoczonych lub w jego terytoriów użytkowników przy użyciu lub tworzenie programów uruchamianych na produktów Microsoft Word, które są licencjonowane przez firmę Microsoft po 10 stycznia 2010 ; te produkty nie będzie działać taka sama jak produktów licencjonowanych przed tą datą lub zakupione i licencję na korzystanie z niego poza Stanami Zjednoczonymi.  
+# <a name="xml-schemas-and-data-in-document-level-customizations"></a>Schematy XML i dane dostosowywane na poziomie dokumentu
+  **Ważne** informacji zawartych w tym temacie dotyczące programu Microsoft Word jest prezentowane wyłącznie do korzyści i korzystanie z innym osobom oraz organizacjom, którzy znajdują się poza w Stanach Zjednoczonych i ich terytoriach lub korzystających z lub tworzenie programy, korzystających z produktów Microsoft Word, które są licencjonowane przez firmę Microsoft przed 2010 stycznia, po usunięciu implementację funkcji określonej przez Microsoft związane z niestandardowy kod XML z programu Microsoft Word. Te informacje dotyczące programu Microsoft Word nie mogą być odczytywane lub używane przez osoby i organizacje w Stanach Zjednoczonych lub jego terytoria, którzy za pomocą lub opracowywanie programów uruchamianych na produkty Microsoft Word, które są licencjonowane przez firmę Microsoft, po 10 stycznia 2010 r. ; te produkty będą nie działa tak samo jako produkty licencjonowane przed tą datą lub kupić i licencjonowane do użycia poza Stanami Zjednoczonymi.  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
- Program Microsoft Office Excel i Microsoft Office Word umożliwia mapowanie schematów z dokumentów. Ta funkcja może uprościć importowanie i eksportowanie danych XML do i z dokumentu.  
+ Microsoft Office Excel i Microsoft Office Word zapewniają możliwość mapowanie schematów z dokumentów. Ta funkcja może uprościć, importowanie i eksportowanie danych XML i dokumentu.  
   
- Visual Studio udostępnia zamapowane elementy schematu w dostosowaniach na poziomie dokumentu jako formanty w modelu programowania. Dla programu Excel programu Visual Studio dodaje obsługę powiązywanie kontrolek z danymi w bazach danych, usługi sieci Web i obiektów. Dla programu Word i Excel Visual Studio dodaje obsługę okienka akcji, które mogą być używane z dokumentem mapowane schematu można utworzyć środowisko rozszerzone użytkownika końcowego dla rozwiązań. Aby uzyskać więcej informacji, zobacz [okienko akcji ― omówienie](../vsto/actions-pane-overview.md).  
+ Visual Studio udostępnia zamapowane elementy schematu w dostosowaniach na poziomie dokumentu jako formanty w modelu programowania. Dla programu Excel programu Visual Studio dodaje obsługę powiązanie kontrolek z danymi w bazach danych, usług sieci Web i obiektów. Dla programów Word i Excel programu Visual Studio dodaje obsługę okienka akcji, które mogą być używane do utworzenia większą wygodę dla rozwiązań za pomocą zamapowany schematu dokumentu. Aby uzyskać więcej informacji, zobacz [okienko akcji ― omówienie](../vsto/actions-pane-overview.md).  
   
 > [!NOTE]  
->  Nie można użyć wieloczęściowego schematów XML rozwiązania programu Excel.  
+>  Nie można użyć wieloczęściowego schematów XML w rozwiązaniach programu Excel.  
   
 ## <a name="objects-created-when-schemas-are-attached-to-excel-workbooks"></a>Obiekty tworzone podczas schematy są dołączone do skoroszytów programu Excel  
- Po dołączeniu schematu do skoroszytu programu Visual Studio automatycznie tworzy obiekty i dodaje je do projektu. Te obiekty nie powinny być usuwane za pomocą narzędzi Visual Studio, ponieważ są one zarządzane przez program Microsoft Excel. Aby usunąć je, Usuń zamapowane elementy z arkusza lub odłączyć schematu za pomocą narzędzi programu Excel.  
+ Po dołączeniu schematu do skoroszytu programu Visual Studio tworzy kilka obiektów i automatycznie dodaje je do projektu. Te obiekty nie powinny być usuwane przy użyciu narzędzi programu Visual Studio, ponieważ są one zarządzane przez program Excel. Aby je usunąć, Usuń zamapowane elementy z arkusza lub odłącz schematu przy użyciu narzędzi programu Excel.  
   
- Istnieją dwa obiekty główne:  
+ Istnieją dwa główne obiekty:  
   
--   Schemat XML (plik XSD). Dla każdego schematu w skoroszycie programu Visual Studio dodaje schematu do projektu. Pojawia się jako element projektu z rozszerzeniem XSD w **Eksploratora rozwiązań**.  
+-   Schemat XML (plik XSD). Dla każdego schematu w skoroszycie programu Visual Studio dodaje schematu do projektu. Ta opcja ma nazwę elementu projektu z rozszerzeniem XSD w **Eksploratora rozwiązań**.  
   
--   Typizowany <xref:System.Data.DataSet> klasy. Ta klasa jest tworzona w oparciu o schemacie. Ta klasa zestawu danych jest widoczny w **widoku klasy**.  
+-   Wpisane <xref:System.Data.DataSet> klasy. Ta klasa jest tworzona w oparciu o schemacie. Ta klasa dataset jest widoczna w **Widok klas**.  
   
-## <a name="objects-created-when-schema-elements-are-mapped-to-excel-worksheets"></a>Obiekty tworzone podczas elementy schematu są mapowane na arkusze programu Excel  
- Podczas mapowania elementu schematu z **źródło XML** okienka zadań do arkusza programu Visual Studio automatycznie tworzy obiekty i dodaje je do projektu:  
+## <a name="objects-created-when-schema-elements-are-mapped-to-excel-worksheets"></a>Obiekty utworzone, gdy elementy schematu są mapowane do arkusza programu Excel  
+ Podczas mapowania elementu schematu z **źródła XML** okienka zadań do arkusza programu Visual Studio automatycznie tworzy kilka obiektów i dodaje je do projektu:  
   
--   Formanty. Dla każdego mapowanego obiektu w skoroszycie <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> kontroli (dla elementów schematu niepowtarzającymi) lub <xref:Microsoft.Office.Tools.Excel.ListObject> sterowania (do powtarzania elementy schematu) jest tworzony w modelu programowania. <xref:Microsoft.Office.Tools.Excel.ListObject> Formantu można usunąć tylko przez usunięcie mapowania i mapowanych obiektów ze skoroszytu. Aby uzyskać więcej informacji na temat formantów, zobacz [elementów, a informacje o formantach](../vsto/host-items-and-host-controls-overview.md).  
+-   Kontrolki. Dla każdego obiektu zamapowanych w skoroszycie <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> kontroli (dla elementów schematu niepowtarzający) lub <xref:Microsoft.Office.Tools.Excel.ListObject> formantu (w przypadku powtarzające się elementy schematu) jest tworzony w modelu programowania. <xref:Microsoft.Office.Tools.Excel.ListObject> Kontroli można usunąć tylko przez usunięcie mapowania i mapowanych obiektów ze skoroszytu. Aby uzyskać więcej informacji na temat formantów, zobacz [elementów, a omówienie kontrolek](../vsto/host-items-and-host-controls-overview.md).  
   
--   Źródło BindingSource. Po utworzeniu <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> przez mapowanie elementu schematu niepowtarzającymi w arkuszu <xref:System.Windows.Forms.BindingSource> jest tworzony i <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> kontrolka jest powiązana z <xref:System.Windows.Forms.BindingSource>. Należy powiązać <xref:System.Windows.Forms.BindingSource> do wystąpienia źródła danych zgodny schemat zamapowane do dokumentu, takie jak wystąpienia typu <xref:System.Data.DataSet> klasy, która została utworzona. Utwórz powiązanie przez ustawienie <xref:System.Windows.Forms.BindingSource.DataSource%2A> i <xref:System.Windows.Forms.BindingSource.DataMember%2A> właściwości, które są widoczne w **właściwości** okna.  
+-   BindingSource. Po utworzeniu <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> przez mapowanie elementu schematu niepowtarzający w arkuszu <xref:System.Windows.Forms.BindingSource> jest tworzony i <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> kontrolka jest powiązana z <xref:System.Windows.Forms.BindingSource>. Musi być powiązany <xref:System.Windows.Forms.BindingSource> do wystąpienia źródła danych, które pasuje do schematu mapowane do dokumentu, takiego jak wystąpienie wpisanego <xref:System.Data.DataSet> klasę, która została utworzona. Utwórz powiązanie, ustawiając <xref:System.Windows.Forms.BindingSource.DataSource%2A> i <xref:System.Windows.Forms.BindingSource.DataMember%2A> właściwości, które są widoczne w **właściwości** okna.  
   
     > [!NOTE]  
-    >  <xref:System.Windows.Forms.BindingSource> Nie został utworzony dla <xref:Microsoft.Office.Tools.Excel.ListObject> obiektów. Należy ręcznie powiązać <xref:Microsoft.Office.Tools.Excel.ListObject> ze źródłem danych, ustawiając <xref:System.Windows.Forms.BindingSource.DataSource%2A> i <xref:System.Windows.Forms.BindingSource.DataMember%2A> właściwości w **właściwości** okna.  
+    >  <xref:System.Windows.Forms.BindingSource> Nie został utworzony dla <xref:Microsoft.Office.Tools.Excel.ListObject> obiektów. Należy samodzielnie ręcznie powiązali <xref:Microsoft.Office.Tools.Excel.ListObject> ze źródłem danych, ustawiając <xref:System.Windows.Forms.BindingSource.DataSource%2A> i <xref:System.Windows.Forms.BindingSource.DataMember%2A> właściwości w **właściwości** okna.  
   
 ### <a name="office-mapped-schemas-and-the-visual-studio-data-sources-window"></a>Office mapowane schematy i okna źródeł danych w usłudze Visual Studio  
- Funkcji mapowanej schematu pakietu Office i programu Visual Studio **źródeł danych** okna może pomóc w przedstawiać dane w arkuszu programu Excel, raportowanie i edytowania. W obu przypadkach można przeciągnij elementy danych na arkuszu programu Excel. Obie metody tworzenia formantów, które są danymi powiązanymi za pośrednictwem <xref:System.Windows.Forms.BindingSource> ze źródłem danych, takich jak <xref:System.Data.DataSet> lub usługi sieci Web.  
+ Funkcje zamapowanego schematu pakietu Office i programu Visual Studio **źródeł danych** okna może pomóc w przedstawienie danych w arkuszu programu Excel, raportowanie i edytowania. W obu przypadkach można przeciągnąć elementy danych, na arkuszu programu Excel. Obie metody tworzenia formantów, które są danymi powiązanymi za pośrednictwem <xref:System.Windows.Forms.BindingSource> ze źródłem danych, takich jak <xref:System.Data.DataSet> lub usługi sieci web.  
   
 > [!NOTE]  
->  Podczas mapowania powtarzający się element schematu do arkusza, program Visual Studio tworzy <xref:Microsoft.Office.Tools.Excel.ListObject>. <xref:Microsoft.Office.Tools.Excel.ListObject> Automatycznie nie jest powiązany z danymi za pomocą <xref:System.Windows.Forms.BindingSource>. Należy ręcznie powiązać <xref:Microsoft.Office.Tools.Excel.ListObject> ze źródłem danych, ustawiając <xref:System.Windows.Forms.BindingSource.DataSource%2A> i <xref:System.Windows.Forms.BindingSource.DataMember%2A> właściwości w **właściwości** okna.  
+>  Kiedy mapujesz powtarzający się element schematu do arkusza programu Visual Studio tworzy <xref:Microsoft.Office.Tools.Excel.ListObject>. <xref:Microsoft.Office.Tools.Excel.ListObject> Automatycznie nie jest powiązany z danymi za pośrednictwem <xref:System.Windows.Forms.BindingSource>. Należy samodzielnie ręcznie powiązali <xref:Microsoft.Office.Tools.Excel.ListObject> ze źródłem danych, ustawiając <xref:System.Windows.Forms.BindingSource.DataSource%2A> i <xref:System.Windows.Forms.BindingSource.DataMember%2A> właściwości w **właściwości** okna.  
   
  W poniższej tabeli przedstawiono niektóre różnice między obiema metodami.  
   
 |Schemat XML|Data Sources — Okno|  
 |----------------|-------------------------|  
 |Używa interfejsu pakietu Office.|Używa **źródeł danych** okna w programie Visual Studio.|  
-|Włącza wbudowane funkcje pakietu Office do importowania i eksportowania danych z plików XML.|Musi Podaj importowanie i eksportowanie funkcji programowo.|  
-|Należy napisać kod do wypełnienia wygenerowanego kontrolek z danymi.|Formanty dodawane z **źródeł danych** okno ma kod wygenerowany automatycznie, aby wypełnić je, oraz parametry połączenia niezbędne podczas korzystania z serwerów bazy danych.|  
+|Udostępnia wbudowane funkcje pakietu Office do importowania i eksportowania danych z plików XML.|Musisz podać importowanie i eksportowanie funkcji programowo.|  
+|Należy napisać kod, aby wypełnić wygenerowanego kontrolki z danymi.|Formanty dodane z **źródeł danych** okno ma kod wygenerowany automatycznie, aby wypełnić go, oraz parametry połączenia niezbędne podczas korzystania z serwerów bazy danych.|  
   
 ## <a name="behavior-when-schemas-are-attached-to-word-documents"></a>Zachowanie, gdy schematy są dołączone do dokumentów programu Word  
- Obiekty danych nie są tworzone po dołączeniu schematu do dokumentu programu Word, który jest używany w projektach na poziomie dokumentu pakietu Office. Jednak podczas mapowania elementu schematu do dokumentu, formanty są tworzone. Typ formantu zależy od rodzaju elementu mapy; powtarzające się elementy generują <xref:Microsoft.Office.Tools.Word.XMLNodes> kontrolek i elementy niepowtarzającymi Generowanie <xref:Microsoft.Office.Tools.Word.XMLNode> kontrolki. Aby uzyskać więcej informacji, zobacz [formant XMLNodes](../vsto/xmlnodes-control.md) i [formant XMLNode](../vsto/xmlnode-control.md).  
+ Obiekty danych nie są tworzone, gdy Dołącz schemat do dokumentu programu Word, który jest używany w dokumencie projektów pakietu Office. Jednak podczas mapowania elementu schematu do dokumentu, formanty są tworzone. Typ formantu zależy od rodzaju elementu mapy; powtarzające się generowanie elementy <xref:Microsoft.Office.Tools.Word.XMLNodes> formanty i niepowtarzający elementy Generowanie <xref:Microsoft.Office.Tools.Word.XMLNode> kontrolki. Aby uzyskać więcej informacji, zobacz [formant XMLNodes](../vsto/xmlnodes-control.md) i [formant XMLNode](../vsto/xmlnode-control.md).  
   
-## <a name="deployment-of-solutions-that-include-xml-schemas"></a>Wdrażanie rozwiązań, które obejmują schematy XML  
- Należy utworzyć Instalatora w celu wdrożenia rozwiązania, który korzysta ze schematu XML, który jest zamapowany do dokumentu. Instalator należy zarejestrować schematu w bibliotece schematu na komputerze użytkownika. Jeśli nie zarejestrujesz schematu rozwiązania będą nadal działać, ponieważ program Word generuje tymczasowego schematu oparte na elementach, które są w dokumencie, gdy użytkownik otwiera go. Jednak użytkownik nie będzie mógł wykonywać sprawdzanie poprawności względem lub zapisać schemat, który został użyty do utworzenia projektu. Aby uzyskać więcej informacji na temat instalatorów, zobacz [wdrażanie aplikacji, usług i składników](/visualstudio/deployment/deploying-applications-services-and-components).  
+## <a name="deployment-of-solutions-that-include-xml-schemas"></a>Wdrażanie rozwiązań, które obejmują schematów XML  
+ Należy utworzyć Instalatora, aby wdrożyć rozwiązanie, które używa schematu XML, który jest zamapowany do dokumentu. Instalator należy zarejestrować schemat w bibliotece schematów na komputerze użytkownika. Jeśli schemat nie jest zarejestrowane, rozwiązanie nadal będzie działać, ponieważ program Word generuje schemat tymczasowe oparte na elementach, które znajdują się w dokumencie, gdy użytkownik otworzy go. Jednak użytkownik nie będzie można wykonywać sprawdzanie poprawności względem lub zapisać schematu, który został użyty do utworzenia projektu. Aby uzyskać więcej informacji na temat instalatory zobacz [wdrażania aplikacji, usług i składników](/visualstudio/deployment/deploying-applications-services-and-components).  
   
- Można również dodać kod do projektu, aby sprawdzić, czy schemat jest w bibliotece i zarejestrowany. Jeśli nie jest dostępne, można ostrzeżenia dla użytkownika.  
+ Można również dodać kod do projektu, aby sprawdzić, czy schemat w bibliotece i zarejestrowana. Jeśli nie jest dostępne, możesz ostrzeżenia dla użytkownika.  
   
  [!code-vb[Trin_VstcoreDataWord#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataWordVB/ThisDocument.vb#1)]
  [!code-csharp[Trin_VstcoreDataWord#1](../vsto/codesnippet/CSharp/Trin_VstcoreDataWordCS/ThisDocument.cs#1)]  
   
 ## <a name="see-also"></a>Zobacz także  
- [Porady: mapowanie schematów z dokumentami programu Word w Visual Studio](../vsto/how-to-map-schemas-to-word-documents-inside-visual-studio.md)   
+ [Porady: mapowanie schematów z dokumentami programu Word w programie Visual Studio](../vsto/how-to-map-schemas-to-word-documents-inside-visual-studio.md)   
  [Porady: mapowanie schematów z arkuszami w programie Visual Studio](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md)  
   
   

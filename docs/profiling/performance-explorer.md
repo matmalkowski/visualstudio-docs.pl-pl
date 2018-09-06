@@ -14,38 +14,39 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 450681f03bcb9bd24272d7bcdc7da34ed015587a
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 837c8d405245237962888a0a689fbdd17f6a0a92
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35677144"
 ---
 # <a name="performance-explorer"></a>Eksplorator wydajności
 
-Visual Studio Profiling Tools umożliwiają deweloperom mierzyć, oceny i docelowa problemy związane z wydajnością w ich kodu. Te narzędzia są w pełni zintegrowane w IDE, aby zapewnić bezproblemową i przystępne środowisko.
+Visual Studio Profiling Tools umożliwia deweloperom mierzyć, oceny i określania elementów docelowych problemy związane z wydajnością w kodzie. Te narzędzia są w pełni zintegrowane w IDE, aby zapewnić bezproblemową i przystępne interfejsu użytkownika.
 
-Profilowanie aplikacji jest prosta. Rozpocznij od utworzenia nowej sesji wydajności. W Visual Studio Team System programowanie Edition można użyć Kreatora sesji wydajności można utworzyć nowej sesji wydajności. Po zakończeniu sesji wydajności, dane zebrane podczas profilowania są zapisywane w pliku Vsp. Można wyświetlić plik Vsp w IDE. Istnieje kilka widoków raportu może pomóc wizualizacji i wykrywać problemy z wydajnością z zbieranych danych.
+Profilowanie aplikacji jest bardzo proste. Możesz rozpocząć od utworzenia nowej sesji wydajności. W Visual Studio Team System Development Edition można użyć Kreatora sesji wydajności, można utworzyć nowej sesji wydajności. Po zakończeniu sesji wydajności, są zapisywane dane zebrane podczas profilowania. *vsp* pliku. Można wyświetlić. *vsp* pliku znajdującego się w środowisku IDE. Brak ułatwia wizualizowanie i wykryć problemy z wydajnością na podstawie danych zebranych kilka widoków raportów.
 
-Narzędzia profilowania można również z wiersza polecenia. Pozwala to użytkownikom elastyczność tych narzędzi z wiersza polecenia lub ich użycie w celu automatyzowania zadań, które używają skryptu.
+Narzędzia profilowania można również w wierszu polecenia. Pozwala to użytkownikom elastyczność tych narzędzi z wiersza polecenia lub ich użycie w celu zautomatyzowania zadań wykonywanych za pomocą skryptu.
 
-Więcej informacji o bieżącym i zaawansowanych tematów dotyczących wydajności i profilowanie można znaleźć w witrynie Microsoft Developer Network tematy i blogów firmy Microsoft. Użyj słowa kluczowe zespołu narzędzi wydajności Enterprise.
+Więcej informacji na temat bieżącego i zaawansowane tematy związane z wydajnością i profilowanie na ten temat można znaleźć w witrynie Microsoft Developer Network dla tematów i blogi firmy Microsoft. Używać słów kluczowych zespołu narzędzi wydajności Enterprise.
 
-## <a name="common-tasks"></a>Typowe zadania
+## <a name="common-tasks"></a>Wspólne zadania
 
-|Zadanie|Zawartość pokrewna|
+|Zadanie|Powiązana zawartość|
 |----------|---------------------|
-|**Techniki dla systemu Windows 8 i nowsze**|[Narzędzia wydajności w przypadku aplikacji systemu Windows 8 i Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)|
-|**Pojęciami profilowania:** pojęć i terminów, które będą używane do zbierania, wyświetlanie i analizowanie wydajności kodu za pomocą narzędzi profilowania.|[Omówienia](../profiling/overviews-performance-tools.md)|
-|**Przechodzić w i to zrobić:** Dowiedz się, ale podstawowe procedury, które będą używane podczas zbierania, wyświetlania i analizowania wydajności kodu przy użyciu narzędzi do profilowania. Wypróbuj ją z praktyczne wskazówki.|[Wprowadzenie](../profiling/getting-started-with-performance-tools.md)|
-|**Konfigurowanie sesji profilowania:** informacje zaawansowane metody Określ projekty lub dane binarne do profilu, wybierz metodę profilowania, wybierz dane wydajności mają być zbierane i ustaw opcje sesji profilowania.|[Konfigurowanie sesji wydajności](../profiling/configuring-performance-sessions.md)|
-|**Kontrolowanie danych, które zbiera profilera:** Użyj właściwości sesji wydajności i interaktywne procedury do uruchamiania i zatrzymywania profilowania oraz dane dotyczące wydajności zbierane tylko informacje, które chcesz ograniczyć.|[Kontrolowanie zbierania danych](../profiling/controlling-data-collection.md)|
-|**Zlokalizuj problemy z wydajnością:** Dowiedz się, jak przeglądać i analizować dane dotyczące wydajności zebranych w oknie widoku raportu narzędzi profilowania.|[Analizowanie wydajności narzędzi danych](../profiling/analyzing-performance-tools-data.md)|
-|**Analizowanie wydajności zmiany:** Dowiedz się, jak do porównywania dwóch plików danych profilera do analizowania wydajności zmiany.|[Porównywanie plików danych wydajności](../profiling/comparing-performance-data-files.md)|
-|**Zapisywanie i udostępnianie wyników:** Dowiedz się, jak można zapisać danych w celu archiwizacji lub udostępniania profilowania.|[Zapisywanie i eksportowanie wydajności narzędzi danych](../profiling/saving-and-exporting-performance-tools-data.md)|
-|**Automatyzowanie profilowania:** Dowiedz się, jak używać narzędzi do profilowania z wiersza polecenia.|[Profilowanie z wiersza polecenia](../profiling/using-the-profiling-tools-from-the-command-line.md)|
-|**Kontrolowanie profilowania programowo:** Dowiedz się, jak przy użyciu zarządzanego i natywnego profilowania narzędzia interfejsów API kontroli zbierania danych bezpośrednio z kodu źródłowego.|[Interfejsy API narzędzi profilowania](../profiling/profiling-tools-apis.md)|
-|**Rozwiązywanie problemów profilowania**|[Rozwiązywanie problemów z wydajnością narzędzi problemów](../profiling/troubleshooting-performance-tools-issues.md)|
+|**Techniki dla systemu Windows 8 lub nowszy**|[Narzędzia do oceny wydajności w aplikacjach Windows 8 i Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)|
+|**Zrozumienie pojęcia profilowania:** Dowiedz się, koncepcjach i terminach, które będą używane do zbierania, wyświetlać i analizować wydajność kodu przy użyciu narzędzi do profilowania.|[Omówienia](../profiling/overviews-performance-tools.md)|
+|**Przyłącz się i to zrobić:** Dowiedz się, ale podstawowe procedury, które będą używane podczas zbierania, wyświetlania i analizowania wydajności kodu za pomocą narzędzi profilowania. Wypróbuj ten produkt z praktyczne wskazówki.|[Wprowadzenie](../profiling/getting-started-with-performance-tools.md)|
+|**Konfigurowanie sesji profilowania:** Dowiedz się więcej, zaawansowane metody jak określić projektów lub pliki binarne do profilu, wybierz metody profilowania, wybierz dane wydajności mają być zbierane i ustaw opcje sesji profilowania.|[Konfigurowanie sesji wydajności](../profiling/configuring-performance-sessions.md)|
+|**Kontroluj, profiler zbiera dane:** Dowiedz się, jak za pomocą właściwości sesji wydajności i interaktywne procedur uruchamiania i zatrzymywania profilowania i sposobu ograniczania dane dotyczące wydajności zbierane tylko informacje, które chcesz.|[Sterowanie zbieraniem danych](../profiling/controlling-data-collection.md)|
+|**Znajdź problemy z wydajnością:** Dowiedz się, jak przeglądać i analizować dane dotyczące wydajności zebrane w oknie widoku raportu narzędzi profilowania.|[Analizowanie danych dotyczących narzędzi do oceny wydajności](../profiling/analyzing-performance-tools-data.md)|
+|**Analizowanie zmian wydajności:** Dowiedz się, jak porównywanie dwóch plików danych profilera, aby analizować zmiany wydajności.|[Porównywanie plików danych dotyczących wydajności](../profiling/comparing-performance-data-files.md)|
+|**Zapisywanie i udostępnianie wyników:** Dowiedz się, jak można zapisać danych w celu archiwizacji lub udostępnianie profilowania.|[Zapisywanie i eksportowanie danych dotyczących narzędzi wydajności](../profiling/saving-and-exporting-performance-tools-data.md)|
+|**Automatyzowanie profilowania:** Dowiedz się, jak używać narzędzi profilowania z wiersza polecenia.|[Profilowanie z wiersza polecenia](../profiling/using-the-profiling-tools-from-the-command-line.md)|
+|**Kontrolowanie profilowania programowo:** Dowiedz się, jak przy użyciu zarządzanego i natywnego profilowania narzędzia interfejsów API sterowanie zbieraniem danych bezpośrednio z kodu źródłowego.|[Interfejsy API narzędzi profilowania](../profiling/profiling-tools-apis.md)|
+|**Rozwiązywanie problemów profilowania**|[Narzędzia do rozwiązywania problemów z wydajnością](../profiling/troubleshooting-performance-tools-issues.md)|
 
 ## <a name="see-also"></a>Zobacz także
 
-[Narzędzia profilowania](../profiling/profiling-tools.md)
+[Pierwsze spojrzenie na narzędziach profilowania](../profiling/profiling-feature-tour.md)

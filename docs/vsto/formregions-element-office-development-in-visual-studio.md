@@ -1,5 +1,5 @@
 ---
-title: '&lt;formregions —&gt; — element (Office development w Visual Studio)'
+title: '&lt;formRegions&gt; — element (Office development w programie Visual Studio)'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,14 +17,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 36741e5e3bcd39dbb6e4ea0746e1877acc581e70
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: b978ef47db6b8803b7730aef14173c3eb19b16e8
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35676217"
 ---
-# <a name="ltformregionsgt-element-office-development-in-visual-studio"></a>&lt;formregions —&gt; — element (Office development w Visual Studio)
-  `formRegions` Elementu `vstov4` przestrzeń nazw zawiera regionów formularzy programu Microsoft Office Outlook, które są skojarzone z dodatku VSTO.  
+# <a name="ltformregionsgt-element-office-development-in-visual-studio"></a>&lt;formRegions&gt; — element (Office development w programie Visual Studio)
+  `formRegions` Elementu `vstov4` przestrzeń nazw zawiera regionów formularzy programu Microsoft Office Outlook, które są skojarzone z dodatku narzędzi VSTO.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -35,22 +36,22 @@ ms.lasthandoff: 05/22/2018
 </formRegions>  
 ```  
   
-## <a name="elements-and-attributes"></a>Elementy i atrybuty  
- `formRegions` Elementu `vstov4` przestrzeń nazw zawiera wszystkie `formRegion` elementy dodatku VSTO dla programu Outlook. Jest to wymagane tylko dodatków VSTO programu Outlook, które obejmują regionów formularzy.  
+## <a name="elements-and-attributes"></a>Atrybuty i elementy  
+ `formRegions` Elementu `vstov4` przestrzeń nazw zawiera wszystkie `formRegion` elementów dla dodatku narzędzi VSTO dla programu Outlook. Jest wymagane tylko dla dodatków narzędzi VSTO dla programu Outlook, obejmujących regionów formularza.  
   
- Może istnieć tylko jedna `formRegions` zdefiniowany w manifeście aplikacji element.  
+ Może istnieć tylko jeden `formRegions` elementu zdefiniowanego w manifeście aplikacji.  
   
  `formRegions` Element nie ma żadnych atrybutów.  
   
  `formRegions` Element ma następujący element.  
   
-### <a name="formregion"></a>formRegion  
- Wymagana dla dodatków VSTO programu Outlook, które obejmują regionów formularzy. `formRegion` w jest zdefiniowany element [ &#60;formRegion&#62; elementu &#40;programowanie Office w Visual Studio&#41;](../vsto/formregion-element-office-development-in-visual-studio.md).  
+### <a name="formregion"></a>elementu formRegion  
+ Wymagana dla dodatków narzędzi VSTO dla programu Outlook, obejmujących regionów formularza. `formRegion` Element jest zdefiniowany w [ &#60;elementu formRegion&#62; elementu &#40;programowanie Office w Visual Studio&#41;](../vsto/formregion-element-office-development-in-visual-studio.md).  
   
-## <a name="vsto-add-in-example"></a>Przykład dodatku narzędzi VSTO  
+## <a name="vsto-add-in-example"></a>Przykładu dodatku narzędzi VSTO  
   
 ### <a name="description"></a>Opis  
- Poniższy przykład kodu pokazuje `formRegions` elementu w manifeście aplikacji dla rozwiązań pakietu Office poziomie aplikacji wdrożone za pomocą [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Ten przykładowy kod jest częścią większego przykładu udostępnionego w [manifesty aplikacji dla rozwiązań pakietu Office](../vsto/application-manifests-for-office-solutions.md).  
+ W poniższym przykładzie kodu pokazano `formRegions` elementu w manifeście aplikacji dla rozwiązań pakietu Office dodatku poziomu aplikacji wdrożonych za pomocą [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Ten przykład kodu jest częścią większego przykładu przewidzianego w [manifesty aplikacji dla rozwiązań pakietu Office](../vsto/application-manifests-for-office-solutions.md).  
   
 ### <a name="code"></a>Kod  
   

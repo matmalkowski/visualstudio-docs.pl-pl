@@ -1,5 +1,5 @@
 ---
-title: Visual Studio Tools for Office runtime ― Przegląd
+title: Visual Studio Tools dla pakietu Office runtime ― omówienie
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -29,41 +29,41 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c0bb3c800aece9531d6fe90ba04b9c99a0b4bd69
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 219ffa4a7a9c7d32348a262ea49c6f66d20e1c7f
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34767806"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35677224"
 ---
-# <a name="visual-studio-tools-for-office-runtime-overview"></a>Visual Studio Tools for Office runtime ― Przegląd
-  Do uruchamiania rozwiązań, które są tworzone za pomocą narzędzia Microsoft Office developer tools w programie Visual Studio, Visual Studio 2010 Tools dla pakietu Office runtime musi być zainstalowany na komputerach użytkowników końcowych. Aby uzyskać więcej informacji, zobacz [porady: Instalowanie Visual Studio Tools for Office runtime pakietu redystrybucyjnego](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md). Visual Studio 2010 Tools dla pakietu Office runtime składa się z dwóch głównych elementów:  
+# <a name="visual-studio-tools-for-office-runtime-overview"></a>Visual Studio Tools dla pakietu Office runtime ― omówienie
+  Do uruchamiania rozwiązań, które są tworzone przy użyciu narzędzia Microsoft Office developer tools w programie Visual Studio, Visual Studio 2010 Tools dla pakietu Office runtime musi być zainstalowany na komputerach użytkowników końcowych. Aby uzyskać więcej informacji, zobacz [porady: Instalowanie Visual Studio Tools for Office runtime pakiet redystrybucyjny](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md). Visual Studio 2010 Tools dla pakietu Office runtime składa się z dwóch głównych składników:  
   
--   Rozszerzenia pakietu Office dla środowiska .NET Framework. To zarządzane zestawy tworzące warstwę komunikacji między rozwiązaniem a aplikacją pakietu Microsoft Office. Aby uzyskać więcej informacji, zobacz [zrozumieć rozszerzenia pakietu Office dla programu .NET Framework](#officeextensions).  
+-   Rozszerzenia pakietu Office dla środowiska .NET Framework. To zarządzane zestawy tworzące warstwę komunikacji między rozwiązaniem a aplikacją pakietu Microsoft Office. Aby uzyskać więcej informacji, zobacz [opis rozszerzeń pakietu Office dla .NET Framework](#officeextensions).  
   
--   Moduł ładujący rozwiązanie dla pakietu Office. To zestaw niezarządzanych bibliotek DLL, przy użyciu których aplikacje pakietu Office ładują środowisko uruchomieniowe i rozwiązanie. Aby uzyskać więcej informacji, zobacz [zrozumieć ładujący rozwiązanie Office](#UnmanagedLoader).  
+-   Moduł ładujący rozwiązanie dla pakietu Office. To zestaw niezarządzanych bibliotek DLL, przy użyciu których aplikacje pakietu Office ładują środowisko uruchomieniowe i rozwiązanie. Aby uzyskać więcej informacji, zobacz [zrozumieć modułu ładującego rozwiązanie Office](#UnmanagedLoader).  
   
  Środowisko uruchomieniowe można zainstalować na kilka różnych sposobów. Składniki środowiska dodawane podczas jego instalacji zależą od konfiguracji komputera. Aby uzyskać więcej informacji, zobacz [Visual Studio Tools for Office Runtime ― scenariusze instalacji](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md).  
   
-##  <a name="officeextensions"></a> Zrozumienie rozszerzenia pakietu Office dla programu .NET Framework  
- Visual Studio 2010 Tools dla pakietu Office runtime obejmują rozszerzenia pakietu Office dla programu .NET Framework 3.5, [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] i nowszych. Rozwiązania przeznaczone dla poszczególnych wersji środowiska .NET Framework używają rozszerzeń odpowiednich dla danej wersji.  
+##  <a name="officeextensions"></a> Opis rozszerzeń pakietu Office dla programu .NET Framework  
+ Visual Studio 2010 Tools dla pakietu Office runtime zawierają rozszerzenia pakietu Office dla .NET Framework 3.5 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] i nowszych. Rozwiązania przeznaczone dla poszczególnych wersji środowiska .NET Framework używają rozszerzeń odpowiednich dla danej wersji.  
   
- Rozszerzenia te składają się z zestawów, przy użyciu których rozwiązania automatyzują aplikacje pakietu Office i poszerzają ich funkcjonalność. Podczas tworzenia projektu pakietu Office program Visual Studio automatycznie dodaje odwołania do zestawów używanych dla typu projektu oraz docelowego środowiska .NET Framework projektu. Aby uzyskać więcej informacji na temat zestawów w rozszerzenia pakietu Office, zobacz [zestawy w Visual Studio Tools for Office runtime](../vsto/assemblies-in-the-visual-studio-tools-for-office-runtime.md).  
+ Rozszerzenia te składają się z zestawów, przy użyciu których rozwiązania automatyzują aplikacje pakietu Office i poszerzają ich funkcjonalność. Podczas tworzenia projektu pakietu Office program Visual Studio automatycznie dodaje odwołania do zestawów używanych dla typu projektu oraz docelowego środowiska .NET Framework projektu. Aby uzyskać więcej informacji na temat zestawów w rozszerzeniach pakietu Office, zobacz [zestawy w Visual Studio Tools for Office runtime](../vsto/assemblies-in-the-visual-studio-tools-for-office-runtime.md).  
   
-### <a name="design-differences-in-the-office-extensions"></a>Projektowanie różnice w rozszerzenia pakietu Office  
- Większość typów używanych w rozszerzeniach pakietu Office dla środowiska .NET Framework 3.5 to klasy. Są to tej samej klasy, które zostały uwzględnione w poprzednich wersjach [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Natomiast większość typów używanych w rozszerzenia pakietu Office dla [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub nowsze są interfejsy. Na przykład, jeśli zostanie rozpoczęta [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub nowszym, <xref:Microsoft.Office.Tools.Excel.Worksheet> i <xref:Microsoft.Office.Tools.Word.Document> typy są interfejsy zamiast klasy.  
+### <a name="design-differences-in-the-office-extensions"></a>Różnice konstrukcyjne między rozszerzeniami pakietu Office  
+ Większość typów używanych w rozszerzeniach pakietu Office dla środowiska .NET Framework 3.5 to klasy. Są te same klasy, które występowały w poprzednich wersjach [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Natomiast większość typów używanych w rozszerzeniach pakietu Office dla [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub nowszych interfejsów. Na przykład kiedy środowiskiem docelowym [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub nowszym, <xref:Microsoft.Office.Tools.Excel.Worksheet> i <xref:Microsoft.Office.Tools.Word.Document> typy są interfejsami zamiast klasami.  
   
- W większości przypadków kodu zapisu w rozwiązaniach pakietu Office jest taka sama czy rozwiązania jest przeznaczony dla programu .NET Framework 3.5 lub [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. Jednak niektóre funkcje wymagają kodu dopasowanego do cech wersji środowiska .NET Framework. Aby uzyskać więcej informacji, zobacz [rozwiązań Office migracji do programu .NET Framework 4 lub nowszego](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md).  
+ W większości przypadków kod pisany w rozwiązaniach pakietu Office jest taka sama czy Twoje rozwiązanie jest przeznaczone dla programu .NET Framework 3.5 lub [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. Jednak niektóre funkcje wymagają kodu dopasowanego do cech wersji środowiska .NET Framework. Aby uzyskać więcej informacji, zobacz [Migrowanie rozwiązań pakietu Office do wersji programu .NET Framework 4 lub nowszej](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md).  
   
-### <a name="interfaces-in-the-office-extensions-for-the-net-framework-4-or-later"></a>Interfejsy rozszerzenia pakietu Office dla programu .NET Framework 4 lub nowszego  
- Większość interfejsów w rozszerzenia pakietu Office dla [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub nowszy nie są przeznaczone do zaimplementowania przez kod użytkownika. Tylko interfejsy, które można wdrożyć bezpośrednio mają nazwy, które zaczynają się od litery **I**, takich jak <xref:Microsoft.Office.Tools.Excel.ISmartTagExtension>.  
+### <a name="interfaces-in-the-office-extensions-for-the-net-framework-4-or-later"></a>Interfejsy w rozszerzeniach pakietu Office dla programu .NET Framework 4 lub nowszego  
+ Większość interfejsów w rozszerzenia pakietu Office dla [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub nowszej nie mają być implementowana przez kod użytkownika. Jedyne interfejsy, które można zaimplementować bezpośrednio, mają nazwy rozpoczynające się od litery **I**, takich jak <xref:Microsoft.Office.Tools.Excel.ISmartTagExtension>.  
   
- Wszystkie interfejsy, które nie rozpoczynają się od litery **I** są implementowane wewnętrznie przez Visual Studio 2010 Tools dla pakietu Office runtime oraz te interfejsy mogą ulec zmianie w przyszłych wersjach. Aby utworzyć obiekty, które implementują te interfejsy, użyj metody udostępniane przez `Globals.Factory` obiektu w projekcie. Na przykład, aby pobrać obiekt, który implementuje <xref:Microsoft.Office.Tools.Excel.SmartTag> interfejsu, użyj `Globals.Factory.CreateSmartTag` metody. Aby uzyskać więcej informacji na temat `Globals.Factory`, zobacz [globalny dostęp do obiektów w projektach pakietu Office](../vsto/global-access-to-objects-in-office-projects.md).  
+ Wszystkie interfejsy, które nie zaczynają się od litery **I** są implementowane wewnętrznie przez Visual Studio 2010 Tools dla pakietu Office runtime i interfejsy te mogą się zmienić w przyszłych wydaniach. Aby utworzyć obiekty, które implementują te interfejsy, należy użyć metod dostarczonych przez `Globals.Factory` obiektu w projekcie. Na przykład, aby pobrać obiekt, który implementuje <xref:Microsoft.Office.Tools.Excel.SmartTag> interfejsu, należy użyć `Globals.Factory.CreateSmartTag` metody. Aby uzyskać więcej informacji na temat `Globals.Factory`, zobacz [globalny dostęp do obiektów w projektach pakietu Office](../vsto/global-access-to-objects-in-office-projects.md).  
   
-### <a name="enable-type-equivalence-and-embedded-types-in-projects-that-target-the-net-framework-4-or-later"></a>Włącz równoważność typów i osadzone typy w projektach przeznaczonych dla programu .NET Framework 4 lub nowszy  
- Ponieważ model obiektów rozszerzenia pakietu Office dla [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub nowszym są oparte na interfejsach, umożliwia funkcji pełnienia roli równoważnika typu, zarówno Visual C# i Visual Basic w programie Visual Studio osadzanie informacji o typie z [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] w ramach rozwiązania . Ta funkcja umożliwia rozwiązań pakietu Office i [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] do wersji niezależnie od siebie nawzajem. Na przykład, jeśli korzysta z rozwiązania <xref:Microsoft.Office.Tools.Word.Document> interfejsu jako typu osadzonego i następnej wersji środowiska uruchomieniowego dodaje członków do <xref:Microsoft.Office.Tools.Word.Document> interfejsu rozwiązania będą nadal działać z następnej wersji środowiska uruchomieniowego. Jeśli nie są używane rozwiązania <xref:Microsoft.Office.Tools.Word.Document> interfejsu jako osadzonym typem, a następnie rozwiązania nie będzie dłużej działać z następnej wersji środowiska uruchomieniowego.  
+### <a name="enable-type-equivalence-and-embedded-types-in-projects-that-target-the-net-framework-4-or-later"></a>Włączanie równoważności typów oraz typów osadzonych w projektach przeznaczonych dla programu .NET Framework 4 lub nowszy  
+ Ponieważ model obiektu rozszerzeń pakietu Office dla [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub nowszym są oparte na interfejsach, można użyć funkcji równoważności typu w językach Visual C# i Visual Basic w programie Visual Studio do osadzenia informacji o typie z [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] w rozwiązaniu . Ta funkcja umożliwia rozwiązań pakietu Office i [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] do wersji niezależnie od siebie nawzajem. Na przykład, jeśli rozwiązanie używa <xref:Microsoft.Office.Tools.Word.Document> interfejs jako osadzonego typu, a następna wersja środowiska uruchomieniowego dodaje elementy członkowskie do <xref:Microsoft.Office.Tools.Word.Document> interfejsu, rozwiązanie będzie współpracowało z następną wersją środowiska uruchomieniowego. Jeśli rozwiązanie nie korzysta z <xref:Microsoft.Office.Tools.Word.Document> interfejsu jako osadzonego typu, rozwiązanie przestanie działać z następną wersją środowiska uruchomieniowego.  
   
- Domyślnie funkcja pełnienia roli równoważnika typu nie jest włączona podczas tworzenia projektu pakietu Office, którego element docelowy [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub nowszym. Jeśli chcesz włączyć tę funkcję, ustaw **Osadź typy międzyoperacyjne** właściwość następujące odwołania do zestawów w swoim projekcie **True**:  
+ Domyślnie funkcja równoważności typu nie jest włączona podczas tworzenia projektu Office współpracującego [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub nowszej. Aby włączyć tę funkcję, należy ustawić **Osadź typy współdziałania** właściwość następujące odwołania zestawów w swoim projekcie **True**:  
   
 -   Microsoft.Office.Tools.dll  
   
@@ -75,20 +75,20 @@ ms.locfileid: "34767806"
   
 -   Microsoft.Office.Tools.Word.dll  
   
- Wprowadzenie tej zmiany spowoduje, że informacje o typie dla wszystkich typów środowisk uruchomieniowych używanych w projekcie zostaną podczas kompilowania projektu osadzane w zestawie rozwiązania. Te informacje osadzonym typem, a nie informacje o typie w przywoływanych zestawach są używane przez to rozwiązanie w czasie wykonywania.  
+ Wprowadzenie tej zmiany spowoduje, że informacje o typie dla wszystkich typów środowisk uruchomieniowych używanych w projekcie zostaną podczas kompilowania projektu osadzane w zestawie rozwiązania. Tych informacji osadzonego typu, a nie informacji o typie w przywoływanych zestawach są używane przez rozwiązanie w czasie wykonywania.  
   
-##  <a name="UnmanagedLoader"></a> Zrozumienie modułu ładującego rozwiązań pakietu Office  
- Visual Studio Tools for Office runtime obejmuje kilka niezarządzanych bibliotek DLL, korzystających z aplikacji pakietu Office można załadować środowiska uruchomieniowego i rozwiązań pakietu Office. Nigdy nie powinna zajść konieczność bezpośredniej pracy z tymi bibliotekami, jednak wiedza o ich przeznaczeniu może pomóc lepiej zrozumieć architekturę rozwiązań opartych na pakiecie Office.  
+##  <a name="UnmanagedLoader"></a> Omówienie modułu ładującego rozwiązanie Office  
+ Visual Studio Tools for Office runtime zawiera kilka niezarządzanych bibliotek DLL, dla których aplikacje pakietu Office ładują środowisko uruchomieniowe i rozwiązania pakietu Office. Nigdy nie powinna zajść konieczność bezpośredniej pracy z tymi bibliotekami, jednak wiedza o ich przeznaczeniu może pomóc lepiej zrozumieć architekturę rozwiązań opartych na pakiecie Office.  
   
- Aby uzyskać informacje o tych składników używanych podczas procesu obciążenia, zobacz [architektura Dostosowywanie na poziomie dokumentu](../vsto/architecture-of-document-level-customizations.md) i [architektura VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md).  
+ Aby uzyskać informacje o używaniu tych składników podczas procesu ładowania, zobacz [Architektura dostosowywania na poziomie dokumentu](../vsto/architecture-of-document-level-customizations.md) i [architektury VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md).  
   
 ### <a name="vstoeedll"></a>VSTOEE.dll  
- Gdy użytkownik otwiera dostosowania poziomie dokumentu lub uruchamia dodatku VSTO, aplikacji pakietu Office wymaga w *VSTOEE.dll* do wykonania zadania wymagane do załadowania [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].  
+ Gdy użytkownik otwiera dostosowywania poziomie dokumentu lub uruchamia dodatek narzędzi VSTO dla programów, aplikacji pakietu Office wywołuje bibliotekę do *VSTOEE.dll* do wykonywania zadań niezbędnych do załadowania [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].  
   
- *VSTOEE.dll* upewnij się, że poprawną wersję [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] jest ładowany do rozwiązania oraz zainstalowanych wersji pakietu Office. Mimo że wiele wersji [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] można zainstalować na tym samym komputerze, tylko jedno wystąpienie *VSTOEE.dll* jest zainstalowany w czasie. Jest to *VSTOEE.dll* dołączono do najnowszej wersji środowiska uruchomieniowego zainstalowany na komputerze. Aby uzyskać więcej informacji o różnych wersjach programu [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] który może służyć do innych rozwiązań, zobacz [uruchamiania rozwiązań w różnych wersjach pakietu Microsoft Office](../vsto/running-solutions-in-different-versions-of-microsoft-office.md).  
+ *Biblioteka VSTOEE.dll* zapewniają, że poprawną wersję [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] jest ładowany do rozwiązania oraz zainstalowanej wersji pakietu Office. Chociaż wiele wersji [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] można zainstalować na tym samym komputerze, tylko jedno wystąpienie *VSTOEE.dll* jest zainstalowany w danym momencie. Jest to *VSTOEE.dll* było dołączone do najnowszej wersji środowiska uruchomieniowego zainstalowanego na komputerze. Aby uzyskać więcej informacji o różnych wersjach [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] który może służyć do innych rozwiązań, zobacz [uruchamianie rozwiązań w różnych wersjach pakietu Microsoft Office](../vsto/running-solutions-in-different-versions-of-microsoft-office.md).  
   
 ### <a name="vstoloaderdll"></a>VSTOLoader.dll  
- Po *VSTOEE.dll* ładuje odpowiednią wersję [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], *VSTOLoader.dll* wykonuje większość pracy wymagane do załadowania zestawu rozwiązania. *VSTOLoader.dll* wykonuje kilka czynności:  
+ Po *VSTOEE.dll* ładuje odpowiednią wersję [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], *VSTOLoader.dll* wykonuje większość pracy, które są wymagane do załadowania zestawu rozwiązania. *VSTOLoader.dll* wykonuje kilka rzeczy:  
   
 -   Tworzy domenę aplikacji dla każdego zestawu rozwiązania.  
   
@@ -96,14 +96,14 @@ ms.locfileid: "34767806"
   
 -   Ładuje wersje rozszerzeń pakietu Office dla środowiska .NET Framework wymaganego przez rozwiązanie.  
   
- *VSTOLoader.dll* powoduje także kilka kwestii, które są specyficzne dla dodatków VSTO:  
+ *VSTOLoader.dll* wpływa również kilka rzeczy, które są specyficzne dla dodatków narzędzi VSTO dla programów:  
   
--   Implementuje <xref:Extensibility.IDTExtensibility2> interfejsu. <xref:Extensibility.IDTExtensibility2> jest interfejsem COM, które należy wdrożyć wszystkie dodatki VSTO aplikacji pakietu Microsoft Office. Ten interfejs definiuje metody, które wywołuje aplikację do komunikowania się z dodatku VSTO.  
+-   Implementuje <xref:Extensibility.IDTExtensibility2> interfejsu. <xref:Extensibility.IDTExtensibility2> to interfejs modelu COM, który muszą implementować wszystkie dodatki narzędzi VSTO dla aplikacji pakietu Microsoft Office. Ten interfejs definiuje metody wywoływane przez aplikację do komunikacji z dodatku narzędzi VSTO.  
   
--   Implementuje imanagedaddin — interfejs. Ten interfejs jest używany przez aplikacje pakietu Office, aby ułatwić obciążenia dodatków VSTO. Aby uzyskać więcej informacji, zobacz [imanagedaddin — interfejs](../vsto/imanagedaddin-interface.md).  
+-   Implementuje imanagedaddin — interfejs. Ten interfejs jest używany przez aplikacje pakietu Office, aby ułatwić obciążenia dodatków narzędzi VSTO. Aby uzyskać więcej informacji, zobacz [imanagedaddin — interfejs](../vsto/imanagedaddin-interface.md).  
   
-## <a name="understand-the-32-bit-and-64-bit-versions-of-the-runtime"></a>Informacje o wersjach 32-bitowych i 64-bitowego środowiska uruchomieniowego  
- Istnieją różne wersje 64-bitowe i 32-bitowego programu Visual Studio 2010 Tools dla pakietu Office runtime. Te wersje środowiska uruchomieniowego są używane do uruchamiania rozwiązań w 64-bitowe i 32-bitowej wersji pakietu Office. Poniższej tabeli wersji środowiska uruchomieniowego jest wymagany dla każdej kombinacji systemu Windows oraz pakietu Office.  
+## <a name="understand-the-32-bit-and-64-bit-versions-of-the-runtime"></a>Zrozumienie 32-bitowych i 64-bitowe wersje środowiska uruchomieniowego  
+ Istnieją osobne 64-bitowe i 32-bitowe wersje Visual Studio 2010 Tools dla pakietu Office runtime. Te wersje środowiska uruchomieniowego są używane do uruchamiania rozwiązań w 64-bitowe i 32-bitowe wersje pakietu Office. Pokazano w poniższej tabeli wersji środowiska wykonawczego jest wymagana dla każdej kombinacji systemu Windows i pakietu Office.  
   
 |Wydanie systemu Windows|Wydanie pakietu Microsoft Office|Wymagana wersja środowiska Visual Studio Tools for Office Runtime|  
 |------------------------|---------------------------------|--------------------------------------------------------------------|  
@@ -111,20 +111,20 @@ ms.locfileid: "34767806"
 |64-bitowy|32-bitowa|64-bitowy|  
 |64-bitowy|64-bitowy|64-bitowy|  
   
- Po zainstalowaniu pakietu Office, wymaganą wersję [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] jest instalowane wraz z pakietu Office. Na przykład po zainstalowaniu 64-bitowa wersja pakietu Office na 64-bitowej wersji systemu Windows, wersja 64-bitowych [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] jest również instalowany. Aby uzyskać więcej informacji o instalowaniu [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] z pakietu Office, zobacz [Visual Studio Tools for Office Runtime ― scenariusze instalacji](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md).  
+ Po zainstalowaniu pakietu Office, wymaganą wersję [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] jest instalowany razem z pakietem Office. Na przykład po zainstalowaniu 64-bitowa wersja pakietu Office na 64-bitowej wersji systemu Windows, 64-bitową wersję [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] jest również instalowany. Aby uzyskać więcej informacji o instalowaniu [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] z pakietem Office, zobacz [Visual Studio Tools for Office Runtime ― scenariusze instalacji](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md).  
   
- 64-bitowej wersji pakietu Office można również uruchomić rozwiązań pakietu Office, które zostały utworzone przy użyciu szablonów projektu dla systemu Microsoft Office 2007 w programie Visual Studio 2008. Nie obsługują one jednak rozwiązań dla pakietu Office utworzonych przy użyciu szablonów projektów programu Microsoft Office 2003 w środowisku Visual Studio 2008 ani rozwiązań dla pakietu Office utworzonych w programie Visual Studio 2005. Aby uzyskać więcej informacji, zobacz [uruchamiania rozwiązań w różnych wersjach pakietu Microsoft Office](../vsto/running-solutions-in-different-versions-of-microsoft-office.md).  
+ 64-bitowej wersji pakietu Office, mogą również uruchamiać rozwiązania pakietu Office, które zostały utworzone przy użyciu szablonów projektu dla systemu Microsoft Office 2007 w programie Visual Studio 2008. Nie obsługują one jednak rozwiązań dla pakietu Office utworzonych przy użyciu szablonów projektów programu Microsoft Office 2003 w środowisku Visual Studio 2008 ani rozwiązań dla pakietu Office utworzonych w programie Visual Studio 2005. Aby uzyskać więcej informacji, zobacz [uruchamianie rozwiązań w różnych wersjach pakietu Microsoft Office](../vsto/running-solutions-in-different-versions-of-microsoft-office.md).  
   
 ## <a name="repair-the-visual-studio-2010-tools-for-office-runtime"></a>Napraw program Visual Studio 2010 Tools dla pakietu Office runtime  
- Jeśli musisz naprawić środowiska uruchomieniowego, otwórz **programy i funkcje** lub **Dodaj lub usuń programy** w Panelu sterowania, wybierz **Microsoft Visual Studio 2010 Tools for Office Runtime**na liście programy, a następnie kliknij przycisk **Odinstaluj**. Zostanie uruchomiony program instalacyjny, który umożliwi naprawę środowiska. Jeśli klikniesz przycisk **zmiany**, nie podano opcję naprawy środowiska uruchomieniowego.  
+ Jeśli zachodzi potrzeba naprawy środowiska uruchomieniowego, otwórz **programy i funkcje** lub **apletu Dodaj lub usuń programy** w Panelu sterowania wybierz **programu Microsoft Visual Studio 2010 Tools for Office Runtime**na liście programów, a następnie kliknij przycisk **Odinstaluj**. Zostanie uruchomiony program instalacyjny, który umożliwi naprawę środowiska. Jeśli klikniesz **zmiany**, nie są podane opcji naprawy środowiska uruchomieniowego.  
   
 ## <a name="see-also"></a>Zobacz także  
- [Visual Studio Tools for Office Runtime ― scenariusze instalacji](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md)   
+ [Visual Studio Tools dla pakietu Office Runtime ― scenariusze instalacji](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md)   
  [Zestawy w Visual Studio Tools for Office runtime](../vsto/assemblies-in-the-visual-studio-tools-for-office-runtime.md)   
- [Architektura rozwiązań pakietu Office w Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)   
- [Architektura Dostosowywanie na poziomie dokumentu](../vsto/architecture-of-document-level-customizations.md)   
+ [Architektura rozwiązań pakietu Office w programie Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)   
+ [Architektura dostosowywania na poziomie dokumentu](../vsto/architecture-of-document-level-customizations.md)   
  [Architektura dodatków narzędzi VSTO](../vsto/architecture-of-vsto-add-ins.md)   
  [Porady: tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
- [Uaktualnienie i migracja rozwiązań pakietu Office](../vsto/upgrading-and-migrating-office-solutions.md)  
+ [Uaktualnianie i migracja rozwiązań pakietu Office](../vsto/upgrading-and-migrating-office-solutions.md)  
   
   

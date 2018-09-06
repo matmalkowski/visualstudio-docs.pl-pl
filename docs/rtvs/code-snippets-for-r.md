@@ -1,6 +1,6 @@
 ---
-title: Wstawki kodu dla języka R
-description: Wstawki kodu dla języka R w programie Visual Studio Podaj skróty do szybkiego wstawiania bloki kodu o dowolnej długości pomaga uniknąć samodzielnego przepisywania podobny kod.
+title: Fragmenty kodu dla języka R
+description: Fragmenty kodu dla języka R w programie Visual Studio zapewniają skrótów szybko wstawiać bloki kodu o dowolnej długości, pomaga to uniknąć konieczności ponownego wpisywania podobny kod wiele razy.
 ms.date: 01/24/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-rtvs
@@ -10,34 +10,35 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 0ce8e2ea6ec0cb0d2d70cfab36687f108dd73e82
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 0c9db243b3903ddcbaa310bbf5ba3fd911eee7fc
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35667733"
 ---
-# <a name="code-snippets"></a>Wstawki kodu
+# <a name="code-snippets"></a>Fragmenty kodu
 
-Wstawki kodu programu Visual Studio Podaj skróty do szybkiego wstawiania bloki kodu o dowolnej długości pomaga uniknąć samodzielnego przepisywania podobny kod. R narzędzi dla programu Visual Studio (RTVS) Dodaj dziesiątki fragmentów R przydatne do kolekcji programu Visual Studio.
+Fragmenty kodu w programie Visual Studio zapewniają skrótów szybko wstawiać bloki kodu o dowolnej długości, pomaga to uniknąć konieczności ponownego wpisywania podobny kod wiele razy. R Tools for Visual Studio (RTVS) Dodaj dziesiątek, jak przydatne fragmentów R do kolekcji programu Visual Studio.
 
-Aby wstawić fragment, typ skróconą nazwę fragment kodu (IntelliSense pod warunkiem), naciśnij klawisz Tab, aby wstawić.
+Aby wstawić fragment, typ skrócona Nazwa fragmentu kodu (IntelliSense pod warunkiem), naciśnij klawisz **kartę** do wstawienia.
 
-Proste przykłady:
+Kilka prostych przykładów:
 
-- Typ `=` następnie karcie i RTVS powiększa go do `<-` operator przypisania.
-- Typ `>` następnie karcie i RTVS rozszerza on `%>%` operator potoku.
+- Typ `=` następnie kartę i RTVS rozwija się `<-` operator przypisania.
+- Typ `>` następnie kartę i RTVS rozszerza ją `%>%` operator potoku.
 
-Wstawki kodu programu może być znacznie więcej niż tylko znak zakończenia znaków. Fragment do odczytywania z pliku CSV `read.csv` funkcji, na przykład można zwalnia Cię z trzeba pamiętać nazwy i parametry:
+Fragmenty kodu można znacznie więcej niż tylko znak zakończenia znaków. Fragment kodu dotyczący Odczyt pliku CSV przy użyciu `read.csv` funkcji, na przykład można zwalnia Cię z trzeba pamiętać nazwy i parametry:
 
-![Animacja Wstawianie wywołania do read.csv przy użyciu wstawek kodu](media/code-snippet-expansion.gif)
+![Animacja przy użyciu fragmentu kodu można wstawić wywołanie read.csv](media/code-snippet-expansion.gif)
 
-W takim przypadku podczas wpisywania `readc`, IntelliSense wyświetla listę uzupełniania. Wybranie tego zakończenia w listy rozwijanej, a naciśnięcie wybiera kartę `readc`, a naciśnięcie klawisza Tab ponownie rozszerza fragment kodu. (Dlatego rozszerzenia fragment jest często traktować jako "typ fragment kodu i naciśnij dwa razy klawisz TAB"). W większości przypadków pierwszej karcie kończy wybór IntelliSense i drugą kartę wyzwala rozszerzenia.
+W takim przypadku podczas wpisywania `readc`, IntelliSense wyświetla listy uzupełniania. Wybranie tego uzupełnianie listy rozwijanej, a następnie naciskając klawisz **kartę** wybiera `readc`i naciskając klawisz **kartę** ponownie rozszerza ten fragment kodu. (Z tego powodu rozszerzenia fragmentu kodu jest często traktować jako "wpisz ten fragment kodu i naciśnij klawisz TAB dwa razy"). W większości przypadków pierwszej karcie kończy Wybór technologii IntelliSense, i drugiej karcie wyzwala rozszerzenie.
 
-Aby wyświetlić wszystkie dostępne fragmenty kodu, otwórz **Narzędzia > Menedżerze fragmentów kodu...**  okno dialogowe (Ctrl + K, B) i wybierz **R** dla **języka**. Rozwiń grupy i wybrać poszczególne fragmenty kodu, opis i skrót:
+Aby wyświetlić wszystkie dostępne fragmenty kodu, otwórz **narzędzia** > **Menedżera wstawek kodu** okno dialogowe (**Ctrl**+**K**,**B**) i wybierz **R** dla **języka**. Rozwiń grupy i wybrać poszczególnych fragmentów kodu, aby wyświetlić opis i tekst skrótu:
 
-![Okno dialogowe wstawki kodu dla języka R](media/code-snippet-dialog.png)
+![Okno dialogowe fragmentów kodu dla języka R](media/code-snippet-dialog.png)
 
-Aby utworzyć wstawki kodu niestandardowego, wykonując instrukcje wyświetlone na [wskazówki: tworzenie wstawek kodu](../ide/walkthrough-creating-a-code-snippet.md). Ostatecznie fragment kodu jest tylko plik XML. Na przykład następujący kod to fragment kodu dla tej operacji potoku (skrót `>`):
+Do tworzenia niestandardowych fragmentach kodu, postępując zgodnie z instrukcjami [wskazówki: Tworzenie fragmentu kodu](../ide/walkthrough-creating-a-code-snippet.md). Ostatecznie fragment kodu jest po prostu plikiem XML. Na przykład, poniższy kod jest fragment kodu dla tej operacji potoku (skrót `>`):
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -61,4 +62,4 @@ Aby utworzyć wstawki kodu niestandardowego, wykonując instrukcje wyświetlone 
 </CodeSnippets>
 ```
 
-Pliki XML wszystkie fragmenty kodu są instalowane z RTVS; **lokalizacji** w **Menedżerze fragmentów kodu** Określa ścieżkę. Można również znaleźć w kodzie źródłowym RTVS w witrynie GitHub pod [src/pakietu/Impl/wstawki](https://github.com/Microsoft/RTVS/tree/master/src/Package/Impl/Snippets).
+Pliki XML wszystkie fragmenty kodu są instalowane z RTVS; **lokalizacji** pole **Menedżera wstawek kodu** zawiera ścieżkę. Można również znaleźć w kodzie źródłowym RTVS w usłudze GitHub w ramach [src/pakietu/Impl/fragmentów](https://github.com/Microsoft/RTVS/tree/master/src/Package/Impl/Snippets).

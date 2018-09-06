@@ -1,5 +1,5 @@
 ---
-title: Analizowanie wydajności narzędzi danych | Dokumentacja firmy Microsoft
+title: Analizowanie wydajności danych dotyczących narzędzi | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -18,23 +18,23 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b67db666c61d70c4fdfe4530e3249c5d86c1a6a7
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 628c7149a4f79a208ee9258ab2158cf8808a7fb5
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34690855"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35677554"
 ---
 # <a name="analyze-performance-tools-data"></a>Analizowanie danych dotyczących narzędzi do oceny wydajności
-Raporty wydajności z [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędzia profilowania umożliwiają przeglądać i analizować problemy z wydajnością aplikacji. Ta sekcja zawiera omówienie raportów wydajności i widoki, których można użyć do sprawdzenia danych dotyczących wydajności.  
+Wydajność raportów z [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Profiling Tools pozwalają przeglądać i analizować problemy z wydajnością aplikacji. Ta sekcja zawiera omówienie raporty dotyczące wydajności i widoki, których można użyć do sprawdzenia danych dotyczących wydajności.  
   
 ## <a name="common-tasks"></a>Wspólne zadania  
   
-|Zadanie|Zawartość pokrewna|  
+|Zadanie|Powiązana zawartość|  
 |----------|---------------------|  
-|**Reguły wydajności umożliwia szybką identyfikację problemów:** zasad wydajności narzędzi profilowania zidentyfikować najczęściej występujących problemów i pomoc łatwe przejście do kodu źródłowego, który zawiera ten problem. Szczegółowych tematów pomocy często może sugerować rozwiązania.|-   [Użyj reguł wydajności do analizowania danych](../profiling/using-performance-rules-to-analyze-data.md)|  
-|**Zrozumienie Szczegóły widoku raportu:** widoków raportów narzędzi profilowania dostarczający dane zagregowane wydajności dla procesy, wątki, moduły i funkcje przebiegu profilowania. Dane wyświetlane zależy od metodę profilowania, którego użyto do zbierania danych.|-   [Widoki raportu wydajności](../profiling/performance-report-views.md)|  
-|**Konfigurowanie, sortowanie i filtrowanie widoków raportu:** można określić i kolejność kolumn danych, aby wyświetlić w raporcie, sortowanie wierszy raportu i filtrowanie danych w celu uwzględnienia tylko jeden segment czas, który określisz.|-   [Dostosowywanie widoków raportów narzędzi wydajności](../profiling/customizing-performance-tools-report-views.md)|  
+|**Korzystanie z reguł wydajności w celu szybkiego identyfikowania problemów:** zasady wydajności narzędzi profilowania identyfikują najczęściej występujących problemów i pomoc łatwe nawigowanie do kodu źródłowego, który zawiera ten problem. Tematy pomocy szczegółowe często może sugerować rozwiązania.|-   [Korzystanie z reguł wydajności do analizowania danych](../profiling/using-performance-rules-to-analyze-data.md)|  
+|**Zrozumienie Szczegóły widoku raportu:** widoków raportów narzędzi profilowania zapewniają zagregowane dane wydajności dla procesów, wątków, modułów i funkcje przebiegu profilowania. Dane, które pojawia się zależy od metody profilowania, użytej do zebrania danych.|-   [Widoki raportu wydajności](../profiling/performance-report-views.md)|  
+|**Skonfiguruj, sortowanie i filtrowanie raportu widoków:** można określić i kolejność kolumn danych do wyświetlania w raporcie, sortować wiersze raportów i filtrować dane, aby uwzględnić tylko jeden segment czas, który określisz.|-   [Dostosowywanie widoków raportów narzędzi wydajności](../profiling/customizing-performance-tools-report-views.md)|  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
  [Porównywanie plików danych dotyczących wydajności](../profiling/comparing-performance-data-files.md)  
@@ -44,4 +44,4 @@ Raporty wydajności z [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 
 ## <a name="see-also"></a>Zobacz także  
  [Eksplorator wydajności](../profiling/performance-explorer.md)  
  [Profilowanie w programie Visual Studio](../profiling/index.md)  
- [Przewodnik po funkcjach profilowania](../profiling/profiling-feature-tour.md)
+ [Pierwsze spojrzenie na narzędziach profilowania](../profiling/profiling-feature-tour.md)

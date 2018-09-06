@@ -1,5 +1,5 @@
 ---
-title: Opis metoda zbierania danych wydajności | Dokumentacja firmy Microsoft
+title: Opis metodami zbierania danych wydajności | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -13,31 +13,31 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a6312a674cc3e9764971f2add59c8e1f0441790
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: d278f8ca6019dd8a29d5e4c57e1e191137a32972
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34477486"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35677192"
 ---
-# <a name="understand-performance-collection-methods"></a>Zrozumienie metoda zbierania danych wydajności
+# <a name="understand-performance-collection-methods"></a>Zrozumienie metodami zbierania danych wydajności
 
 Pakiet Visual Studio Profiling Tools oferuje pięć metod zbierania informacji o wydajności. W tym temacie opisano różne metody oraz zasugerowano kilka scenariuszy zbierania danych za pomocą konkretnych metod.
 
 > [!NOTE]
-> Ulepszone funkcje zabezpieczeń w systemie Windows 8 i Windows Server 2012 wymagane znaczących zmian w sposobie profilera Visual Studio zbiera dane na tych platformach. Aplikacje platformy uniwersalnej systemu Windows wymagają również nowe techniki kolekcji. Zobacz [narzędzi wydajności w przypadku aplikacji systemu Windows 8 i Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
+> Ulepszone funkcje zabezpieczeń w systemie Windows 8 i Windows Server 2012 wymagają znaczących zmian w taki sposób, programu Visual Studio profiler zbiera dane na tych platformach. Aplikacje platformy uniwersalnej systemu Windows również wymagają nowych technik zbierania. Zobacz [narzędzia do oceny wydajności w aplikacjach systemu Windows 8 i Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
 
 |Metoda|Opis|
 |------------|-----------------|
-|[Pobierania próbek](#sampling)|Zbiera dane statystyczne o pracy wykonanej przez aplikację.|
-|[Instrumentacji](#instrumentation)|Zbiera szczegółowe informacje o czasach wywołania każdej funkcji.|
+|[Próbkowania](#sampling)|Zbiera dane statystyczne o pracy wykonanej przez aplikację.|
+|[Instrumentacja](#instrumentation)|Zbiera szczegółowe informacje o czasach wywołania każdej funkcji.|
 |[Współbieżność](#concurrency)|Zbiera szczegółowe informacje o aplikacjach wielowątkowych.|
-|[Pamięci platformy .NET](#net_memory)|Zbiera szczegółowe informacje o przydzielaniu pamięci i wyrzucania elementów bezużytecznych w środowisku .NET.|
-|[Interakcja warstwowa](#tier_interaction)|Zbiera informacje o synchronicznych wywołaniach funkcji środowiska ADO.NET do bazy danych programu SqlServer.<br /><br /> Profilowanie interakcji między warstwami mogą być zbierane przy użyciu dowolnej wersji programu Visual Studio. Jednak dane profilowania interakcji warstwy można wyświetlić tylko w programie Visual Studio Enterprise.|
+|[Pamięć .NET](#net-memory)|Zbiera szczegółowe informacje o przydzielaniu pamięci i wyrzucania elementów bezużytecznych w środowisku .NET.|
+|[Interakcje między warstwami](#tier-interaction)|Zbiera informacje o synchronicznych wywołaniach funkcji środowiska ADO.NET do bazy danych programu SqlServer.<br /><br /> Profilowanie interakcji między warstwami można zbierać w programach dowolnej wersji programu Visual Studio. Natomiast obejrzeć takie dane można wyświetlać tylko w programie Visual Studio Enterprise.|
 
-Za pomocą niektórych metod profilowania można również gromadzić inne dane, takie jak informacje z liczników wydajności oprogramowania i sprzętu. Aby uzyskać więcej informacji, zobacz [zbierania danych wydajności dodatkowe](../profiling/collecting-additional-performance-data.md).
+Za pomocą niektórych metod profilowania można również gromadzić inne dane, takie jak informacje z liczników wydajności oprogramowania i sprzętu. Aby uzyskać więcej informacji, zobacz [zbieranie dodatkowych danych o wydajności](../profiling/collecting-additional-performance-data.md).
 
-## <a name="sampling"></a>Pobierania próbek
+## <a name="sampling"></a>Próbkowania
 
 Metoda profilowania Próbkowanie zbiera dane statystyczne o pracy wykonywanej przez aplikację w trakcie sesji profilowania. Mechanizm próbkowania ma uproszczoną konstrukcję i w bardzo niewielkim stopniu wpływa na wykonywanie metod aplikacji.
 
@@ -52,9 +52,9 @@ Domyślnie profiler ustawia interwał próbkowania równy długości cyklu proce
 
 [Zbieranie statystyk wydajności za pomocą próbkowania](../profiling/collecting-performance-statistics-by-using-sampling.md)
 
-[Zrozumienie wartościami danych próbkowania](../profiling/understanding-sampling-data-values.md)
+[Informacje z wartościami danych próbkowania](../profiling/understanding-sampling-data-values.md)
 
-[Widok danych metody próbki](../profiling/profiler-sampling-method-data-views.md)
+[Widoki danych metody próbki](../profiling/profiler-sampling-method-data-views.md)
 
 ## <a name="instrumentation"></a>Oprzyrządowanie
 
@@ -113,7 +113,7 @@ Profilowania pamięci środowiska .NET można używać w trybach próbkowania i 
 
 - Jeśli profilowanie pamięci .NET odbywa się w trybie instrumentacji, są zbierane szczegółowe informacje o czasie oraz o wartościach alokacji włącznie i wyłącznie.
 
-[Zrozumienie pamięci alokacji i obiekt okres istnienia wartości danych](../profiling/understanding-memory-allocation-and-object-lifetime-data-values.md)
+[Omówienie pamięci alokacji i obiekt okresu istnienia wartości danych](../profiling/understanding-memory-allocation-and-object-lifetime-data-values.md)
 
 [Zbieranie danych alokacji pamięci .NET i okresu istnienia](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)
 
@@ -129,9 +129,9 @@ Dane interakcji między warstwami gromadzone przez narzędzia pakietu Profiling 
 
 [Zbieranie danych o interakcji między warstwami](../profiling/collecting-tier-interaction-data.md)
 
-[Widok interakcji warstwowej](../profiling/tier-interaction-views.md)
+[Widoki interakcji między warstwami](../profiling/tier-interaction-views.md)
 
 ## <a name="see-also"></a>Zobacz także
 
-[Porady: zbieranie danych wydajności dla witryny sieci web](../profiling/how-to-collect-performance-data-for-a-web-site.md)  
+[Porady: zbieranie danych wydajności dotyczących witryny sieci web](../profiling/how-to-collect-performance-data-for-a-web-site.md)  
 [Profilowanie wydajności — przewodnik dla początkujących](../profiling/beginners-guide-to-performance-profiling.md)

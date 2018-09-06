@@ -15,18 +15,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f29356a3e11634d742d6f6022c35cf8f10871eec
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: b113d0d62156d77d08fa2fcdbb415d0518eba3a8
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35676193"
 ---
 # <a name="imanagedaddin-interface"></a>IManagedAddin — interfejs
-  Implementowanie interfejsu imanagedaddin — można utworzyć składnika, który ładuje zarządzanych dodatków VSTO. Ten interfejs został dodany w Microsoft Office system 2007.  
+  Implementowanie imanagedaddin — interfejs do tworzenia składnika, który ładuje zarządzanych dodatków narzędzi VSTO. Ten interfejs został dodany w Microsoft Office system 2007.  
   
 ## <a name="syntax"></a>Składnia  
   
-```c++
+```csharp
 [  
     object,  
     uuid(B9CEAB65-331C-4713-8410-DDDAF8EC191A),  
@@ -43,48 +44,48 @@ interface IManagedAddin : IUnknown
 ```  
   
 ## <a name="methods"></a>Metody  
- W poniższej tabeli wymieniono metody, które są zdefiniowane przez imanagedaddin — interfejs.  
+ Poniższa tabela zawiera listę metod, które są definiowane przez imanagedaddin — interfejs.  
   
 |Nazwa|Opis|  
 |----------|-----------------|  
-|[IManagedAddin::Load](../vsto/imanagedaddin-load.md)|Wywoływane, gdy Microsoft Office ładowania aplikacji zarządzanych dodatku VSTO.|  
-|[IManagedAddin::Unload](../vsto/imanagedaddin-unload.md)|Wywoływana tuż przed Microsoft Office aplikacji zwalnia zarządzane dodatku VSTO.|  
+|[IManagedAddin::Load](../vsto/imanagedaddin-load.md)|Wywołuje się, gdy Microsoft Office ładowania aplikacji zarządzanych dodatku narzędzi VSTO.|  
+|[IManagedAddin::Unload](../vsto/imanagedaddin-unload.md)|Wywoływane tuż przed Microsoft Office aplikacji zwalnia zarządzane dodatku narzędzi VSTO.|  
   
 ## <a name="remarks"></a>Uwagi  
- Aplikacje Microsoft Office, począwszy od pakietu Microsoft Office 2007 umożliwia imanagedaddin — interfejs ułatwić obciążenia dodatków VSTO pakietu Office. Można zaimplementować imanagedaddin — interfejs do tworzenia własnych dodatku VSTO modułu ładującego i środowiska wykonawczego dla zarządzanych VSTO dodatki, zamiast modułu ładującego dodatku VSTO (*VSTOLoader.dll*) i [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Aby uzyskać więcej informacji, zobacz [dodatki architektura VSTO](../vsto/architecture-of-vsto-add-ins.md).  
+ Aplikacje Microsoft Office, począwszy od systemu Microsoft Office 2007, skorzystaj imanagedaddin — interfejs, aby załadować dodatków narzędzi VSTO dla pakietu Office. Możesz zaimplementować imanagedaddin — interfejs do tworzenia własnych dodatku narzędzi VSTO programu ładującego i środowisko uruchomieniowe dla zarządzanych dodatków narzędzi VSTO, zamiast korzystać z dodatku narzędzi VSTO programu ładującego (*VSTOLoader.dll*) i [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Aby uzyskać więcej informacji, zobacz [architektury VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md).  
   
-## <a name="how-managed-add-ins-are-loaded"></a>W jaki sposób zarządzane dodatki są ładowane  
- Podczas uruchamiania aplikacji, wykonywane są następujące kroki:  
+## <a name="how-managed-add-ins-are-loaded"></a>W jaki sposób zarządzane dodatki są ładowane.  
+ Po uruchomieniu aplikacji, wykonywane są następujące kroki:  
   
-1.  Aplikacja odnajduje dodatków VSTO się wpisy w następującym kluczu rejestru:  
+1.  Aplikacja umożliwia odnalezienie dodatków narzędzi VSTO dla programów, wyszukując wpisy w następującym kluczu rejestru:  
   
      **HKEY_CURRENT_USER\Software\Microsoft\Office\\_\<Nazwa aplikacji >_ \Addins\**  
   
-     Każdy wpis w tym kluczu rejestru jest unikatowy identyfikator dodatku VSTO. Zazwyczaj jest to nazwa zestawu dodatku VSTO.  
+     Każdy wpis w ramach tego klucza rejestru jest unikatowy identyfikator dodatku narzędzi VSTO. Zazwyczaj jest to nazwa zestawu dodatków narzędzi VSTO dla programów.  
   
-2.  Aplikacja szuka `Manifest` wpis w wpis dla każdego dodatku VSTO.  
+2.  Aplikacja szuka `Manifest` wejścia we wpisie dla każdego dodatku narzędzi VSTO.  
   
-     Zarządzane dodatków VSTO może przechowywać pełną ścieżkę manifestu w `Manifest` wpis w **HKEY_CURRENT_USER\Software\Microsoft\Office\\_\<Nazwa aplikacji >_ \Addins\\  _\<identyfikator dodatku >_**. Manifestu to plik (zazwyczaj plik XML), który zawiera informacje, które umożliwiają załadowanie dodatku VSTO.  
+     Pełna ścieżka manifestu w mogą być przechowywane w zarządzanych dodatków narzędzi VSTO dla programów `Manifest` wpis w **HKEY_CURRENT_USER\Software\Microsoft\Office\\_\<Nazwa aplikacji >_ \Addins\\  _\<identyfikator dodatku >_**. Manifestu to plik (zazwyczaj plik XML), który zawiera informacje, które są używane do ładowania dodatku narzędzi VSTO.  
   
-3.  Jeśli aplikacja znajdzie `Manifest` wpisu, aplikacja próbuje załadować zarządzanego dodatku VSTO modułu ładującego składnika. Aplikacja wykonuje to zadanie w trakcie tworzenia obiektu COM, który implementuje interfejs imanagedaddin —.  
+3.  Jeśli aplikacja wykryje `Manifest` wpisu, aplikacja próbuje załadować zarządzanego dodatku narzędzi VSTO programu ładującego składnika. Aplikacja wykonuje to zadanie w trakcie tworzenia obiektów COM, który implementuje imanagedaddin — interfejs.  
   
-     [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Zawiera składnik dodatku VSTO modułu ładującego (*VSTOLoader.dll*), lub utworzyć własne przez wdrożenie imanagedaddin — interfejs.  
+     [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Zawiera składnik modułu ładującego dodatku narzędzi VSTO (*VSTOLoader.dll*), lub możesz utworzyć własne, implementowanie imanagedaddin — interfejs.  
   
-4.  Wywołania aplikacji [IManagedAddin::Load](../vsto/imanagedaddin-load.md) — metoda i przekazuje wartości `Manifest` wpisu.  
+4.  Wywołania aplikacji [IManagedAddin::Load](../vsto/imanagedaddin-load.md) metody i przekazuje wartości `Manifest` wpisu.  
   
-5.  [IManagedAddin::Load](../vsto/imanagedaddin-load.md) metoda wykonuje zadania wymagane do załadowania dodatku VSTO, takich jak Konfigurowanie zasad domeny i zabezpieczeń aplikacji dodatku VSTO, który jest ładowany.  
+5.  [IManagedAddin::Load](../vsto/imanagedaddin-load.md) metoda wykonuje zadania wymagane do załadowania dodatku narzędzi VSTO dla programów, takich jak Konfigurowanie zasad aplikacji domen i zabezpieczeń dla dodatku narzędzi VSTO dla programów, który jest ładowany.  
   
- Aby uzyskać więcej informacji na temat rejestru klucze używających aplikacji Microsoft Office, aby odnaleźć i załadować zarządzane dodatków VSTO, zobacz [wpisy rejestru dotyczące dodatków narzędzi VSTO](../vsto/registry-entries-for-vsto-add-ins.md).  
+ Aby uzyskać więcej informacji na temat rejestru klucze, korzystających z aplikacji Microsoft Office wykrycie i załadowanie zarządzanych dodatków narzędzi VSTO dla programów, zobacz [wpisy rejestru dotyczące dodatków narzędzi VSTO](../vsto/registry-entries-for-vsto-add-ins.md).  
   
 ## <a name="guidance-to-implement-imanagedaddin"></a>Wskazówki dotyczące implementacji imanagedaddin —  
- Imanagedaddin — w przypadku zastosowania, konieczna jest rejestracja biblioteki DLL zawierającej wdrożenia za pomocą następującego identyfikatora CLSID:  
+ W przypadku zaimplementowania imanagedaddin — należy zarejestrować bibliotekę DLL, która zawiera implementację przy użyciu następujących CLSID:  
   
  99D651D7-5F7C-470E-8A3B-774D5D9536AC  
   
  Aplikacje Microsoft Office Użyj tego identyfikatora CLSID, aby utworzyć obiekt COM, który implementuje imanagedaddin —.  
   
 > [!CAUTION]  
->  Ten identyfikator CLSID jest już używana przez *VSTOLoader.dll* w [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. W związku z tym, jeśli używasz imanagedaddin — do tworzenia własnego modułu ładującego dodatku VSTO i składnika środowiska wykonawczego, nie można wdrożyć składnika na komputerach z systemem dodatków VSTO, które opierają się na [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].  
+>  Ten identyfikator CLSID jest również używany przez *VSTOLoader.dll* w [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. W związku z tym, jeśli używasz imanagedaddin — do tworzenia własnych dodatku narzędzi VSTO programu ładującego i składnika środowiska uruchomieniowego, nie można wdrożyć składnika na komputerach, na których działają dodatków narzędzi VSTO dla programów, które zależą od [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].  
   
 ## <a name="see-also"></a>Zobacz także  
  [Niezarządzany wykaz interfejsów API &#40;programowanie Office w Visual Studio&#41;](../vsto/unmanaged-api-reference-office-development-in-visual-studio.md)  

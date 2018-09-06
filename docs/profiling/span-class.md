@@ -14,13 +14,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b68565e7c5f3a0b7f4aff09ccc3b3223d562d822
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: c1a33a99b129cd4a0fa1969553d55c81af310295
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35676179"
 ---
-# <a name="span-class"></a>span — Klasa
+# <a name="span-class"></a>span, klasa
 Definiuje fazy aplikacji.  
   
 ## <a name="syntax"></a>Składnia  
@@ -42,9 +43,9 @@ class span;
  `span`  
   
 ## <a name="requirements"></a>Wymagania  
- **Nagłówek:** cvmarkersobj.h  
+ **Nagłówek:** *cvmarkersobj.h*  
   
  **Namespace:** CONCURRENCY::Diagnostic —  
   
-## <a name="see-also"></a>Zobacz też  
- [Przestrzeń nazw diagnostic](../profiling/diagnostic-namespace.md)
+## <a name="see-also"></a>Zobacz także  
+ [Diagnostic — przestrzeń nazw](../profiling/diagnostic-namespace.md)

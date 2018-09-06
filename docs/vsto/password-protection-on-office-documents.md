@@ -1,5 +1,5 @@
 ---
-title: Ochrona za pomocą hasła w dokumentach pakietu Office | Dokumentacja firmy Microsoft
+title: Ochrona za pomocą hasła w dokumentach pakietu Office
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -19,31 +19,31 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a278677b40f8da703c7f3287851c2f82fb95a21c
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 02deaccdd615bae0c948d50abdd41758dc701704
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34572715"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35676165"
 ---
 # <a name="password-protection-on-office-documents"></a>Ochrona za pomocą hasła w dokumentach pakietu Office
-  Użytkownik może ustawić hasło dla dokumentów pakietu Microsoft Office Word i skoroszytów programu Microsoft Office Excel, aby nie można otworzyć przez osobę, która nie może określić hasło. Ta opcja jest nazywany **hasła podczas otwierania**.  
+  Istnieje możliwość ustawić hasło dla dokumentów pakietu Microsoft Office Word i skoroszytów programu Microsoft Office Excel, tak aby nie było otwierane przez osobę, która nie zna hasło. Ta opcja jest nazywany **hasło podczas otwierania**.  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
- Można tworzyć projektów na poziomie dokumentu przy użyciu istniejących dokumentów i skoroszytów, które mają **hasła podczas otwierania** włączone. W programie Visual Studio jest różny dla dokumentów programu Word i Excel, których **hasła podczas otwierania** włączone.  
+ Można tworzyć projektów na poziomie dokumentu przy użyciu istniejących dokumentów i skoroszyty, które mają **hasło podczas otwierania** włączone. Zachowanie w programie Visual Studio różni się dla dokumentów Word i Excel, które mają **hasło podczas otwierania** włączone.  
   
- Aby uzyskać informacje na temat włączania **hasła podczas otwierania**, zobacz Pomoc programu Word czy Excel.  
+ Aby uzyskać informacje na temat włączania **hasło podczas otwierania**, należy zajrzeć do pomocy w programie Word lub Excel.  
   
-## <a name="behavior-of-excel-and-word"></a>Zachowanie programu Excel i Word  
- Za każdym razem, gdy Otwórz skoroszyt programu Excel w programie Visual Studio, który ma **hasła podczas otwierania** włączona, program Excel wyświetla monit o hasło. Podczas kompilowania rozwiązania pojawi się monit o podanie hasła ponownie, ponieważ dokument jest otwarty podczas kompilacji.  
+## <a name="behavior-of-excel-and-word"></a>Działanie programów Excel i Word  
+ Za każdym razem, gdy otwierania skoroszytu programu Excel w programie Visual Studio, który ma **hasło podczas otwierania** włączona, program Excel wyświetli monit o podanie hasła. Podczas kompilowania rozwiązania użytkownik jest monitowany o podanie hasła ponownie, ponieważ dokument jest otwarty podczas kompilacji.  
   
- Przy pierwszym otwarciu dokumentu programu Word w Visual Studio, który ma **hasła podczas otwierania** włączony, użytkownik jest monitowany o podanie hasła. Po wprowadzeniu hasła, **hasła podczas otwierania** zostanie usunięty z dokumentu i otworzyć dokument nie będzie już potrzebować hasła. Jeśli chcesz dokumentu w rozwiązaniu wymagane jest hasło, zanim będzie można otworzyć, musisz włączyć **hasła podczas otwierania** po ostatnim kompilację i przed wdrożeniem rozwiązania.  
+ Przy pierwszym otwarciu dokumentu programu Word w programie Visual Studio, który ma **hasło podczas otwierania** włączony, użytkownik jest monitowany o podanie hasła. Po wprowadzeniu hasła, **hasło podczas otwierania** zostanie usunięty z dokumentu i otwieranie dokumentu nie jest już konieczne będzie hasło. Jeśli dokument ma w swoim rozwiązaniu należy wymagać hasła przed otwarciem, należy włączyć **hasło podczas otwierania** po ostatnim kompilacji, a przed wdrożeniem rozwiązania.  
   
 ## <a name="see-also"></a>Zobacz także  
  [Ochrona dokumentów w rozwiązaniach na poziomie dokumentu](../vsto/document-protection-in-document-level-solutions.md)   
- [Zarządzanie prawami do informacji i rozszerzenia kodu zarządzanego ― omówienie](../vsto/information-rights-management-and-managed-code-extensions-overview.md)   
- [Porady: zezwalanie kodu do uruchomienia w tle dokumentów z ograniczonymi uprawnieniami](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)   
+ [Zarządzanie prawami do informacji i przegląd rozszerzeń kodu zarządzanego](../vsto/information-rights-management-and-managed-code-extensions-overview.md)   
+ [Instrukcje: zezwalanie kodu do uruchamiania w tle dokumentów z ograniczonymi uprawnieniami](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)   
  [Projektowanie i tworzenie rozwiązań pakietu Office](../vsto/designing-and-creating-office-solutions.md)  
   
   

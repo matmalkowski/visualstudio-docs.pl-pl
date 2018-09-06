@@ -21,100 +21,100 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7da9446a4a5e4538164b09d1f11733f7bde3de24
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 7c3bf48cf5f8acd24661adf2d9ae36324fadfd72
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693360"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35676399"
 ---
 # <a name="specific-security-considerations-for-office-solutions"></a>Zagadnienia dotyczące zabezpieczeń określone dla rozwiązań pakietu Office
-  Zabezpieczenia zapewniane przez program Microsoft .NET Framework i program Microsoft Office może pomóc chronić przed zagrożeniami bezpieczeństwa możliwych rozwiązań pakietu Office. W tym temacie opisano niektóre z tych zagrożeń i zawiera zalecenia w celu ochrony przed nimi. Zawiera także informacje o wpływie ustawienia zabezpieczeń Microsoft Office na rozwiązań pakietu Office.  
+  Funkcjach zabezpieczeń zapewnianych przez program Microsoft .NET Framework i Microsoft Office może pomóc chronić swoje rozwiązania pakietu Office na potencjalne zagrożenia. W tym temacie opisano niektóre z tych zagrożeń i zapewnia zalecenia, aby zapewnić ochronę przed nimi. Zawiera także informacje o wpływie ustawienia zabezpieczeń Microsoft Office na rozwiązań pakietu Office.  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
-## <a name="trusted-code-is-repurposed-in-a-new-malicious-document"></a>Zaufany kod jest zmiany przeznaczenia w dokumencie nowego, niebezpiecznego  
- Może potrwać zaufanego kodu, który jest przeznaczony dla jednego określonego celu, na przykład pobieranie informacji osobistych dla aplikacji zatrudnienia, a użyć go ponownie w innym dokumencie, takie jak arkusza. Kod nie może określić, czy oryginalnego dokumentu nie jest uruchomiona i może otworzyć innych zagrożeń, takich jak ujawniania informacji osobistych lub wykonywanie kodu z uprawnieniami zwiększona, gdy otwarty przez innego użytkownika. Alternatywnie osoba atakująca wystarczy zmodyfikować danych w arkuszu tak, aby przy wysyłaniu do ofiary, zachowuje nieoczekiwanie. Zmiana wartości, formuły lub prezentacji właściwości arkusza powiązane z kodem, istnieje możliwość złośliwy użytkownik na ataki innego użytkownika, wysyłając zmodyfikowany plik. Może być również użytkownikom uzyskiwanie dostępu do informacji, który nie powinien Zobacz przez zmodyfikowanie wartości w tym skoroszycie.  
+## <a name="trusted-code-is-repurposed-in-a-new-malicious-document"></a>Zaufanego kodu jest przeznaczenie w nowych, złośliwych dokument  
+ Może zająć zaufany kod, który jest przeznaczona dla jednego określonego celu, na przykład pobranie informacji osobistych, aplikacji zatrudnienia, a użyć go ponownie w innym dokumencie, takie jak arkusz. Kod nie wiedzieć, że oryginalny dokument nie jest uruchomiony i może otworzyć innych zagrożeń, takich jak ujawniać dane osobowe lub wykonywania kodu za pomocą uprawnień zwiększone, gdy otwarty przez innego użytkownika. Alternatywnie osoba atakująca dane można modyfikować w arkuszu taki sposób, że gdy wysyłane do ofiary, działa nieoczekiwanie. Zmieniając wartości, formuły lub cechy prezentacji arkuszu połączone z kodu, jest to możliwe, złośliwy użytkownik na ataki innego użytkownika, wysyłając zmodyfikowanego pliku. Istnieje również możliwość użytkownikom uzyskiwanie dostępu do informacji, który nie powinien wyświetlić przez zmodyfikowanie wartości w tym skoroszycie.  
   
- Ponieważ zarówno w lokalizacji zestawu, jak i lokalizację dokumentu musi mieć wystarczające materiały do wykonania, atak nie jest łatwo zainstalować. Na przykład dokumenty w załączników wiadomości e-mail lub w niezaufanej intranetowe serwery nie masz wystarczających uprawnień do uruchomienia.  
+ Ponieważ lokalizacja zestawu i lokalizacji dokumentu musi mieć wystarczające dowody do wykonania, ataku nie jest łatwe do zainstalowania. Na przykład dokumenty w załączniki wiadomości e-mail lub w niezaufanej intranetowych serwerów ma wystarczających uprawnień do uruchomienia.  
   
- Aby umożliwić atak kodu musi być napisana w taki sposób, fakt, że decyzje na podstawie danych potencjalnie niezaufanym. Przykładem jest utworzenie arkusz ma ukryte komórki, która zawiera nazwę serwera bazy danych. Użytkownik przesyła arkusza do strony ASPX, który próbuje połączyć się z tym serwerem przy użyciu uwierzytelniania programu SQL i hasło administratora systemu ustalony. Osoba atakująca może zastąpić zawartość komórki ukryte inną nazwę komputera i uzyskać hasło administratora systemu. Aby uniknąć tego problemu, nigdy nie kodowane hasła i sprawdzać identyfikatorów serwera przed wewnętrzną listę serwerów, które są znane jako dobra przed uzyskaniem dostępu do serwera.  
+ Aby umożliwić atak, sam kod musi być napisana w taki sposób, że to sprawia, że decyzje na podstawie danych potencjalnie niezaufana. Przykładem jest utworzenie arkusza zawierającej ukryte komórkę, która zawiera nazwę serwera bazy danych. Użytkownik przesyła arkusza do strony ASPX, który próbuje nawiązać połączenie z tym serwerem przy użyciu uwierzytelniania SQL i zakodowane hasło administratora systemu. Osoba atakująca może Zamień zawartość komórek ukryte inną nazwę komputera i Uzyskaj hasło administratora systemu. Aby uniknąć tego problemu, nigdy nie kodować sprzętowo hasła, Zawsze sprawdzaj identyfikatorów serwera względem wewnętrzną listę serwerów, które są znane jako dobre przed uzyskaniem dostępu do serwera.  
   
 ### <a name="recommendations"></a>Zalecenia  
   
--   Sprawdzanie poprawności danych wejściowych i danych, czy pochodzi od użytkownika, dokument, bazy danych, usługi sieci web lub dowolnego innego źródła.  
+-   Zawsze weryfikowały dane wejściowe i dane, czy jest określany na podstawie użytkownika, dokument, bazy danych, usługi sieci web lub dowolnego innego źródła.  
   
--   Należy rozważnie udostępnianie określonych typach funkcje, takie jak pobieranie danych uprzywilejowanych w imieniu użytkownika i umieścić go w niechronionego arkusza.  
+-   Należy zachować ostrożność udostępnianie określone typy funkcji, takich jak pobieranie danych uprzywilejowanego w imieniu użytkownika i umieszczając go w niechronionego arkusza.  
   
--   W zależności od typu aplikacji może być uzasadnione, aby sprawdzić, czy działa oryginalnego dokumentu, przed wykonaniem jakiegokolwiek kodu. Na przykład sprawdzić, czy działa z dokumentu przechowywanego w lokalizacji znane, bezpieczne.  
+-   W zależności od typu aplikacji może mieć sens, aby sprawdzić, czy działa oryginalnego dokumentu, przed wykonaniem jakiegokolwiek kodu. Na przykład sprawdzić, czy działa on od dokumentu przechowywanego w lokalizacji znanych, bezpiecznych.  
   
--   Może być dobrym pomysłem jest wyświetlone ostrzeżenie o po otwarciu dokumentu, jeśli aplikacja przeprowadza wszelkie uprzywilejowanych akcji. Na przykład utworzyć ekran powitalny lub okna dialogowego Uruchamianie informujący o tym, czy aplikacja będzie dostęp do informacji osobistych, a użytkownik powinien wybrać kontynuować, lub Anuluj. Jeśli użytkownik końcowy pobiera takie ostrzeżenie z pozornie nieszkodliwie dokumentu, użytkownik będzie można zamyka aplikację, zanim zostanie naruszony niczego.  
+-   Może to być dobry pomysł, aby wyświetlić ostrzeżenie, jeśli dokument zostanie otwarty, jeśli aplikacja wykonuje żadnych uprzywilejowanych akcji. Na przykład utworzyć ekran powitalny lub okno dialogowe uruchamiania informujący o tym, że aplikacja będzie dostęp do informacji osobistych i użytkownik powinien wybrać kontynuować, lub przycisk Anuluj. Jeśli użytkownik końcowy pobiera takie ostrzeżenie z dokumentem pozornie nieszkodliwie, użytkownik będzie można zamknąć aplikację, zanim wszystko zostanie naruszony.  
   
 ## <a name="code-is-blocked-by-the-outlook-object-model-guard"></a>Kod jest zablokowany przez strażnik modelu obiektów programu Outlook  
- Microsoft Office może uniemożliwić używanie niektórych właściwości, metod i obiektów w modelu obiektów kodu. Przez ograniczenie dostępu do tych obiektów, Outlook pomaga zapobiec użyciu object model dla celów złośliwego robaki poczty e-mail i wirusami. Ta funkcja zabezpieczeń jest określany jako strażnik modelu obiektów programu Outlook. Jeśli dodatku VSTO próbuje użyć ograniczone właściwości lub metody, gdy włączone jest strażnik modelu obiektów, Outlook wyświetli ostrzeżenie, który umożliwia użytkownikowi zatrzymać operację lub umożliwia użytkownikowi udzielić dostępu do właściwości lub metody ograniczony okres czas. Jeśli użytkownik zatrzymuje operację, zgłosi dodatków VSTO programu Outlook utworzony przy użyciu rozwiązań pakietu Office w Visual Studio <xref:System.Runtime.InteropServices.COMException>.  
+ Microsoft Office, można ograniczyć kodu korzystania z niektórych właściwości, metod i obiekty w modelu obiektów. Przez ograniczenie dostępu do tych obiektów, program Outlook pomaga zapobiec za pomocą modelu obiektów do złośliwych celów robaki poczty e-mail i wirusami. Ta funkcja zabezpieczeń jest określany jako strażnik modelu obiektów programu Outlook. Jeśli dodatku narzędzi VSTO próbuje użyć ograniczone właściwości lub metody, przy włączonym strażnik modelu obiektów, program Outlook wyświetli ostrzeżenie, który umożliwia użytkownikowi zatrzymać operację lub umożliwia użytkownikowi udzielać dostępu do właściwości lub metody przez ograniczony okres t edytora IME. Jeśli użytkownik zatrzymuje operację, dodatków narzędzi VSTO dla programu Outlook utworzone za pomocą rozwiązań pakietu Office w programie Visual Studio będzie zgłaszać <xref:System.Runtime.InteropServices.COMException>.  
   
- Strażnik modelu obiektów może wpływać na dodatków VSTO na różne sposoby, w zależności od tego, czy program Outlook jest używany z programem Microsoft Exchange Server:  
+ Strażnik modelu obiektów może mieć wpływ na dodatków narzędzi VSTO na różne sposoby, w zależności od tego, czy program Outlook jest używany z programem Microsoft Exchange Server:  
   
--   Jeśli program Outlook nie jest używany z programem Exchange, administrator można włączyć lub wyłączyć strażnik modelu obiektów dla wszystkie dodatki VSTO na komputerze.  
+-   Jeśli program Outlook nie jest używany z programem Exchange, administratora można włączyć lub wyłączyć strażnik modelu obiektów dla wszystkich dodatków narzędzi VSTO na komputerze.  
   
--   Jeśli program Outlook jest używany z programem Exchange, administrator może włączyć lub wyłączyć strażnik modelu obiektów dla wszystkie dodatki VSTO na komputerze lub administrator może określić, że niektóre dodatków VSTO może działać bez napotkania strażnik modelu obiektów. Administratorzy mogą również modyfikowanie strażnik modelu obiektów dla niektórych obszarach model obiektów. Na przykład Administratorzy mogą automatycznie umożliwić dodatków VSTO programowe, wysłanie wiadomości e-mail, nawet jeśli włączono strażnik modelu obiektów.  
+-   Jeśli program Outlook jest używany z programem Exchange, administrator może włączyć lub wyłączyć strażnik modelu obiektów dla wszystkich dodatków narzędzi VSTO na komputerze, lub administrator może określić, że niektóre dodatków narzędzi VSTO dla programów może działać bez napotkania strażnik modelu obiektów. Administratorzy mogą również modyfikować zachowanie strażnik modelu obiektów dla niektórych obszarów modelu obiektów. Na przykład Administratorzy automatycznie umożliwia dodatków narzędzi VSTO dla programów do wysyłania wiadomości e-mail programowo, nawet jeśli jest włączona strażnik modelu obiektów.  
   
- Począwszy od programu Outlook 2007, zachowanie strażnik modelu obiektów został zmieniony zwiększające deweloperów i środowisko użytkownika podczas pomaga zapewnić bezpieczeństwo programu Outlook. Aby uzyskać więcej informacji, zobacz [kodu zmiany zabezpieczeń w programie Outlook 2007](http://go.microsoft.com/fwlink/?LinkId=73429).  
+ Począwszy od programu Outlook 2007, zachowanie strażnik modelu obiektów został zmieniony na ulepszaniu środowiska programistów i użytkowników, jednocześnie zachowując bezpieczeństwo programu Outlook. Aby uzyskać więcej informacji, zobacz [kodu zmiany zabezpieczeń w programie Outlook 2007](http://go.microsoft.com/fwlink/?LinkId=73429).  
   
-### <a name="minimize-object-model-guard-warnings"></a>Minimalizowanie ostrzeżenia strażnik modelu obiektów  
- Aby uniknąć ostrzeżenia o zabezpieczeniach podczas korzystania z ograniczeniami właściwości i metody, upewnij się, Twoje dodatku VSTO uzyskuje obiektów programu Outlook z `Application` pole `ThisAddIn` klasy w projekcie. Aby uzyskać więcej informacji dotyczących tego pola, zobacz [dodatków VSTO programu](../vsto/programming-vsto-add-ins.md).  
+### <a name="minimize-object-model-guard-warnings"></a>Minimalizuj ostrzeżenia guard modelu obiektu  
+ Aby uniknąć wyświetlania ostrzeżenia o zabezpieczeniach podczas korzystania z ograniczeniami właściwości i metod, upewnij się, dodatku narzędzi VSTO dla programów uzyskuje obiektów programu Outlook z `Application` pole `ThisAddIn` klasy w projekcie. Aby uzyskać więcej informacji na temat tego pola, zobacz [dodatków narzędzi VSTO programu](../vsto/programming-vsto-add-ins.md).  
   
- Strażnik modelu obiektów mogą ufać tylko obiekty Outlook uzyskany z tego obiektu. Z kolei obiekty, które są uzyskiwane z nową `Microsoft.Office.Interop.Outlook.Application` obiektu nie są zaufane i ograniczeniami właściwości i metody zgłosi ostrzeżenia o zabezpieczeniach włączenie strażnik modelu obiektów.  
+ Strażnik modelu obiektów mogą ufać tylko obiekty programu Outlook uzyskany z tego obiektu. Z kolei obiekty, które są uzyskiwane z nową `Microsoft.Office.Interop.Outlook.Application` obiektu nie są zaufane, a ograniczone właściwości i metody zgłosi ostrzeżenia o zabezpieczeniach po włączeniu strażnik modelu obiektów.  
   
- Poniższy przykład kodu wyświetli ostrzeżenie, jeśli włączono strażnik modelu obiektów. `To` Właściwość `Microsoft.Office.Interop.Outlook.MailItem` klasy jest ograniczony przez strażnik modelu obiektów. `Microsoft.Office.Interop.Outlook.MailItem` Obiekt jest niezaufanych, ponieważ kod pobiera z `Microsoft.Office.Interop.Outlook.Application` utworzonego przy użyciu **nowe** operatora, zamiast z uzyskiwania `Application` pola.  
+ Poniższy kod wyświetla ostrzeżenie o zabezpieczeniach, jeśli włączono strażnik modelu obiektów. `To` Właściwość `Microsoft.Office.Interop.Outlook.MailItem` klasy jest ograniczony przez strażnik modelu obiektów. `Microsoft.Office.Interop.Outlook.MailItem` Obiektu nie jest zaufany, ponieważ kod pobiera z `Microsoft.Office.Interop.Outlook.Application` utworzonego za pomocą **nowe** operatora, zamiast go z uzyskiwania `Application` pola.  
   
  [!code-csharp[Trin_VstcoreOutlookSecurity#1](../vsto/codesnippet/CSharp/Trin_VstcoreOutlookSecurity/ThisAddIn.cs#1)]
  [!code-vb[Trin_VstcoreOutlookSecurity#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreOutlookSecurity/ThisAddIn.vb#1)]  
   
- Poniższy przykład kodu pokazuje sposób użycia ograniczeniami do właściwości `Microsoft.Office.Interop.Outlook.MailItem` obiektu, który jest uznawany za zaufany przez strażnik modelu obiektów. W kodzie użyto zaufanych `Application` pola, aby uzyskać `Microsoft.Office.Interop.Outlook.MailItem`.  
+ Poniższy przykład kodu pokazuje, jak za pomocą zastrzeżonego właściwość `Microsoft.Office.Interop.Outlook.MailItem` obiektu, który jest zaufany przez strażnik modelu obiektów. Kod używa zaufanej `Application` pola, aby uzyskać `Microsoft.Office.Interop.Outlook.MailItem`.  
   
  [!code-csharp[Trin_VstcoreOutlookSecurity#2](../vsto/codesnippet/CSharp/Trin_VstcoreOutlookSecurity/ThisAddIn.cs#2)]
  [!code-vb[Trin_VstcoreOutlookSecurity#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreOutlookSecurity/ThisAddIn.vb#2)]  
   
 > [!NOTE]  
->  Jeśli program Outlook jest używany z programem Exchange, uzyskiwanie wszystkich obiektów programu Outlook z `ThisAddIn.Application` nie gwarantuje, że z dodatku VSTO będą mogli uzyskać dostępu do całej modelu obiektów programu Outlook. Na przykład jeśli administrator programu Exchange Outlook automatycznie ustawia Odmów wszystkie próby dostępu do informacji o adresie za pomocą modelu obiektów programu Outlook, a następnie Outlook nie pozwoli na poprzednim przykładzie kodu do uzyskania dostępu do właściwości, mimo że przykładzie kodu używane zaufany `ThisAddIn.Application` pola.  
+>  Jeśli program Outlook jest używany z programem Exchange, uzyskiwanie wszystkich obiektów programu Outlook z `ThisAddIn.Application` nie gwarantuje, że dodatku narzędzi VSTO dla programów będzie mogli korzystać z całej modelu obiektów programu Outlook. Na przykład jeśli administrator programu Exchange Outlook automatycznie ustawia Odmów wszystkie próby uzyskania dostępu do informacji dotyczących adresów za pomocą modelu obiektów programu Outlook, a następnie program Outlook nie pozwoli na poprzednim przykładzie kodu w celu dostępu do właściwości na, mimo że w przykładzie kodu użyto zaufanej `ThisAddIn.Application` pola.  
   
-### <a name="specify-which-add-ins-to-trust-when-using-exchange"></a>Określ, które dodatki do sytuacji, gdy za pomocą programu Exchange  
- Gdy program Outlook jest używany z programem Exchange, Administratorzy mogą określić, że niektóre dodatków VSTO może działać bez napotkania strażnik modelu obiektów. Dodatki programu Outlook VSTO utworzony przy użyciu rozwiązań pakietu Office w Visual Studio nie może być zaufane indywidualnie. może być tylko zaufane jako grupa.  
+### <a name="specify-which-add-ins-to-trust-when-using-exchange"></a>Określ, które dodatków do sytuacji, gdy program Exchange jest używany  
+ Gdy program Outlook jest używany z programem Exchange, Administratorzy mogą określić, że niektóre dodatków narzędzi VSTO dla programów może działać bez napotkania strażnik modelu obiektów. Program Outlook dodatków narzędzi VSTO utworzone za pomocą rozwiązań pakietu Office w programie Visual Studio nie jest zaufany. może być tylko zaufane jako grupa.  
   
- Outlook ufa dodatku VSTO oparte na wartość skrótu wpis punktu pliku DLL dodatku VSTO. Wszystkie VSTO programu Outlook dodatki przeznaczonych [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] użycie tej samej biblioteki DLL punktu wejścia (*VSTOLoader.dll*). Oznacza to, że jeśli administrator ufa żadnych dodatku VSTO przeznaczonego [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] działać bez napotkania strażnik modelu obiektów, a następnie wszystkie inne VSTO dodatki, które dotyczy [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] również są zaufane. Aby uzyskać więcej informacji na temat ufające określonych VSTO dodatki do uruchomienia bez napotkania strażnik modelu obiektów, zobacz [określić metodę Outlook używa do zarządzania funkcji ochrony przed wirusami](http://go.microsoft.com/fwlink/?LinkId=128773).  
+ Program Outlook ufa dodatku narzędzi VSTO na podstawie kodu wyznaczania wartości skrótu, biblioteki DLL punktu wejścia dodatku narzędzi VSTO dla programu. Wszystkie Outlook dodatków narzędzi VSTO przeznaczonych dla [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] używać tej samej bibliotece DLL punktu wejścia (*VSTOLoader.dll*). Oznacza to, że jeśli administrator ufa wszelkie dodatku narzędzi VSTO przeznaczonego dla [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] do uruchomienia nie powodując strażnik modelu obiektów, a następnie wszystkich innych dodatków narzędzi VSTO dla programów, których platformą docelową [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] są także zaufane. Aby uzyskać więcej informacji na temat ufające określonych dodatków narzędzi VSTO do uruchomienia nie powodując strażnik modelu obiektów, zobacz [Określ metodę Outlook używa do zarządzania funkcji ochrony przed wirusami](http://go.microsoft.com/fwlink/?LinkId=128773).  
   
-## <a name="permission-changes-do-not-take-effect-immediately"></a>Zmiany uprawnień nie będą obowiązywać natychmiast  
- Jeśli administrator dopasowuje uprawnienia do dokumentu lub zestawu, użytkowników, należy zamknąć i uruchom ponownie wszystkie aplikacje pakietu Office, aby te zmiany mają być egzekwowane.  
+## <a name="permission-changes-do-not-take-effect-immediately"></a>Zmiany uprawnień nie obowiązywać natychmiast  
+ Jeśli administrator dostosowuje uprawnienia do dokumentu lub zestawu, użytkowników, należy zamknąć i uruchom ponownie wszystkie aplikacje pakietu Office dla tych zmian, które zostaną wymuszone.  
   
- Inne aplikacje obsługujące aplikacje Microsoft Office może uniemożliwić również nowe uprawnienia z wymuszany. Użytkownikom należy Zamknij wszystkie aplikacje, korzystających z pakietu Office, hostowanej lub autonomiczne, zmiana zasad zabezpieczeń.  
+ Inne aplikacje, które hostują aplikacje Microsoft Office, mogą również uniemożliwić nowe uprawnienia, jakie są wymuszane. Użytkownikom należy zamknąć wszystkich aplikacji korzystających z pakietu Office, hostowanych lub autonomicznych, po zmianie zasad zabezpieczeń.  
   
-## <a name="trust-center-settings-in-the-microsoft-office-system-do-not-affect-add-ins-or-document-level-customizations"></a>Ustawienia Centrum zaufania Microsoft Office System nie wpływają na dodatki lub dostosowywanie na poziomie dokumentu  
- Użytkownicy mogą uniemożliwić dodatków VSTO ładowanie przez ustawienie opcji **Centrum zaufania**. Jednak dodatków VSTO i dostosowań na poziome dokumentu utworzony przy użyciu rozwiązań pakietu Office w Visual Studio nie dotyczy tych ustawień zaufania.  
+## <a name="trust-center-settings-in-the-microsoft-office-system-do-not-affect-add-ins-or-document-level-customizations"></a>Ustawienia Centrum zaufania systemu Microsoft Office nie wpływają na dodatków lub dostosowań na poziomie dokumentu  
+ Użytkownicy mogą uniemożliwić dodatków narzędzi VSTO ładowania, ustawiając opcję w **Centrum zaufania**. Jednak dodatków narzędzi VSTO dla programów i dostosowań poziomu dokumentu utworzone za pomocą rozwiązań pakietu Office w programie Visual Studio nie dotyczy tych ustawień zaufania.  
   
- Jeśli użytkownik uniemożliwia dodatków VSTO ładowania przy użyciu **Centrum zaufania**, nie zostanie załadowany następujące typy dodatków VSTO:  
+ Jeśli użytkownik uniemożliwia dodatków narzędzi VSTO ładowania przy użyciu **Centrum zaufania**, nie załaduje dodatków narzędzi VSTO dla następujących typów:  
   
--   Zarządzane i niezarządzane COM VSTO dodatki.  
+-   Zarządzane i niezarządzane COM dodatków narzędzi VSTO.  
   
--   Dokumenty inteligentne zarządzane i niezarządzane.  
+-   Dokumenty inteligentne zarządzanych i niezarządzanych.  
   
--   Zarządzane i niezarządzane VSTO automatyzacji dodatki.  
+-   Zarządzane i niezarządzane automatyzacji dodatków narzędzi VSTO.  
   
 -   Składniki zarządzane i niezarządzane danych w czasie rzeczywistym.  
   
- W poniższych procedurach opisano, jak użytkownicy mogą używać **Centrum zaufania** aby uniemożliwić dodatków VSTO obciążenia w programie Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] i Microsoft Office 2010. Te procedury będą miały wpływu na dodatków VSTO lub dostosowania utworzone za pomocą narzędzi programowania pakietu Office w Visual Studio.  
+ W poniższych procedurach opisano sposób używania przez użytkowników **Centrum zaufania** ograniczyć dodatków narzędzi VSTO ładowania w usłudze Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] i Microsoft Office 2010. Procedury te nie wpływają na dodatków narzędzi VSTO dla programów lub dostosowania utworzone za pomocą narzędzi programistycznych pakietu Office w programie Visual Studio.  
   
-#### <a name="to-disable-vsto-add-ins-in-microsoft-office-2010-and-microsoft-includeoffice15shortvstoincludesoffice-15-short-mdmd-applications"></a>Aby wyłączyć dodatków VSTO w Microsoft Office 2010 i Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] aplikacji  
+#### <a name="to-disable-vsto-add-ins-in-microsoft-office-2010-and-microsoft-includeoffice15shortvstoincludesoffice-15-short-mdmd-applications"></a>Aby wyłączyć dodatków narzędzi VSTO dla programów w pakiecie Microsoft Office 2010 i Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] aplikacji  
   
 1.  Wybierz **pliku** kartę.  
   
 2.  Wybierz *ApplicationName* **opcje** przycisku.  
   
-3.  W okienku Kategorie wybierz **Centrum zaufania**.  
+3.  W okienku kategorii wybierz **Centrum zaufania**.  
   
 4.  W okienku szczegółów wybierz **ustawienia Centrum zaufania**.  
   
-5.  W okienku Kategorie wybierz **dodatki**.  
+5.  W okienku kategorii wybierz **Add-ins**.  
   
 6.  W okienku szczegółów wybierz **dodatki wymagają aplikacji były podpisane przez zaufanego wydawcę** lub **Wyłącz wszystkie dodatki aplikacji**.  
   

@@ -16,28 +16,28 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 45bc375a65ebc8519ec3127f67e2f31659738f33
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 5075008e3b6b2b6f9ae087c0cfe962f2a1191f52
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257803"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35676175"
 ---
 # <a name="how-to-programmatically-move-worksheets-within-workbooks"></a>Porady: programowane przenoszenie arkuszy w obrębie skoroszytu
-  Programowo, można zmienić położenie arkuszy względem innych arkuszy w skoroszycie. Jeśli nie określisz lokalizacji dla przeniesionego arkusza programu Excel tworzy nowy skoroszyt, które zawierałoby proces.  
+  Można programowo zmienić położenie arkuszy względem innych arkuszy w skoroszycie. Jeśli nie określisz lokalizacji przenoszony arkusz Excel utworzy nowy skoroszyt zawiera go.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
-## <a name="to-move-a-worksheet-in-a-document-level-customization"></a>Aby przenieść arkusza w dostosowaniu poziomie dokumentu  
+## <a name="to-move-a-worksheet-in-a-document-level-customization"></a>Aby przenieść arkusza w dostosowaniu na poziomie dokumentu  
   
-1.  Przypisz łączna liczba arkuszy w skoroszycie do zmiennej, a następnie przenieść pierwszego arkusza tak, aby stał się ostatnio.  
+1.  Przypisz całkowita liczba arkuszy w skoroszycie do zmiennej, a następnie przenieś pierwszego arkusza, tak, aby stał się ostatni z nich.  
   
      [!code-csharp[Trin_VstcoreExcelAutomation#24](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#24)]
      [!code-vb[Trin_VstcoreExcelAutomation#24](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#24)]  
   
-## <a name="to-move-a-worksheet-in-an-vsto-add-in"></a>Aby przenieść arkusza w dodatku VSTO  
+## <a name="to-move-a-worksheet-in-a-vsto-add-in"></a>Aby przenieść arkusza w dodatku narzędzi VSTO  
   
-1.  Przypisz łączna liczba arkuszy w skoroszycie do zmiennej, a następnie przenieść pierwszego arkusza tak, aby stał się ostatnio.  
+1.  Przypisz całkowita liczba arkuszy w skoroszycie do zmiennej, a następnie przenieś pierwszego arkusza, tak, aby stał się ostatni z nich.  
   
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#16](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#16)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#16](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#16)]  

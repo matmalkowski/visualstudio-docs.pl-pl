@@ -1,5 +1,5 @@
 ---
-title: Pakietu Office i programowanie SharePoint w Visual Studio | Dokumentacja firmy Microsoft
+title: Programowanie Office i programu SharePoint w Visual Studio
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -24,37 +24,37 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c7bd0f38d413fbd3d809773a124699e0e883287d
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 7217c2b3177d3eb1f591cbb6256b9e40fba23b12
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34572169"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35677620"
 ---
 # <a name="office-and-sharepoint-development-in-visual-studio"></a>Programowanie Office i programu SharePoint w Visual Studio
-  Można rozszerzać przez tworzenie lekkie aplikacji Microsoft Office i programu SharePoint lub dodatek czy użytkownicy mogą pobierać z [sklep Office](https://store.office.com/) lub organizacji w katalogu lub tworząc przez użytkowników rozwiązanie oparte na programie .NET Framework należy zainstalować na komputer.  
+  Możesz rozszerzyć Microsoft Office i SharePoint, tworząc uproszczone aplikacji lub dodatku pobierany przez użytkowników z [Store Office](https://store.office.com/) lub organizacji w katalogu lub przez tworzenie rozwiązaniem opartym na programie .NET Framework, którego użytkownik należy zainstalować na komputer.  
   
  W tym temacie:  
   
 -   [Tworzenie dodatków dla pakietu Office i programu SharePoint](#Apps)  
   
--   [Tworzenie dodatków narzędzi VSTO](#Add-ins)  
+-   [Tworzenie dodatku narzędzi VSTO](#Add-ins)  
   
 -   [Tworzenie rozwiązań programu SharePoint](#Solutions)  
   
 ##  <a name="Apps"></a> Tworzenie dodatków dla pakietu Office i programu SharePoint  
- Pakiet Office 2013 i programu SharePoint 2013 wprowadzenie nowego dodatku modelu, który ułatwia tworzenie, rozpowszechnianie i sprzedawać dodatków rozszerzających pakietu Office i programu SharePoint.  Tych dodatków można uruchomić w Office lub SharePoint Online, a użytkownicy mogą pracować z nimi z wielu urządzeń.  
+ Pakiet Office 2013 i programu SharePoint 2013 wprowadzono nowy dodatek model, który ułatwia tworzenie, rozpowszechniać i Zarabiaj dodatków rozszerzających pakiet Office i programu SharePoint.  Uruchomić te dodatki pakietu Office lub usługi SharePoint Online, a użytkownicy mogą wchodzić w interakcje z nimi z wielu urządzeń.  
   
- Dowiedz się, jak korzystać z nowych [modelu dodatku pakietu Office](https://msdn.microsoft.com/library/office/jj220082.aspx) rozszerzyć możliwości pakietu Office dla użytkowników.  
+ Dowiedz się, jak korzystać z nowych [dodatku pakietu Office modelu](https://msdn.microsoft.com/library/office/jj220082.aspx) rozszerzenie obsługi pakietu Office dla użytkowników.  
   
- Te dodatki mają udzielaniu bardzo małe w porównaniu do dodatków VSTO i rozwiązań i można ich tworzyć przy użyciu prawie każdego technologii, takich jak HTML5, CSS3, JavaScript i XML programowanie dla sieci web.  Aby rozpocząć pracę, użyj narzędzia Office Developer Tools w programie Visual Studio lub LDS opartych na sieci web narzędzie nazwę kodową Napa Office 365 programowanie narzędzia, która pozwala na tworzenie projektów, pisania kodu i uruchomić dodatki w przeglądarce sieci.  
+ Dodatki te mają udzielaniu małe w porównaniu do dodatków narzędzi VSTO dla programów i rozwiązań, a następnie utworzyć je przy użyciu niemal dowolnej technologii, takich jak HTML5, JavaScript, CSS3 i XML programowanie dla sieci web.  Aby rozpocząć pracę, użyj narzędzia Office Developer Tools w programie Visual Studio lub prostego, działającego narzędzia opartego na sieci web kodu pakietu Office 365 rozwoju Napa, która pozwala na tworzenie projektów, pisanie kodu i uruchomić dodatki w przeglądarce sieci.  
   
- ![Aplikacje pakietu Office i programu SharePoint modelu koncepcyjnego](../vsto/media/officeandsharepointapps2015.png "aplikacji dla pakietu Office i programu SharePoint model koncepcyjny")  
+ ![Aplikacje dla pakietu Office i programu SharePoint modelu koncepcyjnego](../vsto/media/officeandsharepointapps2015.png "aplikacje dla pakietu Office i programu SharePoint model koncepcyjny")  
   
 ### <a name="build-an-office-add-in"></a>Tworzenie dodatku pakietu Office  
- Aby rozszerzyć funkcjonalność programu Office, kompilacji dodatku pakietu Office. Jest zasadniczo strony sieci Web, która jest obsługiwana w aplikacji pakietu Office, takich jak program Excel, Word, Outlook i PowerPoint. Aplikację można dodać funkcje do dokumenty, arkusze wiadomości e-mail, terminy, prezentacji i projektów.  
+ Aby rozszerzyć funkcje pakietu Office, twórz dodatku pakietu Office. Jest zasadniczo stroną internetową, która znajduje się w aplikacji pakietu Office, takich jak Excel, Word, Outlook i PowerPoint. Aplikację można dodać funkcje do dokumentów, arkuszy, wiadomości e-mail, terminy, prezentacje i projektów.  
   
- Możesz sprzedać aplikacji w sklepie Office.  [Sklep Office](https://store.office.com/) ułatwia sprzedawać dodatki, zarządzanie aktualizacjami i śledzenia telemetrii. Można również opublikować aplikacji użytkownikom za pośrednictwem katalogu aplikacji w programie SharePoint lub na serwerze Exchange.  
+ Możesz sprzedawać swoją aplikację w Store pakietu Office.  [Store Office](https://store.office.com/) ułatwia wprowadzanie do obiegu dodatków, zarządzanie aktualizacjami i śledzenie danych telemetrycznych. Można również publikować aplikację dla użytkowników z katalogu aplikacji w programie SharePoint lub na serwerze Exchange.  
   
  Następujące aplikacja dla pakietu Office zawiera dane arkusza w mapy Bing.  
   
@@ -62,52 +62,52 @@ ms.locfileid: "34572169"
   
  **Dowiedz się więcej**  
   
-|Do|Zobacz|  
+|Zadanie|Zobacz|  
 |--------|---------|  
-|Dowiedz się więcej na temat dodatków pakietu Office, a następnie utworzyć.|[Dodatków pakietu Office](http://msdn.microsoft.com/office/dn448457)|  
-|Porównaj różne sposoby, w którym można rozszerzać pakietu Office i zdecyduj, czy należy użyć aplikacji lub dodatek pakietu Office.|[Plan dla dodatków pakietu Office, VSTO i VBA](http://blogs.msdn.com/b/officeapps/archive/2013/06/18/roadmap-for-apps-for-office-vsto-and-vba.aspx)|  
+|Dowiedz się więcej o dodatki pakietu Office, a następnie utworzyć jeden.|[Dodatki pakietu Office](http://msdn.microsoft.com/office/dn448457)|  
+|Porównaj różne sposoby, w którym można rozszerzyć pakietu Office i zdecyduj, czy należy używać aplikację lub dodatek pakietu Office.|[Harmonogram działania dla dodatków pakietu Office, VSTO i VBA](http://blogs.msdn.com/b/officeapps/archive/2013/06/18/roadmap-for-apps-for-office-vsto-and-vba.aspx)|  
   
 ### <a name="build-a-sharepoint-add-in"></a>Tworzenie dodatku programu SharePoint  
- Aby rozszerzyć programu SharePoint dla użytkowników, tworzenia dodatku programu SharePoint. Zasadniczo jest mały, łatwy w użyciu, autonomicznej aplikacji, która rozwiązuje potrzeby użytkowników lub business.  
+ Aby rozszerzyć programu SharePoint dla użytkowników, tworzenie dodatku programu SharePoint. Jest zasadniczo aplikacją małej, łatwy w użyciu, autonomicznej, która rozwiązuje na potrzeby użytkowników lub firmy.  
   
- Możesz sprzedać aplikacji programu SharePoint w [sklep Office](https://store.office.com/). Można również opublikować dodatek do użytkowników za pomocą wykazu Dodaj w programie SharePoint.  Właściciele witryn można zainstalować, uaktualnić i odinstalować dodatek w swoich witrynach programu SharePoint bez pomocy serwera farmy lub administratorem zbioru witryn.  
+ Możesz sprzedawać swoje aplikacje dla programu SharePoint w [Store Office](https://store.office.com/). Możesz również opublikować dodatku dla użytkowników z katalogu dodatku w programie SharePoint.  Właściciele witryn można zainstalować, uaktualnianie i odinstalowywanie dodatku w swoich witrynach programu SharePoint bez pomocy serwera farmy lub administratorem zbioru witryn.  
   
- Oto przykład aplikacji dla programu SharePoint, która umożliwia użytkownikom zarządzanie kontaktów biznesowych.  
+ Oto przykład aplikacji programu SharePoint, która ułatwia użytkownikom zarządzanie kontaktów służbowych.  
   
- ![Aplikacja biznesowa kontaktów Menedżerze dla programu SharePoint](../vsto/media/appforsharepoint.png "firm kontaktów Menedżerze aplikacji dla programu SharePoint")  
+ ![Business menedżera kontaktu aplikacji dla programu SharePoint](../vsto/media/appforsharepoint.png "firmy kontaktu Menedżera aplikacji dla programu SharePoint")  
   
  **Dowiedz się więcej**  
   
-|Do|Zobacz|  
+|Zadanie|Zobacz|  
 |--------|---------|  
-|Dowiedz się więcej na temat dodatków programu SharePoint, a następnie utworzyć.|[Dodatki programu SharePoint](https://msdn.microsoft.com/library/office/fp179930.aspx)|  
-|Porównaj dodatków dla programu SharePoint z tradycyjnych rozwiązań programu SharePoint.|[SharePoint dodatków w porównaniu z rozwiązaniami SharePoint](http://msdn.microsoft.com/library/office/jj163114.aspx)|  
-|Określ, czy do tworzenia dodatku programu SharePoint lub rozwiązania programu SharePoint.|[Wybór między dodatków programu SharePoint oraz rozwiązań programu SharePoint](https://msdn.microsoft.com/library/office/jj163114.aspx)|
+|Dowiedz się więcej o dodatkach programu SharePoint, a następnie utworzyć jeden.|[Dodatki programu SharePoint](https://msdn.microsoft.com/library/office/fp179930.aspx)|  
+|Porównaj dodatków programu SharePoint przy użyciu tradycyjnych rozwiązań programu SharePoint.|[Dodatków programu SharePoint w porównaniu z rozwiązaniami SharePoint](http://msdn.microsoft.com/library/office/jj163114.aspx)|  
+|Wybierz, czy do tworzenia dodatku programu SharePoint lub rozwiązania programu SharePoint.|[Wybór między dodatków programu SharePoint i rozwiązań SharePoint](https://msdn.microsoft.com/library/office/jj163114.aspx)|
   
-##  <a name="Add-ins"></a> Tworzenie dodatków narzędzi VSTO  
- Utwórz dodatku narzędzi VSTO pod kątem pakietu Office 2007 lub Office 2010 lub przekracza możliwości programu Office dodatków pakietu Office 2013 i Office 2016. Dodatków VSTO uruchamiać tylko na komputerze. Użytkownicy muszą zainstalować dodatków VSTO, dzięki czemu są zwykle trudniejsze do wdrożenia i pomocy technicznej.  Jednak z dodatku VSTO można zintegrować dokładniejsze z pakietu Office. Na przykład go dodać kart i kontrolek do wstążki pakietu Office i wykonywanie zaawansowanych automatyzacji zadań, takich jak scalanie dokumentów lub modyfikowania wykresów. Można korzystać z programu .NET Framework i użyć C# i Visual Basic do interakcji z obiektów pakietu Office.  
+##  <a name="Add-ins"></a> Tworzenie dodatku narzędzi VSTO  
+ Utwórz dodatek narzędzi VSTO dla pakietu Office 2007 lub Office 2010 lub Rozszerz pakiet Office 2013 i Office 2016 poza to, co można zrobić za pomocą dodatków pakietu Office. Dodatków narzędzi VSTO uruchomić tylko na pulpicie. Użytkownicy muszą zainstalować dodatków narzędzi VSTO, dzięki czemu są zwykle trudniejsze do wdrożenia i obsługi.  Jednak dodatku narzędzi VSTO dla programów może zostać zintegrowany dokładniej przy użyciu pakietu Office. Na przykład ją dodać karty i kontrolki do wstążki pakietu Office i wykonywanie zaawansowana Automatyzacja zadań, takich jak scalanie dokumentów lub modyfikowania wykresów. Można korzystać z programu .NET Framework i użyć C# i Visual Basic do interakcji z obiektów pakietu Office.  
   
- Oto przykład jakie dodatku narzędzi VSTO zrobić. Ten dodatek VSTO dodaje formantów wstążki, niestandardowego okienka zadań i okno dialogowe do programu PowerPoint.  
+ Oto przykład jakie dodatku narzędzi VSTO zrobić. Ten dodatek narzędzi VSTO dla programów dodaje formanty wstążki, niestandardowego okienka zadań i okno dialogowe do programu PowerPoint.  
   
- ![PowerPoint dodatku rozwiązania](../vsto/media/powerpointaddin.png "rozwiązania dodatku programu PowerPoint")  
+ ![Rozwiązanie dodatku programu PowerPoint](../vsto/media/powerpointaddin.png "rozwiązanie dodatku programu PowerPoint")  
   
  **Dowiedz się więcej**  
   
-|Do|Odczyt|  
+|Zadanie|Odczyt|  
 |--------|----------|  
-|Porównaj różne sposoby, w którym można rozszerzać pakietu Office i zdecyduj, czy należy użyć dodatku narzędzi VSTO lub dodatek pakietu Office.|[Plan dla dodatków pakietu Office, VSTO i VBA](http://blogs.msdn.com/b/officeapps/archive/2013/06/18/roadmap-for-apps-for-office-vsto-and-vba.aspx)|  
-|Tworzenie dodatku VSTO.|[Tworzenie dodatków narzędzi VSTO z programem Visual Studio](https://msdn.microsoft.com/library/jj620922.aspx)|  
+|Porównaj różne sposoby, w którym można rozszerzyć pakietu Office i zdecyduj, czy należy używać dodatku narzędzi VSTO dla programów lub dodatku pakietu Office.|[Harmonogram działania dla dodatków pakietu Office, VSTO i VBA](http://blogs.msdn.com/b/officeapps/archive/2013/06/18/roadmap-for-apps-for-office-vsto-and-vba.aspx)|  
+|Tworzenie dodatku narzędzi VSTO dla programów.|[Tworzenie dodatków narzędzi VSTO dla programów, za pomocą programu Visual Studio](https://msdn.microsoft.com/library/jj620922.aspx)|  
   
 ##  <a name="Solutions"></a> Tworzenie rozwiązań programu SharePoint  
- Tworzenie rozwiązań programu SharePoint pod kątem programu SharePoint Foundation 2010 i SharePoint Server 2010 lub rozszerzyć programu SharePoint 2013 i programu SharePoint 2016 w sposób poza co to jest możliwe za pomocą dodatku programu SharePoint.  
+ Tworzenie rozwiązań programu SharePoint pod kątem programu SharePoint Foundation 2010 i SharePoint Server 2010 lub rozszerzyć programu SharePoint 2013 i programu SharePoint 2016 w sposób poza to, co można zrobić za pomocą dodatku programu SharePoint.  
   
- Rozwiązania programu SharePoint wymagają lokalnych serwerów farmy programu SharePoint. Administratorzy muszą zainstalować je, a ponieważ rozwiązań w programie SharePoint, mogą one wpłynąć na wydajność serwera. Jednak rozwiązań zapewnia lepszy dostęp do obiektów programu SharePoint. Ponadto podczas kompilowania rozwiązania programu SharePoint, można korzystać z programu .NET Framework i korzystać C# i Visual Basic do interakcji z obiektami programu SharePoint.  
+ Rozwiązania programu SharePoint wymagają serwery farmy programu SharePoint w środowisku lokalnym. Administratorzy muszą zainstalować je, a ponieważ rozwiązań w programie SharePoint, mogą one wpłynąć na wydajność serwera. Jednak rozwiązania zapewniają lepszy dostęp do obiektów programu SharePoint. Ponadto w przypadku tworzenia rozwiązania programu SharePoint, możesz korzystać z programu .NET Framework i używać języka C# i Visual Basic do interakcji z obiektami programu SharePoint.  
   
  **Dowiedz się więcej**  
   
-|Do|Zobacz|  
+|Zadanie|Zobacz|  
 |--------|---------|  
-|Porównanie rozwiązań programu SharePoint z dodatków programu SharePoint.|[SharePoint dodatków w porównaniu z rozwiązaniami SharePoint](http://msdn.microsoft.com/library/office/jj163114.aspx)|  
-|Tworzenie rozwiązań programu SharePoint.|[Tworzenie rozwiązań programu SharePoint](../sharepoint/create-sharepoint-solutions.md)|  
+|Porównanie rozwiązań programu SharePoint przy użyciu dodatków programu SharePoint.|[Dodatków programu SharePoint w porównaniu z rozwiązaniami SharePoint](http://msdn.microsoft.com/library/office/jj163114.aspx)|  
+|Tworzenie rozwiązań programu SharePoint.|[Tworzenie rozwiązań SharePoint](../sharepoint/create-sharepoint-solutions.md)|  
   
   

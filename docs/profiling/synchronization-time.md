@@ -14,20 +14,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b968ead26d632c70f0b1adc8864600769629a90
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: f3236530c1a7b92fd1cba1bdd61e3e1c0973b58c
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35676385"
 ---
 # <a name="synchronization-time"></a>Czas synchronizacji
-Te segmenty na osi czasu są skojarzone z blokuje razy, które są sklasyfikowane jako synchronizacji. Gdy wątek jest oznaczona jako zablokowane na synchronizacji, jest domniemane jedną z tych czynności:  
+Te segmenty na osi czasu są skojarzone z zablokowania prób są klasyfikowane jako synchronizacji. Gdy wątek jest oznaczony jako zablokowane na synchronizacji, jeden z nich jest implikowane:  
   
--   Wykonanie wątku może spowodowały wywołania synchronizacji wątku dobrze znanego interfejsu API takich jak `EnterCriticalSection()` lub `WaitForSingleObject()`.  
+-   Wykonywanie wątku może spowodować utworzenie wywołanie synchronizacji wątków dobrze znanych interfejsów API takich jak `EnterCriticalSection()` lub `WaitForSingleObject()`.  
   
--   Algorytm dopasowania interfejsu API nie może być całkowicie kompleksowe i w związku z tym niektórych interfejsów API, które mogą zostać zamapowane do innych kategorii może również zostać wyświetlony jako synchronizacji, ponieważ ramka w wywołaniu stosu ostatecznie osiągnięty podstawowej jądra blokuje pierwotnych, która została mapowany do tej kategorii.  
+-   Algorytm dopasowania interfejsu API nie może być całkowicie kompleksowe i w związku z tym niektóre interfejsy API, który mógłby być mapowany na innych kategoriach może również wystąpić, ponieważ synchronizacji, ponieważ ramki w wywołaniu stosu po pewnym czasie osiągnięto bazowego jądra blokuje pierwotnych, która została mapowany do tej kategorii.  
   
- Aby zrozumieć podstawową przyczyną zdarzenie blokowania wątku, sprawdzić blokowania stosy wywołań i profilu, raportów.  
+ Aby zrozumieć przyczyny wydarzeniu blokowania wątku, należy dokładnie bada blokowania stosy wywołań i profilu, raportów.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Widok wątków](../profiling/threads-view-parallel-performance.md)

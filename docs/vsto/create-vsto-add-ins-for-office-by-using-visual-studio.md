@@ -13,104 +13,105 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c935d4b71ccea16c450e65c0a153700bfa889583
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: a89f77dc7a4adc7f1aafa1a59b425eefc5b4074e
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35677631"
 ---
 # <a name="create-vsto-add-ins-for-office-by-using-visual-studio"></a>Tworzenie dodatków narzędzi VSTO dla pakietu Office w programie Visual Studio
-  Microsoft Office developer tools w programie Visual Studio umożliwia tworzenie aplikacji .NET Framework, które rozszerzają pakietu Office. Te aplikacje są również nazywane *rozwiązań pakietu Office*.  
+  Microsoft Office developer tools w programie Visual Studio umożliwia tworzenie aplikacji .NET Framework, rozszerzających pakiet Office. Te aplikacje są również nazywane *rozwiązań pakietu Office*.  
   
- Narzędzia deweloperskie pakietu Office funkcje ułatwiające tworzenie rozwiązań pakietu Office dostosowanych do różnych potrzeb biznesowych. Narzędzia obejmują szablony projektów ułatwiające tworzenie rozwiązań pakietu Office za pomocą języka Visual Basic lub Visual C# oraz wizualnych projektantów, które ułatwiają tworzenie niestandardowych interfejsów użytkownika dla rozwiązań pakietu Office.  
+ Office developer tools zapewniają funkcje ułatwiające tworzenie rozwiązań pakietu Office dostosowanych do różnych potrzeb biznesowych. Narzędzia obejmują szablony projektów ułatwiające tworzenie rozwiązań pakietu Office przy użyciu języka Visual Basic lub Visual C# oraz projektantów wizualnych, które ułatwiają tworzenie niestandardowych interfejsów użytkownika dla rozwiązań pakietu Office.  
   
 > [!NOTE]  
->  Pytań dotyczących projektowania rozwiązań, które rozszerzają możliwości pakietu Office przez [wielu platform](https://dev.office.com/add-in-availability)? Zapoznaj się z nowym [modelu dodatków pakietu Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Dodatków pakietu Office mieć niewielkie rozmiary w porównaniu do dodatków VSTO i rozwiązań i można ich tworzyć przy użyciu prawie każdego technologii, takich jak HTML5, CSS3, JavaScript i XML programowanie dla sieci web.  
+>  Zainteresowanych opracowywaniem rozwiązań, które rozszerzają możliwości pakietu Office w [wiele platform](https://dev.office.com/add-in-availability)? Zapoznaj się z nowym [modelu dodatków pakietu Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Dodatki pakietu Office mieć o niewielkich rozmiarach, w porównaniu do dodatków narzędzi VSTO dla programów i rozwiązań, a następnie utworzyć je przy użyciu niemal dowolnej technologii, takich jak HTML5, JavaScript, CSS3 i XML programowanie dla sieci web.  
   
- Najnowsze informacje o programowanie Office zobacz następujące centrów Programowanie w witrynie MSDN:  
+ Aby uzyskać najnowsze informacje o programowaniu dla pakietu Office zobacz następujące centra deweloperskie w witrynie MSDN:  
   
--   [Programowanie Office w Visual Studio developer Portal](http://go.microsoft.com/fwlink/?LinkId=123844) zawiera linki do informacji o produkcie, przykłady kodu, klipów wideo i zasoby społecznościowe o dostosowywanie aplikacji pakietu Office w ramach rozwiązań za pomocą programu Visual Studio .  
+-   [Rozwoju pakietu Office za pomocą portalu dla deweloperów programu Visual Studio](http://go.microsoft.com/fwlink/?LinkId=123844) zawiera linki do informacji o produkcie, przykłady kodu, materiały wideo i zasoby społeczności dotyczące dostosowywania aplikacji pakietu Office w ramach rozwiązania przy użyciu programu Visual Studio .  
   
--   [Microsoft Office developer center](http://go.microsoft.com/fwlink/?LinkId=83467) zawiera łącza do artykułów technicznych, przykłady kodu, pliki do pobrania, informacji społeczności, pomocy technicznej i inne dokumentacji dostosowań pakietu Office i aplikacje biznesowe pakietu Office (OBAs ).  
+-   [Centrum deweloperów Microsoft Office](http://go.microsoft.com/fwlink/?LinkId=83467) zawiera linki do artykułów technicznych, przykłady kodu, pliki do pobrania, informacji społeczności, pomocy technicznej i inne dokumenty dotyczące dostosowań pakietu Office i aplikacje biznesowe pakietu Office (OBAs ).  
   
 ## <a name="in-this-section"></a>W tej sekcji  
  [Rozpoczynanie pracy &#40;programowanie Office w Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
- Zawiera linki do informacji na temat sposobu konfigurowania komputera do tworzenia rozwiązań pakietu Office rozpocząć tworzenie rozwiązań pakietu Office oraz Nowości dotyczące programowanie Office w Visual Studio.  
+ Zawiera łącza do informacji na temat sposobu konfigurowania komputera do tworzenia rozwiązań dla pakietu Office, jak rozpocząć tworzenie rozwiązań pakietu Office i what's new for Office development w programie Visual Studio.  
   
- [Uaktualnienie i migracja rozwiązań pakietu Office](../vsto/upgrading-and-migrating-office-solutions.md)  
- Zawiera linki do informacji o procesie uaktualniania dla projektów utworzonych za pomocą wcześniejszych wersji programu Visual Studio.  
+ [Uaktualnianie i migracja rozwiązań pakietu Office](../vsto/upgrading-and-migrating-office-solutions.md)  
+ Zawiera łącza do informacji na temat procesu uaktualniania dla projektów utworzonych za pomocą wcześniejszych wersji programu Visual Studio.  
   
- [Architektura rozwiązań pakietu Office w Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)  
- Zawiera linki do informacji na temat sposobu rozwiązań pakietu Office, w tym informacje o poziomie dokumentu i dodatków VSTO.  
+ [Architektura rozwiązań pakietu Office w programie Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)  
+ Zawiera łącza do informacji na temat sposobu rozwiązań pakietu Office, w tym informacji na temat dostosowywania poziomie dokumentu i dodatków narzędzi VSTO.  
   
  [Projektowanie i tworzenie rozwiązań pakietu Office](../vsto/designing-and-creating-office-solutions.md)  
- Zawiera informacje dotyczące sposobu tworzenia projektu pakietu Office i skonfiguruj projekt w programie Visual Studio.  
+ Zawiera informacje dotyczące sposobu tworzenia projektu pakietu Office i skonfigurowania projektu w programie Visual Studio.  
   
  [Opracowywania rozwiązań pakietu Office](../vsto/developing-office-solutions.md)  
- Zawiera informacje dotyczące sposobu korzystania z rozwiązań pakietu Office, łącznie ze sposobem dostosowania interfejsu użytkownika pakietu Office, pracować z danymi i rozwiązywanie problemów z kodu zarządzanego.  
+ Zawiera informacje o sposobie używania kodu zarządzanego za pomocą rozwiązań pakietu Office, w tym sposobu dostosowywania interfejsu użytkownika pakietu Office, pracować z danymi i rozwiązywanie problemów.  
   
  [Rozwiązania programu Excel](../vsto/excel-solutions.md)  
- Zawiera informacje dotyczące sposobu automatyzacji programu Excel, tworzyć rozwiązania programu Excel i zrozumieć globalizacji kwestie związane z programu Excel.  
+ Zawiera informacje o tym, jak zautomatyzować programu Excel, utworzenie rozwiązania programu Excel i zrozumienie globalizacji problemy specyficzne dla programu Excel.  
   
- [InfoPath — rozwiązania](../vsto/infopath-solutions.md)  
- Zawiera informacje dotyczące sposobu tworzenia szablonów formularzy i dodatków narzędzi VSTO dla programu InfoPath.  
+ [Rozwiązania InfoPath](../vsto/infopath-solutions.md)  
+ Zawiera informacje o tym, jak utworzyć szablony formularzy i dodatków narzędzi VSTO dla programu InfoPath.  
   
  [Rozwiązania programu Outlook](../vsto/outlook-solutions.md)  
- Zawiera informacje dotyczące sposobu automatyzacji programu Outlook i tworzenie dodatków narzędzi VSTO programu Outlook i stanowią regionów.  
+ Zawiera informacje dotyczące sposobu automatyzacji programu Outlook i tworzenie dodatków narzędzi VSTO dla programu Outlook i regionów formularza.  
   
  [PowerPoint — rozwiązania](../vsto/powerpoint-solutions.md)  
- Zawiera informacje dotyczące sposobu automatyzacji programu PowerPoint i tworzenie dodatków narzędzi VSTO programu PowerPoint.  
+ Zawiera informacje o tym, jak zautomatyzować programu PowerPoint i tworzenie dodatków narzędzi VSTO dla programu PowerPoint.  
   
  [Rozwiązania projektu](../vsto/project-solutions.md)  
- Zawiera informacje dotyczące sposobu automatyzacji programu Microsoft Office project i tworzenie dodatków narzędzi VSTO projektu.  
+ Zawiera informacje o tym, jak zautomatyzować projekt Microsoft Office i utworzyć projekt dodatków narzędzi VSTO.  
   
  [Rozwiązania programu Visio](../vsto/visio-solutions.md)  
- Zawiera informacje dotyczące sposobu automatyzacji programu Visio i tworzenie dodatków narzędzi VSTO programu Visio.  
+ Zawiera informacje o tym, jak zautomatyzować proces programu Visio oraz tworzenie dodatków narzędzi VSTO dla programu Visio.  
   
  [Rozwiązania programu Word](../vsto/word-solutions.md)  
- Zawiera informacje dotyczące sposobu automatyzacji programu Word i tworzyć rozwiązania programu Word.  
+ Informacje na temat automatyzowania programu Word i tworzyć rozwiązania programu Word.  
   
  [Tworzenie rozwiązań pakietu Office](../vsto/building-office-solutions.md)  
- Informacje na temat różnic między tworzenia projektów pakietu Office i innych typów projektów w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
+ Informacje na temat różnic między tworzenia projektów pakietu Office i innych rodzajów projektów w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
  [Debugowanie projektów pakietu Office](../vsto/debugging-office-projects.md)  
- Informacje na temat różnic między debugowania projektów pakietu Office i innych typów projektów w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
+ Informacje na temat różnic między debugowanie projektów pakietu Office i innych rodzajów projektów w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
  [Zabezpieczanie rozwiązań pakietu Office](../vsto/securing-office-solutions.md)  
  Zawiera informacje dotyczące działania funkcji zabezpieczeń w rozwiązaniach pakietu Office.  
   
  [Wdrażanie rozwiązania do pakietu Office](../vsto/deploying-an-office-solution.md)  
- Zawiera informacje dotyczące sposobów udostępniania użytkownikom i poważne problemy należy wziąć pod uwagę podczas wybierania metody wdrażania rozwiązań pakietu Office.  
+ Zawiera informacje dotyczące sposobów udostępniania użytkownikom i główneh kwestie do rozważenia przy wyborze metody wdrażania rozwiązań pakietu Office.  
   
- [Office development ― przykłady i wskazówki](../vsto/office-development-samples-and-walkthroughs.md)  
- Zawiera łącza do tematów, które zapewniają szczegółowe instrukcje dotyczące wykonywania typowych zadań ani aplikacji przykładowych.  
+ [Office development ― przykłady i przewodniki](../vsto/office-development-samples-and-walkthroughs.md)  
+ Zawiera łącza do przykładowych aplikacji i tematów, które dają instrukcje krok po kroku do wykonywania typowych zadań.  
   
  [Informacje ogólne &#40;programowanie Office w Visual Studio&#41;](../vsto/general-reference-office-development-in-visual-studio.md)  
- Zawiera linki do szczegółowych informacji o podstawowe zestawy międzyoperacyjne pakietu Office, manifesty, elementy interfejsu użytkownika i komunikaty o błędach.  
+ Zawiera łącza do szczegółowych informacji o podstawowe zestawy międzyoperacyjne pakietu Office, manifestów, elementy interfejsu użytkownika i komunikaty o błędach.  
   
- [Zarządzana dokumentacja &#40;programowanie Office w Visual Studio&#41;](../vsto/managed-reference-office-development-in-visual-studio.md)  
- Zawiera linki do informacji na temat interfejsu API w przestrzeni nazw i typy, które są używane w pakiecie Office projektów przeznaczonych [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. Dla dokumentacji interfejsu API o obszary nazw i typy, które są używane w projektach pakietu Office, które odnoszą się do programu .NET Framework 3.5, zobacz następującą sekcję informacyjną w dokumentacji programu Visual Studio 2008: [2007 system zarządzana dokumentacja](http://go.microsoft.com/fwlink/?LinkId=160658).  
+ [Dokumentacja zarządzana usługi &#40;programowanie Office w Visual Studio&#41;](../vsto/managed-reference-office-development-in-visual-studio.md)  
+ Zawiera łącza do informacji na temat interfejsu API w przestrzeni nazw i typy, które są używane w pakiecie Office projekty [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. Aby uzyskać dokumentację referencyjną interfejsu API o obszary nazw i typy, które są używane w projektach pakietu Office, przeznaczonych dla programu .NET Framework 3.5, zobacz następującą sekcję informacyjną w dokumentacji programu Visual Studio 2008: [dokumentacjazarządzana2007system](http://go.microsoft.com/fwlink/?LinkId=160658).  
   
  [Niezarządzany wykaz interfejsów API &#40;programowanie Office w Visual Studio&#41;](../vsto/unmanaged-api-reference-office-development-in-visual-studio.md)  
- Zawiera linki do informacji na temat interfejsy modelu COM, które służy do wykonywania działań takich jak obciążenia i zwolnić zarządzane VSTO dodatki w aplikacjach pakietu Office.  
+ Zawiera łącza do informacji dotyczących interfejsów COM, które umożliwia wykonywanie akcji, takich jak ładowanie i zwalnianie zarządzanych dodatków narzędzi VSTO w aplikacjach pakietu Office.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
- [Programowanie Office w Visual Studio developer Portal](http://go.microsoft.com/fwlink/?LinkId=123844)  
- Zawiera dodatkowe zasoby, takie jak artykuły techniczne, pliki wideo i blogów.  
+ [Programowanie Office za pomocą portalu dla deweloperów programu Visual Studio](http://go.microsoft.com/fwlink/?LinkId=123844)  
+ Zawiera dodatkowe zasoby, takie jak artykuły techniczne, materiały wideo i blogów.  
   
- [Centrum deweloperów usługi Visual Studio](http://go.microsoft.com/fwlink/?LinkID=99124)  
- Zawiera dodatkowe zasoby programu Visual Studio, takie jak artykuły techniczne, pliki wideo i blogów.  
+ [Centrum deweloperów w usłudze Visual Studio](http://go.microsoft.com/fwlink/?LinkID=99124)  
+ Zawiera dodatkowe zasoby programu Visual Studio, takie jak artykuły techniczne, materiały wideo i blogów.  
   
- [Portalu dla deweloperów aplikacje biznesowe pakietu Office](http://go.microsoft.com/fwlink/?LinkId=99125)  
- Zawiera informacje o aplikacje biznesowe pakietu Office (OBAs) oraz jak tworzyć je przy użyciu platformy Office system.  
+ [Portal dla deweloperów aplikacji biznesowej pakietu Office](http://go.microsoft.com/fwlink/?LinkId=99125)  
+ Zawiera informacje o aplikacji biznesowej pakietu Office (OBAs) i jak je tworzyć przy użyciu platformy systemu Office.  
   
- [Microsoft Office development sekcji biblioteki MSDN](http://go.microsoft.com/fwlink/?LinkId=149870)  
- Części biblioteki MSDN, gdzie można znaleźć artykuły i odwołać dokumentacji informacje o opracowywaniu rozwiązań dla kilku wersji pakietu Office (nie odnoszą się do rozwoju pakietu Office przy użyciu programu Visual Studio).  
+ [Microsoft Office development części biblioteki MSDN](http://go.microsoft.com/fwlink/?LinkId=149870)  
+ Obszar biblioteki MSDN, gdzie można znaleźć artykuły i dokumentacji o tworzeniu rozwiązań dla różne wersje pakietu Office (nie odnoszą się do rozwoju pakietu Office przy użyciu programu Visual Studio).  
   
- [Programowanie aplikacji w programie Visual Studio](http://msdn.microsoft.com/en-us/97490c1b-a247-41fb-8f2c-bc4c201eff68)  
- Zawiera linki do tematów, w których wyjaśniono sposób można projektowanie, tworzenie, debugowania za pomocą programu Visual Studio i wdrażania aplikacji sieci web, usług XML sieci web i aplikacje klienckie tradycyjnych.  
+ [Tworzenie aplikacji w programie Visual Studio](http://msdn.microsoft.com/97490c1b-a247-41fb-8f2c-bc4c201eff68)  
+ Zawiera łącza do tematów, które wyjaśniają, jak można programu Visual Studio umożliwia projektowanie, rozwój, debugowanie i wdrażanie aplikacji sieci web, usług XML sieci web i aplikacje klienckie tradycyjnych.  
   
- [.NET framework Programowanie w Visual Studio](http://msdn.microsoft.com/en-us/f3f63195-82c6-48e8-a4a0-612810e7d093)  
- W tym artykule omówiono tworzenie aplikacji platformy .NET Framework w języku Visual Basic i Visual C#.  
+ [Programowanie .NET framework w programie Visual Studio](http://msdn.microsoft.com/f3f63195-82c6-48e8-a4a0-612810e7d093)  
+ Omówienie tworzenia aplikacji przy użyciu platformy .NET Framework w języku Visual Basic i Visual C#.  
   
   

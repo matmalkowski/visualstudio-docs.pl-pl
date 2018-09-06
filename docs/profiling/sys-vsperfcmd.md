@@ -10,20 +10,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c202dbaec3ad1bf894d3892f4f89be75c3a7ad7
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 567510bba3e7503fccb1273c306990eb17a93525
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35677507"
 ---
 # <a name="sys-vsperfcmd"></a>Sys (VSPerfCmd)
-VSPerfCmd.exe **Sys** opcji ustawienie profilowania zdarzenia, które jest próbkowany zdarzenia wywołania systemowe (wywołania funkcji profilowanych aplikacji dla systemu operacyjnego), a opcjonalnie zmian liczba systemu wywołań w próbki Interwał w domyślnej 10.  
+*VSPerfCmd.exe* **Sys** opcja umożliwia ustawienie profilowania zdarzenia, które są próbkowane tak, aby zdarzenia wywołania systemowe (wywołania funkcji w profilowanej aplikacji do systemu operacyjnego) i opcjonalnie zmienia numer system wywołań w interwale próbkowania z domyślnego 10.  
   
- **Sys** można używać tylko w wierszu polecenia, który zawiera także **uruchamianie** lub **Attach** opcji.  
+ **Sys** należy używać tylko w wierszu polecenia, który zawiera także **Uruchom** lub **Dołącz** opcji.  
   
- Domyślnie zdarzenia próbkowania profilera ustawiono cykle zegara procesora i interwał próbkowania jest ustawiony na 10 000 000. **Czasomierza**, **PF**, **Sys**, i **licznika** opcje umożliwiają skonfigurowanie zdarzenie próbkowania i interwału próbkowania. **GC** opcja służy do zbierania danych pamięci .NET w każdym zdarzeniu kolekcji alokacji i odzyskiwanie. W wierszu polecenia można określić tylko jeden z tych opcji.  
+ Domyślnie ustawiono profiler zdarzenie próbkowania cykli zegara procesora oraz interwał próbkowania jest ustawiony na 10 000 000. **Czasomierza**, **PF**, **Sys**, i **licznika** opcje umożliwiają skonfigurowanie zdarzenie próbkowania i interwał próbkowania. **GC** opcja służy do zbierania danych pamięci .NET na każde zdarzenie kolekcji alokacji i odzyskiwanie. W wierszu polecenia można określić tylko jeden z tych opcji.  
   
- Zdarzenie próbkowania i interwał próbkowania można ustawić tylko w pierwszym wierszu polecenia, zawierający **uruchamianie** lub **Attach** opcji.  
+ Zdarzenie próbkowania i interwał próbkowania można ustawić tylko w przypadku pierwszego wiersza polecenia, który zawiera **Uruchom** lub **Dołącz** opcji.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -33,42 +34,42 @@ VSPerfCmd.exe {/Launch:AppName|Attach:PID} /Sys[:Events] [Options]
   
 #### <a name="parameters"></a>Parametry  
  `Events`  
- Wartość całkowita określająca liczbę systemu wywołać zdarzenia w interwale próbkowania. Jeśli `Events` nie zostanie określony, interwał jest ustawiony na 10.  
+ Wartość całkowitą, która określa liczbę system wywołać zdarzenia w interwale próbkowania. Jeśli `Events` nie zostanie określony, interwał wynosi 10.  
   
 ## <a name="required-options"></a>Wymagane opcje  
- **Sys** wymaga jednego z następujących opcji.  
+ **Sys** wymaga jednej z następujących opcji.  
   
  **Uruchom:** `AppName`  
- Uruchamia profilera i aplikacji określonej przez `AppName`.  
+ Uruchamia program profilujący i aplikacji, określonej przez `AppName`.  
   
  **Dołącz:** `PID`  
- Dołącza profiler do procesu, który został określony przez `PID`.  
+ Dołącza profiler do procesu określonego przez `PID`.  
   
 ## <a name="invalid-options"></a>Nieprawidłowe opcje  
  Nie można określić następujące opcje w wierszu polecenia jako **Sys**.  
   
  **PF**[**:**`Events`]  
- Ustawia zdarzenie próbkowania błędów stron i opcjonalnie ustawia interwał próbkowania `Events`. Domyślny interwał PF wynosi 10.  
+ Ustawia zdarzenie próbkowania błędów strony i opcjonalnie ustawia interwał próbkowania `Events`. Domyślny interwał PF wynosi 10.  
   
  **Czasomierz**[**:**`Cycles`]  
- Ustawia cykli zdarzenie próbkowania zegara procesora i opcjonalnie ustawia interwał próbkowania `Cycles`. Domyślny interwał czasomierza wynosi 10 000 000.  
+ Ustawia zdarzenie próbkowania zegara procesora cykli i opcjonalnie ustawia interwał próbkowania `Cycles`. Domyślny interwał czasomierza wynosi 10 000 000.  
   
  **Licznik:** `Name`[`,Reload`[`,FriendlyName`]]  
- Ustawia zdarzeń pobierania próbek wydajności procesora CPU licznika określony przez `Name` i ustawia interwał próbkowania `Reload`.  
+ Ustawia zdarzenie próbkowania wydajności procesorów CPU, licznik określonej przez `Name` i ustawia interwał próbkowania `Reload`.  
   
- **Wykaz Globalny**[**:**{**alokacji**&#124;**okres istnienia**}]  
- Umożliwia zbieranie danych pamięci .NET. Domyślnie (**alokacji**), dane są zbierane w każdym zdarzeniu alokacji pamięci. Gdy **okres istnienia** parametr jest określony, również zbieranych danych w każdym zdarzeniu kolekcji pamięci.  
+ **GC**[**:**{**alokacji**&#124;**okres istnienia**}]  
+ Zbiera dane pamięci platformy .NET. Domyślnie (**alokacji**), dane są zbierane na każde zdarzenie alokacji pamięci. Gdy **okres istnienia** parametr jest określony, dane są również zbierane przy każdym zdarzeniu kolekcji wyrzucania elementów.  
   
 ## <a name="example"></a>Przykład  
- W tym przykładzie przedstawiono sposób ustawioną profilera zdarzenie próbkowania wywołań systemowych i ustaw interwał próbkowania do 20 wywołań na próbkę.  
+ W przykładzie pokazano, jak skonfigurować program profilujący zdarzenie próbkowania na wywołania systemowe i jak ustawić interwał próbkowania do 20 połączeń na próbkę.  
   
 ```cmd  
 VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp  
 VSPerfCmd.exe /Launch:TestApp.exe /Sys:20  
 ```  
   
-## <a name="see-also"></a>Zobacz też  
- [VSPerfCmd](../profiling/vsperfcmd.md)   
- [Profilowanie aplikacji autonomicznych](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Profilowanie aplikacji sieci Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+## <a name="see-also"></a>Zobacz także  
+ [Narzędzia VSPerfCmd](../profiling/vsperfcmd.md)   
+ [Profil aplikacji autonomicznych](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+ [Aplikacje sieci web ASP.NET profilu](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [Usługi profilowania](../profiling/command-line-profiling-of-services.md)

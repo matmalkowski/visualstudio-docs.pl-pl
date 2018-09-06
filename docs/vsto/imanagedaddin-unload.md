@@ -15,18 +15,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 283fd069e0de72af92f7999871190c6c8a0d345b
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: db805aa1e00d672b4a0579e546a6827e9135b909
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35676200"
 ---
 # <a name="imanagedaddinunload"></a>IManagedAddin::Unload
-  Wywoływana tuż przed zarządzanych dodatku VSTO nie jest załadowany.  
+  Wywoływana tuż przed zarządzanych dodatku narzędzi VSTO dla programów nie jest załadowany.  
   
 ## <a name="syntax"></a>Składnia  
   
-```c++
+```csharp
 HRESULT Unload();  
 ```  
   
@@ -34,7 +35,7 @@ HRESULT Unload();
  Wartość HRESULT, która wskazuje, czy metoda została ukończona pomyślnie.  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda nie jest wywoływana przy użyciu bieżącej wersji pakietu Microsoft Office. Ta metoda jest zarezerwowana do użytku w przyszłości.  
+ Ta metoda nie jest wywoływana przez bieżącej wersji pakietu Microsoft Office. Ta metoda jest zarezerwowana do użytku w przyszłości.  
   
 ## <a name="see-also"></a>Zobacz także  
  [Imanagedaddin — interfejs](../vsto/imanagedaddin-interface.md)   

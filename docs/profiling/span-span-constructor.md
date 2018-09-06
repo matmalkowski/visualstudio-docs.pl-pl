@@ -1,5 +1,5 @@
 ---
-title: span::span — Konstruktor | Dokumentacja firmy Microsoft
+title: Konstruktor span::span | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: afd383dfd03a1e4e0a2ca9c377ce372d1586c738
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 9fe89b289601775fad8c102e696e799edce1c50c
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35677624"
 ---
 # <a name="spanspan-constructor"></a>span::span — Konstruktor
 Inicjuje nowe wystąpienie klasy `span` klasy.  
@@ -54,10 +55,10 @@ span(
   
 #### <a name="parameters"></a>Parametry  
  `_Series`  
- Kontekst serii prawidłowy znacznik.  
+ Kontekst serii prawidłowe znacznika.  
   
  `_Format`  
- Ciąg formatu złożony, który zawiera tekst zmieszać zero lub więcej elementów formatu, które odnoszą się do obiektów na liście argumentów.  
+ Ciąg formatu złożonego, który zawiera tekst zmieszać z zero lub więcej elementów formatu, które odnoszą się do obiektów na liście argumentów.  
   
  `_Importance`  
  Poziom ważności.  
@@ -66,9 +67,9 @@ span(
  Kategoria.  
   
 ## <a name="requirements"></a>Wymagania  
- **Nagłówek:** cvmarkersobj.h  
+ **Nagłówek:** *cvmarkersobj.h*  
   
  **Namespace:** CONCURRENCY::Diagnostic —
  
- ## <a name="see-also"></a>Zobacz też
+ ## <a name="see-also"></a>Zobacz także
  [span, klasa](../profiling/span-class.md)

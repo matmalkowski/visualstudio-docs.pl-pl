@@ -1,5 +1,5 @@
 ---
-title: '&lt;Dostosowywanie&gt; elementu (Office development w Visual Studio)'
+title: '&lt;dostosowania&gt; — element (Office development w programie Visual Studio)'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,16 +17,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ef7aa93494ef2b2a33ab4533e217bd37ccd07420
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 9ac1a78f0d35b2fac751e87874bbfe169798712a
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35676183"
 ---
-# <a name="ltcustomizationsgt-element-office-development-in-visual-studio"></a>&lt;Dostosowywanie&gt; elementu (Office development w Visual Studio)
-  `customizations` Elementu `vstov4` przestrzeń nazw zawiera wszystkie informacje o instalowaniu i ładowanie poszczególnych rozwiązań pakietu Office.  
+# <a name="ltcustomizationsgt-element-office-development-in-visual-studio"></a>&lt;dostosowania&gt; — element (Office development w programie Visual Studio)
+  `customizations` Elementu `vstov4` przestrzeń nazw zawiera wszystkie informacje o instalowaniu i ładowanie każde z tych rozwiązań pakietu Office.  
   
-## <a name="syntax-for-document-level-customizations"></a>Składnia Dostosowywanie na poziomie dokumentu  
+## <a name="syntax-for-document-level-customizations"></a>Składnia dla dostosowywania poziomie dokumentu  
   
 ```xml
 <customizations>  
@@ -39,7 +40,7 @@ ms.lasthandoff: 05/17/2018
 </customizations>  
 ```  
   
-## <a name="syntax-for-vsto-add-ins"></a>Składnia dla dodatków VSTO  
+## <a name="syntax-for-vsto-add-ins"></a>Składnia dla dodatków narzędzi VSTO  
   
 ```xml
 <customizations>  
@@ -56,23 +57,23 @@ ms.lasthandoff: 05/17/2018
 </customizations>  
 ```  
   
-## <a name="elements-and-attributes"></a>Elementy i atrybuty  
- `customizations` Element zawiera szczegółowe informacje na temat każdego z rozwiązań pakietu Office. Ten element musi być w następującej przestrzeni nazw: `vstov4=urn:schemas-microsoft-com:vsto.v4`. Elementy podrzędne zestawu również musi być w tej przestrzeni nazw.  
+## <a name="elements-and-attributes"></a>Atrybuty i elementy  
+ `customizations` Element zawiera szczegółowe informacje dotyczące poszczególnych rozwiązań pakietu Office. Ten element musi znajdować się w następującej przestrzeni nazw: `vstov4=urn:schemas-microsoft-com:vsto.v4`. Elementy podrzędne zestawu również musi być w tej przestrzeni nazw.  
   
  `customizations` Element nie ma żadnych atrybutów.  
   
  `customizations` Element ma następujący element podrzędny.  
   
 ### <a name="customization"></a>Dostosowywanie  
- Wymagana. `customization` Element `vstov4` przestrzeni nazw jest zdefiniowany w [ &#60;dostosowywania&#62; elementu &#40;programowanie Office w Visual Studio&#41;](../vsto/customization-element-office-development-in-visual-studio.md).  
+ Wymagane. `customization` Element `vstov4` przestrzeń nazw została zdefiniowana w [ &#60;dostosowywania&#62; elementu &#40;programowanie Office w Visual Studio&#41;](../vsto/customization-element-office-development-in-visual-studio.md).  
   
-## <a name="example-of-a-document-level-customization"></a>Przykład dostosowania poziomie dokumentu  
+## <a name="example-of-a-document-level-customization"></a>Przykład dostosowywania poziomie dokumentu  
   
 ### <a name="description"></a>Opis  
- Poniższy przykład kodu pokazuje `customizations` element do dostosowania poziomie dokumentu.  
+ W poniższym przykładzie kodu pokazano `customizations` element dla dostosowywania poziomie dokumentu.  
   
 > [!NOTE]  
->  Ten przykładowy kod jest częścią większego przykładu udostępnionego w [manifesty aplikacji dla rozwiązań pakietu Office](../vsto/application-manifests-for-office-solutions.md).  
+>  Ten przykład kodu jest częścią większego przykładu przewidzianego w [manifesty aplikacji dla rozwiązań pakietu Office](../vsto/application-manifests-for-office-solutions.md).  
   
 ### <a name="code"></a>Kod  
   
@@ -86,10 +87,10 @@ ms.lasthandoff: 05/17/2018
 </vstov4:customizations>  
 ```  
   
-## <a name="example-of-an-vsto-add-in"></a>Przykład dodatku narzędzi VSTO  
+## <a name="example-of-a-vsto-add-in"></a>Przykład dodatku narzędzi VSTO  
   
 ### <a name="description"></a>Opis  
- Poniższy przykład kodu pokazuje `customizations` elementu dodatku VSTO. Jest to dodatku VSTO dla programu Outlook obejmuje regionów formularzy. Ten przykładowy kod jest częścią większego przykładu udostępnionego w [manifesty aplikacji dla rozwiązań pakietu Office](../vsto/application-manifests-for-office-solutions.md).  
+ W poniższym przykładzie kodu pokazano `customizations` element dla dodatku narzędzi VSTO. Jest to dodatek narzędzi VSTO dla programu Outlook, która obejmuje regionów formularzy w. Ten przykład kodu jest częścią większego przykładu przewidzianego w [manifesty aplikacji dla rozwiązań pakietu Office](../vsto/application-manifests-for-office-solutions.md).  
   
 ### <a name="code"></a>Kod  
   

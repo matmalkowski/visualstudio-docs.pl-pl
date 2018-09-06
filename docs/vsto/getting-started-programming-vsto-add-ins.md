@@ -18,37 +18,38 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7249c3971c8008f70b9e5add79adddde17fe6a82
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 0443a8fc23c2dc9a78cf35ba8a822fc6627a1c1c
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35676390"
 ---
 # <a name="get-started-programming-vsto-add-ins"></a>Wprowadzenie do programowania dodatków narzędzi VSTO
-  Dodatków VSTO umożliwia automatyzowanie aplikacji Microsoft Office, Rozszerz funkcje aplikacji i dostosowania interfejsu użytkownika (UI) aplikacji. Aby dowiedzieć się jak Porównaj dodatków narzędzi VSTO z innych rozwiązań pakietu Office można tworzyć przy użyciu programu Visual Studio, zobacz [rozwój rozwiązań Office ― omówienie &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
+  Za pomocą dodatków narzędzi VSTO automatyzację aplikacji Microsoft Office, Rozszerz funkcje aplikacji i dostosowywanie interfejsu użytkownika (UI) aplikacji. Aby uzyskać informacji na temat jak dodatków narzędzi VSTO wypadają w porównaniu do innych typów rozwiązań dla pakietu Office, można utworzyć przy użyciu programu Visual Studio, zobacz [rozwój rozwiązań Office ― omówienie &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
   
  [!INCLUDE[appliesto_allapp](../vsto/includes/appliesto-allapp-md.md)]  
   
-## <a name="create-vsto-add-in-projects"></a>Tworzenie projektów dodatku VSTO  
- Tworzenie projektów dodatku VSTO przy użyciu jednej z dodatku VSTO szablonów projektu w **nowy projekt** okno dialogowe. Te szablony zawierają odwołania do wymaganych zestawów i pliki projektu. Program Visual Studio udostępnia dodatku VSTO szablonów projektu dla większości aplikacji pakietu Office.  
+## <a name="create-vsto-add-in-projects"></a>Tworzenie projektów dodatku narzędzi VSTO  
+ Tworzenie projektów w dodatku narzędzi VSTO za pomocą jednego z dodatku narzędzi VSTO szablonów projektów w **nowy projekt** okno dialogowe. Te szablony zawierają odwołania do zestawów wymagane, a pliki projektu. Visual Studio udostępnia dodatku narzędzi VSTO szablony projektów dla większości aplikacji pakietu Office.  
   
- Aby uzyskać więcej informacji na temat tworzenia projektów dodatku VSTO, zobacz [porady: tworzenie projektach pakietu Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md). Aby uzyskać więcej informacji na temat szablonów projektu, zobacz [Omówienie szablonów programu Office project](../vsto/office-project-templates-overview.md).  
+ Aby uzyskać więcej informacji o sposobie tworzenia projektu dodatku narzędzi VSTO dla programów, zobacz [porady: tworzenie projekty pakietu Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md). Aby uzyskać więcej informacji na temat szablonów projektu, zobacz [Przegląd szablony projektu pakietu Office](../vsto/office-project-templates-overview.md).  
   
-## <a name="develop-vsto-add-in-projects"></a>Tworzenie projektów dodatku VSTO  
- Podczas tworzenia projektów dodatku VSTO programu Visual Studio automatycznie tworzy *ThisAddIn.vb* (w [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]) lub *ThisAddIn.cs* (w języku C#) code pliku. Ten plik zawiera `ThisAddIn` klasy, która stanowi podstawę sieci dodatku VSTO. Elementy członkowskie tej klasy można użyć do uruchomienia kodu po dodatku VSTO jest załadowany lub zwalnianie dostępu do modelu obiektu aplikacji hosta i rozszerzania funkcji aplikacji. Aby uzyskać więcej informacji, zobacz [dodatków VSTO programu](../vsto/programming-vsto-add-ins.md).  
+## <a name="develop-vsto-add-in-projects"></a>Tworzenie projektów dodatku narzędzi VSTO  
+ Podczas tworzenia projektu dodatku narzędzi VSTO dla programu Visual Studio automatycznie tworzy *ThisAddIn.vb* (w [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]) lub *ThisAddIn.cs* plik kodu (w języku C#). Ten plik zawiera `ThisAddIn` klasy, która stanowi podstawę dla dodatku VSTO. Elementy członkowskie tej klasy można użyć do uruchomienia kodu po dodatku narzędzi VSTO jest załadowany lub zwolnione, dostępu do modelu obiektu aplikacji hosta, a także aby rozszerzyć funkcje aplikacji. Aby uzyskać więcej informacji, zobacz [dodatków narzędzi VSTO programu](../vsto/programming-vsto-add-ins.md).  
   
-## <a name="automate-applications-by-using-the-object-models"></a>Automatyzowanie aplikacji przy użyciu modeli obiektów  
- Modele obiektów w aplikacji pakietu Microsoft Office ujawniać wiele typów, które można program względem w dodatku VSTO. Te typy umożliwia automatyczne stosowanie. Na przykład można programowo utworzyć i wysłać wiadomość e-mail w programie Outlook lub możesz otworzyć dokument i Dodaj zawartość w programie Word. Aby uzyskać więcej informacji na temat dostępu do modelu obiektu aplikacji hosta w kodzie, zobacz [dodatków VSTO programu](../vsto/programming-vsto-add-ins.md).  
+## <a name="automate-applications-by-using-the-object-models"></a>Automatyzacja aplikacji przy użyciu modeli obiektów  
+ Modele obiektów w aplikacji pakietu Microsoft Office ujawnia wiele typów, których można programować względem w dodatku VSTO. Te typy można użyć do zautomatyzowania aplikacji. Na przykład można programowo tworzyć i wysyłać wiadomości e-mail w programie Outlook lub możesz otworzyć dokument i Dodaj zawartość w programie Word. Aby uzyskać więcej informacji na temat dostępu do modelu obiektu w kodzie aplikacji hosta, zobacz [dodatków narzędzi VSTO programu](../vsto/programming-vsto-add-ins.md).  
   
  Aby uzyskać więcej informacji na temat modeli obiektów określonych aplikacji pakietu Microsoft Office zobacz następujące tematy:  
   
 -   [Model obiektu Excel ― omówienie](../vsto/excel-object-model-overview.md)  
   
--   [Przegląd modelu obiektów programu Word](../vsto/word-object-model-overview.md)  
+-   [Model obiektu Word — omówienie](../vsto/word-object-model-overview.md)  
   
 -   [Model obiektu Outlook ― omówienie](../vsto/outlook-object-model-overview.md)  
   
--   [InfoPath — rozwiązania](../vsto/infopath-solutions.md)  
+-   [Rozwiązania InfoPath](../vsto/infopath-solutions.md)  
   
 -   [PowerPoint — rozwiązania](../vsto/powerpoint-solutions.md)  
   
@@ -57,42 +58,42 @@ ms.lasthandoff: 05/22/2018
 -   [Model obiektu Visio ― omówienie](../vsto/visio-object-model-overview.md)  
   
 ## <a name="customize-the-user-interface-of-applications"></a>Dostosowywanie interfejsu użytkownika aplikacji  
- Istnieją różne sposoby dostosowania interfejsu użytkownika aplikacji hosta przy użyciu dodatku VSTO:  
+ Istnieje kilka różnych sposobów dostosowania interfejsu użytkownika aplikacji hosta przy użyciu dodatku VSTO:  
   
--   Dla programów Excel i Word można dodawać formanty zarządzanego do dokumentów. Aby uzyskać więcej informacji, zobacz [dokumentów rozszerzania programu Word i skoroszytów programu Excel w dodatkach VSTO w czasie wykonywania](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
+-   Dla programów Excel i Word można dodać formanty zarządzanego do dokumentów. Aby uzyskać więcej informacji, zobacz [Rozszerzanie dokumentów programu Word i skoroszytów programu Excel w dodatkach VSTO w czasie wykonywania](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
   
--   Jeśli aplikacja obsługuje tę funkcję można dostosować wstążki. Aby uzyskać więcej informacji, zobacz [Wstążka ― omówienie](../vsto/ribbon-overview.md).  
+-   Jeśli aplikacja obsługuje tę funkcję, możesz dostosować wstążki. Aby uzyskać więcej informacji, zobacz [Wstążka ― omówienie](../vsto/ribbon-overview.md).  
   
--   Jeśli aplikacja obsługuje tę funkcję, można utworzyć niestandardowego okienka zadań. Aby uzyskać więcej informacji, zobacz [niestandardowego okienka zadań](../vsto/custom-task-panes.md).  
+-   Jeśli aplikacja obsługuje tę funkcję, możesz utworzyć niestandardowego okienka zadań. Aby uzyskać więcej informacji, zobacz [niestandardowych okienek zadań](../vsto/custom-task-panes.md).  
   
--   Dla programu Outlook można utworzyć regionu formularza niestandardowego. Aby uzyskać więcej informacji, zobacz [regionów formularzy Outlook utwórz](../vsto/creating-outlook-form-regions.md).  
+-   Dla programu Outlook można utworzyć region formularza niestandardowego. Aby uzyskać więcej informacji, zobacz [regionach formularzy programu Outlook z tworzenia](../vsto/creating-outlook-form-regions.md).  
   
--   Dla wszystkich aplikacji Microsoft Office można wyświetlić w dodatku VSTO z formularzy systemu Windows.  
+-   Dla wszystkich aplikacji programu Microsoft Office możesz wyświetlić Windows Forms w dodatku VSTO.  
   
  Aby uzyskać więcej informacji na temat sposobu dostosowywania aplikacji interfejsu użytkownika pakietu Microsoft Office, zobacz [dostosowywania interfejsu użytkownika pakietu Office](../vsto/office-ui-customization.md).  
   
 ## <a name="next-steps"></a>Następne kroki  
- Aby dowiedzieć się, jak tworzenie dodatków narzędzi VSTO, zobacz następujące wskazówki:  
+ Aby dowiedzieć się, jak tworzenie dodatków narzędzi VSTO dla programów, zobacz następujące instruktaże:  
   
--   [Wskazówki: Tworzenie pierwszego dodatek VSTO dla programu Excel](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md)  
+-   [Przewodnik: Tworzenie pierwszego dodatku narzędzi VSTO dla programu Excel](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md)  
   
--   [Wskazówki: Tworzenie pierwszego VSTO dodatek dla programu Outlook](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)  
+-   [Przewodnik: Tworzenie Twojego pierwszego dodatku narzędzi VSTO dla programu Outlook](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)  
   
--   [Wskazówki: Tworzenie pierwszego dodatek VSTO dla programu PowerPoint](../vsto/walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md)  
+-   [Przewodnik: Tworzenie pierwszego dodatku narzędzi VSTO dla programu PowerPoint](../vsto/walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md)  
   
--   [Wskazówki: Tworzenie pierwszego VSTO dodatek dla projektu](../vsto/walkthrough-creating-your-first-vsto-add-in-for-project.md)  
+-   [Przewodnik: Tworzenie Twojego pierwszego dodatku narzędzi VSTO dla projektu](../vsto/walkthrough-creating-your-first-vsto-add-in-for-project.md)  
   
--   [Wskazówki: Tworzenie pierwszego dodatek VSTO dla programu Word](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md)  
+-   [Przewodnik: Tworzenie pierwszego dodatku narzędzi VSTO dla programu Word](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md)  
   
- Te wskazówki przedstawiono narzędzi programowania pakietu Office w Visual Studio i modelu programowania dla dodatków VSTO.  
+ Te wskazówki zawierają wprowadzenie do narzędzi programistycznych pakietu Office w Visual Studio i modelu programowania dla dodatków narzędzi VSTO.  
   
- Aby uzyskać listę tematów, które umożliwia przeprowadzenie niektórych typowych zadań w projektach pakietu Office, zobacz [typowe zadania w programowaniu pakietu Office](../vsto/common-tasks-in-office-programming.md).  
+ Aby uzyskać listę tematów, które prowadzą użytkownika przez niektóre typowe zadania w projektach pakietu Office, zobacz [typowe zadania w programowaniu Office](../vsto/common-tasks-in-office-programming.md).  
   
 ## <a name="see-also"></a>Zobacz także  
  [Porady: tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Rozpoczynanie pracy &#40;programowanie Office w Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
  [Pisanie kodu w rozwiązaniach pakietu Office](../vsto/writing-code-in-office-solutions.md)   
  [Architektura dodatków narzędzi VSTO](../vsto/architecture-of-vsto-add-ins.md)   
- [Program dodatków VSTO](../vsto/programming-vsto-add-ins.md)  
+ [Program dodatków narzędzi VSTO](../vsto/programming-vsto-add-ins.md)  
   
   

@@ -18,74 +18,74 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6133249720711a057ed66516571563f8a5ee0db9
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 11015f0afb59f0d1aa71bad4adbc48b6c99887a2
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35256965"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35676185"
 ---
 # <a name="how-to-programmatically-exclude-paragraph-marks-when-creating-ranges"></a>Porady: programowane wykluczanie znaczników akapitu podczas tworzenia zakresów
-  Gdy utworzysz <xref:Microsoft.Office.Interop.Word.Range> obiektu akapitu, wszystkie znaki niedrukowalne, takie jak znaczników akapitu w oparciu znajdują się w zakresie. Możesz wstawić tekst z akapitu źródła do akapitu docelowego. Jeśli nie chcesz podzielić akapitu docelowego na oddzielnych akapitów, następnie należy najpierw usunąć znacznik akapitu z akapitu źródła. Ponadto ponieważ informacje dotyczące formatowania akapitu są przechowywane w ramach znak, nie można uwzględniać to po włożeniu zakres do istniejącego akapitu.  
+  Zawsze, gdy tworzysz <xref:Microsoft.Office.Interop.Word.Range> obiektu w oparciu akapitu, wszystkie znaki niedrukowane, takie jak znaczniki akapitu, znajdują się w zakresie. Możesz wstawić tekst z akapitu źródła do docelowego akapitu. Jeśli chcesz podzielić akapit docelowy na oddzielnych akapitów, następnie należy najpierw usunąć znak z akapitu źródła. Ponadto ponieważ informacje o formatowaniu akapitu są przechowywane w ramach znak, nie można uwzględniać, to podczas wstawiania zakresu do istniejącego akapitu.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
- Na poniższej przykładowej procedurze deklaruje dwóch zmiennych ciągu, pobiera zawartość akapitów pierwszego i drugiego w aktywnym dokumencie, a następnie wymiany ich zawartość. W przykładzie pokazano następnie usuwając znacznik akapitu z zakresu przy użyciu <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> — metoda i wstawianie tekstu akapitu.  
+ Poniższej przykładowej procedurze deklaruje dwie zmienne ciągu, pobiera zawartość akapitów pierwszego i drugiego w aktywnym dokumencie, a następnie zamienia ich zawartość. W przykładzie pokazano następnie usuwanie znaczników akapitu z zakresu przy użyciu <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> metody i wstawianie tekstu akapitu.  
   
 ## <a name="to-control-paragraph-structure-when-inserting-text"></a>Aby kontrolować struktury akapitu podczas wstawiania tekstu  
   
-1.  Utwórz dwie zmienne zakresu akapitów pierwszego i drugiego i pobrać jego zawartość <xref:Microsoft.Office.Interop.Word.Range.Text%2A> właściwości.  
+1.  Utwórz dwie zmienne zakresu akapitów pierwszego i drugiego, a następnie pobrać ich zawartość przy użyciu <xref:Microsoft.Office.Interop.Word.Range.Text%2A> właściwości.  
   
-     Poniższy przykład kodu może służyć w dostosowaniu poziomie dokumentu.  
+     Poniższy przykład kodu może służyć w dostosowaniu na poziomie dokumentu.  
   
      [!code-vb[Trin_VstcoreWordAutomation#27](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#27)]
      [!code-csharp[Trin_VstcoreWordAutomation#27](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#27)]  
   
-     Poniższy przykład kodu można w dodatku VSTO poziomie aplikacji. Ten kod zawiera aktywny dokument.  
+     Poniższy przykład kodu może służyć w dodatku narzędzi VSTO dla dodatku poziomu aplikacji. Ten kod używa aktywnego dokumentu.  
   
      [!code-vb[Trin_VstcoreWordAutomationAddIn#27](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#27)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#27](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#27)]  
   
-2.  Przypisz <xref:Microsoft.Office.Interop.Word.Range.Text%2A> właściwości zamiana tekstu między dwoma akapitów.  
+2.  Przypisz <xref:Microsoft.Office.Interop.Word.Range.Text%2A> właściwość, zamiana tekstu między dwoma akapitami.  
   
      [!code-vb[Trin_VstcoreWordAutomation#28](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#28)]
      [!code-csharp[Trin_VstcoreWordAutomation#28](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#28)]  
   
-3.  Z kolei wybierz każdego zakresu i Wstrzymaj, aby wyświetlić wyniki w oknie komunikatu.  
+3.  Z kolei wybierz każdy z zakresów, a następnie Wstrzymaj, aby wyświetlić wyniki w oknie komunikatu.  
   
      [!code-vb[Trin_VstcoreWordAutomation#29](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#29)]
      [!code-csharp[Trin_VstcoreWordAutomation#29](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#29)]  
   
-4.  Dostosuj `firstRange` przy użyciu <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> metody, aby znacznik akapitu nie jest już częścią `firstRange`.  
+4.  Dostosuj `firstRange` przy użyciu <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> metody, aby znaczników akapitu nie jest już częścią `firstRange`.  
   
      [!code-vb[Trin_VstcoreWordAutomation#30](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#30)]
      [!code-csharp[Trin_VstcoreWordAutomation#30](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#30)]  
   
-5.  Zastąp reszty tekstu w pierwszym akapicie przypisywanie nowe parametry do <xref:Microsoft.Office.Interop.Word.Range.Text%2A> właściwości zakresu.  
+5.  Zastąp pozostały tekst w pierwszym akapicie, przypisując nowy ciąg do <xref:Microsoft.Office.Interop.Word.Range.Text%2A> właściwości zakresu.  
   
      [!code-vb[Trin_VstcoreWordAutomation#31](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#31)]
      [!code-csharp[Trin_VstcoreWordAutomation#31](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#31)]  
   
-6.  Zastąp tekst w `secondRange`, wraz ze znacznikiem.  
+6.  Zastąp tekst umieszczony w `secondRange`, wraz ze znacznikiem.  
   
      [!code-vb[Trin_VstcoreWordAutomation#32](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#32)]
      [!code-csharp[Trin_VstcoreWordAutomation#32](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#32)]  
   
 7.  Wybierz `firstRange` i Wstrzymaj, aby wyświetlić wyniki w oknie komunikatu, a następnie wykonaj taki sam jak `secondRange`.  
   
-     Ponieważ `firstRange` została ponownie zdefiniowana do wykluczanie znaczników akapitu, jest zachowywana oryginalna formatowanie akapitu. Jednak zdania został wstawiony przez znak akapitu w `secondRange`, usuwanie oddzielny akapit.  
+     Ponieważ `firstRange` zostało ponownie zdefiniowane Aby wykluczyć znak akapitu, oryginalnym formatowanie akapitu są zachowywane. Jednak zdania został wstawiony przez znak akapitu w `secondRange`, usuwając oddzielny akapit.  
   
      [!code-vb[Trin_VstcoreWordAutomation#33](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#33)]
      [!code-csharp[Trin_VstcoreWordAutomation#33](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#33)]  
   
-     Oryginalna zawartość obu zakresów zostały zapisane jako ciągi, aby przywrócić go do stanu.  
+     Oryginalną zawartość obu zakresów zostały zapisane jako ciągi, dzięki czemu można przywrócić go do stanu.  
   
-8.  Dopasuj `firstRange` dołączenie znak za pomocą <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> metody dla pozycji o jeden znak.  
+8.  Dopasuj `firstRange` dołączenie znak za pomocą <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> metodę dla jednego znaku na pozycji.  
   
      [!code-vb[Trin_VstcoreWordAutomation#34](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#34)]
      [!code-csharp[Trin_VstcoreWordAutomation#34](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#34)]  
   
-9. Usuń folder `secondRange`. Spowoduje to przywrócenie akapitu trzech do oryginalnego położenia.  
+9. Usuń folder `secondRange`. Spowoduje to przywrócenie akapitu trzy do swojego pierwotnego położenia.  
   
      [!code-vb[Trin_VstcoreWordAutomation#35](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#35)]
      [!code-csharp[Trin_VstcoreWordAutomation#35](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#35)]  
@@ -95,25 +95,25 @@ ms.locfileid: "35256965"
      [!code-vb[Trin_VstcoreWordAutomation#36](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#36)]
      [!code-csharp[Trin_VstcoreWordAutomation#36](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#36)]  
   
-11. Użyj <xref:Microsoft.Office.Interop.Word.Range.InsertAfter%2A> metody <xref:Microsoft.Office.Interop.Word.Range> obiekt do wstawienia oryginalnej zawartości dwóch akapitu po `firstRange`, a następnie wybierz `firstRange`.  
+11. Użyj <xref:Microsoft.Office.Interop.Word.Range.InsertAfter%2A> metody <xref:Microsoft.Office.Interop.Word.Range> obiekt do wstawienia pierwotną wersją zawartości dwóch akapitu po `firstRange`, a następnie wybierz pozycję `firstRange`.  
   
      [!code-vb[Trin_VstcoreWordAutomation#37](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#37)]
      [!code-csharp[Trin_VstcoreWordAutomation#37](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#37)]  
   
 ## <a name="document-level-customization-example"></a>Przykład dostosowania na poziomie dokumentu  
   
-### <a name="to-control-paragraph-structure-when-inserting-text-in-document-level-customizations"></a>Aby kontrolować struktury akapitu podczas wstawiania tekstu w dostosowaniach na poziomie dokumentu  
+### <a name="to-control-paragraph-structure-when-inserting-text-in-document-level-customizations"></a>Do kontrolowania struktury akapitu po Wstawianie tekstu w dostosowaniach na poziomie dokumentu  
   
-1.  W poniższym przykładzie przedstawiono metodę Zakończenie dostosowywania na poziomie dokumentu. Aby użyć tego kodu, uruchom go z `ThisDocument` klasy w projekcie.  
+1.  Poniższy przykład pokazuje całą metodę dla dostosowywania poziomie dokumentu. Aby użyć tego kodu, należy uruchomić go z `ThisDocument` klasy w projekcie.  
   
      [!code-vb[Trin_VstcoreWordAutomation#26](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#26)]
      [!code-csharp[Trin_VstcoreWordAutomation#26](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#26)]  
   
-## <a name="vsto-add-in-example"></a>Przykład dodatku narzędzi VSTO  
+## <a name="vsto-add-in-example"></a>Przykładu dodatku narzędzi VSTO  
   
-### <a name="to-control-paragraph-structure-when-inserting-text-in-an-vsto-add-in"></a>Aby kontrolować struktury akapitu podczas wstawiania tekstu w dodatku VSTO  
+### <a name="to-control-paragraph-structure-when-inserting-text-in-a-vsto-add-in"></a>Do kontrolowania struktury akapitu po Wstawianie tekstu w dodatku narzędzi VSTO  
   
-1.  W poniższym przykładzie przedstawiono metodę pełną dodatku VSTO. Aby użyć tego kodu, uruchom go z `ThisAddIn` klasy w projekcie.  
+1.  Poniższy przykład pokazuje całą metodę dla dodatku VSTO. Aby użyć tego kodu, należy uruchomić go z `ThisAddIn` klasy w projekcie.  
   
      [!code-vb[Trin_VstcoreWordAutomationAddIn#26](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#26)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#26](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#26)]  

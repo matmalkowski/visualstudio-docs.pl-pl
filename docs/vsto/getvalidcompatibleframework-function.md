@@ -13,18 +13,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a7df1e2d197147399fd6492222978dcf748a4bb2
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 18ef1d61d0e203744cc6436d884c37339a4a1ef0
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35676160"
 ---
 # <a name="getvalidcompatibleframework-function"></a>Getvalidcompatibleframework — funkcja
-  Ten interfejs API obsługuje infrastrukturę programu Office i nie jest przeznaczona do użycia bezpośrednio w kodzie.  
+  Ten interfejs API obsługuje infrastrukturę pakietu Office i nie jest przeznaczona do użycia bezpośrednio w kodzie.  
   
 ## <a name="syntax"></a>Składnia  
   
-```c  
+```csharp 
 HRESULT WINAPI GetValidCompatibleFramework(  
     LPCWSTR lpwszCompatibleFrameworksXML,  
     BSTR* pbstrValidFrameworkTag  
@@ -34,10 +35,10 @@ HRESULT WINAPI GetValidCompatibleFramework(
 ### <a name="parameters"></a>Parametry  
 |Parametr|Opis|  
 |---------------|-----------------|  
-|*lpwszCompatibleFrameworksXML*|Nie używaj.|  
-|*pbstrValidFrameworkTag*|Nie używaj.|  
+|*lpwszCompatibleFrameworksXML*|Nie należy używać.|  
+|*pbstrValidFrameworkTag*|Nie należy używać.|  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli funkcja zakończy się powodzeniem, zwraca **S_OK**. W przypadku niepowodzenia funkcja zwraca kod błędu.  
+ Jeśli funkcja się powiedzie, zwraca **S_OK**. Jeśli funkcja zawiedzie, zwraca kod błędu.  
   
   

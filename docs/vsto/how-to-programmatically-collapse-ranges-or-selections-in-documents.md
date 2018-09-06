@@ -19,32 +19,32 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ec80b70ea0433a7ede72fe9ca63a6abfdd07ead5
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 87a4b490b7cc7b1942723e6033117571bf08cba6
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257202"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35676192"
 ---
 # <a name="how-to-programmatically-collapse-ranges-or-selections-in-documents"></a>Porady: programowane zwijanie zakresów lub zaznaczenia w dokumentach
-  Jeśli pracujesz z <xref:Microsoft.Office.Interop.Word.Range> lub <xref:Microsoft.Office.Interop.Word.Selection> obiektu, możesz chcieć zmienić zaznaczenie do punktu wstawiania przed wstawieniem tekstu, aby uniknąć zastępowania istniejącego tekstu. Zarówno <xref:Microsoft.Office.Interop.Word.Range> i <xref:Microsoft.Office.Interop.Word.Selection> obiekty mają Zwiń — metoda, która korzysta z <xref:Microsoft.Office.Interop.Word.WdCollapseDirection> wartości wyliczenia:  
+  Jeśli pracujesz z <xref:Microsoft.Office.Interop.Word.Range> lub <xref:Microsoft.Office.Interop.Word.Selection> obiektu, możesz chcieć zmienić zaznaczenie do punktu wstawiania przed Wstawianie tekstu, aby uniknąć, zastępując istniejący tekst. Zarówno <xref:Microsoft.Office.Interop.Word.Range> i <xref:Microsoft.Office.Interop.Word.Selection> obiekty mają metody Zwiń, co sprawia, że użycie <xref:Microsoft.Office.Interop.Word.WdCollapseDirection> wartości wyliczenia:  
   
--   <xref:Microsoft.Office.Interop.Word.WdCollapseDirection.wdCollapseStart> Zwija zaznaczenie do początku zaznaczenia. Jest to wartość domyślna, jeśli nie określisz wartości wyliczenia.  
+-   <xref:Microsoft.Office.Interop.Word.WdCollapseDirection.wdCollapseStart> Zwija zaznaczenie do początku zaznaczenia. Jest to opcja domyślna, jeśli nie określisz wartości wyliczenia.  
   
 -   <xref:Microsoft.Office.Interop.Word.WdCollapseDirection.wdCollapseEnd> Zwija zaznaczenie do końca zaznaczenia.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
-## <a name="to-collapse-a-range-and-insert-new-text"></a>Zwiń zakresu i Wstaw nowy tekst  
+## <a name="to-collapse-a-range-and-insert-new-text"></a>Aby zwinąć zakresu i Wstaw nowy tekst  
   
-1.  Utwórz <xref:Microsoft.Office.Interop.Word.Range> obiekt, który składa się z pierwszym akapicie w dokumencie.  
+1.  Utwórz <xref:Microsoft.Office.Interop.Word.Range> obiekt, który składa się z pierwszym akapit w dokumencie.  
   
-     Poniższy przykład kodu może służyć w dostosowaniu poziomie dokumentu.  
+     Poniższy przykład kodu może służyć w dostosowaniu na poziomie dokumentu.  
   
      [!code-vb[Trin_VstcoreWordAutomation#46](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#46)]
      [!code-csharp[Trin_VstcoreWordAutomation#46](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#46)]  
   
-     Poniższy przykład kodu można używać w dodatku VSTO. Ten kod zawiera aktywny dokument.  
+     Poniższy przykład kodu może służyć w dodatku VSTO. Ten kod używa aktywnego dokumentu.  
   
      [!code-vb[Trin_VstcoreWordAutomationAddIn#46](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#46)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#46](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#46)]  
@@ -54,7 +54,7 @@ ms.locfileid: "35257202"
      [!code-vb[Trin_VstcoreWordAutomation#47](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#47)]
      [!code-csharp[Trin_VstcoreWordAutomation#47](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#47)]  
   
-3.  Wstawianie nowego tekstu.  
+3.  Wstaw nowy tekst.  
   
      [!code-vb[Trin_VstcoreWordAutomation#48](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#48)]
      [!code-csharp[Trin_VstcoreWordAutomation#48](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#48)]  
@@ -64,27 +64,27 @@ ms.locfileid: "35257202"
      [!code-vb[Trin_VstcoreWordAutomation#49](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#49)]
      [!code-csharp[Trin_VstcoreWordAutomation#49](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#49)]  
   
- Jeśli używasz <xref:Microsoft.Office.Interop.Word.WdCollapseDirection.wdCollapseEnd> wartości wyliczenia, tekst dodaje się na początku akapit.  
+ Jeśli używasz <xref:Microsoft.Office.Interop.Word.WdCollapseDirection.wdCollapseEnd> wartości wyliczenia, tekst zostanie wstawiony na początku następujący akapit.  
   
  [!code-vb[Trin_VstcoreWordAutomation#50](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#50)]
  [!code-csharp[Trin_VstcoreWordAutomation#50](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#50)]  
   
- Może oczekiwać, że wstawianie nowych zdania czy Wstaw go przed znaczników akapitu, ale oznacza to inaczej ponieważ oryginalny zakres obejmuje znaczników akapitu. Aby uzyskać więcej informacji, zobacz [porady: programowane wykluczanie znaczników akapitu podczas tworzenia zakresów](../vsto/how-to-programmatically-exclude-paragraph-marks-when-creating-ranges.md).  
+ Można by oczekiwać, że wstawianie nowych zdania będzie włóż go przed znaczników akapitu, ale oznacza to inaczej, ponieważ oryginalny zakres zawiera znacznik akapitu. Aby uzyskać więcej informacji, zobacz [porady: programowane wykluczanie znaczników akapitu podczas tworzenia zakresów](../vsto/how-to-programmatically-exclude-paragraph-marks-when-creating-ranges.md).  
   
 ## <a name="document-level-customization-example"></a>Przykład dostosowania na poziomie dokumentu  
   
-### <a name="to-collapse-a-range-in-a-document-level-customization"></a>Aby zwinąć zakresu w dostosowaniu poziomie dokumentu  
+### <a name="to-collapse-a-range-in-a-document-level-customization"></a>Aby zwinąć zakresu w dostosowaniu na poziomie dokumentu  
   
-1.  W poniższym przykładzie przedstawiono metodę Zakończenie dostosowywania na poziomie dokumentu. Aby użyć tego kodu, uruchom go z `ThisDocument` klasy w projekcie.  
+1.  Poniższy przykład pokazuje całą metodę dla dostosowywania poziomie dokumentu. Aby użyć tego kodu, należy uruchomić go z `ThisDocument` klasy w projekcie.  
   
      [!code-vb[Trin_VstcoreWordAutomation#45](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#45)]
      [!code-csharp[Trin_VstcoreWordAutomation#45](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#45)]  
   
-## <a name="vsto-add-in-example"></a>Przykład dodatku narzędzi VSTO  
+## <a name="vsto-add-in-example"></a>Przykładu dodatku narzędzi VSTO  
   
-### <a name="to-collapse-a-range-in-an-vsto-add-in"></a>Aby zwinąć zakresu w dodatku VSTO  
+### <a name="to-collapse-a-range-in-a-vsto-add-in"></a>Aby zwinąć zakresu w dodatku narzędzi VSTO  
   
-1.  W poniższym przykładzie przedstawiono metodę pełną dodatku VSTO. Aby użyć tego kodu, uruchom go z `ThisAddIn` klasy w projekcie.  
+1.  Poniższy przykład pokazuje całą metodę dla dodatku VSTO. Aby użyć tego kodu, należy uruchomić go z `ThisAddIn` klasy w projekcie.  
   
      [!code-vb[Trin_VstcoreWordAutomationAddIn#45](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#45)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#45](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#45)]  

@@ -1,5 +1,5 @@
 ---
-title: 'Porady: Odczyt z oraz zapisywanie właściwości dokumentów | Dokumentacja firmy Microsoft'
+title: 'Porady: Odczyt z i zapisu do właściwości dokumentu'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,73 +18,74 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0f420968461b8f4d11416abe85521ed002cf11ae
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 14cecb63e7f96e58b17672bbb5cb67a345b9ece8
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35677598"
 ---
-# <a name="how-to-read-from-and-write-to-document-properties"></a>Porady: odczytywanie i zapisywanie właściwości dokumentów
-  Możesz zapisać dokument, właściwości wraz z dokumentu. Aplikacje pakietu Office zapewniają wiele wbudowanych właściwości, takie jak autor, tytuł i temat. W tym temacie przedstawiono sposób ustawiania właściwości dokumentu w programie Microsoft Office Excel i Microsoft Office Word.  
+# <a name="how-to-read-from-and-write-to-document-properties"></a>Porady: Odczyt z i zapisu do właściwości dokumentu
+  Można zapisać właściwości dokumentu z dokumentu. Aplikacje pakietu Office zapewniają szereg wbudowanych właściwości, takie jak tworzenie, tytuł i temat. W tym temacie przedstawiono sposób ustawiania właściwości dokumentu w programie Microsoft Office Excel i Microsoft Office Word.  
   
- ![łącze do wideo](../vsto/media/playvideo.gif "łącze do wideo") dla powiązanych pokaz wideo, zobacz [jak czy I: dostępu i modyfikowania właściwości dokumentu niestandardowe w programie Microsoft Word?](http://go.microsoft.com/fwlink/?LinkId=136772).  
+ ![Link do wideo](../vsto/media/playvideo.gif "link do wideo") powiązane demonstracyjne wideo – zobacz [jak I: dostępu i manipulowania niestandardowe właściwości dokumentu w programie Microsoft Word?](http://go.microsoft.com/fwlink/?LinkId=136772).  
   
  [!INCLUDE[appliesto_docprops](../vsto/includes/appliesto-docprops-md.md)]  
   
-## <a name="setting-document-properties-in-excel"></a>Ustawienie właściwości dokumentu w programie Excel  
+## <a name="set-document-properties-in-excel"></a>Ustawianie właściwości dokumentu w programie Excel  
  Aby pracować z wbudowanych właściwości w programie Excel, należy użyć następujących właściwości:  
   
--   W projekcie poziomie dokumentu za pomocą <xref:Microsoft.Office.Tools.Excel.Workbook.BuiltinDocumentProperties%2A> właściwość `ThisWorkbook` klasy.  
+-   W projekcie na poziomie dokumentu, należy użyć <xref:Microsoft.Office.Tools.Excel.Workbook.BuiltinDocumentProperties%2A> właściwość `ThisWorkbook` klasy.  
   
--   W projekcie dodatku narzędzi VSTO użyj <xref:Microsoft.Office.Interop.Excel._Workbook.BuiltinDocumentProperties%2A> właściwość <xref:Microsoft.Office.Interop.Excel.Workbook> obiektu.  
+-   W projekcie dodatku narzędzi VSTO dla programów, należy użyć <xref:Microsoft.Office.Interop.Excel._Workbook.BuiltinDocumentProperties%2A> właściwość <xref:Microsoft.Office.Interop.Excel.Workbook> obiektu.  
   
- Te właściwości zwracają <xref:Microsoft.Office.Core.DocumentProperties> obiektu, który jest kolekcją z <xref:Microsoft.Office.Core.DocumentProperty> obiektów. Można użyć `Item` właściwość kolekcji można pobrać określonej właściwości, według nazwy lub indeks w kolekcji.  
+ Te właściwości zwracają <xref:Microsoft.Office.Core.DocumentProperties> obiektu, który jest kolekcją z <xref:Microsoft.Office.Core.DocumentProperty> obiektów. Możesz użyć `Item` właściwość kolekcji można pobrać określonej właściwości według nazwy lub indeksu w tej kolekcji.  
   
- Poniższy przykład kodu pokazuje, jak zmienić wbudowanej **numer poprawki** właściwości w projektach na poziomie dokumentu.  
+ Poniższy przykład kodu pokazuje, jak zmienić wbudowane **numer poprawki** właściwość w projekcie na poziomie dokumentu.  
   
-#### <a name="to-change-the-revision-number-property-in-excel"></a>Aby zmienić właściwość numer wersji w programie Excel  
+### <a name="to-change-the-revision-number-property-in-excel"></a>Aby zmienić właściwość numer wersji w programie Excel  
   
 1.  Właściwości dokumentu wbudowanych można przypisać do zmiennej.  
   
      [!code-vb[Trin_VstcoreProgramming#7](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/ThisWorkbook.vb#7)]
      [!code-csharp[Trin_VstcoreProgramming#7](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingExcelCS/ThisWorkbook.cs#7)]  
   
-2.  Przyrost `Revision Number` właściwości o jeden.  
+2.  Inkrementacja `Revision Number` właściwość, według jedną.  
   
      [!code-vb[Trin_VstcoreProgramming#8](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/ThisWorkbook.vb#8)]
      [!code-csharp[Trin_VstcoreProgramming#8](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingExcelCS/ThisWorkbook.cs#8)]  
   
-## <a name="setting-document-properties-in-word"></a>Ustawienie właściwości dokumentu programu Word  
- Aby pracować z wbudowanych właściwości w programie Word, należy użyć następujących właściwości:  
+## <a name="set-document-properties-in-word"></a>Ustawianie właściwości dokumentu w programie Word  
+ Aby pracować z wbudowanych właściwości w programie Word, użyj następujących właściwości:  
   
--   W projekcie poziomie dokumentu za pomocą <xref:Microsoft.Office.Tools.Word.Document.BuiltInDocumentProperties%2A> właściwość `ThisDocument` klasy.  
+-   W projekcie na poziomie dokumentu, należy użyć <xref:Microsoft.Office.Tools.Word.Document.BuiltInDocumentProperties%2A> właściwość `ThisDocument` klasy.  
   
--   W projekcie dodatku narzędzi VSTO użyj <xref:Microsoft.Office.Interop.Word._Document.BuiltInDocumentProperties%2A> właściwość <xref:Microsoft.Office.Interop.Word.Document> obiektu.  
+-   W projekcie dodatku narzędzi VSTO dla programów, należy użyć <xref:Microsoft.Office.Interop.Word._Document.BuiltInDocumentProperties%2A> właściwość <xref:Microsoft.Office.Interop.Word.Document> obiektu.  
   
- Te właściwości zwracają <xref:Microsoft.Office.Core.DocumentProperties> obiektu, który jest kolekcją z <xref:Microsoft.Office.Core.DocumentProperty> obiektów. Można użyć `Item` właściwość kolekcji można pobrać określonej właściwości, według nazwy lub indeks w kolekcji.  
+ Te właściwości zwracają <xref:Microsoft.Office.Core.DocumentProperties> obiektu, który jest kolekcją z <xref:Microsoft.Office.Core.DocumentProperty> obiektów. Możesz użyć `Item` właściwość kolekcji można pobrać określonej właściwości według nazwy lub indeksu w tej kolekcji.  
   
- Poniższy przykład kodu pokazuje, jak zmienić wbudowanej **podmiotu** właściwości w projektach na poziomie dokumentu.  
+ Poniższy przykład kodu pokazuje, jak zmienić wbudowane **podmiotu** właściwość w projekcie na poziomie dokumentu.  
   
-#### <a name="to-change-the-subject-property"></a>Aby zmienić właściwość podmiotu  
+### <a name="to-change-the-subject-property"></a>Aby zmienić właściwość podmiotu  
   
 1.  Właściwości dokumentu wbudowanych można przypisać do zmiennej.  
   
      [!code-csharp[Trin_VstcoreProgrammingWord#1](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingWordCS/ThisDocument.cs#1)]
      [!code-vb[Trin_VstcoreProgrammingWord#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingWordVB/ThisDocument.vb#1)]  
   
-2.  Zmień `Subject` dla właściwości "W dokumencie".  
+2.  Zmiana `Subject` właściwość "Oficjalny dokument".  
   
      [!code-csharp[Trin_VstcoreProgrammingWord#2](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingWordCS/ThisDocument.cs#2)]
      [!code-vb[Trin_VstcoreProgrammingWord#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingWordVB/ThisDocument.vb#2)]  
   
-## <a name="robust-programming"></a>Niezawodne programowanie  
- Przykładów założono, że kod zostały zapisane `ThisWorkbook` klasy w projektach na poziomie dokumentu dla programu Excel, a `ThisDocument` klasy w projektach na poziomie dokumentu dla programu Word.  
+## <a name="robust-programming"></a>Skuteczne programowanie  
+ W przykładach założono, że kod zostały napisane `ThisWorkbook` klasy w projekcie poziomie dokumentu dla programu Excel, a `ThisDocument` klasy w projekcie poziomie dokumentu dla programu Word.  
   
- Mimo że korzystasz z programu Word i Excel i ich obiektami, Microsoft Office udostępnia listę właściwości dostępne wbudowane dokumentu. Próba uzyskania dostępu do niezdefiniowanej właściwości zgłasza wyjątek.  
+ Mimo że pracujesz z programu Word, Excel i w nich obiekty, Microsoft Office dostarcza listę właściwości dostępnych wbudowanych dokumentu. Podjęto próbę uzyskania dostępu do niezdefiniowanej właściwości zgłasza wyjątek.  
   
-## <a name="see-also"></a>Zobacz też  
- [Programowanie dodatków VSTO](../vsto/programming-vsto-add-ins.md)   
- [Programowania dostosowań na poziomie dokumentu](../vsto/programming-document-level-customizations.md)   
- [Instrukcje: Tworzenie i modyfikowanie właściwości niestandardowego dokumentu](../vsto/how-to-create-and-modify-custom-document-properties.md)  
+## <a name="see-also"></a>Zobacz także  
+ [Program dodatków narzędzi VSTO](../vsto/programming-vsto-add-ins.md)   
+ [Program dostosowań na poziomie dokumentu](../vsto/programming-document-level-customizations.md)   
+ [Porady: tworzenie i modyfikowanie właściwości niestandardowego dokumentu](../vsto/how-to-create-and-modify-custom-document-properties.md)  
   
   

@@ -13,18 +13,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 20c4e363b11647609b67a898878dd4b4e59ba180
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 08b22ed86851a35f23306fc765f62f265da4701e
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35676944"
 ---
 # <a name="ensurevstocomponent-function"></a>Ensurevstocomponent — funkcja
-  Ten interfejs API obsługuje infrastrukturę programu Office i nie jest przeznaczona do użycia bezpośrednio w kodzie.  
+  Ten interfejs API obsługuje infrastrukturę pakietu Office i nie jest przeznaczona do użycia bezpośrednio w kodzie.  
   
 ## <a name="syntax"></a>Składnia  
   
-```c  
+```csharp  
 HRESULT EnsureVSTOComponent(  
     IVSTProject *pProject  
 );  
@@ -34,9 +35,9 @@ HRESULT EnsureVSTOComponent(
   
 |Parametr|Opis|  
 |---------------|-----------------|  
-|*pProject*|Nie używaj.|  
+|*pProject*|Nie należy używać.|  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli funkcja zakończy się powodzeniem, zwraca **S_OK**. W przypadku niepowodzenia funkcja zwraca kod błędu.  
+ Jeśli funkcja się powiedzie, zwraca **S_OK**. Jeśli funkcja zawiedzie, zwraca kod błędu.  
   
   

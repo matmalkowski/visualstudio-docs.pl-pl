@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f6952408611bfdd59a3d488db2a7f34524588edf
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 37f2dd735b7deb2d4fed1232c2ba690b26a9fde0
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35677480"
 ---
 # <a name="span-markers"></a>Znaczniki zakresu
-Znacznik zakresu reprezentuje fazę opisową aplikacji. Na przykład można użyć zakres do reprezentowania przedział czasu, w którym element roboczy w szczególności jest przetwarzana. Długość jego reprezentuje czas trwania fazy odpowiedniej aplikacji. Ta ilustracja przedstawia zakres w Concurrency Visualizer:  
+Span znacznik reprezentuje fazę istotnych aplikacji. Na przykład można użyć zakres reprezentujący przedział czasu, w którym jest przetwarzany danego elementu pracy. Jego długość reprezentuje czas trwania określonego etapu aplikacji. Ta ilustracja przedstawia zakres w Wizualizatorze współbieżności:  
   
- ![Znacznik zakresu na Concurrency Visualizer](../profiling/media/cvmarkerspan.png "CVMarkerSpan")  
-Znacznik zakresu na Concurrency Visualizer  
+ ![Span znacznika w Wizualizatorze współbieżności](../profiling/media/cvmarkerspan.png "CVMarkerSpan")  
+Span znacznika w Wizualizatorze współbieżności  
   
 ## <a name="span-category"></a>Kategoria zakresu  
- Znacznik zakresu jest wyświetlany w jednym z pięciu różnych kolorach, w zależności od jego kategorii. Kolory są powtarzane, jeśli istnieje więcej niż pięć kategorii. Kategoria może być liczbą całkowitą. Na ilustracji przedstawiono pięć możliwych kolorów:  
+ Znacznik zakresu jest wyświetlany w jednej z pięciu różnych kolorach, w zależności od jego kategorii. Kolory są powtarzane, jeśli istnieje więcej niż pięć kategorii. Kategoria może być liczbą całkowitą. Ta ilustracja przedstawia pięć możliwych kolorów:  
   
- ![Pięć zakresów w różnych kategoriach](../profiling/media/cvmarkerspancategory.png "CVMarkerSpanCategory")  
-Kolory pierwsze pięć kategorii zakresu  
+ ![Pięć zakresy w różnych kategoriach](../profiling/media/cvmarkerspancategory.png "CVMarkerSpanCategory")  
+Kolory pierwszych pięć kategorii zakresu  
   
 ## <a name="span-aggregation-markers"></a>Agregacja znaczniki zakresu  
- Czasami zakresu znaczników występują tak blisko siebie w Concurrency Visualizer, że nie można ich indywidualnie wstawiany. Jeśli ten problem wystąpi, szary *znacznika agregacji zakresu* czy reprezentuje podstawowej zakresy są widoczne. Po wskaźnika myszy na ikony, jest wyświetlana etykieta liczba podstawowej zakresy, które są przedstawiane. Aby wyświetlić zakresy, powiększania. Powiększ do końca, nadal jest wyświetlany znacznik agregacji zakresu można wyświetlić podstawowy znaczniki zakresu w [raport dotyczący znaczników](../profiling/markers-report.md). Na ilustracji przedstawiono znacznika zakresu agregacji:  
+ Czasami zakresu znaczniki wystąpić tak blisko siebie nawzajem w Wizualizatorze współbieżności, że nie można ich indywidualnie rysowania. Jeśli ten problem wystąpi, szary *znacznika zakresu agregacji* czy reprezentuje podstawowy zakresy jest widoczne. Po umieszczeniu wskaźnika na jednym z tych ikon etykietka narzędzia Wyświetla liczbę podstawowych zakresy, które są reprezentowane. Aby przejrzeć zakresy, powiększania. Jeśli powiększyć aż i nadal się pojawiać znacznika zakresu agregacji, można wyświetlić podstawowy znaczników zakresu w [raport dotyczący znaczników](../profiling/markers-report.md). Ta ilustracja przedstawia znacznika zakresu agregacji:  
   
- ![Wartość zagregowana span znacznik Concurrency Visualizer](../profiling/media/cvmarkerspanaggregate.png "CVMarkerSpanAggregate")  
-Znacznik span agregacji  
+ ![Wartość zagregowana span znacznika w Wizualizatorze współbieżności](../profiling/media/cvmarkerspanaggregate.png "CVMarkerSpanAggregate")  
+Znacznik zakresu agregacji  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Znaczniki CONCURRENCY Visualizer](../profiling/concurrency-visualizer-markers.md)   
  [Zestaw SDK narzędzia Concurrency Visualizer](../profiling/concurrency-visualizer-sdk.md)

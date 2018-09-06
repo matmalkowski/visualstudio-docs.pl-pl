@@ -1,5 +1,5 @@
 ---
-title: Przewodnik dla początkujących próbkowania Procesora w programie Visual Studio | Dokumentacja firmy Microsoft
+title: Przewodnik po początkujących próbkowania Procesora w programie Visual Studio | Dokumentacja firmy Microsoft
 ms.custom: H1Hack27Feb2017
 ms.date: 02/27/2017
 ms.technology: vs-ide-debug
@@ -16,117 +16,117 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 85d45255b3d92ad57fa57d347b7544a700fa22ae
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 42131bc1a596cf14a219f674227dbbadeb26c370
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34573183"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35677292"
 ---
-# <a name="beginners-guide-to-cpu-sampling"></a>Przewodnik dla początkujących próbkowanie Procesora
-Visual Studio, narzędzia profilowania służy do analizowania problemów z wydajnością w aplikacji. Ta procedura przedstawia sposób użycia **próbkowania** danych.
+# <a name="beginners-guide-to-cpu-sampling"></a>Przewodnik dla początkujących próbkowania Procesora
+Za pomocą programu Visual Studio profiling tools do analizowania problemów z wydajnością w aplikacji. Poniższa procedura przedstawia sposób użycia **próbkowania** danych.
 
 > [!NOTE]
->  Zalecane jest użycie [użycie procesora CPU](../profiling/beginners-guide-to-performance-profiling.md) narzędzia w oknie narzędzia diagnostyczne zamiast starszej wersji narzędzia próbkowanie Procesora, chyba że potrzebne specjalne funkcje takie jak obsługa instrumentacji.
+>  Zalecane jest użycie [użycie procesora CPU](../profiling/beginners-guide-to-performance-profiling.md) narzędzi w oknie narzędzia diagnostyczne, zamiast starszej wersji narzędzia próbkowania Procesora, chyba że potrzebujesz specjalne funkcje, takie jak obsługa instrumentacji.
   
- **Próbkowanie** jest statystyczne metody profilowania, która pokazuje funkcje, które robią większość trybu użytkownika działać w aplikacji. Próbkowanie to dobre miejsce na start do wyszukania obszarów, aby przyspieszyć działanie aplikacji.  
+ **Próbkowanie** jest statystyczną metodą profilowania, która pokazuje funkcje, które wykonują większość trybu użytkownika działają w aplikacji. Pobieranie próbek jest dobrym miejscem do rozpoczęcia wyszukiwania obszarów przyspieszania działania aplikacji.  
   
- W określonych odstępach czasu **próbkowania** metody zbiera informacje o funkcjach, które są wykonywane w aplikacji. Po zakończeniu uruchom profilowanie **Podsumowanie** widok profilowania dane zostaną wyświetlone Najaktywniejsze drzewo wywołań funkcji o nazwie **aktywnej ścieżki**, gdzie większość pracy w aplikacji zostało wykonane. Widok również zawiera listę funkcji, które zostały wykonywania najwięcej indywidualnej pracy, a także wykres osi czasu, którym można skupić się na poszczególnych segmentów sesji próbkowania.  
+ W określonych odstępach czasu **próbkowania** metoda zbiera informacje o funkcjach, które są wykonywane w aplikacji. Po zakończeniu przebiegu profilowania **Podsumowanie** widok profilowania danych zawiera drzewo wywołań najbardziej aktywnych funkcji o nazwie **ścieżka aktywna**, gdzie większość pracy w aplikacji zostało wykonane. Widok również Wyświetla listę funkcji, które wykonywały najbardziej indywidualną pracę i zawiera wykres osi czasu, w którym można skupić się na poszczególnych segmentach sesji pobierania próbek.  
   
- Jeśli **próbkowania** nie zapewnia dane, które chcesz dodać, inne profilowania metody kolekcji narzędzia udostępniają różne rodzaje informacji, które mogą być przydatne do Ciebie. Aby uzyskać więcej informacji o tych innych metod, zobacz [porady: Wybieranie metod kolekcji](../profiling/how-to-choose-collection-methods.md).  
+ Jeśli **próbkowania** nie oferują danych, których potrzebują, innych metod profilowania kolekcji tools zapewniają różne rodzaje informacji, które mogą być pomocne dla użytkownika. Aby uzyskać więcej informacji o tych innych metodach, zobacz [porady: Wybieranie metod kolekcji](../profiling/how-to-choose-collection-methods.md).  
   
 > [!TIP]
->  Jeśli profil jest kod, który wywołuje funkcje systemu Windows, należy upewnić się, że masz najbardziej aktualnej. *pdb* plików. Bez tych plików widoków raportu spowoduje wyświetlenie listy nazw funkcji systemu Windows, które są trudne do zrozumienia i są one niezrozumiałe. Aby uzyskać więcej informacji o sposobie upewnij się, że pliki potrzebne, zobacz [porady: informacje o symbolach Windows odwołanie](../profiling/how-to-reference-windows-symbol-information.md).  
+>  Jeśli profilowany kod wywołuje funkcje Windows, należy upewnić się, że najbardziej aktualnej. *pdb* plików. Bez tych plików widok raportu wyświetli listę nazw funkcji Windows, które są tajemnicze i trudne do zrozumienia. Aby uzyskać więcej informacji na temat upewnij się, że pliki potrzebne Ci zobacz [jak: informacje o symbolach Windows odwołanie](../profiling/how-to-reference-windows-symbol-information.md).  
   
 ## <a name="create-and-run-a-performance-session"></a>Tworzenie i uruchamianie sesji wydajności  
- Aby pobrać dane, które należy przeanalizować, należy najpierw utworzyć sesję wydajności, a następnie uruchom sesję. **Kreatora osiągów** pozwala wykonać obie czynności.  
+ Aby uzyskać dane potrzebne do analizowania, należy najpierw utworzyć sesję wydajności, a następnie uruchom sesji. **Kreatora wydajności** pozwala wykonać obie czynności.  
   
- Jeśli to nie profilowanie aplikacji klasycznej systemu Windows lub aplikacji ASP.NET, należy użyć jednego z innych narzędzi do profilowania. Zobacz [Pierwsze spojrzenie na narzędzia profilowania](../profiling/profiling-tools.md).  
+ Jeśli nie profilowany aplikację Windows lub aplikacji platformy ASP.NET, należy użyć jednego z innych narzędzi do profilowania. Zobacz [Pierwsze spojrzenie na profilowanie narzędzia](../profiling/profiling-feature-tour.md).  
   
 #### <a name="to-create-and-run-a-performance-session"></a>Aby utworzyć i uruchomić sesję wydajności  
   
-1.  Otwórz rozwiązanie w programie Visual Studio. Ustawienie konfiguracji do zlecenia. (Znajdź **konfiguracje rozwiązania** na pasku narzędzi, która jest ustawiona na **debugowania** domyślnie. Zmień, aby **wersji**.)  
+1.  Otwórz rozwiązanie w programie Visual Studio. Ustaw konfigurację do wydania. (Znajdź **konfiguracje rozwiązania** na pasku narzędzi, który jest ustawiony na **debugowania** domyślnie. Zmień ją na **wersji**.)  
   
     > [!IMPORTANT]
-    >  Jeśli nie jesteś administratorem na komputerze, którego używasz, należy uruchomić program Visual Studio jako administrator, podczas używania profilera. (Kliknij prawym przyciskiem myszy ikonę aplikacji programu Visual Studio, a następnie kliknij przycisk **Uruchom jako administrator**.  
+    >  Jeśli nie jesteś administratorem na komputerze, którego używasz, należy uruchamiać Visual Studio jako administrator, podczas korzystania z programu profilującego. (Kliknij prawym przyciskiem myszy ikonę aplikacji Visual Studio, a następnie kliknij przycisk **Uruchom jako administrator**.  
   
-2.  Na **debugowania** menu, wybierz opcję **profilera**, a następnie wybierz **wydajności programu profilującego**.  
+2.  Na **debugowania** menu, wybierz opcję **Profiler**, a następnie wybierz pozycję **Profiler wydajności**.  
   
-3.  Sprawdź **kreatora osiągów** opcji, a następnie kliknij przycisk **Start**.  
+3.  Sprawdź **kreatora wydajności** opcji, a następnie kliknij przycisk **Start**.  
   
-4.  Sprawdź **próbkowania procesora CPU (zalecane)** opcję i kliknij przycisk **Zakończ**.  
+4.  Sprawdź **próbkowania Procesora (zalecane)** opcji, a następnie kliknij przycisk **Zakończ**.  
   
-5.  Uruchamia aplikację i uruchamia profilera do zbierania danych.  
+5.  Aplikacja uruchamia się i program profiler uruchamia zbieranie danych.  
   
-6.  Wykonuje funkcje, które mogą zawierać problemy z wydajnością.  
+6.  Przetestuj funkcjonalność, która może zawierać problemy z wydajnością.  
   
-7.  Zamknij aplikację w zwykły sposób.  
+7.  Zamknij aplikację, tak jak zwykle.  
   
-     Po zakończeniu działania aplikacji, **Podsumowanie** widok danych profilowania pojawia się w oknie głównym programu Visual Studio i ikona dla nowej sesji w **Eksplorator wydajności** okna.  
+     Po zakończeniu działania aplikacji, **Podsumowanie** widok danych profilowania pojawia się w głównym oknie programu Visual Studio i pojawi się ikona nowej sesji w **Eksplorator wydajności** okna.  
   
 ## <a name="step-2-analyze-sampling-data"></a>Krok 2: Analizowanie danych próbkowania  
- Po zakończeniu pracy sesję wydajności **Podsumowanie** widok raportu profilowania pojawia się w oknie głównym w programie Visual Studio.  
+ Po zakończeniu pracy z sesją wydajności **Podsumowanie** widok raportu profilowania pojawia się w głównym oknie programu Visual Studio.  
   
- Zalecamy rozpocząć analizowanie danych, sprawdzając **aktywnej ścieżki** , a następnie na liście funkcji wykonywania najbardziej pracy i na koniec przez koncentrujących się na inne funkcje za pomocą **osi czasu Podsumowanie** . Można również wyświetlić profilowania sugestie i ostrzeżeń w **listy błędów** okna.  
+ Zaleca się rozpocząć analizowanie danych, sprawdzając **ścieżka aktywna** , a następnie listy funkcji, które wykonują najwięcej pracy i ostatecznie przez skupienie się na inne funkcje za pomocą **podsumowania osi czasu** . Można również wyświetlać sugestie profilowania i ostrzeżenia w **lista błędów** okna.  
   
- Należy pamiętać, że metoda pobierania próbek może nie można uzyskać informacje potrzebne. Na przykład próbki są zbierane tylko wtedy, gdy aplikacja jest wykonywany kod trybu użytkownika. W związku z tym niektóre funkcje, takie jak operacje wejścia i wyjścia, nie przechwytuje próbkowania. Narzędzia profilowania zapewniają kilka metod kolekcji, które pozwala skupić się na ważnych danych. Aby uzyskać więcej informacji na temat innych metod, zobacz [porady: Wybieranie metod kolekcji](../profiling/how-to-choose-collection-methods.md).  
+ Należy pamiętać, że metoda pobierania próbek może nie dać użytkownikowi potrzebnych informacji. Na przykład próbki są pobierane tylko wtedy, gdy aplikacja wykonuje kod w trybie użytkownika. W związku z tym niektóre funkcje, takie jak operacje wejścia i wyjścia, nie są przechwytywane przez pobieranie próbek. Narzędzia profilowania zapewniają kilka metod zbierania, które umożliwiają skupić się na ważnych danych. Aby uzyskać więcej informacji o innych metodach, zobacz [porady: Wybieranie metod kolekcji](../profiling/how-to-choose-collection-methods.md).  
   
- Poszczególnych numerowane obszar na ilustracji odnosi się do kroku w procedurze.  
+ Każdy ponumerowany obszar na rysunku dotyczy kroku procedury.  
   
- ![Wyświetl raport z podsumowaniem do próbkowania](../profiling/media/summary_sampling.png "Summary_Sampling")  
+ ![Wyświetl raport podsumowujący dla pobierania próbek](../profiling/media/summary_sampling.png "Summary_Sampling")  
   
-#### <a name="to-analyze-sampling-data"></a>Do analizowania danych próbkowania  
+#### <a name="to-analyze-sampling-data"></a>Aby przeanalizować dane próbkowania  
   
-1.  W **Podsumowanie** widoku **aktywnej ścieżki** pokazuje gałęzi drzewo wywołań aplikacji z najwyższym przykłady włącznie. Jest to ścieżka wykonywania, który był aktywny najbardziej podczas zbierania danych. Wysokiej wartości z wartościami granicznymi może wskazywać, algorytm generuje drzewo wywołań mogą być optymalizowane. Znajdź funkcji w kodzie najniższe w ścieżce. Należy zauważyć, że ścieżka mogą również obejmować lub funkcji systemu w modułach zewnętrznych.  
+1.  W **Podsumowanie** widoku **ścieżka aktywna** zawiera gałąź drzewa wywołań aplikacji z najwyższymi próbkami włącznie. Jest to ścieżka wykonania, która był najbardziej aktywna, gdy zbierano dane. Wysokie wartości włącznie może wskazywać, że algorytm, który generuje drzewo wywołań, mogą być optymalizowane. Znajdź funkcję w kodzie, która jest najniższa w ścieżce. Należy zauważyć, że ścieżka może również zawierać funkcje systemu lub funkcje zewnętrznych modułów.  
   
      ![Profiler Hot Path](../profiling/media/profiler_hotpath.png "Profiler_HotPath")  
   
-    1.  **Przykłady z wartościami granicznymi** wskazuje ilość pracy została wykonana przez funkcję i wszystkie funkcje wywoływane przez go. Wysoka liczba włącznie wskaż funkcje, które są najbardziej kosztownych ogólne.  
+    1.  **Próbki włączne** wskazuje, ile pracy zostało wykonanej przez funkcję i wszystkie funkcje wywoływane przez nią. Wysoka wartość łączna wskazuje funkcje, które są najbardziej kosztowne.  
   
-    2.  **Wyłącznych próbek** wskazuje ilość pracy została wykonana przez kod w treści funkcji, z wyłączeniem pracy wykonanej przez funkcje, które zostały wywołane przez nią. Wysoka liczba wyłącznego może wskazywać wąskie gardło w samej funkcji.  
+    2.  **Próbki wyłączne** wskazuje, ile pracy zostało wykonanej przez kod w treści funkcji, z wyłączeniem pracy wykonanej przez funkcje, które zostały przez nią wywołane. Wysoka pozostałych może wskazać wąskie gardło w samej funkcji.  
   
-2.  Kliknij nazwę funkcji, aby wyświetlić **szczegółów funkcji** widoku danych profilowania. **Szczegółów funkcji** widoku przedstawia widoku graficznego elementów danych profilowania dla wybranej funkcji wyświetlane wszystkie funkcje, które wywołuje się, że funkcja i wszystkie funkcje, które zostały wywołane przez wybranej funkcji.  
+2.  Kliknij nazwę funkcji, aby wyświetlić **Szczegóły funkcji** widoku danych profilowania. **Szczegóły funkcji** widoku przedstawia widok graficzny danych profilowania dla wybranej funkcji, przedstawiający wszystkie funkcje, które wywoływały tą funkcję i wszystkie funkcje, które były wywoływane przez wybraną funkcję.  
   
-    -   Rozmiar bloków funkcji wywołującego i o nazwie stanowią względną częstotliwość funkcji o nazwie lub były nazywane.  
+    -   Rozmiar bloków wywołujących i wywołanych funkcji reprezentuje względną częstotliwość, z którą funkcje wywoływane funkcje lub były wywoływane.  
   
-    -   Można kliknąć nazwę telefonicznej lub wywołał funkcję, aby była wybranej funkcji Widok szczegółów funkcji.  
+    -   Można kliknąć nazwę wywołującej lub wywoływanej funkcji, aby stał się wybrać funkcję widoku szczegółów funkcji.  
   
-    -   W dolnym okienku **szczegółów funkcji** system windows wyświetli kodu funkcji. Jeśli Sprawdź kod i znaleźć możliwość zoptymalizować jego wydajność, kliknij nazwę pliku źródłowego, aby otworzyć go w edytorze programu Visual Studio.  
+    -   W dolnym okienku **Szczegóły funkcji** system windows wyświetli sam kod funkcji. Jeśli sprawdzono kod i znaleziono szansę zoptymalizowania wydajności, kliknij nazwę pliku źródłowego, aby otworzyć go w edytorze programu Visual Studio.  
   
-3.  Aby kontynuować analizę, wróć do **Podsumowanie** widoku, wybierając **Podsumowanie** z **widoku** listy rozwijanej. Sprawdź funkcje w **funkcje wykonujące najwięcej indywidualnej pracy**. Lista funkcji o najwyższym wyłącznych próbek. Kod w treści funkcji tych funkcji wykonywane wiele pracy oraz można zoptymalizować go. Do dalszej analizy określonej funkcji, kliknij nazwę funkcji, aby wyświetlić je w **szczegółów funkcji** widoku.  
+3.  Aby kontynuować analizę, powróć do **Podsumowanie** widoku, wybierając **Podsumowanie** z **widoku** listy rozwijanej. Następnie zbadaj funkcje w **funkcje wykonujące najwięcej pracy poszczególnych**. Lista ta wyświetla funkcje z najwyższą wartością wyłączną próbek. Kod w treści funkcji z tych funkcji wykonuje znaczną pracę i można ją zoptymalizować. W celu dalszej analizy określonej funkcji, kliknij nazwę funkcji, aby wyświetlić ją w **Szczegóły funkcji** widoku.  
   
-     ![Lista funkcje wykonujące najwięcej pracy](../profiling/media/functions_mostwork.png "Functions_MostWork")  
+     ![Lista funkcji, które wykonują najwięcej pracy](../profiling/media/functions_mostwork.png "Functions_MostWork")  
   
-     Kontynuowanie badaniu profilowania Uruchom możesz można Analizuj ponownie segment dane profilowania za pomocą osi czasu w **Podsumowanie** widok do pokazania **aktywnej ścieżki** i **funkcji Wykonanie najwięcej indywidualnej pracy** z wybranego segmentu. Na przykład koncentrujących się na mniejsze szczytu na osi czasu może ujawnić drzewa wywołań kosztowne i funkcje, które nie zostały wyświetlone w analizy całego przebiegu profilowania.  
+     Aby kontynuować badanie uruchomienia profilowania, użytkownik może ponownie przeanalizować segment danych profilowania za pomocą osi czasu w **Podsumowanie** widok, aby pokazać **ścieżka aktywna** i **funkcji Wykonując najbardziej samodzielnej pracy** z wybranego segmentu. Na przykład skupiając się na mniejszych pikach na osi czasu może ujawnić drogie wywołań i funkcje, które nie były pokazane w analizie całego uruchomienia profilowania.  
   
-     Aby Analizuj ponownie segmentu, wybierz segment wewnątrz **osi czasu Podsumowanie** a następnie kliknij przycisk **Filtruj według wyboru**.  
+     Aby ponownie przeanalizować segment, zaznacz segment w **podsumowania osi czasu** pole, a następnie kliknij przycisk **filtru według zaznaczenia**.  
   
      ![Oś czasu widoku podsumowania wydajności](../profiling/media/performancesummary.png "PerformanceSummary")  
   
-4.  Profiler używa również zestaw reguł sugerowanie sposobów poprawy przebiegu profilowania i zidentyfikować problemy wydajność. W przypadku znalezienia problemu, wyświetlane jest ostrzeżenie **listy błędów** okna. Aby otworzyć **listy błędów** okna na **widoku** kliknij menu **listy błędów**.  
+4.  Profiler używa także zestawu reguł, sugerujących sposoby poprawy uruchomienia profilowania i identyfikowania możliwych problemów z wydajnością. Jeśli problem zostanie znaleziony, wyświetlane jest ostrzeżenie w **lista błędów** okna. Aby otworzyć **lista błędów** okna na **widoku** kliknij menu **lista błędów**.  
   
-    -   Aby wyświetlić funkcja, która wywołała ostrzeżenie **szczegółów funkcji** wyświetlić, kliknij dwukrotnie to ostrzeżenie.  
+    -   Aby zobaczyć funkcję, która wzbudziła ostrzeżenie **Szczegóły funkcji** wyświetlić, kliknij dwukrotnie ostrzeżenie.  
   
-    -   Aby wyświetlić szczegółowe informacje na temat tego ostrzeżenia, kliknij prawym przyciskiem myszy błąd, a następnie kliknij przycisk **Pokaż błąd pomóc**  
+    -   Aby wyświetlić szczegółowe informacje na temat ostrzeżenia, kliknij prawym przyciskiem myszy błąd, a następnie kliknij przycisk **Pokaż Pomoc błędu**  
   
-## <a name="step-3-revise-code-and-rerun-a-session"></a>Krok 3: Korygowanie kodu i uruchom ponownie sesję  
- Po znaleźć i zoptymalizować jedną lub więcej funkcji, można powtórzyć przebiegu profilowania i porównywania danych, aby wyświetlić tą różnicą, że zmiany zostały wprowadzone na wydajność aplikacji.  
+## <a name="step-3-revise-code-and-rerun-a-session"></a>Krok 3: Poprawa kodu i ponowne uruchomienie sesji  
+ Po znalezieniu i zoptymalizowaniu jednej lub więcej funkcji, można powtórzyć uruchomienie profilowania i porównać dane, aby wyświetlić tą różnicą, że wprowadzono zmiany wydajności aplikacji.  
   
-#### <a name="to-revise-code-and-rerun-the-profiler"></a>Aby poprawić kod i ponownie uruchom profilera  
+#### <a name="to-revise-code-and-rerun-the-profiler"></a>Aby poprawić kod i uruchomić ponownie program profiler  
   
 1.  Zmień swój kod.  
   
-2.  Aby otworzyć **Eksplorator wydajności**na **debugowania** kliknij menu **profilera**, następnie **Eksplorator wydajności** , a następnie kliknij przycisk **Pokaż Eksplorator wydajności**.  
+2.  Aby otworzyć **Eksplorator wydajności**na **debugowania** kliknij menu **Profiler**, następnie **Eksplorator wydajności** a następnie kliknij przycisk **Pokaż Eksploratora wydajności**.  
   
-3.  W **Eksplorator wydajności**, kliknij prawym przyciskiem myszy sesji, który chcesz ponownie uruchomić, a następnie kliknij przycisk **uruchomienie z profilowania.**  
+3.  W **Eksplorator wydajności**, kliknij prawym przyciskiem myszy sesję, który chcesz ponownie uruchomić, a następnie kliknij przycisk **uruchamianie z profilowaniem.**  
   
-4.  Po ponownym uruchomieniu sesji inny plik danych jest dodawany do *raporty* folderu dla sesji w **Eksplorator wydajności**. Wybierz oba oryginalny i profilowanie nowych danych, kliknij prawym przyciskiem myszy zaznaczenie, a następnie kliknij przycisk **raporty porównanie wydajności**.  
+4.  Po ponownym uruchomieniu sesji inny plik danych jest dodawany do *raporty* folder dla sesji w **Eksplorator wydajności**. Wybierz zarówno oryginał, a nowe dane profilowania, kliknij prawym przyciskiem myszy zaznaczenie, a następnie kliknij przycisk **Porównaj wydajność raportów**.  
   
-     Otwiera nowe okno raportu, wyświetlania wyników porównania. Aby uzyskać więcej informacji o sposobie używania Widok porównania, zobacz [porady: porównywanie plików danych wydajności](../profiling/how-to-compare-performance-data-files.md).
+     Zostanie otwarte nowe okno raportu, wyświetlające wyniki porównania. Aby uzyskać więcej informacji na temat sposobu korzystania z widoku porównania, zobacz [porady: porównywanie plików danych dotyczących wydajności](../profiling/how-to-compare-performance-data-files.md).
   
 ## <a name="see-also"></a>Zobacz także  
  [Eksplorator wydajności](../profiling/performance-explorer.md)   
  [Wprowadzenie](../profiling/getting-started-with-performance-tools.md)   
  [Omówienia](../profiling/overviews-performance-tools.md)  
  [Profilowanie w programie Visual Studio](../profiling/index.md)  
- [Przewodnik po funkcjach profilowania](../profiling/profiling-feature-tour.md)
+ [Pierwsze spojrzenie na narzędziach profilowania](../profiling/profiling-feature-tour.md)

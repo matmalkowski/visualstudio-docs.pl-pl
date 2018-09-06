@@ -1,5 +1,5 @@
 ---
-title: Analizowanie czasu odpowiedzi interfejsu użytkownika HTML w aplikacji platformy uniwersalnej systemu Windows | Dokumentacja firmy Microsoft
+title: Analizowanie czasu odpowiedzi interfejsu użytkownika HTML, w aplikacjach platformy uniwersalnej systemu Windows | Dokumentacja firmy Microsoft
 ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -17,126 +17,126 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 93befa75522f0445c5061a590d4f537bed9357b9
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 482c7213f695fce68026acbd0fd953cf2d4792ad
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34845590"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35676241"
 ---
-# <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>Analizowanie czasu odpowiedzi interfejsu użytkownika HTML w aplikacji uniwersalnych systemu Windows
-W tym temacie opisano, jak do izolowania problemów z wydajnością w aplikacjach za pomocą Profiler czasu odpowiedzi interfejsu użytkownika, narzędzie wydajność, dostępna dla uniwersalnych aplikacji systemu Windows.  
+# <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>Analizowanie czasu odpowiedzi interfejsu użytkownika HTML Universal Windows Apps
+W tym temacie opisano, jak można wyizolować problemy z wydajnością w aplikacjach przy użyciu Profiler czasu odpowiedzi interfejsu użytkownika, narzędzie wydajność, dostępne dla uniwersalnych aplikacji dla Windows.  
   
- Profiler czasu odpowiedzi interfejsu użytkownika można wyizolować problemy, takie jak problemy dotyczące czasu odpowiedzi interfejsu użytkownika lub platformy efekty uboczne, których zwykle występują w przypadku następujące symptomy:  
+ Profiler czasu odpowiedzi interfejsu użytkownika mogą pomóc wyizolować problemy, takie jak problemy dotyczące czasu odpowiedzi interfejsu użytkownika lub platformy efekty uboczne, które zazwyczaj występują z tych objawów:  
   
--   Brak reakcji w interfejsie użytkownika. Aplikacja może wolno odpowiadać wątku interfejsu użytkownika jest wprowadzenie zablokowany. Kilka rzeczy, które mogłyby zablokować wątku interfejsu użytkownika to nadmiernego synchroniczne kod JavaScript, nadmiernego układ CSS lub pracy obliczania CSS, synchroniczne żądań XHR, wyrzucanie elementów bezużytecznych, nadmiernego paint razy lub kod JavaScript obciążenie procesora.  
+-   Brak czasu odpowiedzi w interfejsie użytkownika. Aplikacja może być wolne odpowiedzi, jeśli jest blokowana w wątku interfejsu użytkownika. Kilka rzeczy, które mogą zablokować wątek interfejsu użytkownika obejmują nadmierne synchroniczny kod JavaScript, nadmierne układ CSS lub pracy obliczeń CSS, żądań synchronicznych XHR, wyrzucanie elementów bezużytecznych, czasy nadmierne paint lub kod JavaScript obciążającą procesor.  
   
--   Powolna czasu ładowania aplikacji lub strony. Jest to zazwyczaj spowodowane nadmiernego czas ładowania zasobów.  
+-   Wolne ładowanie aplikacji lub strony. Zazwyczaj jest to spowodowane zbyt czas ładowania zasobów.  
   
--   Visual aktualizacje, które są rzadziej niż oczekiwano. Dzieje się tak, jeśli wątek interfejsu użytkownika jest zbyt zajęty, aby zachować płynne szybkości. Na przykład jeśli trwa wątku interfejsu użytkownika mogą być opuszczane ramki. Niektóre wątku bez interfejsu użytkownika pracy, takich jak żądania sieci, dekodowanie obrazu, oraz farby można również ograniczyć częstotliwości aktualizacji visual. (Nie wszystkie rysowania odbywa się w wątku interfejsu użytkownika).  
+-   Aktualizacje wizualne, które są rzadsze, niż oczekiwano. Dzieje się tak, jeśli wątek interfejsu użytkownika jest zbyt zajęty, aby zachować płynne szybkości. Na przykład jeśli wątek interfejsu użytkownika jest zajęty, ramki mogą być opuszczane. Niektóre wątek bez interfejsu użytkownika działają, takie jak żądania sieci, dekodowanie obrazu, oraz farby można również ograniczyć częstotliwość aktualizacji visual. (Nie wszystkie malowanie odbywa się w wątku interfejsu użytkownika).  
   
-## <a name="run-the-html-ui-responsiveness-tool"></a>Uruchom narzędzie czasu odpowiedzi interfejsu użytkownika HTML  
- Jeśli masz pracy aplikacji platformy uniwersalnej systemu Windows, Otwórz w programie Visual Studio, można użyć narzędzia czasu odpowiedzi interfejsu użytkownika HTML.  
+## <a name="run-the-html-ui-responsiveness-tool"></a>Uruchamianie narzędzia HTML UI Responsiveness  
+ Można użyć narzędzia HTML UI Responsiveness, gdy masz działającą aplikację platformy uniwersalnej systemu Windows, Otwórz w programie Visual Studio.  
   
-1.  Jeśli korzystasz z aplikacji z programu Visual Studio na **standardowe** paska narzędzi w **Rozpocznij debugowanie** wybierz cel wdrożenia, takich jak **komputera lokalnego** lub **Urządzenia**.  
+1.  Po uruchomieniu aplikacji z programu Visual Studio na **standardowa** narzędzi w **Rozpocznij debugowanie** wybierz cel wdrożenia, takich jak **komputera lokalnego** lub **Urządzenia**.  
   
-2.  Na **debugowania** menu, wybierz **wydajności programu profilującego**.  
+2.  Na **debugowania** menu, wybierz **Profiler wydajności**.  
   
-     Jeśli chcesz zmienić element docelowy analizy dla profilera, wybierz**zmienić docelowy**.  
+     Jeśli chcesz zmienić cel analizy programu Profiler, wybierz opcję**zmienić docelowy**.  
   
-     ![Zmień docelowy analizy](../profiling/media/js_tools_target.png "JS_Tools_Target")  
+     ![Zmień cel analizy](../profiling/media/js_tools_target.png "JS_Tools_Target")  
   
      Poniższe opcje są dostępne dla obiektu docelowego analizy:  
   
-    -   **Projekt startowy**. Wybierz tę opcję, aby przeanalizować bieżący projekt startowy. Jeśli korzystasz z aplikacji na urządzeniu lub komputerze zdalnym, należy użyć to ustawienie, która jest wartością domyślną.  
+    -   **Projekt startowy**. Wybierz tę opcję, aby analizować bieżący projekt startowy. Po uruchomieniu aplikacji na komputerze zdalnym lub urządzeniu, należy użyć tego ustawienia, która jest wartością domyślną.  
   
-    -   **Uruchomiona aplikacja**. Wybierz tę opcję, aby wybrać z listy uruchomionych aplikacji aplikacji platformy uniwersalnej systemu Windows. Nie można użyć tej opcji, po uruchomieniu aplikacji na urządzeniu lub komputerze zdalnym.  
+    -   **Twoja aplikacja działa**. Wybierz tę opcję, aby wybrać aplikację platformy uniwersalnej systemu Windows z listy uruchomionych aplikacji. Nie można użyć tej opcji, po uruchomieniu aplikacji na komputerze zdalnym lub urządzeniu.  
   
-         Ta opcja umożliwia analizowanie wydajności aplikacji, które są uruchomione na komputerze, jeśli nie masz dostępu do kodu źródłowego.  
+         Ta opcja służy do analizowania wydajności aplikacji, które są uruchomione na komputerze, gdy nie masz dostępu do kodu źródłowego.  
   
-    -   **Aplikacja zainstalowana**. Wybierz tę opcję, aby wybrać zainstalowaną aplikację, która do przeanalizowania. Nie można użyć tej opcji, po uruchomieniu aplikacji na urządzeniu lub komputerze zdalnym.  
+    -   **Zainstalowana aplikacja**. Wybierz tę opcję, aby wybrać zainstalowaną aplikację, które mają być analizowane. Nie można użyć tej opcji, po uruchomieniu aplikacji na komputerze zdalnym lub urządzeniu.  
   
-         Ta opcja umożliwia analizowanie wydajności aplikacji, które zainstalowano na tym komputerze, jeśli nie masz dostępu do kodu źródłowego. Ta opcja może także służyć tylko umożliwia analizowanie wydajności z dowolnych aplikacji poza tworzenia własnych aplikacji.  
+         Ta opcja służy do analizowania wydajności aplikacji, które zainstalowano na tym komputerze, gdy nie masz dostępu do kodu źródłowego. Ta opcja również może być przydatne podczas po prostu chcesz analizować wydajność aplikacji poza tworzenie aplikacji.  
   
-3.  Z **dostępne narzędzia**, wybierz pozycję **czasu odpowiedzi interfejsu użytkownika HTML**, a następnie wybierz pozycję **Start**.  
+3.  Z **dostępnych narzędzi**, wybierz opcję **HTML UI Responsiveness**, a następnie wybierz **Start**.  
   
-4.  Po uruchomieniu Profiler czasu odpowiedzi interfejsu użytkownika okno Kontrola konta użytkownika może zażądać Twoje uprawnienia do uruchamiania programu Visual Studio ETW Collector.exe. Wybierz **tak**.  
+4.  Kiedy uruchamiasz Profiler czasu odpowiedzi interfejsu użytkownika, okno Kontrola konta użytkownika może zażądać Twojej zgody, aby uruchomić program Visual Studio ETW Collector.exe. Wybierz **tak**.  
   
-     Interakcji z aplikacją do przetestowania tego scenariusza odpowiednich wydajności. Szczegółowy przepływ pracy dla [wyizolować problem czasu odpowiedzi interfejsu użytkownika](#Workflow) i [wyizolować problem przepływność wizualną](#IsolateVisualThroughput).  
+     Wchodzić w interakcje z aplikacją, aby przetestować scenariusz odpowiednie działania. Aby uzyskać szczegółowy przepływ pracy, zobacz [wyizolować problem czasu odpowiedzi interfejsu użytkownika](#Workflow) i [wyizolować problem przepustowość wizualna](#IsolateVisualThroughput).  
   
 5.  Przełącz się do programu Visual Studio, naciskając klawisze Alt + Tab.  
   
-6.  Aby zatrzymać profilowanie profilera zebrane dane aplikacji i widok, wybierz **zatrzymać zbieranie**.  
+6.  Aby zatrzymać profilowanie aplikacji i przeglądanie danych, który program profilujący zebrane, wybierz **Zatrzymaj Kolekcjonowanie**.  
   
 ## <a name="isolate-an-issue"></a>Izolowanie problemu  
- W poniższej sekcji przedstawiono sugestie ułatwiające wyizolować problemy z wydajnością. Opis krok po kroku instrukcje zidentyfikować i rozwiązać problemy z wydajnością przy użyciu przykładowych testowania aplikacji, zobacz [wskazówki: czas odpowiedzi poprawy interfejsu użytkownika (HTML)](../profiling/walkthrough-improving-ui-responsiveness-html.md).  
+ W poniższej sekcji przedstawiono sugestie ułatwiające wyizolować problemy z wydajnością. Uzyskać szczegółowe informacje dotyczące identyfikowanie i rozwiązywanie problemów z wydajnością za pomocą aplikacji testowania wydajnościowego przykładowe, zobacz [wskazówki: poprawa UI responsiveness (HTML)](../profiling/walkthrough-improving-ui-responsiveness-html.md).  
   
-###  <a name="Workflow"></a> Izolowanie problem czasu odpowiedzi interfejsu użytkownika  
- Poniższe kroki zawierają sugerowane przepływu pracy, które mogą ułatwić wydajniej wykorzystywać Profiler czasu odpowiedzi interfejsu użytkownika:  
+###  <a name="Workflow"></a> Wyizolować problem czasu odpowiedzi interfejsu użytkownika  
+ Poniższe kroki zawierają sugerowane przepływu pracy, które mogą ułatwić bardziej efektywne wykorzystanie Profiler czasu odpowiedzi interfejsu użytkownika:  
   
 1.  Otwórz aplikację w programie Visual Studio.  
   
-2.  Testowanie aplikacji problemów czasu odpowiedzi interfejsu użytkownika. (Naciśnij przycisk **Ctrl**+**F5** można uruchomić aplikacji bez debugowania.)  
+2.  Przetestuj swoją aplikację w przypadku problemów czasu odpowiedzi interfejsu użytkownika. (Naciśnij klawisz **Ctrl**+**F5** można uruchomić aplikację bez debugowania.)  
   
-     Jeśli napotkasz problem kontynuować testowanie próby zawęzić przedział czasu, w którym występuje problem, lub do identyfikowania wyzwalacze, które powodują zachowanie.  
+     Jeśli znajdziesz problem, można kontynuować testowanie próby Zawęź przedział czasu, w której występuje ten problem, lub do identyfikowania wyzwalacze, które powodują zachowanie.  
   
-3.  Przełącz się do programu Visual Studio (naciśnij klawisz **Alt**+**kartę**) i zatrzymać aplikację (**Shift**+**F5**).  
+3.  Przełącz się do programu Visual Studio (naciśnij klawisz **Alt**+**kartę**) i Zatrzymaj aplikację (**Shift**+**F5**).  
   
-4.  Opcjonalnie dodaj znaczniki użytkownika przy użyciu kodu [oznaczyć kod analizy](#ProfileMark).  
+4.  Opcjonalnie możesz dodać znaczniki użytkownika do kodu za pomocą [oznaczyć kodu do analizy](#ProfileMark).  
   
     > [!TIP]
-    >  Znaczniki użytkowników może pomóc zidentyfikować problem czas odpowiedzi podczas przeglądania danych profilera. Na przykład można dodać znacznik użytkownika na początku i na końcu sekcji kodu, który jest przyczyną problemu czas odpowiedzi.  
+    >  Znaczniki użytkownika może pomóc w zidentyfikowaniu problemu czas odpowiedzi podczas przeglądania danych profilera. Na przykład można dodać znacznik użytkownika na początku i na końcu sekcji kodu, który powoduje problem z czasem odpowiedzi.  
   
-5.  Uruchom Profiler czasu odpowiedzi interfejsu użytkownika, postępując zgodnie z instrukcjami w poprzedniej sekcji.  
+5.  Postępując zgodnie z instrukcjami w poprzedniej sekcji, aby uruchomić Profiler czas odpowiedzi interfejsu użytkownika.  
   
-6.  Umieść aplikacji w stan, który powoduje problem czasu odpowiedzi interfejsu użytkownika.  
+6.  Umieść ją w stan, który powoduje problem z czasem odpowiedzi interfejsu użytkownika.  
   
-7.  Przełącz się do programu Visual Studio (naciśnij klawisze Alt + Tab) i wybierz **zatrzymać zbieranie** na karcie profilera Profiler czasu odpowiedzi interfejsu użytkownika.  
+7.  Przejdź do programu Visual Studio (naciśnij klawisze Alt + Tab) i wybierz **Zatrzymaj Kolekcjonowanie** na karcie profiler Profiler czasu odpowiedzi interfejsu użytkownika.  
   
-8.  Jeśli dodano znaczniki użytkownika, będą wyświetlane w [wyświetlania osi czasu sesji diagnostycznej](#Ruler) profilera. Na poniższej ilustracji przedstawiono znacznik pojedynczego użytkownika używana do określania określonej operacji w kodzie.  
+8.  Po dodaniu znaczniki użytkownika pojawią się one w [Wyświetl oś czasu sesji diagnostycznej](#Ruler) programu profilującego. Poniższa ilustracja przedstawia znakiem pojedynczego użytkownika, używany do określenia określoną operacją w kodzie.  
   
-     ![Diagnostyka linijki przedstawiający znacznik użytkownika](../profiling/media/js_htmlvizprofiler_usermark.png "JS_HTMLVizProfiler_UserMark")  
+     ![Wyświetlanie znacznik użytkownika linijki diagnostyki](../profiling/media/js_htmlvizprofiler_usermark.png "JS_HTMLVizProfiler_UserMark")  
   
-9. Identyfikowanie obszaru zainteresowania oś czasu i wykresy profilera przy użyciu znaków użytkownika, zdarzenia cyklu życia aplikacji lub widoczny na wykresach danych. Oto wskazówki, które ułatwiają analizowanie i używania danych na wykresach:  
+9. Określ obszar zainteresowania osi czasu i wykresy profilera przy użyciu znaczniki użytkownika, zdarzenia cyklu życia aplikacji lub danych jest widoczny na wykresach. Poniżej przedstawiono kilka wskazówek, aby ułatwić analizowanie i korzystać z danych na wykresach:  
   
-    -   Użyj [wyświetlania osi czasu sesji diagnostycznej](#Ruler) Aby wyświetlić [oznaczyć kod analizy](#ProfileMark), zdarzenia cyklu życia aplikacji i skojarzonych osi czasu dla tych zdarzeń i oś czasu dla danych w innych wykresów.  
+    -   Użyj [Wyświetl oś czasu sesji diagnostycznej](#Ruler) do wyświetlania [oznaczyć kodu do analizy](#ProfileMark), zdarzenia cyklu życia aplikacji, a skojarzone oś czasu dla tych zdarzeń i oś czasu dla danych w innych wykresów.  
   
-    -   Użyj [Wykres wykorzystania CPU](#CPUUtilization) Aby wyświetlić ogólne informacje o aktywności Procesora i typ pracy go obsługuje w danym okresie czasu. Okresy nadmiernej aktywności Procesora więcej mogą spowodować problemy z czasu reakcji i porzucić ramki.  
+    -   Użyj [Wykres wykorzystania procesora CPU](#CPUUtilization) Aby wyświetlić ogólne informacje o aktywności Procesora i typu pracy obsługuje ich w określonym okresie. Okresy nadmierną aktywność procesora CPU są bardziej prawdopodobne spowodować problemy z czas reakcji i porzucić ramek.  
   
-    -   Jeśli projektujesz aplikacji gry lub sformatowanego nośnika, użyj [przepływność wizualną widoku (kl. / s)](#VisualThroughput) do identyfikacji okresów czasu, w którym porzucony szybkość klatek.  
+    -   Przypadku tworzenia aplikacji gier lub zaawansowanych nośnika, należy użyć [widoku przepustowość wizualna (kl. / s)](#VisualThroughput) do identyfikacji okresów czasu, w którym porzucony szybkość klatek.  
   
-10. Wybierz obszar w jednym wykresów częścią wykresu będącego klikając i przeciągając wskaźnik, aby dokonać wyboru (lub za pomocą klawisza Tab i klawiszy strzałek). Po wybraniu w czasie dokonując wyboru oś czasu wykresu szczegółów w dolnym okienku profilera zmiany Pokaż tylko wybrany okres czasu.  
+10. Wybierz obszar zainteresowania w jednym z wykresów, klikając częścią wykresu będącego i przeciągając wskaźnik, aby dokonać wyboru (lub za pomocą klawisza Tab i klawiszy strzałek). Po wybraniu okres czasu, dokonując wyboru, wykres szczegóły osi czasu w dolnym okienku programu profilującego zmienia się, aby pokazać tylko wybrany okres czasu.  
   
-     Na poniższej ilustracji przedstawiono wykres wykorzystania CPU z obszaru zainteresowania wyróżnione.  
+     Poniższa ilustracja przedstawia Wykres wykorzystania procesora CPU z obszaru zainteresowania wyróżnione.  
   
      ![CPU utilization graph](../profiling/media/js_htmlvizprof_cpu_util.png "JS_HTMLVizProf_CPU_Util")  
   
-11. Użyj [wyświetlić szczegóły osi czasu](#TimelineDetails) Aby uzyskać szczegółowe informacje o zdarzeniach, które są uruchamiane zbyt często lub biorąc zbyt dużo czasu. Na przykład wyszukaj następujące czynności:  
+11. Użyj [wyświetlić szczegóły osi czasu](#TimelineDetails) Aby uzyskać szczegółowe informacje o zdarzeniach, które są uruchamiane zbyt często albo zajmuje zbyt dużo czasu, aby zakończyć. Na przykład Znajdź poniższe pozycje:  
   
-    -   Odbiorniki zdarzeń, czasomierze i wywołania zwrotne ramek animacji. W zależności od konkretnego zdarzenia dane przekazane mogą obejmować identyfikator zmodyfikowane elementy modelu DOM, nazwę zmodyfikowane właściwości CSS, łącze do lokalizacji źródłowej i nazwa funkcji skojarzonego zdarzenia lub wywołania zwrotnego.  
+    -   Odbiorniki zdarzeń, czasomierze i wywołania zwrotne ramek animacji. W zależności od określonego zdarzenia dostarczone dane mogą obejmować identyfikator zmodyfikowane elementy modelu DOM, nazwę właściwości CSS zmodyfikowany, łącza do lokalizacji źródłowej i nazwa funkcji skojarzone zdarzenie lub wywołania zwrotnego.  
   
-    -   Układ lub zdarzeń, które spowodowało renderowania elementów, takich jak skrypty wywołania do `window.getComputedStyles`. Podano skojarzony element DOM dla zdarzenia.  
+    -   Układ i skrypty zdarzenia, które spowodowały renderowania elementów, takich jak wywołania `window.getComputedStyles`. Podano skojarzonego elementu DOM w wydarzeniu.  
   
-    -   Strony lub adres URL zasobów, które są ładowane przez aplikację, takich jak oceny skrypt dla zdarzenia z przetwarzaniem plików HTML. Podano nazwę pliku lub zasobu.  
+    -   Strony lub zasobów adresu URL, które są ładowane za pomocą aplikacji, takich jak oceny skryptu dla analizuje zdarzenia w formacie HTML. Nazwa pliku lub zasobu jest dostarczany.  
   
-    -   Inne zdarzenia, określona w [odwołanie do zdarzenia profilera](#ProfilerEvents).  
+    -   Inne zdarzenia, określone w [odwołanie do zdarzenia Profiler](#profiler-event-reference).  
   
     > [!TIP]
-    >  Większość użyteczne informacje w profilera znajduje się na wykresie szczegóły osi czasu.  
+    >  Najbardziej użyteczne informacje w profilerze pojawia się na wykresie szczegółów osi czasu.  
   
-12. Obszar wybrana wykorzystanie procesora CPU lub wykres przepływność wizualną (kl. / s), wybierz polecenie **powiększać** (przycisk lub kontekstu menu), aby uzyskać więcej szczegółowych informacji. Oś czasu zmian grafu wyświetlić tylko wybrany okres czasu.  
+12. Z obszarem wybranych w wykorzystanie procesora CPU lub wykres przepustowość wizualna (kl. / s), wybierz **powiększyć** (przycisk lub kontekst menu), aby uzyskać więcej szczegółowych informacji. Oś czasu dla zmian grafu pokazać tylko wybrany okres czasu.  
   
-13. Gdy powiększona, wybierz część wykorzystanie procesora CPU lub przepływność wizualną wykresu. Po dokonaniu wyboru oś czasu wykresu szczegóły profilera dolnym okienku zmiany w Pokaż tylko wybrany okres czasu.  
+13. Podczas powiększono, należy wybrać część wykorzystanie procesora CPU lub przepustowość wizualna wykresu. Po dokonaniu wyboru, wykres osi czasu szczegóły profilera dolnym okienku zmieni się na Pokaż tylko wybrany okres czasu.  
   
-###  <a name="IsolateVisualThroughput"></a> Izolowanie problem przepływność wizualną  
- Okresy nadmiernego użycia procesora CPU może spowodować szybkość klatek niskim lub niespójne. W przypadku tworzenia aplikacji multimedialnej oraz gier, wykres przepływność wizualną może udostępnić dane większe znaczenie niż wykres wykorzystania CPU.  
+###  <a name="IsolateVisualThroughput"></a> Wyizolować problem przepustowość wizualna  
+ Okresy intensywne użycie procesora CPU może spowodować szybkości klatek niski lub niespójne. W przypadku tworzenia bogatych multimediów aplikacje i gry, wykres przepustowość wizualna może dostarczyć danych ważniejsze niż wykres wykorzystania procesora CPU.  
   
- Aby wyizolować przepływność wizualną problem, wykonaj czynności opisane w poprzedniej sekcji, ale za pomocą graph przepływność wizualną jako jednego z punktów danych klucza.  
+ Aby wyizolować problem przepustowość wizualna, wykonaj czynności opisane w poprzedniej sekcji, ale za pomocą wykresu przepustowość wizualna jako jeden do kluczowych punktów danych.  
   
-###  <a name="ProfileMark"></a> Oznacz kod — analiza  
- Aby wyizolować sekcji kodu aplikacji, który został skojarzony z dane wyświetlane na wykresach, można dodać wywołanie funkcji w swojej aplikacji, która sprawia, że profiler pole użytkownika — odwrócony trójkąt — na osi czasu w momencie funkcji jest wykonywany. Każdego znaku użytkownika, który możesz dodać pojawia się na osi czasu Wykres wykorzystania CPU, wykres przepływność wizualną i wykres szczegóły osi czasu.  
+###  <a name="ProfileMark"></a> Kod znaku do analizy  
+ Aby wyizolować części kodu aplikacji, który jest skojarzony z danymi, która pojawia się na wykresach, można dodać wywołania funkcji w aplikacji, która powoduje, że profiler, aby wstawić znacznik użytkownika — odwrócony trójkąt — na osi czasu w tej chwili funkcja pobiera uruchomiona. Każdego znaku użytkownika, który dodajesz pojawia się na osi czasu, Wykres wykorzystania procesora CPU, wykres przepustowość wizualna i wykres szczegóły osi czasu.  
   
- Aby dodać znacznik użytkownika, Dodaj następujący kod do aplikacji. W tym przykładzie używane "Pobieranie danych" jako opis zdarzenia.  
+ Aby dodać znacznik użytkownika, należy dodać następujący kod do aplikacji. W tym przykładzie używa "Pobieranie danych" jako opis zdarzenia.  
   
 ```javascript  
 if (performance && performance.mark) {  
@@ -145,16 +145,16 @@ if (performance && performance.mark) {
   
 ```  
   
- Opis zdarzenia jest wyświetlany jako etykietka narzędzia, gdy wskaźnik myszy nad oznaczenie użytkownika. Możesz dodać dowolną liczbę znaków użytkownika zgodnie z potrzebami.  
+ Opis zdarzenia jest wyświetlany jako etykietka narzędzia, po umieszczeniu wskaźnika myszy nad znacznik użytkownika. Możesz dodać dowolną liczbę znaczniki użytkownika, ile potrzebujesz.  
   
 > [!NOTE]
->  `console.timeStamp`, polecenie Chrome jest także wyświetlany jako znacznik użytkownika.  
+>  `console.timeStamp`, polecenia dla programu Chrome, są także przedstawione jako znacznik użytkownika.  
   
- Na poniższej ilustracji przedstawiono linijki diagnostics znaku pojedynczego użytkownika i jego etykietka narzędzia.  
+ Poniższa ilustracja przedstawia Linijka diagnostyki ze znakiem pojedynczego użytkownika i jego etykietek narzędzi.  
   
- ![Diagnostyka linijki przedstawiający znacznik użytkownika](../profiling/media/js_htmlvizprofiler_usermark.png "JS_HTMLVizProfiler_UserMark")  
+ ![Wyświetlanie znacznik użytkownika linijki diagnostyki](../profiling/media/js_htmlvizprofiler_usermark.png "JS_HTMLVizProfiler_UserMark")  
   
- W widoku szczegółów osi czasu pokazanie okres czasu, który przechodzi między dwoma znakami użytkownika można również utworzyć zdarzenia generowane przez narzędzie. Poniższy kod dodaje znacznik drugiego użytkownika i pomiar czas, jaki upływa między wykonaniem użytkownika dwóch znaków (poprzedni kod Pokazuje pierwszy znak użytkownika).  
+ W widoku szczegółów osi czasu, aby wyświetlić czas trwania czas, jaki upływa między dwa znaczniki użytkownika, można również utworzyć zdarzenia generowane przez narzędzie. Poniższy kod dodaje drugi znacznik użytkownika i pomiaru czas, jaki upływa między wykonaniem ze znakami dwóch użytkowników (poprzedni kod Pokazuje pierwszy znacznik użytkownika).  
   
 ```javascript  
 if (performance.mark && performance.measure) {  
@@ -163,199 +163,199 @@ if (performance.mark && performance.measure) {
 }  
 ```  
   
- Jeśli drugi znacznik użytkownika nie zostanie określona, `performance.measure` używa sygnaturę czasową jako drugi znacznik użytkownika. Pierwszy znak użytkownika jest wymagany.  
+ Jeśli drugi znacznik użytkownika nie jest określona, `performance.measure` używa sygnaturę czasową jako drugi znacznik użytkownika. Pierwszy znacznik użytkownika jest wymagana.  
   
- Pomiar czasu trwania pojawia się jako **miara użytkownika** zdarzeń na osi czasu widoku szczegółów i zawiera szczegółowe informacje w przypadku wybrania.  
+ Pomiar czasu trwania jest wyświetlany jako **miara użytkownika** zdarzeń na osi czasu widoku szczegółów i zawiera szczegółowe informacje, w przypadku wybrania.  
   
  ![Widok szczegółów zdarzenia miara użytkownika na osi czasu](../profiling/media/js_htmlvizprofiler_user_measure.png "JS_HTMLVizProfiler_User_Measure")  
   
 ## <a name="analyze-data"></a>Analizowanie danych  
- Poniższe sekcje zawierają informacje dotyczące interpretowania danych wyświetlanych w profilera.  
+ Poniższe sekcje zawierają informacje pomocne w interpretacji danych, który pojawia się w profilerze.  
   
-###  <a name="Ruler"></a> Widok osi czasu sesji diagnostycznej  
- Linijki w górnej części profilera przedstawiono oś czasu PROFILOWANEGO informacji. Oś czasu dotyczy zarówno Wykres wykorzystania CPU, jak i przepływność wizualną wykresu.  
+###  <a name="Ruler"></a> Wyświetl oś czasu sesji diagnostycznej  
+ Linijka u góry profiler pokazuje oś czasu dla profilowanych informacji. Ta oś czasu dotyczy zarówno Wykres wykorzystania procesora CPU, jak i wykres przepustowość wizualna.  
   
- Oto, jak wygląda na osi czasu sesji diagnostycznej z etykietki narzędzia wyświetlany dla kilku zdarzenia cyklu życia aplikacji:  
+ Oto jak wygląda oś czasu sesji diagnostycznej z etykietki narzędzia wyświetlany dla kilku zdarzenia cyklu życia aplikacji:  
   
- ![Sesja diagnostyczna linijki](../profiling/media/js_htmlvizprof_ruler.png "JS_HTMLVizProf_Ruler")  
+ ![Linijka sesji diagnostycznej](../profiling/media/js_htmlvizprof_ruler.png "JS_HTMLVizProf_Ruler")  
   
- Pokazuje osi czasu, w przypadku wystąpienia zdarzeń lifecyle aplikacji, takich jak zdarzenia aktywacji i zawiera znaki użytkownika (użytkownik znacznik trójkąty) który można dodać do kodu. Możesz wybrać zdarzeń, aby wyświetlić etykietkę zawierającą więcej informacji. Aby uzyskać więcej informacji na temat znaczników użytkownika, zobacz [oznaczyć kod analizy](#ProfileMark) w tym temacie.  
+ Przedstawia oś czasu, po wystąpieniu zdarzenia lifecyle aplikacji, takich jak zdarzenia aktywacji i pokazuje, że znaczniki użytkownika (trójkąty znacznik użytkownika) możesz dodać do kodu. Możesz wybrać zdarzeń do wyświetlenia etykietki narzędzi z większą ilością informacji. Aby uzyskać więcej informacji na temat znaczniki użytkownika, zobacz [oznaczyć kodu do analizy](#ProfileMark) w tym temacie.  
   
- Zdarzenia cyklu życia aplikacji są wyświetlane jako symbole romb. Są to zdarzenia modelu DOM, takich jak:  
+ Zdarzenia cyklu życia aplikacji są wyświetlane jako symbole romb. Są to zdarzenia modelu DOM, m.in:  
   
--   `DOMContentLoaded` i `Load` zdarzenia, których zwykle występują w obsłudze zdarzeń aktywowana w kodzie. Etykietka narzędzia dla zdarzenia zawiera konkretnego zdarzenia i adresu URL.  
+-   `DOMContentLoaded` i `Load` zdarzenia, które zazwyczaj występują w obsłudze zdarzeń aktywowane w kodzie. Etykietka narzędzia dla zdarzenia zawiera określonego zdarzenia i adres URL.  
   
--   Zdarzenie nawigacji, co następuje po przejściu do innej strony. Etykietka narzędzia dla zdarzenia zawiera adres URL strony docelowej.  
+-   Zdarzenie nawigacji, które występuje, gdy przejdziesz do innej strony. Etykietka narzędzia dla zdarzenia zawiera docelowy adres URL strony.  
   
-###  <a name="CPUUtilization"></a> Użycie procesora CPU widoku  
- Wykres wykorzystania CPU umożliwia identyfikacji okresów czasu, w którym jest nadmiernej aktywności Procesora. Zawiera informacje o aplikacji średnie użycie Procesora w danym okresie czasu. Informacje są oznaczone kolorami reprezentują określonych kategoriach: **ładowania**, **skryptów**, wyrzucanie elementów bezużytecznych (**GC**), **stylów**, **Renderowania**, i **dekodowanie obrazu**. Aby uzyskać więcej informacji na temat tych kategorii, zobacz [odwołanie do zdarzenia profilera](#ProfilerEvents) dalszej części tego tematu.  
+###  <a name="CPUUtilization"></a> Wykorzystanie procesora CPU widoku  
+ Wykres wykorzystania procesora CPU umożliwia określenie okresy czasu, w którym ma nadmierną aktywność procesora CPU. Zawiera informacje o aplikacji średnie użycie Procesora w danym okresie czasu. Informacje są oznaczone kolorami do reprezentowania następujące kategorie określonego: **ładowania**, **skryptów**, wyrzucanie elementów bezużytecznych (**GC**), **stylów**, **Renderowania**, i **dekodowanie obrazu**. Aby uzyskać więcej informacji na temat tych kategorii, zobacz [odwołanie do zdarzenia Profiler](#profiler-event-reference) w dalszej części tego tematu.  
   
- Wykres wykorzystania CPU pokazuje ilość czasu przeznaczonego na wszystkie wątki aplikacji w celu łączenia wartości użycie procesora CPU dla co najmniej jednego procesora CPU do pojedynczej wartości procentowej. Wartość wykorzystanie Procesora może przekroczyć 100 procent, gdy używany jest więcej niż jeden Procesor.  
+ Wykres wykorzystania procesora CPU pokazuje ilość czasu poświęconego na wszystkich wątków aplikacji, łącząc wartości wykorzystanie procesora CPU dla jednego lub więcej procesorów CPU w pojedynczej wartości procentowej. Wartość wykorzystanie Procesora może przekroczyć 100 procent, gdy używany jest więcej niż jednego Procesora.  
   
 > [!NOTE]
 >  Użycie procesora GPU nie są wyświetlane na wykresie.  
   
- Ten przykład przedstawia Wykres wykorzystania CPU wygląda następująco:  
+ Ten przykład pokazuje, jak wygląda Wykres wykorzystania procesora CPU:  
   
  ![CPU utilization graph](../profiling/media/js_htmlvizprof_cpu_util.png "JS_HTMLVizProf_CPU_Util")  
   
- Użyj tego wykresu na:  
+ Użyj tego wykresu, aby:  
   
 -   Określ ogólne obszary zainteresowania.  
   
--   Wybierz w określonym przedziale czasu do wyświetlenia na wykresie szczegóły osi czasu. Aby wybrać okres czasu, wybierz częścią wykresu będącego i przeciągnij wskaźnik, aby dokonać wyboru.  
+-   Wybierz określonego przedziału czasu do wyświetlenia na wykresie szczegółów osi czasu. Aby wybrać okres czasu, wybierz częścią wykresu, a następnie przeciągnij wskaźnik, aby dokonać wyboru.  
   
--   Uzyskanie bardziej szczegółowych widoku w wybranym okresie, wybierając **powiększać** przycisku.  
+-   Uzyskać bardziej szczegółowy widok w wybranym okresie, wybierając **powiększyć** przycisku.  
   
- Aby uzyskać więcej informacji na temat używania wykresu, zobacz [wyizolować problem czasu odpowiedzi interfejsu użytkownika](#Workflow) w tym temacie.  
+ Aby uzyskać więcej informacji na temat korzystania z programu graph, zobacz [wyizolować problem czasu odpowiedzi interfejsu użytkownika](#Workflow) w tym temacie.  
   
-###  <a name="VisualThroughput"></a> Przepływność wizualną widoku (kl. / s)  
- Wykres przepływność wizualną umożliwia identyfikacji okresów czasu, w którym porzucony szybkość klatek. Pokazuje liczbę klatek na sekundę (kl. / s) dla aplikacji. Ten wykres jest najbardziej przydatny w przypadku tworzenia gier i aplikacji multimediów.  
+###  <a name="VisualThroughput"></a> Wyświetl przepustowość wizualna (kl. / s)  
+ Wykres przepustowość wizualna umożliwiają zidentyfikowanie okresy czasu, w którym porzucony szybkość klatek. Pokazuje liczbę klatek na sekundę (kl. / s) dla aplikacji. Ten wykres jest najbardziej użyteczne dla opracowywania gier i multimediów aplikacji.  
   
- Wyświetlana wartość kl. / s może się różnić od liczba klatek na sekundę. Podczas analizowania danych w tego wykresu, należy pamiętać o tych informacji:  
+ Wyświetlana wartość kl. / s może różnić się od liczba klatek na sekundę. Podczas badania danych na tym wykresie, należy pamiętać o tych informacji:  
   
--   Wykres przedstawia klatek na Sekundę, że dana aplikacja jest możliwość osiągnięcia określonej godzinie. Gdy aplikacja jest w stanie bezczynności, kl. / s jest taka sama jak częstotliwość odświeżania monitora.  
+-   Na wykresie widać kl. / s, czy aplikacja ma możliwość osiągnięcia określonej godzinie. Gdy aplikacja jest w stanie bezczynności, kl. / s jest taka sama jak częstotliwość odświeżania monitora.  
   
--   Wykres przedstawia rzeczywiste kl. / s, jeśli aplikacja jest wykonywania pracy, który wymaga aktualizacji visual.  
+-   Na wykresie przedstawiono rzeczywiste kl. / s, jeśli pracy, który wymaga aktualizacji visual działania aplikacji.  
   
--   Wykres przedstawia wartość zero, jeśli ramki są usuwane.  
+-   Na wykresie widać wartość zero, jeśli ramki są usuwane.  
   
- Ten przykład przedstawia wykres przepływność wizualną wygląda następująco:  
+ Ten przykład pokazuje, jak wygląda wykres przepustowość wizualna:  
   
- ![Wykres przepływność wizualną](../profiling/media/js_htmlvizprof_vizthru.png "JS_HTMLVizProf_VizThru")  
+ ![Wykres przepustowość wizualna](../profiling/media/js_htmlvizprof_vizthru.png "JS_HTMLVizProf_VizThru")  
   
- Użyj wykresu przepływność wizualną:  
+ Użyj wykresu przepustowość wizualna do:  
   
 -   Określ ogólne obszary zainteresowania.  
   
--   Wybierz w określonym przedziale czasu do wyświetlenia na wykresie szczegóły osi czasu. Aby wybrać okres czasu, wybierz częścią wykresu będącego i przeciągnij wskaźnik, aby dokonać wyboru.  
+-   Wybierz określonego przedziału czasu do wyświetlenia na wykresie szczegółów osi czasu. Aby wybrać okres czasu, wybierz częścią wykresu, a następnie przeciągnij wskaźnik, aby dokonać wyboru.  
   
--   Uzyskanie bardziej szczegółowych widoku w wybranym okresie, wybierając **powiększać** przycisku.  
+-   Uzyskać bardziej szczegółowy widok w wybranym okresie, wybierając **powiększyć** przycisku.  
   
 ###  <a name="TimelineDetails"></a> Wyświetl szczegóły osi czasu  
- Oś czasu wykresu szczegółów zostanie wyświetlony w dolnym okienku Profiler czasu odpowiedzi interfejsu użytkownika. Zawiera hierarchicznej i sekwencyjny informacje o zdarzeniach, które są używane podczas wybranych okresów najwięcej czasu Procesora. Ten wykres może pomóc w określeniu, co wyzwoliło konkretnego zdarzenia i dla niektórych zdarzeń, jak zdarzenia mapy do kodu źródłowego. Ten wykres pomaga również określić czas wymagany do malowania visual aktualizacje na ekranie.  
+ Wykres szczegóły osi czasu pojawi się w dolnym okienku Profiler czasu odpowiedzi interfejsu użytkownika. Zawiera sekwencyjne i hierarchiczne informacje o zdarzeniach, które są używane najwięcej czasu Procesora w wybranych okresach. Ten wykres może pomóc w określeniu przyczyny ich wyzwolenia konkretnego zdarzenia, a niektóre zdarzenia, jak zdarzenia mapuje do kodu źródłowego. Ten wykres pomaga określić czas wymagany do malowania aktualizacji visual na ekranie.  
   
- Wykres zawiera Praca wątku interfejsu użytkownika i wątki w tle, które może przyczynić się do powolna aktualizacji visual. Wykres nie wyświetla pracy JavaScript JIT, asynchroniczne działanie procesora GPU, pracy wykonanej poza procesu hosta (na przykład RuntimeBroker.exe i dwm.exe pracy) lub pracy obszarów środowiska uruchomieniowego systemu Windows, które jeszcze nie został zinstrumentowany na potrzeby profilowania (na przykład we/wy dysku).  
+ Na wykresie widać Praca wątku interfejsu użytkownika i na wątkach w tle, które może przyczynić się do wydłużenia aktualizacje programu visual. Wykres nie pokazuje pracy JavaScript JIT, asynchronicznego działanie procesora GPU, Praca wykonana poza procesem hosta (na przykład RuntimeBroker.exe i dwm.exe pracy) lub pracy dla obszarów środowiska wykonawczego Windows, które jeszcze nie został zinstrumentowany na potrzeby profilowania (np. We/Wy dysku).  
   
 > [!TIP]
->  Gdy wystąpi zdarzenie wątku w tle, identyfikator wątku jest wyświetlana w nawiasach obok nazwy zdarzenia.  
+>  Gdy wystąpi zdarzenie w wątku tła, identyfikator wątku pojawia się w nawiasach obok nazwy zdarzenia.  
   
- Ten przykład przedstawia jakie oś czasu wykresu szczegóły wygląda kliknięcie odbiornik zdarzeń dla modelu DOM wybrano zdarzeń:  
+ Ten przykład pokazuje, jakie oś czasu wykresu szczegóły wygląda na to w przypadku odbiornik zdarzeń dla modelu DOM kliknij zdarzenie zostaje wybrany:  
   
- ![Oś czasu wykresu szczegóły](../profiling/media/js_htmlvizprof_timelinedet.png "JS_HTMLVizProf_TimelineDet")  
+ ![Oś czasu szczegóły wykresu](../profiling/media/js_htmlvizprof_timelinedet.png "JS_HTMLVizProf_TimelineDet")  
   
- Na tej ilustracji **spinAction** obsługi zdarzeń w **Nazwa zdarzenia** kolumny jest łączem, gdy zaznaczone, spowoduje przejście do obsługi zdarzeń w kodzie źródłowym. W okienku po prawej stronie **funkcja wywołania zwrotnego** właściwość zapewnia tego samego łącza do kodu źródłowego. Inne właściwości zawierają również informacje dotyczące zdarzeń, takich jak skojarzony element DOM.  
+ Na tej ilustracji **spinAction** programu obsługi zdarzeń w **Nazwa zdarzenia** kolumna jest łącze, po wybraniu spowoduje przejście do narzędzia obsługi zdarzeń w kodzie źródłowym. W okienku po prawej stronie **funkcji wywołania zwrotnego** właściwość zawiera ten sam link do kodu źródłowego. Inne właściwości udostępniają informacje o zdarzeniu, takie jak skojarzonego elementu DOM w LICZBIE.  
   
- W przypadku wybrania część oś czasu wykresu przepływność wizualną (kl. / s) i czasu procesora oś czasu wykresu szczegóły zawiera szczegółowe informacje dotyczące wybranego okresu.  
+ Jeśli wybierzesz część oś czasu użycia Procesora CPU i wykres przepustowość wizualna (kl. / s), wykres szczegóły osi czasu zawiera szczegółowe informacje dotyczące wybranego przedziału czasu.  
   
- Zdarzenia na wykresie szczegóły osi czasu są oznaczone kolorami reprezentują tego samego kategorie pracy, które są wyświetlane na wykresie użycia procesora CPU. Aby uzyskać więcej informacji o kategorii zdarzeń i określonych zdarzeń, zobacz [odwołanie do zdarzenia profilera](#ProfilerEvents) w tym temacie.  
+ Zdarzenia na wykresie szczegółów osi czasu są oznaczone kolorami do reprezentowania te same kategorie pracy, które są wyświetlane na wykresie użycia procesora CPU. Aby uzyskać więcej informacji na temat kategorii zdarzeń i określonych zdarzeń, zobacz [odwołanie do zdarzenia Profiler](#profiler-event-reference) w tym temacie.  
   
- Użyj wykresu szczegóły osi czasu:  
+ Użyj wykresie szczegóły osi czasu, aby:  
   
--   Wyświetlanie godziny rozpoczęcia przybliżoną, czasu i godziny zakończenia zdarzenia na osi czasu i widoku siatki. Oś czasu wykresu szczegółowe informacje można wyświetlić okresy od 30 milisekund do 30 sekund w widoku siatki w zależności od stanu powiększenia. Dla wartości typu duration:  
+-   Wyświetlanie godziny rozpoczęcia przybliżony czas trwania i zakończenia zdarzenia w widoku osi czasu i siatki. Oś czasu wykresu szczegółowe informacje można wyświetlić okresy od 30 milisekund do 30 sekund w zależności od stanu powiększenia widoku siatki. Aby uzyskać wartości czasu trwania:  
   
-    -   Całkowity czas reprezentuje czas trwania zdarzenia, łącznie z elementami podrzędnymi zdarzeń. W widoku siatki tej wartości jako pierwsze.  
+    -   Całkowity czas reprezentuje czas trwania zdarzenia, łącznie z elementami podrzędnymi zdarzeń. W widoku siatki ta wartość pojawia się jako pierwsza.  
   
-    -   Wyłącznego razy reprezentuje czas trwania zdarzenia nie łącznie z elementami podrzędnymi zdarzeń. Ta wartość jest wyświetlana w widoku siatki w nawiasach.  
+    -   Wyłączny czas reprezentują czas trwania zdarzenia, nie wliczając dzieci zdarzeń. W widoku siatki ta wartość jest wyświetlana w nawiasach.  
   
--   Rozwiń zdarzenia w hierarchii, aby wyświetlić elementy podrzędne danego zdarzenia. Elementy podrzędne zdarzeń są inne zdarzenia, które są wywoływane przez zdarzenia nadrzędnego. Na przykład zdarzenia modelu DOM może być odbiorników zdarzeń, które są wyświetlane jako elementy podrzędne. Odbiornik zdarzeń może mieć inne zdarzenia, które są wynikiem, takich jak zdarzenia układu.  
+-   Rozwiń zdarzenia w hierarchii, aby wyświetlić elementy podrzędne zdarzenia. Elementy podrzędne zdarzeń są inne zdarzenia, które są wywoływane przez zdarzenie nadrzędne. Na przykład zdarzenie modelu DOM może być detektorów zdarzeń, które są wyświetlane jako elementy podrzędne. Odbiornik zdarzeń mogą mieć inne zdarzenia, które są wynikiem, takich jak zdarzenia układu.  
   
--   Sortuj zdarzenia według początek godziny (ustawienie domyślne) lub czas trwania. Użyj **sortować** listę, aby wybrać metodę sortowania.  
+-   Sortuj zdarzenia według start time (ustawienie domyślne) lub czas trwania. Użyj **sortować według** listę, aby wybrać metodę sortowania.  
   
--   Przejrzyj szczegóły dotyczące każdego zdarzenia w okienku szczegółów (po prawej). Właściwości różnić w zależności od konkretnego zdarzenia, jak pokazują powyższe przykłady:  
+-   Wyświetl szczegóły każdego zdarzenia w okienku szczegółów (w okienku po prawej stronie). Właściwości różnią się w zależności od określonego zdarzenia, jak pokazują powyższe przykłady:  
   
-    -   Czasomierze, odbiorniki zdarzeń (zdarzenia DOM) i wywołania zwrotne ramek animacji **funkcja wywołania zwrotnego** właściwość zawiera również link do lokalizacji kodu źródłowego, wraz z nazwą funkcji obsługi lub wywołania zwrotnego zdarzeń.  
+    -   Czasomierze, detektorów zdarzeń (zdarzenia DOM) i wywołania zwrotne ramek animacji **funkcji wywołania zwrotnego** właściwość zawiera również link do lokalizacji kodu źródłowego, wraz z nazwą zdarzenia funkcji obsługi lub wywołania zwrotnego.  
   
-    -   Czasomierze, odbiorniki zdarzeń (zdarzenia DOM), układ zdarzeń i wywołania zwrotne ramek animacji, oznaczone kolorami podsumowanie wybranego zdarzenia i wszystkie jego elementy podrzędne są wyświetlane w **całkowity czas podsumowania** sekcji (oznaczone kolorami pierścień). Każdy wycinek oznaczone kolorami obrazu reprezentuje typ zdarzenia. Etykietki narzędzi, podaj nazwę typu zdarzenia.  
+    -   Czasomierze, detektorów zdarzeń (zdarzenia DOM), układ zdarzenia i wywołania zwrotne ramek animacji oznaczone kolorami podsumowanie wybranego zdarzenia i jego elementy podrzędne są wyświetlane w **podsumowanie całkowitego czasu** sekcji (pierścień oznaczone kolorami). Każdy wycinek oznaczone kolorami obrazu reprezentuje typ zdarzenia. Etykietki narzędzi, podaj nazwę typu zdarzenia.  
   
     > [!TIP]
-    >  Oś czasu wykresu szczegóły i **całkowity czas podsumowania** może ułatwić określenie obszarów dla optymalizacji. Jeśli jeden z tych widoków zawiera dużą liczbę małych zadań, zdarzenie może być kandydatem do optymalizacji. Na przykład aplikacji może być odświeżanie elementów modelu DOM często, co spowoduje dużą liczbę układ i analizowanie zdarzeń HTML. Dzięki temu można zoptymalizować wydajność przez przetwarzanie wsadowe tę pracę.  
+    >  Wykres szczegóły osi czasu i **podsumowanie całkowitego czasu** może pomóc w identyfikacji obszarów do optymalizacji. Jeśli jedno z tych widoków zawiera dużą liczbę małych zadań, zdarzenie może być kandydatem do optymalizacji. Na przykład aplikacja może być odświeżanie elementów DOM często skutkuje dużą liczbą układ i analizuje zdarzenia w formacie HTML. Dzięki temu można zoptymalizować wydajność, przetwarzanie wsadowe tych prac.  
   
-###  <a name="FilterTimelineDetails"></a> Szczegóły filtru osi czasu  
- Można filtrować widok w szczegółach osi czasu do konkretnego zdarzenia, wybierając **filtr, aby zdarzenia** z menu kontekstowego dla określonego zdarzenia. Po wybraniu tej opcji widoku osi czasu i siatki ograniczone do wybranego zdarzenia. Zaznaczenie w wykres wykorzystania CPU również zakresów do określonego zdarzenia.  
+###  <a name="FilterTimelineDetails"></a> Szczegóły osi czasu filtru  
+ Wyświetl szczegóły osi czasu, aby konkretne zdarzenie można filtrować, wybierając **filtr, aby zdarzenia** z menu kontekstowego dla określonego zdarzenia. Po wybraniu tej opcji, widok osi czasu i siatki są ograniczone do wybranego zdarzenia. Wybór w wykres wykorzystania procesora CPU również zakresów do określonego zdarzenia.  
   
- ![Filtrowanie osi czasu na zdarzenie](../profiling/media/js_htmlvizprofiler_filtertoevent.png "JS_HTMLVizProfiler_FilterToEvent")  
+ ![Filtrowanie osi czasu, aby zdarzenie](../profiling/media/js_htmlvizprofiler_filtertoevent.png "JS_HTMLVizProfiler_FilterToEvent")  
   
 ###  <a name="FilterEvents"></a> Filtruj zdarzenia  
- Niektóre zdarzenia z oś czasu wykresu szczegóły redukcji szumu w danych lub usunąć dane, które nie jest interesujące dla danego scenariusza wydajność można odfiltrować. Można filtrować według nazwy zdarzenia lub czas trwania zdarzenia lub przez określone filtry opisane w tym miejscu.  
+ Niektóre zdarzenia z wykresu szczegóły osi czasu szumu w danych lub usunąć dane, które nie jest on interesujący dla danego scenariusza wydajność można odfiltrować. Można filtrować według nazwy zdarzenia lub czas trwania zdarzenia lub przez określone filtry opisane w tym miejscu.  
   
- Aby odfiltrować dekodowanie obrazu, rozważana pobierania i zdarzenia GC, wyczyść **działania w tle** opcję ikonę filtra w dolnym okienku. Ponieważ te zdarzenia nie są bardzo umożliwiająca wykonanie akcji, są ukryte domyślnie.  
+ Aby odfiltrować dekodowanie obrazu, pobieranie spekulacyjne i zdarzenia GC, wyczyść **działania w tle** opcję ikonę filtru w dolnym okienku. Ponieważ te zdarzenia nie są bardzo informacje z możliwością działania, ich są domyślnie ukryte.  
   
  ![Filtrowanie zdarzeń na osi czasu](../profiling/media/js_htmlvizprofiler_event_filter.png "JS_HTMLVizProfiler_Event_Filter")  
   
- Aby filtrować zdarzenia żądania HTTP, wyczyść **ruch sieciowy** opcję ikonę filtra w dolnym okienku. Domyślnie te zdarzenia są wyświetlane na wykresie szczegóły osi czasu.  
+ Aby odfiltrować zdarzeń żądania HTTP, wyczyść **ruch sieciowy** opcję ikonę filtru w dolnym okienku. Domyślnie te zdarzenia są wyświetlane na wykresie szczegółów osi czasu.  
   
- Aby odfiltrować aktywności wątku interfejsu użytkownika, wyczyść **działania interfejsu użytkownika** opcji.  
+ Aby odfiltrować aktywności wątku interfejsu użytkownika, wyczyść **działanie w interfejsie użytkownika** opcji.  
   
 > [!TIP]
->  Usuń zaznaczenie tej opcji, a następnie wybierz opcję ruchu sieciowego do badania problemów związanych z opóźnieniem sieci.  
+>  Usuń zaznaczenie tej opcji, a następnie wybierz opcję ruchu w sieci, aby zbadać problemy związane z opóźnieniem sieci.  
   
- Aby filtrować środków użytkownika, wyczyść **środki użytkownika** opcji. Środki użytkownika są zdarzenia najwyższego poziomu bez elementów podrzędnych.  
+ Aby odfiltrować miary użytkownika, wyczyść **miary użytkownika** opcji. Miary użytkownika są zdarzenia najwyższego poziomu bez elementów podrzędnych.  
   
-###  <a name="GroupFrames"></a> Grupuj zdarzenia według ramki  
- Możesz grupować zdarzenia, które są wyświetlane w widoku szczegółów osi czasu do poszczególnych klatek. Te zdarzenia ramki są zdarzeniami generowanymi przez narzędzie i reprezentują kontenery zdarzenia najwyższego poziomu dla wszystkich pracy wątku interfejsu użytkownika, która występuje między zdarzeniami malowania. Aby włączyć ten widok, wybierz **Grupuj zdarzenia najwyższego poziomu według klatek**.  
+###  <a name="GroupFrames"></a> Grupowanie zdarzeń przez ramkę  
+ Można grupować zdarzenia, które są wyświetlane w widoku Szczegóły osi czasu do poszczególnych klatek. Te zdarzenia ramki są zdarzenia generowane przez narzędzie i reprezentują kontenery zdarzenia najwyższego poziomu dla całą pracę wątku interfejsu użytkownika występuje między zdarzeniami malowania. Aby włączyć ten widok, wybierz **Grupuj zdarzenia najwyższego poziomu według klatek**.  
   
- ![Grupuj zdarzenia najwyższego poziomu według ramki](../profiling/media/js_htmlvizprofiler_frame_grouping_button.png "JS_HTMLVizProfiler_Frame_Grouping_Button")  
+ ![Grupuj zdarzenia najwyższego poziomu według klatek](../profiling/media/js_htmlvizprofiler_frame_grouping_button.png "JS_HTMLVizProfiler_Frame_Grouping_Button")  
   
- Zdarzenia w przypadku grupowania ramką, zdarzenia najwyższego poziomu w szczegółach osi czasu wyświetlić odpowiadają każdej ramce.  
+ Zdarzenia w przypadku grupowania przez ramki, zdarzenia najwyższego poziomu w szczegółach osi czasu wyświetlania każdego reprezentują ramki.  
   
- ![Oś czasu zdarzeń pogrupowane według ramki](../profiling/media/js_htmlvizprofiler_frame_grouping.png "JS_HTMLVizProfiler_Frame_Grouping")  
+ ![Oś czasu zdarzeń, pogrupowane według ramki](../profiling/media/js_htmlvizprofiler_frame_grouping.png "JS_HTMLVizProfiler_Frame_Grouping")  
   
 ## <a name="save-a-diagnostic-session"></a>Zapisywanie sesji diagnostycznej  
- W programie Visual Studio można zapisać sesji diagnostycznej podczas zamykania kartę, który został skojarzony z sesją. Zapisane sesje, można je otworzyć ponownie w późniejszym czasie.  
+ W programie Visual Studio można zapisać sesji diagnostycznej informuj innych o zamknięciu kartę która ma skojarzony z sesją. Zapisane sesje można otworzyć ponownie w późniejszym czasie.  
   
-## <a name="profiler-event-reference"></a>Odwołanie do zdarzenia profilera  
- Profiler zdarzenia są skategoryzowane i oznaczanie kolorami w Profiler czasu odpowiedzi interfejsu użytkownika. Są to kategorie zdarzeń:  
+## <a name="profiler-event-reference"></a>Odwołanie do zdarzenia Profiler  
+ Profiler zdarzenia są skategoryzowane i oznaczone kolorami w Profiler czasu odpowiedzi interfejsu użytkownika. Poniżej przedstawiono kategorie zdarzeń:  
   
 -   **Podczas ładowania.** Wskazuje czas spędzony na zasoby aplikacji podczas pobierania i analizowania HTML i CSS po pierwszym załadowaniu aplikacji. Może to obejmować żądania sieciowe.  
   
--   **Wykonywanie skryptów.** Wskazuje czas analizowania i uruchamianie JavaScript. Obejmuje to zdarzenia modelu DOM, czasomierze, skryptów i pracy ramki animacji. Zawiera zarówno kod użytkownika i kod biblioteki.  
+-   **Obsługa skryptów.** Wskazuje czas poświęcony na analizowanie i uruchamianie kodu języka JavaScript. Obejmuje to zdarzenia modelu DOM, czasomierze, wyznaczanie wartości skryptu i pracy ramki animacji. Obejmuje ona zarówno kod użytkownika oraz kod biblioteki.  
   
 -   **GC.** Wskazuje czas spędzony na wyrzucanie elementów bezużytecznych.  
   
--   **Style.** Wskazuje czas spędzony analizy CSS i obliczanie prezentacji i układu elementu.  
+-   **Ustawianie stylów.** Wskazuje czas spędzony analizy składni CSS i obliczanie prezentacji i układu elementu.  
   
 -   **Renderowanie.** Wskazuje czas spędzony na malowaniu ekranu.  
   
 -   **Dekodowanie obrazu.** Wskazuje czas spędzony na dekompresowaniu i dekodowaniu obrazów.  
   
- Dla skryptów i stylów kategorii Profiler czasu odpowiedzi interfejsu użytkownika może zawierać dane, które może działać na wykresie szczegóły osi czasu. Po zidentyfikowaniu zagadnienia dotyczące skryptów jako problem, możesz uruchomić Procesora próbkowania profilera z Profiler czasu odpowiedzi interfejsu użytkownika. Alternatywnie można użyć funkcji profilera Visual Studio do uzyskania bardziej szczegółowych danych. Aby uzyskać więcej informacji, zobacz [pamięci JavaScript](../profiling/javascript-memory.md).  
+ Dla skryptów i stylów kategorii Profiler czasu odpowiedzi interfejsu użytkownika może zawierać dane, które możesz działać na wykresie szczegółów osi czasu. Po zidentyfikowaniu zagadnienia dotyczące skryptów jako problem, można uruchomić program profilujący próbkowanie Procesora z Profiler czasu odpowiedzi interfejsu użytkownika. Alternatywnie można użyć programu Visual Studio profiler funkcji w celu uzyskania bardziej szczegółowych danych. Aby uzyskać więcej informacji, zobacz [pamięci JavaScript](../profiling/javascript-memory.md).  
   
- Dla innych kategorii zdarzeń można zidentyfikować platformy efekty uboczne, których wynikiem Dodawanie funkcji do aplikacji, ale w takim przypadku nie można spróbować rozwiązać problemy z wydajnością określonego za pomocą Profiler czasu odpowiedzi interfejsu użytkownika.  
+ W przypadku innych kategorii zdarzeń może być w stanie zidentyfikować efekty uboczne platformy, które powodują dodawanie funkcji do aplikacji, ale w takich przypadkach nie można rozwiązać problemy z wydajnością określonej za pomocą Profiler czasu odpowiedzi interfejsu użytkownika.  
   
- Ta tabela pokazuje zdarzenia i ich opisy:  
+ Ta tabela zawiera zdarzenia i ich opisy:  
   
 |Zdarzenie|Kategoria zdarzenia|Występuje, gdy|  
 |-----------|--------------------|-----------------|  
-|Analiza kodu CSS|Podczas ładowania|Napotkano nową zawartość arkusza CSS, a następnie podjęto przeanalizować zawartość arkusza CSS.|  
-|Analiza kodu HTML|Podczas ładowania|Napotkano nową zawartość HTML i podjęto próbę analizy zawartości w węzłach i Wstaw zawartość w drzewie DOM.|  
-|Żądania HTTP|Podczas ładowania|Zasób zdalny został znaleziony w modelu DOM lub utworzono żądanie XMLHttpRequest, które spowodowały żądania HTTP.|  
-|Rozważana pobierania|Podczas ładowania|Zawartość HTML strony zostało wyszukiwane wymaganych zasobów, aby można było szybko zaplanować kolejne żądania HTTP dla zasobów.|  
-|Funkcja wywołania zwrotnego ramki animacji|Wykonywanie skryptów|Przeglądarka został przechodzi do innej ramki renderowania i to wyzwalane funkcja wywołania zwrotnego dostarczony do aplikacji.|  
-|Zdarzenia modelu DOM.|Wykonywanie skryptów|Zdarzenia modelu DOM wystąpił i zostało wykonane.<br /><br /> `context` Właściwości zdarzenia modelu DOM, takich jak `DOMContentLoaded` lub `click`, jest wyświetlana w nawiasie.|  
+|Analizowanie arkusza CSS|Trwa ładowanie|Napotkano nową zawartość arkusza CSS, a nastąpiła próba przeanalizować zawartość arkusza CSS.|  
+|Analizowanie kodu HTML|Trwa ładowanie|Napotkano nową zawartość HTML i przeanalizować zawartość w węzłach i wstawianie zawartości w drzewie DOM została podjęta próba.|  
+|Żądanie HTTP|Trwa ładowanie|Zasób zdalny został znaleziony w modelu DOM lub utworzono XMLHttpRequest, które spowodowały wysłanie żądania HTTP.|  
+|Pobieranie spekulacyjne|Trwa ładowanie|Zawartość HTML strony została wyszukiwane wymaganych zasobów, aby można było szybko zaplanować kolejne żądania HTTP dla zasobów.|  
+|Funkcja wywołania zwrotnego ramki animacji|Wykonywanie skryptów|Przeglądarka został przejściem do innej ramki renderowania, a to wyzwalane funkcji wywołania zwrotnego dostarczane do aplikacji.|  
+|Zdarzenie modelu DOM|Wykonywanie skryptów|Zdarzenie modelu DOM wystąpił i został wykonany.<br /><br /> `context` Właściwości zdarzenia DOM, takich jak `DOMContentLoaded` lub `click`, jest wyświetlany w nawiasach.|  
 |Odbiornik zdarzeń|Wykonywanie skryptów|Odbiornik zdarzeń został wywoływane i wykonywane.|  
-|Odbiornik kwerendy nośnika|Wykonywanie skryptów|Zarejestrowane zapytanie o multimedia zostało unieważnione, co spowodowało wykonanie skojarzonych z nim odbiorników.|  
-|Obserwator mutacji|Wykonywanie skryptów|Co najmniej jeden zauważyć, że elementów DOM został zmodyfikowany, co spowodowało wykonanie wywołania zwrotnego skojarzonego z elementem MutationObserver.|  
-|Ocena skryptu|Wykonywanie skryptów|Nowy element skrypt został znaleziony w modelu DOM, a nastąpiła próba do analizowania i uruchom skrypt.|  
-|Czasomierz|Wykonywanie skryptów|Zaplanowany czasomierz zakończył odliczanie, a to spowodowało wykonanie funkcji wywołania zwrotnego skojarzonego.|  
-|Funkcja wywołania zwrotnego async środowiska wykonawczego systemu Windows|Wykonywanie skryptów|Operacja asynchroniczna, która wyzwoliła `Promise` funkcja wywołania zwrotnego wykonał obiektu środowiska wykonawczego systemu Windows.|  
-|Zdarzenie środowiska wykonawczego systemu Windows|Wykonywanie skryptów|Zdarzenie, które wystąpiły w obiekcie środowiska wykonawczego systemu Windows wyzwalane zarejestrowanego odbiornika.|  
-|Wyrzucanie elementów bezużytecznych|GC|Czasu zbieranie pamięci obiektów, które zostały już w użyciu.|  
-|Obliczanie CSS|Ustawianie stylów|Wprowadzono zmiany w modelu DOM, co wymagało obliczenia właściwości stylu dla wszystkich elementów objętych działaniem.|  
-|Układ|Ustawianie stylów|Wprowadzono zmiany w modelu DOM, co wymagało obliczenia rozmiaru i/lub pozycji wszystkich elementów objętych działaniem.|  
-|Malowania|Renderowanie|Wprowadzono zmiany wizualne w modelu DOM, a nastąpiła próba ponownego renderowanie części strony.|  
-|Renderowanie warstwy|Renderowanie|Wprowadzono zmiany wizualne na renderowanym niezależnie we fragmencie modelu DOM (nazywane warstwy), a część strony do renderowania wymaganych zmian.|  
-|Dekodowanie obrazu|Dekodowanie obrazu|Obraz został uwzględniony w modelu DOM, a nastąpiła próba dekompresja i zdekodować obrazu z oryginalnego formatu do mapy bitowej.|  
-|Klatka|Brak|Wprowadzono zmiany wizualne w modelu DOM, co wymagało wszystkich części strony objętych działaniem. Jest to zdarzenie generowane przez narzędzie używane do grupowania.|  
-|Miara użytkownika|Brak|Scenariusz specyficzny dla aplikacji został zmierzony za pomocą `performance.measure` metody. Jest to zdarzenie generowane przez narzędzie używane do analizowania kodu.|  
+|Odbiornik zapytań o multimedia|Wykonywanie skryptów|Zarejestrowane zapytanie o multimedia zostało unieważnione, co spowodowało wykonanie skojarzonych z nim odbiorników.|  
+|Obserwator mutacji|Wykonywanie skryptów|Co najmniej jeden należy zauważyć, że elementów DOM został zmodyfikowany, co spowodowało wykonanie wywołania zwrotnego skojarzonego z elementem MutationObserver.|  
+|Wyznaczanie wartości skryptu|Wykonywanie skryptów|Nowy element skrypt został znaleziony w modelu DOM i była podejmowana próba analizy i uruchom skrypt.|  
+|Czasomierz|Wykonywanie skryptów|Zaplanowany czasomierz zakończył odliczanie i pozwoliło to odnotować wykonywanie jej funkcji wywołania zwrotnego skojarzonego.|  
+|Funkcja wywołania zwrotnego asynchronicznych środowiska wykonawczego Windows|Wykonywanie skryptów|Operacji asynchronicznej, która wyzwoliła `Promise` funkcji wywołania zwrotnego wykonał obiektu Windows Runtime.|  
+|Zdarzenia środowiska uruchomieniowego Windows|Wykonywanie skryptów|Zdarzenie, które wystąpiły w obiekcie środowiska wykonawczego Windows wyzwolone zarejestrowane odbiornika.|  
+|Wyrzucanie elementów bezużytecznych|GC|Tracony jest czas zbieranie pamięci obiektów, które były już używane.|  
+|Obliczanie CSS|Ustawianie stylów|Wprowadzono zmiany w modelu DOM, który wymagany dla wszystkich elementów do ponownego obliczenia właściwości stylu.|  
+|Układ|Ustawianie stylów|Wprowadzono zmiany w modelu DOM, wymaganego rozmiaru i/lub pozycji wszystkich elementów objętych do ponownego obliczenia.|  
+|Malowanie|Renderowanie|Wprowadzono zmiany wizualne w modelu DOM i była podejmowana próba ponownego renderowania części strony.|  
+|Warstwa renderowania|Renderowanie|Wprowadzono zmiany wizualne niezależnie renderowanych fragmentu modelu DOM (nazywana warstwą), a część strony do renderowania wymaganych zmian.|  
+|Dekodowanie obrazu|Dekodowanie obrazu|Obraz został włączony w modelu DOM, a nastąpiła próba rozpakowania i dekodowanie obrazu z oryginalnego formatu do mapy bitowej.|  
+|Klatka|Brak|Wprowadzono zmiany wizualne w modelu DOM, wszystkie objęte części strony aby być narysowany ponownie wymagane. Jest to zdarzenie generowane przez narzędzie używane do grupowania.|  
+|Miara użytkownika|Brak|Scenariusz specyficzny dla aplikacji został zmierzony za `performance.measure` metody. Jest to zdarzenie generowane przez narzędzie używane do analizowania kodu.|  
   
 ## <a name="additional-information"></a>Dodatkowe informacje  
   
--   Obejrzyj [ten film](http://channel9.msdn.com/Events/Build/2013/3-316) z konferencji 2013 kompilacji o Profiler czasu odpowiedzi interfejsu użytkownika.  
+-   Obejrzyj [ten film wideo](http://channel9.msdn.com/Events/Build/2013/3-316) z konferencji Build 2013 o Profiler czasu odpowiedzi interfejsu użytkownika.  
   
--   Przeczytaj porady dotyczące wydajności dla aplikacji platformy uniwersalnej systemu Windows dla systemu Windows przy użyciu języka JavaScript. Aby uzyskać więcej informacji, zobacz [wydajności najlepszych rozwiązań dotyczących aplikacji platformy uniwersalnej systemu Windows przy użyciu języka JavaScript](http://msdn.microsoft.com/library/windows/apps/hh465194.aspx).  
+-   Przeczytaj wskazówki dotyczące wydajności dla aplikacji platformy uniwersalnej systemu Windows utworzonych dla Windows przy użyciu języka JavaScript. Aby uzyskać więcej informacji, zobacz [najlepsze rozwiązania dotyczące aplikacji platformy UWP przy użyciu języka JavaScript wydajności](http://msdn.microsoft.com/library/windows/apps/hh465194.aspx).  
   
--   Informacje na kod jednowątkowego wykonywania modelu i wydajność zawiera [wykonywanie kodu](http://msdn.microsoft.com/library/windows/apps/hh781217.aspx).  
+-   Informacje na temat modelu wykonywania kodu jednowątkowego i wydajności, zobacz [wykonywanie kodu](http://msdn.microsoft.com/library/windows/apps/hh781217.aspx).  
   
 ## <a name="see-also"></a>Zobacz także  
- [Pierwsze spojrzenie na narzędzia profilowania](../profiling/profiling-tools.md)
+ [Pierwsze spojrzenie na narzędziach profilowania](../profiling/profiling-feature-tour.md)

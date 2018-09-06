@@ -1,5 +1,5 @@
 ---
-title: Pobierz wprowadzenie (Office development w Visual Studio)
+title: Uzyskaj wprowadzenie (Office development w programie Visual Studio)
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -15,66 +15,67 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 194e98578125a41c1db5d54b4b9d4e5767c27a9a
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 5c7fb4888daecfe396ade51500cd156e49801850
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35677521"
 ---
-# <a name="get-started-office-development-in-visual-studio"></a>Pobierz wprowadzenie (Office development w Visual Studio)
-  Ta sekcja zawiera tematy, które ułatwiają rozpoczęcie pracy przy użyciu narzędzia Microsoft Office developer tools w programie Visual Studio.  
+# <a name="get-started-office-development-in-visual-studio"></a>Uzyskaj wprowadzenie (Office development w programie Visual Studio)
+  Ta sekcja zawiera tematy, które ułatwiają rozpoczęcie korzystania z narzędzia Microsoft Office developer tools w programie Visual Studio.  
   
 > [!NOTE]  
->  Pytań dotyczących projektowania rozwiązań, które rozszerzają możliwości pakietu Office przez [wielu platform](https://dev.office.com/add-in-availability)? Zapoznaj się z nowym [modelu dodatków pakietu Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Dodatków pakietu Office mieć niewielkie rozmiary w porównaniu do dodatków VSTO i rozwiązań i można ich tworzyć przy użyciu prawie każdego technologii, takich jak HTML5, CSS3, JavaScript i XML programowanie dla sieci web.  
+>  Zainteresowanych opracowywaniem rozwiązań, które rozszerzają możliwości pakietu Office w [wiele platform](https://dev.office.com/add-in-availability)? Zapoznaj się z nowym [modelu dodatków pakietu Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Dodatki pakietu Office mieć o niewielkich rozmiarach, w porównaniu do dodatków narzędzi VSTO dla programów i rozwiązań, a następnie utworzyć je przy użyciu niemal dowolnej technologii, takich jak HTML5, JavaScript, CSS3 i XML programowanie dla sieci web.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
  [Rozwój rozwiązań Office ― omówienie &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)  
- Podano informacje związane z opracowywaniem rozwiązań pakietu Office w Visual Studio.  
+ Zawiera ogólne informacje dla projektowania rozwiązań pakietu Office w Visual Studio.  
   
- [Zmiany w projekcie projektów pakietu Office przeznaczonych dla platformy .NET Framework 4 lub .NET Framework 4.5](../vsto/changes-to-the-design-of-office-projects-that-target-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)  
- W tym artykule opisano nowy projekt projektów pakietu Office przeznaczonych [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub nowszym i istotne zmiany kodu w projektach pakietu Office, które można dokonać migracji do listy [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub nowszym.  
+ [Zmienia się na projekt projektów Office obiektu docelowego .NET Framework 4 lub .NET Framework 4.5](../vsto/changes-to-the-design-of-office-projects-that-target-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)  
+ Opisuje nowy projekt projektów Office obiektu docelowego [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub nowszy i podaje przełomowe zmiany do kodu w projektach pakietu Office, które migrujesz do [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub nowszej.  
   
- [Wpisz dostępne funkcje uporządkowane według aplikacji pakietu Office i projektu](../vsto/features-available-by-office-application-and-project-type.md)  
- W tym artykule opisano, które aplikacje i projekty muszą korzystać z funkcji programowanie pakietu Office, takich jak rozszerzalności wstążki, niestandardowe okienka zadań, okienka akcji i regionów formularzy.  
+ [Typ funkcji według aplikacji pakietu Office i projekt](../vsto/features-available-by-office-application-and-project-type.md)  
+ W tym artykule opisano, które aplikacje i projekty, które są wymagane do użycia funkcji programowania pakietu Office, takich jak rozszerzalność wstążki, niestandardowe okienka zadań, okienka akcji i regionów formularzy.  
   
  [Konfigurowanie komputera do opracowywania rozwiązań pakietu Office](../vsto/configuring-a-computer-to-develop-office-solutions.md)  
- Zawiera informacje i kroki dotyczące instalowania narzędzi programowania pakietu Office, środowisko uruchomieniowe, które umożliwia rozwiązań pakietu Office do uruchamiania na komputerach użytkowników końcowych i podstawowe zestawy międzyoperacyjne pakietu Office.  
+ Zawiera informacje oraz kroki dotyczące instalowania narzędzi programistycznych pakietu Office runtime, które umożliwiają rozwiązania biurowe do uruchamiania na komputerach użytkowników końcowych i podstawowe zestawy międzyoperacyjne pakietu Office.  
   
- [Pobierz program uruchomiony poziomie dokumentu dla programu Excel](../vsto/getting-started-programming-document-level-customizations-for-excel.md)  
- Zawiera podsumowanie ważne pojęcia są potrzebne do tworzenia dostosowań na poziomie dokumentu dla programu Excel za pomocą programu Visual Studio.  
+ [Pobierz program wprowadzenie dostosowań poziomu dokumentu dla programu Excel](../vsto/getting-started-programming-document-level-customizations-for-excel.md)  
+ Zawiera podsumowanie dotyczące ważnych pojęć potrzebnych do korzystania z programu Visual Studio do utworzenia dostosowań poziomu dokumentu dla programu Excel.  
   
  [Wprowadzenie do programowania dostosowań na poziomie dokumentu dla programu Word](../vsto/getting-started-programming-document-level-customizations-for-word.md)  
- Zawiera podsumowanie ważne pojęcia są potrzebne do tworzenia dostosowań na poziomie dokumentu dla programu Word za pomocą programu Visual Studio.  
+ Zawiera podsumowanie dotyczące ważnych pojęć potrzebnych do korzystania z programu Visual Studio do utworzenia dostosowań poziomu dokumentu dla programu Word.  
   
  [Wprowadzenie do programowania dodatków narzędzi VSTO](../vsto/getting-started-programming-vsto-add-ins.md)  
- Zawiera podsumowanie ważne pojęcia są potrzebne do tworzenia poziomie aplikacji Visual Studio Tools dla pakietu Office (środowisko VSTO) dodatki aplikacji pakietu Microsoft Office za pomocą programu Visual Studio.  
+ Zawiera podsumowanie dotyczące ważnych pojęć potrzebnych do korzystania z programu Visual Studio do tworzenia dodatku poziomu aplikacji Visual Studio Tools dla dodatków pakietu Office (VSTO) dla aplikacji Microsoft Office.  
   
  [Rozwiązania VBA i pakietu Office w Visual Studio](../vsto/vba-and-office-solutions-in-visual-studio-compared.md)  
- W tym artykule opisano względną sile Visual Basic dla aplikacji i narzędzi programowania pakietu Office w Visual Studio dla opracowywania rozwiązań pakietu Office.  
+ Opisuje siłę języka Visual Basic dla aplikacji i narzędzi programistycznych pakietu Office w programie Visual Studio dla rozwijających się rozwiązań biurowe.  
   
  [Typowe zadania w programowaniu pakietu Office](../vsto/common-tasks-in-office-programming.md)  
  Zawiera łącza do tematów, które mogą pomóc w rozwiązywaniu typowych problemów.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
- [Office development ― przykłady i wskazówki](../vsto/office-development-samples-and-walkthroughs.md)  
- Zawiera łącza do tematów, które zapewniają szczegółowe instrukcje dotyczące wykonywania typowych zadań ani aplikacji przykładowych.  
+ [Office development ― przykłady i przewodniki](../vsto/office-development-samples-and-walkthroughs.md)  
+ Zawiera łącza do przykładowych aplikacji i tematów, które dają instrukcje krok po kroku do wykonywania typowych zadań.  
   
- [Architektura rozwiązań pakietu Office w Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)  
- W tym artykule opisano składniki rozwiązań pakietu Office i sposobu ich działania w czasie projektowania i środowiska uruchomieniowego.  
+ [Architektura rozwiązań pakietu Office w programie Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)  
+ Opisuje składniki rozwiązań pakietu Office i sposobie ich działania w czasie projektowania i środowiska uruchomieniowego.  
   
  [Projektowanie i tworzenie rozwiązań pakietu Office](../vsto/designing-and-creating-office-solutions.md)  
- Zawiera informacje o sposobie tworzenia projektu pakietu Office i skonfiguruj projekt w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
+ Zawiera informacje dotyczące sposobu tworzenia projektu pakietu Office i skonfigurowania projektu w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
  [Opracowywania rozwiązań pakietu Office](../vsto/developing-office-solutions.md)  
- Zawiera informacje dotyczące sposobu wdrażania dostosowania interfejsu kodu i użytkownika w projektach pakietu Office.  
+ Zawiera informacje o sposobie implementacji dostosowania interfejsu użytkownika oraz kodu w projekcie programu pakietu Office.  
   
  [Zabezpieczanie rozwiązań pakietu Office](../vsto/securing-office-solutions.md)  
- Zawiera informacje o wymaganiach dotyczących zabezpieczeń dla rozwiązań pakietu Office.  
+ Zawiera informacje dotyczące wymagań bezpieczeństwa dla rozwiązań pakietu Office.  
   
  [Wdrażanie rozwiązania do pakietu Office](../vsto/deploying-an-office-solution.md)  
- Przedstawia informacje o sposobie udostępnić rozwiązań pakietu Office dla użytkowników oraz poważne problemy, które należy uwzględnić podczas wybierz metodę wdrożenia i ustawienia zabezpieczeń.  
+ Zawiera informacje dotyczące sposobów udostępniania użytkownikom rozwiązania dla pakietu Office i opisuje główneh kwestie do rozważenia, gdy wybrana metoda wdrażania i ustawienia zabezpieczeń.  
   
- [Visual Studio Tools dla pakietu Office artykuły techniczne i porady Visual](http://go.microsoft.com/fwlink/?LinkID=106640)  
- Zawiera łącza do klipów wideo i artykuły techniczne na temat rozwiązań pakietu Office utworzony za pomocą programu Visual Studio.  
+ [Visual Studio Tools dla Office — artykuły techniczne i porady Visual](http://go.microsoft.com/fwlink/?LinkID=106640)  
+ Zawiera łącza do filmów wideo i artykułów technicznych dotyczących rozwiązań pakietu Office utworzonych przy użyciu programu Visual Studio.  
   
   

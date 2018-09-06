@@ -1,5 +1,5 @@
 ---
-title: Rozwiązywanie problemów z wydajnością narzędzi problemów | Dokumentacja firmy Microsoft
+title: Rozwiązywanie problemów z wydajnością problemy dotyczące narzędzi | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -10,41 +10,41 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: db48b940fecb27dd4f41b5fc56f32ee2cc4f5f02
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 531080945413bbc0959d2cdf91e2096c1e51f61d
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34572348"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35677140"
 ---
 # <a name="troubleshoot-performance-tools-issues"></a>Narzędzia do rozwiązywania problemów z wydajnością
-Korzystając z narzędzi profilowania mogą wystąpić jeden z następujących problemów:  
+Może wystąpić jeden z następujących problemów, korzystając z narzędzi profilowania:  
   
--   [Żadne dane nie są zbierane za pomocą narzędzi do profilowania](#NoDataCollected)  
+-   [Żadne dane nie są zbierane za pomocą narzędzi profilowania](#no-data-is-collected-by-the-profiling-tools)  
   
--   [Raportach i widokach wydajności wyświetlać numery dla nazwy funkcji](#NoSymbols)  
+-   [Raportach i widokach wydajności wyświetlane numery nazwy funkcji](#performance-views-and-reports-display-numbers-for-function-names)  
   
-## <a name="no-data-is-collected-by-the-profiling-tools"></a>Żadne dane nie są zbierane za pomocą narzędzi do profilowania  
- Po profilu aplikacji, danych profilowania (. *Vsp*) plików nie jest tworzony i pojawi się następujące ostrzeżenie w **dane wyjściowe** okna lub w oknie wiersza polecenia:  
+## <a name="no-data-is-collected-by-the-profiling-tools"></a>Żadne dane nie są zbierane za pomocą narzędzi profilowania  
+ Po profil aplikacji, danych profilowania (. *Vsp*) plików nie jest tworzony i pojawia się następujące ostrzeżenie w **dane wyjściowe** oknie lub w oknie wiersza polecenia:  
   
- PRF0025: Zbierane żadne dane.  
+ PRF0025: Zebrano żadnych danych.  
   
- Ten problem może być spowodowana przez kilka problemów:  
+ Ten problem może być spowodowany kilka problemów:  
   
--   Proces, który został profilowany przy użyciu próbki lub metody pamięci .NET uruchamia proces podrzędny, które staje się proces, który wykonuje pracę aplikacji. Na przykład niektóre aplikacje odczytać wiersza polecenia, aby określić, czy zostały one uruchomione jako aplikacji systemu Windows lub wiersza polecenia aplikacji. Jeśli zażądano aplikacji systemu Windows, proces oryginalnego uruchamiany nowy proces, skonfigurowany jako aplikacji systemu Windows i pierwotny proces kończy pracę. Ponieważ profilowania narzędzia nie zbierają automatycznie danych dla procesów podrzędnych, zbierane żadne dane.  
+-   Proces, która była profilowana przy użyciu pobierania próbek lub .NET — metoda pamięci rozpoczyna się proces podrzędny, która staje się proces, który wykonuje pracę aplikacji. Na przykład niektóre aplikacje odczytać wiersza polecenia, aby ustalić, czy zostały uruchomione jako aplikacji Windows lub aplikacji wiersza polecenia. Jeśli zażądano aplikacji Windows, proces oryginalnego uruchamia nowy proces, skonfigurowany jako aplikacji Windows, a następnie kończy działanie pierwotny proces. Ponieważ Profiling Tools nie automatycznego zbierania danych dla procesów podrzędnych, są zbierane żadne dane.  
   
-     Do zbierania danych profilowania w takiej sytuacji, dołączanie profilera do procesu podrzędnego zamiast uruchamiania aplikacji przy użyciu profilera. Aby uzyskać więcej informacji, zobacz [porady: dołączanie i odłączania narzędzi wydajności do uruchomionego procesu](../profiling/how-to-attach-and-detach-performance-tools-to-running-processes.md) i [Attach (VSPerfCmd)](../profiling/attach.md)  
+     Do zbierania danych profilowania w takiej sytuacji, należy dołączyć profiler do procesu podrzędnego, zamiast uruchamiania aplikacji przy użyciu profilera. Aby uzyskać więcej informacji, zobacz [instrukcje: dołączanie i odłączanie narzędzi wydajności do uruchomionych procesów](../profiling/how-to-attach-and-detach-performance-tools-to-running-processes.md) i [Attach (VSPerfCmd)](../profiling/attach.md)  
   
-## <a name="performance-views-and-reports-display-numbers-for-function-names"></a>Raportach i widokach wydajności wyświetlać numery dla nazwy funkcji  
- Po profilu aplikacji, możesz wyświetlić numery zamiast nazwy funkcji w raportach i widokach.  
+## <a name="performance-views-and-reports-display-numbers-for-function-names"></a>Raportach i widokach wydajności wyświetlane numery nazwy funkcji  
+ Po użytkownik profil aplikacji, można wyświetlić numery zamiast nazwy funkcji w raportach i widokach.  
   
- Przyczyną tego problemu w narzędziach profilowania aparat analizy, nie można odnaleźć. *pdb* pliki, które zawierają informacje o symbolach czy mapy źródła kodu, takie nazwy funkcji i numery wierszy do skompilowanego pliku. Domyślnie tworzy kompilatora. *pdb* pliku po utworzeniu pliku aplikacji. Odwołanie do katalogu lokalnego. *pdb* plik jest przechowywany w skompilowanej aplikacji. Aparat analizy wygląda w katalogu do którego istnieje odwołanie. *pdb* plików i następnie w pliku obecnie zawiera pliku aplikacji. Jeśli. *pdb* nie znaleziono pliku, aparat analizy korzysta z funkcji przesunięcia zamiast nazwy funkcji.  
+ Ten problem jest spowodowany przez aparat analizy Profiling Tools nie będzie w stanie znaleźć. *pdb* pliki, które zawierają informacje o symbolach, że mapy źródła informacji o kodzie, takie nazwy i numery wierszy przeznaczonych do skompilowanych plików. Domyślnie, kompilator utworzy. *pdb* plików podczas kompilowania pliku aplikacji. Odwołanie do katalogu lokalnego. *pdb* plik jest przechowywany w skompilowanej aplikacji. Aparat analizy wyszukuje w bieżącym katalogu dla odwołania. *pdb* pliku, a następnie w pliku, który obecnie zawiera pliku aplikacji. Jeśli. *pdb* plik nie zostanie znaleziony, aparat analizy używa przesunięcia funkcji zamiast nazwy funkcji.  
   
- Można rozwiązać ten problem w jednym z dwóch sposobów:  
+ W rozwiązaniu problemu w jeden z dwóch sposobów:  
   
 -   Znajdź. *pdb* pliki i umieścić je w tym samym katalogu co pliki aplikacji.  
   
--   Osadzanie informacji o symbolach w danych profilowania (. *Vsp*) pliku. Aby uzyskać więcej informacji, zobacz [zapisać informacji o symbolach z wydajnością pliki danych](../profiling/saving-symbol-information-with-performance-data-files.md).  
+-   Osadzanie informacji o symbolach w danych profilowania (. *Vsp*) pliku. Aby uzyskać więcej informacji, zobacz [zapisywanie informacji o symbolach wydajności pliki danych](../profiling/saving-symbol-information-with-performance-data-files.md).  
   
 > [!NOTE]
->  Wymaga aparatu analizy. *pdb* plik jest w wersji zgodnej z wersją pliku skompilowanej aplikacji. A. *pdb* pliku z wcześniejszych lub nowszej kompilacji pliku aplikacji nie będą działać.
+>  Aparat analizy wymaga. *pdb* plik jest w tej samej wersji co plik skompilowanej aplikacji. ELEMENT. *pdb* pliku z wcześniejszych lub nowszej kompilacji pliku aplikacji nie będą działać.

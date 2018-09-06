@@ -10,18 +10,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c835894d18ca1aea33f26f234a4df914114089c
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: ceac340beb5b8b8f7c7115400c8c22e0d2657252
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35677264"
 ---
 # <a name="shutdown"></a>Zamykanie
-**Zamknięcia** opcja oczekiwania dla żadnego obecnie profilowany proces, aby zakończyć lub odłączyć, a następnie wyłącza profilera i zamyka plik danych profilowania. **Zamknięcia** opcja musi być ostatnie polecenie profilowania Uruchom.  
+**Zamknięcia** opcji oczekuje żadnego obecnie profilowane procesu, aby zakończyć lub odłączyć, a następnie wyłącza profilera i zamyka plik danych profilowania. **Zamknięcia** opcja musi być ostatnie polecenie uruchomienia profilowania.  
   
- Jeśli nie określono parametr limitu czasu, **zamknięcia** opcja oczekiwania przez czas nieokreślony. Jeśli określono parametr limitu czasu, opcja zwraca po określonej liczbie sekund bez wyłączania profilera i zamykania pliku danych.  
+ Jeśli nie określono parametr limitu czasu, **zamknięcia** opcji w tym czasie czeka na czas nieokreślony. Jeśli określono parametr limitu czasu, opcja zwraca po określonej liczbie sekund bez konieczności wyłączania program profilujący lub zamykania pliku danych.  
   
- **Zamknięcia** opcja musi być jedyną opcją określona w wierszu polecenia.  
+ **Zamknięcia** opcja musi być jedyną opcją, określone w wierszu polecenia.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -31,10 +32,10 @@ VSPerfCmd.exe /Shutdown[:Timeout]
   
 #### <a name="parameters"></a>Parametry  
  `Timeout`  
- -   (Opcjonalnie) Jeśli zostanie określona, opcja zwraca po określonej liczbie sekund bez wyłączania profilera i zamykania pliku danych profilowania.  
+ -   (Opcjonalnie) Jeśli zostanie określony, opcja zwraca po określonej liczbie sekund bez konieczności wyłączania program profilujący lub zamykania pliku danych profilowania.  
   
-## <a name="see-also"></a>Zobacz też  
- [VSPerfCmd](../profiling/vsperfcmd.md)   
- [Profilowanie aplikacji autonomicznych](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Profilowanie aplikacji sieci Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+## <a name="see-also"></a>Zobacz także  
+ [Narzędzia VSPerfCmd](../profiling/vsperfcmd.md)   
+ [Profil aplikacji autonomicznych](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+ [Aplikacje sieci web ASP.NET profilu](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [Usługi profilowania](../profiling/command-line-profiling-of-services.md)

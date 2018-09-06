@@ -1,5 +1,5 @@
 ---
-title: 'Porady: programowane przechowywanie i pobieranie wartości daty w zakresach Excel | Dokumentacja firmy Microsoft'
+title: 'Porady: programowane przechowywanie i pobieranie wartości daty w zakresach programu Excel'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -22,29 +22,30 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b67bc45218aa6fb537516f426f1ac3b25fad698c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0f1abe0e797a65886f595913f8e6495ec084b7e2
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35677256"
 ---
-# <a name="how-to-programmatically-store-and-retrieve-date-values-in-excel-ranges"></a>Porady: Programowane przechowywanie i pobieranie wartości daty w zakresach programu Excel
-  Umożliwia przechowywanie i pobieranie wartości w <xref:Microsoft.Office.Tools.Excel.NamedRange> formant lub obiekt zakresu natywnego programu Excel.  
+# <a name="how-to-programmatically-store-and-retrieve-date-values-in-excel-ranges"></a>Porady: programowane przechowywanie i pobieranie wartości daty w zakresach programu Excel
+  Można przechowywać i pobierać wartości w <xref:Microsoft.Office.Tools.Excel.NamedRange> formantu lub natywnego obiektu zakresu programu Excel.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
- Przechowywanie wartości daty, która znajduje się na lub po 1/1/1900 w zakresie za pomocą narzędzi programowania pakietu Office w Visual Studio, jest on przechowywany w formacie OLE automatyzacji (OA). Należy użyć <xref:System.DateTime.FromOADate%2A> metody do pobierania wartości daty OLE automatyzacji (OA). Data jest wcześniejsza niż 1/1/1900, jest on przechowywany jako ciąg.  
+ W przypadku przechowywania wartości daty, która znajduje się na lub po 1/1/1900 w zakresie za pomocą narzędzi programistycznych pakietu Office w programie Visual Studio znajduje się w formacie OLE automatyzacji OA. Należy użyć <xref:System.DateTime.FromOADate%2A> metodę, aby pobrać wartość daty OLE automatyzacji OA. Jeśli data jest wcześniejsza niż 1/1/1900, są przechowywane w postaci ciągu.  
   
 > [!NOTE]  
->  Excel dat różnią się od daty automatyzacji OLE na pierwszych dwóch miesięcy 1900 roku. Istnieją także różnice Jeśli **system daty 1904** zaznaczenia pola wyboru. Poniższe przykłady kodu nie dotyczą te różnice.  
+>  Daty Excel różnią się od daty automatyzacji OLE na pierwszych dwóch miesięcy 1900. Różnią się także jeśli **system daty 1904** opcja jest zaznaczona. Poniższe przykłady kodu nie dotyczą te różnice.  
   
-## <a name="using-a-namedrange-control"></a>Używanie formantu NamedRange  
+## <a name="use-a-namedrange-control"></a>Używanie formantu NamedRange  
   
--   W tym przykładzie jest na poziomie dokumentu. Poniższy kod muszą znajdować się w klasie arkusza nie znajduje się w `ThisWorkbook` klasy.  
+-   Ten przykład dotyczy dostosowywania na poziomie dokumentu. Poniższy kod muszą być umieszczone w klasie arkusza, nie w `ThisWorkbook` klasy.  
   
-#### <a name="to-store-a-date-value-in-a-named-range"></a>Przechowywanie wartości daty nazwanego zakresu  
+### <a name="to-store-a-date-value-in-a-named-range"></a>Przechowywanie wartości daty w nazwany zakres  
   
-1.  Utwórz <xref:Microsoft.Office.Tools.Excel.NamedRange> formant w komórce **A1**.  
+1.  Tworzenie <xref:Microsoft.Office.Tools.Excel.NamedRange> formant w komórce **A1**.  
   
      [!code-csharp[Trin_VstcoreExcelAutomation#50](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#50)]
      [!code-vb[Trin_VstcoreExcelAutomation#50](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#50)]  
@@ -54,18 +55,18 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[Trin_VstcoreExcelAutomation#51](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#51)]
      [!code-vb[Trin_VstcoreExcelAutomation#51](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#51)]  
   
-#### <a name="to-retrieve-a-date-value-from-a-named-range"></a>Aby pobrać wartość daty z nazwanego zakresu  
+### <a name="to-retrieve-a-date-value-from-a-named-range"></a>Aby pobrać wartość typu date z nazwanego zakresu  
   
-1.  Pobieranie wartości daty z `NamedRange1`.  
+1.  Pobierz wartość daty na podstawie `NamedRange1`.  
   
      [!code-csharp[Trin_VstcoreExcelAutomation#52](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#52)]
      [!code-vb[Trin_VstcoreExcelAutomation#52](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#52)]  
   
-## <a name="using-native-excel-ranges"></a>Za pomocą natywnego zakresów programu Excel  
+## <a name="use-native-excel-ranges"></a>Użyj natywnego zakresów programu Excel  
   
-#### <a name="to-store-a-date-value-in-a-native-excel-range-object"></a>Przechowywanie wartości daty w obiekcie range natywnego programu Excel  
+### <a name="to-store-a-date-value-in-a-native-excel-range-object"></a>Przechowywanie wartości daty w macierzystym obiektu zakresu programu Excel  
   
-1.  Utwórz <xref:Microsoft.Office.Interop.Excel.Range> reprezentujący komórki **A1**.  
+1.  Tworzenie <xref:Microsoft.Office.Interop.Excel.Range> reprezentujący komórkę **A1**.  
   
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#25](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#25)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#25](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#25)]  
@@ -75,19 +76,19 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#26](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#26)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#26](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#26)]  
   
-#### <a name="to-retrieve-a-date-value-from-a-native-excel-range-object"></a>Aby pobrać wartość daty z natywnego obiektu zakresu programu Excel  
+### <a name="to-retrieve-a-date-value-from-a-native-excel-range-object"></a>Aby pobrać wartość typu date z natywnego obiektu zakresu programu Excel  
   
-1.  Pobieranie wartości daty z `rng`.  
+1.  Pobierz wartość daty na podstawie `rng`.  
   
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#27](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#27)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#27](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#27)]  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Praca z zakresami](../vsto/working-with-ranges.md)   
  [Model obiektu Excel ― omówienie](../vsto/excel-object-model-overview.md)   
  [Namedrange — formant](../vsto/namedrange-control.md)   
  [Porady: programowane odwoływanie do zakresów arkusza w kodzie](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)   
  [Porady: dodawanie formantów NamedRange do arkuszy](../vsto/how-to-add-namedrange-controls-to-worksheets.md)   
- [Parametry opcjonalne w rozwiązaniach Office](../vsto/optional-parameters-in-office-solutions.md)  
+ [Parametry opcjonalne w rozwiązaniach pakietu Office](../vsto/optional-parameters-in-office-solutions.md)  
   
   

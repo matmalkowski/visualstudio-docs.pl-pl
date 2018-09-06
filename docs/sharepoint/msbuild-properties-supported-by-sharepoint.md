@@ -17,45 +17,45 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 68a4661afa7016019095160704f6e0c6b2bb7693
-ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
+ms.openlocfilehash: 1695a23ba9dddc27a37f23c714678fe6b779d328
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35237311"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35676383"
 ---
-# <a name="msbuild-properties-supported-by-sharepoint"></a>Właściwości MSBuild obsługiwane przez SharePoint
-  Wszelkie [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] właściwości zdefiniowane w pliku, plik projektu lub pliku użytkownika projektu Microsoft.VisualStudio.SharePoint.targets można używać w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint — projekty. Oprócz typowe [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] właściwości dostarczanych przez projekt SharePoint definiuje dodatkowe właściwości, które są specyficzne dla projektów programu SharePoint.
-
- Aby uzyskać listę wspólnych [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] właściwości, zobacz [wspólne właściwości projektów MSBuild](http://go.microsoft.com/fwlink/?LinkID=168687). Pełną listę właściwości obsługiwanych przez język programowania, można znaleźć w pliku .targets, pliku projektu (pliku .csproj lub .vbproj) lub pliku użytkownika projektu (csproj.user lub. vbproj.user).
-
-## <a name="msbuild-properties-specific-to-sharepoint"></a>MSBuild właściwości charakterystyczne dla programu SharePoint
- W poniższej tabeli wymieniono [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] właściwości, które dotyczą przede wszystkim SharePoint — projekty w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Istnieją inne właściwości, ale są one do użytku wewnętrznego.
-
-|Nazwa właściwości|Opis|
-|-------------------|-----------------|
-|SharePointSiteUrl|Ciąg reprezentujący [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)] do witryny programu SharePoint.|
-|SandboxedSolution|Wartość logiczna wskazująca, czy rozwiązanie jest rozwiązania w trybie piaskownicy.|
-|ActiveDeploymentConfiguration|Konfiguracja aktywnych wdrożeń.|
-|IncludeAssemblyInPackage|Wartość logiczna wskazująca, czy zestaw jest uwzględniona w pliku pakietu.|
-|PreDeploymentCommand|Wartość ciągu, która reprezentuje polecenie do wykonania w kroku polecenia przed wdrożeniem.|
-|PostDeploymentCommand|Wartość ciągu, który reprezentuje polecenie do wykonania w kroku polecenia po wdrożeniu.|
-|CustomBeforeSharePointTargets|Ciąg, który reprezentuje ścieżkę [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] plik elementów docelowych. Jeśli plik elementów docelowych istnieje i jest zdefiniowany, zostaną zaimportowane przed wszystkie dane obiektów docelowych programu SharePoint. Ta właściwość umożliwia dostosowanie procesu pakietu przez predefiniowanie właściwości związane z — bez modyfikowania dostarczany plik elementów docelowych programu SharePoint, ale plik elementów docelowych nadal ma zastosowanie do wszystkich projektów programu SharePoint.|
-|CustomAfterSharePointTargets|Ciąg, który reprezentuje ścieżkę [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] plik elementów docelowych. Jeśli plik elementów docelowych istnieje i jest zdefiniowany, to po wszystkich importowanych danych obiektów docelowych programu SharePoint. Ta właściwość umożliwia dostosowanie procesu pakietu przez zastąpienie właściwości powiązanych z pakietów i obiektów docelowych, bez konieczności modyfikowania dostarczany plik elementów docelowych programu SharePoint, ale plik elementów docelowych nadal ma zastosowanie do wszystkich projektów programu SharePoint.|
-|Element LayoutPath|Ciąg, który reprezentuje katalog główny plików spakowanych tymczasowo rozmieszczenie zanim zostaną one dodane do pliku wsp. Ta ścieżka może być przydatne do ustalenia, kiedy można zastąpić cele BeforeLayout i AfterLayout, aby dodać, usunąć lub zmodyfikować pliki być spakowany, ponieważ służy do zmiany zawartości w pliku wsp.|
-|BasePackagePath|Ciąg, który reprezentuje folder, w której znajduje się pakiet. Katalog wyjściowy projektu, takie jak Bin\Debug korzysta z tej wartości.|
-|PackageExtension|Ciąg, który reprezentuje rozszerzenie nazwy pliku, który ma zostać dołączony do pakietu. Wartość domyślna to wsp.|
-|AssemblyDeploymentTarget|Ciąg, który reprezentuje lokalizację, w którym zestawu projekt jest wdrażany na serwerze programu SharePoint. Wartość jest GlobalAssemblyCache (ustawienie domyślne) lub aplikacji sieci Web. Tej właściwości można ustawić w taki sposób, w oknie właściwości.|
-|PackageWithValidation|Wartość logiczna określająca, czy sprawdzanie poprawności jest wykonywane przed opakowania. Ta właściwość umożliwia ignorowanie błędów sprawdzania poprawności podczas kompilowania pakietów.|
-|ValidatePackageDependsOn|Ciąg, który definiuje dodatkowe cele do wykonania przed elementem docelowym ValidatePackage.|
-|TokenReplacementFileExensions|Ciąg, który definiuje pliki, których tokenów zastąpiony podczas pakowania.|
-
-## <a name="using-msbuild-properties-in-the-properties-page"></a>Na stronie właściwości za pomocą właściwości programu MSBuild
- Elastyczność zamiast ustalony ciągów w **wiersza polecenia przed wdrożeniem** i **wiersza polecenia po wdrożeniu** pola na stronie właściwości programu SharePoint można użyć programu SharePoint właściwości jako argumenty. Na przykład zamiast określania określony [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)] ciąg witryny programu SharePoint, należy użyć `$(SharePointSiteUrl)`.
-
-> [!NOTE]
->  Możesz użyć dowolnej [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] składni zmiennej `$(` *propertyName* `)` lub składnia zmiennej środowiskowej `%` *propertyName* `%` Aby określić właściwości.
-
+# <a name="msbuild-properties-supported-by-sharepoint"></a>Właściwości MsBuild obsługiwane przez program SharePoint
+  Wszelkie [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] właściwości zdefiniowane w pliku, plik projektu lub pliku użytkownika projektu Microsoft.VisualStudio.SharePoint.targets mogą być używane w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projektów programu SharePoint. Oprócz typowe [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] właściwości dostarczonych przez projekt programu SharePoint definiuje dodatkowe właściwości, które są specyficzne dla projektów programu SharePoint.  
+  
+ Aby uzyskać listę typowych [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] właściwości, zobacz [wspólne właściwości projektów MSBuild](http://go.microsoft.com/fwlink/?LinkID=168687). Aby uzyskać pełną listę właściwości obsługiwanych przez język programowania, Szukaj w *.targets* pliku, plik projektu (*.csproj* lub *.vbproj*), lub użytkownik projektu pliku ( *csproj.user* lub *. vbproj.user*).  
+  
+## <a name="msbuild-properties-specific-to-sharepoint"></a>Właściwości programu MsBuild specyficzne dla programu SharePoint
+ W poniższej tabeli wymieniono [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] właściwości, które mają zastosowanie do projektów programu SharePoint w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Istnieją inne właściwości, ale są one do użytku wewnętrznego.  
+  
+|Nazwa właściwości|Opis|  
+|-------------------|-----------------|  
+|SharePointSiteUrl|Ciąg, który reprezentuje [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)] do witryny programu SharePoint.|  
+|SandboxedSolution|Wartość logiczna wskazująca, czy rozwiązanie jest rozwiązanie w trybie piaskownicy.|  
+|ActiveDeploymentConfiguration|Konfiguracja aktywnego wdrożenia.|  
+|IncludeAssemblyInPackage|Wartość logiczna wskazująca, czy zestaw znajduje się w pliku pakietu.|  
+|PreDeploymentCommand|Wartość ciągu, który reprezentuje polecenie do wykonania w kroku polecenia przed wdrożeniem.|  
+|PostDeploymentCommand|Wartość ciągu, który reprezentuje polecenie do wykonania w kroku polecenia po wdrożeniu.|  
+|CustomBeforeSharePointTargets|Ciąg, który reprezentuje ścieżkę [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] plik docelowy. Jeśli plik elementów docelowych istnieje i jest zdefiniowany, wartość są importowane przed wszystkie dane obiektów docelowych programu SharePoint. Ta właściwość umożliwia dostosowanie procesu pakietu za pomocą wstępnego definiowania właściwości związane z pakietem, bez konieczności modyfikacji dostarczany plik elementów docelowych programu SharePoint, ale plik elementów docelowych nadal ma zastosowanie do wszystkich projektów programu SharePoint.|  
+|CustomAfterSharePointTargets|Ciąg, który reprezentuje ścieżkę [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] plik docelowy. Jeśli plik elementów docelowych istnieje i jest zdefiniowana, to po wszystkich importowanych danych obiektów docelowych programu SharePoint. Ta właściwość umożliwia dostosowanie procesu pakietu przez zastąpienie cele i właściwości związane z pakietem bez konieczności modyfikowania dostarczany plik elementów docelowych programu SharePoint, ale plik elementów docelowych nadal ma zastosowanie do wszystkich projektów programu SharePoint.|  
+|Element LayoutPath|Ciąg, który reprezentuje katalog główny, w którym każdy z plików do umieszczenia w pakiecie są tymczasowo umieszczone zanim zostaną one dodane do *.wsp* pliku. Ta ścieżka może być użyteczne informacje, kiedy zastępują cele BeforeLayout i AfterLayout, aby dodać, usunąć lub zmodyfikować pliki do umieszczenia w pakiecie, ponieważ służy do zmiany zawartości *.wsp* pliku.|  
+|BasePackagePath|Ciąg, który reprezentuje folder, w którym znajduje się pakiet. Ta wartość używa katalogu wyjściowego projektu, takich jak Bin\Debug.|  
+|PackageExtension|Ciąg, który reprezentuje rozszerzenie nazwy pliku do dołączenia do pakietu. Wartość domyślna to wsp.|  
+|Assemblydeploymenttarget programu MSBuild|Ciąg, który reprezentuje lokalizację, w którym zestaw projektów jest wdrażany na serwerze programu SharePoint. Jego wartość jest GlobalAssemblyCache (ustawienie domyślne) lub aplikacji sieci Web. Tę właściwość można ustawić w taki sposób, w oknie dialogowym właściwości.|  
+|PackageWithValidation|Wartość logiczna określająca, czy sprawdzanie poprawności jest wykonywane przed pakowania. Ta właściwość umożliwia ignorowanie błędów sprawdzania poprawności podczas tworzenia pakietów.|  
+|ValidatePackageDependsOn|Ciąg, który definiuje dodatkowe obiekty docelowe w celu wykonania przed docelowej ValidatePackage.|  
+|TokenReplacementFileExensions|Ciąg, który definiuje pliki, które mają tokenów, który został zastąpiony podczas pakowania.|  
+  
+## <a name="use-msbuild-properties-in-the-properties-page"></a>Użyj właściwości programu MsBuild na stronie właściwości
+ Aby zapewnić elastyczność, zamiast zakodowane sprzętowo ciągi w **wiersz polecenia przed wdrożeniem** i **wiersz polecenia po wdrożeniu** pola na stronie właściwości programu SharePoint, można użyć programu SharePoint właściwości argumentów. Na przykład, zamiast określania określonego [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)] ciąg witryny programu SharePoint, należy użyć `$(SharePointSiteUrl)`.  
+  
+> [!NOTE]  
+>  Można użyć dowolnego [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] składni zmiennych `$(` *propertyName* `)` lub składni zmiennych środowiskowych `%` *propertyName* `%` Aby określić właściwości.  
+  
 ## <a name="see-also"></a>Zobacz także
-
-- [Odwołanie do narzędzia MSBuild](../msbuild/msbuild-reference.md)
+ [Odwołanie do narzędzia MSBuild](/visualstudio/msbuild/msbuild-reference)  
+  

@@ -1,5 +1,5 @@
 ---
-title: 'Porady: Usuwanie rozszerzenia kodu zarządzanego z dokumentów | Dokumentacja firmy Microsoft'
+title: 'Porady: Usuwanie rozszerzenia kodu zarządzanego z dokumentów'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,47 +16,48 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7a5e70db36c0cd1b99a670e13a353e15f7558e7e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a57384fa22e810be27969bb5164e1951dccd1bf2
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35677467"
 ---
-# <a name="how-to-remove-managed-code-extensions-from-documents"></a>Porady: usuwanie rozszerzenia kodu zarządzanego z dokumentów
-  Programowo można usunąć zestawu dostosowania z dokumentu lub skoroszytu, który jest częścią dostosowanie poziomie dokumentu dla programu Microsoft Office Word i Microsoft Office Excel. Użytkownicy mogą otwierać dokumenty i przeglądanie zawartości, ale nie będą wyświetlane wszystkie niestandardowego interfejsu użytkownika (UI) dodawanie do dokumentów i kod nie zostanie uruchomiona.  
+# <a name="how-to-remove-managed-code-extensions-from-documents"></a>Porady: Usuwanie rozszerzenia kodu zarządzanego z dokumentów
+  Zestaw dostosowania można programowo usunąć dokument lub skoroszyt, który jest częścią dostosowywania poziomie dokumentu dla programu Microsoft Office Word lub Microsoft Office Excel. Użytkownicy mogą otwierać dokumentów i wyświetlanie zawartości, ale dowolnego niestandardowego interfejsu użytkownika (UI) dodawanie do dokumentów, nie będą widoczne, a kod nie będzie działał.  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
- Można usunąć zestawu dostosowywania za pomocą jednej z metod RemoveCustomization dostarczonych przez [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Wybór metody zależy od tego, czy chcesz usunąć dostosowania w czasie wykonywania (uruchamiając kod na dostosowania podczas słowo skoroszytu programu Excel lub dokumentu jest otwarty), lub jeśli chcesz usunąć dostosowań z zamkniętego dokumentu lub że s na serwerze, który nie ma zainstalowanych w Microsoft Office.  
+ Możesz usunąć zestaw dostosowania przy użyciu jednej z `RemoveCustomization` metod dostarczonych przez [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Wybór metody zależy od tego, czy chcesz usunąć dostosowania w czasie wykonywania (oznacza to, uruchamiając kod w dostosowaniu podczas wyraz dokument lub skoroszyt programu Excel jest otwarty), lub jeśli chcesz usunąć dostosowania z zamkniętej dokumentu lub że s na serwerze, który ma zainstalowany w Microsoft Office.  
   
- ![łącze do wideo](../vsto/media/playvideo.gif "łącze do wideo") dla powiązanych pokaz wideo, zobacz [jak I: czy dołączać lub odłącz zestawem VSTO z dokumentu programu Word?](http://go.microsoft.com/fwlink/?LinkId=136782).  
+ ![Link do wideo](../vsto/media/playvideo.gif "link do wideo") powiązane demonstracyjne wideo – zobacz [jak I: należy dołączyć lub odłącz zestaw narzędzi VSTO dla programów z dokumentu programu Word?](http://go.microsoft.com/fwlink/?LinkId=136782).  
   
-### <a name="to-remove-the-customization-assembly-at-run-time"></a>Aby usunąć zestaw dostosowania w czasie wykonywania  
+## <a name="to-remove-the-customization-assembly-at-runtime"></a>Aby usunąć zestaw dostosowania w czasie wykonywania  
   
-1.  W kodzie dostosowania wywołać <xref:Microsoft.Office.Tools.Word.Document.RemoveCustomization%2A> — metoda (dla programu Word) lub <xref:Microsoft.Office.Tools.Excel.Workbook.RemoveCustomization%2A> — metoda (dla programu Excel). Tę metodę należy wywoływać tylko wtedy, gdy dostosowania nie są już potrzebne.  
+1.  W kodzie dostosowywania wywołać <xref:Microsoft.Office.Tools.Word.Document.RemoveCustomization%2A> — metoda (dla programu Word) lub <xref:Microsoft.Office.Tools.Excel.Workbook.RemoveCustomization%2A> — metoda (dla programu Excel). Tę metodę należy wywoływać tylko wtedy, gdy dostosowanie nie jest już potrzebny.  
   
-     Gdy ta metoda jest wywoływana w kodzie, zależy od tego, jak dostosowanie jest używana. Na przykład jeśli klientom korzystać z funkcji Twoje dostosowania dopóki nie będą gotowe do wysyłania dokumentu do innych klientów, którzy należy tylko w dokumencie (nie dostosowywania), musisz podać niektóre interfejsu użytkownika, który wywołuje RemoveCustomization po kliknięciu przez klienta. Alternatywnie Jeśli dostosowanie wypełnia dokument z danymi, po pierwszym otwarciu, ale dostosowania nie udostępnia inne funkcje, które są udostępniane bezpośrednio przez klientów, następnie można wywołać RemoveCustomization tak szybko, jak dostosowanie Zakończenie inicjowania dokumentu.  
+     Gdzie chcesz wywołać tę metodę w kodzie zależy od tego, jak dostosowywanie jest używany. Na przykład, jeśli klienci korzystać z funkcji usługi dostosowywania aż będą gotowe do wysyłania dokumentu do innych klientów, którzy muszą tylko dokumentem (nie dostosowywania), musisz podać niektóre interfejsu użytkownika, który wywołuje `RemoveCustomization` gdy klient kliknie go. Alternatywnie Jeśli dostosowanie wypełnia dokumentu z danymi, po pierwszym otwarciu, ale dostosowanie nie zapewnia inne funkcje, które są dostępne bezpośrednio przez klientów, następnie możesz wywołać RemoveCustomization tak szybko, jak dostosowywanie Inicjowanie dokumentu zostanie zakończone.  
   
-### <a name="to-remove-the-customization-assembly-from-a-closed-document-or-a-document-on-a-server"></a>Aby usunąć zestaw dostosowania z zamkniętego dokumentu lub na serwerze  
+## <a name="to-remove-the-customization-assembly-from-a-closed-document-or-a-document-on-a-server"></a>Aby usunąć zestaw dostosowania z dokumentu zamknięte lub na serwerze  
   
-1.  W projekcie, który nie wymaga programu Microsoft Office, takich jak aplikacji konsoli lub projektu formularzy systemu Windows i Dodaj odwołanie do zestawu Microsoft.VisualStudio.Tools.Applications.ServerDocument.dll.  
+1.  W projekcie, który nie wymaga programu Microsoft Office, takich jak aplikacji konsoli lub projekt Windows Forms, Dodaj odwołanie do *Microsoft.VisualStudio.Tools.Applications.ServerDocument.dll* zestawu.  
   
-2.  Dodaj następujące **importów** lub **przy użyciu** instrukcji na początku pliku kodu.  
+2.  Dodaj następujący kod **Importy** lub **przy użyciu** instrukcji na górze pliku kodu.  
   
      [!code-csharp[Trin_VstcoreDeployment#1](../vsto/codesnippet/CSharp/Trin_VstcoreDeploymentCS/Program.cs#1)]
      [!code-vb[Trin_VstcoreDeployment#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreDeploymentVB/Program.vb#1)]  
   
-3.  Wywołaj statycznych <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.RemoveCustomization%2A> metody <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> klasy, a następnie określ ścieżkę dokumentu rozwiązania dla parametru.  
+3.  Wywołaj statyczną <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.RemoveCustomization%2A> metody <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> klasy, a następnie określ ścieżkę dokumentu rozwiązanie dla parametru.  
   
-     Poniższy przykład kodu zakłada spowoduje usunięcie dostosowań z dokumentu o nazwie **WordDocument1.docx** znajduje się na pulpicie.  
+     Poniższy przykład kodu zakłada, z dokumentu o nazwie usuwasz dostosowania *WordDocument1.docx* znajduje się na pulpicie.  
   
      [!code-csharp[Trin_VstcoreDeployment#2](../vsto/codesnippet/CSharp/Trin_VstcoreDeploymentCS/Program.cs#2)]
      [!code-vb[Trin_VstcoreDeployment#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreDeploymentVB/Program.vb#2)]  
   
-4.  Skompiluj projekt i uruchomić aplikację na komputerze, w której chcesz usunąć dostosowań. Komputer musi mieć Visual Studio 2010 Tools for Office Runtime zainstalowany.  
+4.  Skompilować projekt i uruchomić aplikację na komputerze, w której chcesz usunąć dostosowania. Na komputerze musi być Visual Studio 2010 Tools dla pakietu Office runtime zainstalowane.  
   
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Zarządzanie dokumentami na serwerze za pomocą klasy ServerDocument](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)   
- [Instrukcje: Dołączanie rozszerzenia kodu zarządzanego do dokumentów](../vsto/how-to-attach-managed-code-extensions-to-documents.md)  
+ [Porady: dołączanie zarządzanego kodu rozszerzenia do dokumentów](../vsto/how-to-attach-managed-code-extensions-to-documents.md)  
   
   

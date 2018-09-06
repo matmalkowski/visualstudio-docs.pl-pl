@@ -1,5 +1,5 @@
 ---
-title: 'Porady: Dodawanie niestandardowych części XML do dostosowania na poziomie dokumentu'
+title: 'Porady: Dodawanie niestandardowych części XML do dostosowywania na poziomie dokumentu'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -20,44 +20,45 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d29515e9e8a1320975fb343ae101db21924d9767
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: 0472ad001dee595f1f8edb77d7a70f1eefb0c024
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35677528"
 ---
-# <a name="how-to-add-custom-xml-parts-to-document-level-customizations"></a>Porady: Dodawanie niestandardowych części XML do dostosowania na poziomie dokumentu
-  Dane XML można przechowywać w skoroszycie programu Microsoft Office Excel lub dokumentu programu Microsoft Office Word, tworząc z niestandardowym elementem XML w dostosowaniu poziomie dokumentu. Aby uzyskać więcej informacji, zobacz [niestandardowe XML-przegląd części](../vsto/custom-xml-parts-overview.md).  
+# <a name="how-to-add-custom-xml-parts-to-document-level-customizations"></a>Porady: Dodawanie niestandardowych części XML do dostosowywania na poziomie dokumentu
+  Dane XML można przechowywać w skoroszycie programu Microsoft Office Excel lub dokumentu programu Microsoft Office Word, tworząc z niestandardowym elementem XML w dostosowaniu na poziomie dokumentu. Aby uzyskać więcej informacji, zobacz [przegląd części niestandardowy plik XML](../vsto/custom-xml-parts-overview.md).  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
 > [!NOTE]  
->  Program Visual Studio nie ma projektów na poziomie dokumentu dla programu Microsoft Office PowerPoint. Aby dowiedzieć się, jak dodawanie niestandardowych części XML do prezentacji programu PowerPoint przy użyciu dodatku VSTO, zobacz [porady: Dodawanie niestandardowych części XML do dokumentów za pomocą dodatków narzędzi VSTO](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md).  
+>  Program Visual Studio nie zapewnia projektów na poziomie dokumentu dla programu Microsoft PowerPoint pakietu Office. Aby dowiedzieć się, jak dodawanie niestandardowych części XML do prezentacji programu PowerPoint przy użyciu dodatku narzędzi VSTO, zobacz [porady: Dodawanie niestandardowych części XML do dokumentów za pomocą dodatków narzędzi VSTO](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md).  
   
-### <a name="to-add-a-custom-xml-part-to-an-excel-workbook"></a>Aby dodać do skoroszytu programu Excel z niestandardowym elementem XML  
+### <a name="to-add-a-custom-xml-part-to-an-excel-workbook"></a>Aby dodać niestandardowe części XML do skoroszytu programu Excel  
   
-1.  Dodaj nową <xref:Microsoft.Office.Core.CustomXMLPart> do obiektu <xref:Microsoft.Office.Core.CustomXMLParts> kolekcji w skoroszycie. <xref:Microsoft.Office.Core.CustomXMLPart> Zawiera ciąg XML, który ma być przechowywany w skoroszycie.  
+1.  Dodaj nową <xref:Microsoft.Office.Core.CustomXMLPart> obiekt <xref:Microsoft.Office.Core.CustomXMLParts> kolekcji w skoroszycie. <xref:Microsoft.Office.Core.CustomXMLPart> Zawiera ciąg XML, który ma być przechowywany w skoroszycie.  
   
      [!code-csharp[Trin_AddCustomXmlPartExcelDocLevel#1](../vsto/codesnippet/CSharp/Trin_AddCustomXmlPartExcelDocLevel/ThisWorkbook.cs#1)]
      [!code-vb[Trin_AddCustomXmlPartExcelDocLevel#1](../vsto/codesnippet/VisualBasic/Trin_AddCustomXmlPartExcelDocLevel/ThisWorkbook.vb#1)]  
   
-2.  Dodaj `AddCustomXmlPartToWorkbook` metody `ThisWorkbook` klasy w projektach na poziomie dokumentu dla programu Excel.  
+2.  Dodaj `AddCustomXmlPartToWorkbook` metody `ThisWorkbook` klasy w projekcie poziomie dokumentu dla programu Excel.  
   
-3.  Wywoływanie metody z innego kodu w projekcie. Na przykład, aby utworzyć niestandardowym elementem XML, gdy użytkownik otwiera skoroszyt, należy wywołać metodę z `ThisWorkbook_Startup` obsługi zdarzeń.  
+3.  Wywołaj metodę z innego kodu w projekcie. Na przykład, aby utworzyć niestandardowym elementem XML, kiedy użytkownik otwiera skoroszyt, wywołaj metodę z `ThisWorkbook_Startup` programu obsługi zdarzeń.  
   
-### <a name="to-add-a-custom-xml-part-to-a-word-document"></a>Aby dodać do dokumentu programu Word z niestandardowym elementem XML  
+### <a name="to-add-a-custom-xml-part-to-a-word-document"></a>Aby dodać niestandardowe części XML do dokumentu programu Word  
   
-1.  Dodaj nową <xref:Microsoft.Office.Core.CustomXMLPart> do obiektu <xref:Microsoft.Office.Core.CustomXMLParts> kolekcji w dokumencie. <xref:Microsoft.Office.Core.CustomXMLPart> Zawiera ciąg XML, który ma być przechowywany w dokumencie.  
+1.  Dodaj nową <xref:Microsoft.Office.Core.CustomXMLPart> obiekt <xref:Microsoft.Office.Core.CustomXMLParts> kolekcji w dokumencie. <xref:Microsoft.Office.Core.CustomXMLPart> Zawiera ciąg XML, który ma być przechowywany w dokumencie.  
   
      [!code-vb[Trin_AddCustomXmlPartWordDocLevel#1](../vsto/codesnippet/VisualBasic/Trin_AddCustomXmlPartWordDocLevel/ThisDocument.vb#1)]
      [!code-csharp[Trin_AddCustomXmlPartWordDocLevel#1](../vsto/codesnippet/CSharp/Trin_AddCustomXmlPartWordDocLevel/ThisDocument.cs#1)]  
   
-2.  Dodaj `AddCustomXmlPartToDocument` metody `ThisDocument` klasy w projektach na poziomie dokumentu dla programu Word.  
+2.  Dodaj `AddCustomXmlPartToDocument` metody `ThisDocument` klasy w projekcie poziomie dokumentu dla programu Word.  
   
-3.  Wywoływanie metody z innego kodu w projekcie. Na przykład, aby utworzyć niestandardowym elementem XML, gdy użytkownik otwiera dokument, wywołaj metodę z `ThisDocument_Startup` obsługi zdarzeń.  
+3.  Wywołaj metodę z innego kodu w projekcie. Na przykład, aby utworzyć niestandardowym elementem XML, kiedy użytkownik otwiera dokument, wywołaj metodę z `ThisDocument_Startup` programu obsługi zdarzeń.  
   
 ## <a name="robust-programming"></a>Skuteczne programowanie  
- Dla uproszczenia w tym przykładzie użyto ciągu XML, który jest zdefiniowany jako zmienną lokalną w metodzie. Zazwyczaj należy uzyskać XML ze źródła zewnętrznego, takiego jak plik lub bazy danych.  
+ Dla uproszczenia w tym przykładzie użyto ciągu XML, który jest zdefiniowany jako zmienna lokalna w metodzie. Zazwyczaj należy uzyskać plik XML z zewnętrznego źródła, takich jak plik lub bazy danych.  
   
 ## <a name="see-also"></a>Zobacz także  
  [Niestandardowe części XML ― omówienie](../vsto/custom-xml-parts-overview.md)   

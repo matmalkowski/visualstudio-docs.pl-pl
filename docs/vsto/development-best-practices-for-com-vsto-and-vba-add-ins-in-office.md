@@ -1,5 +1,5 @@
 ---
-title: Programowanie najlepsze rozwiązania dotyczące modelu COM, VSTO i VBA dodatków pakietu Office
+title: Najlepsze rozwiązania programistyczne dla modelu COM, VSTO i VBA dodatków pakietu Office
 ms.custom: ''
 ms.date: 07/25/2017
 ms.technology:
@@ -14,56 +14,57 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 020faeb330348049dcf12431fadfa6ab099d1584
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: bf00afb612e12ce6712206808897a3b851d68b3a
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35676177"
 ---
-# <a name="development-best-practices-for-com-vsto-and-vba-add-ins-in-office"></a>Programowanie najlepsze rozwiązania dotyczące modelu COM, VSTO i VBA dodatków pakietu Office
-  Jeśli tworzysz COM VSTO lub VBA dodatków pakietu Office, należy przestrzegać zaleceń programowanie opisane w tym artykule.   Zapewni:
+# <a name="development-best-practices-for-com-vsto-and-vba-add-ins-in-office"></a>Najlepsze rozwiązania programistyczne dla modelu COM, VSTO i VBA dodatków pakietu Office
+  Jeśli tworzysz COM, VSTO i VBA dodatków pakietu Office, postępuj zgodnie z najlepszych rozwiązań programistycznych opisanych w tym artykule.   Ułatwi to zapewnienie:
 
--  Zgodność dodatki między różnymi wersjami i wdrożenia pakietu Office.
--  Złożoności wdrażania dodatków dla użytkowników i administratorów IT.
+-  Zgodność dodatków między różnymi wersjami i wdrożenia pakietu Office.
+-  Złożoności wdrażania dodatku dla użytkowników i administratorów IT.
 -  Nie występują niezamierzone instalacji lub środowisko uruchomieniowe błędów dodatku.
 
->Uwaga: Przy użyciu [Mostek pulpitu](/windows/uwp/porting/desktop-to-uwp-root) przygotować z modelu COM, VSTO lub VBA dodatku dla Sklepu Windows nie jest obsługiwany. Dodatki COM, VSTO i VBA nie mogą być dystrybuowane w magazynie systemu Windows lub pakietu Office. 
+>Uwaga: Przy użyciu [Desktop Bridge](/windows/uwp/porting/desktop-to-uwp-root) przygotować swoje COM, VSTO i VBA dodatku Store Windows nie jest obsługiwane. COM, VSTO i VBA dodatki nie mogą być dystrybuowane w Windows Store lub Store pakietu Office. 
   
 ## <a name="do-not-check-for-office-during-installation"></a>Nie sprawdzaj Office podczas instalacji  
- Nie zaleca się o dodatek wykrycia jest zainstalowane podczas instalacji dodatku pakietu Office. Jeśli nie zainstalowano pakietu Office, można zainstalować dodatek, a użytkownik będzie mógł uzyskać do niego dostęp, po zainstalowaniu pakietu Office. 
+ Nie zaleca się posiadanie dodatku wykryć, czy pakietu Office jest zainstalowana podczas procesu instalacji dodatku. Jeśli nie zainstalowano pakietu Office, można zainstalować dodatku, a użytkownik będzie mógł uzyskać do niego dostęp, po zainstalowaniu pakietu Office. 
   
 ## <a name="use-embedded-interop-types-nopia"></a>Użyj osadzone typy międzyoperacyjne (NoPIA)  
-Jeśli rozwiązanie korzysta z programu .NET 4.0 lub nowszym, użyj osadzone typy współdziałania (NoPIA) zamiast w zależności od Office głównej Interop zestawy MIĘDZYOPERACYJNE pakietu redystrybucyjnego. Przy użyciu typu osadzanie zmniejsza rozmiar instalacji rozwiązania i zapewnia zgodności w przyszłości. Pakiet Office 2010 został ostatniej wersji pakietu Office, dostarczonej PIA do dystrybucji. Aby uzyskać więcej informacji, zobacz [wskazówki: osadzanie informacji o typie z zestawów Microsoft Office](https://msdn.microsoft.com/en-us/library/ee317478.aspx) i [równoważność typów i osadzone typy międzyoperacyjne](/windows/uwp/porting/desktop-to-uwp-root).
+Jeśli Twoje rozwiązanie używa programu .NET 4.0 lub nowszym, użyj osadzone typy współdziałania (NoPIA) zamiast w zależności od pakietu Office podstawowego Interop zestawy MIĘDZYOPERACYJNE pakiet redystrybucyjny. Za pomocą typu osadzania zmniejsza rozmiar instalacji rozwiązania i gwarantuje zgodności w przyszłości. Pakiet Office 2010 został najnowszej wersji pakietu Office, dostarczanej PIA do dystrybucji. Aby uzyskać więcej informacji, zobacz [wskazówki: osadzanie informacji o typie z zestawów Microsoft Office](https://msdn.microsoft.com/library/ee317478.aspx) i [równoważność typów i osadzone typy międzyoperacyjne](/windows/uwp/porting/desktop-to-uwp-root).
 
-Jeśli rozwiązania korzystają z wcześniejszej wersji programu .NET, zaleca się zaktualizowanie rozwiązania do używania .NET 4.0 lub nowszy. Przy użyciu platformy .NET 4.0 lub nowszym zmniejsza wymagania wstępne dotyczące środowiska uruchomieniowego w nowszych wersjach systemu Windows.
+Jeśli rozwiązanie używa starszej wersji oprogramowania .NET, zaleca się zaktualizowanie rozwiązania na platformie .NET 4.0 lub nowszy. Przy użyciu platformy .NET 4.0 lub nowszy zmniejsza wymagania wstępne dotyczące środowiska uruchomieniowego, w nowszych wersjach systemu Windows.
   
-## <a name="avoid-depending-on-specific-office-versions"></a>Unikaj w zależności od określonych wersji pakietu Office  
-Jeśli rozwiązanie korzysta z funkcji, która jest dostępna tylko w nowszej wersji pakietu Office, sprawdź, czy ta funkcja istnieje (Jeśli to możliwe, na poziomie funkcji) w czasie wykonywania (na przykład za pomocą wyjątek obsługi lub Sprawdzanie wersji). Sprawdzanie poprawności co najmniej wersji zamiast określonych wersji przy użyciu obsługiwanych interfejsów API w modelu obiektów, takich jak [Application.Version właściwości](https://msdn.microsoft.com/en-us/library/office/microsoft.office.interop.excel._application.version.aspx). Nie zaleca się, że możesz zależeć binarne metadanych, ścieżek instalacji i kluczy rejestru pakietu Office, ponieważ te można przełączać się między instalacji, środowisk i wersji.
+## <a name="avoid-depending-on-specific-office-versions"></a>Należy unikać w zależności od określonej wersji pakietu Office  
+Jeśli rozwiązanie używa funkcji, która jest dostępna tylko w nowszej wersji pakietu Office, sprawdź, czy funkcja istnieje (Jeśli to możliwe, na poziomie funkcji) w czasie wykonywania (na przykład za pomocą wyjątek Obsługa lub Sprawdzanie wersji). Sprawdzanie poprawności co najmniej wersji zamiast określonych wersji, przy użyciu obsługiwanych interfejsów API w modelu obiektów, takich jak [właściwość Application.Version](https://msdn.microsoft.com/library/office/microsoft.office.interop.excel._application.version.aspx). Nie zaleca się że polegasz binarne metadanych, ścieżek instalacji i kluczy rejestru pakietu Office, ponieważ te można zmieniać, instalacje, środowisk i wersji.
 
-## <a name="enable-both-32-bit-and-64-bit-office-usage"></a>Włącz użycie Office zarówno 32-bitowe i 64-bitowych   
-Urządzenie docelowe kompilacji domyślnej powinno obsługiwać zarówno (x86) 32-bitowe i (x64) 64-bitowych, chyba że rozwiązanie jest zależna od bibliotek, które są dostępne tylko dla określonej liczbie bitów. 64-bitowej wersji pakietu Office zwiększa się w przyjęcia, szczególnie w środowiskach danych big data. Wspierające zarówno 32-bitowe i 64-bitowe ułatwia użytkownikom przejścia między 32-bitowe i 64-bitowej wersji pakietu Office.
+## <a name="enable-both-32-bit-and-64-bit-office-usage"></a>Włącz użycie pakietu Office zarówno 32-bitowych i 64-bitowych   
+Domyślny element docelowy kompilacji powinien obsługiwać zarówno (x86) 32-bitowych, jak i (x64) 64-bitowych, chyba że rozwiązanie jest zależna od bibliotek, które są dostępne tylko dla określonej liczby bitów. 64-bitowej wersji pakietu Office, zwiększa się w przyjęciu, szczególnie w środowiskach danych big data. Wspierające zarówno 32-bitowych i 64-bitowych ułatwia użytkownikom przejścia między 32-bitowych i 64-bitowej wersji pakietu Office.
 
-Podczas pisania kodu VBA, użyj 64-bitowych bezpieczne zadeklarować instrukcje i skonwertować zmiennej zależnie od potrzeb. Ponadto upewnij się, że dokumenty mogą być współużytkowane między użytkowników systemu, podając kod każdego bitowości 32-bitowy lub 64-bitowej wersji pakietu Office. Aby uzyskać więcej informacji, zobacz [64-bitowe języka Visual Basic dla aplikacji — omówienie](https://msdn.microsoft.com/en-us/library/office/gg264421.aspx).
+Podczas pisania kodu VBA, bezpieczne 64-bitowych użyj instrukcji deklarowania i przekonwertować zmienne zgodnie z potrzebami. Dodatkowo należy upewnić się, że dokumenty mogą być współużytkowane między korzystania z 32-bitowy lub 64-bitowej wersji pakietu Office, zapewniając kodu dla każdej liczby bitów. Aby uzyskać więcej informacji, zobacz [64-bitowych języka Visual Basic for applications overview](https://msdn.microsoft.com/library/office/gg264421.aspx).
 
 ## <a name="support-restricted-environments"></a>Ograniczona obsługa środowisk   
-Rozwiązanie nie powinny wymagać uprawnień podniesienia uprawnień konta użytkownika lub administratora. Ponadto rozwiązanie nie należy uwzględniać Ustawianie lub zmienianie:
+Rozwiązania nie powinien wymagać uprawnień podniesienia uprawnień konta użytkownika lub administratora. Ponadto rozwiązania nie powinno zależeć od Ustawianie lub zmienianie:
 
 - Bieżący katalog roboczy.
 - Katalogi załadowanie biblioteki DLL.
 - Zmienna ścieżki.
 
-## <a name="change-the-save-location-of-shared-data-and-settings"></a>Zapisz zmiany lokalizacji udostępnionych danych i ustawień
-Jeśli rozwiązanie zawiera dodatek i procesem zewnętrznej dla pakietu Office, nie należy używać folderu danych aplikacji użytkownika lub rejestru do wymiany danych lub ustawień między dodatek i procesu zewnętrznego. Zamiast tego należy wziąć pod uwagę przy użyciu folder tymczasowy użytkownika, dokumentów lub katalog instalacyjny tego rozwiązania.
+## <a name="change-the-save-location-of-shared-data-and-settings"></a>Zapisz zmiany lokalizacji danych udostępnionych i ustawienia
+Jeśli to rozwiązanie składa się z dodatku i proces, który znajduje się poza pakietu Office, nie używaj folder dane aplikacji użytkownika lub rejestru do programu exchange, dane lub ustawienia między dodatek i proces zewnętrzny. Zamiast tego należy wziąć pod uwagę przy użyciu folder tymczasowy użytkownika, folder dokumenty lub katalog instalacyjny tego rozwiązania.
 
-## <a name="increment-the-version-number-with-each-update"></a>Zwiększenie numeru wersji przy każdej aktualizacji
-Ustaw numer wersji plików binarnych w rozwiązaniu i zwiększenia przy każdej aktualizacji. Ułatwi użytkownikom identyfikację zmian między wersjami i oceny zgodności.
+## <a name="increment-the-version-number-with-each-update"></a>Zwiększ numer wersji w każdej aktualizacji
+Ustaw numer wersji plików binarnych w swoim rozwiązaniu i zwiększenia przy każdej aktualizacji. Ułatwi służący do identyfikowania zmian między wersjami i oceny zgodności.
 
 ## <a name="provide-support-statements-for-the-latest-versions-of-office"></a>Podaj oświadczenia dotyczące pomocy technicznej dla najnowszej wersji pakietu Office
-Klienci prośbę o niezależnym dostawcom oprogramowania, aby zapewnić oświadczenia dotyczące pomocy technicznej dla ich COM, VSTO VBA dodatki i uruchamiane w pakiecie Office. Wyświetlanie listy pomaga instrukcje jawną obsługę klientów przy użyciu usługi Office 365 ProPlus gotowości narzędzia zrozumieć działem pomocy technicznej. 
+Klienci są zadawanie niezależnym dostawcom oprogramowania w celu zapewnienia pomocy technicznej instrukcje dotyczące ich COM, VSTO i VBA dodatków działających w pakiecie Office. Listę klientów obsługi jawnych instrukcji pomaga przy użyciu usługi Office 365 ProPlus gotowości narzędzia informacje o pomocy technicznej Twojej. 
 
-Zapewnienie oświadczenia dotyczące pomocy technicznej dla aplikacji klienckich pakietu Office (na przykład programu Word lub Excel), najpierw sprawdź, czy dodatki uruchomione w bieżącej wersji pakietu Office, a następnie przekazać do udostępnienia aktualizacji, jeśli dodatek przerwy w przyszłej wersji. Nie masz do testowania dodatki, gdy firma Microsoft udostępnia nowej kompilacji lub aktualizacji pakietu Office. Microsoft zmieniają się rzadko platformą rozszerzeń COM, VSTO i VBA w pakiecie Office, a te zmiany zostaną dobrze udokumentowane.
+Aby zapewnić oświadczenia dotyczące pomocy technicznej dla aplikacji klienckich pakietu Office (na przykład Word lub Excel), należy najpierw sprawdzić dodatków uruchamiane w bieżącej wersji pakietu Office, a następnie przekazać do udostępnienia aktualizacji, jeśli dodatek przerywa w przyszłej wersji. Nie masz przetestować dodatków, gdy firma Microsoft publikuje nową kompilację lub aktualizację pakietu Office. Microsoft, zmieniają się rzadko platform rozszerzalności modelu COM, VSTO i VBA w pakiecie Office, a te zmiany będzie dobrze udokumentowane.
 
->Ważne: Firma Microsoft udostępnia listę obsługiwanych dodatków gotowości raportów, a informacje kontaktowe niezależnego dostawcy oprogramowania. Aby pobrać dodatek na liście, zobacz [ https://aka.ms/readyforwindows ](https://aka.ms/readyforwindows).
+>Ważne: Firma Microsoft udostępnia listę obsługiwanych dodatki dla raportów gotowości i informacje kontaktowe niezależnego dostawcy oprogramowania. Aby pobrać dodatek na liście, zobacz [ https://aka.ms/readyforwindows ](https://aka.ms/readyforwindows).
 
-## <a name="use-process-monitor-to-help-debug-installation-or-loading-issues"></a>Przy użyciu procesu monitora debugować instalacji lub ładowania problemów
-Jeśli dodatek ma problemy ze zgodnością podczas instalacji lub obciążenia, może być związana z problemów z dostępem do plików i rejestru. Użyj [Monitor procesu](/sysinternals/downloads/procmon) lub podobnego narzędzia debugowania do logowania i porównania zachowania dla środowiska pracy, aby łatwiej zidentyfikować problem.
+## <a name="use-process-monitor-to-help-debug-installation-or-loading-issues"></a>Debugować instalacji lub ładowania problemów za pomocą procesu monitora
+Jeśli dodatek ma problemy ze zgodnością podczas instalacji lub obciążenia, może być związana z problemów z dostępem do plików i rejestru. Użyj [Monitor procesu](/sysinternals/downloads/procmon) lub podobnego narzędzia debugowania do logowania się i porównaj zachowanie przeciwko środowisku pracy, aby ułatwić zidentyfikowanie problemu.

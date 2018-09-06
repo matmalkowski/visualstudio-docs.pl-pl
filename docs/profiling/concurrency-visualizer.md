@@ -1,5 +1,5 @@
 ---
-title: CONCURRENCY Visualizer | Dokumentacja firmy Microsoft
+title: Narzędzie CONCURRENCY Visualizer | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 07/11/2017
 ms.technology: vs-ide-debug
@@ -17,43 +17,43 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a5adb5f5177afc59f560a988f9c86e1ebbede759
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 7b2a9e85f94e4c6baa06984b2b84e03c836eab53
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34691228"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35677639"
 ---
 # <a name="concurrency-visualizer"></a>Concurrency Visualizer
 > [!NOTE]
->  Narzędzia Concurrency Visualizer to opcjonalne rozszerzenie dla programu Visual Studio. Pobierz narzędzia kolekcji wizualizatora współbieżności i Concurrency Visualizer z następujących łączy:  
+>  Narzędzie Concurrency Visualizer to opcjonalne rozszerzenie programu Visual Studio. Pobierz narzędzia Concurrency Visualizer i Concurrency Visualizer Collection Tools z następujących linków:  
 >   
->  -   Pobierz [wizualizatora współbieżności dla programu Visual Studio 2017](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.ConcurrencyVisualizer2017#overview) rozszerzenia.  
->  -   Pobierz [wizualizatora współbieżności dla programu Visual Studio 2015](https://visualstudiogallery.msdn.microsoft.com/a6c24ce9-beec-4545-9261-293061436ee9) rozszerzenia.  
-> -   Pobierz [współbieżności wizualizatora Collection Tools for Visual Studio 2015](http://www.microsoft.com/en-in/download/details.aspx?id=49103).  
+>  -   Pobierz [Concurrency Visualizer dla programu Visual Studio 2017](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.ConcurrencyVisualizer2017#overview) rozszerzenia.  
+>  -   Pobierz [Concurrency Visualizer dla programu Visual Studio 2015](https://visualstudiogallery.msdn.microsoft.com/a6c24ce9-beec-4545-9261-293061436ee9) rozszerzenia.  
+> -   Pobierz [Concurrency Visualizer Collection Tools dla programu Visual Studio 2015](http://www.microsoft.com/en-in/download/details.aspx?id=49103).  
 >   
->      [Concurrency Visualizer wiersza polecenia narzędzia (CVCollectionCmd)](../profiling/concurrency-visualizer-command-line-utility-cvcollectioncmd.md) pozwala zbierać dane śledzenia w wierszu polecenia, które można wyświetlić w Concurrency Visualizer dla programu Visual Studio 2015. Narzędzie może służyć na komputerach, które nie mają zainstalowanego programu Visual Studio.  
+>      [Concurrency Visualizer Command-Line Utility (CVCollectionCmd)](../profiling/concurrency-visualizer-command-line-utility-cvcollectioncmd.md) pozwala zbierać dane śledzenia w wierszu polecenia, który można wyświetlić w Wizualizatorze współbieżności dla programu Visual Studio 2015. Narzędzie może służyć na komputerach, które nie mają zainstalowanego programu Visual Studio.  
   
- Concurrency Visualizer można użyć, aby zobaczyć sposób wykonywania aplikacji wielowątkowych. Widoków Concurrency Visualizer Podaj graficznego, tabelarycznych i danych tekstowych pokazujący danych czasowych relacje między wątków w programie i system jako całość. Można użyć narzędzia Concurrency Visualizer zlokalizować wąskich gardeł wydajności, Procesora niedostateczne wykorzystanie zasobów rywalizacji wątku, wątek różnych rdzeniach migracji, opóźnienia synchronizacji, DirectX działania, obszarów pokrywającej się z inną operacji We/Wy i inne informacje. Widoki zawierają dane, które mogą działać na, łącząc graficzne dane wyjściowe wywołanie stosy i kod źródłowy.  
+ Narzędzie Concurrency Visualizer można użyć, aby zobaczyć, jak działa dana aplikacja wielowątkowa. Widoki w Concurrency Visualizer zapewniają graficzne, tabelaryczne i tekstowe dane, które Pokazuję tymczasowe relacje między wątkami w programie i systemie jako całości. Można użyć Concurrency Visualizer można zlokalizować wąskie gardła wydajności, procesora CPU niepełnego, rywalizacji wątków, migracji wątku między rdzeniami, opóźnień synchronizacji, DirectX działania, obszarów nakładania się wejść / i inne informacje. Widoki dostarczają danych, którymi można pracować, łącząc ich wynik graficzny ze stosem wywołań i kodem źródłowym.  
 
 > [!NOTE]
->  Narzędzia Concurrency Visualizer nie obsługuje projektów sieci Web.  
+>  Narzędzie Concurrency Visualizer nie obsługuje projektów sieci Web.  
   
- Zależy od Concurrency Visualizer [śledzenia zdarzeń dla systemu Windows](http://go.microsoft.com/fwlink/?LinkId=234579) funkcji.  
+ Wizualizator współbieżności opiera się na [Event Tracing for Windows](http://go.microsoft.com/fwlink/?LinkId=234579) funkcji.  
   
 ## <a name="related-topics"></a>Tematy pokrewne  
   
 |Tytuł|Opis|  
 |-----------|-----------------|  
-|[Widok wykorzystania](../profiling/utilization-view.md)|Opisuje sposób wyświetlania i analizowania działania systemu wszystkich procesorów.|  
-|[Widok wątków](../profiling/threads-view-parallel-performance.md)|Zawiera opis sposobu analizy interakcje między wątkami programu.|  
-|[Widok rdzeni](../profiling/cores-view.md)|Zawiera opis sposobu analizy migracji wątku na rdzeni.|  
-|[Typowe nieprawidłowo działające wzorce dla aplikacji wielowątkowych](../profiling/common-patterns-for-poorly-behaved-multithreaded-applications.md)|W tym artykule opisano kilka typowych wzorców i pokazuje, jak pojawiają się w wizualizatora współbieżności.|  
-|[Programowanie równoległe w blogu programu Visual Studio](http://go.microsoft.com/fwlink/?LinkId=235385)|Zawiera porady i najlepsze rozwiązania dotyczące narzędzia Concurrency Visualizer.|  
-|[Widoki raportu wydajności](../profiling/performance-report-views.md)|Udostępnia informacje dla raportach i widokach programu Visual Studio Profiling Tools.|  
-|[Zestaw SDK narzędzia Concurrency Visualizer](../profiling/concurrency-visualizer-sdk.md)|Opisuje sposób Instrumentacja kodu źródłowego, aby wyświetlić dodatkowe informacje w wizualizatora współbieżności.|  
-|[Narzędzie wiersza polecenia CONCURRENCY Visualizer (CVCollectionCmd)](../profiling/concurrency-visualizer-command-line-utility-cvcollectioncmd.md)|W tym artykule opisano, jak używać narzędzia wiersza polecenia Concurrency Visualizer (CVCollectionCmd.exe) do zbierania i przetwarzania śladów na maszynach, które nie mają programu Visual Studio.|  
+|[Widok wykorzystania](../profiling/utilization-view.md)|W tym artykule opisano sposób wyświetlania i analizowania aktywności systemu dla wszystkich procesorów.|  
+|[Widok wątków](../profiling/threads-view-parallel-performance.md)|Opisuje sposób analizowania wzajemnych relacji między wątkami w programie.|  
+|[Widok rdzeni](../profiling/cores-view.md)|Opisuje sposób analizy migracji wątku między rdzeniami.|  
+|[Typowe nieprawidłowo działające wzorce dla aplikacji wielowątkowych](../profiling/common-patterns-for-poorly-behaved-multithreaded-applications.md)|W tym artykule opisano kilka typowych wzorców i pokazuje, jak pojawiają się w Wizualizatorze współbieżności.|  
+|[Programowanie równoległe w blogu programu Visual Studio](http://go.microsoft.com/fwlink/?LinkId=235385)|Zawiera wskazówki i najlepsze rozwiązania dotyczące programu Concurrency Visualizer.|  
+|[Widoki raportu wydajności](../profiling/performance-report-views.md)|Dostarcza informacji dotyczących raportów i widoków programu Visual Studio Profiling Tools.|  
+|[Zestaw SDK narzędzia Concurrency Visualizer](../profiling/concurrency-visualizer-sdk.md)|W tym artykule opisano, jak zmodyfikować kod źródłowy, aby wyświetlić dodatkowe informacje w Wizualizatorze współbieżności.|  
+|[Narzędzie wiersza polecenia CONCURRENCY Visualizer (CVCollectionCmd)](../profiling/concurrency-visualizer-command-line-utility-cvcollectioncmd.md)|W tym artykule opisano, jak używać narzędzia wiersza polecenia Concurrency Visualizer (CVCollectionCmd.exe) do zbierania i przetwarzania śladów na komputerach, na których nie zainstalowano oprogramowania Visual Studio.|  
   
 ## <a name="see-also"></a>Zobacz także  
  [Profilowanie w programie Visual Studio](../profiling/index.md)  
- [Przewodnik po funkcjach profilowania](../profiling/profiling-feature-tour.md)
+ [Pierwsze spojrzenie na narzędziach profilowania](../profiling/profiling-feature-tour.md)

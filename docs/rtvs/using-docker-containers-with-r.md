@@ -1,6 +1,6 @@
 ---
-title: Kontenery R i Docker
-description: Jak skonfigurować kontenery Docker dla języka R i nawiązywania z nimi za pomocą programu Visual Studio.
+title: R i kontenerów rozwiązania Docker
+description: Jak skonfigurować kontenerów platformy Docker dla języka R i połączyć się z nimi za pomocą programu Visual Studio.
 ms.date: 12/04/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-rtvs
@@ -11,47 +11,48 @@ ms.reviewer: karthiknadig
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: d7034476e3346e4f3d4e24713a62920487845440
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: aeb6026bf7f90d07147ef559bdad9feb03e2c005
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35667135"
 ---
-# <a name="using-docker-containers-with-r-tools-for-visual-studio"></a>Używanie kontenerów Docker R narzędzia dla programu Visual Studio
+# <a name="use-docker-containers-with-r-tools-for-visual-studio"></a>Za pomocą kontenerów platformy Docker narzędzia R Tools for Visual Studio
 
-R narzędzi dla programu Visual Studio (RTVS) w wersji 1.3 +, obok instalacji z [Docker dla systemu Windows](https://www.docker.com/docker-windows), obsługuje Praca z kontenerami Docker.
+R Tools for Visual Studio (RTVS) w wersji 1.3 +, wraz z instalacji z [Docker for Windows](https://www.docker.com/docker-windows), obsługuje pracę z kontenerami platformy Docker.
 
-## <a name="creating-a-container"></a>Utworzenie kontenera
+## <a name="create-a-container"></a>Tworzenie kontenera
 
-1. Wybierz **kontenery...**  przycisk w prawym rogu **obszarów roboczych** okna (**narzędzia R > Windows > obszary robocze**). Okno wyświetla informację, czy masz Docker dla systemu Windows zainstalowana i zawiera łącze do pobrania. Instalacja Docker może wymagać ponownego uruchomienia komputera.
+1. Wybierz **kontenery** przycisk w prawym rogu **obszary robocze** okna (**R Tools** > **Windows**  >  **Obszary robocze**). Okno informuje użytkownika, czy masz Docker for Windows zainstalowany i zawiera również link do pobrania. Instalowanie platformy Docker może wymagać ponownego uruchomienia komputera.
 
-    ![Okno obszarów roboczych w R Tools for Visual Studio (VS2017) przy użyciu polecenia kontenerów](media/container-workspaces-window.png)
+    ![Okno obszarów roboczych w R Tools for Visual Studio (VS2017) za pomocą polecenia kontenerów](media/container-workspaces-window.png)
 
 1. W **kontenery** wybierz **Utwórz**:
 
     ![Utwórz polecenie w oknie kontenerów](media/containers-window-create.png)
 
-1. Zakończenie wymaganych informacji w oknie dialogowym i wybierz **Utwórz**. Wprowadzone poświadczenia są również używane do tworzenia konta w systemie Linux, z którymi możesz się zalogować później.
+1. Uzupełnij wymagane informacje w oknie dialogowym i wybierz pozycję **Utwórz**. Wprowadzone poświadczenia są umożliwia również tworzenie konta usługi w systemie Linux za pomocą którego możesz zalogować się później.
 
     ![Wprowadzanie nazwy kontenera i poświadczeń podczas tworzenia kontenera](media/containers-window-create-fill.png)
 
-1. Może upłynąć trochę czasu, zanim RTVS do utworzenia obrazu. **Dane wyjściowe** okna w programie Visual Studio przedstawia postęp, ale może się nie realizacji znacznie podczas długich obrazu pobiera; należy przygotować cierpliwość. Po utworzeniu obrazu, RTVS uruchamia kontenera i wyświetlone w **kontenera** okna. Formanty prawo stop, usuń lub uruchom ponownie kontenera.
+1. Może upłynąć trochę czasu, RTVS utworzyć obraz. **Dane wyjściowe** okna w programie Visual Studio Pokazuje postęp, ale może wydawać się nie można wykonać większość podczas długich obrazu, pliki do pobrania; należy przygotować się na o cierpliwość. Gdy obraz jest kompilowany, RTVS uruchamia kontener i wyświetlone w **kontenera** okna. Kontrolki do prawego stop, usuń lub ponownego uruchomienia kontenera.
 
-    ![Kontenery okna pokazującego ukończone kontenera](media/containers-window-created.png)
+    ![Okno kontejneru przedstawiający kontenera zakończone](media/containers-window-created.png)
 
-## <a name="connecting-to-a-container"></a>Łączenie z kontenera
+## <a name="connect-to-a-container"></a>Łączenie do kontenera
 
-1. **Lokalnym systemem kontenery** sekcji **obszarów roboczych** okno Wyświetla kontenery uruchomiony demon RTVS na porcie 5444. (Zobacz [zdalnego R Server dla systemu Linux](setting-up-remote-r-service-on-linux.md) szczegółowe informacje dotyczące sposobu skonfigurowania demona.)
+1. **Lokalne uruchamianie kontenerów** części **obszary robocze** kontenery działające demona RTVS na porcie 5444 jest wyświetlana w oknie. (Zobacz [zdalnego R Server for Linux](setting-up-remote-r-service-on-linux.md) szczegółowe informacje na temat sposobu skonfigurowania demona.)
 
-    ![Dostępne kontenery przedstawiający okno obszary robocze](media/workspaces-window-running-containers.png)
+    ![Obszary robocze okna przedstawiający dostępnych kontenerów](media/workspaces-window-running-containers.png)
 
-1. Aby połączyć się z kontenerem, kliknij dwukrotnie nazwę kontenera lub kliknij przycisk strzałki do przodu po jego prawej stronie. Po podłączeniu, zobacz **R interakcyjne** okna (zobacz [Praca z okno interaktywne R](interactive-repl-for-r-in-visual-studio.md)):
+1. Aby połączyć się z kontenerem, kliknij dwukrotnie nazwę kontenera, lub wybierz przycisk ze strzałką do przodu po jego prawej stronie. Po nawiązaniu połączenia zostanie wyświetlony **interaktywne R** okna (zobacz [pracować okno interaktywne R](interactive-repl-for-r-in-visual-studio.md)):
 
-    ![Obszary robocze okna i REPL otworzyć kontenera](media/workspaces-window-container-connected.png)
+    ![Obszary robocze okna i okna REPL otwarte dla kontenera](media/workspaces-window-container-connected.png)
 
-## <a name="using-custom-built-images"></a>Przy użyciu niestandardowej obrazów
+## <a name="use-custom-built-images"></a>Korzystanie z niestandardowych obrazów
 
-RTVS wykrywa i umożliwia zarządzanie kontenery utworzone za pomocą niestandardowej obrazy, takie jak obraz microsoft/rtvs opisanego w poniższy plik docker. Podstawowy obraz używany w tym miejscu ma demon rtvs R 3.4.2 i typowych pakietów języka R z preinstalowanym. **Uwaga**: Zmień nazwę użytkownika i hasło podane tutaj zgodnie z potrzebami.
+RTVS wykrywa i umożliwia zarządzanie kontenery utworzone przy użyciu niestandardowych obrazów, takich jak obraz microsoft/rtvs opisane w poniższych pliku platformy docker. Obraz podstawowy użyty tutaj ma rtvs demona, R 3.4.2 i popularnych pakietów języka R wstępnie zainstalowane. **Uwaga**: Zmień nazwę użytkownika i hasło podane tu zgodnie z potrzebami.
 
 ```docker
 FROM microsoft/rtvs:1.3-ub1604-r3.4.2
@@ -62,11 +63,11 @@ RUN echo "ruser1:foobar" | chpasswd
 #RUN Rscript --vanilla -e "install.packages(c('AzureML','wordcloud'), repos = 'http://cran.us.r-project.org');"
 ```
 
-Użyj następującego polecenia, aby utworzyć obraz, zmiana nazwy kontenera ( `--name` argument) pożądane:
+Użyj następującego polecenia, aby utworzyć obraz, zmiana nazwy kontenera ( `--name` argument) zgodnie z potrzebami:
 
 ```bash
 docker build -t my-rtvs-image:latest .
 docker run -p 6056:5444 --name my-rtvs-container my-rtvs-image:latest rtvsd
 ```
 
-`-p 6056:5444` Argument mapy portu 6056 do wewnętrznego portu 5444, używanym do wykrywania demon rtvs RTVS. Wszelkie kontener, który udostępnia port kontenera 5444 ma na liście **obszarów roboczych** okna. Następnie można użyć **obszarów roboczych** okna, aby nawiązać połączenie przy użyciu kontenera `<<unix>>\ruser1` jako nazwy użytkownika i "foobar" jako hasło, chyba że określono inne poświadczenia w pliku docker.
+`-p 6056:5444` Argument mapowania portów 6056 do portu wewnętrznej 5444, używający RTVS wykrywania rtvs demon. Dowolnego kontenera, który udostępnia z kontenera typu port 5444 znajduje się w **obszary robocze** okna. Następnie można użyć **obszary robocze** okna, aby nawiązać połączenie z kontenera przy użyciu `<<unix>>\ruser1` jako nazwy użytkownika i "foobar" jako hasło, chyba że określone inne poświadczenia w pliku platformy docker.

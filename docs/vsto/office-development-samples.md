@@ -1,5 +1,5 @@
 ---
-title: Office Development ― przykłady | Dokumentacja firmy Microsoft
+title: Office development ― przykłady
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -15,17 +15,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 475da9720d0d29456fca4f06046b3f3778ec22f7
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: a082137632399bee10ba2f4f91d00f153e9fe625
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34571420"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35677176"
 ---
 # <a name="office-development-samples"></a>Office development ― przykłady
-  Visual Studio zawiera przykładowe aplikacje, które pokazują, jak używać narzędzia Microsoft Office developer tools do tworzenia rozwiązań pakietu Office. Te przykłady kodu ilustruje składnię, struktury i techniki używany do tworzenia rozwiązań pakietu Office.  
+  Visual Studio zawiera przykładowe aplikacje, które pokazują, jak utworzyć rozwiązania pakietu Office za pomocą programu Microsoft Office developer tools. Kod w tych przykładach przedstawiono składnię, struktury i techniki używane do tworzenia rozwiązań dla pakietu Office.  
   
- Aby uzyskać najnowsze przykłady, zobacz [przykłady deweloperów MSDN: informacje za pomocą kodu](http://go.microsoft.com/fwlink/?LinkID=248199) w witrynie firmy Microsoft.  
+ Aby poznać aktualne przykłady, zobacz [Przykłady dewelopera sieci MSDN: ucz się dzięki kodowi](http://go.microsoft.com/fwlink/?LinkID=248199) w witrynie internetowej firmy Microsoft.  
   
  [!INCLUDE[note_security_multiplesample](../vsto/includes/note-security-multiplesample-md.md)]  
   
@@ -33,18 +33,18 @@ ms.locfileid: "34571420"
   
 |Przykład|Opis|  
 |------------|-----------------|  
-|Przykładowe dane szczegółowe wzorca programu Excel|Pokazuje, jak pobrać dane z relacyjnej bazy danych lub pliku XML i użyć tych danych w programie Excel.|  
-|Przykładowe techniki ochronę dokumentu programu Excel|Pokazuje różnych metod, które służy do ochrony części konstrukcyjne arkusz, aby uniemożliwić użytkownikom przypadkowego usunięcia formantów lub w przeciwnym razie zmiana ważne części dokumentu rozwiązania.|  
+|Przykładowe dane szczegółowe głównego programu Excel|Pokazuje, jak pobierać dane z relacyjnej bazy danych lub plik XML i użyć tych danych w programie Excel.|  
+|Przykładowe technik ochrony dokumentu programu Excel|Demonstruje różne techniki, które można użyć do ochrony, elementy strukturalne arkusza, aby pomóc, aby zapobiec przypadkowemu usunięciu formantów lub w przeciwnym razie zmiany ważne elementy dokument z rozwiązania.|  
 |Próbka analizy danych programu Excel|Pokazuje spis aplikacji zarządzania, która wykonuje zadania analizy danych w programie Excel przy użyciu listy obiektów, tabel przestawnych i wykresów.|  
-|Przykładowe okienka zadań programu Word|Przedstawia sposób tworzenia podstawowych niestandardowego okienka zadań dla programu Word.|  
-|Próbka formantów zawartości programu Word|Pokazuje, jak można powiązać Word formantów zawartości do pól bazy danych.|  
-|Outlook formularza Region RSS czytnika próbki|Przedstawiono sposób użycia regionów formularzy programu Outlook, aby wyświetlić pełnej zawartości artykułów z źródła danych RSS.|  
-|Próbka formantów wstążki|Ten przykład przedstawia sposób tworzenia kart niestandardowych, który pojawia się na wstążce programu Excel. To niestandardowa Wstążka demonstruje większość kontrolek dostępnych w grupie formantów wstążki pakietu Office przybornika programu Visual Studio.|  
-|Interfejs użytkownika Menedżera próbki|Przedstawia sposób tworzenia dostosowywania wstążki, niestandardowego okienka zadań i regionu formularza niestandardowego dla programu Outlook, implementując rozszerzalności interfejsów w dodatku VSTO. Każde wystąpienie wstążki, w okienku zadań i regionu formularza poprawnie może komunikować się ze sobą.|  
-|VBA i przykładowe współdziałanie VSTO|Przedstawia sposób wywołania metody w dostosowaniu poziomie dokumentu dla programu Excel z języka Visual Basic dla kodu aplikacji (VBA) w skoroszycie.<br /><br /> Ten przykład jest dostępny tylko online.|  
+|Przykładowe okienka zadań programu Word|Pokazuje, jak utworzyć podstawowy niestandardowego okienka zadań dla programu Word.|  
+|Próbka formantów zawartości programu Word|Pokazuje, jak powiązać formanty zawartości programu Word z polami bazy danych.|  
+|Program Outlook formularza Region RSS czytnika próbki|Pokazuje, jak użyć regionach formularzy programu Outlook, aby wyświetlić pełnej zawartości artykuły z kanału informacyjnego RSS.|  
+|Próbka formantów wstążki|W tym przykładzie pokazano, jak utworzyć niestandardową kartę, która pojawia się na wstążce programu Excel. Ta niestandardowa Wstążka pokazuje większości kontrolek dostępnych w tej grupie formanty wstążki pakietu Office w Visual Studio Toolbox.|  
+|Interfejs użytkownika Menedżera próbki|Przedstawia sposób tworzenia dostosowania wstążki, niestandardowego okienka zadań i region formularza niestandardowego dla programu Outlook, implementując rozszerzalności interfejsów w dodatku narzędzi VSTO dla programów. Każde wystąpienie wstążki, w okienku zadań i regionu formularza poprawnie mogą komunikować się ze sobą.|  
+|VBA i przykład międzyoperacyjności VSTO|Przedstawia sposób wywołania metody w dostosowaniu na poziomie dokumentu dla programu Excel z Visual Basic for Applications (VBA) kod w skoroszycie.<br /><br /> W tym przykładzie jest dostępna tylko online.|  
   
 ## <a name="see-also"></a>Zobacz także  
- [Przykłady deweloperów MSDN: informacje za pomocą przykłady kodu](http://go.microsoft.com/fwlink/?LinkID=248199)   
+ [Przykłady dewelopera sieci MSDN: ucz się dzięki przykłady kodu](http://go.microsoft.com/fwlink/?LinkID=248199)   
  [Typowe zadania w programowaniu pakietu Office](../vsto/common-tasks-in-office-programming.md)  
   
   

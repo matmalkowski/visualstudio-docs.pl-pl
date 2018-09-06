@@ -1,5 +1,5 @@
 ---
-title: GetAutoInsertExtensions — metoda
+title: GetAutoInsertExtensions, metoda
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -13,20 +13,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f8573576b40afabb5ec568a0c471e7b1d79560ba
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 7e3e0fda420682e4f33c0d22a3e9c8caa920895b
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35677284"
 ---
-# <a name="getautoinsertextensions-method"></a>GetAutoInsertExtensions — metoda
+# <a name="getautoinsertextensions-method"></a>GetAutoInsertExtensions, metoda
   Pobiera informacje o aplikacjach pakietu Office, które mają być wstawiane automatycznie podczas debugowania.  
   
  Ta metoda jest zarezerwowana do użytku w przyszłości.  
   
 ## <a name="syntax"></a>Składnia  
   
-```c  
+```csharp
 HRESULT GetAutoInsertExtensions(  
     [out, retval] SAFEARRAY(BSTR)* psaExtensionNames  
 );  
@@ -42,6 +43,6 @@ HRESULT GetAutoInsertExtensions(
  Wartość HRESULT, która wskazuje, czy metoda została ukończona pomyślnie.  
   
 ## <a name="remarks"></a>Uwagi  
- Każda aplikacja dla pakietu Office do wstawienia jest zwracana jako nazwa rozszerzenia aplikacji pakietu Office, co odpowiada wartości w obszarze **HKEY_CURRENT_USER\Software\Microsoft\Office\WEF\Developer**. Host musi odszukać te wartości w rejestrze i automatyczne wstawianie rozszerzeń.  
+ Każda aplikacja dla pakietu Office ma zostać wstawiony jest zwracany jako nazwa rozszerzenia aplikacji pakietu Office, który odpowiada wartości w obszarze **HKEY_CURRENT_USER\Software\Microsoft\Office\WEF\Developer**. Host musi wyszukiwać te wartości w rejestrze i automatyczne wstawianie rozszerzenia.  
   
   

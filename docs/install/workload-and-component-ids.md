@@ -5,7 +5,7 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: douge
-ms.date: 05/07/2018
+ms.date: 08/14/2018
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -17,12 +17,12 @@ ms.prod: visual-studio-dev15
 ms.assetid: 34e19ef1-abfb-44fd-aad2-33c5d7874482
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fa29ef14f6fa4c4ff63c0dd697bfa362347e9c9
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: 5826191d4f963516d5645aec66e0fe76ba3f96e1
+ms.sourcegitcommit: 9ea4b62163ad6be556e088da1e2a355f31366f39
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43139196"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43995933"
 ---
 # <a name="visual-studio-2017-workload-and-component-ids"></a>Visual Studio 2017 obciążeń i składników identyfikatorów
 

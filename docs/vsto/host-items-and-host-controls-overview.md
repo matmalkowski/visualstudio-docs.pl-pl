@@ -1,5 +1,5 @@
 ---
-title: Obiekty hosta i informacje o formantach hosta
+title: Host formantów Przegląd obiektów hosta i
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -39,19 +39,20 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: afc067e46f3cad5baa46bb5fef2381e82791dc76
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: 96cd626e283e9cf86b1a24a63a1939e717cab7b4
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35676228"
 ---
-# <a name="host-items-and-host-controls-overview"></a>Obiekty hosta i informacje o formantach hosta
-  Obiekty hosta i formantów hosta są typy, które pomagają modelu programowania rozwiązań pakietu Office, które są tworzone za pomocą narzędzi programowania pakietu Office w Visual Studio. Obiekty hosta i formantów hosta upewnij się, interakcji z modeli obiektów Microsoft Office Word i Microsoft Office Excel, które są oparte na modelu COM, więcej takich jak interakcji z obiektów zarządzanych, takich jak formanty formularzy systemu Windows.  
+# <a name="host-items-and-host-controls-overview"></a>Host formantów Przegląd obiektów hosta i
+  Obiekty hosta i kontrolek hosta są typy, które pomagają modelu programowania rozwiązań pakietu Office, które są tworzone za pomocą narzędzi programistycznych pakietu Office w programie Visual Studio. Obiekty hosta i kontrolek hosta upewnij się, interakcji z modeli obiektów programu Microsoft Office Word i Microsoft Office Excel, które są oparte na modelu COM, bardziej jak interakcji z obiektami zarządzanymi, takie jak kontrolek formularzy Windows.  
   
  [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]  
   
 ## <a name="host-items"></a>Obiekty hosta  
- Obiekty hosta są typy, które znajdowały się u góry hierarchii modelu obiektów w projektach pakietu Office. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Definiuje następujące elementy hosta dla programu Word i Excel rozwiązań:  
+ Obiekty hosta są typy, które znajdowały się u góry hierarchii modelu obiektów w projektach pakietu Office. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Definiuje następujące elementy hosta dla programów Word i Excel rozwiązań:  
   
 -   <xref:Microsoft.Office.Tools.Word.Document>  
   
@@ -61,34 +62,34 @@ ms.lasthandoff: 05/25/2018
   
 -   <xref:Microsoft.Office.Tools.Excel.ChartSheet>  
   
- Rozszerza każdego typu obiektu, który istnieje w sposób macierzysty w modelu obiektów programu Word i Excel, nazywany *obiekt natywny Office*. Na przykład <xref:Microsoft.Office.Tools.Word.Document> rozszerza element hosta <xref:Microsoft.Office.Interop.Word.Document> obiektu, który jest zdefiniowany w podstawowego zestawu międzyoperacyjnego dla programu Word.  
+ Każdy z tych typów rozszerza obiekt, który natywnie istnieje w modelu obiektów programu Word lub Excel, o nazwie *obiekt natywny Office*. Na przykład <xref:Microsoft.Office.Tools.Word.Document> rozszerza element hosta <xref:Microsoft.Office.Interop.Word.Document> obiektu, który jest zdefiniowany w podstawowy zestaw międzyoperacyjny dla programu Word.  
   
- Obiekty hosta zazwyczaj mają te same funkcje podstawowe jako odpowiednich obiektów pakietu Office, ale jest rozszerzona o następujące funkcje:  
+ Obiekty hosta zazwyczaj mają taką samą funkcjonalność podstawowego, jak odnośnych obiektach pakietu Office, ale są ulepszone dzięki następującym funkcjom:  
   
--   Zdolność do obsługi zarządzane formanty, w tym formanty hosta i formantów formularzy systemu Windows.  
+-   Możliwość hostowania zarządzane formanty, łącznie z kontrolki hosta i kontrolek formularzy Windows Forms.  
   
--   Bardziej rozbudowane modele zdarzeń. Niektóre zdarzenia dokumentów, skoroszytów i arkuszy w macierzystym modele obiektów programu Word i Excel pojawienia się tylko na poziomie aplikacji. Obiekty hosta Podaj te zdarzenia na poziomie dokumentu, dzięki czemu możliwe jest łatwiejsze do obsługi zdarzeń dla określonego dokumentu.  
+-   Bardziej zaawansowane modele zdarzeń. Niektóre zdarzenia dokumentu, skoroszytu i arkuszy w macierzystym modele obiektów programu Word i Excel są wywoływane tylko na poziomie aplikacji. Obiekty hosta oferuje te zdarzenia na poziomie dokumentu, dlatego jest łatwiejsze do obsługi zdarzeń dla określonego dokumentu.  
   
-### <a name="understand-host-items-in-document-level-projects"></a>Zrozumienie elementy hosta w projektach na poziomie dokumentu  
- W projektach na poziomie dokumentu elementy hosta podaj punkt wejścia dla kodu i mają projektantów ułatwiające opracowanie rozwiązania.  
+### <a name="understand-host-items-in-document-level-projects"></a>Omówienie elementów hosta w projektach na poziomie dokumentu  
+ W projektach na poziomie dokumentu elementów hosta zapewnia punkt wejścia dla kodu i mają projektantów ułatwiające opracowania swojego rozwiązania.  
   
- <xref:Microsoft.Office.Tools.Word.Document> i <xref:Microsoft.Office.Tools.Excel.Worksheet> elementy hosta skojarzony projektantów, które są wizualną reprezentację dokument lub arkusz, takich jak projektant formularzy systemu Windows. Ten Projektant służy do zmiany zawartości dokumentu lub arkusz bezpośrednio w Word czy Excel i przeciągnij formanty na powierzchnię projektu. Aby uzyskać więcej informacji, zobacz [element hosta dokumentu](../vsto/document-host-item.md) i [element hosta arkusza](../vsto/worksheet-host-item.md).  
+ <xref:Microsoft.Office.Tools.Word.Document> i <xref:Microsoft.Office.Tools.Excel.Worksheet> elementów hosta skojarzony projektantach, które są wizualnej reprezentacji w dokumencie lub arkuszu, takich jak Windows Forms designer. Można użyć tego projektanta, zmodyfikuj zawartość dokumentu lub arkuszu bezpośrednio w programie Word lub Excel i przeciągnij formanty na powierzchni projektowej. Aby uzyskać więcej informacji, zobacz [element hosta dokumentu](../vsto/document-host-item.md) i [element hosta arkusza](../vsto/worksheet-host-item.md).  
   
- <xref:Microsoft.Office.Tools.Excel.Workbook> Element hosta nie działa jako kontener dla formantów interfejsu użytkownika. Zamiast tego projektanta dla tego elementu hosta działa jako składnik na pasku zadań, co pozwala na przeciągnij składnik, takich jak <xref:System.Data.DataSet>, na jego powierzchnię projektu. Aby uzyskać więcej informacji, zobacz [element hosta skoroszytu](../vsto/workbook-host-item.md).  
+ <xref:Microsoft.Office.Tools.Excel.Workbook> Element hosta nie działa jako kontener dla formantów, które mają interfejs użytkownika. Zamiast tego projektanta dla tego elementu hosta działa jako zasobnika składnika, co pozwala na przeciągnij składnik, taki jak <xref:System.Data.DataSet>, na jego powierzchnię projektu. Aby uzyskać więcej informacji, zobacz [element hosta skoroszytu](../vsto/workbook-host-item.md).  
   
- Obiekty hosta nie można utworzyć programowo w projektach na poziomie dokumentu. Zamiast tego należy użyć `ThisDocument`, `ThisWorkbook`, lub `Sheet` *n* klasy, które Visual Studio automatycznie generuje w projekcie w czasie projektowania. Te wygenerowane klasy pochodzi od elementów hosta i stanowią punkt wejścia kodu. Aby uzyskać więcej informacji, zobacz [ograniczenia programowe elementów hosta i formantów hosta](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).  
+ Obiekty hosta nie można utworzyć programowo w projektach na poziomie dokumentu. Zamiast tego należy użyć `ThisDocument`, `ThisWorkbook`, lub `Sheet` *n* klas, które program Visual Studio automatycznie generuje w projekcie w czasie projektowania. Te wygenerowane klasy pochodzić od elementów hosta i zapewniają punkt wejścia dla kodu. Aby uzyskać więcej informacji, zobacz [ograniczenia programowe elementów hosta i kontrolek hosta](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).  
   
-### <a name="understand-host-items-in-vsto-add-in-projects"></a>Zrozumienie hosta elementy projektów dodatku VSTO  
- Podczas tworzenia dodatku VSTO, nie masz dostępu do żadnych elementów hosta domyślnie. Jednak możesz wygenerować <xref:Microsoft.Office.Tools.Word.Document>, <xref:Microsoft.Office.Tools.Excel.Workbook>, i <xref:Microsoft.Office.Tools.Excel.Worksheet> hosta elementów w programach Word i dodatków VSTO programu Excel w czasie wykonywania.  
+### <a name="understand-host-items-in-vsto-add-in-projects"></a>Omówienie elementów hosta w projektach dodatku narzędzi VSTO  
+ Podczas tworzenia dodatku narzędzi VSTO domyślnie nie mają dostępu do wszystkich elementów hosta. Jednakże, można wygenerować <xref:Microsoft.Office.Tools.Word.Document>, <xref:Microsoft.Office.Tools.Excel.Workbook>, i <xref:Microsoft.Office.Tools.Excel.Worksheet> hosta elementów w programach Word i dodatków narzędzi VSTO dla programu Excel w czasie wykonywania.  
   
- Po wygenerowaniu elementu hosta mogą wykonywać zadania, takie jak dodawanie formantów do dokumentów. Aby uzyskać więcej informacji, zobacz [dokumentów rozszerzania programu Word i skoroszytów programu Excel w dodatkach VSTO w czasie wykonywania](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
+ Po wygenerowaniu elementu hosta można wykonywać zadania, takie jak dodawanie formantów do dokumentów. Aby uzyskać więcej informacji, zobacz [Rozszerzanie dokumentów programu Word i skoroszytów programu Excel w dodatkach VSTO w czasie wykonywania](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
   
-## <a name="host-controls"></a>Formanty hosta  
+## <a name="host-controls"></a>Kontrolki hosta  
  Formanty hosta rozszerzyć różnych obiektów interfejsu użytkownika w modelach obiektów programu Word i Excel, takich jak `Microsoft.Office.Interop.Word.ContentControl` i <xref:Microsoft.Office.Interop.Excel.Range> obiektów.  
   
- Projekty programu Excel dostępne są następujące kontrolki hosta:  
+ Dostępne dla projektów programu Excel są następujące formanty hosta:  
   
--   [Formant wykresu](../vsto/chart-control.md)  
+-   [Kontrolka wykresu](../vsto/chart-control.md)  
   
 -   [ListObject — formant](../vsto/listobject-control.md)  
   
@@ -96,9 +97,9 @@ ms.lasthandoff: 05/25/2018
   
 -   [Xmlmappedrange — formant](../vsto/xmlmappedrange-control.md)  
   
- Projekty programu Word dostępne są następujące kontrolki hosta:  
+ Następujące kontrolki hosta są dostępne dla projektów programu Word:  
   
--   [BOOKMARK, formant:](../vsto/bookmark-control.md)  
+-   [BOOKMARK, kontrolka](../vsto/bookmark-control.md)  
   
 -   [Formanty zawartości](../vsto/content-controls.md)  
   
@@ -106,29 +107,29 @@ ms.lasthandoff: 05/25/2018
   
 -   [Formant XMLNodes](../vsto/xmlnodes-control.md)  
   
- Formanty hosta, które są dodawane do dokumentów pakietu Office przypominają natywny obiektów pakietu Office; Formanty hosta jednak dodatkowe funkcje, w tym zdarzenia oraz funkcje do wiązania danych. Na przykład, kiedy zachodzi potrzeba przechwytywania zdarzeń natywny <xref:Microsoft.Office.Interop.Excel.Range> obiektów w programie Excel, najpierw musi obsługiwać zdarzenia zmiany arkusza. Następnie należy określić, czy zmiana została wprowadzona w <xref:Microsoft.Office.Interop.Excel.Range>. Z kolei <xref:Microsoft.Office.Tools.Excel.NamedRange> kontroli hosta ma <xref:Microsoft.Office.Tools.Excel.NamedRange.Change> zdarzenie, które można obsługiwać bezpośrednio.  
+ Formanty hosta, które są dodawane do dokumentów pakietu Office zachowują się jak natywnych obiektów pakietu Office; jednak formanty hosta mają dodatkowe funkcje, w tym zdarzenia i możliwości wiązania danych. Na przykład, kiedy mają być przechwytywane zdarzenia macierzystej <xref:Microsoft.Office.Interop.Excel.Range> obiektu w programie Excel, najpierw musi obsługiwać zdarzenia zmiany arkusza. Następnie należy określić, czy zmiana została wprowadzona w ramach <xref:Microsoft.Office.Interop.Excel.Range>. Z kolei <xref:Microsoft.Office.Tools.Excel.NamedRange> kontrolki hosta ma <xref:Microsoft.Office.Tools.Excel.NamedRange.Change> zdarzenie, dla którego można obsługiwać bezpośrednio.  
   
- Relacja między elementem hosta i formantów hosta jest bardzo podobna do relacji między formantami formularza systemu Windows i formularze systemu Windows. Tak jak będzie umieścić polu tekstowym na formularzu systemu Windows, umieść <xref:Microsoft.Office.Tools.Excel.NamedRange> kontrolować na <xref:Microsoft.Office.Tools.Excel.Worksheet> element hosta. Na poniższej ilustracji przedstawiono relacje między elementami hosta i formantów hosta.  
+ Relacja między elementem hosta i kontrolek hosta jest podobna do relacji między kontrolkami formularz Windows i Windows Forms. Tak samo, jak umieszczenie kontrolkę pola tekstowego w formularzu Windows, umieść <xref:Microsoft.Office.Tools.Excel.NamedRange> kontrolować na <xref:Microsoft.Office.Tools.Excel.Worksheet> element hosta. Poniższa ilustracja przedstawia relację między elementów hosta i kontrolek hosta.  
   
- ![Relacja między elementami hosta i formantów hosta](../vsto/media/hostitemscontrols.png "relacji między elementami hosta i formantów hosta")  
+ ![Relacja między elementami hosta i kontrolek hosta](../vsto/media/hostitemscontrols.png "relacji między elementami hosta i kontrolek hosta")  
   
- Umożliwia także formanty formularzy systemu Windows w ramach rozwiązań pakietu Office przez dodanie ich bezpośrednio do powierzchni dokument programu Word i Excel. Aby uzyskać więcej informacji, zobacz [formanty formularzy systemu Windows na przegląd dokumentów pakietu Office](../vsto/windows-forms-controls-on-office-documents-overview.md).  
+ Umożliwia także kontrolek formularzy Windows Forms w rozwiązaniach pakietu Office, dodając je bezpośrednio do powierzchni dokument programu Word i Excel. Aby uzyskać więcej informacji, zobacz [kontrolek formularzy Windows w przegląd dokumentów pakietu Office](../vsto/windows-forms-controls-on-office-documents-overview.md).  
   
 > [!NOTE]  
->  Dodawanie formantów hosta lub formanty formularzy systemu Windows do dokumentu programu Word nie jest obsługiwane.  
+>  Dodawanie kontrolki hosta lub kontrolek formularzy Windows Forms do dokumentu programu Word nie jest obsługiwana.  
   
-### <a name="add-host-controls-to-your-documents"></a>Dodaj formanty hosta do dokumentów  
- W projektach na poziomie dokumentu można dodać hosta formantów do dokumentów programu Word lub arkuszy programu Excel w czasie projektowania w następujący sposób:  
+### <a name="add-host-controls-to-your-documents"></a>Dodawanie hosta formantów do dokumentów  
+ W projektach na poziomie dokumentu można dodać kontrolki hosta do dokumentów programu Word lub arkuszy programu Excel w czasie projektowania w następujący sposób:  
   
--   Dodaj formanty hosta do dokumentu w czasie projektowania w taki sam sposób należy dodać obiekt natywny.  
+-   Dodaj formanty hosta do dokumentu w czasie projektowania w taki sam sposób należy dodać obiekt za pomocą natywnego.  
   
--   Przeciągnij formanty hosta z **przybornika** na dokumentów i arkuszy. Formanty hosta programu Excel są dostępne w **formanty Excel** kartę Projekty programu Excel i Word hosta formanty są dostępne w **formanty Word** WE projekty programu Word.  
+-   Przeciągnij formanty hosta z **przybornika** na swoje dokumenty i arkusze. Kontrolki hosta programu Excel są dostępne w **kontrolki programu Excel** kartę w projektach programu Excel i host programu Word, które są dostępne w **formanty programu Word** kartę w projektach programu Word.  
   
--   Przeciągnij formanty hosta z **źródeł danych** okna na dokumentów i arkuszy. Umożliwia dodawanie formantów, które są już powiązane z danymi. Aby uzyskać więcej informacji, zobacz [wiązanie danych do formantów w rozwiązaniach pakietu Office](../vsto/binding-data-to-controls-in-office-solutions.md).  
+-   Przeciągnij formanty hosta z **źródeł danych** okna na swoje dokumenty i arkusze. Pozwala na dodawanie formantów, które już są powiązane z danymi. Aby uzyskać więcej informacji, zobacz [wiązanie danych do kontrolek w rozwiązaniach pakietu Office](../vsto/binding-data-to-controls-in-office-solutions.md).  
   
- W poziomie dokumentu i projektów dodatku VSTO można również dodać niektóre formanty hosta do dokumentów w czasie wykonywania. Aby uzyskać więcej informacji, zobacz [dodawanie formantów do dokumentów pakietu Office w czasie wykonywania](../vsto/adding-controls-to-office-documents-at-run-time.md).  
+ W poziomie dokumentu i projektów dodatku VSTO możesz dodać niektóre formanty hosta do dokumentów w czasie wykonywania. Aby uzyskać więcej informacji, zobacz [dodawanie formantów do dokumentów pakietu Office w środowisku uruchomieniowym](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
- Aby uzyskać więcej informacji o sposobie dodawania hosta formantów do dokumentów zobacz następujące tematy:  
+ Aby uzyskać więcej informacji o sposobie dodawania formantów hosta do dokumentów zobacz następujące tematy:  
   
 -   [Porady: dodawanie formantów wykresu do arkuszy](../vsto/how-to-add-chart-controls-to-worksheets.md)  
   
@@ -147,35 +148,35 @@ ms.lasthandoff: 05/25/2018
 -   [Porady: dodawanie formantów XMLNodes do dokumentów programu Word](../vsto/how-to-add-xmlnodes-controls-to-word-documents.md)  
   
 ### <a name="name-host-controls"></a>Nazwa kontrolki hosta  
- Przeciągnięcie kontrolką hosta z **przybornika** do dokumentu, kontrolka jest automatycznie o nazwie przy użyciu typu formantu z numeru przyrostowej na końcu. Na przykład, są nazywane zakładki **bookmark1**, **bookmark2**i tak dalej. Jeśli używasz funkcji natywnego programu Word czy Excel można dodać formantu, możesz zapewnić go określonej nazwy w momencie jego tworzenia. Formanty można również zmienić, zmieniając wartość **nazwa** właściwości w **właściwości** okna.  
+ Przeciągnięcie formantu hosta z **przybornika** do dokumentu, kontrolka ma automatycznie nadawaną nazwę z liczbą przyrostową na koniec za pomocą typu formantu. Na przykład zakładki są nazywane **bookmark1**, **bookmark2**i tak dalej. Jeśli używasz macierzystą funkcjonalność programu Word lub Excel, aby dodać kontrolkę, można mu nazwę w czasie jego tworzenia. Można również zmienić nazwę kontrolki, zmieniając wartość **nazwa** właściwość **właściwości** okna.  
   
 > [!NOTE]  
->  Nie można użyć słowa zastrzeżone do nazwy hosta formantów. Na przykład, jeśli dodasz <xref:Microsoft.Office.Tools.Excel.NamedRange> kontroli do arkusza i Zmień nazwę, aby **systemu**, wystąpią błędy podczas kompilowania projektu.  
+>  Nie można użyć słowa zastrzeżone do nazwy hosta formantów. Na przykład jeśli dodasz <xref:Microsoft.Office.Tools.Excel.NamedRange> kontroli do arkusza i Zmień nazwę na **systemu**, wystąpi błąd podczas tworzenia projektu.  
   
-### <a name="delete-host-controls"></a>Usuń formanty hosta  
- W projektach na poziomie dokumentu, można usunąć formanty hosta w czasie projektowania, zaznaczając kontrolki w arkuszu programu Excel lub dokumentu programu Word i naciskając klawisz **usunąć** klucza. Jednak należy użyć **Definiowanie nazwy** okno dialogowe w programie Excel, aby usunąć <xref:Microsoft.Office.Tools.Excel.NamedRange> kontrolki.  
+### <a name="delete-host-controls"></a>Usuń kontrolki hosta  
+ W projektach na poziomie dokumentu, można usunąć kontrolki hosta w czasie projektowania, zaznaczenie kontrolki w arkuszu programu Excel lub dokumentu programu Word, a następnie naciskając klawisz **Usuń** klucza. Jednakże, należy użyć **Definiowanie nazwy** okno dialogowe w programie Excel, aby usunąć <xref:Microsoft.Office.Tools.Excel.NamedRange> kontrolki.  
   
- Jeśli formant host zostanie dodany do dokumentu w czasie projektowania, nie należy usuwać ją programowo w czasie wykonywania, ponieważ podczas kolejnej próby użycia formantu w kodzie, jest zgłaszany wyjątek. `Delete` Metody kontroli hosta spowoduje usunięcie tylko formanty hosta, które są dodawane do dokumentu w czasie wykonywania. Jeśli należy wywołać `Delete` metody kontroli hosta, który został utworzony w czasie projektowania, jest zgłaszany wyjątek.  
+ Jeśli dodasz kontrolki hosta do dokumentu w czasie projektowania, nie należy usuwać je programowo w czasie wykonywania ponieważ następnym razem użytkownik próbuje użyć kontrolki w kodzie, zgłaszany jest wyjątek. `Delete` Metoda kontrolki hosta powoduje usunięcie tylko formanty hosta, które są dodawane do dokumentu w czasie wykonywania. Jeśli wywołasz `Delete` metody kontrolki hosta, który został utworzony w czasie projektowania, zgłaszany jest wyjątek.  
   
- Na przykład <xref:Microsoft.Office.Tools.Excel.NamedRange.Delete%2A> metody <xref:Microsoft.Office.Tools.Excel.NamedRange> usuwa tylko pomyślnie <xref:Microsoft.Office.Tools.Excel.NamedRange> jeśli programowo został dodany do arkusza, znany jako dynamicznie tworzenie kontrolki hosta. Formanty hosta utworzony dynamicznie może zostać także usunięty przez przekazanie nazwa formantu do `Remove` metody <xref:Microsoft.Office.Tools.Excel.Worksheet.Controls%2A> lub <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> właściwości. Aby uzyskać więcej informacji, zobacz [dodawanie formantów do dokumentów pakietu Office w czasie wykonywania](../vsto/adding-controls-to-office-documents-at-run-time.md).  
+ Na przykład <xref:Microsoft.Office.Tools.Excel.NamedRange.Delete%2A> metody <xref:Microsoft.Office.Tools.Excel.NamedRange> tylko pomyślnie usuwa <xref:Microsoft.Office.Tools.Excel.NamedRange> jeśli programowo została dodana do arkusza, który jest znany jako dynamicznie Tworzenie formantów hosta. Formanty hosta dynamicznie utworzoną może zostać także usunięty przez przekazanie nazwy kontrolki do `Remove` metody <xref:Microsoft.Office.Tools.Excel.Worksheet.Controls%2A> lub <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> właściwości. Aby uzyskać więcej informacji, zobacz [dodawanie formantów do dokumentów pakietu Office w środowisku uruchomieniowym](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
- Jeśli użytkownicy końcowi Usuń kontroli hosta z dokumentu w czasie wykonywania, rozwiązanie może zakończyć się niepowodzeniem w nieoczekiwany sposób. Funkcje ochrony dokumentu programu Word i Excel umożliwia ochronę przed usunięciem kontrolki hosta. Aby uzyskać więcej informacji, zobacz [Office development ― przykłady i wskazówki](../vsto/office-development-samples-and-walkthroughs.md).  
-  
-> [!NOTE]  
->  Nie usuwaj programowo formantów w trakcie `Shutdown` obsługi zdarzeń w dokumencie lub arkusz. Elementy interfejsu użytkownika nie będą dostępne podczas `Shutdown` zdarzenie. Jeśli chcesz usunąć formanty przed zamknięciem aplikacji, Dodaj swój kod do innego programu obsługi zdarzeń takich jak `BeforeClose` lub `BeforeSave`.  
-  
-### <a name="program-against-host-control-events"></a>Program w odniesieniu do zdarzeń formantu hosta  
- Dodawanie zdarzeń jest jeden sposób, że kontrolki hosta rozszerzyć obiektów pakietu Office. Na przykład <xref:Microsoft.Office.Interop.Excel.Range> obiektu w programie Excel i <xref:Microsoft.Office.Interop.Word.Bookmark> obiektu w programie Word nie mają zdarzeń, ale [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] rozszerza tych obiektów przez dodanie programowalny zdarzenia. Masz dostęp i kodu w odniesieniu do tych zdarzeń taki sam sposób uzyskać dostępu do zdarzeń formantów na formularzach systemu Windows: za pomocą listy rozwijanej zdarzeń w Visual Basic i strony właściwości zdarzeń w języku C#. Aby uzyskać więcej informacji, zobacz [wskazówki: Program w odniesieniu do zdarzeń formantu NamedRange](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md).  
+ Jeśli użytkownicy końcowi usunęli kontrolki hosta z dokumentu w czasie wykonywania, rozwiązanie może zakończyć się niepowodzeniem w nieoczekiwany sposób. Funkcje ochrony dokumentu w programach Word i Excel można użyć do ochrony kontrolki hosta przed usunięciem. Aby uzyskać więcej informacji, zobacz [Office development ― przykłady i wskazówki dotyczące](../vsto/office-development-samples-and-walkthroughs.md).  
   
 > [!NOTE]  
->  Nie należy ustawiać <xref:Microsoft.Office.Interop.Excel._Application.EnableEvents%2A> właściwość <xref:Microsoft.Office.Interop.Excel.Application> obiektu w programie Excel, aby **false**. Ustawienie tej właściwości na **false** uniemożliwia wywoływanie żadnych zdarzeń, w tym zdarzenia formanty hosta programu Excel.  
+>  Nie usuwaj programowo kontrole podczas `Shutdown` programu obsługi zdarzeń w dokumencie lub arkuszu. Elementy interfejsu użytkownika nie są już dostępne podczas `Shutdown` wystąpi zdarzenie. Jeśli chcesz usunąć kontrolki przed zamknięciem aplikacji, Dodaj kod do innego programu obsługi zdarzeń takich jak `BeforeClose` lub `BeforeSave`.  
+  
+### <a name="program-against-host-control-events"></a>Program w odniesieniu do zdarzeń kontrolki hosta  
+ Jednym ze sposobów, że formanty hosta rozszerzyć obiektów pakietu Office jest dodanie zdarzenia. Na przykład <xref:Microsoft.Office.Interop.Excel.Range> obiektu w programie Excel i <xref:Microsoft.Office.Interop.Word.Bookmark> obiektu w programie Word braku zdarzenia, ale [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] rozszerza te obiekty, dodając programowalny zdarzenia. Masz dostęp i kod dla tych zdarzeń, taki sam sposób dostępu zdarzeń formantów na formularzach Windows Forms: za pomocą listy rozwijanej zdarzeń w języku Visual Basic i na stronie właściwości zdarzenia w języku C#. Aby uzyskać więcej informacji, zobacz [Instruktaż: Program w odniesieniu do zdarzeń kontrolki NamedRange](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md).  
+  
+> [!NOTE]  
+>  Nie należy ustawiać <xref:Microsoft.Office.Interop.Excel._Application.EnableEvents%2A> właściwość <xref:Microsoft.Office.Interop.Excel.Application> obiektu w programie Excel, aby **false**. Ustawienie tej właściwości na **false** zapobiega podnoszenie żadnych wydarzeń, takich jak zdarzenia kontrolki hosta programu Excel.  
   
 ## <a name="see-also"></a>Zobacz także  
- [Ograniczenia programowe elementów hosta i formantów hosta](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
- [Program dodatków VSTO](../vsto/programming-vsto-add-ins.md)   
- [Dostosowywanie na poziomie dokumentu programu](../vsto/programming-document-level-customizations.md)   
+ [Ograniczenia programowe elementów hosta i kontrolek hosta](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
+ [Program dodatków narzędzi VSTO](../vsto/programming-vsto-add-ins.md)   
+ [Program dostosowań na poziomie dokumentu](../vsto/programming-document-level-customizations.md)   
  [Automatyzowanie programu Word za pomocą obiektów rozszerzonych](../vsto/automating-word-by-using-extended-objects.md)   
  [Automatyzowanie programu Excel za pomocą obiektów rozszerzonych](../vsto/automating-excel-by-using-extended-objects.md)   
  [Formanty w dokumentach pakietu Office](../vsto/controls-on-office-documents.md)   
- [Wiązanie danych do formantów w rozwiązaniach pakietu Office](../vsto/binding-data-to-controls-in-office-solutions.md)  
+ [Wiązanie danych do kontrolek w rozwiązaniach pakietu Office](../vsto/binding-data-to-controls-in-office-solutions.md)  
   

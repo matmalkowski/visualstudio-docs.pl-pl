@@ -1,5 +1,5 @@
 ---
-title: 'Porady: przewijanie rekordów bazy danych w arkuszu | Dokumentacja firmy Microsoft'
+title: 'Porady: przewijanie rekordów bazy danych w arkuszu'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,34 +18,35 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a092cec68e59914b498ab3b935f58b6ef0c37f05
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7e9ffaffdefda98e3e074467fcd4df8cacce91b4
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35677280"
 ---
 # <a name="how-to-scroll-through-database-records-in-a-worksheet"></a>Porady: przewijanie rekordów bazy danych w arkuszu
-  Poniższa procedura przedstawia sposób wyświetlania jednego pola z tabeli bazy danych w arkuszu programu Microsoft Office Excel z formantami, które umożliwiają użytkownikom końcowym przewijania wszystkich rekordów za pomocą projektanta.  
+  Poniższa procedura pokazuje, jak używać projektanta do wyświetlania jedno pole z tabeli bazy danych w arkuszu programu Microsoft Office Excel, za pomocą formantów, które umożliwiają użytkownikowi końcowemu przewiń wszystkie rekordy.  
   
- Projektant służy wyłącznie w projektach na poziomie dokumentu. Można również dodawać formanty i powiązać je programowo z danymi w czasie wykonywania. Aby uzyskać więcej informacji, zobacz [wskazówki: proste powiązanie danych w VSTO dodatku projektu](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md).  
+ Tylko w projektach na poziomie dokumentu można używać projektanta. Można również dodawać formanty i powiązać je z danymi programowo w czasie wykonywania. Aby uzyskać więcej informacji, zobacz [wskazówki: proste powiązanie danych w projekcie dodatku narzędzi VSTO](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md).  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
   
-### <a name="to-scroll-through-database-records-in-a-worksheet"></a>Do przewijania rekordów bazy danych w arkuszu  
+## <a name="to-scroll-through-database-records-in-a-worksheet"></a>Do przewijania rekordów bazy danych w arkuszu  
   
-1.  Otwórz projekt aplikacji Excel w Visual Studio.  
+1.  Otwórz projekt aplikacji programu Excel w programie Visual Studio.  
   
 2.  Otwórz **źródeł danych** okna i Utwórz źródło danych z bazy danych. Aby uzyskać więcej informacji, zobacz [dodać nowe połączenia](../data-tools/add-new-connections.md).  
   
-3.  Rozwiń tabeli, która zawiera dane, które chcesz wyświetlić, a następnie wybierz określone kolumny.  
+3.  Rozwiń tabelę, która zawiera dane, które mają być wyświetlane, a następnie wybierz określone kolumny.  
   
-4.  Otwórz listę kontrolek i wybierz **NamedRange**.  
+4.  Otwórz listę kontrolek, a następnie wybierz pozycję **NamedRange**.  
   
-5.  Przeciągnij <xref:Microsoft.Office.Tools.Excel.NamedRange> sterowania na komórkę, w którym ma być wyświetlana data.  
+5.  Przeciągnij <xref:Microsoft.Office.Tools.Excel.NamedRange> kontroli na komórkę, w którym ma się pojawić się dane.  
   
-6.  Z **formularzy systemu Windows** karcie **przybornika**, Dodaj <xref:System.Windows.Forms.BindingNavigator> kontroli do arkusza i konfigurowanie kontroli, którego chcesz użyć. Aby uzyskać więcej informacji, zobacz [informacje o formancie BindingNavigator &#40;formularzy systemu Windows&#41;](/dotnet/framework/winforms/controls/bindingnavigator-control-overview-windows-forms).  
+6.  Z **Windows Forms** karcie **przybornika**, Dodaj <xref:System.Windows.Forms.BindingNavigator> sterowania do arkusza i konfigurowanie kontrolek, w której chcesz użyć. Aby uzyskać więcej informacji, zobacz [— informacje o formancie BindingNavigator &#40;Windows Forms&#41;](/dotnet/framework/winforms/controls/bindingnavigator-control-overview-windows-forms).  
   
-## <a name="see-also"></a>Zobacz też  
- [Powiązywanie danych do kontrolek w rozwiązaniach pakietu Office](../vsto/binding-data-to-controls-in-office-solutions.md)  
+## <a name="see-also"></a>Zobacz także  
+ [Wiązanie danych do kontrolek w rozwiązaniach pakietu Office](../vsto/binding-data-to-controls-in-office-solutions.md)  
   
   

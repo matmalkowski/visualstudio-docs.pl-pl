@@ -20,50 +20,50 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c7436bbb7ce904f8c969652e3f4ff0a794116c9c
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 8f836662b9dfe4df8e45e24a7210664b8cecd49e
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34692710"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35676212"
 ---
 # <a name="powerpoint-solutions"></a>PowerPoint — rozwiązania
-  Program Visual Studio udostępnia szablony projektów, które umożliwia tworzenie dodatków narzędzi VSTO dla programu Microsoft Office PowerPoint. Dodatków VSTO służy do automatyzacji programu PowerPoint, rozszerzenie funkcji programu PowerPoint lub dostosowanie interfejsu użytkownika (UI) programu PowerPoint.  
+  Program Visual Studio udostępnia szablony projektów, służących do tworzenia dodatków narzędzi VSTO dla programu Microsoft PowerPoint pakietu Office. Za pomocą dodatków narzędzi VSTO dla programów Automatyzacja programu PowerPoint, Rozszerz funkcje programu PowerPoint lub dostosowywanie interfejsu użytkownika (UI) programu PowerPoint.  
   
- Aby uzyskać więcej informacji na temat dodatków VSTO, zobacz [rozpocząć programowanie dodatków VSTO](../vsto/getting-started-programming-vsto-add-ins.md) i [dodatki architektura VSTO](../vsto/architecture-of-vsto-add-ins.md). Jeśli jesteś nowym użytkownikiem programowania w języku Microsoft Office, zobacz [wprowadzenie &#40;programowanie Office w Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md).  
+ Aby uzyskać więcej informacji na temat dodatków narzędzi VSTO zobacz [wprowadzenie do programowania dodatków narzędzi VSTO](../vsto/getting-started-programming-vsto-add-ins.md) i [architektury VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md). Jeśli jesteś nowym programistą w pakiecie Microsoft Office, zobacz [wprowadzenie &#40;programowanie Office w Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md).  
   
  [!INCLUDE[appliesto_pptallapp](../vsto/includes/appliesto-pptallapp-md.md)]  
   
 > [!NOTE]  
->  Pytań dotyczących projektowania rozwiązań, które rozszerzają możliwości pakietu Office przez [wielu platform](https://dev.office.com/add-in-availability)? Zapoznaj się z nowym [modelu dodatków pakietu Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Dodatków pakietu Office mieć niewielkie rozmiary w porównaniu do dodatków VSTO i rozwiązań i można ich tworzyć przy użyciu prawie każdego technologii, takich jak HTML5, CSS3, JavaScript i XML programowanie dla sieci web.  
+>  Zainteresowanych opracowywaniem rozwiązań, które rozszerzają możliwości pakietu Office w [wiele platform](https://dev.office.com/add-in-availability)? Zapoznaj się z nowym [modelu dodatków pakietu Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Dodatki pakietu Office mieć o niewielkich rozmiarach, w porównaniu do dodatków narzędzi VSTO dla programów i rozwiązań, a następnie utworzyć je przy użyciu niemal dowolnej technologii, takich jak HTML5, JavaScript, CSS3 i XML programowanie dla sieci web.  
   
- ![łącze do wideo](../vsto/media/playvideo.gif "łącze do wideo") dla powiązanych pokaz wideo, zobacz [jak: utworzyć dodatku dla programu Microsoft PowerPoint?](http://go.microsoft.com/fwlink/?LinkId=132767).  
+ ![Link do wideo](../vsto/media/playvideo.gif "link do wideo") powiązane demonstracyjne wideo – zobacz [jak: Tworzenie dodatku dla programu Microsoft PowerPoint?](http://go.microsoft.com/fwlink/?LinkId=132767).  
   
-## <a name="automate-powerpoint-by-using-the-powerpoint-object-model"></a>W programie PowerPoint można zautomatyzować za pomocą modelu obiektów programu PowerPoint  
- Model obiektów programu PowerPoint udostępnia wiele typów, które służą do automatyzacji programu PowerPoint. Te typy umożliwiają napisać kod, aby wykonać typowe zadania:  
+## <a name="automate-powerpoint-by-using-the-powerpoint-object-model"></a>W programie PowerPoint zautomatyzować za pomocą modelu obiektów programu PowerPoint  
+ Model obiektów programu PowerPoint uwidacznia wiele typów, których można użyć do zautomatyzowania programu PowerPoint. Te typy umożliwiają pisanie kodu w celu wykonywania typowych zadań:  
   
--   Programowo utworzenia i sformatowania prezentacji.  
+-   Programowo utworzyć i sformatować prezentacji.  
   
--   Dodawanie lub usuwanie slajdów z prezentacji.  
+-   Dodawanie lub usuwanie slajdy z prezentacji.  
   
--   Dodawanie lub zmienianie kształtów na slajdzie.  
+-   Dodaj lub zmień kształtów na slajdzie.  
   
- Aby uzyskać dostęp do modelu obiektów programu PowerPoint z dodatku VSTO, użyj `Application` pole `ThisAddIn` klasy w projekcie. `Application` Pola zwraca <xref:Microsoft.Office.Interop.PowerPoint.Application> obiekt reprezentujący bieżące wystąpienie programu PowerPoint. Aby uzyskać więcej informacji, zobacz [dodatków VSTO programu](../vsto/programming-vsto-add-ins.md).  
+ Dostęp do modelu obiektów programu PowerPoint z dodatku narzędzi VSTO dla programów, należy użyć `Application` pole `ThisAddIn` klasy w projekcie. `Application` Pole zwraca <xref:Microsoft.Office.Interop.PowerPoint.Application> obiekt reprezentujący bieżące wystąpienie programu PowerPoint. Aby uzyskać więcej informacji, zobacz [dodatków narzędzi VSTO programu](../vsto/programming-vsto-add-ins.md).  
   
- Po wywołują modelu obiektów programu PowerPoint, należy użyć typów, które zostały opublikowane w podstawowego zestawu międzyoperacyjnego dla programu PowerPoint. Podstawowy zestaw międzyoperacyjny działa jako mostka między kodu zarządzanego w dodatku VSTO i model obiektów COM w programie PowerPoint. Wszystkie typy w programie PowerPoint podstawowy zestaw międzyoperacyjny są zdefiniowane w <xref:Microsoft.Office.Interop.PowerPoint> przestrzeni nazw. Aby uzyskać więcej informacji na temat podstawowe zestawy międzyoperacyjne zobacz [rozwój rozwiązań Office ― omówienie &#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md) i [podstawowe zestawy międzyoperacyjne pakietu Office](../vsto/office-primary-interop-assemblies.md).  
+ Gdy wywołujesz modelu obiektów programu PowerPoint, należy użyć typów, które są dostarczane w podstawowy zestaw międzyoperacyjny dla programu PowerPoint. Podstawowy zestaw międzyoperacyjny działa jako Most między kodu zarządzanego w dodatku narzędzi VSTO dla programów i model obiektów COM w programie PowerPoint. Wszystkie typy w programie PowerPoint podstawowy zestaw międzyoperacyjny są zdefiniowane w <xref:Microsoft.Office.Interop.PowerPoint> przestrzeni nazw. Aby uzyskać więcej informacji na temat podstawowych usług międzyoperacyjnych, zobacz [rozwój rozwiązań Office ― omówienie &#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md) i [podstawowe zestawy międzyoperacyjne pakietu Office](../vsto/office-primary-interop-assemblies.md).  
   
-##  <a name="WordOMDocumentation"></a> Skorzystaj z dokumentacji modelu obiektów programu PowerPoint  
- Aby uzyskać pełne informacje o modelu obiektów programu PowerPoint mogą odwoływać się do programu PowerPoint odwołania podstawowego zestawu międzyoperacyjnego (PIA) i odwołania do modelu obiektu języka VBA.  
+##  <a name="WordOMDocumentation"></a> Zapoznaj się z dokumentacją modelu obiektu programu PowerPoint  
+ Aby uzyskać pełne informacje o modelu obiektów programu PowerPoint mogą odwoływać się do programu PowerPoint odwołanie do zestawu podstawowej usługi międzyoperacyjnej (PIA) i dokumentacja modelu obiektów języka VBA.  
   
-### <a name="primary-interop-assembly-reference"></a>Odwołanie do podstawowego zestawu międzyoperacyjnego  
- Dokumentacja odwołania PowerPoint PIA opisano typy w podstawowego zestawu międzyoperacyjnego dla programu PowerPoint. Niniejsza dokumentacja jest dostępna z następującej lokalizacji: [odwołania podstawowego zestawu międzyoperacyjnego PowerPoint 2010](http://go.microsoft.com/fwlink/?LinkId=189588).  
+### <a name="primary-interop-assembly-reference"></a>Odwołanie do zestawu podstawowej usługi międzyoperacyjnej  
+ Dokumentacja referencyjna programu PowerPoint PIA w tym artykule opisano typy w podstawowy zestaw międzyoperacyjny dla programu PowerPoint. Ta dokumentacja jest dostępna z następującej lokalizacji: [odwołanie do zestawu podstawowej usługi międzyoperacyjnej PowerPoint 2010](http://go.microsoft.com/fwlink/?LinkId=189588).  
   
- Aby uzyskać więcej informacji dotyczących projektu PIA PowerPoint, takie jak różnice między klasy i interfejsy PIA i implementowania zdarzeń w PIA, zobacz [Przegląd klasy i interfejsy w podstawowe zestawy międzyoperacyjne pakietu Office ](http://go.microsoft.com/fwlink/?LinkId=199885).  
+ Aby uzyskać więcej informacji na temat projektowania PIA programu PowerPoint, takie jak różnice między klasami i interfejsy, które PIA i sposobu implementacji zdarzenia w PIA, zobacz [Przegląd klasy i interfejsy podstawowe zestawy międzyoperacyjne pakietu Office ](http://go.microsoft.com/fwlink/?LinkId=199885).  
   
-### <a name="vba-object-model-reference"></a>Odwołania do modelu obiektu VBA  
- Odwołania do modelu obiektu VBA dokumentów modelu obiektów programu PowerPoint, jak jest narażony na język Visual Basic dla kodu aplikacji (VBA). Aby uzyskać więcej informacji, zobacz [odwołania do modelu obiektu programu PowerPoint 2010](http://go.microsoft.com/fwlink/?LinkId=199770)  
+### <a name="vba-object-model-reference"></a>Dokumentacja modelu obiektów VBA  
+ Dokumentacja modelu obiektów VBA dokumentów modelu obiektów programu PowerPoint, ponieważ jest narażony na język Visual Basic for Applications (VBA) kod. Aby uzyskać więcej informacji, zobacz [dokumentacja modelu obiektów programu PowerPoint 2010](http://go.microsoft.com/fwlink/?LinkId=199770)  
   
- Wszystkie obiekty i elementów członkowskich w odwołania do modelu obiektu VBA odpowiadają typy i składniki w podstawowy zestaw międzyoperacyjny PowerPoint (PIA). Na przykład obiekt prezentacji odwołania do modelu obiektu VBA odpowiada <xref:Microsoft.Office.Interop.PowerPoint.Presentation> typu w PIA programu PowerPoint. Odwołania do modelu obiektu VBA zapewnia przykłady kodu dla większości właściwości, metod i zdarzeń, jednak należy translacji kod VBA w niniejszej dokumentacji Visual Basic lub Visual C#, jeśli chcesz używać ich w projekcie dodatku VSTO dla programu PowerPoint, który utworzono przy użyciu Program Visual Studio.  
+ Wszystkie obiekty i elementy członkowskie w dokumentacja modelu obiektów VBA odnoszą się do typów i członków w programie PowerPoint podstawowego zestawu międzyoperacyjnego (PIA). Na przykład obiekt prezentacji w dokumentacja modelu obiektów VBA odnosi się do <xref:Microsoft.Office.Interop.PowerPoint.Presentation> wpisz PIA programu PowerPoint. Mimo że dokumentacja modelu obiektów VBA zawiera przykłady kodu dla większości właściwości, metody i zdarzenia, należy translacji kodu VBA w ramach tego odwołania do kodu języka Visual Basic lub Visual C#, jeśli chcesz użyć ich w projekcie dodatku narzędzi VSTO dla programu PowerPoint, które tworzysz przy użyciu Program Visual Studio.  
   
 ## <a name="customize-the-user-interface-of-powerpoint"></a>Dostosowywanie interfejsu użytkownika programu PowerPoint  
  Interfejs użytkownika programu PowerPoint można zmodyfikować w następujący sposób.  
@@ -71,21 +71,21 @@ ms.locfileid: "34692710"
 |Zadanie|Więcej informacji|  
 |----------|--------------------------|  
 |Tworzenie niestandardowego okienka zadań.|[Niestandardowe okienka zadań](../vsto/custom-task-panes.md)|  
-|Dodaj niestandardowe karty do wstążki.|[Wstążka ― omówienie](../vsto/ribbon-overview.md)|  
-|Dodawanie niestandardowych grup wbudowanych kartę na Wstążce.|[Porady: dostosowywanie wbudowanej karty](../vsto/how-to-customize-a-built-in-tab.md)|  
+|Dodaj niestandardowe karty do wstążki.|[Wstążka — omówienie](../vsto/ribbon-overview.md)|  
+|Dodaj niestandardowe grupy do wbudowanej karty na Wstążce.|[Porady: dostosowywanie wbudowanej karty](../vsto/how-to-customize-a-built-in-tab.md)|  
   
- Aby uzyskać więcej informacji dotyczących dostosowywania interfejsu użytkownika programu PowerPoint i inne aplikacje Microsoft Office, zobacz [dostosowywania interfejsu użytkownika pakietu Office](../vsto/office-ui-customization.md).  
+ Aby uzyskać więcej informacji o dostosowywaniu interfejsu użytkownika programu PowerPoint i inne aplikacje Microsoft Office, zobacz [dostosowywania interfejsu użytkownika pakietu Office](../vsto/office-ui-customization.md).  
   
 ## <a name="see-also"></a>Zobacz także  
- [Wskazówki: Tworzenie pierwszego dodatek VSTO dla programu PowerPoint](../vsto/walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md)   
+ [Przewodnik: Tworzenie pierwszego dodatku narzędzi VSTO dla programu PowerPoint](../vsto/walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md)   
  [Wprowadzenie do programowania dodatków narzędzi VSTO](../vsto/getting-started-programming-vsto-add-ins.md)   
  [Rozwój rozwiązań Office ― omówienie &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
  [Architektura dodatków narzędzi VSTO](../vsto/architecture-of-vsto-add-ins.md)   
  [Porady: tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
- [Program dodatków VSTO](../vsto/programming-vsto-add-ins.md)   
+ [Program dodatków narzędzi VSTO](../vsto/programming-vsto-add-ins.md)   
  [Pisanie kodu w rozwiązaniach pakietu Office](../vsto/writing-code-in-office-solutions.md)   
  [Podstawowe zestawy międzyoperacyjne pakietu Office](../vsto/office-primary-interop-assemblies.md)   
  [Dostosowywanie interfejsu użytkownika pakietu Office](../vsto/office-ui-customization.md)   
- [PowerPoint 2010 w programowanie Office](http://go.microsoft.com/fwlink/?LinkId=199015)  
+ [PowerPoint 2010 w rozwój pakietu Office](http://go.microsoft.com/fwlink/?LinkId=199015)  
   
   
