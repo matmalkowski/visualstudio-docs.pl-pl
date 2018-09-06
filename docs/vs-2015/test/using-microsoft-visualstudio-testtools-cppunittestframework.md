@@ -13,12 +13,12 @@ ms.assetid: d1ac9188-d79f-407e-9f3a-80dbefa66317
 caps.latest.revision: 10
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 893d851286002c9682e969dcb989be30ed350d70
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1bf0581ac11e97bf5543c0d17e8f665091babbd7
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42679117"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775173"
 ---
 # <a name="using-microsoftvisualstudiotesttoolscppunittestframework"></a>Korzystanie z Microsoft.VisualStudio.TestTools.CppUnitTestFramework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,9 +27,9 @@ Najnowszą wersję tego tematu znajduje się w temacie [korzystanie z Microsoft.
   
 W tym temacie wymieniono publiczne elementy członkowskie `Microsoft::VisualStudio::CppUnitTestFramework` przestrzeni nazw.  
   
- Pliki nagłówkowe znajdują się w *InstallFolder VisualStudio2012 [x 86] *** \VC\UnitTest\include** folderu.  
+ Pliki nagłówkowe znajdują się w _InstallFolder VisualStudio2012 [x 86]_**\VC\UnitTest\include** folderu.  
   
- Pliki lib znajdują się w *InstallFolder VisualStudio2012 [x 86] *** \VC\UnitTest\lib** folderu.  
+ Pliki lib znajdują się w _InstallFolder VisualStudio2012 [x 86]_**\VC\UnitTest\lib** folderu.  
   
 ##  <a name="BKMK_In_this_topic"></a> W tym temacie  
  [CppUnitTest.h](#BKMK_CppUnitTest_h)  

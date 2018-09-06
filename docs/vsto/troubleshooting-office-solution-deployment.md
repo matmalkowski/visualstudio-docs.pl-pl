@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8f125a2b8a62690cd31d53d145ea9d7b1e54a3ce
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: 9bed7d523d91b43abe5455ea19567da5647f468c
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40009051"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774665"
 ---
 # <a name="troubleshoot-office-solution-deployment"></a>Rozwiązywanie problemów z wdrażaniem rozwiązań Office
   Ten temat zawiera informacje o tym, jak rozwiązać typowe problemy, które mogą wystąpić podczas wdrażania rozwiązań pakietu Office.  
@@ -72,7 +72,7 @@ ms.locfileid: "40009051"
   
 ### <a name="to-download-assemblies-instead-of-loading-cached-copies"></a>Aby pobrać zestawy zamiast ładowania zbuforowane kopie  
   
-1.  Na pasku menu wybierz **projektu**, * ProjectName ***właściwości**.  
+1.  Na pasku menu wybierz **projektu**, _ProjectName_**właściwości**.  
   
 2.  Na **aplikacji** wybierz **informacje o zestawie**.  
   

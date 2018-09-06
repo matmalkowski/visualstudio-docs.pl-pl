@@ -12,35 +12,35 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 424675726dd91664923cde0a3a5ad5573d51b4d5
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: b8ce2c1d7a28eff441cbf3a95e8f9df644789e70
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34548341"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775558"
 ---
 # <a name="collect-thread-and-process-concurrency-data"></a>Zbieranie danych współbieżności dla wątku i procesu
 
-Metoda profilowania współbieżności Visual Studio Profiling Tools umożliwia zbieranie danych kontencji zasobów, który zawiera informacje o zdarzeniu co synchronizacji, który powoduje, że funkcja w profilowanych aplikacji oczekiwania na dostęp do zasobu.
+Metoda profilowania współbieżności Visual Studio Profiling Tools umożliwia zbieranie danych rywalizacji zasobów, który zawiera informacje na temat każdego zdarzenia synchronizacji, który powoduje, że funkcji w profilowanej aplikacji, aby czekać na dostęp do zasobu.
 
-Można określić współbieżności, metoda profilowania za pomocą jednej z następujących procedur:
+Można określić współbieżności, metoda profilowania przy użyciu jednej z następujących procedur:
 
 - Na pierwszej stronie kreatora profilowania, kliknij przycisk **współbieżności**
 - Na **ogólne** strony okna dialogowego właściwości sesji wydajności, kliknij przycisk **współbieżności**.
-- Na **Eksplorator wydajności** paska narzędzi w **metody** kliknij **współbieżności**.
+- Na **Eksplorator wydajności** narzędzi w **metoda** kliknij **współbieżności**.
 
 ## <a name="common-tasks"></a>Wspólne zadania
 
-Możesz określić dodatkowe opcje w *sesji wydajności *** strony właściwości** okno dialogowe sesji wydajności. Aby otworzyć okno dialogowe:
+Można określić dodatkowe opcje w _sesji wydajności_**stron właściwości** okna dialogowego sesji wydajności. Aby otworzyć to okno dialogowe:
 
-- W **Eksplorator wydajności**, kliknij prawym przyciskiem myszy nazwę sesji wydajności, a następnie kliknij przycisk **właściwości**.
+- W **Eksplorator wydajności**, kliknij prawym przyciskiem myszy nazwę sesji wydajności, a następnie kliknij **właściwości**.
 
-Zadania w poniższej tabeli opisano opcje, które można określić w *sesji wydajności *** strony właściwości** okno dialogowe, gdy profilu przy użyciu metody współbieżności.
+Zadania przedstawione w poniższej tabeli opisano opcje, które można określić w _sesji wydajności_**stron właściwości** okno dialogowe podczas profilowania za pomocą metody współbieżności.
 
-|Zadanie|Zawartość pokrewna|
+|Zadanie|Powiązana zawartość|
 |----------|---------------------|
-|Na **ogólne** Określ szczegóły nazewnictwa dla profilowania wygenerowany plik danych (Vsp).|- [Porady: Ustawianie opcji nazwy pliku danych wydajności](../profiling/how-to-set-performance-data-file-name-options.md)|
-|Na **uruchamianie** Określ aplikację do uruchomienia, jeśli masz wiele projektów .exe w rozwiązaniu kodu.|- [Porady: Określanie plików binarnych do uruchomienia](../profiling/how-to-specify-the-binary-to-start.md)|
-|Na **interakcja warstwowa** Dodaj ADO.NET data wywołania do uruchomienia profilowania.|- [Zbieranie danych o interakcji między warstwy](../profiling/collecting-tier-interaction-data.md)|
-|Na **liczników systemu Windows** strony, określ co najmniej jeden liczników wydajności systemu operacyjnego można dodać do danych profilowania jako znaczniki.|- [Porady: zbieranie danych liczników systemu Windows](../profiling/how-to-collect-windows-counter-data.md)|
-|Na **zaawansowane** strony, określ wersję środowiska wykonawczego .NET Framework do profilowania, jeśli moduły aplikacji używać wielu wersji. Domyślnie jest profilowane pierwszej wersji załadowane.|- [Porady: Określanie środowiska uruchomieniowego .NET Framework](../profiling/how-to-specify-the-dotnet-framework-runtime.md)|
+|Na **ogólne** Określ szczegóły nazewnictwa dla wygenerowanego pliku danych (Vsp) profilowania.|- [Porady: Ustawianie opcji nazwy pliku danych wydajności](../profiling/how-to-set-performance-data-file-name-options.md)|
+|Na **Uruchom** Określ aplikację do uruchomienia, jeśli masz wiele projektów .exe w rozwiązaniu kodu.|- [Porady: Określanie plików binarnych do uruchomienia](../profiling/how-to-specify-the-binary-to-start.md)|
+|Na **funkcję Tier Interaction** strony, należy dodać danych połączeń ADO.NET do uruchomienia profilowania.|- [Zbieranie danych o interakcji między warstwami](../profiling/collecting-tier-interaction-data.md)|
+|Na **liczniki Windows** stronie Określ co najmniej jeden licznik wydajności systemu operacyjnego można dodać do danych profilowania jako znaki.|- [Porady: zbieranie danych licznika Windows](../profiling/how-to-collect-windows-counter-data.md)|
+|Na **zaawansowane** Określ wersję środowiska wykonawczego .NET Framework do profilowania, jeśli moduły aplikacji używać wielu wersji. Domyślnie jest profilowane pierwszej wersji załadowane.|- [Porady: Określanie środowiska uruchomieniowego .NET Framework](../profiling/how-to-specify-the-dotnet-framework-runtime.md)|

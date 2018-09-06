@@ -16,12 +16,12 @@ caps.latest.revision: 21
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 35f2209d970696fee775248d1a991bedf0284d2b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e977ede02f355724f1a93f82f1c688de27e36fa6
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42629808"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774715"
 ---
 # <a name="properties-of-operations-on-uml-class-diagrams"></a>Właściwości operacji w diagramach klas UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ Na diagramie klas UML, można dodać *operacji* do klasy i interfejsy. Operacja 
 |Właściwość|Domyślny|Opis|  
 |--------------|-------------|-----------------|  
 |**Nazwa**|(Nowa nazwa)|Powinny być unikatowe w obrębie typu zawierającego.|  
-|**Parametry**|(Brak)|Listę, która ma postać *nazwa ***:*** typu ***** *nazwa ***:*** typu ***,...** kliknij **[...]**  edytowanie listy.<br /><br /> Typy mogą być typy pierwotne oraz typy, które są zdefiniowane w modelu. Jeśli wprowadzasz nazwę dla nowego typu w tej właściwości, typ zostanie dodany do **nieokreślonym** części Eksploratora modelu UML.|  
+|**Parametry**|(Brak)|Listę, która ma postać _nazwa_**:**_typu_**,** _nazwa_**:**  _Typ_**,...** Kliknij przycisk **[...]**  edytowanie listy.<br /><br /> Typy mogą być typy pierwotne oraz typy, które są zdefiniowane w modelu. Jeśli wprowadzasz nazwę dla nowego typu w tej właściwości, typ zostanie dodany do **nieokreślonym** części Eksploratora modelu UML.|  
 |**Zwracany typ**|(Brak)|**(Brak)** , lub typem pierwotnym lub typem, który jest zdefiniowany w modelu. Jeśli wprowadzasz nazwę dla nowego typu w tej właściwości, typ zostanie dodany do **nieokreślonym** części Eksploratora modelu UML.|  
 |**Warunków końcowych**|(Brak)|Opcjonalny warunek określający relację między stan systemu przed i po wykonaniu operacji.|  
 |**Warunki wstępne**|(Brak)|Opcjonalny warunek określający założeń dotyczących stanu systemu przed rozpoczęciem operacji rozpoczyna wykonywanie.|  

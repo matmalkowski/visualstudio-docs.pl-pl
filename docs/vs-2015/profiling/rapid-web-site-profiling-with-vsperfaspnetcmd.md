@@ -17,12 +17,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 62fad7a98fb6ae61fed40936673bfab9981db656
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e213f6c009ff5fdd5caa48a326c18026f02ec5e6
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42695459"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775290"
 ---
 # <a name="rapid-web-site-profiling-with-vsperfaspnetcmd"></a>Szybkie profilowanie witryny sieci Web za pomocą VSPerfASPNETCmd
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,12 +48,12 @@ Najnowszą wersję tego tematu znajduje się w temacie [szybkie profilowanie wit
 ## <a name="to-collect-application-statistics-by-using-the-sampling-method"></a>W celu zbierania statystyk aplikacji przy użyciu metody próbkowania  
  Próbkowanie to domyślna metoda profilowania **VSPerfASPNETCmd** narzędzie i nie musi być określona w wierszu polecenia. Następujące polecenie w wierszu służy do zbierania statystyk aplikacji z określonej aplikacji sieci Web:  
   
- **polecenie vsperfaspnetcmd***podanym adresem URL*   
+ **polecenie vsperfaspnetcmd***podanym adresem URL*  
   
 ## <a name="to-collect-detailed-timing-data-by-using-the-instrumentation-method"></a>Do zbierania danych o chronometrażu przy użyciu metody Instrumentacji  
  Użyj następującego polecenia, aby zebrać szczegółowe dane czasowe z dynamicznie skompilowanej [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] aplikacji sieci Web:  
   
- **polecenie vsperfaspnetcmd/trace***podanym adresem URL*   
+ **polecenie vsperfaspnetcmd/trace***podanym adresem URL*  
   
  Jeśli chcesz przeprowadzić profilowanie plików dll statycznie skompilowanej w aplikacji sieci Web, muszą instrumentować plików za pomocą [VSInstr](../profiling/vsinstr.md) narzędzie wiersza polecenia. Polecenie vsperfaspnetcmd/trace będzie zawierać dane z instrumentowanych plików.  
   
@@ -87,14 +87,14 @@ Najnowszą wersję tego tematu znajduje się w temacie [szybkie profilowanie wit
   
  Aby zebrać dane interakcji między warstwami przy użyciu danych pamięci .NET:  
   
- **polecenie vsperfaspnetcmd/Memory**[**: okres istnienia**] *  */Porada *** podanym adresem URL*  
+ **polecenie vsperfaspnetcmd/Memory**[**: okres istnienia**] **/Porada**_podanym adresem URL_  
   
 ##  <a name="UsingNoWait"></a> Przy użyciu opcji flagi/nowait  
  Domyślnie, wiersz polecenia nie może zwracać po **vsperfaspnetcmd** polecenia. Następująca opcja składni umożliwia wymuszenie wiersza polecenia, aby zwrócić. W oknie wiersza polecenia można wykonywać inne operacje. Aby zakończyć profilowania, należy użyć **/shutdown** opcję w oddzielnym **vsperfaspnetcmd** polecenia.  
   
  Aby rozpocząć profilowanie:  
   
- **polecenie vsperfaspnetcmd** [*/opcje*] **flagi/nowait *** podanym adresem URL*  
+ **polecenie vsperfaspnetcmd** [*/opcje*] **flagi/nowait**_podanym adresem URL_  
   
  Aby zakończyć profilowania:  
   

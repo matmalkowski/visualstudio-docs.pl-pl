@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 90b42f40a151f9c0213e1cdc4a3882c9022d6b12
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b8555c07dc62237ba202487340ad77b5e04a77e4
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42683553"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775808"
 ---
 # <a name="how-to-suppress-compiler-warnings"></a>Porady: pomijanie ostrzeżeń kompilatora
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ Declutter z dziennika kompilacji, określając jeden lub więcej rodzajów ostrz
   
 2.  Na pasku menu wybierz **projektu**, **Zwolnij projekt**.  
   
-3.  W **Eksploratora rozwiązań**, otwórz menu skrótów dla projektu, a następnie wybierz **Edytuj***ProjectName***.vbproj**.  
+3.  W **Eksploratora rozwiązań**, otwórz menu skrótów dla projektu, a następnie wybierz **Edytuj**_ProjectName_**.vbproj**.  
   
      Plik projektu jest otwarty w edytorze kodu.  
   

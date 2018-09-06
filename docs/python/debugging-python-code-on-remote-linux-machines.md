@@ -1,7 +1,7 @@
 ---
 title: Debugowanie kodu języka Python na zdalne komputery z systemem Linux
 description: Jak używać programu Visual Studio do debugowania kodu w języku Python uruchomiona na zdalnym komputerów z systemem Linux, w tym wymagane kroki konfiguracji, zabezpieczeń i rozwiązywania problemów.
-ms.date: 06/26/2018
+ms.date: 09/03/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fb5fde39285f4e60a1cae9ae512f696130c6f666
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: c17ca59959107d25b7752297ec209f647886362d
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341666"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774694"
 ---
 # <a name="remotely-debug-python-code-on-linux"></a>Zdalne debugowanie kodu w języku Python w systemie Linux
 
@@ -126,6 +126,9 @@ W tych krokach możemy ustawić prosty punkt przerwania, aby zatrzymać proces z
 
     | Visual Studio w wersji | Wersja narzędzi/ptvsd języka Python |
     | --- | --- |
+    | 2017 15.8 | 4.1.1a9 (starszy debuger: 3.2.1.0) |
+    | 2017 wersji 15.7 | 4.1.1a1 (starszy debuger: 3.2.1.0) |
+    | 2017 15.4, 15.5, wersji 15.6 | 3.2.1.0 |
     | 2017 15.3 | 3.2.0 |
     | 2017 15.2 | 3.1.0 |
     | 2017 15.0, 15.1 | 3.0.0 |

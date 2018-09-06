@@ -17,12 +17,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: deb4d216445dbede8b002b273d39613b37fc1c34
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 057bdb7073b1518e20ec0bee461d19478033e3b1
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42632775"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774638"
 ---
 # <a name="collecting-net-memory-allocation-and-lifetime-data"></a>Zbieranie alokacji pamięci .NET i okres istnienia obiektu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,16 +59,16 @@ Najnowszą wersję tego tematu znajduje się w temacie [zbieranie alokacji pami�
   
 1.  W **Eksplorator wydajności**, kliknij prawym przyciskiem myszy sesję wydajności, a następnie kliknij **właściwości**.  
   
-2.  Na *sesji wydajności *** stron właściwości** okno dialogowe, kliknij przycisk **ogólne** , a następnie wybierz pozycję **informacje dotyczące alokacji obiektów .NET zbieranie** pole wyboru.  
+2.  Na _sesji wydajności_**stron właściwości** okno dialogowe, kliknij przycisk **ogólne** , a następnie wybierz pozycję **.NET zbierać informacje dotyczące alokacji obiektów** pole wyboru.  
   
 3.  Do zbierania danych o okresie istnienia obiektu platformy .NET, wybierz **również zbierać informacje dotyczące okresu istnienia obiektu platformy .NET** pole wyboru.  
   
 ## <a name="common-tasks"></a>Typowe zadania  
- Można określić dodatkowe opcje w *sesji wydajności *** stron właściwości** okna dialogowego sesji wydajności. Aby otworzyć to okno dialogowe:  
+ Można określić dodatkowe opcje w _sesji wydajności_**stron właściwości** okna dialogowego sesji wydajności. Aby otworzyć to okno dialogowe:  
   
 -   W **Eksplorator wydajności**, kliknij prawym przyciskiem myszy nazwę sesji wydajności, a następnie kliknij **właściwości**.  
   
- Zadania przedstawione w poniższej tabeli opisano opcje, które można określić w *sesji wydajności *** stron właściwości** okno dialogowe podczas zbierania danych pamięci .NET.  
+ Zadania przedstawione w poniższej tabeli opisano opcje, które można określić w _sesji wydajności_**stron właściwości** okno dialogowe podczas zbierania danych pamięci .NET.  
   
 |Zadanie|Powiązana zawartość|  
 |----------|---------------------|  

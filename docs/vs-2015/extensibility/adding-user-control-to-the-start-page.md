@@ -17,12 +17,12 @@ ms.assetid: 5b7997db-af6f-4fa9-a128-bceb42bddaf1
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5d65dc978e40e1be623e342d5a8f27803cbae753
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e3c2ccd76343cd340725751bf1ce2c332fe96c37
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42670827"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774786"
 ---
 # <a name="adding-user-control-to-the-start-page"></a>Dodawanie kontrolki użytkownika do strony początkowej
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -183,7 +183,7 @@ W tym instruktażu przedstawiono sposób dodawania odwołania biblioteki DLL do 
   
 1.  Skopiuj plik XAML i pomocnicze pliki tekstowe lub znaczników pliki do **%USERPROFILE%\My 2015\StartPages Documents\Visual Studio\\**  folderu.  
   
-2.  Jeśli swoją stronę początkową odwołuje się do żadnych formantów lub typów w zestawach, które nie są instalowane przez program Visual Studio, skopiować te zestawy, a następnie wklej je w * folder instalacji programu Visual Studio ***\Common7\IDE\PrivateAssemblies\\** .  
+2.  Jeśli swoją stronę początkową odwołuje się do żadnych formantów lub typów w zestawach, które nie są instalowane przez program Visual Studio, skopiować te zestawy, a następnie wklej je w _folder instalacji programu Visual Studio_**\Common7\IDE\ PrivateAssemblies\\**.  
   
 3.  Wpisz w wierszu polecenia programu Visual Studio **devenv /rootsuffix Exp** otworzyć doświadczalne wystąpienie programu Visual Studio.  
   

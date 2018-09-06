@@ -17,12 +17,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 935fbd89fa78ae7f05542eb0310f3e07673ee007
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fd63966dba73d57d12d68552e57828b9d17ee84e
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42679068"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775376"
 ---
 # <a name="collecting-thread-and-process-concurrency-data"></a>Zbieranie danych współbieżności dla wątku i procesu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,11 +44,11 @@ Najnowszą wersję tego tematu znajduje się w temacie [danych współbieżnośc
 -   Na **Eksplorator wydajności** narzędzi w **metoda** kliknij **współbieżności**.  
   
 ## <a name="common-tasks"></a>Typowe zadania  
- Można określić dodatkowe opcje w *sesji wydajności *** stron właściwości** okna dialogowego sesji wydajności. Aby otworzyć to okno dialogowe:  
+ Można określić dodatkowe opcje w _sesji wydajności_**stron właściwości** okna dialogowego sesji wydajności. Aby otworzyć to okno dialogowe:  
   
 -   W **Eksplorator wydajności**, kliknij prawym przyciskiem myszy nazwę sesji wydajności, a następnie kliknij **właściwości**.  
   
- Zadania przedstawione w poniższej tabeli opisano opcje, które można określić w *sesji wydajności *** stron właściwości** okno dialogowe podczas profilowania za pomocą metody współbieżności.  
+ Zadania przedstawione w poniższej tabeli opisano opcje, które można określić w _sesji wydajności_**stron właściwości** okno dialogowe podczas profilowania za pomocą metody współbieżności.  
   
 |Zadanie|Powiązana zawartość|  
 |----------|---------------------|  

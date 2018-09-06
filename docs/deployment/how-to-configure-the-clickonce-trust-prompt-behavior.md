@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: badee4bfb98ef34f8d730f35d29f456d783d7d43
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 103fcd8b47e423aaa8d66c3df96afe3598818de2
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39155100"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774810"
 ---
 # <a name="how-to-configure-the-clickonce-trust-prompt-behavior"></a>Porady: Konfigurowanie funkcji ClickOnce zaufania monitowania
 Monit o udzielenie zaufania ClickOnce do kontroli można skonfigurować, czy użytkownicy końcowi otrzymają możliwość instalowania aplikacji ClickOnce, takich jak aplikacje Windows Presentation Foundation, aplikacji konsoli, przeglądarki WPF w aplikacjach Windows Forms aplikacje i rozwiązania dla pakietu Office. Możesz skonfigurować monit o udzielenie zaufania poprzez ustawienie kluczy rejestru na komputerze użytkownika końcowego.  
@@ -59,11 +59,11 @@ Monit o udzielenie zaufania ClickOnce do kontroli można skonfigurować, czy uż
   
     1.  Kliknij przycisk **Start**, a następnie kliknij przycisk **Uruchom**.  
   
-    2.  W **Otwórz** wpisz `regedit32`, a następnie kliknij przycisk **OK**.  
+    2.  W **Otwórz** wpisz `regedit`, a następnie kliknij przycisk **OK**.  
   
 2.  Znajdź następujący klucz rejestru:  
   
-     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\.NETFramework\Security\TrustManager\PromptingLevel**  
+     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\. NETFramework\Security\TrustManager\PromptingLevel**  
   
      Jeśli klucz nie istnieje, należy go utworzyć.  
   
@@ -122,7 +122,7 @@ Monit o udzielenie zaufania ClickOnce do kontroli można skonfigurować, czy uż
   
 2.  Znajdź następujący klucz rejestru:  
   
-     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\.NETFramework\Security\TrustManager\PromptingLevel** 
+     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\. NETFramework\Security\TrustManager\PromptingLevel** 
   
      Jeśli klucz nie istnieje, należy go utworzyć.  
   

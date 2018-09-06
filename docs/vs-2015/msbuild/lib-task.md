@@ -31,12 +31,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c1f2036ee8091377d96895aafec7e2996e3eb1dc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dcdcece820af764e627aafc43ef405c627724b68
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42690750"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775969"
 ---
 # <a name="lib-task"></a>LIB — Zadanie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ Opakowuje narzędzia Microsoft 32-bitowy Library Manager, lib.exe. Menedżer bib
 |---------------|-----------------|  
 |**AdditionalDependencies**|Opcjonalnie **String []** parametru.<br /><br /> Określa dodatkowe elementy do dodania do wiersza polecenia.|  
 |**AdditionalLibraryDirectories**|Opcjonalnie **String []** parametru.<br /><br /> Zastępuje ścieżki biblioteki środowiska. Określ nazwę katalogu.<br /><br /> Aby uzyskać więcej informacji, zobacz [/libpath — (dodatkowa Libpath)](http://msdn.microsoft.com/library/7240af0b-9a3d-4d53-8169-2a92cd6958ba).|  
-|**AdditionalOptions**|Opcjonalnie **ciąg** parametru.<br /><br /> Lista opcji lib.exe określony w wierszu polecenia. Na przykład **"*** / /option# /option2 opcja1*". Ten parametr umożliwia określenie opcji lib.exe, które nie są reprezentowane przez inne **LIB** parametru zadania.<br /><br /> Aby uzyskać więcej informacji, zobacz [uruchamianie LIB](http://msdn.microsoft.com/library/d54f5c81-7147-4b2c-a8db-68ce6eb1eabd).|  
+|**AdditionalOptions**|Opcjonalnie **ciąg** parametru.<br /><br /> Lista opcji lib.exe określony w wierszu polecenia. Na przykład ** "_/option1 /option2 /option#_". Ten parametr umożliwia określenie opcji lib.exe, które nie są reprezentowane przez inne **LIB** parametru zadania.<br /><br /> Aby uzyskać więcej informacji, zobacz [uruchamianie LIB](http://msdn.microsoft.com/library/d54f5c81-7147-4b2c-a8db-68ce6eb1eabd).|  
 |**DisplayLibrary**|Opcjonalnie **ciąg** parametru.<br /><br /> Wyświetla informacje o bibliotece wyjściowej. Określ nazwę pliku, aby przekierować dane do pliku. Określ "CON" lub nie rób przekierować dane do konsoli.<br /><br /> Ten parametr odnosi się do **/LIST** opcji lib.exe.|  
 |**ErrorReporting**|Opcjonalnie **ciąg** parametru.<br /><br /> Określa, jak wysyłać informacje o wewnętrznych błędach do firmy Microsoft, jeśli lib.exe zakończy się niepowodzeniem w czasie wykonywania.<br /><br /> Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.<br /><br /> -   **NoErrorReport** -   **/errorreport: Brak**<br />-   **PromptImmediately** - **/ERRORREPORT:PROMPT**<br />-   **QueueForNextLogin** - **/ERRORREPORT:QUEUE**<br />-   **SendErrorReport** -   **/errorreport: Send**<br /><br /> Aby uzyskać więcej informacji, zobacz **/errorreport** opcji wiersza polecenia w [uruchamianie LIB](http://msdn.microsoft.com/library/d54f5c81-7147-4b2c-a8db-68ce6eb1eabd).|  
 |**ExportNamedFunctions**|Opcjonalnie **String []** parametru.<br /><br /> Określa jedną lub więcej funkcji do wyeksportowania.<br /><br /> Ten parametr odnosi się do **/EXPORT:** opcji lib.exe.|  

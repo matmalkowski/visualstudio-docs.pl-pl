@@ -5,17 +5,17 @@ ms.date: 07/03/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: 66b5b4eb-13b5-4071-98d2-87fafa4598a8
-author: dantogno
-ms.author: v-davian
+author: conceptdev
+ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: bdc196ed997410957412ec02ff4eb4912b3ee63c
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: ac45a535a3c9f3a8ec8a45e00d46a028db51b014
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39252469"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775313"
 ---
 # <a name="get-started-with-visual-studio-tools-for-unity"></a>Rozpoczynanie pracy z usługą Visual Studio Tools for Unity
 

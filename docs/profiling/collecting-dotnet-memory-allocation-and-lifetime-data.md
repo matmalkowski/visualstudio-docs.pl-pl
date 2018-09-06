@@ -1,5 +1,5 @@
 ---
-title: Zbieranie alokacji pamięci .NET i okres istnienia obiektu | Dokumentacja firmy Microsoft
+title: Zbieranie alokacji pamięci .NET i danych o okresie istnienia | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -12,72 +12,72 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7e8c63316cc4ca13f74e1b66b2346cf329465e0c
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 2484072a0f85b002ff2e59512f44ca0826540fd3
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34548638"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775209"
 ---
 # <a name="collect-net-memory-allocation-and-lifetime-data"></a>Zbieranie danych alokacji pamięci .NET i okresu istnienia
 
-Visual Studio Profiling Tools obsługują zbieranie alokacji pamięci .NET i danych o okresie istnienia obiektu, które pomaga wykrywać problemy z wydajnością związane z pamięcią w aplikacji.
+Visual Studio Profiling Tools obsługują zbieranie alokacji pamięci .NET i danych o okresie istnienia obiektu, który ułatwia wykrywanie problemów z wydajnością związane z pamięcią w aplikacji.
 
-- Dane dotyczące alokacji pamięci .NET obejmuje rozmiaru i liczby obiektów pamięci .NET Framework, które zostały przydzielone.
+- Dane o alokacji pamięci .NET zawiera, rozmiar i liczba przydzielonych obiektów pamięci .NET Framework.
 
 - Danych o okresie istnienia obiektu zawiera, rozmiar i liczba obiektów pamięci .NET Framework, które zostały odzyskane w trzy generacje wyrzucania elementów w kolekcji.
 
 > [!NOTE]
-> Ulepszone funkcje zabezpieczeń w systemie Windows 8 i Windows Server 2012 wymagane znaczących zmian w sposobie profilera Visual Studio zbiera dane na tych platformach. Aplikacje platformy uniwersalnej systemu Windows wymagają również nowe techniki kolekcji. Zobacz [narzędzi wydajności w przypadku aplikacji systemu Windows 8 i Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
+> Ulepszone funkcje zabezpieczeń w systemie Windows 8 i Windows Server 2012 wymagają znaczących zmian w taki sposób, programu Visual Studio profiler zbiera dane na tych platformach. Aplikacje platformy uniwersalnej systemu Windows również wymagają nowych technik zbierania. Zobacz [narzędzia do oceny wydajności w aplikacjach systemu Windows 8 i Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
 
-Można zbierać dane za pomocą próbki lub metoda profilowania instrumentacji.
+Za pomocą pobierania próbek lub metoda profilowania Instrumentacja może zbierać dane.
 
-- Przy użyciu metody próbkowania profilera śledzi wszystkie alokacji pamięci .NET i obiekty, które są generowane przez proces, która została uruchomiona lub dołączony do.
+- Przy użyciu metody próbkowania profilera śledzi wszystkie alokacje pamięci .NET i obiekty, które są generowane przez proces, który został uruchomiony lub dołączone do.
 
-- Przy użyciu metody Instrumentacji profilera śledzenie tylko alokacji pamięci .NET i obiekty, które są generowane przez moduły Instrumentacją.
+- Przy użyciu metody Instrumentacji profilera umożliwia śledzenie tylko alokacji pamięci .NET i obiekty, które są generowane przez moduły instrumentowanych.
 
 > [!IMPORTANT]
-> Gdy są zbieranie danych pamięci .NET (alokacji, okresy istnienia obiektu lub oba), za pomocą metody pobierania próbek, wszystkie zdarzenia próbkowania określone przez użytkownika są ignorowane, a zdarzenia alokacji odpowiedniej ilości pamięci są używane do zbierania danych.
+> Zbierając dane pamięci platformy .NET (alokacji, czasów istnienia obiektów lub obie) przy użyciu metody próbkowania, wszystkie zdarzenia próbkowania określone przez użytkownika są ignorowane, a zdarzenia alokacji odpowiedniej ilości pamięci są używane do zbierania danych.
 
-Włączenie profilowania alokacji pamięci of.NET, należy również włączyć widok alokacji. Włączenie profilowania danych o okresie istnienia .NET, należy również włączyć widok okresu istnienia obiektów. Aby uzyskać więcej informacji, zobacz [Widok alokacji](../profiling/dotnet-memory-allocations-view.md) i [widok okresu istnienia obiektu](../profiling/object-lifetime-view.md).
+Włączenie profilowania alokacji pamięci of.NET, możesz również włączyć widok alokacji. Włączenie profilowania danych o okresie istnienia .NET, możesz również włączyć widok okresu istnienia obiektów. Aby uzyskać więcej informacji, zobacz [Widok alokacji](../profiling/dotnet-memory-allocations-view.md) i [widok okresu istnienia obiektu](../profiling/object-lifetime-view.md).
 
-Aby uzyskać informacje dotyczące zbierania danych pamięci .NET przy użyciu narzędzia wiersza polecenia narzędzi profilowania, zobacz za pomocą metod .NET pamięci zbieranie alokacji pamięci oraz danych o okresie istnienia obiektu w [przy użyciu profilowania metody z wiersza polecenia](../profiling/using-profiling-methods-to-collect-performance-data-from-the-command-line.md).
+Aby dowiedzieć się, jak zbierać dane pamięci platformy .NET przy użyciu narzędzi wiersza poleceń Profiling Tools, zobacz przy użyciu metod pamięci .NET w celu zbierania alokacji pamięci i danych o okresie istnienia obiektu w [przy użyciu profilowania metody z wiersza polecenia](../profiling/using-profiling-methods-to-collect-performance-data-from-the-command-line.md).
 
-## <a name="to-collect-net-memory-data"></a>Zbieranie danych pamięci .NET
+## <a name="to-collect-net-memory-data"></a>Do zbierania danych pamięci .NET
 
-1. W **Eksplorator wydajności**, kliknij prawym przyciskiem myszy sesję wydajności, a następnie kliknij przycisk **właściwości**.
+1. W **Eksplorator wydajności**, kliknij prawym przyciskiem myszy sesję wydajności, a następnie kliknij **właściwości**.
 
-2. Na *sesji wydajności* **strony właściwości** okno dialogowe, kliknij przycisk **ogólne** , a następnie wybierz **.NET zbierać informacje dotyczące alokacji obiektów** pole wyboru.
+2. Na *sesji wydajności* **stron właściwości** okno dialogowe, kliknij przycisk **ogólne** , a następnie wybierz pozycję **.NET zbierać informacje dotyczące alokacji obiektów** pole wyboru.
 
 3. Do zbierania danych o okresie istnienia obiektu platformy .NET, wybierz **również zbierać informacje dotyczące okresu istnienia obiektu platformy .NET** pole wyboru.
 
 ## <a name="common-tasks"></a>Wspólne zadania
 
-Możesz określić dodatkowe opcje w *sesji wydajności *** strony właściwości** okno dialogowe sesji wydajności. Aby otworzyć okno dialogowe:
+Można określić dodatkowe opcje w _sesji wydajności_**stron właściwości** okna dialogowego sesji wydajności. Aby otworzyć to okno dialogowe:
 
-- W **Eksplorator wydajności**, kliknij prawym przyciskiem myszy nazwę sesji wydajności, a następnie kliknij przycisk **właściwości**.
+- W **Eksplorator wydajności**, kliknij prawym przyciskiem myszy nazwę sesji wydajności, a następnie kliknij **właściwości**.
 
-Zadania w poniższej tabeli opisano opcje, które można określić w *sesji wydajności *** strony właściwości** okno dialogowe podczas zbierania danych pamięci .NET.
+Zadania przedstawione w poniższej tabeli opisano opcje, które można określić w _sesji wydajności_**stron właściwości** okno dialogowe podczas zbierania danych pamięci .NET.
 
-|Zadanie|Zawartość pokrewna|
+|Zadanie|Powiązana zawartość|
 |----------|---------------------|
-|Na **ogólne** Określ szczegóły nazewnictwa dla profilowania wygenerowany plik danych (Vsp).|- [Zbieranie danych pamięci .NET alokacji i okresem istnienia](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)<br />- [Porady: Ustawianie opcji nazwy pliku danych wydajności](../profiling/how-to-set-performance-data-file-name-options.md)|
-|Na **uruchamianie** wybierz aplikację do uruchomienia, jeśli masz wiele projektów .exe w rozwiązaniu kodu.|- [Zbieranie danych o interakcji między warstwy](../profiling/collecting-tier-interaction-data.md)|
-|Na **interakcja warstwowa** Dodaj ADO.NET data wywołania do uruchomienia profilowania.|- [Zbieranie danych o interakcji między warstwy](../profiling/collecting-tier-interaction-data.md)|
-|Na **zdarzeń systemu Windows** Określ co najmniej jednego zdarzenia funkcji Śledzenie zdarzeń systemu Windows () do zbierania danych próbkowania.|- [Porady: zbieranie danych funkcji Śledzenie zdarzeń systemu Windows ()](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)|
-|Na **liczników systemu Windows** strony, określ co najmniej jeden liczników wydajności systemu operacyjnego można dodać do danych profilowania jako znaczniki.|- [Porady: zbieranie danych liczników systemu Windows](../profiling/how-to-collect-windows-counter-data.md)|
-|Na **zaawansowane** strony, określ wersję środowiska uruchomieniowego .NET Framework do profilowania, jeśli moduły aplikacji używać wielu wersji. Domyślnie jest profilowane pierwszej wersji załadowane.|- [Porady: Określanie środowiska uruchomieniowego .NET Framework](../profiling/how-to-specify-the-dotnet-framework-runtime.md)|
+|Na **ogólne** Określ szczegóły nazewnictwa dla wygenerowanego pliku danych (Vsp) profilowania.|- [Zbieranie danych alokacji i okresie istnienia pamięci platformy .NET](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)<br />- [Porady: Ustawianie opcji nazwy pliku danych wydajności](../profiling/how-to-set-performance-data-file-name-options.md)|
+|Na **Uruchom** wybierz aplikację do uruchomienia, jeśli masz wiele projektów .exe w rozwiązaniu kodu.|- [Zbieranie danych o interakcji między warstwami](../profiling/collecting-tier-interaction-data.md)|
+|Na **funkcję Tier Interaction** strony, należy dodać danych połączeń ADO.NET do uruchomienia profilowania.|- [Zbieranie danych o interakcji między warstwami](../profiling/collecting-tier-interaction-data.md)|
+|Na **zdarzeń Windows** Określ jedno lub więcej zdarzeń śledzenie zdarzeń dla Windows (ETW) mają być zbierane dane z próbkowania.|- [Porady: zbieranie danych zdarzeń śledzenia dla Windows (ETW)](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)|
+|Na **liczniki Windows** stronie Określ co najmniej jeden licznik wydajności systemu operacyjnego można dodać do danych profilowania jako znaki.|- [Porady: zbieranie danych licznika Windows](../profiling/how-to-collect-windows-counter-data.md)|
+|Na **zaawansowane** Określ wersję środowiska uruchomieniowego .NET Framework do profilowania, jeśli moduły aplikacji używać wielu wersji. Domyślnie jest profilowane pierwszej wersji załadowane.|- [Porady: Określanie środowiska uruchomieniowego .NET Framework](../profiling/how-to-specify-the-dotnet-framework-runtime.md)|
 
 ## <a name="instrumentation-tasks"></a>Zadania Instrumentacji
 
-Zadania w poniższej tabeli są opcje w **strony właściwości** okno dialogowe, które są specyficzne dla profilowania przy użyciu metody instrumentacji.
+Zadania przedstawione w poniższej tabeli są opcje w **stron właściwości** okno dialogowe, które są specyficzne dla profilowania przy użyciu metody instrumentacji.
 
-|Zadanie|Zawartość pokrewna|
+|Zadanie|Powiązana zawartość|
 |----------|---------------------|
-|Na **plików binarnych** Określ lokalizację kopii instrumentowanych modułów. Domyślnie oryginalnych danych binarnych są przenoszone do folderu kopii zapasowej.|- [Porady: przemieszczanie instrumentowanych plików binarny](../profiling/how-to-relocate-instrumented-binaries.md)|
-|Na **Instrumentacji** strony, Wyklucz małe funkcje z profilowanie, aby zmniejszyć profilowania Profiluj kod JavaScript na stronach sieci Web ASP.NET w nakładów pracy i określić polecenia uruchamiane w wierszu polecenia przed i po nich proces instrumentacji.|- [Porady: wykluczanie lub uwzględnianie krótkich funkcji z Instrumentacji](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)<br />- [Porady: profilowanie kodu JavaScript na stronach sieci Web](../profiling/how-to-profile-javascript-code-in-web-pages.md)<br />- [Porady: Określanie poleceń Pre-i POST-instrumentalnych](../profiling/how-to-specify-pre-and-post-instrument-commands.md)|
-|Na **liczniki CPU** strony, określ co najmniej jeden liczniki wydajności procesora do dodania do danych profilowania.|- [Porady: zbieranie danych licznika Procesora](../profiling/how-to-collect-cpu-counter-data.md)|
-|Na **zaawansowane** określ wszelkie dodatkowe VSInstr.exe opcje, że chcesz, takich jak opcje, aby dołączyć lub wykluczyć określone funkcje. Aby uzyskać więcej informacji na temat opcji VSInstr, zobacz [VSInstr](../profiling/vsinstr.md)|- [Porady: Określanie dodatkowych opcji Instrumentacji](../profiling/how-to-specify-additional-instrumentation-options.md)<br />- [Porady: ograniczanie Instrumentacji do określonych funkcji](../profiling/how-to-limit-instrumentation-to-specific-functions.md)|
+|Na **pliki binarne** Określ lokalizację instrumentowanych kopie modułów. Domyślnie oryginalnych danych binarnych są przenoszone do folderu kopii zapasowej.|- [Porady: przemieszczanie instrumentowanych plików binarny](../profiling/how-to-relocate-instrumented-binaries.md)|
+|Na **Instrumentacji** strony, Wyklucz małe funkcje z profilowania, aby zmniejszyć profilowania obciążenie, Profiluj kod JavaScript na stronach sieci Web platformy ASP.NET, a także określić polecenie do uruchomienia w wierszu polecenia przed i po proces instrumentacji.|- [Porady: wykluczanie lub uwzględnianie krótkich funkcji z Instrumentacji](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)<br />- [Porady: profilowanie kodu JavaScript na stronach sieci Web](../profiling/how-to-profile-javascript-code-in-web-pages.md)<br />- [Porady: Określanie poleceń przed i po Instrumentacji](../profiling/how-to-specify-pre-and-post-instrument-commands.md)|
+|Na **liczniki CPU** stronie Określ co najmniej jeden licznik wydajności procesora do dodania do danych profilowania.|- [Porady: zbieranie danych licznika Procesora](../profiling/how-to-collect-cpu-counter-data.md)|
+|Na **zaawansowane** określ wszelkie dodatkowe VSInstr.exe żądane opcje, takie jak opcje do dołączania lub wykluczania określonych funkcji. Aby uzyskać więcej informacji na temat opcji VSInstr zobacz [VSInstr](../profiling/vsinstr.md)|- [Porady: Określanie dodatkowych opcji Instrumentacji](../profiling/how-to-specify-additional-instrumentation-options.md)<br />- [Instrukcje: ograniczanie Instrumentacji do określonych funkcji](../profiling/how-to-limit-instrumentation-to-specific-functions.md)|
 
 ## <a name="see-also"></a>Zobacz także
 

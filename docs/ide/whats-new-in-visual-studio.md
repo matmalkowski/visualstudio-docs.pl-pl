@@ -2,7 +2,7 @@
 title: Co nowego w programie Visual Studio 2017
 description: Dowiedz się więcej o nowych funkcjach w programie Visual Studio 2017.
 ms.custom: ''
-ms.date: 08/21/2018
+ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: conceptual
@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3154264938753cf9be41cdd5ef8964f49664d730
-ms.sourcegitcommit: bd6f04aff96201d514157de16ed6ddb8593d02b6
+ms.openlocfilehash: 4c6c09c8431cb2a50c0d76ebf476e67730192966
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42755512"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774990"
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Co&#39;s Nowość w programie Visual Studio 2017
 
@@ -32,14 +32,14 @@ Chcesz uaktualnienie z poprzedniej wersji programu Visual Studio? Oto, co progra
 
 Poniżej przedstawiono podsumowanie wysokiego poziomu zmiany wprowadzone od poprzedniej wersji programu Visual Studio 2015:
 
-* **[Nowe spojrzenie podstawy](#redefined-fundamentals)**. Nowe środowisko instalacji oznacza, że można zainstalować szybciej i zainstalować ma gdy jej potrzebujesz. Czy chcesz załadować dużych rozwiązań i projektów lub działa na foldery kodu lub nawet w przypadku pojedynczego pliku kodu programu Visual Studio uruchamia się szybciej. Ponadto program Visual Studio pozwala na skoncentrowanie się na szerszej perspektywie, szczególnie w przypadku zespołów stosujących metodykę DevOps.
-* **[Wydajność i produktywność](#performance-and-productivity)**. Koncentrowaliśmy się na nowe i nowoczesne mobilnych, chmury i możliwości tworzenia aplikacji klasycznych. Udoskonaliliśmy także ogólną przejęcia, wydajność, oraz, ogólna wydajność pracy deweloperskiej środowisk. Visual Studio rozpoczyna się szybciej, jest bardziej elastyczny i zużywa mniej pamięci niż przed.
+* **[Nowe spojrzenie podstawy](#redefined-fundamentals)**. Nowe środowisko instalacji oznacza, że można zainstalować szybciej i zainstalować ma gdy jej potrzebujesz.
+* **[Wydajność i produktywność](#performance-and-productivity)**. Koncentrowaliśmy się na nowe i nowoczesne mobilnych, chmury i możliwości tworzenia aplikacji klasycznych. Ponadto program Visual Studio rozpoczyna się szybciej, jest bardziej elastyczny i zużywa mniej pamięci niż wcześniej.
 * **[Tworzenie aplikacji za pomocą platformy Azure w chmurze](#cloud-app-development-with-azure)**. Wbudowany zestaw narzędzi platformy Azure umożliwiają łatwe tworzenie aplikacji chmurze obsługiwane przez Microsoft Azure. Program Visual Studio ułatwia konfigurowanie, tworzenie, debugowanie, pakowanie i wdrażanie aplikacji i usług na platformie Azure.
-* **[Tworzenie aplikacji Windows](#windows-app-development)**. Użyj szablonów platformy uniwersalnej systemu Windows w programie Visual Studio 2017 do utworzenia pojedynczego projektu dla wszystkich urządzeń z systemem Windows 10 &ndash; komputer, tablet, telefon, Xbox, HoloLens, Surface Hub i więcej. Następnie produkcji pakietu aplikacji i przesłać go do Microsoft Store z poziomu programu Visual Studio do swojej aplikacji dla klientów.
-* **[Tworzenie aplikacji mobilnych](#mobile-app-development)**. W programie Visual Studio 2017 można wprowadzać innowacje i uzyskuj wyniki szybciej za pomocą platformy Xamarin, która łączy wymagań mobilnych dla wielu platform przy użyciu jednego rdzenia kodu i zestawu umiejętności. Aplikacje mobilne z istniejących zespołów, inwestycje w technologie i kodu C# na dostarczanie środowisk przeznaczonych dla konsumentów, przed terminem, w ramach budżetu. Przyspiesz na każdym kroku życia aplikacji mobilnej do dostarczania światowej klasy klienta lub portfela aplikacji użytkowych, aby umożliwić pracownikom. (I **nowego w programie 15.8**: deweloperów aplikacji mobilnych, którzy korzystają z funkcji Hyper-V mają dostęp do szybki emulator systemu Android, która zawsze obsługuje najnowsze interfejsy API systemu Android, współpracuje z usługi Google Play gotowych, obsługuje wszystkie funkcje programu Android Emulator, m.in. kamery, geolokalizacja i szybki rozruch.)
-* **[Programowanie dla wielu platform](#cross-platform-development)**. Bezproblemowo dostarczać oprogramowanie na każdą platformę docelową. Rozszerz procesy DevOps do programu SQL Server za pomocą narzędzia danych Redgate i bezpiecznie Automatyzuj wdrożenia baz danych z programu Visual Studio. Możesz też użyć platformy .NET Core do pisania aplikacji i bibliotek, które uruchomienie niemodyfikowanego między systemami operacyjnymi z systemem macOS, Linux i Windows. (I **nowe w programie 15.3**: Uzyskaj side-by-side obsługę zestawów .NET Core 2.0 SDK.)
-* **[Programowanie gier](#games-development)**. Program Visual Studio Tools for Unity (VSTU) można użyć programu Visual Studio tworzyć gry i Edytor skrypty w języku C#, a następnie użyć jej zaawansowany debuger, można znaleźć i naprawić błędy. Najnowsza wersja narzędzi vstu zapewnia kolorowania dla języka programu do cieniowania ShaderLab mechanizmu Unity, lepszą obsługę wizualizacji debugera i ulepszone generowanie kodu dla Kreatora MonoBehavior. Narzędzia VSTU także niesie plików projektu środowiska Unity, komunikaty konsoli i możliwości, aby rozpocząć tworzenie gry w programie Visual Studio, dzięki czemu spędzisz mniej czasu przełączanie z edytora środowiska Unity podczas pisania kodu.
-* **[Opracowywania sztucznej Inteligencji](#ai-development)**. Program Visual Studio Tools for AI (**Nowość w wersji 15.5**), można użyć z funkcji produktywności programu Visual Studio, aby przyspieszyć wprowadzanie innowacji sztucznej Inteligencji. Twórz, Testuj i wdrażaj uczenia głębokiego / sztucznej Inteligencji rozwiązania, które bezproblemowo integrują się z usługi Azure Machine Learning eksperymentowania niezawodne możliwości, takie jak przesyłanie, przygotowania danych i zadań szkoleniowych modelu w sposób niewidoczny dla użytkownika do różnych celów obliczeń. Visual Studio Tools for AI zapewnia obsługę metryki niestandardowe oraz, uruchom śledzenie historii, które umożliwia odtwarzaniem do nauki o danych i inspekcji.
+* **[Tworzenie aplikacji Windows](#windows-app-development)**. Użyj szablonów platformy uniwersalnej systemu Windows w programie Visual Studio 2017 do utworzenia pojedynczego projektu dla wszystkich urządzeń z systemem Windows 10 &ndash; komputer, tablet, telefon, Xbox, HoloLens, Surface Hub i więcej.
+* **[Tworzenie aplikacji mobilnych](#mobile-app-development)**. Wprowadzaj innowacje i uzyskuj wyniki szybciej za pomocą platformy Xamarin, która łączy wymagań dla wielu platform mobilnych do jednego rdzenia kodu i zestawu umiejętności.
+* **[Programowanie dla wielu platform](#cross-platform-development)**. Bezproblemowo dostarczać oprogramowanie na każdą platformę docelową. Rozszerz procesy DevOps do programu SQL Server za pomocą narzędzia danych Redgate i bezpiecznie Automatyzuj wdrożenia baz danych z programu Visual Studio. Możesz też użyć platformy .NET Core do pisania aplikacji i bibliotek, które uruchomienie niemodyfikowanego między systemami operacyjnymi z systemem macOS, Linux i Windows.
+* **[Programowanie gier](#games-development)**. Program Visual Studio Tools for Unity (VSTU) można użyć programu Visual Studio tworzyć gry i Edytor skrypty w języku C#, a następnie użyć jej zaawansowany debuger, można znaleźć i naprawić błędy. 
+* **[Opracowywania sztucznej Inteligencji](#ai-development)**. Za pomocą programu Visual Studio Tools for AI można użyć z funkcji produktywności programu Visual Studio, aby przyspieszyć wprowadzanie innowacji sztucznej Inteligencji. Twórz, Testuj i wdrażaj uczenia głębokiego / rozwiązań sztucznej Inteligencji, bezproblemowo zintegrować z usługą Azure Machine Learning eksperymentowania niezawodne możliwości.
 
 > [!NOTE]
 > Aby uzyskać pełną listę nowych funkcji i funkcjonalności w programie Visual Studio 2017, zobacz [bieżące informacje o wersji](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default). Oraz uzyskać wgląd w oferty z nowymi funkcjami, zobacz [informacje o wersji zapoznawczej](/visualstudio/releasenotes/vs2017-preview-relnotes?context=visualstudio/default).
@@ -106,11 +106,11 @@ Menedżer roamingu rozszerzeń śledzi wszystkie rozszerzenia, które należy za
 
 Gdy używasz Menedżer roamingu rozszerzeń, istnieją trzy typy ikon na liście:
 
-* ![Ikony rozszerzeń korzystających z roamingu](../ide/media/vs2017ide-roamedicon.png) ***rozszerzeń korzystających z roamingu***: rozszerzenie, które są częścią tej listy roamingu, ale nie została zainstalowana na tym komputerze.
+* ![Ikony rozszerzeń korzystających z roamingu](../ide/media/vs2017ide-roamedicon.png)  **_rozszerzeń korzystających z roamingu_**: rozszerzenie, które są częścią tej listy roamingu, ale nie została zainstalowana na tym komputerze.
   (Można zainstalować je przy użyciu **Pobierz** przycisku.)
-* ![Ikony rozszerzeń korzystających z roamingu i zainstalowanych](../ide/media/vs2017ide-roamedinstalledicon.png) ***korzystania z roamingu i zainstalowane***: wszystkie rozszerzenia będące częścią listy roamingu i zainstalowane w środowisku deweloperskim.
+* ![Ikony rozszerzeń korzystających z roamingu i zainstalowanych](../ide/media/vs2017ide-roamedinstalledicon.png)  **_korzystania z roamingu i zainstalowane_**: wszystkie rozszerzenia będące częścią listy roamingu i zainstalowane w środowisku deweloperskim.
   (Jeśli zdecydujesz się zrezygnować z roamingu, możesz usunąć te elementy przy użyciu **Zatrzymaj Roaming** przycisku.)
-* ![Ikona zainstalowane](../ide/media/vs2017ide-installedicon.png) ***zainstalowane***: wszystkie rozszerzenia, które są zainstalowane w tym środowisku, ale nie są częścią listy roamingu.
+* ![Ikona zainstalowane](../ide/media/vs2017ide-installedicon.png)  **_zainstalowane_**: wszystkie rozszerzenia, które są zainstalowane w tym środowisku, ale nie są częścią listy roamingu.
   (Rozszerzenia można dodać do listy roamingu, używając **Rozpocznij Roaming** przycisku.)
 
 Rozszerzenia, które możesz pobrać, gdy użytkownik jest zalogowany, zostanie dodany do listy jako **korzystania z roamingu i zainstalowane**. Rozszerzenie staje się częścią listy roamingu, który umożliwia dostęp do nich z dowolnego komputera.

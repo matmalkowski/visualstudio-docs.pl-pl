@@ -32,12 +32,12 @@ caps.latest.revision: 36
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1bfacd5061cad5d737202748e2270281c81bef26
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8674ee9c4141b9bfe8511e67c4cd6113f8f0fed5
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42680311"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775446"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger"></a>Określanie plików symboli (.pdb) i plików źródłowych w debugerze programu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -146,7 +146,7 @@ Plik bazy danych programu (.pdb), nazywany także plikiem symboli, mapuje identy
   
 -   Aby zmienić ścieżki wyszukiwania, wybierz niezaznaczoną ścieżkę lub wybierz **New** i wprowadź nową ścieżkę. Wybierz **obciążenia** wyszukać ponownie ścieżki i załadować plik symbolu, jeśli zostanie znaleziony.  
   
--   Wybierz **Przeglądaj i Przeszukuj***nazwę pliku wykonywalnego***...**  zastąpić wszelkie opcje symbolu i ponów próbę ścieżki wyszukiwania. Plik symboli jest ładowany, jeśli zostanie odnaleziony, lub wyświetlany jest Eksplorator plików, aby użytkownik mógł ręczne wybrać plik symboli.  
+-   Wybierz **Przeglądaj i Przeszukuj**_nazwę pliku wykonywalnego_**...**  zastąpić wszelkie opcje symbolu i ponów próbę ścieżki wyszukiwania. Plik symboli jest ładowany, jeśli zostanie odnaleziony, lub wyświetlany jest Eksplorator plików, aby użytkownik mógł ręczne wybrać plik symboli.  
   
 -   Wybierz **Zmień ustawienia symboli...**  do wyświetlenia **debugowanie** / **symbole** strony okna dialogowego VS opcje.  
   

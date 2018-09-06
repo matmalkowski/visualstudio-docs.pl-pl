@@ -36,12 +36,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 624ec4709ab913e3e26bec8099f1e83c2c628862
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b0aaf4d5f6862e2b5ef40b88e8041aa9ccc5a317
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42679722"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775604"
 ---
 # <a name="link-task"></a>Połącz — Zadanie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,7 +82,7 @@ Opakowuje narzędzia konsolidatora Visual C++ link.exe. Narzędzia konsolidatora
   
      Opcjonalnie **ciąg** parametru.  
   
-     Lista opcji konsolidatora, jak określono w wierszu polecenia. Na przykład **"*** / /option# /option2 opcja1*". Użyj tego parametru, aby określić opcje konsolidatora, które nie są reprezentowane przez inne **łącze** parametru zadania.  
+     Lista opcji konsolidatora, jak określono w wierszu polecenia. Na przykład **"**_/option1 /option2 /option#_". Użyj tego parametru, aby określić opcje konsolidatora, które nie są reprezentowane przez inne **łącze** parametru zadania.  
   
      Aby uzyskać więcej informacji, zobacz [opcje konsolidatora](http://msdn.microsoft.com/library/c1d51b8a-bd23-416d-81e4-900e02b2c129).  
   

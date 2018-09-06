@@ -20,12 +20,12 @@ caps.latest.revision: 54
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c8511f988baace50a413176cc508c960f24f67a3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 946d811792506cbe430aebba52ca2b7ca628253b
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42679081"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775144"
 ---
 # <a name="vsperfcmd"></a>VSPerfCmd
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ VSPerfCmd [/U] [/options]
 |[ProcessOff](../profiling/processon-and-processoff.md) **:** `pid`|Zatrzymuje zbieranie danych dla określonego procesu.|  
 |[ThreadOn i ThreadOff](../profiling/threadon-and-threadoff.md) **:** *identyfikatora tid*|Wznawia profilowania dla określonego procesu po profilowanie została wstrzymana przez wywołanie **VSPerfCmdThreadOff**. Użyj **ThreadOn** tylko wtedy, gdy profilowanie przy użyciu metody instrumentacji.|  
 |[ThreadOn i ThreadOff](../profiling/threadon-and-threadoff.md) **:** *identyfikatora tid*|Wstrzymano profilowanie dla określonego wątku. Użyj **ThreadOff** tylko wtedy, gdy profilowanie przy użyciu metody instrumentacji.|  
-|[Oznacz](../profiling/mark.md) **:** *MarkNum*[**,***Tekst_znacznika***]**|Wstawia znacznik do pliku danych profilowania z opcjonalnym tekstem.|  
+|[Oznacz](../profiling/mark.md) **:** _MarkNum_[**,**_Tekst_znacznika_**]**|Wstawia znacznik do pliku danych profilowania z opcjonalnym tekstem.|  
   
 ## <a name="sampling-method-options"></a>Opcje metody pobierania próbek  
  Poniższe opcje są dostępne tylko w przypadku, gdy używana jest metoda profilowania próbkowanie.  
@@ -71,8 +71,8 @@ VSPerfCmd [/U] [/options]
 |[Uruchom](../profiling/launch.md) **:** *pliku wykonywalnego*|Uruchamia określoną aplikację i rozpoczyna się profilowanie.|  
 |[Argumenty](../profiling/args.md) **:** *argumentów*|Określa argumenty wiersza polecenia do przekazania do uruchomionej aplikacji.|  
 |[Console](../profiling/console.md)|Uruchamia określone polecenie w nowym oknie wiersza polecenia.|  
-|[Dołącz](../profiling/attach.md) **:** *PID*[**, *** PID*]|Rozpoczyna się profilowanie określonych procesów. Procesy można zidentyfikować za pomocą identyfikatora procesu lub nazwę procesu.|  
-|[Odłącz](../profiling/detach.md)[**: *** PID*[,*PID*]]|Zatrzymuje profilowanie określonych procesów. Procesy można zidentyfikować za pomocą identyfikatora procesu lub nazwę procesu. Jeśli żaden proces nie zostanie określony, profilowanie zostało zatrzymane dla wszystkich procesów.|  
+|[Dołącz](../profiling/attach.md) **:** *PID*[**,**_PID_]|Rozpoczyna się profilowanie określonych procesów. Procesy można zidentyfikować za pomocą identyfikatora procesu lub nazwę procesu.|  
+|[Odłącz](../profiling/detach.md)[**:**_PID_[,_PID_]]|Zatrzymuje profilowanie określonych procesów. Procesy można zidentyfikować za pomocą identyfikatora procesu lub nazwę procesu. Jeśli żaden proces nie zostanie określony, profilowanie zostało zatrzymane dla wszystkich procesów.|  
 |[GC](../profiling/gc-vsperfcmd.md)[**:**{**alokacji**`&#124;`**okres istnienia**}]|Służy do zbierania danych pamięci .NET alokacji i obiekt okresu istnienia. Za pomocą tylko **VSPerfCmdLaunch** opcji.|  
   
 ### <a name="sampling-interval-options"></a>Opcje interwału próbkowania  
@@ -80,9 +80,9 @@ VSPerfCmd [/U] [/options]
   
 |Opcja|Opis|  
 |------------|-----------------|  
-|[PF](../profiling/pf.md)[**: *** n*]|Próbki na każdym n tej strony błędów (domyślny = 10).|  
-|[Sys](../profiling/sys-vsperfcmd.md)[**: *** n*]|Przykłady w przypadku każdego wywołania n tego systemu (domyślne = 10).|  
-|[Czasomierz](../profiling/timer.md)[**: *** n*]|Próbki na każdy procesor n tym cyklu (domyślny 10 000 000).|  
+|[PF](../profiling/pf.md)[**:**_n_]|Próbki na każdym n tej strony błędów (domyślny = 10).|  
+|[Sys](../profiling/sys-vsperfcmd.md)[**:**_n_]|Przykłady w przypadku każdego wywołania n tego systemu (domyślne = 10).|  
+|[Czasomierz](../profiling/timer.md)[**:**_n_]|Próbki na każdy procesor n tym cyklu (domyślny 10 000 000).|  
   
 ## <a name="service-component-and-kernel-mode-device-options"></a>Składnik usługi i opcje urządzenia trybu jądra  
  Następujące opcje administratora pomocy technicznej profilowania składniki usługi lub sterowniki urządzeń trybu jądra. Opcje administratora Ustawianie uprawnień profilowania i kontrolować profilowanych usługi lub sterownika urządzenia.  

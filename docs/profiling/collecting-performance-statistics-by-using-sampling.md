@@ -12,40 +12,40 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fef6883056affd6ee47da86d8f2860c8c9ca047
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 4085fa30d1732e6943453a85d25fee2638fa0638
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34548261"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774633"
 ---
 # <a name="collect-performance-statistics-by-using-sampling"></a>Zbieranie statystyk wydajności za pomocą próbkowania
 
-Domyślnie program Visual Studio Profiling Tools metody próbkowania zbiera informacje profilowania co 10 000 000 cykli procesora (około co setną sekundy na komputerze, 1 GHz). Metody pobierania próbek jest przydatne w przypadku znalezienia problemy dotyczące użycia procesora i Sugerowane metody uruchamiania większości dochodzenia wydajności.
+Domyślnie program Visual Studio Profiling Tools metody pobierania próbek są zbierane informacje profilowania co 10 000 000 cykli procesora (mniej więcej co setną chwilę na komputerze, 1 GHz). Metoda pobierania próbek jest przydatny do znajdowania problemy dotyczące użycia procesora i Sugerowane metody uruchamiania większość badania wydajności.
 
 > [!NOTE]
-> Ulepszone funkcje zabezpieczeń w systemie Windows 8 i Windows Server 2012 wymagane znaczących zmian w sposobie profilera Visual Studio zbiera dane na tych platformach. Aplikacje platformy uniwersalnej systemu Windows wymagają również nowe techniki kolekcji. Zobacz [narzędzi wydajności w przypadku aplikacji systemu Windows 8 i Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
+> Ulepszone funkcje zabezpieczeń w systemie Windows 8 i Windows Server 2012 wymagają znaczących zmian w taki sposób, programu Visual Studio profiler zbiera dane na tych platformach. Aplikacje platformy uniwersalnej systemu Windows również wymagają nowych technik zbierania. Zobacz [narzędzia do oceny wydajności w aplikacjach systemu Windows 8 i Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
 
-Metoda pobierania próbek można określić za pomocą jednej z następujących procedur:
+Metoda pobierania próbek można określić przy użyciu jednej z następujących procedur:
 
-- Na pierwszej stronie kreatora profilowania, kliknij przycisk **próbkowania procesora CPU (zalecane)**.
-- Na **Eksplorator wydajności** paska narzędzi w **metody** kliknij **próbkowania**.
+- Na pierwszej stronie kreatora profilowania, kliknij przycisk **próbkowania Procesora (zalecane)**.
+- Na **Eksplorator wydajności** narzędzi w **metoda** kliknij **próbkowania**.
 - Na **ogólne** strony okna dialogowego właściwości sesji wydajności, kliknij przycisk **próbkowania**.
 
 ## <a name="common-tasks"></a>Wspólne zadania
 
-Możesz określić dodatkowe opcje w *sesji wydajności *** strony właściwości** okno dialogowe sesji wydajności. Aby otworzyć okno dialogowe:
+Można określić dodatkowe opcje w _sesji wydajności_**stron właściwości** okna dialogowego sesji wydajności. Aby otworzyć to okno dialogowe:
 
-- W **Eksplorator wydajności**, kliknij prawym przyciskiem myszy nazwę sesji wydajności, a następnie kliknij przycisk **właściwości**.
+- W **Eksplorator wydajności**, kliknij prawym przyciskiem myszy nazwę sesji wydajności, a następnie kliknij **właściwości**.
 
- Zadania w poniższej tabeli opisano opcje, które można określić w *sesji wydajności *** strony właściwości** okno dialogowe, gdy profilu przy użyciu metody pobierania próbek.
+ Zadania przedstawione w poniższej tabeli opisano opcje, które można określić w _sesji wydajności_**stron właściwości** okno dialogowe podczas profilowania przy użyciu metody próbkowania.
 
-|Zadanie|Zawartość pokrewna|
+|Zadanie|Powiązana zawartość|
 |----------|---------------------|
-|Na **ogólne** strony, Dodaj alokacji pamięci .NET i zbieranie danych okres istnienia i określ szczegóły nazewnictwa profilowania wygenerowany plik danych (Vsp).|- [Zbieranie alokacji pamięci .NET i okres istnienia obiektu](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)<br />- [Porady: Ustawianie opcji nazwy pliku danych wydajności](../profiling/how-to-set-performance-data-file-name-options.md)|
-|Na **próbkowania** strony, zmienić częstotliwość próbkowania, Zmień zdarzenie próbkowania z cykli zegara procesora do innego licznika wydajności procesora lub zmienić jednocześnie.|- [Porady: Wybieranie zdarzeń pobierania próbek](../profiling/how-to-choose-sampling-events.md)|
-|Na **uruchamianie** Określ aplikację do uruchomienia i rozpoczęcia zlecenia, jeśli masz wiele .exe projektów w rozwiązaniu kodu.|- [Zbieranie danych o interakcji między warstwy](../profiling/collecting-tier-interaction-data.md)|
-|Na **interakcja warstwowa** Dodaj informacje o wywołaniach ADO.NET do danych zbieranych w theprofiling Uruchom.|- [Zbieranie danych o interakcji między warstwy](../profiling/collecting-tier-interaction-data.md)|
-|Na **zdarzeń systemu Windows** Określ co najmniej jednego zdarzenia funkcji Śledzenie zdarzeń systemu Windows () do zbierania danych próbkowania.|- [Porady: zbieranie zdarzeń śledzenia dla danych systemu Windows (ETW)](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)|
-|Na **liczników systemu Windows** strony, określ co najmniej jeden liczników wydajności systemu operacyjnego można dodać do danych profilowania jako znaczniki.|- [Porady: zbieranie danych liczników systemu Windows](../profiling/how-to-collect-windows-counter-data.md)|
-|Na **zaawansowane** strony, określ wersję środowiska uruchomieniowego .NET Framework do profilowania, jeśli moduły aplikacji używać wielu wersji. Domyślnie jest profilowane pierwszej wersji załadowane.|- [Porady: Określanie środowiska wykonawczego .NET Framework](../profiling/how-to-specify-the-dotnet-framework-runtime.md)|
+|Na **ogólne** strony, Dodaj alokacji pamięci .NET i zbieranie danych okresu istnienia i określ szczegóły nazewnictwa wygenerowany plik danych (Vsp) profilowania.|- [Zbieranie alokacji pamięci .NET i okres istnienia obiektu](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)<br />- [Porady: Ustawianie opcji nazwy pliku danych wydajności](../profiling/how-to-set-performance-data-file-name-options.md)|
+|Na **próbkowania** strony, zmienić częstotliwość próbkowania, zmienić zdarzenie próbkowania cykli zegara procesora na inny licznik wydajności procesora lub zmianę tych poświadczeń...|- [Porady: Wybieranie zdarzeń pobierania próbek](../profiling/how-to-choose-sampling-events.md)|
+|Na **Uruchom** Określ aplikację do uruchomienia i rozpoczęcia zlecenia, jeśli masz wiele projektów .exe w rozwiązaniu kodu.|- [Zbieranie danych o interakcji między warstwami](../profiling/collecting-tier-interaction-data.md)|
+|Na **funkcję Tier Interaction** strony, Dodaj informacje o wywołaniach ADO.NET danych zebranych podczas uruchomienia theprofiling.|- [Zbieranie danych o interakcji między warstwami](../profiling/collecting-tier-interaction-data.md)|
+|Na **zdarzeń Windows** Określ jedno lub więcej zdarzeń śledzenie zdarzeń dla Windows (ETW) mają być zbierane dane z próbkowania.|- [Porady: zbieranie zdarzeń śledzenia dla danych Windows (ETW)](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)|
+|Na **liczniki Windows** stronie Określ co najmniej jeden licznik wydajności systemu operacyjnego można dodać do danych profilowania jako znaki.|- [Porady: zbieranie danych licznika Windows](../profiling/how-to-collect-windows-counter-data.md)|
+|Na **zaawansowane** Określ wersję środowiska uruchomieniowego .NET Framework do profilowania, jeśli moduły aplikacji używać wielu wersji. Domyślnie jest profilowane pierwszej wersji załadowane.|- [Porady: Określanie środowiska wykonawczego .NET Framework](../profiling/how-to-specify-the-dotnet-framework-runtime.md)|

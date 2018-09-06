@@ -14,12 +14,12 @@ caps.latest.revision: 63
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 4f0f6c114b6b06f81046df13af64e5fe71dbff98
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 00cb466fc9859bc36734ee3c42a23190632f39a2
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42675222"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775179"
 ---
 # <a name="define-a-menu-command-on-a-modeling-diagram"></a>Definiowanie polecenia menu w diagramie modelowania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -254,7 +254,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
   
     1.  W **Eksploratora rozwiązań**, w menu skrótów projektu VSIX wybierz **Otwórz Folder w Eksploratorze Windows**.  
   
-    2.  Zlokalizuj plik **bin\\\*\\***YourProject***.vsix**  
+    2.  Zlokalizuj plik **bin\\\*\\**_YourProject_**.vsix**  
   
 2.  Kopiuj **.vsix** plik na komputer docelowy, na którym chcesz zainstalować rozszerzenie. Może to być Twój własny komputer lub innej.  
   

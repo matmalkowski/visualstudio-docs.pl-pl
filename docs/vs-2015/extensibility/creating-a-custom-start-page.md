@@ -13,12 +13,12 @@ ms.assetid: d67e0c53-9f5a-45fb-a929-b9d2125c3c82
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 28717e98bccd958da64d781ceb32e5009b13d228
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b217c098f34240ddc4505821ae8446e4244605da
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42689029"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775252"
 ---
 # <a name="creating-a-custom-start-page"></a>Tworzenie niestandardowej strony początkowej
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,7 +78,7 @@ Jeśli nie można utworzyć niestandardowej strony początkowej za pomocą szabl
   
 1.  Skopiuj plik XAML i pomocnicze pliki tekstowe lub znaczników pliki do **%USERPROFILE%\My 2015\StartPages Documents\Visual Studio\\**  folderu.  
   
-2.  Jeśli swoją stronę początkową odwołuje się do żadnych formantów lub typów w zestawach, które nie są instalowane przez program Visual Studio, skopiować te zestawy, a następnie wklej je w * folder instalacji programu Visual Studio ***\Common7\IDE\PrivateAssemblies\\** .  
+2.  Jeśli swoją stronę początkową odwołuje się do żadnych formantów lub typów w zestawach, które nie są instalowane przez program Visual Studio, skopiować te zestawy, a następnie wklej je w _folder instalacji programu Visual Studio_**\Common7\IDE\ PrivateAssemblies\\**.  
   
 3.  Wpisz w wierszu polecenia programu Visual Studio **devenv /rootsuffix Exp** otworzyć doświadczalne wystąpienie programu Visual Studio.  
   

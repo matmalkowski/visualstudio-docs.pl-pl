@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: douge
-ms.openlocfilehash: 4ac7aa7d9fbbf4e6f6ffbe5eafd82ff8f1e0bc44
-ms.sourcegitcommit: e04e52bddf81239ad346efb4797f52e38de5cb98
+ms.openlocfilehash: 069150d7f441b754b21c0a3a487f5238ef94e039
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "43054559"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775107"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Eksplorator testów programu Visual Studio — często zadawane pytania
 
@@ -30,7 +30,7 @@ ms.locfileid: "43054559"
 
   Skompiluj projekt i upewnij się, odnajdywanie na podstawie zestawu jest włączona w programie **narzędzia** > **opcje** > **testu**.
 
-  [Wykrywanie testów w czasie rzeczywistym](https://go.microsoft.com/fwlink/?linkid=862824) jest odnajdywanie testów opartych na źródle. Nie można odnaleźć, testy, które korzystają z teorii, niestandardowe karty, niestandardowe cech `#ifdef` instrukcji, itp., ponieważ są one definiowane w czasie wykonywania. Kompilacja jest wymagana dla tych testów, aby dokładnie zostać odnalezione. W wersji 15.6 wersji zapoznawczych opartych na zestawie odnajdywania (wykrywacz tradycyjny) działa tylko po kompilacji. To ustawienie oznacza, że wykrywanie testów w czasie rzeczywistym umożliwia odnalezienie dowolną liczbę testów, jak można podczas edytowania i opartych na zestawie umożliwia dynamicznie definiowane testów są wyświetlane po kompilacji. Wykrywanie testów w czasie rzeczywistym poprawia czas odpowiedzi, ale aparaturze pozwala uzyskać kompletne i dokładne wyniki po kompilacji.
+  [Wykrywanie testów w czasie rzeczywistym](https://go.microsoft.com/fwlink/?linkid=862824) jest odnajdywanie testów opartych na źródle. Nie można odnaleźć, testy, które korzystają z teorii, niestandardowe karty, niestandardowe cech `#ifdef` instrukcji, itp., ponieważ są one definiowane w czasie wykonywania. Kompilacja jest wymagana dla tych testów, aby dokładnie zostać odnalezione. W programie Visual Studio 2017 w wersji 15.6 i nowszych opartych na zestawie odnajdywania (wykrywacz tradycyjnych) działa tylko po kompilacji. To ustawienie oznacza, że wykrywanie testów w czasie rzeczywistym umożliwia odnalezienie dowolną liczbę testów, jak można podczas edytowania i opartych na zestawie umożliwia dynamicznie definiowane testów są wyświetlane po kompilacji. Wykrywanie testów w czasie rzeczywistym poprawia czas odpowiedzi, ale aparaturze pozwala uzyskać kompletne i dokładne wyniki po kompilacji.
 
 ## <a name="test-explorer--plus-symbol"></a>Eksplorator testów "+" (plus) symbol
 **Co to jest "+" (plus) symbol, który pojawia się w górnej linii średniej Eksploratora testów?**
@@ -93,6 +93,31 @@ Wszystkie projekty testowe mogą zawierać adapter testowy ich .NET NuGet odwoł
 **Projekt testowy {} nie odwołuje się do dowolnej karty NuGet programu .NET. Odnajdywanie lub wykonywanie testów może nie działać w przypadku tego projektu. Zaleca się odwołań NuGet adapterów testowych w każdym projekcie testów platformy .NET w rozwiązaniu.**
 
 Zamiast korzystać z rozszerzeń adaptera testowego, projekty są wymagane do korzystania z pakietów NuGet adaptera testowego. To znacznie zwiększa wydajność i powoduje, że mniej problemów dzięki ciągłej integracji. Przeczytaj więcej na temat rozszerzenia Adapter testu .NET jest przestarzała w [informacje o wersji](/visualstudio/releasenotes/vs2017-preview-relnotes#testadapterextension).
+
+> [!NOTE]
+> Jeśli używasz rozszerzenie NUnit 2 Test Adapter i nie mogą przeprowadzić migrację do NUnit 3 test adapter, możesz wyłączyć to nowe zachowanie odnajdywania w programie Visual Studio w wersji 15.8 w **narzędzia** > **opcje**  >  **Testu**. 
+
+  ![Testowanie zachowania Eksploratora karty w opcjach narzędzi](media/testex-adapterbehavior.png)
+
+## <a name="uwp-testcontainer-was-not-found"></a>Nie można odnaleźć TestContainer platformy uniwersalnej systemu Windows
+**Moje testy platformy uniwersalnej systemu Windows nie są wykonywane w programie Visual Studio 2017 w wersji 15.7 lub nowszej.**
+
+Ostatnie projekty testowe platformy uniwersalnej systemu Windows, określ właściwość kompilacji platformy testu, która pozwala zwiększyć wydajność do identyfikowania aplikacje testowe. Jeśli masz projektu testowego platformy uniwersalnej systemu Windows, który został zainicjowany przed Visual Studio w wersji 15.7 może zostać wyświetlony następujący błąd w **dane wyjściowe** > **testy**:
+
+**System.AggregateException: Wystąpił co najmniej jednego błędu. ---> System.InvalidOperationException: nie można odnaleźć następującego obiektu TestContainer {} na Microsoft.VisualStudio.TestWindow.Controller.TestContainerProvider <GetTestContainerAsync>d__61.MoveNext()**
+  
+Aby rozwiązać ten problem:
+- Zaktualizuj właściwości kompilacji projektu testowego do następujących:
+
+```XML
+<UnitTestPlatformVersion Condition="'$(UnitTestPlatformVersion)' == ''">$(VisualStudioVersion)</UnitTestPlatformVersion>
+```
+
+- Aktualizacja wersji zestawu SDK TestPlatform do następujących:
+
+```XML
+<SDKReference Include="TestPlatform.Universal, Version=$(UnitTestPlatformVersion)" />
+```
 
 ## <a name="using-feature-flags"></a>Przy użyciu flag funkcji
 **Jak można włączyć flagi funkcji, aby wypróbować nowe funkcje testowania?**

@@ -9,20 +9,20 @@ manager: douge
 ms.workload:
 - multiple
 author: mikeblome
-ms.openlocfilehash: 973147bd497f9202227ab36a1beb948c51c7c698
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 0d5ee9379337f64b413b4d040f6ce5590baaeb41
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381989"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43776200"
 ---
 # <a name="microsoftvisualstudiotesttoolscppunittestframework-api-reference"></a>Dokumentacja interfejsu API z Microsoft.VisualStudio.TestTools.CppUnitTestFramework
 
 W tym temacie wymieniono publiczne elementy członkowskie `Microsoft::VisualStudio::CppUnitTestFramework` przestrzeni nazw. Użyj tych interfejsów API do pisania testów jednostkowych C++ w oparciu o struktury testów jednostkowych natywnego firmy Microsoft. Brak [przykład użycia](#example) na końcu tego tematu.
 
- Pliki nagłówkowe znajdują się w *InstallFolder VisualStudio2012 [x 86] *** \VC\UnitTest\include** folderu.
+ Pliki nagłówkowe znajdują się w _InstallFolder VisualStudio2012 [x 86]_**\VC\UnitTest\include** folderu.
 
- Pliki lib znajdują się w *InstallFolder VisualStudio2012 [x 86] *** \VC\UnitTest\lib** folderu.
+ Pliki lib znajdują się w _InstallFolder VisualStudio2012 [x 86]_**\VC\UnitTest\lib** folderu.
 
 Nagłówek i lib ścieżki zostaną automatycznie skonfigurowane w natywnego projektu testowego.
 

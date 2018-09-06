@@ -19,12 +19,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3112b4617beccd4f49fa24b4644da61d457e9980
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: eefe7d8f2dd6e94b0081f10e32703d1f2f8958a1
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42679876"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775589"
 ---
 # <a name="run-windows-phone-apps-in-the-emulator"></a>Uruchamianie aplikacji Windows Phone w emulatorze
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -222,7 +222,7 @@ Emulator Windows Phone zawiera środowisku wirtualnym, w którym można debugowa
   
 #### <a name="to-disable-frame-rate-counters-in-the-emulator-before-capturing-screenshots"></a>Aby wyłączyć liczniki szybkość klatek w emulatorze przed rozpoczęciem przechwytywania zrzutów ekranu  
   
--   W programie Visual Studio, należy określić kompilację wydania. Po określeniu kompilację wydania, należy uruchomić aplikację, wybierając **Wdróż *[Nazwa aplikacji]***  link **kompilacji** menu.  
+-   W programie Visual Studio, należy określić kompilację wydania. Po określeniu kompilację wydania, należy uruchomić aplikację, wybierając **Wdróż _[Nazwa aplikacji]_**  link **kompilacji** menu.  
   
 -   Alternatywnie możesz przekształcić w komentarz komentarz wiersz kodu w pliku app.xaml.cs lub app.xaml.vb, który ustawia wartość `EnableFrameRateCounter` do `true`.
 

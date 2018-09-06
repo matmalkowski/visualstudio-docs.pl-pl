@@ -15,12 +15,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 6882547752098c4c1be3736a02bac7a8fa740dd2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 93b971c80cdf0c13567364d507f72027d62faae9
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42684723"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775516"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>Programy obsługi zdarzeń propagujące zmiany poza modelem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ W wizualizacji i modelowania SDK, można zdefiniować programy obsługi zdarzeń
   
     -   `ElementDeleted` — wyzwalane po elementu modelu, relacji, kształtu lub łącznik został usunięty. Nadal możesz uzyskać dostępu do wartości właściwości elementu, ale będzie mieć żadnych relacji z innymi elementami.  
   
-2.  Dodaj definicję klasy częściowej *YourDsl *** DocData** w osobnym pliku kodu w **DslPackage** projektu.  
+2.  Dodaj definicję klasy częściowej _YourDsl_**DocData** w osobnym pliku kodu w **DslPackage** projektu.  
   
 3.  Jako metodę jak w poniższym przykładzie, należy napisać kod zdarzenia. Może być `static`, chyba że chcesz uzyskać dostęp do `DocData`.  
   

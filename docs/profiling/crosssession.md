@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c0dc63350b3acf89b1b226e5ebae45fdf8868fb3
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 112983b543a602bca7105ad1b5b69c5995eadeb0
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750093"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774622"
 ---
 # <a name="crosssession"></a>CrossSession
-*VSPerfCmd.exe* **CrossSession** opcja umożliwia profilera do zbierania danych z dowolnej sesji konsoli. **CrossSession** opcji należy używać z **Start** opcji.  
+*VSPerfCmd.exe* **CrossSession** opcja umożliwia profiler do zbierania danych z dowolnej sesji konsoli. **CrossSession** opcja musi być używany z **Start** opcji.  
   
  Można używać skrótu **CS** zamiast **CrossSession**.  
   
@@ -32,19 +32,19 @@ VSPerfCmd.exe /Start:Method /CrossSession [Options]
  Brak  
   
 ## <a name="valid-options"></a>Prawidłowe opcje  
- Aby włączyć profilowanie w innej sesji **CrossSession** można określić opcji z **Start** opcji. **CrossSession** musi być także określona w żadnym kolejnych **dołączyć VSPerfCmd** i **Detach** poleceń.  
+ Aby włączyć profilowanie w innej sesji **CrossSession** opcja musi być określona za pomocą **Start** opcji. **CrossSession** musi być także określona we wszystkich kolejnych **Dołącz narzędzia VSPerfCmd** i **Odłącz** poleceń.  
   
- **Uruchom:** `Method`  
- **Start** opcji inicjowania profilera do określonej metody profilowania.  
+ **Początek:** `Method`  
+ **Start** opcja inicjuje profiler do określonej metody profilowania.  
   
- **Dołącz:** *PID*[**, *** PID*]  
- Rozpoczyna się profilowania określonych procesów.  
+ **Dołącz:** _PID_[**,**_PID_]  
+ Rozpoczyna się profilowanie określonych procesów.  
   
- **Odłącz**[**: *** PID*[,*PID*]]  
+ **Odłącz**[**:**_PID_[,_PID_]]  
  Zatrzymuje profilowanie określonych procesów.  
   
 ## <a name="example"></a>Przykład  
- W tym przykładzie **CrossSession** jest używana opcja Dołącz do aplikacji, które zostało uruchomione w innej sesji konsoli.  
+ W tym przykładzie **CrossSession** opcja służy do dołączania do aplikacji, która została uruchomiona w innej sesji konsoli.  
   
 ```cmd  
 VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp /CrossSession  
@@ -52,7 +52,7 @@ VSPerfCmd.exe /Attach:12345 /CS
 ```  
   
 ## <a name="see-also"></a>Zobacz także  
- [VSPerfCmd](../profiling/vsperfcmd.md)   
+ [Narzędzia VSPerfCmd](../profiling/vsperfcmd.md)   
  [Profil aplikacji autonomicznych](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [Aplikacje sieci web ASP.NET profilu](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [Usługi profilowania](../profiling/command-line-profiling-of-services.md)

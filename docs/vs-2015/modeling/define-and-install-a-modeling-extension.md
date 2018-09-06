@@ -15,12 +15,12 @@ caps.latest.revision: 39
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: fcaca24d995c50e90f28b1faf161bee6fc2f8606
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c3d6ea563d7b7d4e2cac0e4f69ea5fddcd192418
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42682333"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774580"
 ---
 # <a name="define-and-install-a-modeling-extension"></a>Definiowanie i instalowanie rozszerzenia modelowania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -91,11 +91,11 @@ W programie Visual Studio można zdefiniować rozszerzenia do diagramów modelow
   
 |Typ rozszerzenia|Temat|Jak zwykle jest zadeklarowana każdego składnika|  
 |--------------------|-----------|----------------------------------------------|  
-|Polecenia menu|[Definiowanie polecenia menu na diagramie modelowania](../modeling/define-a-menu-command-on-a-modeling-diagram.md)|`[ClassDesignerExtension]`<br /><br /> `// or other diagram types`<br /><br /> `[Export(typeof(ICommandExtension))]`<br /><br /> `public class MyCommand : ICommandExtension`<br /><br /> `{...`|  
+|Polecenia menu|[Definiowanie polecenia menu w diagramie modelowania](../modeling/define-a-menu-command-on-a-modeling-diagram.md)|`[ClassDesignerExtension]`<br /><br /> `// or other diagram types`<br /><br /> `[Export(typeof(ICommandExtension))]`<br /><br /> `public class MyCommand : ICommandExtension`<br /><br /> `{...`|  
 |Przeciągnij i upuść lub kliknij dwukrotnie plik|[Definiowanie procedury obsługi gestów na diagramie modelowania](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md)|`[ClassDesignerExtension]`<br /><br /> `// or other diagram types`<br /><br /> `[Export(typeof(IGestureExtension))]`<br /><br /> `public class MyGesture : IGestureExtension`<br /><br /> `{...`|  
 |Ograniczenie sprawdzania poprawności|[Definiowanie ograniczeń walidacji dla modeli UML](../modeling/define-validation-constraints-for-uml-models.md)|`[Export(typeof(     System.Action<ValidationContext, object>))]`<br /><br /> `[ValidationMethod(ValidationCategories.Save`<br /><br /> `&#124; ValidationCategories.Menu)]`<br /><br /> `public void ValidateSomething`<br /><br /> `(ValidationContext context, IClassifier elementToValidate)`<br /><br /> `{...}`|  
-|Procedury obsługi zdarzeń łącza elementu roboczego|[Definiowanie procedury obsługi łącza elementu roboczego](../modeling/define-a-work-item-link-handler.md)|`[Export(typeof(ILinkedWorkItemExtension))]`<br /><br /> `public class MyWorkItemEventHandler : ILinkedWorkItemExtension`<br /><br /> `{...`|  
-|Profil UML|[Definiowanie profilu w celu rozszerzenia UML](../modeling/define-a-profile-to-extend-uml.md)|(Do ustalenia)|  
+|Procedury obsługi zdarzeń łącza elementu roboczego|[Definiowanie procedury obsługi linku elementu roboczego](../modeling/define-a-work-item-link-handler.md)|`[Export(typeof(ILinkedWorkItemExtension))]`<br /><br /> `public class MyWorkItemEventHandler : ILinkedWorkItemExtension`<br /><br /> `{...`|  
+|Profil UML|[Definiowanie profilu w celu rozszerzenia kodu UML](../modeling/define-a-profile-to-extend-uml.md)|(Do ustalenia)|  
 |Element przybornika|[Definiowanie niestandardowego elementu przybornika modelowania](../modeling/define-a-custom-modeling-toolbox-item.md)|(Do ustalenia)|  
   
 ## <a name="running-an-extension-during-its-development"></a>Uruchamianie rozszerzenia podczas jego tworzenia.  
@@ -121,7 +121,7 @@ W programie Visual Studio można zdefiniować rozszerzenia do diagramów modelow
   
     1.  W **Eksploratora rozwiązań**, w menu skrótów projektu, a następnie wybierz **Otwórz Folder w Eksploratorze Windows**.  
   
-    2.  Zlokalizuj plik **bin\\\*\\***YourProject***.vsix**  
+    2.  Zlokalizuj plik **bin\\\*\\**_YourProject_**.vsix**  
   
 2.  Kopiuj **.vsix** plik na komputer docelowy, na którym chcesz zainstalować rozszerzenie. Może to być Twój własny komputer lub innej.  
   
@@ -149,7 +149,7 @@ W programie Visual Studio można zdefiniować rozszerzenia do diagramów modelow
  [Definiowanie profilu w celu rozszerzenia UML](../modeling/define-a-profile-to-extend-uml.md)   
  [Definiowanie niestandardowego elementu przybornika modelowania](../modeling/define-a-custom-modeling-toolbox-item.md)   
  [Definiowanie ograniczeń walidacji dla modeli UML](../modeling/define-validation-constraints-for-uml-models.md)   
- [Definiowanie polecenia menu na diagramie modelowania](../modeling/define-a-menu-command-on-a-modeling-diagram.md)
+ [Definiowanie polecenia menu w diagramie modelowania](../modeling/define-a-menu-command-on-a-modeling-diagram.md)
 
 
 

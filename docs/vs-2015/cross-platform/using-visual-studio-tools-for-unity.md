@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 95624aaf172000480bf9c3d4c2650e0e837272c9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 036a3a8b3e3c055325f1062a39ad439160378684
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42630248"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775538"
 ---
 # <a name="using-visual-studio-tools-for-unity"></a>Używanie rozszerzenia Visual Studio Tools for Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -104,7 +104,7 @@ W tej sekcji dowiesz się, jak używać programu Visual Studio Tools dla integra
 |Otwórz Kreatora szybkiego MonoBehavior|**Ctrl+Shift+Q**|**EditorContextMenus.CodeWindow.QuickMonoBehaviours**|  
 |Otwórz Eksploratora projektów aparatu Unity|**Alt+Shift+E**|**View.UnityProjectExplorer**|  
 |Uzyskać dostęp do dokumentacji aparatu Unity|**Ctrl+Alt+M, Ctrl+H**|**Help.UnityAPIReference**|  
-|Dołącz do debuger aparatu Unity (player lub Edytor)|***Brak wartości domyślnej***|**Debug.AttachUnityDebugger**|  
+|Dołącz do debuger aparatu Unity (player lub Edytor)|**_Brak wartości domyślnej_**|**Debug.AttachUnityDebugger**|  
   
  Kombinacje klawiszy skrótów można zmienić, jeśli nie chcesz, aby domyślnie. Aby uzyskać informacji na temat sposobu zmiany, zobacz [określenie i dostosowywanie skrótów klawiaturowych w programie Visual Studio](https://msdn.microsoft.com/library/5zwses53.aspx).  
   

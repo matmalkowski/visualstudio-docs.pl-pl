@@ -1,7 +1,7 @@
 ---
 title: Szablony elementów dla projektów języka Python
 description: Uzyskać listę szablonów elementów projektu języka Python, które są dostępne za pośrednictwem Dodaj > Nowy element okna dialogowego, w programie Visual Studio.
-ms.date: 04/25/2018
+ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 814af0de0074f41884550e9238b9dab0cb073e25
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: 8319c99e5de12ce1c09a2c20fc5cf1b132f34092
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008297"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43776038"
 ---
 # <a name="python-item-templates"></a>Szablony elementów języka Python
 
@@ -52,7 +52,7 @@ W poniższej tabeli opisano skrótowo efekt każdego szablonu elementu w obrębi
 >
 > ![Zmiana konfiguracji publikowania](media/template-web-publish-config.png)
 
-### <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz także
 
 - [Zarządzanie projektów języka Python — szablony projektów](managing-python-projects-in-visual-studio.md#project-templates)
 - [Szablony projektów sieci web języka Python](python-web-application-project-templates.md)

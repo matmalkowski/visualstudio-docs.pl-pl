@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 847717c9-477d-4ac9-8b2c-2da878912478
 caps.latest.revision: 11
 manager: douge
-ms.openlocfilehash: d69ff5d5c3f6434c9230602ff422accbb2f82422
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e77ebf34cd56cee80040009cff3ebb2fee9befac
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42690885"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774681"
 ---
 # <a name="how-to-create-a-vsct-file-from-an-existing-cto-file"></a>Porady: tworzenie. Plik Vsct z istniejącej. Plik Dyrektor ds. technologii
 Można utworzyć pliku vsct oparty na składni XML z istniejącego pliku binarnego .cto. W ten sposób pozwala na korzystanie z zalet nowego formatu kompilatora tabeli poleceń. Nawet wtedy, gdy plik .cto został skompilowany z plikiem .ctc działania tego procesu. Można edytować i skompilować pliku vsct w innym pliku .cto.  
@@ -32,7 +32,7 @@ Można utworzyć pliku vsct oparty na składni XML z istniejącego pliku binarne
   
 3.  W Visual Studio Command Prompt, przejdź do katalogu, który zawiera pliki .cto i .ctsym.  
   
-4.  Typ **vsct.exe** *ctofilename *** .cto** * vsctfilename***vsct -S***symfilename ***.ctsym**.  
+4.  Typ **vsct.exe** _ctofilename_**.cto** _vsctfilename_**vsct -S**  _symfilename_**.ctsym**.  
   
      `ctofilename` jest nazwą pliku .cto `vsctfilename` jest nazwą pliku vsct, w której chcesz utworzyć, i `symfilename` jest nazwą pliku .ctsym.  
   

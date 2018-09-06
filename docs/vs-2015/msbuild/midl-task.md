@@ -32,12 +32,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0c70d04d31606f3874ddd9fb70395dc3702ec1cc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d496bba38b9b0dbf1c5346bda928f491ce697edf
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42679517"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775595"
 ---
 # <a name="midl-task"></a>MIDL — Zadanie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ Opakowuje narzędzie kompilatora języka definicji interfejsu Microsoft (MIDL) m
   
      Opcjonalnie **ciąg** parametru.  
   
-     Listę opcji wiersza polecenia. Na przykład **"*** / /option# /option2 opcja1*". Użyj tego parametru, aby określić opcje wiersza polecenia, które nie są reprezentowane przez inne parametry zadania MIDL.  
+     Listę opcji wiersza polecenia. Na przykład **"**_/option1 /option2 /option#_". Użyj tego parametru, aby określić opcje wiersza polecenia, które nie są reprezentowane przez inne parametry zadania MIDL.  
   
      Aby uzyskać więcej informacji, zobacz "Odwołanie do wiersza polecenia MIDL" w [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.  
   

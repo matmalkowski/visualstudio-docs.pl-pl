@@ -14,12 +14,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0890b476fb83bc8b45ef44e2de3608683572ecb1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8138129c928a02ed5fb6684bc6ee06282435860e
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42676803"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43776163"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Narzędzia do oceny wydajności w aplikacjach systemu Windows 8 i Windows Server 2012
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -143,7 +143,7 @@ Ulepszone funkcje zabezpieczeń w systemie Windows 8 i Windows Server 2012 wymag
   
  **Zbieranie danych Porada na komputerze zdalnym**  
   
- Aby zebrać dane interakcji między warstwami na komputerze zdalnym, należy skopiować **vs_profiler_***\<platformy >***_***\<języka >***.exe** pliku z *%VSInstallDir%***\Team Tools\Setups narzędzia** folder programu Visual Studio komputera na komputerze zdalnym i zainstaluj go. Nie można użyć narzędzi profilowania w [narzędzia zdalne programu Visual Studio](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) Pobieranie pakietu.  
+ Aby zebrać dane interakcji między warstwami na komputerze zdalnym, należy skopiować **vs\_profiler\_**_\<platformy >_ **\_**  _\<Języka >_**.exe** plik wchodzącej w skład _VSInstallDir %_**tools\performance Tools\Setups**folder programu Visual Studio komputera na komputerze zdalnym i zainstaluj go. Nie można użyć narzędzi profilowania w [narzędzia zdalne programu Visual Studio](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) Pobieranie pakietu.  
   
  Możesz użyć [VSPerfCmd](../profiling/vsperfcmd.md) lub [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) do zbierania danych profilowania.  
   

@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 7d56030b78abe57c80d816881991b9819ed6456b
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 7f4c98c9279fe4153fb69e371f51833be382090d
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924950"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774607"
 ---
 # <a name="develop-javascript-and-typescript-code-in-visual-studio-without-solutions-or-projects"></a>Tworzenie kodu JavaScript i TypeScript w programie Visual Studio bez rozwiązań lub projektów
 
@@ -58,3 +58,27 @@ W przypadku *tsconfig.json* plików w folderze, możesz kliknąć prawym przycis
 
 > [!NOTE]
 > Więcej informacji można znaleźć o *tsconfig.json* w [tsconfig.json TypeScript Handbook strony](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html).
+
+## <a name="unit-tests"></a>Testy jednostkowe
+Aby umożliwić integrację testu jednostkowego w programie Visual Studio, określając katalog główny testu, w swojej *package.json*:
+
+```json
+{
+    // ...
+    "vsTest":{
+        "testRoot": "./tests"
+    }
+    // ...
+}
+```
+
+Narzędzie test runner wylicza lokalnie zainstalowane pakiety, aby określić, które struktury testów do użycia.
+Jeśli żaden z obsługiwanych platform są rozpoznawane, narzędzia test runner domyślnie *ExportRunner*. Inne obsługiwane platformy to:
+* Mocha ([mochajs.org](http://mochajs.org/))
+* Jasmine ([Jasmine.github.io](https://jasmine.github.io/))
+* Taśmy ([github.com/substack/tape](https://github.com/substack/tape))
+
+Po otwarciu Eksploratora testów (wybierz **testu** > **Windows** > **Eksplorator testów**), Visual Studio wykrywa i wyświetla testów.
+
+> [!NOTE]
+> Narzędzie test runner wyliczą tylko pliki JavaScript, w katalogu głównym testu, jeśli aplikacja została napisana TypeScript, musisz utworzyć je w pierwszej kolejności.

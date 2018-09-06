@@ -14,12 +14,12 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 45259d3a0605dde7164ec9fd98b7338b20c47122
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4c4306f89b41639ba70e581ed6b3b4ce70089c01
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42682755"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775921"
 ---
 # <a name="crosssession"></a>CrossSession
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,10 +45,10 @@ VSPerfCmd.exe /Start:Method /CrossSession [Options]
  **Początek:** `Method`  
  **Start** opcja inicjuje profiler do określonej metody profilowania.  
   
- **Dołącz:** *PID*[**, *** PID*]  
+ **Dołącz:** _PID_[**,**_PID_]  
  Rozpoczyna się profilowanie określonych procesów.  
   
- **Odłącz**[**: *** PID*[,*PID*]]  
+ **Odłącz**[**:**_PID_[,_PID_]]  
  Zatrzymuje profilowanie określonych procesów.  
   
 ## <a name="example"></a>Przykład  

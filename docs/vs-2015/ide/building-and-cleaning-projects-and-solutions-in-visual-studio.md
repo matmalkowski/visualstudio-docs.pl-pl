@@ -28,12 +28,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 680d2550b7d3f3e88e7291fea128ec81b77197fc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 610f0216ce2481894f088e0a3da1df5e29953b43
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42685924"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775424"
 ---
 # <a name="building-and-cleaning-projects-and-solutions-in-visual-studio"></a>Kompilowanie oraz oczyszczanie projektów i rozwiązań w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,11 +64,11 @@ Korzystając z procedur opisanych w tym temacie, można utworzyć, odbudować lu
   
 1.  W **Eksploratora rozwiązań**, wybrać lub otworzyć projektu.  
   
-2.  Na pasku menu wybierz **kompilacji**, a następnie wybierz **kompilacji *** ProjectName* lub **odbudować *** ProjectName*.  
+2.  Na pasku menu wybierz **kompilacji**, a następnie wybierz **kompilacji**_ProjectName_ lub **odbudować**_ProjectName_.  
   
-    -   Wybierz pozycję **kompilacji *** ProjectName* tworzenie tylko tych projektów składników, które zmieniły się od najnowszej kompilacji.  
+    -   Wybierz **kompilacji**_ProjectName_ tworzenie tylko tych projektów składników, które zmieniły się od najnowszej kompilacji.  
   
-    -   Wybierz pozycję **odbudować *** ProjectName* do projektu "Wyczyść", a następnie skompiluj pliki projektu i wszystkich składników projektów.  
+    -   Wybierz **odbudować**_ProjectName_ do projektu "Wyczyść", a następnie skompiluj pliki projektu i wszystkich składników projektów.  
   
 ### <a name="to-build-only-the-startup-project-and-its-dependencies"></a>Aby skompilować tylko projekt startowy i jego zależności  
   

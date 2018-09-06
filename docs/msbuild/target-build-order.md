@@ -1,7 +1,7 @@
 ---
 title: Docelowa kompilacja — kolejność | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 06/06/2018
+ms.date: 09/04/2018
 ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 90118003afcb8227ec3598110c38f3f0951e9adb
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 9bab71bce4ccec17f485f6aafad7389e3b981b6e
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178959"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774948"
 ---
 # <a name="target-build-order"></a>Kolejność kompilowania obiektów docelowych
 Muszą być uporządkowane obiekty docelowe, jeśli dane wejściowe do jednego obiektu docelowego jest zależna od danych wyjściowych z innym elementem docelowym. Aby określić kolejność uruchamiania elementów docelowych, można użyć tych atrybutów:  
@@ -114,7 +114,7 @@ Muszą być uporządkowane obiekty docelowe, jeśli dane wejściowe do jednego o
 
     Obiekty docelowe, w których przedstawiono warunkowego elementu docelowego w `BeforeTargets` lub `AfterTargets` nadal wykonywać w zalecanej kolejności
   
-4.  Przed wykonaniem celu jego `DependsOnTargets` obiekty docelowe są uruchamiane.  
+4.  Zanim obiekt docelowy jest wykonywany czy pomijany, jeśli jego `Condition` atrybutu nie było lub nie zostało obliczone do `false`, jego `DependsOnTargets` obiekty docelowe są uruchamiane.  
   
 5.  Zanim obiekt docelowy jest wykonywany czy pomijany, wszelkie docelowy, który jest wyświetlany w `BeforeTargets` atrybutu jest uruchamiany.  
   

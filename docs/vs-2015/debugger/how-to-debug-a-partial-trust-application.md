@@ -23,12 +23,12 @@ caps.latest.revision: 28
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8b5f041163f0cf544fe953c24433e34ff0ed9e3e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5880b375f15b189a2532ed750d87b95fea51f0df
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42685554"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775112"
 ---
 # <a name="how-to-debug-a-partial-trust-application"></a>Porady: debugowanie częściowo zaufanych aplikacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ Ma zastosowanie do Windows i aplikacji konsoli.
   
 ### <a name="to-choose-a-zone-for-your-partial-trust-application"></a>Aby wybrać strefy aplikacji częściowego zaufania  
   
-1.  Z **projektu** menu, wybierz pozycję * Projectname ***właściwości**.  
+1.  Z **projektu** menu, wybierz _Projectname_**właściwości**.  
   
 2.  W *Projectname* strony właściwości, kliknij przycisk **zabezpieczeń** strony.  
   
@@ -80,7 +80,7 @@ Ma zastosowanie do Windows i aplikacji konsoli.
   
 ### <a name="to-view-extra-permissions-added-while-debugging"></a>Aby wyświetlić dodatkowe uprawnienia dodany podczas debugowania  
   
-1.  Z **projektu** menu, wybierz pozycję * Projectname ***właściwości**.  
+1.  Z **projektu** menu, wybierz _Projectname_**właściwości**.  
   
 2.  W *Projectname* strony właściwości, kliknij przycisk **zabezpieczeń** strony.  
   

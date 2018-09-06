@@ -17,12 +17,12 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bb5d77e79de766939b27e005e5c9dffddb2a8157
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3a6ed7ba926869359db9c9602f316cb0fc3934d7
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42684728"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775198"
 ---
 # <a name="collecting-performance-statistics-by-using-sampling"></a>Zbieranie statystyk wydajności za pomocą metody pobierania próbek
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,11 +47,11 @@ Domyślnie [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] metody pobierani
 -   Na **ogólne** strony okna dialogowego właściwości sesji wydajności, kliknij przycisk **próbkowania**.  
   
 ## <a name="common-tasks"></a>Typowe zadania  
- Można określić dodatkowe opcje w *sesji wydajności *** stron właściwości** okna dialogowego sesji wydajności. Aby otworzyć to okno dialogowe:  
+ Można określić dodatkowe opcje w _sesji wydajności_**stron właściwości** okna dialogowego sesji wydajności. Aby otworzyć to okno dialogowe:  
   
 -   W **Eksplorator wydajności**, kliknij prawym przyciskiem myszy nazwę sesji wydajności, a następnie kliknij **właściwości**.  
   
- Zadania przedstawione w poniższej tabeli opisano opcje, które można określić w *sesji wydajności *** stron właściwości** okno dialogowe podczas profilowania przy użyciu metody próbkowania.  
+ Zadania przedstawione w poniższej tabeli opisano opcje, które można określić w _sesji wydajności_**stron właściwości** okno dialogowe podczas profilowania przy użyciu metody próbkowania.  
   
 |Zadanie|Powiązana zawartość|  
 |----------|---------------------|  

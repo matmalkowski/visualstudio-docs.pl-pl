@@ -12,12 +12,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: fe0d7877a68c34cd624d20834f553e9ec18d1df2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 341f5f40ff5c7274de9bbaf977464b15a56315a8
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42674396"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774828"
 ---
 # <a name="multiple-dsls-in-one-solution"></a>Wiele języków DSL w jednym rozwiązaniu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ Można spakować kilka języków DSL w ramach jednego rozwiązania, tak, aby zai
   
 2.  Łączenie języków DSL manifesty VSIX:  
   
-    1.  Otwórz * YourVsixProject ***\source.extension.manifest**.  
+    1.  Otwórz _YourVsixProject_**\source.extension.manifest**.  
   
     2.  Dla każdego języka DSL, wybierz **Dodaj zawartość** i Dodaj:  
   
@@ -64,7 +64,7 @@ Można spakować kilka języków DSL w ramach jednego rozwiązania, tak, aby zai
   
 3.  Skompiluj rozwiązanie.  
   
- Wynikowy VSIX zainstaluje zarówno językami DSL. Można je przetestować, naciskając klawisz F5 lub wdrożyć * YourVsixProject ***\bin\Debug\\\*.vsix**.  
+ Wynikowy VSIX zainstaluje zarówno językami DSL. Można je przetestować, naciskając klawisz F5 lub wdrożyć _YourVsixProject_**\bin\Debug\\\*.vsix**.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Integrowanie modeli za pomocą programu Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md)   

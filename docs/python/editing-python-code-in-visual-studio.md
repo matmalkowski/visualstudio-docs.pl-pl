@@ -1,7 +1,7 @@
 ---
 title: Edytowanie kodu w języku Python
 description: Edycji języka Python w programie Visual Studio zawiera funkcję IntelliSense, fragmenty kodu i funkcje nawigacji, wraz z formatowania, Zaznaczanie błędów i refaktoryzacji.
-ms.date: 05/07/2018
+ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,16 +11,16 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a309dd0abe1332a37c9865a6e38bba9c0eb00dde
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 680f568ef6d44aa5194931bd585ba307f7b64b3d
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42624068"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774768"
 ---
 # <a name="edit-python-code"></a>Edytowanie kodu w języku Python
 
-Deweloperzy poświęcają wiele czasu w edytorze kodu, więc [obsługi języka Python w programie Visual Studio](installing-python-support-in-visual-studio.md) udostępnia funkcje ułatwiające mu bardziej wydajnej pracy. Funkcje obejmują IntelliSense wyróżniania składni, automatyczne uzupełnianie, pomocy dotyczącej sygnatur, zastąpienia metody, wyszukiwania i nawigacji.
+Ponieważ większość czasu projektowania w edytorze kodu wydatków [obsługi języka Python w programie Visual Studio](installing-python-support-in-visual-studio.md) udostępnia funkcje ułatwiające mu bardziej wydajnej pracy. Funkcje obejmują IntelliSense wyróżniania składni, automatyczne uzupełnianie, pomocy dotyczącej sygnatur, zastąpienia metody, wyszukiwania i nawigacji.
 
 Edytor jest także zintegrowana z **Interactive** okna w programie Visual Studio, ułatwiając wymiany kodu między nimi. Zobacz [samouczek krok 3: Korzystanie z okna interaktywnego REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md) i [użycie okna interaktywnego — Wyślij polecenie interaktywne](python-interactive-repl-in-visual-studio.md#send-to-interactive-command) Aby uzyskać szczegółowe informacje.
 

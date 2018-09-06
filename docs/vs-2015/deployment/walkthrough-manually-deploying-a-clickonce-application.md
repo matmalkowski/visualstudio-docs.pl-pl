@@ -26,12 +26,12 @@ caps.latest.revision: 51
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: fabaa757c39ccea3de545b6dde9483b1fbc854de
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d8f93b6d7f55659cc614969dcc1c8b8dd93ccf73
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42676521"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775535"
 ---
 # <a name="walkthrough-manually-deploying-a-clickonce-application"></a>Wskazówki: ręczne wdrażanie aplikacji ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -181,7 +181,7 @@ Jeśli nie możesz użyć programu Visual Studio, aby wdrożyć swoje [!INCLUDE[
   
 17. Na **nazwa** karcie, określ nazwę oraz numer wersji dla tego wdrożenia (**1.0.0.0** w tym przykładzie). Również określić **procesora** stworzonemu aplikacji, takich jak x86.  
   
-18. Wybierz **opis** kartę, a następnie określ wartości dla **wydawcy** i **Produc *** t**. (**Produktu** jest nazwa nadana do aplikacji w menu Windows Start, gdy Twoja aplikacja jest instalowana na komputerze klienckim w trybie offline.)  
+18. Wybierz **opis** kartę, a następnie określ wartości dla **wydawcy** i **produktu**. (**Produktu** jest nazwa nadana do aplikacji w menu Windows Start, gdy Twoja aplikacja jest instalowana na komputerze klienckim w trybie offline.)  
   
 19. Wybierz **opcje wdrażania** kartę, a następnie w **lokalizacja początkowa** tekstu określ lokalizację w manifeście aplikacji na serwerze sieci Web lub udziału. Na przykład \\\myServer\myShare\AppToDeploy.application.  
   

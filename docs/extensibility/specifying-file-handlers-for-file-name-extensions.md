@@ -1,5 +1,5 @@
 ---
-title: Określanie obsługi pliku rozszerzenia nazw plików | Dokumentacja firmy Microsoft
+title: Określanie programów obsługi plików dla rozszerzeń nazw plików | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,20 +13,20 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0d0086f8badb32431c85f16e1f74fe8f186c9b2e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 885e4647d00ac0e1a1d1c60e9f58b4dbcd7971b0
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31140690"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43776051"
 ---
-# <a name="specifying-file-handlers-for-file-name-extensions"></a>Określanie obsługi pliku rozszerzenia nazw plików
-Istnieje wiele sposobów, aby określić aplikację, która obsługuje pliku, który ma rozszerzenie określonego pliku. Zleceń OpenWithList i OpenWithProgids są dwa sposoby określania obsługi pliku w obszarze wpis rejestru dla rozszerzenia pliku.  
+# <a name="specifying-file-handlers-for-file-name-extensions"></a>Określanie programów obsługi plików dla rozszerzeń nazw plików
+Istnieje kilka sposobów, aby określić aplikację, która obsługuje pliku, który ma rozszerzenie określonego pliku. Czasowniki OpenWithList i OpenWithProgids są dwa sposoby określania programów obsługi plików we wpisie rejestru dla rozszerzenia pliku.  
   
-## <a name="openwithlist-verb"></a>Zlecenie OpenWithList  
- Po kliknięciu prawym przyciskiem myszy plik w Eksploratorze Windows, temacie **Otwórz** polecenia. Jeśli więcej niż jeden produkt jest skojarzona z rozszerzeniem, zobacz **Otwórz za pomocą** podmenu.  
+## <a name="openwithlist-verb"></a>OpenWithList zlecenia  
+ Po kliknięciu prawym przyciskiem myszy plik w Eksploratorze Windows, zobaczysz **Otwórz** polecenia. Jeśli więcej niż jeden produkt jest skojarzony z rozszerzeniem, zobaczysz **Otwórz za pomocą** podmenu.  
   
- Możesz zarejestrować się różne aplikacje, aby otworzyć rozszerzenie ustawiając klucz OpenWithList dla rozszerzenia pliku w wpisów z HKEY_CLASSES_ROOT. Aplikacje w tym kluczu dla rozszerzenia pliku na liście są wyświetlane w obszarze **zalecane programy** nagłówek w **Otwórz za pomocą** okno dialogowe. Poniższy przykład przedstawia aplikacji, w zarejestrowany w celu otwarcia .vcproj rozszerzenie pliku.  
+ Możesz zarejestrować się różne aplikacje, aby otworzyć rozszerzenia, ustawiając klucz OpenWithList dla rozszerzenia pliku w kluczu HKEY_CLASSES_ROOT. Aplikacje tego klucza dla rozszerzenia pliku na liście są wyświetlane w obszarze **zalecanych programów** nagłówek w **Otwórz za pomocą** okno dialogowe. Poniższy przykład pokazuje aplikacje zarejestrowany w celu otwarcia .vcproj rozszerzenie pliku.  
   
 ```  
 HKEY_CLASSES_ROOT\  
@@ -37,25 +37,25 @@ HKEY_CLASSES_ROOT\
 ```  
   
 > [!NOTE]
->  Określanie aplikacji są klucze z listy w obszarze HKEY_CLASSES_ROOT\Applications.  
+>  Klucze, określając aplikacje są na liście w obszarze HKEY_CLASSES_ROOT\Applications.  
   
- Dodawanie klucza OpenWithList, zadeklarować, czy aplikacja obsługuje rozszerzenie pliku, nawet wtedy, gdy inna aplikacja ma prawo własności do rozszerzenia. Może to być przyszłych wersji aplikacji lub innej aplikacji.  
+ Dodanie klucza OpenWithList, zadeklarować, że aplikacja obsługuje rozszerzenie pliku, nawet wtedy, gdy inna aplikacja przejmuje na własność rozszerzenia. Może to być przyszłej wersji aplikacji lub innej aplikacji.  
   
 ## <a name="openwithprogids"></a>OpenWithProgIDs  
- Identyfikatory programowe (ProgID) są przyjazne wersje klasy, które zidentyfikować wersji aplikacji lub obiektu COM. Każdy obiekt wspólnie możliwość utworzenia powinny mieć własny identyfikator ProgID. Na przykład VisualStudio.DTE.7.1 uruchamia program Visual Studio .NET 2003, podczas uruchamiania VisualStudio.DTE.10.0 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Jako właściciel typu projektu lub typu elementu projektu należy utworzyć ProgID określonej wersji dla rozszerzenia pliku. Te ProgID może być nadmiarowego, w tym więcej niż jeden identyfikator ProgID może rozpocząć tej samej aplikacji. Aby uzyskać więcej informacji, zobacz [rejestrowania poleceń dla rozszerzeń nazw plików](../extensibility/registering-verbs-for-file-name-extensions.md).  
+ Identyfikatory programowe (ProgID) są przyjazne wersje klasy identyfikujące wersję aplikacji lub obiektu COM. Każdy obiekt wspólnie do utworzenia powinny mieć własny identyfikator ProgID. Na przykład VisualStudio.DTE.7.1 uruchamia Visual Studio .NET 2003, podczas uruchamiania VisualStudio.DTE.10.0 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Jako właściciel projektu typu lub typu elementu projektu należy utworzyć identyfikator ProgID specyficzny dla wersji dla rozszerzenia pliku. Te ProgID może być nadmiarowe, w tym, że więcej niż jeden identyfikator ProgID może zostać uruchomiony ta sama aplikacja. Aby uzyskać więcej informacji, zobacz [rejestrowanie zleceń dla rozszerzeń nazw plików](../extensibility/registering-verbs-for-file-name-extensions.md).  
   
- Aby uniknąć duplikowania rejestracji innych dostawców, użyj następującej konwencji nazewnictwa dla określonej wersji pliku ProgID:  
+ Aby uniknąć jego duplikowania z rejestracją od innych dostawców, użyj następującej konwencji nazewnictwa dla określonej wersji pliku ProgID:  
   
-|Rozszerzenie pliku|Kontrolą wersji ProgID|  
+|Rozszerzenie pliku|Numerów wersji ProgID|  
 |--------------------|----------------------|  
-|.Extension|NazwaProduktu. extension.versionMajor.versionMinor|  
+|.Extension|ProductName. extension.versionMajor.versionMinor|  
   
- Możesz zarejestrować różne aplikacje, które można otworzyć rozszerzenie pliku określonego przez dodanie numerów wersji ProgID jako wartości wpisów z HKEY_CLASSES_ROOT\\*\<rozszerzenia >* \OpenWithProgids klucza. Ten klucz rejestru zawiera listę alternatywnej ProgID skojarzonego z rozszerzeniem pliku. Aplikacje skojarzone z wymienionych ProgID pojawiają się w **Otwórz za pomocą *** nazwa produktu* podmenu. Jeśli ta sama aplikacja jest określony zarówno `OpenWithList` i `OpenWithProgids` kluczy, system operacyjny scala duplikaty.  
+ Możesz zarejestrować różne aplikacje, które można otworzyć konkretnego rozszerzenia pliku, dodając numerów wersji ProgID jako wartości przekierowywanie wpisów z HKEY_CLASSES_ROOT\\*\<rozszerzenia >* \OpenWithProgids klucza. Ten klucz rejestru zawiera listę alternatywnych ProgID skojarzone z rozszerzeniem pliku. Aplikacje skojarzone z wymienionych ProgID pojawiają się w **Otwórz za pomocą**_nazwa produktu_ podmenu. Jeśli ta sama aplikacja jest określona w obu `OpenWithList` i `OpenWithProgids` klucze, system operacyjny scala duplikaty.  
   
 > [!NOTE]
->  `OpenWithProgids` Kluczy jest obsługiwana tylko w systemie Windows XP. Ponieważ inne systemy operacyjne zignorować ten klucz, nie używać go jako tylko rejestracji obsługi pliku. Ten klucz umożliwia lepsze środowisko pracy użytkownika w systemie Windows XP.  
+>  `OpenWithProgids` Klucz jest obsługiwany tylko w Windows XP. Ponieważ inne systemy operacyjne zignorować ten klucz, nie należy używać go jako rejestrację tylko dla programów obsługi plików. Użyj tego klucza, aby zapewnić lepsze środowisko użytkownika w Windows XP.  
   
- Dodaj odpowiednie ProgID jako wartości typu REG_NONE. Poniższy kod stanowi przykład rejestrowania ProgID rozszerzenie pliku (. *Roz*).  
+ Dodaj żądaną ProgID jako wartości typu REG_NONE. Poniższy kod stanowi przykład rejestrowanie ProgID dla rozszerzenia pliku (. *ext*).  
   
 ```  
 HKEY_CLASSES_ROOT\  
@@ -66,7 +66,7 @@ HKEY_CLASSES_ROOT\
          otherprogid   REG_NONE (zero-length binary value)  
 ```  
   
- Identyfikator ProgID określony jako domyślny program obsługi pliku jest wartością domyślną dla rozszerzenia pliku. Jeśli zmodyfikujesz identyfikatora rozszerzenie, które zostały wydane z poprzedniej wersji programu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] lub które mogą zostać przejęte inne aplikacje, a następnie zarejestruj `OpenWithProgids` klucz dla rozszerzenia pliku i określ nowy identyfikator ProgID na liście wraz z programem stary ProgID, która jest obsługiwana. Na przykład:  
+ Identyfikator ProgID, określona jako wartość domyślna dla rozszerzenia pliku jest domyślny program obsługi plików. Jeśli zmodyfikujesz ProgID rozszerzenia plików, które są dostarczane z poprzedniej wersji [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] lub mogą być podejmowane przez inne aplikacje, a następnie musisz się zarejestrować, `OpenWithProgids` klucza dla rozszerzenia pliku, a następnie określ nowy identyfikator ProgID na liście wraz z programem stary ProgID, które obsługujesz. Na przykład:  
   
 ```  
 HKEY_CLASSES_ROOT\  
@@ -78,7 +78,7 @@ HKEY_CLASSES_ROOT\
          VisualStudio.vcproj.14.0 //new progid  
 ```  
   
- Jeśli stary ProgID ma skojarzone z nim zlecenia, a następnie te zleceń pojawi się również w obszarze **Otwórz za pomocą** *nazwa produktu* w menu skrótów.  
+ Jeśli stary identyfikator ProgID ma zleceń skojarzonych z nim, a następnie tych poleceń pojawi się również w obszarze **Otwórz za pomocą** *nazwa produktu* w menu skrótów.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Temat rozszerzeń nazw plików](../extensibility/about-file-name-extensions.md)   

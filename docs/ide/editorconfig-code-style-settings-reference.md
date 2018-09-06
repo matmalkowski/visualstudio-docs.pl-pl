@@ -18,12 +18,12 @@ ms.technology: vs-ide-general
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 04d8cd6f27f90d398d22b90f9c9bd432466fb3cd
-ms.sourcegitcommit: 58a0b227f29b95e3ed55101ef66c68913682862b
+ms.openlocfilehash: 1870ab4b9b6fe001cb0d2ec309eecbeaad6a135c
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/17/2018
-ms.locfileid: "42623926"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774977"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>.NET coding convention ustawienia dla wtyczki EditorConfig
 
@@ -92,6 +92,8 @@ Na poniższej liście przedstawiono dopuszczalne języka zasadami Konwencji:
         - polecenia DotNet\_styl\_Preferuj\_wywnioskować\_anonimowe\_typu\_member_names
         - polecenia DotNet\_styl\_Preferuj\_automatycznie\_właściwości
         - DotNet\_styl\_Preferuj\_jest\_null\_Sprawdź\_za pośrednictwem\_odwołania\_równości\_— metoda
+        - polecenia DotNet\_styl\_Preferuj\_warunkowego\_wyrażenie\_za pośrednictwem\_przypisania
+        - DotNet\_styl\_Preferuj\_warunkowego\_wyrażenie\_za pośrednictwem\_zwracają
     - ["Null" Sprawdzanie preferencje](#null_checking)
         - dotnet\_style\_coalesce_expression
         - dotnet\_style\_null_propagation
@@ -1084,7 +1086,7 @@ Przykłady kodu:
 
 ```csharp
 // csharp_style_expression_bodied_indexers = true
-public T this[int i] => _value[i];
+public T this[int i] => _values[i];
 
 // csharp_style_expression_bodied_indexers = false
 public T this[int i] { get { return _values[i]; } }

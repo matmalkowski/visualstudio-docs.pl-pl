@@ -14,12 +14,12 @@ caps.latest.revision: 49
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 7f76dd78981eb7969fec9b62e0a2f3cfea24a4ba
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1caf688f6ecc84413d3bdb86c1c1825241aa5ba3
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42683828"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775610"
 ---
 # <a name="define-validation-constraints-for-uml-models"></a>Definiowanie ograniczeń walidacji dla modeli UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -377,7 +377,7 @@ context.LogError(... , usecase);
   
     1.  W **Eksploratora rozwiązań**, w menu skrótów projektu VSIX wybierz **Otwórz Folder w Eksploratorze Windows**.  
   
-    2.  Zlokalizuj plik **bin\\\*\\***YourProject***.vsix**  
+    2.  Zlokalizuj plik **bin\\\*\\**_YourProject_**.vsix**  
   
 2.  Kopiuj **.vsix** plik na komputer docelowy, na którym chcesz zainstalować rozszerzenie. Może to być Twój własny komputer lub innej.  
   

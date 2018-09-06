@@ -12,12 +12,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e99d227f78cdf1a2a0edfdd59abb243a81b98722
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f512a330a1253f0db9b0f7e75de5f0a6ca52658d
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42676626"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775764"
 ---
 # <a name="how-to-add-validation-to-entity-classes"></a>Porady: Dodawanie walidacji do klas jednostek
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "42676626"
 Najnowszą wersję tego tematu znajduje się w temacie [porady: Dodawanie walidacji do klas jednostek](https://docs.microsoft.com/visualstudio/data-tools/how-to-add-validation-to-entity-classes).  
   
   
-Sprawdzanie poprawności * klas jednostek jest procesem potwierdzania, że wartości wprowadzone w obiektach danych są zgodne z ograniczeniami w schemacie obiektu, a także zasadami ustanowionymi dla aplikacji. Sprawdzanie poprawności danych, aby wysłać aktualizacje do podstawowej bazy danych jest dobrą praktyką, która zmniejsza błędy. Zmniejsza to także potencjalną liczbę rund między aplikacją a bazą danych.  
+*Sprawdzanie poprawności* klas jednostek jest procesem potwierdzania, że wartości wprowadzone w obiektach danych są zgodne z ograniczeniami w schemacie obiektu, a także zasadami ustanowionymi dla aplikacji. Sprawdzanie poprawności danych, aby wysłać aktualizacje do podstawowej bazy danych jest dobrą praktyką, która zmniejsza błędy. Zmniejsza to także potencjalną liczbę rund między aplikacją a bazą danych.  
   
  [LINQ to SQL Tools w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) dostarcza metod częściowych, które umożliwiają użytkownikom Rozszerz kod wygenerowany przez projektanta, który jest uruchamiany podczas operacji wstawiania, aktualizacji i usuwa pełną jednostek, a także podczas i po poszczególnych kolumn zmiany.  
   
@@ -51,7 +51,7 @@ Sprawdzanie poprawności * klas jednostek jest procesem potwierdzania, że warto
   
     1.  Rozwiń **nazwę metody** listy.  
   
-    2.  Znajdź **na***COLUMNNAME***zmiana** metody dla kolumny, które chcesz dodać sprawdzanie poprawności, aby.  
+    2.  Znajdź **na**_COLUMNNAME_**zmiana** metody dla kolumny, które chcesz dodać sprawdzanie poprawności, aby.  
   
     3.  `On` *COLUMNNAME* `Changing` metoda jest dodawana do klasy częściowej.  
   
@@ -100,7 +100,7 @@ Sprawdzanie poprawności * klas jednostek jest procesem potwierdzania, że warto
   
     1.  Rozwiń **nazwę metody** listy.  
   
-    2.  Kliknij pozycję **aktualizacji *** ENTITYCLASSNAME*.  
+    2.  Kliknij przycisk **aktualizacji**_ENTITYCLASSNAME_.  
   
     3.  `Update` *ENTITYCLASSNAME* metoda jest dodawana do klasy częściowej.  
   

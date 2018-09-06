@@ -28,12 +28,12 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d729f2ea4a5436c07af716a0606dbed6363aa007
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4ff118a6d32a182d1060cc051f24352b16037039
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42628181"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775427"
 ---
 # <a name="rc-task"></a>RC — Zadanie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ Opakowuje narzędzie kompilatora zasobów systemu Microsoft Windows rc.exe. **RC
 |Parametr|Opis|  
 |---------------|-----------------|  
 |**AdditionalIncludeDirectories**|Opcjonalnie **String []** parametru.<br /><br /> Dodaje katalog do listy katalogów przeszukiwanych w poszukiwaniu plików dołączanych.<br /><br /> Aby uzyskać więcej informacji, zobacz **/I** opcji [przy użyciu RC (wiersz polecenia RC)](http://go.microsoft.com/fwlink/?LinkId=155730) w witrynie MSDN w sieci Web.|  
-|**AdditionalOptions**|Opcjonalnie **ciąg** parametru.<br /><br /> Lista przykład wiersza polecenia optionsor **"*** / /option# /option2 opcja1*". Użyj tego parametru, aby określić opcje wiersza polecenia, które nie są reprezentowane przez inne **RC** parametru zadania.<br /><br /> Aby uzyskać więcej informacji, zobacz Opcje w [przy użyciu RC (wiersz polecenia RC)](http://go.microsoft.com/fwlink/?LinkId=155730) w witrynie MSDN w sieci Web.|  
+|**AdditionalOptions**|Opcjonalnie **ciąg** parametru.<br /><br /> Lista przykład wiersza polecenia optionsor **"**_/option1 /option2 /option#_". Użyj tego parametru, aby określić opcje wiersza polecenia, które nie są reprezentowane przez inne **RC** parametru zadania.<br /><br /> Aby uzyskać więcej informacji, zobacz Opcje w [przy użyciu RC (wiersz polecenia RC)](http://go.microsoft.com/fwlink/?LinkId=155730) w witrynie MSDN w sieci Web.|  
 |**Kultury**|Opcjonalnie **ciąg** parametru.<br /><br /> Określa identyfikator ustawień regionalnych, który reprezentuje kulturę używaną w zasobach.<br /><br /> Aby uzyskać więcej informacji, zobacz **/l** opcji [przy użyciu RC (wiersz polecenia RC)](http://go.microsoft.com/fwlink/?LinkId=155730) w witrynie MSDN w sieci Web.|  
 |**IgnoreStandardIncludePath**|Opcjonalnie **logiczna** parametru.<br /><br /> Jeśli `true`, uniemożliwia sprawdzanie zmienną środowiskową INCLUDE podczas wyszukiwania plików nagłówkowych lub plików zasobów przez kompilator zasobów.<br /><br /> Aby uzyskać więcej informacji, zobacz **/x** opcji [przy użyciu RC (wiersz polecenia RC)](http://go.microsoft.com/fwlink/?LinkId=155730) w witrynie MSDN w sieci Web.|  
 |**NullTerminateStrings**|Opcjonalnie **logiczna** parametru.<br /><br /> Jeśli `true`, wartość null kończy wszystkie ciągi w tablicy ciągów.<br /><br /> Aby uzyskać więcej informacji, zobacz **/n** opcji [przy użyciu RC (wiersz polecenia RC)](http://go.microsoft.com/fwlink/?LinkId=155730) w witrynie MSDN w sieci Web.|  

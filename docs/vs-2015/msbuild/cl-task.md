@@ -27,12 +27,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 66fb9c3d91f940da6d9a9236ac4055063d102b2d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e10c5d6ed0e4b992f5b573cd46bd1248d8d24d90
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42632926"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775261"
 ---
 # <a name="cl-task"></a>CL — Zadanie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -761,7 +761,7 @@ Opakowuje narzędzie kompilatora Visual C++ cl.exe. Kompilator generuje pliki wy
   
     -   **EnableAllWarnings** -   **/Wall**  
   
-     Aby uzyskać więcej informacji, zobacz **Wn *** n* opcji [Wn /W0, / W1, / W2, / W3, / W4, / W1, / W2, / W3, / W4, / Wall / wo, WV, /WX (poziom ostrzegawczy)](http://msdn.microsoft.com/library/d6bc7bf5-c754-4879-909c-8e3a67e2629f).  
+     Aby uzyskać więcej informacji, zobacz **Wn**_n_ opcji [Wn /W0, / W1, / W2, / W3, / W4, / W1, / W2, / W3, / W4, / Wall / wo, WV, /WX (poziom ostrzegawczy)](http://msdn.microsoft.com/library/d6bc7bf5-c754-4879-909c-8e3a67e2629f).  
   
 -   **WholeProgramOptimization**  
   

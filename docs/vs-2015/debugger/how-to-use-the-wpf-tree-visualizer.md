@@ -22,12 +22,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3107f56c676cb10fb4a6cb4c0a5266b6fca6bfd6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9e99bdaac9feb343c594e808433d686e5d607b45
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42679580"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775293"
 ---
 # <a name="how-to-use-the-wpf-tree-visualizer"></a>Porady: korzystanie z wizualizatora drzewa WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Najnowszą wersję tego tematu znajduje się w temacie [porady: Korzystanie z wi
   
 Można użyć wizualizatora drzewa WPF, aby zapoznać się z drzewa wizualnego obiektu WPF i wyświetlić właściwości zależności WPF dla obiektów, które są zawarte w drzewie. Aby uzyskać więcej informacji na temat drzewa wizualnego, zobacz [drzewa w WPF](http://msdn.microsoft.com/library/e83f25e5-d66b-4fc7-92d2-50130c9a6649). Aby uzyskać więcej informacji na temat właściwości zależności zobacz [Przegląd właściwości zależności](http://msdn.microsoft.com/library/d119d00c-3afb-48d6-87a0-c4da4f83dee5).  
   
- Po otwarciu wizualizatora drzewa WPF, zobaczysz dwa okienka: **drzewa wizualnego** po lewej stronie i **właściwości** *nazwa ***:*** typu* okienko po prawej stronie. Zaznacz dowolny obiekt w **drzewa wizualnego** okienku i **właściwości** *nazwa ***:*** typu* okienko jest automatycznie aktualizowana do wyświetlenia właściwości tego obiektu.  
+ Po otwarciu wizualizatora drzewa WPF, zobaczysz dwa okienka: **drzewa wizualnego** po lewej stronie i **właściwości** _nazwa_**:**  _Typ_ w okienku po prawej stronie. Zaznacz dowolny obiekt w **drzewa wizualnego** okienku i **właściwości** _nazwa_**:**_typu_ okienka automatycznie aktualizowane, aby wyświetlić właściwości tego obiektu.  
   
 ### <a name="to-open-the-wpf-tree-visualizer"></a>Aby otworzyć z wizualizatora drzewa WPF  
   
@@ -60,7 +60,7 @@ Można użyć wizualizatora drzewa WPF, aby zapoznać się z drzewa wizualnego o
   
 ### <a name="to-search-the-properties-list"></a>Lista właściwości wyszukiwania  
   
--   W **właściwości** *nazwa ***:*** typu* okienko, wpisz ciąg chcesz wyszukać w **filtru** pole.  
+-   W **właściwości** _nazwa_**:**_typu_ okienko, wpisz ciąg chcesz wyszukać w **filtrowania**pole.  
   
      Z wizualizatora drzewa WPF natychmiast wyszukuje właściwości, które pasuje do ciągu, które zostały wpisane; teraz na liście zostaną wyświetlone tylko te właściwości, które są dopasowywania ciągu, które zostały wpisane. Wpisz więcej znaków, aby znaleźć bardziej dokładne dopasowanie.  
   

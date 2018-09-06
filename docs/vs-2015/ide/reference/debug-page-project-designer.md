@@ -19,12 +19,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 68f7d92abebb695ff230815795d34e48a8176ec3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dfe8539d7b15af1faa22911b69686cf9243db418
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42629905"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43776066"
 ---
 # <a name="debug-page-project-designer"></a>Strona debugowania, Projektant projektu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,12 +32,12 @@ ms.locfileid: "42629905"
 Najnowszą wersję tego tematu znajduje się w temacie [strona debugowania, Projektant projektu](https://docs.microsoft.com/visualstudio/ide/reference/debug-page-project-designer).  
   
   
-OSTRZEŻENIE]
+> [!WARNING]
 >  Ten temat nie dotyczy aplikacji Windows Store. Zobacz [uruchomić sesję debugowania (VB, C#, C++ i XAML)](../../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md) w Centrum deweloperów Windows.  
   
  Użyj **debugowania** strony **projektanta projektu** do ustawiania właściwości do debugowania zachowania w projekcie języka Visual Basic lub C#.  
   
- Aby uzyskać dostęp do **debugowania** wybierz węzeł projektu w **Eksploratora rozwiązań**. Na **projektu** menu, wybierz pozycję * ProjectName ***właściwości**. Podczas **projektanta projektu** zostanie wyświetlona, kliknij przycisk **debugowania** kartę.  
+ Aby uzyskać dostęp do **debugowania** wybierz węzeł projektu w **Eksploratora rozwiązań**. Na **projektu** menu, wybierz _ProjectName_**właściwości**. Podczas **projektanta projektu** zostanie wyświetlona, kliknij przycisk **debugowania** kartę.  
   
 ## <a name="configuration-and-platform"></a>Konfiguracja i platforma  
  Poniższe opcje pozwalają wybrać konfigurację i platformę do wyświetlenia lub zmodyfikowania.  

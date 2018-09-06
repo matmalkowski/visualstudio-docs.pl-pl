@@ -4,17 +4,17 @@ ms.date: 08/21/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: 2dc61e63-9ba2-4c16-b1ad-f46249e576b6
-author: dantogno
-ms.author: v-davian
+author: conceptdev
+ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: c356e5d9138c73d187f96775fbe6a09ed7e448e8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0b16232ed69ba5a3332bad2a22bca426f5f91bbe
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42634621"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775285"
 ---
 # <a name="devops-with-unity-apps"></a>Metodyka DevOps dla aplikacji Unity
 

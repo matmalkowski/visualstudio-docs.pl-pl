@@ -16,12 +16,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1084b1465de584289e8a14820ae21fb9662a7229
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ee8a3b5a5510ef5b8a104e3a55ace3af9ce7d318
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42676490"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775532"
 ---
 # <a name="customizing-file-storage-and-xml-serialization"></a>Dostosowywanie przechowywania plików i serializacji XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -132,7 +132,7 @@ Gdy użytkownik zapisuje wystąpienia lub *modelu*, języka specyficznego dla do
   
 1.  Upewnij się, że **jest kluczem monikera** jest `false` dla każdej właściwości domeny w tej klasy i jej klasy bazowe.  
   
-    1.  W Eksploratorze DSL rozwiń **dane Behavior\Class serializacji kodu Xml\\***\<klasy domeny >*** \Element danych**.  
+    1.  W Eksploratorze DSL rozwiń **dane Behavior\Class serializacji kodu Xml\\**_\<klasy domeny >_**\Element danych**.  
   
     2.  Upewnij się, że **jest kluczem monikera** jest `false` dla każdej właściwości domeny.  
   
@@ -146,7 +146,7 @@ Gdy użytkownik zapisuje wystąpienia lub *modelu*, języka specyficznego dla do
   
 -   Ustaw **jest kluczem monikera** dla właściwości domeny w istniejącej klasy domeny. Typ właściwości musi być `string`.  
   
-    1.  W Eksploratorze DSL, rozwiń **dane Behavior\Class serializacji kodu Xml\\***\<klasy domeny >*** \Element danych**, a następnie wybierz właściwość domeny.  
+    1.  W Eksploratorze DSL rozwiń **dane Behavior\Class serializacji kodu Xml\\**_\<klasy domeny >_**\Element danych**, a następnie wybierz pozycję Właściwość domeny.  
   
     2.  W oknie właściwości ustaw **jest kluczem monikera** do `true`.  
   

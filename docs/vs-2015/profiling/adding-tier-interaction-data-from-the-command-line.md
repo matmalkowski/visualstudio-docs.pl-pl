@@ -17,12 +17,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 310d87a38e0b14ec0896c51f2765a64736ebff1f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ce7713b39acb7736e34f6ab6017b0cd32b1e1cfa
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42685430"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43776027"
 ---
 # <a name="adding-tier-interaction-data-from-the-command-line"></a>Dodawanie danych o interakcji między warstwami za pośrednictwem wiersza polecenia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ Profilowanie interakcji pomiędzy warstwami zawiera dodatkowe informacje dotycz�
   
  **Zbieranie danych Porada na komputerze zdalnym**  
   
- Aby zebrać dane interakcji między warstwami na komputerze zdalnym, należy skopiować **vs_profiler_***\<platformy >***_***\<języka >***.exe** pliku z *%VSInstallDir%***\Team Tools\Setups narzędzia** folder programu Visual Studio komputera na komputerze zdalnym i zainstaluj go. Nie można użyć narzędzi profilowania w [narzędzia zdalne programu Visual Studio](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) Pobieranie pakietu.  
+ Aby zebrać dane interakcji między warstwami na komputerze zdalnym, należy skopiować **vs\_profiler\_**_\<platformy >_ **\_**  _\<Języka >_**.exe** plik wchodzącej w skład _VSInstallDir %_**tools\performance Tools\Setups**folder programu Visual Studio komputera na komputerze zdalnym i zainstaluj go. Nie można użyć narzędzi profilowania w [narzędzia zdalne programu Visual Studio](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) Pobieranie pakietu.  
   
  **Porada raportów**  
   
@@ -147,7 +147,7 @@ Profilowanie interakcji pomiędzy warstwami zawiera dodatkowe informacje dotycz�
   
  Aby uzyskać więcej informacji, zobacz jeden z następujących tematów:  
   
- [Profilowanie aplikacji sieci Web platformy ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)  
+ [Profilowanie aplikacji internetowej ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)  
   
  [Usługi profilowania](../profiling/command-line-profiling-of-services.md)  
   

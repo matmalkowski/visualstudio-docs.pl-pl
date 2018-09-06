@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c69e6d5ddf9cd1691b3ddd736155dbd58a82419e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 841257a03e257b92b728d33751869a02e2c40db6
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42626003"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774591"
 ---
 # <a name="walkthrough-add-an-application-page-to-a-workflow"></a>Wskazówki: Dodawanie strony aplikacji do przepływu pracy
   W tym instruktażu pokazano, jak dodać stronę aplikacja wyświetlającą dane pochodzące z przepływu pracy do projektu przepływu pracy. Opiera się na projekt, opisana w temacie [wskazówki: Tworzenie przepływu pracy z formularzami inicjacji i skojarzenia](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).
@@ -337,7 +337,7 @@ ms.locfileid: "42626003"
 
 14. Powtórz kroki od 11 13 z innych dokumentów na liście dokumentów udostępnionych. (Dokładna liczba dokumentów nie jest ważna.)
 
-15. Wyświetlenia strony podsumowania aplikacja raport wydatków, otwierając następujący adres URL w przeglądarce sieci Web: **http://***SystemName***/_layouts/ExpenseReport/ApplicationPage1.aspx**.
+15. Wyświetlenia strony podsumowania aplikacja raport wydatków, otwierając następujący adres URL w przeglądarce sieci Web: **http://**_SystemName_**/_layouts/ExpenseReport/ApplicationPage1.aspx**.
 
      Na stronie podsumowania raportu wydatków zawiera listę wszystkich raportów wydatków, które przekroczyło przydzielony ilość, kwotę, które przekroczyły go i sumę dla wszystkich raportów.
 

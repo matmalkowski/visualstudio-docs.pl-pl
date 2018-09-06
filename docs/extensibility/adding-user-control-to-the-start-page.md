@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 095325fc8312747b61ff4312c5fe616ae79ce045
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 8bcac83d23bae3d8c269a53a95fedb9507245e9f
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152961"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775829"
 ---
 # <a name="add-user-control-to-the-start-page"></a>Dodaj kontrolkę użytkownika do strony początkowej
 W tym instruktażu przedstawiono sposób dodawania odwołania biblioteki DLL do niestandardowej strony początkowej. Przykład dodaje formant użytkownika do rozwiązania, tworzy kontrolkę użytkownika i następnie odwołuje się skompilowany zestaw z poziomu strony startowej *.xaml* pliku. Nowa karta obsługuje formant użytkownika, który działa jako podstawowa przeglądarka sieci Web.  
@@ -177,7 +177,7 @@ W tym instruktażu przedstawiono sposób dodawania odwołania biblioteki DLL do 
   
 1.  Skopiuj plik XAML i pomocnicze pliki tekstowe lub znaczników pliki do *%USERPROFILE%\My 2015\StartPages Documents\Visual Studio\\*  folderu.  
   
-2.  Jeśli swoją stronę początkową odwołuje się do żadnych formantów lub typów w zestawach, które nie są instalowane przez program Visual Studio, skopiować te zestawy, a następnie wklej je w * folder instalacji programu Visual Studio ***\Common7\IDE\PrivateAssemblies\\** .  
+2.  Jeśli swoją stronę początkową odwołuje się do żadnych formantów lub typów w zestawach, które nie są instalowane przez program Visual Studio, skopiować te zestawy, a następnie wklej je w _folder instalacji programu Visual Studio_**\Common7\IDE\ PrivateAssemblies\\**.  
   
 3.  Wpisz w wierszu polecenia programu Visual Studio **devenv /rootsuffix Exp** otworzyć doświadczalne wystąpienie programu Visual Studio.  
   

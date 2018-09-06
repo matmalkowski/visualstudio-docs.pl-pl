@@ -28,19 +28,19 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0322f3ad37330e84cc152fcc2bcecbed89f2f9f4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 467b87c1a0e72c5523523aae015f03b54273907c
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42630136"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775607"
 ---
 # <a name="how-to-debug-native-dlls"></a>Porady: Debugowanie natywnych bibliotek DLLs
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Najnowszą wersję tego tematu znajduje się w temacie [porady: debugowanie natywnych bibliotek DLL](https://docs.microsoft.com/visualstudio/debugger/how-to-debug-native-dlls).  
   
-UWAGA]
+> [!NOTE]
 >  Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz Importuj i Eksportuj ustawienia w menu Narzędzia. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  Podczas debugowania biblioteki DLL, należy uruchomić debugowanie od:  
@@ -67,7 +67,7 @@ UWAGA]
   
 5.  W **argumenty wiersza polecenia** wprowadź wszelkie wymagane argumenty dla pliku wykonywalnego.  
   
- Jeśli nie określisz pliku wykonywalnego w *projektu *** stron właściwości** okno dialogowe [pliku wykonywalnego do debugowania sesji okno dialogowe](../debugger/executable-for-debugging-session-dialog-box.md) pojawia się podczas uruchamiania debugowania.  
+ Jeśli nie określisz pliku wykonywalnego w _projektu_**stron właściwości** okno dialogowe [pliku wykonywalnego do debugowania sesji okno dialogowe](../debugger/executable-for-debugging-session-dialog-box.md) pojawia się podczas uruchamiania debugowania.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Zabezpieczenia debugera](../debugger/debugger-security.md)   

@@ -18,12 +18,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1ca264dde1a05de9b03868223b7886f85cdf542a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 212109c37e1c85d5ddbc55413ab5a972edbfa337
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42677960"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775195"
 ---
 # <a name="call-hierarchy"></a>Hierarchia wywołań
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Hierarchię wywołań umożliwia nawigowanie po kodzie, wyświetlając wszystkie
 ## <a name="using-call-hierarchy"></a>Za pomocą hierarchię wywołań  
  Aby wyświetlić **hierarchię wywołań,** , kliknij prawym przyciskiem myszy nazwę metody, właściwości lub wywołanie konstruktora, a następnie kliknij przycisk **Pokaż hierarchię wywołań,**.  
   
- Nazwa elementu członkowskiego, który pojawia się w okienku widoku drzewa, w **hierarchię wywołań** okna. Po rozwinięciu węzła elementu członkowskiego, **wywołania do *** nazwa elementu członkowskiego* i **wywołania z *** nazwa elementu członkowskiego* węzły podrzędne są wyświetlane. Poniższa ilustracja przedstawia te węzły w **hierarchię wywołań** okna.  
+ Nazwa elementu członkowskiego, który pojawia się w okienku widoku drzewa, w **hierarchię wywołań** okna. Po rozwinięciu węzła elementu członkowskiego **wywołania do**_nazwa elementu członkowskiego_ i **wywołania z**_nazwa elementu członkowskiego_ węzły podrzędne są wyświetlane. Poniższa ilustracja przedstawia te węzły w **hierarchię wywołań** okna.  
   
  ![Hierarchia wywołań z jednym węzłem, otwórz](../../ide/reference/media/onenode.png "OneNode")  
 Okno hierarchii wywołań  

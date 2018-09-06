@@ -20,12 +20,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 36ee2612fbee3cb346fcf1e2e78ef49fce3ff630
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2afbadccfc894dd5ba5baba9c58ab43417f44ed5
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42684796"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775443"
 ---
 # <a name="visual-c-code-snippets"></a>Wstawki kodu Visual C#
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,7 +69,7 @@ Fragmenty kodu są gotowe fragmenty kodu, które szybko można wstawić w kodzie
 |mbox|Tworzy wywołanie <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName>. Może trzeba dodać odwołanie do pliku System.Windows.Forms.dll.|Wewnątrz metody, indeksatora, metody dostępu właściwości lub metody dostępu zdarzeń.|  
 |— przestrzeń nazw|Tworzy [przestrzeni nazw](http://msdn.microsoft.com/library/0a788423-9110-42e0-97d9-bda41ca4870f) deklaracji.|Wewnątrz przestrzeni nazw (w tym globalnej przestrzeni nazw).|  
 |Prop|Tworzy [automatycznie implementowana właściwość](http://msdn.microsoft.com/library/aa55fa97-ccec-431f-b5e9-5ac789fd32b7) deklaracji.|Wewnątrz klasy lub struktury.|  
-ropfull|Tworzy deklaracja właściwości get i ustaw metody dostępu.|Wewnątrz klasy lub struktury.|  
+|propfull|Tworzy deklaracja właściwości get i ustaw metody dostępu.|Wewnątrz klasy lub struktury.|  
 |propg|Tworzy tylko do odczytu [automatycznie implementowana właściwość](http://msdn.microsoft.com/library/aa55fa97-ccec-431f-b5e9-5ac789fd32b7) za pomocą prywatnej metody dostępu "set".|Wewnątrz klasy lub struktury.|  
 |SIM|Tworzy [statyczne](http://msdn.microsoft.com/library/5509e215-2183-4da3-bab4-6b7e607a4fdf)[int](http://msdn.microsoft.com/library/212447b4-5d2a-41aa-88ab-84fe710bdb52) deklaracji metody Main.|Wewnątrz klasy lub struktury.|  
 |struktura |Tworzy [struktury](http://msdn.microsoft.com/library/ff3dd9b7-dc93-4720-8855-ef5558f65c7c) deklaracji.|Wewnątrz przestrzeni nazw (w tym globalnej przestrzeni nazw), klasy lub struktury.|  
@@ -88,7 +88,7 @@ ropfull|Tworzy deklaracja właściwości get i ustaw metody dostępu.|Wewnątrz 
  [Porady: Tworzenie nowego fragmentu kodu przy użyciu zamiany](http://msdn.microsoft.com/en-us/8d56d43c-097a-475b-aa85-cae1554b6338)   
  [Parametry szablonu](../ide/template-parameters.md)   
  [Porady: użycie fragmentów kodu polecenia Otocz przez](../ide/how-to-use-surround-with-code-snippets.md)   
- [Porady: Przywracanie Refaktoryzowanych wstawek kodu C#](../ide/how-to-restore-csharp-refactoring-snippets.md)
+ [Instrukcje: przywracanie refaktoryzowanych wstawek kodu C#](../ide/how-to-restore-csharp-refactoring-snippets.md)
 
 
 

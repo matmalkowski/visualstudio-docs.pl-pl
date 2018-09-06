@@ -12,12 +12,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 50fa92b37fb6ee9905d079fecb93b346556f5e1c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1d97e0204122e6dfcae89da7b04a0a303a0bd9a4
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42683436"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774700"
 ---
 # <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>Porady: migracja języka specyficznego dla domeny do nowej wersji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,9 +68,9 @@ Projekty definiowanie i korzystanie z języka specyficznego dla domeny, które m
   
     1.  Kliknij przycisk **przekonwertować**.  
   
-         Zanim każdy plik projektu jest konwertowany, kopię *projektu *** .csproj** zostanie zapisany jako *projektu ***.vs2008.csproj**  
+         Zanim każdy plik projektu jest konwertowany, kopię _projektu_**.csproj** zostanie zapisany jako _projektu_**. vs2008.csproj**  
   
-         Kopia każdego *rozwiązania *** .sln** zostanie zapisany jako *rozwiązania ***.vs2008.sln**  
+         Kopia każdego _rozwiązania_**.sln** zostanie zapisany jako _rozwiązania_**. vs2008.sln**  
   
     2.  Badanie zakończone niepowodzeniem konwersje, które są zgłaszane.  
   

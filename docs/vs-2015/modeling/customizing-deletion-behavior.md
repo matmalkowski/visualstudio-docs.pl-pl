@@ -16,12 +16,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: ffa0228bd4a15a8de94c4799d9549a35ef2da048
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9d3be15009964272eb06118a0b9c01ec012164bc
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42678287"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775834"
 ---
 # <a name="customizing-deletion-behavior"></a>Dostosowywanie zachowania dotyczącego usuwania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -85,7 +85,7 @@ Usuwanie elementu zwykle powoduje, że powiązanych elementów można również 
 >  Aby dodać kod programu do swojej definicji DSL, Utwórz plik osobnego kodu w **Dsl** projektu, a następnie zapisz definicje częściowe rozszerzyć klasy w folderze wygenerowany kod. Aby uzyskać więcej informacji, zobacz [pisanie kodu pod kątem dostosowywania języka specyficznego dla domeny](../modeling/writing-code-to-customise-a-domain-specific-language.md).  
   
 ##  <a name="closure"></a> Definiowanie zamknięcia Delete  
- Operacja usunięcia używa klasy *YourModel *** DeleteClosure** Aby określić, które elementy, aby usunąć, biorąc pod uwagę wartości początkowe. Wywołuje `ShouldVisitRelationship()` i `ShouldVisitRolePlayer()` wielokrotnie, zalet Graf relacji. Można zastąpić tych metod. ShouldVisitRolePlayer znajduje się za pomocą tożsamości łącze i element w jednej z ról łącza. Powinien zostać zwrócony jeden z następujących wartości:  
+ Operacja usunięcia używa klasy _YourModel_**DeleteClosure** ustalenie, które elementy, aby usunąć, biorąc pod uwagę wartości początkowe. Wywołuje `ShouldVisitRelationship()` i `ShouldVisitRolePlayer()` wielokrotnie, zalet Graf relacji. Można zastąpić tych metod. ShouldVisitRolePlayer znajduje się za pomocą tożsamości łącze i element w jednej z ról łącza. Powinien zostać zwrócony jeden z następujących wartości:  
   
 -   **VisitorFilterResult.Yes**— element powinien zostać usunięty, i walker należy kontynuować do wypróbowania elementu przez inne łącza.  
   

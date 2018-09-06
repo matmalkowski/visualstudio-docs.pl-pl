@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: bc2a839583f62f3efab18fdb55274ec559d5e6cf
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 7d89292bd3f0c3835d6d2ed809310bc2a395553f
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924965"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43776096"
 ---
 # <a name="unit-testing-in-nodejs"></a>Testowanie jednostek w środowisku Node.js
 
@@ -92,7 +92,7 @@ Testy można uruchomić, klikając **Uruchom wszystkie** link w Eksploratorze te
 > [!NOTE]
 > Obecnie nie obsługujemy testy profilowania lub pokrycia kodu.
 
-### <a name="run-tests-from-the-command-line"></a>Uruchom testy z wiersza polecenia
+### <a name="run-tests-from-the-command-line"></a>Uruchamianie testów z poziomu wiersza polecenia
 
 Możesz uruchomić testy z [wiersz polecenia dla deweloperów](/dotnet/framework/tools/developer-command-prompt-for-vs) programu Visual Studio 2017 przy użyciu następującego polecenia:
 
@@ -137,7 +137,7 @@ Możesz dodać obsługę środowisk testowych dodatkowe, implementując odkrywan
 
 `<VisualStudioFolder>\Common7\IDE\Extensions\Microsoft\NodeJsTools\TestAdapter\TestFrameworks`
 
-Ten folder musi zawierać plik JavaScript o takiej samej nazwie, który eksportuje 2 następujące funkcje:
+Ten folder musi zawierać plik JavaScript o takiej samej nazwie, który eksportuje następujące dwie funkcje:
 
 * `find_tests`
 * `run_tests`
@@ -147,3 +147,24 @@ Na stałe, na przykład `find_tests` i `run_tests` implementacji, zobacz impleme
 `<VisualStudioFolder>\Common7\IDE\Extensions\Microsoft\NodeJsTools\TestAdapter\TestFrameworks\mocha\mocha.js`
 
 Odnajdywanie struktur testowania występuje podczas uruchamiania programu Visual Studio. Jeśli struktura zostanie dodany po uruchomieniu programu Visual Studio, uruchom ponownie Visual Studio, aby wykryć platformę. Jednak nie trzeba ponownie uruchomić podczas wprowadzania zmian do wdrożenia.
+
+## <a name="unit-tests-in-other-project-types"></a>Testy jednostkowe w innych typów projektów
+Nie jest ograniczona do pisania testów jednostkowych w właśnie projektach środowiska Node.js. Po dodaniu właściwości TestFramework i TestRoot do dowolnego projekt C# lub VB tych testów zostaną wyliczone i mogły być uruchamiane przy użyciu okna Eksploratora testów.
+
+Aby je włączyć, kliknij prawym przyciskiem myszy węzeł projektu w Eksploratorze rozwiązań, wybierz polecenie **Zwolnij projekt**, a następnie wybierz **edycji projektu**. Następnie w pliku projektu należy dodać następujące dwa elementy do grupy właściwości.
+
+> [!NOTE]
+> Upewnij się, że grupa właściwości, dodawanego elementy, aby nie jest określony warunek.
+> Może to spowodować nieoczekiwane zachowanie.
+
+```xml
+<PropertyGroup>
+    <JavaScriptTestRoot>tests\</JavaScriptTestRoot>
+    <JavaScriptTestFramework>Tape</JavaScriptTestFramework>
+</PropertyGroup>
+```
+
+Następnie dodaj testy do wskazanego folderu głównego testu i będą one dostępne do uruchamiania w oknie Eksploratora testów. Jeśli początkowo nie są wyświetlane, konieczne może być ponownie skompilować projekt.
+
+> [!NOTE]
+> To obecnie nie działa dla projektów .NET Standard i .NET Core.

@@ -34,12 +34,12 @@ caps.latest.revision: 45
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5de10e480548ec68e69d9dffc40d415d8a064357
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 75b617e9de62c20cc1e8a32cf993f5f03201f4fc
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42684641"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774908"
 ---
 # <a name="how-to-use-the-call-stack-window"></a>Porady: korzystanie z okna stosu wywołań
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,7 +73,7 @@ Za pomocą **stos wywołań** okna, można wyświetlić wywołania funkcji lub p
   
 ### <a name="to-change-the-optional-information-displayed"></a>Aby zmienić wyświetlane informacje opcjonalne  
   
--   Kliknij prawym przyciskiem myszy **stos wywołań** okna i zestawu lub wyczyść **Pokaż \< ***informacje, które mają***>**.  
+-   Kliknij prawym przyciskiem myszy **stos wywołań** okna i zestawu lub wyczyść **Pokaż \<**  _informacje, które mają_ **>**.  
   
 ### <a name="to-display-non-user-code-frames-in-the-call-stack-window"></a>Aby wyświetlić ramki kodu niepochodzącego od użytkownika w oknie stosu wywołań  
   

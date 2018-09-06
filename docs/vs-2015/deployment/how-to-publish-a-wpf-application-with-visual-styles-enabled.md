@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: c6b6c859c18dd1a3cf2aa8f2bc7d86e1ae6f961b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b93ea96bfaa03dc11cccf137c04e7d0cf3ca50ac
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42684966"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775258"
 ---
 # <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Porady: publikowanie aplikacji WPF przy użyciu włączonej funkcji stylów wizualnych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Style wizualne Włącz wygląd wspólnych formantów, aby zmienić w zależnośc
   
     ###### <a name="to-open-the-manifest-file-in-a-visual-basic-project"></a>Aby otworzyć plik manifestu w projekcie Visual Basic  
   
-    1.  Na pasku menu wybierz **projektu**, * ProjectName ***właściwości**, gdzie *ProjectName* jest nazwą projektu WPF.  
+    1.  Na pasku menu wybierz **projektu**, _ProjectName_**właściwości**, gdzie *ProjectName* jest nazwą projektu WPF.  
   
          Są wyświetlane na stronach właściwości projektu WPF.  
   
@@ -64,7 +64,7 @@ Style wizualne Włącz wygląd wspólnych formantów, aby zmienić w zależnośc
   
     ###### <a name="to-open-the-manifest-file-in-a-c-project"></a>Aby otworzyć plik manifestu w projekcie języka C#  
   
-    1.  Na pasku menu wybierz **projektu**, * ProjectName ***właściwości**, gdzie *ProjectName* jest nazwą projektu WPF.  
+    1.  Na pasku menu wybierz **projektu**, _ProjectName_**właściwości**, gdzie *ProjectName* jest nazwą projektu WPF.  
   
          Są wyświetlane na stronach właściwości projektu WPF.  
   

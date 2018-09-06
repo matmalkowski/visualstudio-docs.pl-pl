@@ -15,12 +15,12 @@ ms.assetid: e3de4730-a95c-465a-b3b2-92ca85364ad7
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5fcf055a5f897b5391084e9caa2bf2debd364123
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 83bbc57098a68239a1ef26548e9cf05fd31322bb
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42674571"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774606"
 ---
 # <a name="specifying-file-handlers-for-file-name-extensions"></a>Określanie programów obsługi plików dla rozszerzeń nazw plików
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,7 +56,7 @@ HKEY_CLASSES_ROOT\
 |--------------------|----------------------|  
 |.Extension|ProductName. extension.versionMajor.versionMinor|  
   
- Możesz zarejestrować różne aplikacje, które można otworzyć konkretnego rozszerzenia pliku, dodając numerów wersji ProgID jako wartości przekierowywanie wpisów z HKEY_CLASSES_ROOT\\*\<rozszerzenia >* \OpenWithProgids klucza. Ten klucz rejestru zawiera listę alternatywnych ProgID skojarzone z rozszerzeniem pliku. Aplikacje skojarzone z wymienionych ProgID pojawiają się w **Otwórz za pomocą *** nazwa produktu* podmenu. Jeśli ta sama aplikacja jest określona w obu `OpenWithList` i `OpenWithProgids` klucze, system operacyjny scala duplikaty.  
+ Możesz zarejestrować różne aplikacje, które można otworzyć konkretnego rozszerzenia pliku, dodając numerów wersji ProgID jako wartości przekierowywanie wpisów z HKEY_CLASSES_ROOT\\*\<rozszerzenia >* \OpenWithProgids klucza. Ten klucz rejestru zawiera listę alternatywnych ProgID skojarzone z rozszerzeniem pliku. Aplikacje skojarzone z wymienionych ProgID pojawiają się w **Otwórz za pomocą**_nazwa produktu_ podmenu. Jeśli ta sama aplikacja jest określona w obu `OpenWithList` i `OpenWithProgids` klucze, system operacyjny scala duplikaty.  
   
 > [!NOTE]
 >  `OpenWithProgids` Klucz jest obsługiwany tylko w Windows XP. Ponieważ inne systemy operacyjne zignorować ten klucz, nie należy używać go jako rejestrację tylko dla programów obsługi plików. Użyj tego klucza, aby zapewnić lepsze środowisko użytkownika w Windows XP.  

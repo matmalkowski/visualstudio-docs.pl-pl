@@ -1,7 +1,7 @@
 ---
 title: Samouczek — Dowiedz się, Flask w programie Visual Studio, krok 3
 description: Przewodnik po podstawy Flask w kontekście projektów programu Visual Studio, w szczególności pokazująca, jak obsługa plików statycznych, dodawanie stron do aplikacji i użyć szablonu dziedziczenia
-ms.date: 06/04/2018
+ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 38050d9ecb5956c4e782ec61b5ae2dc6801ad224
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 6cdc8e3658b02c7c4371181d6c0e5723d0a3537c
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637646"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775759"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Krok 3: Obsługa plików statycznych, dodawanie stron i użyć szablonu dziedziczenia
 

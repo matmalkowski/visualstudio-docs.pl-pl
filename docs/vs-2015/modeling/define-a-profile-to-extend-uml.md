@@ -19,12 +19,12 @@ caps.latest.revision: 44
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 86f2e360c924dd557c17cfdf41a3dc2723114af3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b54babfc6bb4350ba1cc99d6ce34a05f70dab693
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42696662"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775795"
 ---
 # <a name="define-a-profile-to-extend-uml"></a>Definiowanie profilu w celu rozszerzenia kodu UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -352,7 +352,7 @@ Można zdefiniować *profil UML* dostosować standardowe elementy modelu do okre
   
 2.  Upewnij się, że każda nazwa Moniker jest w postaci/ProfileName/nodename. Nazwa_profilu jest wartością atrybutu nazwy w węźle głównym profilu. Nazwa węzła jest wartością atrybutu nazwy Metaklasa, externalType lub enumerationType.  
   
-3.  Upewnij się, składnia jest zgodnie z opisem w tym miejscu oraz jak pokazano w * dysku ***: \Program Files\Microsoft \Common7\IDE\Extensions\Microsoft\Architecture Tools\UmlProfiles programu Visual Studio [wersja]\\**.  
+3.  Upewnij się, składnia jest zgodnie z opisem w tym miejscu oraz jak pokazano w _dysku_**: \Program Files\Microsoft \Common7\IDE\Extensions\Microsoft\Architecture Tools\UmlProfiles programu Visual Studio [wersja]\\** .  
   
 4.  Odinstaluj wadliwe rozszerzenie. Na **narzędzia** menu, kliknij przycisk **rozszerzenia i aktualizacje**.  
   

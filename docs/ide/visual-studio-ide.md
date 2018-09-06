@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 110e8477384e7f13da6a4f9ca0b81235f2f2446b
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 3ac7f54e2295764694372119faf03ea72cff42de
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42624239"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775987"
 ---
 # <a name="welcome-to-the-visual-studio-ide"></a>Witamy w środowisku IDE programu Visual Studio
 
@@ -273,6 +273,8 @@ Jeśli chcesz zacząć korzystać do kodowania więcej jedną z następujących 
 - [Tworzenie pierwszej aplikacji sieci web języka Python przy użyciu programu Visual Studio](quickstart-python.md)
 
 - [Tworzenie pierwszej aplikacji sieci web języka C# przy użyciu programu Visual Studio](quickstart-aspnet-core.md)
+
+- [Tworzenie pierwszej aplikacji sieci web F # przy użyciu programu Visual Studio](quickstart-fsharp.md)
 
 - [Tworzenie pierwszej aplikacji Node.js przy użyciu programu Visual Studio](quickstart-nodejs.md)
 

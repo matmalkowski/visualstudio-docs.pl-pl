@@ -30,12 +30,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c38c9597b61bae381339330256183de522076678
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1c4318ffe208810fc23fa7237a96118368d6da61
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42631697"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775176"
 ---
 # <a name="mt-task"></a>MT — Zadanie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,11 +62,11 @@ Opakowuje narzędziu manifestu Microsoft mt.exe. Aby uzyskać więcej informacji
 |**EnableDPIAwareness**|Opcjonalnie `Boolean` parametru.<br /><br /> Jeśli `true`, dodaje do manifestu informacje, które oznacza aplikację jako obsługującą ustawienia DPI. Pisanie aplikacji obsługującą ustawienia DPI sprawia, że interfejs użytkownika wyglądać konsekwentnie w wielu ustawień o wysokiej rozdzielczości DPI.<br /><br /> Aby uzyskać więcej informacji, zobacz "Wysokiej rozdzielczości" w [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.|  
 |**GenerateCatalogFiles**|Opcjonalnie `Boolean` parametru.<br /><br /> Jeśli `true`, generuje pliki definicji (.cdf) w katalogu.<br /><br /> Aby uzyskać więcej informacji, zobacz **/makecdfs** opcji "Mt.exe" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.|  
 |**GenerateCategoryTags**|Opcjonalnie `Boolean` parametru.<br /><br /> Jeśli `true`, powoduje, że tagi kategorii do wygenerowania. Jeśli ten parametr jest `true`, **ManifestFromManagedAssemblyMT** parametru zadania musi być także określona.<br /><br /> Aby uzyskać więcej informacji, zobacz **/category** opcji "Mt.exe" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.|  
-|**InputResourceManifests**|Opcjonalnie **ciąg** parametru.<br /><br /> Dane wejściowe manifestu z zasobu typu RT_MANIFEST, który ma określony identyfikator. Określ zasób w postaci  *\<Plik > [***;*** [***#***] < Identyfikator_zasobu_2 >]*, gdzie opcjonalnego `resource_id` parametr jest liczbą nieujemną, 16-bitowych.<br /><br /> Jeśli nie `resource_id` jest określona, używana jest wartość domyślna CREATEPROCESS_MANIFEST_RESOURCE (1).<br /><br /> Aby uzyskać więcej informacji, zobacz **/inputresource** opcji "Mt.exe" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.|  
+|**InputResourceManifests**|Opcjonalnie **ciąg** parametru.<br /><br /> Dane wejściowe manifestu z zasobu typu RT_MANIFEST, który ma określony identyfikator. Określ zasób w postaci  _\<Plik > [_**;** _[_**#**_] < Identyfikator_zasobu_2 >]_, gdzie opcjonalnego `resource_id` parametr jest liczbą nieujemną, 16-bitowych.<br /><br /> Jeśli nie `resource_id` jest określona, używana jest wartość domyślna CREATEPROCESS_MANIFEST_RESOURCE (1).<br /><br /> Aby uzyskać więcej informacji, zobacz **/inputresource** opcji "Mt.exe" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.|  
 |**ManifestFromManagedAssembly**|Opcjonalnie **ciąg** parametru.<br /><br /> Generuje manifest z określonego zestawu zarządzanego.<br /><br /> Aby uzyskać więcej informacji, zobacz **/managedassemblyname** opcji "Mt.exe" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.|  
 |**ManifestToIgnore**|Opcjonalnie **ciąg** parametru.<br /><br /> (Nie jest używany.)|  
 |**OutputManifestFile**|Opcjonalnie **ciąg** parametru.<br /><br /> Określa nazwę manifeście danych wyjściowych. Jeśli ten parametr zostanie pominięty, tylko jeden manifest jest on obsługiwany przez ten manifest zostanie zmodyfikowany w miejscu.<br /><br /> Aby uzyskać więcej informacji, zobacz **/out** opcji "Mt.exe" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.|  
-|**OutputResourceManifests**|Opcjonalnie **ciąg** parametru.<br /><br /> Dane wyjściowe manifestu do zasobu typu RT_MANIFEST, który ma określony identyfikator. Zasób jest w postaci  *\<Plik > [***;*** [***#***] < Identyfikator_zasobu_2 >]*, gdzie opcjonalnego `resource_id` parametr jest liczbą nieujemną, 16-bitowych.<br /><br /> Jeśli nie `resource_id` jest określona, używana jest wartość domyślna CREATEPROCESS_MANIFEST_RESOURCE (1).<br /><br /> Aby uzyskać więcej informacji, zobacz **/outputresource** opcji "Mt.exe" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.|  
+|**OutputResourceManifests**|Opcjonalnie **ciąg** parametru.<br /><br /> Dane wyjściowe manifestu do zasobu typu RT_MANIFEST, który ma określony identyfikator. Zasób jest w postaci  _\<Plik > [_**;** _[_**#**_] < Identyfikator_zasobu_2 >]_, gdzie opcjonalnego `resource_id` parametr jest liczbą nieujemną, 16-bitowych.<br /><br /> Jeśli nie `resource_id` jest określona, używana jest wartość domyślna CREATEPROCESS_MANIFEST_RESOURCE (1).<br /><br /> Aby uzyskać więcej informacji, zobacz **/outputresource** opcji "Mt.exe" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.|  
 |**RegistrarScriptFile**|Opcjonalnie **ciąg** parametru.<br /><br /> Określa nazwę pliku skryptu (.rgs) rejestratora, do użycia obsługę rejestracji wolnego modelu COM manifestu.<br /><br /> Aby uzyskać więcej informacji, zobacz **/rgs** opcji "Mt.exe" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.|  
 |**ReplacementsFile**|Opcjonalnie **ciąg** parametru.<br /><br /> Określa plik, który zawiera wartości dla wymienialnych ciągów w pliku skryptu (.rgs) rejestratora.<br /><br /> Aby uzyskać więcej informacji, zobacz **/replacements** opcji "Mt.exe" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.|  
 |**ResourceOutputFileName**|Opcjonalnie **ciąg** parametru.<br /><br /> Określa plik zasobów wynikowych, które są używane do osadzania manifestu w danych wyjściowych projektu.|  

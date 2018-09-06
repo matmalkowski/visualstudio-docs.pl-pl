@@ -1,7 +1,7 @@
 ---
 title: Omówienie obsługi języka Python w programie Visual Studio na Windows
 description: Podsumowanie funkcji języka Python w programie Visual Studio, dzięki czemu najlepsze środowisko IDE języka Python na Windows (znany także jako narzędzi Python Tools for Visual Studio, PTVS).
-ms.date: 05/07/2018
+ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: overview
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0176b596ecf432ab74a29c29d4af6848ee1d4820
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: fca73f1ad91baa1f38ac73f1266616e0db37b1b4
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42624118"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43776187"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Praca z językiem Python w programie Visual Studio na Windows
 
@@ -163,7 +163,7 @@ A. Oferta głównego, w tym obszarze jest [projektu Qt](https://www.qt.io/qt-for
 
 **PYTANIA I ODPOWIEDZI. Projektu języka Python, mogą wygenerować autonomicznego pliku wykonywalnego?**
 
-A. Języka Python jest zwykle języku interpretowanych za pomocą którego kod jest uruchamiany na żądanie w odpowiednim środowisku obsługą języka Python, takie jak Visual Studio i serwery sieci web. Visual Studio nie obecnie udostępnia środki do utworzenia autonomicznego pliku wykonywalnego, co oznacza programu przy użyciu osadzonych interpreter języka Python. Istnieją różne środki w ramach społeczności języka Python do tworzenia plików wykonywalnych, zgodnie z opisem na [StackOverflow](http://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency). CPython obsługuje również osadzona w aplikacji macierzystej, zgodnie z opisem na wpis w blogu [pliku zip możliwego do osadzenia przy użyciu CPython](https://blogs.msdn.microsoft.com/pythonengineering/2016/04/26/cpython-embeddable-zip-file/).
+A. Języka Python jest zwykle języku interpretowanych za pomocą którego kod jest uruchamiany na żądanie w odpowiednim środowisku obsługą języka Python, takie jak Visual Studio i serwery sieci web. Visual Studio nie obecnie udostępnia środki do utworzenia autonomicznego pliku wykonywalnego, co oznacza programu przy użyciu osadzonych interpreter języka Python. Jednak społeczności Python dostarczonych różne sposoby, aby utworzyć pliki wykonywalne, zgodnie z opisem na [StackOverflow](http://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency). CPython obsługuje również osadzona w aplikacji macierzystej, zgodnie z opisem na wpis w blogu [pliku zip możliwego do osadzenia przy użyciu CPython](https://blogs.msdn.microsoft.com/pythonengineering/2016/04/26/cpython-embeddable-zip-file/).
 
 ## <a name="features-matrix"></a>Tabela funkcji
 
