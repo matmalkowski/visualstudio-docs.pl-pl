@@ -49,7 +49,7 @@
 ##### [Często zadawane pytania dotyczące migracji administratorów centrum VLSC](vlsc-admin-faq.md)
 ##### Dołączanie organizacji
 ###### [Dołączanie po migracji](post-migration-onboarding.md)
-###### [Open, migracja licencji Open](open-migration.md)
+###### [Migracja licencji Open i Open License](open-migration.md)
 ###### [Komunikacja e-mail dotycząca dołączania](volume-license-onboarding-email.md)
 ###### [Znajdowanie numeru PCN](find-pcn.md)
 ###### [Znajdowanie podstawowej osoby kontaktowej](find-primary-contact.md)
