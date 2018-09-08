@@ -13,12 +13,12 @@ ms.assetid: 586da5dc-f678-402b-afd0-0332959fd7a6
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b8212b11a60697211f70cd608b6f08a3fade874e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cd850cf73f9d7a9c443c374bd8a83e48c3470a31
+ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42691673"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44124871"
 ---
 # <a name="creating-custom-project-and-item-templates"></a>Tworzenie niestandardowych szablonów projektów i szablonów elementów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Visual Studio SDK zawiera szablony projektów, które Tworzenie szablonu niestan
   
  W przypadku scenariuszy tworzenia podstawowego szablonu należy używać **Eksportuj szablon** kreatora, której dane wyjściowe do skompresowanego pliku. Aby uzyskać więcej informacji na temat tworzenia podstawowego szablonu zobacz [tworzenie projektów i szablonów elementów](../ide/creating-project-and-item-templates.md).  
   
- Począwszy od programu Visual Studio "15" (wersja zapoznawcza), 4, skanowanie w poszukiwaniu szablonów niestandardowych projektów i elementów nie jest już zostaną wykonane. Zamiast tego rozszerzenia, należy podać plik manifestu szablonu, które opisują lokalizację instalacji tych szablonów. Za pomocą instalacji w wersji 2 można zaktualizować rozszerzenia VSIX. W przypadku wdrożenia przy użyciu Instalatora MSI rozszerzenia, musisz ręcznie wygenerować plik manifestu szablonu. Aby uzyskać więcej informacji, zobacz [uaktualnianie niestandardowych szablonów projektów i elementów dla programu Visual Studio "15"](../extensibility/upgrading-custom-project-and-item-templates-for-visual-studio-“15”.md). Schematu manifestu szablonu jest udokumentowany w [Visual Studio Manifest odwołanie do schematu szablonu](../extensibility/visual-studio-template-manifest-schema-reference.md).  
+ Począwszy od programu Visual Studio "15" (wersja zapoznawcza), 4, skanowanie w poszukiwaniu szablonów niestandardowych projektów i elementów nie jest już zostaną wykonane. Zamiast tego rozszerzenia, należy podać plik manifestu szablonu, które opisują lokalizację instalacji tych szablonów. Za pomocą instalacji w wersji 2 można zaktualizować rozszerzenia VSIX. W przypadku wdrożenia przy użyciu Instalatora MSI rozszerzenia, musisz ręcznie wygenerować plik manifestu szablonu. Aby uzyskać więcej informacji, zobacz [uaktualnianie niestandardowych szablonów projektów i elementów dla programu Visual Studio "15"](../extensibility/upgrading-custom-project-and-item-templates-for-visual-studio-2017.md). Schematu manifestu szablonu jest udokumentowany w [Visual Studio Manifest odwołanie do schematu szablonu](../extensibility/visual-studio-template-manifest-schema-reference.md).  
   
 ## <a name="creating-a-project-template"></a>Tworzenie szablonu projektu  
   

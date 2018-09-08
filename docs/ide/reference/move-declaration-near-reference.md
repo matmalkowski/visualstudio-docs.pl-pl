@@ -1,47 +1,47 @@
 ---
-title: Przenieś zmiennej deklarację blisko odwołania w programie Visual Studio
+title: Przenieś deklarację zmiennej blisko odwołania w programie Visual Studio
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
-author: kuhlenh
-ms.author: kaseyu
+author: gewarren
+ms.author: gewarren
 manager: douge
 dev_langs:
 - csharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: e98f7b7e9df0a1df3482257c70a661aa22d5980a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fc6ee94cbebb1cb35dd524017f22bd8ab3812468
+ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31949270"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44124960"
 ---
-# <a name="move-declaration-near-reference-refactoring"></a>Przenieś deklarację blisko odwołania refaktoryzacji
+# <a name="move-declaration-near-reference-refactoring"></a>Przenoszenie deklaracji blisko odwołania refaktoryzacji
 
-Dotyczy to refaktoryzacji:
+Ta Refaktoryzacja mają zastosowanie do:
 
 - C#
 
-**Co:** pozwala przesunąć bliżej deklaracji zmiennych do ich użycia.
+**Co:** pozwala na przechodzenie bliżej deklaracje zmiennych do ich użycia.
 
-**Kiedy:** masz deklaracji zmiennych, które mogą być w zakresie mniejszą niż.
+**Kiedy:** masz deklaracji zmiennych, które mogą znajdować się w węższy zakres.
 
-**Dlaczego:** można pozostanie ona jest, ale mogą powodować problemy z czytelność lub ukrywanie informacji. Jest to możliwość zrefaktoryzuj w celu zwiększenia czytelności.
+**Dlaczego:** może ona pozostaw, ponieważ istnieje, ale mogą powodować problemy czytelność lub ukrywanie informacji. Jest to możliwość refaktoryzacji w celu poprawienia czytelności.
 
-## <a name="how-to"></a>Porada
+## <a name="how-to"></a>Instrukcje
 
 1. Umieść kursor w deklaracji zmiennej.
 
 1. Następnie wykonaj jedną z następujących czynności:
 
    - **Keyboard**
-     - Naciśnij klawisz **Ctrl**+**.** Aby wyzwalacz **szybkie akcje i Refaktoryzacje** menu i wybierz **Przenieś deklarację blisko odwołania** z menu podręcznego okna podglądu.
+     - Naciśnij klawisz **Ctrl**+**.** wyzwalacz **szybkie akcje i Refaktoryzacje** menu, a następnie wybierz **przenoszenie deklaracji blisko odwołania** z menu podręcznego okna podglądu.
    - **Myszy**
-     - Kliknij prawym przyciskiem myszy kod, wybierz **szybkie akcje i Refaktoryzacje** menu i wybierz **Przenieś deklarację blisko odwołania** z menu podręcznego okna podglądu.
+     - Kliknij prawym przyciskiem myszy ten kod, wybierz **szybkie akcje i Refaktoryzacje** menu, a następnie wybierz **przenoszenie deklaracji blisko odwołania** z menu podręcznego okna podglądu.
 
-1. Po zakończeniu modyfikowania zmian, naciśnij klawisz **Enter** lub kliknij przycisk Usuń w menu, a zmiany zostaną zatwierdzone.
+1. Po zakończeniu zmiany, naciśnij klawisz **Enter** lub kliknij poprawki w menu, a zmiany zostaną zatwierdzone.
 
 Przykład:
 

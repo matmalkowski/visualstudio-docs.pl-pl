@@ -10,20 +10,20 @@ helpviewer_keywords:
 - EditorConfig coding conventions
 - language conventions [EditorConfig]
 - formatting conventions [EditorConfig]
-author: kuhlenh
-ms.author: kaseyu
+author: gewarren
+ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 1870ab4b9b6fe001cb0d2ec309eecbeaad6a135c
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: f85f2fed84dd8579295c0124adb43ee395166204
+ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774977"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44125070"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>.NET coding convention ustawienia dla wtyczki EditorConfig
 

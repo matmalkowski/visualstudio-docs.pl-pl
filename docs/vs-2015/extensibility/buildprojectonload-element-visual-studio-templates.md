@@ -13,12 +13,12 @@ ms.assetid: b07d3074-0fc9-45e1-baf5-da6bd4f3f1c0
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e74ed90f34507383a50501989a35a226c270da44
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1c194f4236f04eea7d8d1a156c8ee308ff58a143
+ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42679221"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44124991"
 ---
 # <a name="buildprojectonload-element-visual-studio-templates"></a>BuildProjectOnload, element (szablony Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,7 +71,7 @@ Kompiluje tylko nowe projekty, jak utworzyć i dodać je do rozwiązania. Całe 
         <Description>A basic template</Description>  
         <Icon>TemplateIcon.ico</Icon>  
         <ProjectType>CSharp</ProjectType>  
-        <BuildProjectOnload>true</BuildProjectOnLoad>  
+        <BuildProjectOnLoad>true</BuildProjectOnLoad>  
     </TemplateData>  
     <TemplateContent>  
         <Project File="MyTemplate.csproj">  

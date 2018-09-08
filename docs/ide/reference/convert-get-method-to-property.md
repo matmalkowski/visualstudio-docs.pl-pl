@@ -1,12 +1,12 @@
 ---
-title: Konwertuj metody Get właściwości i przekonwertowanie właściwości na metodę Get w programie Visual Studio
+title: Konwertowanie metody Get na właściwość i przekonwertować właściwości na metodę Get w programie Visual Studio
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
 ms.devlang: csharp
-author: kuhlenh
-ms.author: kaseyu
+author: gewarren
+ms.author: gewarren
 manager: douge
 f1_keywords:
 - vs.csharp.refactoring.convertmethodtoproperty
@@ -14,39 +14,39 @@ dev_langs:
 - csharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8195817c50679fd5b297b35eaf29aca0145a330b
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: b12dcbcf5a008ff7d4b839f3f4c6b90d43b3b05e
+ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2018
-ms.locfileid: "34064394"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44124785"
 ---
-# <a name="convert-get-method-to-property--convert-property-to-get-method-refactorings"></a>Konwertuj metody Get właściwości / przekonwertować właściwości refaktoryzacje metody Get
+# <a name="convert-get-method-to-property--convert-property-to-get-method-refactorings"></a>Konwertowanie metody Get na właściwość / skonwertować właściwości refaktoryzacje metody Get
 
-Refaktoryzacje te dotyczą:
+Dotyczą te operacje refaktoryzacji:
 
 - C#
 
-## <a name="convert-get-method-to-property"></a>Konwertuj metody Get właściwości
+## <a name="convert-get-method-to-property"></a>Konwertowanie metody Get na właściwość
 
-**Co:** pozwala konwertować metody Get właściwości (i opcjonalnie Set, metoda).
+**Co:** umożliwia konwertowanie metody Get na właściwości (i opcjonalnie swoje metody Set).
 
-**Kiedy:** ma metody Get, który nie zawiera żadnych logiki.
+**Kiedy:** mają metody Get, który nie zawiera żadnych logiki.
 
-### <a name="how-to"></a>Porada
+### <a name="how-to"></a>Instrukcje
 
 1. Umieść kursor w nazwie metody Get.
 
 1. Następnie wykonaj jedną z następujących czynności:
 
    - **Keyboard**
-     - Naciśnij klawisz **Ctrl**+**.** Aby wyzwalacz **szybkie akcje i Refaktoryzacje** menu, a następnie wybierz **zastąpić metodę właściwości** z menu podręcznego okna podglądu.
+     - Naciśnij klawisz **Ctrl**+**.** wyzwalacz **szybkie akcje i Refaktoryzacje** menu, a następnie wybierz **zastąpić metodę z właściwością** z menu podręcznego okna podglądu.
    - **Myszy**
-     - Kliknij prawym przyciskiem myszy kod, wybierz **szybkie akcje i Refaktoryzacje** menu, a następnie wybierz **zastąpić metodę właściwości** z menu podręcznego okna podglądu.
+     - Kliknij prawym przyciskiem myszy ten kod, wybierz **szybkie akcje i Refaktoryzacje** menu, a następnie wybierz **zastąpić metodę z właściwością** z menu podręcznego okna podglądu.
 
-1. (Opcjonalnie) Jeśli masz metody Set, wybierając można przekonwertować również Set, metoda w tym momencie **metody Zastąp Get i Set, metoda z właściwością**.
+1. (Opcjonalnie) W przypadku metody Set można także przekonwertować swoje metody Set w tym momencie, wybierając **metody Get Zastąp i metody Set z właściwością**.
 
-1. Jeśli są zadowalające, zmiany w podglądzie kodu, naciśnij klawisz **Enter** lub kliknij przycisk Napraw z menu i zmiany zostaną zatwierdzone.
+1. Jeśli jesteś zadowolony z zmiany w wersji zapoznawczej kodu, naciśnij klawisz **Enter** lub kliknij poprawkę z menu, a zmiany zostaną zatwierdzone.
 
 Przykład:
 
@@ -68,24 +68,24 @@ public int MyValue
 }
 ```
 
-## <a name="convert-property-to-get-method"></a>Konwertuj właściwość metody Get
+## <a name="convert-property-to-get-method"></a>Konwertowanie właściwości na metodę Get
 
-**Co:** służy do konwertowania właściwości na metodę Get
+**Co:** umożliwia konwertowanie właściwości na metodę Get
 
-**Kiedy:** ma właściwość, która obejmuje więcej niż natychmiast ustawiania i pobierania wartości
+**Kiedy:** mają właściwość, która obejmuje więcej niż natychmiast ustawiania i pobierania wartości
 
-### <a name="how-to"></a>Porada
+### <a name="how-to"></a>Instrukcje
 
 1. Umieść kursor w nazwie metody Get.
 
 1. Następnie wykonaj jedną z następujących czynności:
 
    - **Keyboard**
-     - Naciśnij klawisz **Ctrl**+**.** do wyzwalania **szybkie akcje i Refaktoryzacje** menu i wybierz **zastąpić właściwość metody** z menu podręcznego okna podglądu.
+     - Naciśnij klawisz **Ctrl**+**.** wyzwalacz **szybkie akcje i Refaktoryzacje** menu, a następnie wybierz **Zamień właściwości metody** z menu podręcznego okna podglądu.
    - **Myszy**
-     - Kliknij prawym przyciskiem myszy kod, wybierz **szybkie akcje i Refaktoryzacje** menu i wybierz **zastąpić właściwość metody** z menu podręcznego okna podglądu.
+     - Kliknij prawym przyciskiem myszy ten kod, wybierz **szybkie akcje i Refaktoryzacje** menu, a następnie wybierz **Zamień właściwości metody** z menu podręcznego okna podglądu.
 
-1. Jeśli są zadowalające, zmiany w podglądzie kodu, naciśnij klawisz **Enter** lub kliknij przycisk Napraw z menu i zmiany zostaną zatwierdzone.
+1. Jeśli jesteś zadowolony z zmiany w wersji zapoznawczej kodu, naciśnij klawisz **Enter** lub kliknij poprawkę z menu, a zmiany zostaną zatwierdzone.
 
 ## <a name="see-also"></a>Zobacz także
 

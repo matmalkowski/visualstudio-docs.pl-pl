@@ -13,19 +13,19 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: ff8d28a0fa6b8889dcc90632126f8b4dd75b70dc
-ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
+ms.openlocfilehash: 2093f8a2f2d048661b7fb23f45c5317011f25076
+ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39132008"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44124921"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Samouczek: Tworzenie środowiska Node.js i Express aplikacji w programie Visual Studio
 Tego samouczka do tworzenia aplikacji programu Visual Studio przy użyciu środowiska Node.js i Express służy do tworzenia prostą aplikację sieci web środowiska Node.js, Dodaj kod, zapoznaj się z niektórymi funkcjami środowiska IDE i uruchamiania aplikacji. Jeśli jeszcze nie zainstalowano programu Visual Studio, zainstaluj go bezpłatnie [tutaj](http://visualstudio.microsoft.com).
 
 W tym samouczku dowiesz się, jak:
 > [!div class="checklist"]
-> * Tworzenie projektu środowiska Node.js
+> * Tworzenie projektu platformy Node.js
 > * Dodawanie kodu
 > * Korzystać z technologii IntelliSense w celu edytowania kodu
 > * Uruchamianie aplikacji
@@ -85,7 +85,7 @@ W tym samouczku możesz zaczynają się od prostego projektu zawierającego kod 
 
     (3 węzeł npm zawiera wszystkie pakiety npm zainstalowane. Możesz kliknąć prawym przyciskiem myszy węzeł npm, aby wyszukać i zainstalować pakiety npm w oknie dialogowym lub zainstaluj aktualizację pakietów przy użyciu ustawień w *package.json* i kliknij prawym przyciskiem myszy opcje w węźle npm.
 
-    (4) *package.json* to plik używany przez narzędzie npm do zarządzania zależności pakietów i wersji pakietu dla lokalnie zainstalowane pakiety.
+    (4) *package.json* to plik używany przez narzędzie npm do zarządzania zależności pakietów i wersji pakietu dla lokalnie zainstalowane pakiety. Aby uzyskać więcej informacji na temat tego pliku, zobacz [konfiguracji pliku package.json](../javascript/configure-packages-with-package-json.md)
 
     (5) pliki projektu, takie jak *app.js* wyświetlane w węźle projektu. *App.js* jest plik startowy projektu, a to znaczy Dlaczego ona wyświetlona na liście **bold**. Można ustawić pliku uruchamiania, kliknij prawym przyciskiem myszy plik w projekcie i wybierając **Ustaw jako plik startowy środowiska Node.js**.
 

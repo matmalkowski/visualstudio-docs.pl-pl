@@ -1,65 +1,65 @@
 ---
-title: Generowanie C# Equals i GetHashCode — metoda zastępuje w programie Visual Studio
+title: Generuj element Equals C# i zastąpienia metody GetHashCode w programie Visual Studio
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
-author: kuhlenh
-ms.author: kaseyu
+author: gewarren
+ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: cdbb5273d046be8f11cc2fbc4a03ed6767a31e00
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: deaa0b37988e2df04bb7937c76f341af849698f0
+ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945314"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44124973"
 ---
-# <a name="generate-equals-and-gethashcode-method-overrides-in-visual-studio"></a>Generowanie Equals i GetHashCode — metoda zastępuje w programie Visual Studio
+# <a name="generate-equals-and-gethashcode-method-overrides-in-visual-studio"></a>Generowanie elementu Equals i GetHashCode — metoda zastępuje w programie Visual Studio
 
 Dotyczy to generowanie kodu:
 
 - C#
 
-**Co:** umożliwia wygenerowanie **jest równe** i **GetHashCode** metody.
+**Co:** pozwala wygenerować **jest równa** i **GetHashCode** metody.
 
-**Kiedy:** generowania te zastąpienia mieć typ, który powinien być porównywane przez jeden lub więcej pól, zamiast według lokalizacji obiektu w pamięci.
+**Kiedy:** generować te zastąpienia, gdy masz typ, który należy porównać przez co najmniej jedno pole, a nie według lokalizacji obiektu w pamięci.
 
 **Dlaczego:**
 
-- W przypadku wdrażania typu wartości, należy rozważyć zastępowanie **jest równe** metodę, aby uzyskać większą wydajność przez domyślną implementację metody Equals na ValueType.
+- Przed zaimplementowaniem typ wartości, należy rozważyć zastępowanie **jest równa** metodę, aby uzyskać większą wydajność przez Domyślna implementacja metody Equals na ValueType.
 
-- W przypadku wdrażania Typ referencyjny, należy rozważyć zastępowanie **jest równe** metodę, jeśli z danym typem wygląda typu podstawowego, takie jak punkt, String, BigNumber i tak dalej.
+- Przed zaimplementowaniem Typ referencyjny, należy rozważyć zastępowanie **jest równa** metodę, jeśli danego typu wygląda typu podstawowego, takie jak punkt, ciąg, BigNumber i tak dalej.
 
-- Zastąpienie **GetHashCode** metodę umożliwiającą typu działać poprawnie w tablicy skrótów. Przeczytaj więcej pomocy na [Operatory równości](/dotnet/standard/design-guidelines/equality-operators).
+- Zastąp **GetHashCode** metodę, aby zezwolić na typ, który ma działać poprawnie w tabeli wyznaczania wartości skrótu. Dowiedz się więcej wskazówek na [Operatory równości](/dotnet/standard/design-guidelines/equality-operators).
 
-## <a name="how-to"></a>Porada
+## <a name="how-to"></a>Instrukcje
 
-1. Umieść kursor w Twojej deklaracji typu.
+1. Umieść kursor w swojej deklaracji typu.
 
    ![Wyróżniony kod](media/overrides-highlight-cs.png)
 
 1. Następnie wykonaj jedną z następujących czynności:
 
    - **Keyboard**
-     - Naciśnij klawisz **Ctrl**+**.** Aby wyzwalacz **szybkie akcje i Refaktoryzacje** menu.
+     - Naciśnij klawisz **Ctrl**+**.** wyzwalacz **szybkie akcje i Refaktoryzacje** menu.
    - **Myszy**
      - Kliknij prawym przyciskiem myszy i wybierz **szybkie akcje i Refaktoryzacje** menu.
-     - Kliknij ikonę ![Żarówka](media/bulb-cs.png) ikonę, która jest wyświetlana na lewym marginesie, jeśli kursor tekstu znajduje się już na wiersz z deklaracji typu.
+     - Kliknij ikonę ![Żarówka](media/bulb-cs.png) ikona, która pojawia się na lewym marginesie, gdy kursor tekstu jest już w wierszu deklaracji typu.
 
-   ![Generowanie podglądu zastąpień](media/overrides-preview-cs.png)
+   ![Generowanie zastąpienia (wersja zapoznawcza)](media/overrides-preview-cs.png)
 
-1. Wybierz **Generowanie Equals(object)** lub **Generowanie metodę Equals i GetHashCode** z menu rozwijanego.
+1. Wybierz **Generuj element Equals(object)** lub **Generowanie Equals i GetHashCode** z menu rozwijanego.
 
-1. W **wybierz elementy członkowskie** okno dialogowe, wybierz elementy członkowskie, aby wygenerować metody:
+1. W **Wybierz składowe** okno dialogowe, zaznacz elementy członkowskie, aby wygenerować metody:
 
-    ![Generowanie okna dialogowego zastąpień](media/overrides-dialog-cs.png)
+    ![Generowanie zastąpienia okna dialogowego](media/overrides-dialog-cs.png)
 
     > [!TIP]
-    > Można także wygenerować operatory z tego okna dialogowego za pomocą pola wyboru poniżej listy członków.
+    > Możesz również generować operatory z tego okna dialogowego za pomocą pola wyboru poniżej listy elementów członkowskich.
 
-   Equals i GetHashCode zastąpienia są generowane z domyślnej implementacji.
+   Equals i GetHashCode zastąpienia są generowane przy użyciu domyślnej implementacji.
 
    ![Generowanie wyników — metoda](media/overrides-result-cs.png)
 

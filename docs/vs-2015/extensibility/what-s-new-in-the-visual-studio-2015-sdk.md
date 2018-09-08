@@ -13,12 +13,12 @@ ms.assetid: c64aac80-a411-463f-b7bd-8b7607a52ece
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e4888bc254f0b86332829db3d88e19095eafb35f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 38281327c6a3d343418a74c85f61b9b1175b5d01
+ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42630359"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44124994"
 ---
 # <a name="what39s-new-in-the-visual-studio-2015-sdk"></a>Co&#39;nowego w Visual Studio 2015 SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Najnowszą wersję tego tematu znajduje się w temacie [co&#39;s Nowość w prog
 Visual Studio SDK zawiera następujące nowe i zaktualizowane funkcje programu Visual Studio 2015, Visual Studio 2015, aktualizowane i programu Visual Studio "15".  
   
 ## <a name="visual-studio-15-preview-2"></a>Visual Studio „15” (wersja zapoznawcza 2)  
- Począwszy od programu Visual Studio "15" (wersja zapoznawcza), 4, skanowanie w poszukiwaniu szablonów niestandardowych projektów i elementów nie jest już zostaną wykonane. Zamiast tego rozszerzenia, należy podać plik manifestu szablonu, które opisują lokalizację instalacji tych szablonów. Za pomocą instalacji w wersji 2 można zaktualizować rozszerzenia VSIX. W przypadku wdrożenia przy użyciu Instalatora MSI rozszerzenia, musisz ręcznie wygenerować plik manifestu szablonu. Aby uzyskać więcej informacji, zobacz [uaktualnianie niestandardowych szablonów projektów i elementów dla programu Visual Studio "15"](../extensibility/upgrading-custom-project-and-item-templates-for-visual-studio-“15”.md). Schematu manifestu szablonu jest udokumentowany w [Visual Studio Manifest odwołanie do schematu szablonu](../extensibility/visual-studio-template-manifest-schema-reference.md).  
+ Począwszy od programu Visual Studio "15" (wersja zapoznawcza), 4, skanowanie w poszukiwaniu szablonów niestandardowych projektów i elementów nie jest już zostaną wykonane. Zamiast tego rozszerzenia, należy podać plik manifestu szablonu, które opisują lokalizację instalacji tych szablonów. Za pomocą instalacji w wersji 2 można zaktualizować rozszerzenia VSIX. W przypadku wdrożenia przy użyciu Instalatora MSI rozszerzenia, musisz ręcznie wygenerować plik manifestu szablonu. Aby uzyskać więcej informacji, zobacz [uaktualnianie niestandardowych szablonów projektów i elementów dla programu Visual Studio "15"](../extensibility/upgrading-custom-project-and-item-templates-for-visual-studio-2017.md). Schematu manifestu szablonu jest udokumentowany w [Visual Studio Manifest odwołanie do schematu szablonu](../extensibility/visual-studio-template-manifest-schema-reference.md).  
   
 ## <a name="vs-2015-sdk-update-1"></a>Program VS 2015 SDK z aktualizacją Update 1  
  Aktualizacja Update 1 obejmuje narzędzia ułatwiające rozszerzenia dobrze współpracować z motywów kolorów i usługi obrazów programu Visual Studio.  
