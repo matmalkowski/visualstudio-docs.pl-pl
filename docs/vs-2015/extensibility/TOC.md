@@ -94,7 +94,7 @@
 ## [Rozszerzanie filtru Eksploratora rozwiązań](extending-the-solution-explorer-filter.md)
 ## [Zarządzanie ładowaniem projektu w rozwiązaniu](managing-project-loading-in-a-solution.md)
 # [Tworzenie niestandardowych szablonów projektów i szablonów elementów](creating-custom-project-and-item-templates.md)
-## [Uaktualnianie niestandardowych szablonów projektów i elementów dla programu Visual Studio „15”](upgrading-custom-project-and-item-templates-for-visual-studio-“15”.md)
+## [Uaktualnianie niestandardowych szablonów projektów i elementów dla programu Visual Studio „15”](upgrading-custom-project-and-item-templates-for-visual-studio-2017.md)
 ## [Instrukcje: korzystanie z kreatorów z szablonami projektu](how-to-use-wizards-with-project-templates.md)
 ## [Odwołanie do schematu szablonu Visual Studio](visual-studio-template-schema-reference.md)
 ### [AppliesTo, element (szablony Visual Studio)](appliesto-element-visual-studio-templates.md)
