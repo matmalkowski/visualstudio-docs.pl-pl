@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 77438e8e98e5cc64564e8903babe3dd0817067ac
-ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
+ms.openlocfilehash: 4b7e42c274bd1ef5bb2d04db2e856418ea6719f8
+ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43225087"
+ms.lasthandoff: 09/11/2018
+ms.locfileid: "44384295"
 ---
 # <a name="install-visual-studio-2017"></a>Instalowanie programu Visual Studio 2017
 
@@ -69,7 +69,7 @@ Następnie uruchom plik inicjujący, aby zainstalować Instalatora programu Visu
 
   Jeśli pojawi się powiadomienie Kontrola konta użytkownika, kliknij przycisk **tak**.
 
-2. Poprosimy Cię potwierdzić Microsoft [postanowienia licencyjne](https://visualstudio.microsoft.com/license-terms/) i Microsoft [zasady zachowania poufności informacji](https://go.microsoft.com/fwlink/?LinkID=824704). Kliknij przycisk **Kontynuuj**.
+2. Poprosimy Cię potwierdzić Microsoft [postanowienia licencyjne](https://visualstudio.microsoft.com/license-terms/) i Microsoft [zasady zachowania poufności informacji](https://privacy.microsoft.com/privacystatement). Kliknij przycisk **Kontynuuj**.
 
    ![Licencja warunki i zasady zachowania poufności informacji](media/vs2017-privacy-and-license-terms.PNG "postanowienia licencyjne firmy Microsoft oraz zasady zachowania poufności informacji")
 
@@ -138,7 +138,7 @@ Aby uzyskać więcej informacji, zobacz [zmiana lokalizacji instalacji programu 
    Na przykład, aby [kompilacji aplikacji w języku C++](../ide/getting-started-with-cpp-in-visual-studio.md), kliknij przycisk **zainstalowane**, rozwiń węzeł **Visual C++**, a następnie wybierz typ projektu C++, który chcesz skompilować. <br><br>
    Aby [tworzenie aplikacji C#](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md), kliknij przycisk **zainstalowane**, rozwiń węzeł **Visual C#**, a następnie wybierz typ projektu C#, który chcesz skompilować.
 
-[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]  
+[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)] 
 
 ## <a name="see-also"></a>Zobacz także
 

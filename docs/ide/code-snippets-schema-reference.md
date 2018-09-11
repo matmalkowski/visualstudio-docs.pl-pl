@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c8565e6169167089ac425d7c6689c517f5ca61d
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 8a5adc68df8b56d69389807e2e1502b2891c73a0
+ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567216"
+ms.lasthandoff: 09/11/2018
+ms.locfileid: "44384308"
 ---
 # <a name="code-snippets-schema-reference"></a>Fragmenty kodu — informacje o schemacie
 
@@ -176,7 +176,7 @@ Grupy [CodeSnippet](../ide/code-snippets-schema-reference.md#codesnippet-element
 
 |Element podrzędny|Opis|
 |-------------------|-----------------|
-|[CodeSnippet element](../ide/code-snippets-schema-reference.md#codesnippet)|Element opcjonalny. Element nadrzędny dla wszystkich danych fragmentu kodu. Może wynosić zero lub więcej `CodeSnippet` elementów w `CodeSnippets` elementu.|
+|[CodeSnippet element](../ide/code-snippets-schema-reference.md#codesnippet-element)|Element opcjonalny. Element nadrzędny dla wszystkich danych fragmentu kodu. Może wynosić zero lub więcej `CodeSnippet` elementów w `CodeSnippets` elementu.|
 
 ## <a name="declarations-element"></a>Declarations — element
 
@@ -196,7 +196,7 @@ Określa literały i obiekty tworzące sekcje fragmentu kodu, które można edyt
 
 |Element nadrzędny|Opis|
 |--------------------|-----------------|
-|[Snippet — element](../ide/code-snippets-schema-reference.md#snippet)|Zawiera odwołania, definicje importu, deklaracje i kod dla fragmentu kodu.|
+|[Snippet — element](../ide/code-snippets-schema-reference.md#snippet-element)|Zawiera odwołania, definicje importu, deklaracje i kod dla fragmentu kodu.|
 
 ## <a name="default-element"></a>Default — element
 
@@ -279,7 +279,7 @@ Zawiera ogólne informacje o fragmencie kodu IntelliSense.
 
 |Element nadrzędny|Opis|
 |--------------------|-----------------|
-|[CodeSnippet element](../ide/code-snippets-schema-reference.md#codesnippet)|Element nadrzędny dla wszystkich danych fragmentu kodu.|
+|[CodeSnippet element](../ide/code-snippets-schema-reference.md#codesnippet-element)|Element nadrzędny dla wszystkich danych fragmentu kodu.|
 
 ## <a name="helpurl-element"></a>Helpurl — element
 
@@ -422,7 +422,7 @@ Literały i obiekty nie mogą zawierać **identyfikator** wybrany element o wart
 
 |Element nadrzędny|Opis|
 |--------------------|-----------------|
-|[Declarations — element](../ide/code-snippets-schema-reference.md#declarations)|Zawiera literały i obiekty fragmentu kodu, które można edytować.|
+|[Declarations — element](../ide/code-snippets-schema-reference.md#declarations-element)|Zawiera literały i obiekty fragmentu kodu, które można edytować.|
 
 ## <a name="namespace-element"></a>Namespace — element
 
@@ -491,7 +491,7 @@ Określa informacje o odwołaniach do zestawów wymaganych przez fragment kodu.
 
 |Element nadrzędny|Opis|
 |--------------------|-----------------|
-|[References — element](../ide/code-snippets-schema-reference.md#references)|Element grupujący `Reference` elementów.|
+|[References — element](../ide/code-snippets-schema-reference.md#references-element)|Element grupujący `Reference` elementów.|
 
 ## <a name="references-element"></a>References — element
 

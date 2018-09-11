@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b6a7ae2bff6d35c77dc54ce07207af375b76ee77
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: db85353830e1d86773a870a410797bfb5c60ccd7
+ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511694"
+ms.lasthandoff: 09/11/2018
+ms.locfileid: "44384126"
 ---
 # <a name="troubleshoot-visual-studio-2017-installation-and-upgrade-issues"></a>Rozwiązywanie problemów z instalacją programu Visual Studio 2017 i uaktualnić problemów
 
@@ -56,7 +56,7 @@ Program inicjujący Instalatora programu Visual Studio jest minimalny plik wykon
 
 W niektórych sytuacjach, takich jak powiązane z uszkodzonych plików problemy, być może trzeba rozważyć w przypadku przez. Aby pomóc nam sobie pomóc, wykonaj następujące czynności:
 
-1. Zbieranie dzienników instalacji. Zobacz [jak uzyskać dzienniki instalacji programu Visual Studio](#how-to-get-the-visual-studio-installation-logs) Aby uzyskać szczegółowe informacje.
+1. Zbieranie dzienników instalacji. Zobacz [jak uzyskać dzienniki instalacji programu Visual Studio](#how-to-get-visual-studio-installation-logs) Aby uzyskać szczegółowe informacje.
 2. Otwórz Instalatora programu Visual Studio, a następnie kliknij przycisk **Zgłoś problem** można otworzyć narzędzia Visual Studio opinii.
 ![Ustawić tabulator, aby przycisk Podaj opinię, aby otworzyć narzędzie opinii](media/report-a-problem.png)
 3. Nadaj tytuł raport o problemie i podaj odpowiednie szczegóły. Kliknij przycisk **dalej** można przejść do **załączniki** sekcji, a następnie dołącz plik dziennika wygenerowany (zazwyczaj plik znajduje się w `%TEMP%\vslogs.zip`).

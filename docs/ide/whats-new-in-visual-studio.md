@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c6c09c8431cb2a50c0d76ebf476e67730192966
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 619d7b0f93985f59a46fbc67f289cae8fd7ac8a9
+ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774990"
+ms.lasthandoff: 09/11/2018
+ms.locfileid: "44384191"
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Co&#39;s Nowość w programie Visual Studio 2017
 
@@ -38,7 +38,7 @@ Poniżej przedstawiono podsumowanie wysokiego poziomu zmiany wprowadzone od popr
 * **[Tworzenie aplikacji Windows](#windows-app-development)**. Użyj szablonów platformy uniwersalnej systemu Windows w programie Visual Studio 2017 do utworzenia pojedynczego projektu dla wszystkich urządzeń z systemem Windows 10 &ndash; komputer, tablet, telefon, Xbox, HoloLens, Surface Hub i więcej.
 * **[Tworzenie aplikacji mobilnych](#mobile-app-development)**. Wprowadzaj innowacje i uzyskuj wyniki szybciej za pomocą platformy Xamarin, która łączy wymagań dla wielu platform mobilnych do jednego rdzenia kodu i zestawu umiejętności.
 * **[Programowanie dla wielu platform](#cross-platform-development)**. Bezproblemowo dostarczać oprogramowanie na każdą platformę docelową. Rozszerz procesy DevOps do programu SQL Server za pomocą narzędzia danych Redgate i bezpiecznie Automatyzuj wdrożenia baz danych z programu Visual Studio. Możesz też użyć platformy .NET Core do pisania aplikacji i bibliotek, które uruchomienie niemodyfikowanego między systemami operacyjnymi z systemem macOS, Linux i Windows.
-* **[Programowanie gier](#games-development)**. Program Visual Studio Tools for Unity (VSTU) można użyć programu Visual Studio tworzyć gry i Edytor skrypty w języku C#, a następnie użyć jej zaawansowany debuger, można znaleźć i naprawić błędy. 
+* **[Programowanie gier](#games-development)**. Program Visual Studio Tools for Unity (VSTU) można użyć programu Visual Studio tworzyć gry i Edytor skrypty w języku C#, a następnie użyć jej zaawansowany debuger, można znaleźć i naprawić błędy.
 * **[Opracowywania sztucznej Inteligencji](#ai-development)**. Za pomocą programu Visual Studio Tools for AI można użyć z funkcji produktywności programu Visual Studio, aby przyspieszyć wprowadzanie innowacji sztucznej Inteligencji. Twórz, Testuj i wdrażaj uczenia głębokiego / rozwiązań sztucznej Inteligencji, bezproblemowo zintegrować z usługą Azure Machine Learning eksperymentowania niezawodne możliwości.
 
 > [!NOTE]
@@ -303,7 +303,7 @@ Również **nowego w programie 15.8**: wprowadziliśmy znaczne ulepszenia do pro
 
 ![Projektant Xamarin.Adroid Edytor widoku złożonego](../ide/media/android-designer-split-view.png)
 
-Aby uzyskać więcej informacji, zobacz [przyspieszanie sprzętowe emulatora wydajności](/xamarin/android/get-started/installation/android-emulator/hardware-acceleration?tabs=vswin#hyper-v-overview)
+Aby uzyskać więcej informacji, zobacz [przyspieszanie sprzętowe emulatora wydajności](/xamarin/android/get-started/installation/android-emulator/hardware-acceleration?tabs=vswin)
 
 ### <a name="visual-studio-app-center"></a>Visual Studio App Center
 

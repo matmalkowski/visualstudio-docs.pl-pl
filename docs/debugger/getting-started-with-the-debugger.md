@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 235e9386070d316cd9a4f9751ac1d8f1e8fd92b4
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: 8717c8f4c9d4bae12acf576620368b4aac64a185
+ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42624283"
+ms.lasthandoff: 09/11/2018
+ms.locfileid: "44384230"
 ---
 # <a name="tutorial-learn-to-debug-using-visual-studio"></a>Samouczek: Dowiedz się, jak debugowanie za pomocą programu Visual Studio
 
@@ -31,7 +31,7 @@ W tym artykule przedstawiono funkcje debugera programu Visual Studio w przewodni
 |---------|---------|
 |  ![Ikona aparatu film wideo](../install/media/video-icon.png "Obejrzyj klip wideo")  |    [Obejrzyj film wideo](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171) debugowania, w którym pokazano podobne kroki. |
 
-Mimo że aplikacja demonstracyjna C# i C++, funkcje mają zastosowanie do Visual Basic, JavaScript i innymi językami obsługiwanymi przez program Visual Studio (z wyjątkiem sytuacji, gdy podane). Zrzuty ekranu są w języku C#. Aby przełączyć się między C# i kod przykładowy w języku C++, użyj filtru język w prawym górnym rogu strony.
+Mimo że aplikacja demonstracyjna C# i C++, funkcje mają zastosowanie do Visual Basic, JavaScript i innymi językami obsługiwanymi przez program Visual Studio (z wyjątkiem sytuacji, gdy podane). Zrzuty ekranu są w języku C#. Aby przełączać się między C# i C++ przykładowego kodu w tym artykule, należy użyć Filtr języka w prawym górnym rogu tej strony.
 
 W tym samouczku wykonasz następujące czynności:
 
@@ -286,9 +286,9 @@ W tym samouczku wykonasz następujące czynności:
 
 ## <a name="set-a-breakpoint-and-start-the-debugger"></a>Ustaw punkt przerwania i uruchomić debuger
 
-1. W `foreach` pętli z `Main` — funkcja (`for` pętli w języku C++ `main` funkcji), ustaw punkt przerwania, klikając w lewy margines pierwszy wiersz kodu.
+1. W `foreach` pętli z `Main` — funkcja (`for` pętli w języku C++ `main` funkcji), ustaw punkt przerwania, klikając w lewy margines następującego kodu:
 
-    ![Ustaw punkt przerwania](../debugger/media/get-started-set-breakpoint.png "SetABreakPoint")
+    `shape.Draw()` (lub `shape->Draw()` w języku C++)
 
     Pojawi się czerwone kółko, gdzie ustawić punkt przerwania.
 
@@ -296,7 +296,7 @@ W tym samouczku wykonasz następujące czynności:
 
 6. Naciśnij klawisz **F5** lub **Rozpocznij debugowanie** przycisku aplikacja zostanie uruchomiona, i debuger uruchamia wiersz kodu, gdzie ustawić punkt przerwania.
 
-    ![Trafiony punkt przerwania](../debugger/media/get-started-hit-breakpoint.png "HitABreakPoint")
+    ![Ustaw i Traf punkt przerwania](../debugger/media/get-started-set-breakpoint.gif)
 
     Żółta strzałka reprezentuje instrukcji, w której debuger wstrzymany, również zawiesza wykonywanie aplikacji w tym samym punkcie (Ta instrukcja nie jeszcze wykonane).
 
@@ -308,9 +308,7 @@ W tym samouczku wykonasz następujące czynności:
 
 Przede wszystkim, używamy skróty klawiaturowe w tym miejscu, ponieważ jest to dobry sposób, aby uzyskać szybkie na wykonywanie aplikacji w debugerze (równoważne polecenia takie jak menu poleceń są wyświetlane w nawiasach).
 
-1. Naciśnij klawisz **F11** (lub wybierz **debugowania > Step Into**) raz (kilka razy w języku C#), dopóki nie zatrzymasz się na `shape.Draw` metody wywołania w `Main` — metoda (`shape->Draw` w języku C++).
-
-1. Naciśnij klawisz **F11** raz, aby przejść do kodu dla `Rectangle` klasy.
+1. Podczas wstrzymania w `shape.Draw` metody wywołania w `Main` — metoda (`shape->Draw` w języku C++), naciśnij klawisz **F11** (lub wybierz **debugowania > Step Into**) aby przejść do kodu dla `Rectangle` Klasa.
 
      ![Użyj F11, aby kod Step Into](../debugger/media/get-started-f11.png "F11 Step Into")
 
@@ -364,19 +362,19 @@ Kliknij przycisk **ponowne uruchomienie** ![ponowne uruchomienie aplikacji](../d
 
 Po naciśnięciu klawisza **ponowne uruchomienie**, można zaoszczędzić czas i zatrzymywanie aplikacji oraz ponownego uruchamiania debugera. Debuger wstrzymuje na pierwszy punkt przerwania zostanie osiągnięty przez wykonywanie kodu.
 
-Debuger zatrzymuje się ponownie w punkcie przerwania, możesz ustawić w `foreach` pętli (`for` pętli w języku C++).
+Debuger zatrzymuje się ponownie w punkcie przerwania, możesz ustawić na `shape.Draw()` — metoda (`shape->Draw()` w języku C++).
 
 ## <a name="inspect-variables-with-data-tips"></a>Sprawdzanie zmiennych z poradami do danych
 
 Funkcje, które pozwalają na sprawdzanie zmiennych są jednymi z najbardziej przydatnych funkcjach debugera i istnieją różne sposoby, aby to zrobić. Często podczas próby debugowania problemu próbujesz sprawdzić, czy zmienne są przechowywane wartości, których można oczekiwać, aby użytkownicy posiadali w danym momencie.
 
-1. Gdy wstrzymana na `foreach` pętli (`for` pętli w języku C++), naciśnij klawisz **F11** po.
-
-1. Umieść kursor nad `shapes` obiektu i wyświetlić jej wartości domyślnej właściwości `Count` właściwości.
+1. Gdy wstrzymana na `shape.Draw()` — metoda (`shape->Draw()` w języku C++), umieść kursor nad `shapes` obiektu i wyświetlić jej wartości domyślnej właściwości `Count` właściwości.
 
 1. Rozwiń `shapes` obiektu, aby wyświetlić wszystkie właściwości, takie jak pierwszy indeks tablicy `[0]`, który ma wartość `Rectangle` (C#) lub adres pamięci (C++).
 
-     ![Wyświetl etykietki danych](../debugger/media/get-started-data-tip.png "wyświetlanie etykietki danych")
+     ![Wyświetl etykietki danych](../debugger/media/get-started-data-tip.gif "wyświetlanie etykietki danych")
+
+    Można rozwinąć obiektów, aby wyświetlić ich właściwości, takie jak `Height` właściwości prostokąta.
 
     Często podczas debugowania, chcesz, aby szybko sprawdzić wartości właściwości obiektów i porady dotyczące danych są dobrym sposobem, aby to zrobić.
 

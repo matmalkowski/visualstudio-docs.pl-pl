@@ -13,40 +13,40 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 6d1d57dc8c0eb07b90da79de3fee5d42678e7a22
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 206c856eb87243fd6021c4ff8bb9f6890b8eaf25
+ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36279989"
+ms.lasthandoff: 09/11/2018
+ms.locfileid: "44384217"
 ---
-# <a name="application-property-page-uwp-projects"></a>Strona właściwości aplikacji (projekty platformy UWP)
+# <a name="application-property-page-uwp-projects"></a>Strona właściwości aplikacji (projekty platformy uniwersalnej systemu Windows)
 
-Użyj **aplikacji** stronę właściwości, aby określić zestaw projektu Windows platformy Uniwersalnej i informacji pakietu i wersję docelową systemu Windows 10.
+Użyj **aplikacji** stronę właściwości, aby określić zestaw projektu uniwersalnej platformy Windows (UWP) i informacje o pakiecie i wersji docelowej systemu Windows 10.
 
 ![Strona właściwości aplikacji](media/application-page-uwp.png)
 
-Aby uzyskać dostęp do **aplikacji** wybierz węzeł projektu w **Eksploratora rozwiązań**. Następnie wybierz pozycję **projektu** > **właściwości** na pasku menu. Strony właściwości, Otwórz na **aplikacji** kartę.
+Aby uzyskać dostęp do **aplikacji** wybierz węzeł projektu w **Eksploratora rozwiązań**. Następnie wybierz **projektu** > **właściwości** na pasku menu. Strony właściwości, Otwórz na **aplikacji** kartę.
 
 ## <a name="general-section"></a>Sekcja Ogólne
 
-**Nazwa zestawu**&mdash;Określa nazwę pliku wyjściowego, który będzie zawierał manifest zestawu.
+**Nazwa zestawu**&mdash;Określa nazwę pliku wyjściowego, który będzie przechowywać manifest zestawu.
 
 Aby uzyskać dostęp do tej właściwości programowo, zobacz <xref:VSLangProj.ProjectProperties.AssemblyName%2A>.
 
-**Domyślny obszar nazw**&mdash;określa podstawowej przestrzeni nazw dla plików dodane do projektu. Aby uzyskać więcej informacji na temat obszarów nazw, zobacz [przestrzenie nazw (C# Podręcznik programowania)](/dotnet/csharp/programming-guide/namespaces/), [przestrzenie nazw (Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/namespaces), lub [przestrzenie nazw (C++)](/cpp/cpp/namespaces-cpp).
+**Domyślny obszar nazw**&mdash;określa podstawowej przestrzeni nazw dla plików dodawane do projektu. Aby uzyskać więcej informacji na temat przestrzenie nazw, zobacz [przestrzenie nazw (C# Podręcznik programowania)](/dotnet/csharp/programming-guide/namespaces/), [przestrzeni nazw (Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/namespaces), lub [przestrzenie nazw (C++)](/cpp/cpp/namespaces-cpp).
 
 Aby uzyskać dostęp do tej właściwości programowo, zobacz <xref:VSLangProj.ProjectProperties.RootNamespace%2A>.
 
-**Informacje o zestawie**&mdash;wybór ten przycisk otwiera [okno dialogowe Informacje o zestawie](../../ide/reference/assembly-information-dialog-box.md).
+**Informacje o zestawie**&mdash;wybierając ten przycisk otwiera [informacje o zestawie dialogowe](../../ide/reference/assembly-information-dialog-box.md).
 
-**Manifest pakietu**&mdash;wybór ten przycisk otwiera projektanta manifestu. Projektant manifestu możliwy, wybierając _Package.appxmanifest_ w pliku **Eksploratora rozwiązań**. Aby uzyskać więcej informacji, zobacz [konfiguracji pakietu przy użyciu projektanta manifestu](/windows/uwp/packaging/packaging-uwp-apps#configure-an-app-package).
+**Manifest pakietu**&mdash;wybranie tego przycisku zostanie otwarty projektant manifestu. Projektant manifestu, możesz je również otworzyć, wybierając _Package.appxmanifest_ w pliku **Eksploratora rozwiązań**. Aby uzyskać więcej informacji, zobacz [skonfigurować pakiet za pomocą projektanta manifestu](/windows/uwp/packaging/packaging-uwp-apps#configure-an-app-package).
 
-## <a name="targeting-section"></a>Przeznaczonych dla sekcji
+## <a name="targeting-section"></a>Sekcja określania wartości docelowej
 
-Należy określić wersję docelową i minimalną wersję systemu Windows 10 dla aplikacji, przy użyciu list rozwijanych w tej sekcji. Zaleca się docelowych najnowszej wersji systemu Windows 10 i jeśli tworzysz aplikację przedsiębiorstwa, zbyt obsługuje starsza wersja minimalna. Aby uzyskać więcej informacji o wersji systemu Windows 10 do wyboru, zobacz [wybierz wersję platformy uniwersalnej systemu Windows](/windows/uwp/updates-and-versions/choose-a-uwp-version).
+Należy określić wersję docelową i minimalną wersję systemu Windows 10 dla aplikacji, przy użyciu list rozwijanych w tej sekcji. Zalecane jest, docelowych najnowszej wersji systemu Windows 10 i jeśli tworzysz aplikację przedsiębiorstwa, zbyt obsługi starszej wersji minimalnej. Aby uzyskać więcej informacji na temat wersji systemu Windows 10 do wyboru, zobacz [wybierz wersję platformy uniwersalnej systemu Windows](/windows/uwp/updates-and-versions/choose-a-uwp-version).
 
-Informacje o platformie elementów docelowych w programie Visual Studio 2017 r, zobacz [obsługiwane platformy](/visualstudio/productinfo/vs2017-compatibility-vs#a-iddevelopwindows-avisual-studio-2017-support-for-windows-development).
+Aby uzyskać informacje o platformie przeznaczonych dla programu Visual Studio 2017, zobacz [platformy](/visualstudio/productinfo/vs2017-compatibility-vs#platform-targeting).
 
 ## <a name="see-also"></a>Zobacz także
 

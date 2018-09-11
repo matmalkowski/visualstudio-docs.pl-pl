@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 86c84314cf025652dac2670c19763ae069ea6865
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 6b50ea1ae20f6d8a03609dfd37a080108ca2e58e
+ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279766"
+ms.lasthandoff: 09/11/2018
+ms.locfileid: "44384204"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Znajdowanie zmian w kodzie i innych elementów historii kodu za pomocą funkcji CodeLens
 
@@ -66,7 +66,7 @@ Potrzebujesz:
 
 - Team Foundation Server 2013 lub nowszy, usługom DevOps platformy Azure lub usługi Git
 
-- [Skype dla firm](/skypeforbusiness/), lub Lync 2010 lub nowszej, aby skontaktować się z zespołem z poziomu edytora kodu
+- [Skype dla firm](/skypeforbusiness/) do kontaktowania się z zespołem z poziomu edytora kodu
 
 Dla kodu C# lub Visual Basic, przechowywanego z Team Foundation Version Control (TFVC) lub Git, Pobierz szczegóły CodeLens na poziomie klasy i metody (*element kodu na poziomie* wskaźniki). Jeśli repozytorium Git jest hostowana w TfGit, możesz także uzyskać łącza do elementów roboczych TFS.
 
@@ -80,7 +80,7 @@ Dla pliku typów innych niż *.cs* lub *.vb*, możesz uzyskać szczegółowe inf
 
 Wskaźniki poziomu elementu pozwalają zobaczyć, kto zmienił kod i jakich zmian kodu zostały wykonane. Wskaźniki poziomu elementu kodu są dostępne dla kodu C# i Visual Basic.
 
-Jest to, zobacz korzystając z Team Foundation Version Control (TFVC) w Team Foundation Server lub usługom DevOps platformy Azure: 
+Jest to, zobacz korzystając z Team Foundation Version Control (TFVC) w Team Foundation Server lub usługom DevOps platformy Azure:
 
 ![CodeLens: Historia zmian Get dla kodu w TFVC](../ide/media/codelens-code-changes.png)
 
@@ -257,13 +257,13 @@ Włącz wskaźniki poziomu plików CodeLens, włączać i wyłączać przy użyc
 
 - Jeśli Twój kod jest przechowywany w programie TFS, upewnij się, że indeksowanie kodu jest włączone za pomocą [polecenie CodeIndex](../ide/codeindex-command.md) z [polecenia konfiguracji TFS](/tfs/server/ref/command-line/tfsconfig-cmd).
 
-- Wskaźniki związane z TFS pojawiają się tylko wtedy, gdy elementy robocze są połączone z kodem, a użytkownik ma uprawnienia do otwierania połączonych elementów roboczych. Upewnij się, że masz [uprawnienia zabezpieczeń elementów członkowskich zespołu](/vsts/work/scale/multiple-teams).
+- Wskaźniki związane z DevOps są wyświetlane tylko wtedy, gdy elementy robocze są połączone z kodem i masz uprawnienia do otwierania połączonych elementów roboczych. Upewnij się, że masz [uprawnienia zabezpieczeń elementów członkowskich zespołu](/azure/devops/organizations/security/view-permissions?view=vsts).
 
 - Nie pojawiają się wskaźniki testów jednostkowych, gdy kod aplikacji nie ma testów jednostkowych. Wskaźniki stanu testu są automatycznie wyświetlane w projektach testów. Jeśli wiesz, że kod aplikacji ma testy jednostkowe, ale nie pojawiają się wskaźniki testów, spróbuj skompilować rozwiązanie (**Ctrl**+**Shift**+**B**).
 
 ### <a name="q-why-dont-i-see-the-work-item-details-for-a-commit"></a>P: Dlaczego nie widzę szczegóły elementu roboczego do zatwierdzenia
 
-**Odp.:** może się to zdarzyć, ponieważ funkcja CodeLens nie może znaleźć elementy robocze w programie TFS. Sprawdź, czy są połączone w do projektu, który ma tych elementów roboczych, i czy masz uprawnienia do wyświetlania tych elementów roboczych. Szczegóły elementu roboczego może również nie są wyświetlane czy opis zatwierdzenie ma nieprawidłowe informacje o identyfikatorach elementów roboczych w programie TFS.
+**Odp.:** może się to zdarzyć, ponieważ CodeLens nie może znaleźć elementy robocze w usłudze Azure tablic lub TFS. Sprawdź, czy są połączone w do projektu, który ma tych elementów roboczych, i czy masz uprawnienia do wyświetlania tych elementów roboczych. Szczegóły elementu roboczego może być również wyświetlane czy opis zatwierdzenie ma nieprawidłowe informacje o element roboczy identyfikatorów w usłudze Azure tablic lub TFS.
 
 ### <a name="q-why-dont-i-see-the-skype-indicators"></a>P: Dlaczego nie widzę wskaźników Skype?
 
@@ -315,7 +315,7 @@ Aby użyć klawiatury:
 
      ![Odśwież wskaźniki zespołu CodeLens elementu menu.](../ide/media/codelensrefreshindicatorsfromcode.png)
 
-- **Test**: [znaleźć testów jednostkowych dla kodu](#Find-unit-tests-for-your-code) odświeżyć **testu** wskaźnika.
+- **Test**: [znaleźć testów jednostkowych dla kodu](#associated-unit-tests) odświeżyć **testu** wskaźnika.
 
 ### <a name="q-whats-local-version"></a>Pyt.: co to jest "Wersja lokalna"?
 
