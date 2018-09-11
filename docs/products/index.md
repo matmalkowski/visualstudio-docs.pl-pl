@@ -5,12 +5,12 @@ title: Dokumentacja programu Visual Studio | Dokumentacja firmy Microsoft
 description: Dowiedz się, jak używać programu Visual Studio 2017 do tworzenia aplikacji, usług i narzędzi w języku wybranym dla platform i urządzeń.
 ms.topic: landing-page
 searchScope: []
-ms.openlocfilehash: 6baee6be451ba1997f44e24d5a1690f7b451c3a2
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
-ms.translationtype: HT
+ms.openlocfilehash: ee2f52f135412fb0847d3922d243383781220acb
+ms.sourcegitcommit: e942550df44f733a1349b85f0059318a28a1ac27
+ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280977"
+ms.locfileid: "44339674"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -137,7 +137,7 @@ ms.locfileid: "44280977"
                                 </a>
                             </li>
                             <li>
-                                <a href="/subscriptions/" title="Subskrypcje programu Visual Studio">
+                                <a href="/visualstudio/subscriptions/" title="Subskrypcje programu Visual Studio">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
