@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fca73f1ad91baa1f38ac73f1266616e0db37b1b4
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 99d87f5b8a8a5ee0ad69b6f6d0da121799262c9f
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43776187"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44320972"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Praca z językiem Python w programie Visual Studio na Windows
 
@@ -38,6 +38,8 @@ Aby rozpocząć pracę:
 Visual Studio **środowiska Python** okna (w widoku szerokie, rozwinięty pokazana poniżej) zapewnia jednego miejsca, aby zarządzać wszystkimi globalne środowiska Python, środowisk conda i środowisk wirtualnych. Visual Studio automatycznie wykrywa instalacje języka Python w lokalizacjach i pozwala na skonfigurowanie instalacje niestandardowe. Z każdym środowiskiem może łatwo zarządzania pakietami, Otwórz okno interaktywne dla danego środowiska i dostęp do folderów środowiska.
 
 ![Rozwinięty widok okna środowiska Python](media/environments-expanded-view.png)
+
+Użyj **Otwórz okno interaktywne** polecenie, aby uruchomić interaktywnie języka Python, w ramach programu Visual Studio. Użyj **Otwórz w programie PowerShell** polecenie, aby otworzyć okno oddzielne polecenia w folderze wybranego środowiska. Z tego okna polecenia skrypt można uruchomić dowolnego języka python. 
 
 Informacje dodatkowe:
 
@@ -62,7 +64,7 @@ Informacje dodatkowe:
 
 ## <a name="interactive-window"></a>Okno interaktywne
 
-Dla każdego środowiska Python, wiadomo, że program Visual Studio możesz łatwo otworzyć tego samego środowiska interaktywnego (REPL) dla interpretera języka Python, bezpośrednio z poziomu programu Visual Studio, a nie przy użyciu oddzielnych wiersza polecenia. Można łatwo przełączać się między środowiskami, jak również.
+Dla każdego środowiska Python, wiadomo, że program Visual Studio możesz łatwo otworzyć tego samego środowiska interaktywnego (REPL) dla interpretera języka Python, bezpośrednio z poziomu programu Visual Studio, a nie przy użyciu oddzielnych wiersza polecenia. Można łatwo przełączać się między środowiskami, jak również. (Aby otworzyć osobnym wierszu polecenia, wybierz żądane środowiska w **środowiska Python** okna, następnie wybierz pozycję **Otwórz w programie PowerShell** polecenia jak wyjaśniono wcześniej w [pomocy technicznej dla wielu interpretery](#support-for-multiple=interpreters).)
 
 ![Oknie interakcyjnym środowiska Python w programie Visual Studio](media/interactive-window.png)
 

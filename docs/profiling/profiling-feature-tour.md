@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d48ca35940d9635489d65b18794604c29d7a507
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: aeda3752fdee6ce36094c68758d99c612c82fd76
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42624226"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44320842"
 ---
 # <a name="quickstart-first-look-at-profiling-tools"></a>Szybki Start: Pierwsze spojrzenie na narzędziach profilowania
 
@@ -156,10 +156,10 @@ Poniżej przedstawiono listę różnych narzędzi oferowanych przez program Visu
 |Narzędzia wydajności|Windows desktop|Platforma UWP|ASP.NET/ASP.NET Core| 
 |----------------------|---------------------|-------------|-------------|  
 |[Użycie pamięci](../profiling/memory-usage.md)|Tak|Tak|Tak| 
-|[Użycie procesora CPU](../profiling/cpu-usage.md)|Tak (patrz uwaga)|Tak|Tak (patrz uwaga)|
+|[Użycie procesora CPU](../profiling/cpu-usage.md)|Tak|Tak|Tak|
 |[Użycie procesora GPU](../debugger/gpu-usage.md)|Tak|Tak|Brak| 
 |[Oś czasu aplikacji](../profiling/application-timeline.md)|Tak|Tak|Brak|
-|[PerfTips](../profiling/perftips.md)|Tak|tak, aby XAML nie dla kodu HTML|Tak|
+|[Wskazówki dotyczące wydajności](../profiling/perftips.md)|Tak|tak, aby XAML nie dla kodu HTML|Tak|
 |[Eksplorator wydajności](../profiling/performance-explorer.md)|Tak|Brak|Tak|
 |[IntelliTrace](../debugger/intellitrace.md)|.NET przy użyciu Visual Studio Enterprise|.NET przy użyciu Visual Studio Enterprise|.NET przy użyciu Visual Studio Enterprise|
 |[Użycie sieci](../profiling/network-usage.md)|Brak|Tak|Brak|

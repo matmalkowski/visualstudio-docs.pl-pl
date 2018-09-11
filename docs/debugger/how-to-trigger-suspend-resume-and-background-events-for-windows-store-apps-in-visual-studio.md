@@ -1,5 +1,5 @@
 ---
-title: Wyzwalanie wstrzymania, wznowienia i zdarzeń w tle podczas debugowania aplikacji platformy uniwersalnej systemu Windows | Dokumentacja firmy Microsoft
+title: 'Porady: wyzwalanie wstrzymania, wznowienia i zdarzeń w tle podczas debugowania aplikacji platformy uniwersalnej systemu Windows | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 01/16/2018
 ms.technology: vs-ide-debug
@@ -16,96 +16,96 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 00e448da2f5a23c2f6aebf6e163181080949129a
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 510c79a4d225e250d4c832155da15b61c8c5b055
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481232"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280015"
 ---
-# <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>Wyzwalanie wstrzymania, wznowienia i zdarzeń w tle podczas debugowania aplikacji platformy uniwersalnej systemu Windows w programie Visual Studio
-Jeśli nie debugowania, Windows **Zarządzanie okresem istnienia procesu** (elementu) steruje stanem wykonywania aplikacji — uruchamianie, wstrzymywanie, wznawianie i przerywanie aplikacji w odpowiedzi na działania użytkownika i stan urządzenia. Podczas debugowania, system Windows wyłącza te zdarzenia aktywacji. W tym temacie opisano sposób uruchamiania tych zdarzeń w debugerze.  
+# <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>Porady: wyzwalanie wstrzymania, wznowienia i zdarzeń w tle podczas debugowania aplikacji platformy UWP w programie Visual Studio
+Jeśli nie debugowania, Windows **Zarządzanie okresem istnienia procesu** (elementu) określa stan wykonania aplikacji — uruchamianie, wstrzymywanie, wznawianie i przerywa aplikację w odpowiedzi na działania użytkownika i stan urządzenia. Podczas debugowania, Windows powoduje wyłączenie tych zdarzeń aktywacji. W tym temacie opisano, jak wyzwolenie tych zdarzeń w debugerze.  
   
- W tym temacie opisano również sposób debugowania **zadania w tle**. Zadania w tle umożliwiają wykonywania pewnych operacji w tle, nawet w przypadku aplikacji nie jest uruchomiona. Debuger umożliwia umieszczanie aplikacji w trybie debugowania, a następnie — bez uruchamiania interfejsu użytkownika — start i debugowania zadania w tle.  
+ W tym temacie opisano również sposób debugowania **zadania w tle**. Zadania w tle umożliwiają wykonywania pewnych operacji w tle, nawet w przypadku aplikacji nie jest uruchomiona. Debuger umożliwia Udostępnij swoją aplikację w trybie debugowania i następnie — bez konieczności uruchamiania interfejsu użytkownika — uruchomić i debugować zadanie w tle.  
   
- Aby uzyskać więcej informacji na temat zadań tła i zarządzanie okresem istnienia procesu zobacz [uruchamianie i wznawianie i wielozadaniowości](/windows/uwp/launch-resume/index).  
+ Aby uzyskać więcej informacji na temat zadań Zarządzanie okresem istnienia procesu i tła zobacz [uruchamiania i wznawianie i wielozadaniowość](/windows/uwp/launch-resume/index).  
   
-##  <a name="BKMK_Trigger_Process_Lifecycle_Management_events"></a> Wyzwalacz zdarzenia Zarządzanie okresem istnienia procesu  
- Systemu Windows można wstrzymać aplikacji, gdy użytkownik zmienia się od jego lub Windows wejścia w stan niskiego zużycia energii. Może odpowiadać na `Suspending` zdarzeń, aby zapisać odpowiednie dane aplikacji i użytkownika do magazynu trwałego i zwolnić zasoby. Po wznowieniu aplikacji **zawieszone** stanu, wejdzie ona **systemem** stanu, aby kontynuować, z którym był podczas został wstrzymany. Może odpowiadać na `Resuming` zdarzenie, aby przywrócić lub Odśwież stan aplikacji i odzyskać zasoby.  
+##  <a name="BKMK_Trigger_Process_Lifecycle_Management_events"></a> Zdarzenia Zarządzanie okresem istnienia procesu wyzwalacza  
+ Windows można wstrzymać aplikacji, gdy użytkownik zmienia się od jego lub Windows wejścia w stan niskiego zużycia energii. Może odpowiadać na `Suspending` zdarzeń, aby zapisać odpowiednie dane aplikacji i użytkownika do magazynu trwałego i zwolnić zasoby. Po wznowieniu aplikacji **zawieszone** stanu, wejdzie ona **systemem** stanu i jest kontynuowane od gdzie jaką miały w chwili zawieszenia. Może odpowiadać na `Resuming` zdarzenia w celu przywrócenia lub Odśwież stan aplikacji i odzyskać zasoby.  
   
- Chociaż system Windows podejmuje próbę przechowywać dowolną liczbę wstrzymane aplikacje w pamięci, jak to możliwe, systemu Windows może prowadzić aplikacji, jeśli nie ma za mało zasobów, aby przechowywać go w pamięci. Użytkownika można również jawnie Zamknij aplikację. Nie ma żadnego specjalnego zdarzenia, aby wskazać, że użytkownik zamknął aplikacji.  
+ Mimo że Windows próbuje zachować tyle wstrzymane aplikacje w pamięci, jak to możliwe, Windows może zakończyć aplikację, jeśli nie ma za mało zasobów, aby utrzymać ją w pamięci. Użytkownik może również jawnie Zamknij aplikację. Nie ma żadnego specjalnego zdarzenia, aby wskazać, że użytkownik zamknął aplikacji.  
   
- W debugerze programu Visual Studio można ręcznie wstrzymania, wznowienia i przerwanie debugowania zdarzenia cyklu życia procesu aplikacji. Debugowanie zdarzeń cyklu życia procesu:  
+ W debugerze programu Visual Studio można ręcznie wstrzymania, wznowienia i zakończyć swoje aplikacje, aby debugować zdarzenia cyklu życia procesu. Aby debugować zdarzenia cyklu życia procesu:  
   
 1.  Ustaw breakpooint w procedurze obsługi zdarzeń, który chcesz debugować.  
   
 2.  Naciśnij klawisz **F5** można rozpocząć debugowania.  
   
-3.  Na **debugowania lokalizacji** narzędzi wybierz zdarzenie, które chcesz uruchomić:  
+3.  Na **Lokalizacja debugowania** narzędzi, wybierz zdarzenie, które chcesz uruchomić:  
   
-     ![Wstrzymywanie, wznawianie, przerwanie i zadania w tle](../debugger/media/dbg_suspendresumebackground.png "DBG_SuspendResumeBackground")  
+     ![Wstrzymać, wznowić, zakończenia i zadania w tle](../debugger/media/dbg_suspendresumebackground.png "DBG_SuspendResumeBackground")  
   
-     Należy pamiętać, że **zawieszenia i zakończyć** zamyka aplikację i kończy się sesja debugowania.  
+     Należy pamiętać, że **Wstrzymaj i zakończyć** nie zamknie aplikacji i kończy się sesja debugowania.  
   
-##  <a name="BKMK_Trigger_background_tasks"></a> Wyzwalacz zadania w tle  
- Dowolna aplikacja można zarejestrować zadania w tle odpowiadają na określone zdarzenia systemowe, nawet wtedy, gdy aplikacja nie jest uruchomiona. Zadania w tle nie może uruchomić kod, który bezpośrednio aktualizacje interfejsu użytkownika; Zamiast tego zawierają one informacje dla użytkownika z kafelka aktualizacje, aktualizacje badge i wyskakujące powiadomienia. Aby uzyskać więcej informacji, zobacz [Obsługa aplikacji za pomocą zadania w tle](http://msdn.microsoft.com/en-us/4c7bb148-eb1f-4640-865e-41f627a46e8e)  
+##  <a name="BKMK_Trigger_background_tasks"></a> Zadania w tle wyzwalacza  
+ Dowolna aplikacja można zarejestrować zadania w tle mogą odpowiadać na określone zdarzenia systemowe, nawet wtedy, gdy aplikacja nie jest uruchomiona. Zadania w tle nie może uruchomić kod, który bezpośrednio aktualizacje interfejsu użytkownika; Zamiast tego zawierają one informacje dla użytkownika przy użyciu aktualizacji kafelka, wskaźnik aktualizacji i powiadomień wyskakujących. Aby uzyskać więcej informacji, zobacz [obsługi aplikacji przy użyciu zadań w tle](https://msdn.microsoft.com/library/4c7bb148-eb1f-4640-865e-41f627a46e8e)  
   
- Możesz wyzwolić zdarzenia, które uruchomienia zadania w tle dla aplikacji z debugera.  
+ Możesz wyzwolić wydarzenia, uruchamianych zadań w tle dla swojej aplikacji za pomocą debugera.  
   
 > [!NOTE]
->  Debuger może wyzwolić tylko te zdarzenia, które nie zawierają danych, takich jak zdarzenia, które wskazują zmiany stanu urządzenia. Należy ręcznie uruchomić zadania w tle, które wymagają danych wejściowych użytkownika lub innych danych.  
+>  Debuger może wyzwalać tylko te zdarzenia, które nie zawierają danych, takich jak zdarzenia, które wskazuje na zmianę stanu na urządzeniu. Musisz ręcznie wyzwolić zadania w tle, które wymagają wprowadzenia danych przez użytkownika lub inne dane.  
   
- Najbardziej realistyczne sposobem wyzwala zdarzenia zadania tła jest gdy aplikacja nie jest uruchomiona. Jednak wyzwolenie zdarzenia w standardowej sesji debugowania jest również obsługiwany.  
+ Najbardziej realistyczne sposób, aby wyzwolić zdarzenie zadania w tle jest, gdy Twoja aplikacja nie działa. Wyzwalanie zdarzenia w sesji debugowania standardowa również jest jednak obsługiwane.  
   
-###  <a name="BKMK_Trigger_a_background_task_event_from_a_standard_debug_session"></a> Wyzwalacz zdarzenia zadania tła z sesji debugowania standardowe  
+###  <a name="BKMK_Trigger_a_background_task_event_from_a_standard_debug_session"></a> Wyzwalacz zdarzenia zadań tła, z sesji debugowania standardowe  
   
-1.  Ustaw punkt przerwania w kodzie zadania tła, który chcesz debugować.  
+1.  Ustaw punkt przerwania w kodzie zadań tła, który chcesz debugować.  
   
 2.  Naciśnij klawisz **F5** można rozpocząć debugowania.  
   
-3.  Z listy zdarzeń **debugowania lokalizacji** narzędzi, wybierz pozycję zadania w tle, który chcesz uruchomić.  
+3.  Z listy zdarzeń na **Lokalizacja debugowania** narzędzi, wybierz zadanie w tle, który chcesz uruchomić.  
   
-     ![Wstrzymywanie, wznawianie, przerwanie i zadania w tle](../debugger/media/dbg_suspendresumebackground.png "DBG_SuspendResumeBackground")  
+     ![Wstrzymać, wznowić, zakończenia i zadania w tle](../debugger/media/dbg_suspendresumebackground.png "DBG_SuspendResumeBackground")  
   
-###  <a name="BKMK_Trigger_a_background_task_when_the_app_is_not_running"></a> Wyzwalanie zadania w tle, gdy aplikacja nie jest uruchomiona.  
+###  <a name="BKMK_Trigger_a_background_task_when_the_app_is_not_running"></a> Wyzwalanie zadania w tle, gdy aplikacja nie jest uruchomiony.  
   
-1.  Ustaw punkt przerwania w kodzie zadania tła, który chcesz debugować.  
+1.  Ustaw punkt przerwania w kodzie zadań tła, który chcesz debugować.  
   
-2.  Otwórz stronę właściwości debugowania projektu rozruchu. W Eksploratorze rozwiązań wybierz projekt. Na **debugowania** menu, wybierz **właściwości**.  
+2.  Otwórz stronę właściwości debugowania projektu startowego. W Eksploratorze rozwiązań wybierz projekt. Na **debugowania** menu, wybierz **właściwości**.  
   
      W przypadku projektów C++ i JavaScript, rozwiń **właściwości konfiguracji** , a następnie wybierz **debugowanie**.  
   
 3.  Wykonaj jedną z następujących czynności:  
   
-    -   Projekty Visual C# i Visual Basic, wybierz **nie uruchamiaj, ale Debuguj kod przy rozpoczęciu**  
+    -   Dla projektów języka Visual C# i Visual Basic, wybierz **nie uruchamiaj, ale Debuguj kod przy rozpoczęciu**  
   
-         ![C&#35;&#47;VB debugowania uruchamiania aplikacji właściwości](../debugger/media/dbg_csvb_dontlaunchapp.png "DBG_CsVb_DontLaunchApp")  
+         ![C&#35;&#47;właściwości aplikacji Uruchamianie debugowania VB](../debugger/media/dbg_csvb_dontlaunchapp.png "DBG_CsVb_DontLaunchApp")  
   
-    -   Dla projektów języka JavaScript i program Visual C++, wybierz **nr** z **uruchamianie aplikacji** listy.  
+    -   Dla projektów języka Visual C++ i JavaScript, wybierz **nie** z **uruchamianie aplikacji** listy.  
   
-         ![C&#43;&#43;&#47;uruchamianie VB właściwości debugowania aplikacji](../debugger/media/dbg_cppjs_dontlaunchapp.png "DBG_CppJs_DontLaunchApp")  
+         ![C&#43;&#43;&#47;Uruchom VB właściwości debugowania aplikacji](../debugger/media/dbg_cppjs_dontlaunchapp.png "DBG_CppJs_DontLaunchApp")  
   
-4.  Naciśnij klawisz **F5** umieścić aplikacji w trybie debugowania. Uwaga **procesu** listy na **debugowania lokalizacji** narzędzi Wyświetla nazwę pakietu aplikacji, aby wskazać, że jesteś w trybie debugowania.  
+4.  Naciśnij klawisz **F5** do umieszczenia aplikacji w trybie debugowania. Uwaga **procesu** listy na **Lokalizacja debugowania** narzędzi Wyświetla nazwę pakietu aplikacji, aby wskazać, że jesteś w trybie debugowania.  
   
-     ![Lista procesów zadania tła](../debugger/media/dbg_backgroundtask_processlist.png "DBG_BackgroundTask_ProcessList")  
+     ![Lista procesów zadań tła](../debugger/media/dbg_backgroundtask_processlist.png "DBG_BackgroundTask_ProcessList")  
   
-5.  Z listy zdarzeń **debugowania lokalizacji** narzędzi, wybierz pozycję zadania w tle, który chcesz uruchomić.  
+5.  Z listy zdarzeń na **Lokalizacja debugowania** narzędzi, wybierz zadanie w tle, który chcesz uruchomić.  
   
-     ![Wstrzymywanie, wznawianie, przerwanie i zadania w tle](../debugger/media/dbg_suspendresumebackground.png "DBG_SuspendResumeBackground")  
+     ![Wstrzymać, wznowić, zakończenia i zadania w tle](../debugger/media/dbg_suspendresumebackground.png "DBG_SuspendResumeBackground")  
   
-##  <a name="BKMK_Trigger_Process_Lifetime_Management_events_and_background_tasks_from_an_installed_app"></a> Wyzwalacz zdarzenia Zarządzanie okresem istnienia procesu, a w tle zadań z zainstalowaną aplikację  
- Użyj **Debuguj zainstalowany pakiet aplikacji** okno dialogowe, aby załadować aplikację, która jest już zainstalowana w debugerze. Na przykład może debugować aplikację, która została zainstalowana z Microsoft Store lub debugowania aplikacji, jeśli masz pliki źródłowe dla aplikacji, ale nie projektu programu Visual Studio dla aplikacji. **Debuguj zainstalowany pakiet aplikacji** okno dialogowe pozwala uruchomić aplikację w trybie debugowania na komputerze programu Visual Studio lub na urządzeniu zdalnym lub ustawienie aplikacji do uruchamiania w trybie debugowania, ale nie można go uruchomić. Aby uzyskać więcej informacji, zobacz [debugowania pakietu aplikacji zainstalowanych](../debugger/debug-installed-app-package.md).
+##  <a name="BKMK_Trigger_Process_Lifetime_Management_events_and_background_tasks_from_an_installed_app"></a> Wyzwalaj zdarzenia Zarządzanie okresem istnienia procesu i zadania z zainstalowaną aplikację w tle  
+ Użyj **pakietu debugowania zainstalowanej aplikacji** okno dialogowe, aby załadować aplikację, która jest już zainstalowany w debugerze. Na przykład możesz debugować aplikację, która została zainstalowana z Microsoft Store, lub debugować aplikację, gdy masz pliki źródłowe dla aplikacji, ale nie projekt programu Visual Studio dla aplikacji. **Pakietu debugowania zainstalowanej aplikacji** okno dialogowe pozwala uruchomić aplikację w trybie debugowania na komputerze programu Visual Studio lub na zdalnym urządzeniu lub w celu ustawienia aplikacji, aby uruchomić tryb debugowania, ale nie można go uruchomić. Aby uzyskać więcej informacji, zobacz [debugowanie zainstalowanego pakietu aplikacji](../debugger/debug-installed-app-package.md).
   
- Po załadowaniu aplikacji w debugerze, można użyć dowolnej z opisanych procedur.  
+ Po załadowaniu aplikacji w debugerze, można użyć dowolnej z procedur opisanych powyżej.  
   
 ##  <a name="BKMK_Diagnosing_background_task_activation_errors"></a> Diagnozowanie błędów aktywacji zadania w tle  
- Dzienniki diagnostyczne w Podglądzie zdarzeń systemu Windows dla infrastruktury tła zawiera szczegółowe informacje, które można użyć do diagnozowania i rozwiązywania problemów, zadania tła. Aby wyświetlić dziennik:  
+ Dzienniki diagnostyczne w Podglądzie zdarzeń Windows infrastruktury tła zawiera szczegółowe informacje, które umożliwia diagnozowanie i rozwiązywanie problemów z błędami zadania w tle. Aby wyświetlić dziennik:  
   
 1.  Otwórz aplikację Podgląd zdarzeń.  
   
-2.  W **akcje** okienku wybierz **widoku** i upewnij się, że **dzienniki Pokaż analityczne i debugowania** jest zaznaczony.  
+2.  W **akcje** okienku wybierz **widoku** i upewnij się, że **Pokaż analityczne i debugowania dzienniki** jest zaznaczone.  
   
-3.  Na **podglądu zdarzeń (lokalne)** drzewa, rozwiń węzły **Dzienniki aplikacji i usług** > **Microsoft** > **systemu Windows**   >  **BackgroundTasksInfrastructure**.  
+3.  Na **podglądu zdarzeń (lokalne)** drzewa, rozwiń węzły **Dzienniki aplikacji i usług** > **Microsoft** > **Windows**   >  **BackgroundTasksInfrastructure**.  
   
 4.  Wybierz **diagnostycznych** dziennika.  
   
@@ -113,4 +113,4 @@ Jeśli nie debugowania, Windows **Zarządzanie okresem istnienia procesu** (elem
  [Testowanie aplikacji platformy uniwersalnej systemu Windows za pomocą programu Visual Studio](../test/testing-store-apps-with-visual-studio.md)   
  [Debugowanie aplikacji w programie Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   
  [Cykl życia aplikacji](/windows/uwp/launch-resume/app-lifecycle)   
- [Uruchamianie, wznawianie i wielozadaniowości](/windows/uwp/launch-resume/index)
+ [Uruchamianie, wznawianie i wielozadaniowość](/windows/uwp/launch-resume/index)

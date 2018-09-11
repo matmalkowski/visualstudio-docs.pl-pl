@@ -9,12 +9,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 838cbbe1b2f053a20113fddce238c84e646cbd62
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 2187e0d930195a7e40464d431d51d788dd26a119
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638668"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281172"
 ---
 # <a name="address-dpi-issues"></a>Wartość DPI rozwiązywania problemów
 Zwiększa liczbę urządzeń, które jest dostarczany z ekranami "o wysokiej rozdzielczości". Te ekrany, zwykle dokonują ponad 200 pikseli na cal (ppi). Korzystanie z aplikacji na tych komputerów będzie wymagać zawartości można skalować w do potrzeb wyświetlania zawartości w odległości normalnego widoku dla urządzenia. 2014 roku podstawowy cel wyświetlaczy o wysokiej gęstości są mobilni, urządzenia (tablety, laptopy clamshell i telefonów).  
@@ -229,7 +229,7 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.V
 ## <a name="enabling-hdpi-support-to-the-weboc"></a>Włączanie obsługi HDPI do obiektu  
  Domyślnie przez formanty obiektu (na przykład formantu WebBrowser w WPF lub interfejs IWebBrowser2) nie włączaj HDPI wykrywania i obsługi technicznej. Wynik będzie osadzonego formantu z zawartością wyświetlania, która jest zbyt mała w wysokiej rozdzielczości. Poniżej opisano sposób włączania obsługi wysokiej rozdzielczości DPI w wystąpieniu obiektu określonego w sieci web.  
   
- Implementuj interfejs IDocHostUIHandler (zobacz artykuł w witrynie MSDN w [IDocHostUIHandler](http://msdn.microsoft.com/library/aa753260.aspx) interfejsu):  
+ Implementuj interfejs IDocHostUIHandler (zobacz artykuł w witrynie MSDN w [IDocHostUIHandler](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753260(v=vs.85)):  
   
 ```idl  
 [ComImport, InterfaceType(ComInterfaceType.InterfaceIsIUnknown),  
@@ -308,7 +308,7 @@ public interface IDocHostUIHandler
     }   
 ```  
   
- Opcjonalnie można zaimplementować interfejsu ICustomDoc (zobacz artykuł w witrynie MSDN w [ICustomDoc](http://msdn.microsoft.com/library/aa753272.aspx) interfejsu):  
+ Opcjonalnie można zaimplementować interfejsu ICustomDoc (zobacz artykuł w witrynie MSDN w [ICustomDoc](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753272(v=vs.85)):  
   
 ```idl  
 [InterfaceType(ComInterfaceType.InterfaceIsIUnknown),  

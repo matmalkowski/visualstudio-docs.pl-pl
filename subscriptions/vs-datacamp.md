@@ -9,12 +9,12 @@ description: Więcej informacji na temat subskrypcja szkoleń DataCamp, które s
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 0220bf4a5a07fac2e9ecda8f8c638d9c5f0a6145
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: f0a6fe16edf12616dd93b394b118f40651ffb0ec
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42624017"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282419"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Korzyści szkolenia DataCamp w subskrypcji programu Visual Studio
 
@@ -93,4 +93,4 @@ Nie masz pewności której subskrypcji używasz?  Połączyć się z [ https://m
     - [Centrum pomocy DataCamp](https://support.datacamp.com/hc), gdzie Wyszukaj tematy pomocy technicznej i zobacz pytania użytkownika żądania.
     - [Prześlij żądanie pomocy technicznej](https://support.datacamp.com/hc/requests/new)
 -  Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z pomocą programu Visual Studio [pomoc techniczna dla subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/).
--  Masz pytanie dotyczące środowiska IDE programu Visual Studio, Visual Studio Team Services lub innych produktów Visual Studio lub usług?  Odwiedź stronę [pomoc techniczna dla programu Visual Studio](https://visualstudio.microsoft.com/support/).
+-  Masz pytanie dotyczące programu Visual Studio IDE, usługom DevOps platformy Azure lub innych produktów Visual Studio lub usług?  Odwiedź stronę [pomoc techniczna dla programu Visual Studio](https://visualstudio.microsoft.com/support/).

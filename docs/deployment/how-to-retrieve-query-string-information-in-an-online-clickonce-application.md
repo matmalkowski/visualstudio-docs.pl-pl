@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 251f175112a03bbe158c529b669b56378913f020
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 776ebca3b412b631634e45846ca15f00f31126f5
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080431"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282455"
 ---
 # <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>Porady: pobieranie informacji o ciągu zapytania w aplikacji ClickOnce w trybie online
 *Ciągu zapytania* jest to część URL zaczynającym się od znaku zapytania (?), który zawiera dowolne informacje w formie *nazwa = wartość*. Załóżmy, że masz [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji o nazwie `WindowsApp1` hostujący na `servername`, i chcesz przekazać wartość zmiennej `username` po uruchomieniu aplikacji. Adres URL może wyglądać następująco:  
@@ -78,7 +78,7 @@ ms.locfileid: "39080431"
  Jeśli aplikacja jest w trybie online tylko, zawsze będzie ona aktywowana przy użyciu adresu URL. Nawet w takim jednak aplikacji muszą być napisane działała poprawnie, jeśli parametry ciągu zapytania lub są uszkodzone.  
   
 ## <a name="net-framework-security"></a>zabezpieczenia .NET Framework  
- Zezwalaj na przekazywanie parametrów adresu URL do swojej [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji tylko wtedy, gdy planujesz czyszczenia danych wejściowych złośliwego znaki przed jego użyciem. Ciąg osadzone cudzysłowy, ukośniki lub średnikami, na przykład, mogą wykonywać operacje na danych dowolnego użycie niefiltrowane w zapytaniu SQL względem bazy danych. Aby uzyskać więcej informacji na temat zabezpieczeń ciągu zapytania, zobacz [skrypt wykorzystuje Przegląd](http://msdn.microsoft.com/Library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+ Zezwalaj na przekazywanie parametrów adresu URL do swojej [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji tylko wtedy, gdy planujesz czyszczenia danych wejściowych złośliwego znaki przed jego użyciem. Ciąg osadzone cudzysłowy, ukośniki lub średnikami, na przykład, mogą wykonywać operacje na danych dowolnego użycie niefiltrowane w zapytaniu SQL względem bazy danych. Aby uzyskać więcej informacji na temat zabezpieczeń ciągu zapytania, zobacz [skrypt wykorzystuje Przegląd](https://msdn.microsoft.com/Library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
 ## <a name="see-also"></a>Zobacz także  
  [Zabezpieczanie aplikacji ClickOnce](../deployment/securing-clickonce-applications.md)

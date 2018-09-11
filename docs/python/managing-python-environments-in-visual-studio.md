@@ -1,7 +1,7 @@
 ---
 title: Zarządzanie środowiskami Python i tłumaczy
 description: Użyj okna środowiska Python, aby zarządzać globalnym, wirtualnych i środowisk conda, instalowanie interpreterów języka Python i pakietów i przypisywanie środowisk do projektów programu Visual Studio.
-ms.date: 07/23/2018
+ms.date: 09/10/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: bb2a93ae9c05bef49551e3dd3fa6d68d998e09ec
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 1efa65542fa22f1cb8cfb8c6988b18d86ea66c9b
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586583"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44320829"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Jak utworzyć i zarządzać środowiskami Python w programie Visual Studio
 
@@ -38,7 +38,7 @@ Aby zainstalować pakiety w środowisku, zapoznaj się [pakietów karcie odwoła
 
 ### <a name="global-environments"></a>Globalne środowiska
 
-Każda instalacja języka Python (na przykład środowisko Python 2.7, środowiska Python 3.6, Anaconda 4.4.0 itp., zobacz [Python Zainstaluj interpretery](installing-python-interpreters.md)) utrzymuje globalne środowiska. Każde środowisko składa się z określonym interpreter języka Python, jego standardowej biblioteki i zestaw wstępnie zainstalowanych pakietów. Instalowanie pakietu w środowisku globalnym udostępnia je do wszystkich projektów przy użyciu tego środowiska. Jeśli środowisko znajduje się w obszarze ochrony systemu plików (w ramach *c:\program files*, na przykład), a następnie instalowania pakietów wymaga uprawnień administratora.
+Każda instalacja języka Python (na przykład środowisko Python 2.7, środowiska Python 3.6, 3.7 języka Python, Anaconda 4.4.0 itp., zobacz [Python Zainstaluj interpretery](installing-python-interpreters.md)) utrzymuje globalne środowiska. Każde środowisko składa się z określonym interpreter języka Python, jego standardowej biblioteki i zestaw wstępnie zainstalowanych pakietów. Instalowanie pakietu w środowisku globalnym udostępnia je do wszystkich projektów przy użyciu tego środowiska. Jeśli środowisko znajduje się w obszarze ochrony systemu plików (w ramach *c:\program files*, na przykład), a następnie instalowania pakietów wymaga uprawnień administratora.
 
 Globalne środowiska są dostępne dla wszystkich projektów na tym komputerze. W programie Visual Studio wybierz opcję jednego środowiska globalnego jako domyślny, który jest używany dla wszystkich projektów, chyba że zdecydujesz inną dla projektu. Aby uzyskać więcej informacji, zobacz [wybierz środowisko dla projektu](selecting-a-python-environment-for-a-project.md).
 
@@ -76,6 +76,9 @@ Dla programu Visual Studio 2017 w wersji 15.6 i starszych, można użyć środow
 Visual Studio 2017 w wersji 15.7 lub nowszej automatycznie wykrywa środowisk conda i wyświetla je w **środowiska Python** okna zgodnie z opisem w następnej sekcji.
 
 ## <a name="the-python-environments-window"></a>W oknie środowiska Python
+
+> [!Note]
+> Zrzuty ekranu, przedstawione w tej sekcji reprezentują 15.8 usługi Visual Studio. Nieco inne w interfejsie użytkownika mogą pojawić się w zależności od używanej wersji programu Visual Studio.
 
 Środowiska, w których obsługującemu programu Visual Studio są wyświetlane w **środowiska Python** okna. Aby otworzyć okno, użyj jednej z następujących metod:
 

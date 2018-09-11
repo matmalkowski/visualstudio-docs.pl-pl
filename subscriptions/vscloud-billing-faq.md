@@ -9,12 +9,12 @@ description: Pytania dotyczące rozliczeń dla subskrypcji w chmurze.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 185b4ebcb374973fdbcc56c81a3474797161736f
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: c0b66b7a10c344d7d534e5618ca560bdae31f30e
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42624139"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283306"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Chmura subskrypcji programu Visual Studio często zadawane pytania dotyczące rozliczeń
 
@@ -92,7 +92,7 @@ Zanim dokonasz zakupów, konieczne będzie [Usuń limit wydatków](https://azure
 
 ### <a name="q-whats-the-difference-between-annual-and-monthly-cloud-subscriptions"></a>P: jaka jest różnica między roczne i miesięczne subskrypcje chmury?
 
-Odp.: miesięczne subskrypcje chmury obejmują program Visual Studio, a także korzystanie z usługi VSTS i TFS. Rocznych subskrypcji chmury ma zbyt, ale także obejmować korzyści dla subskrybenta, w tym użycie Windows i innego oprogramowania firmy Microsoft, aby zainstalować i uruchomić opracowywania i testowania, miesięczne środki platformy Azure na potrzeby eksperymentowania z usługami platformy Azure i wykonując tworzenia i testowania w chmurze, szkoleń, pomocy technicznej i wiele innych.
+Odp.: miesięczne subskrypcje chmury obejmują programu Visual Studio oraz korzystania z usług infrastruktury DevOps platformy Azure i programu TFS. Rocznych subskrypcji chmury ma zbyt, ale także obejmować korzyści dla subskrybenta, w tym użycie Windows i innego oprogramowania firmy Microsoft, aby zainstalować i uruchomić opracowywania i testowania, miesięczne środki platformy Azure na potrzeby eksperymentowania z usługami platformy Azure i wykonując tworzenia i testowania w chmurze, szkoleń, pomocy technicznej i wiele innych.
 [Porównaj korzyści z subskrypcji chmury i ceny](https://visualstudio.microsoft.com/vs/pricing/)
 
 ### <a name="q-do-i-get-new-versions-of-visual-studio-if-i-buy-a-visual-studio-cloud-subscription"></a>P: czy zdobyć nowe wersje programu Visual Studio czy po zakupie subskrypcji programu Visual Studio w chmurze?

@@ -18,52 +18,52 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f31897cc4fb48fd7c814d4d25cb41ce0cb7e57da
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: aa5a21a60ab95b6dbc9aeb27a0c7d6e27ab32773
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31464813"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283122"
 ---
 # <a name="client-side-script-debugging"></a>Debugowanie skryptu po stronie klienta
-Debuger programu Visual Studio oferuje kompleksowe środowisko debugowania Znajdowanie i usuwanie błędów skryptów po stronie klienta w stron ASP.NET.  
+Debuger programu Visual Studio zapewnia kompleksowe środowisko debugowania do znajdowania i poprawiania błędów w skryptach po stronie klienta na stronach ASP.NET.  
   
 ## <a name="opening-script-documents"></a>Otwieranie dokumentów skryptu  
-Można zobaczyć listy dokumentów skryptu po stronie serwera i klienta w **Eksploratora rozwiązań** do wyświetlenia. Można otworzyć dokumentu skryptu z **Eksploratora rozwiązań**. Aby uzyskać więcej informacji, zobacz [porady: wyświetlanie dokumentów skryptu](../debugger/how-to-view-script-documents.md).  
+Można wyświetlić listy dokumentów skryptów po stronie serwera i klienta w **Eksploratora rozwiązań** do wyświetlenia. Możesz otworzyć dowolny dokument skryptu z **Eksploratora rozwiązań**. Aby uzyskać więcej informacji, zobacz [porady: wyświetlanie dokumentów skryptu](../debugger/how-to-view-script-documents.md).  
   
 ## <a name="breakpoint-mapping"></a>Mapowanie punktów przerwania  
- W programie Visual Studio nie może bezpośrednio debugowania kodu po stronie serwera, ale można ustawić punktu przerwania w pliku po stronie serwera. Visual Studio automatycznie mapuje punkt przerwania w odpowiedniej lokalizacji w pliku po stronie klienta i tworzy zamapowanych punktu przerwania w kodzie po stronie klienta.  
+ W programie Visual Studio nie można bezpośrednio debugować kodu po stronie serwera, ale można ustawić punkt przerwania w pliku po stronie serwera. Visual Studio automatycznie mapuje punkt przerwania do odpowiedniej lokalizacji w pliku po stronie klienta i tworzy mapowany punkt przerwania w kodzie po stronie klienta.  
   
 ## <a name="manually-or-automatically-attaching-to-script"></a>Ręczne lub automatyczne dołączanie do skryptu  
- Aby rozpocząć debugowanie skryptów w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], dołączyć debuger skrypt, którego chcesz debugować. Przyczyną może być ręczne lub automatyczne.  
+ Aby rozpocząć debugowanie skryptu w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], debuger należy dołączyć do skryptu, który chcesz debugować. Można to zrobić ręcznie lub automatycznie.  
   
- Możesz ręcznie dołączyć za pomocą [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] interfejsu debugera do uruchomionego procesu skryptu, aby dołączyć do wyboru. Aby uzyskać więcej informacji, zobacz [porady: dołączanie do skryptu](../debugger/how-to-attach-to-script.md).  
+ Można przyłączyć ręcznie używając [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] interfejsu debugera do wybrania czynnego procesu skryptu, którego chcesz dołączyć do. Aby uzyskać więcej informacji, zobacz [porady: dołączanie do skryptu](../debugger/how-to-attach-to-script.md).  
   
- Debuger automatyczne dołączenie do skryptu, gdy wystąpi jedno z następujących czynności:  
+ Debuger automatycznie dołącza do skryptu, gdy wystąpi jedno z następujących czynności:  
   
--   Możesz trafiony punkt przerwania ustawiony w skrypcie.  
+-   Zostanie trafiony punkt przerwania w skrypcie.  
   
--   Trafienia skrypt VBScript `Stop` instrukcji lub JScript `debugger` instrukcji w kodzie skryptu.  
+-   Osiągasz instrukcję VBScript `Stop` lub instrukcję JScript `debugger` instrukcji w kodzie skryptu.  
   
--   W przeglądarce lub na serwerze napotka składnię, lub uruchom błąd w skrypcie. W takim przypadku okno dialogowe zostanie wyświetlone i mieć opcję, aby rozpocząć debugowanie.  
+-   Przeglądarka lub serwer napotyka składni lub uruchom błąd w skrypcie. W takiej sytuacji pojawi się okno dialogowe i mogli rozpocząć debugowanie.  
   
- Ręcznie dołączania do skryptu, proces skryptu będzie działać, dopóki aplikacja jest zatrzymywane. Zatrzymanie go, wybierając **Podziel** na **debugowania** menu.  
+ Po dołączeniu ręcznie do skryptu, proces skryptu będzie nadal działać do momentu zatrzymywania. Można to zatrzymać wybierając **Przerwij** na **debugowania** menu.  
   
- Gdy debuger dołącza automatycznie, wykonywanie skryptu jest zatrzymywane w wierszu gdzie punkt przerwania, `Stop` instrukcji lub `debugger` instrukcji lub błąd wystąpił, lub w momencie, gdy została wybrana opcja można rozpocząć debugowania w programie Internet Explorer.  
+ Gdy automatycznie dołączany jest debuger, wykonywanie skryptu jest zatrzymywane w wierszu gdzie punkt przerwania, `Stop` instrukcji lub `debugger` instrukcji lub błąd wystąpił, lub w momencie, gdy wybrano opcję Rozpocznij debugowanie w programie Internet Explorer.  
   
- W tym momencie można urządzenia debugera normalne rozpocząć debugowanie. Na przykład można użyć **krok** poleceń, aby kontynuować jego wykonywanie kodu wiersz po wierszu. Można użyć **stos wywołań** okno widoku oraz kontroli skryptu przepływu. Można użyć zmiennej windows lub **Immediate** okno, aby wyświetlić lub zmienić właściwości i zmiennych.  
+ W tym momencie można użyć normalnych obiektów debugera, aby rozpocząć debugowanie. Na przykład, można użyć **kroku** poleceń, aby kontynuować wykonywanie kodu wiersz po wierszu. Możesz użyć **stos wywołań** okna do przeglądania i kontrolowania przepływu skryptu. Można użyć okien zmiennej lub **bezpośrednie** okna, aby wyświetlić lub zmienić zmienne i właściwości.  
   
-## <a name="enhanced-error-messages-for-script-debugging"></a>Ulepszone komunikaty do debugowania skryptów  
- Program Visual Studio oferuje rozszerzone komunikaty dla typowych skryptu debugowania problemów. Te komunikaty nie są wyświetlane, chyba że dołączyć do programu Internet Explorer ręcznie. Jeśli wystąpi błąd podczas programu Internet Explorer jest otwierana automatycznie, spróbuj ręcznie dołączania, dzięki czemu można wyświetlić komunikaty o błędach.  
+## <a name="enhanced-error-messages-for-script-debugging"></a>Ulepszone komunikaty o błędach dotyczące debugowania skryptów  
+ Visual Studio zapewnia ulepszone komunikaty o błędach dla typowych problemów debugowania skryptu. Te komunikaty nie są wyświetlane, jeśli nie dołączysz do programu Internet Explorer ręcznie. Jeśli wystąpi błąd, po otwarciu programu Internet Explorer automatycznie, spróbuj ręcznego dołączania, dzięki czemu można zobaczyć komunikaty o błędach.  
   
-## <a name="debugging-ajax-script-applications"></a>Debugowanie aplikacji skryptów AJAX  
- Aplikacje sieci Web z włączoną obsługą technologii AJAX w znacznym stopniu wykorzystywane kodu skryptu i stanowić specjalne wyzwania debugowania. Aby uzyskać informacji na temat metod debugowania AJAX zobacz  
+## <a name="debugging-ajax-script-applications"></a>Aplikacje debugowania skryptów AJAX  
+ Aplikacje sieci Web z włączoną obsługą technologii AJAX intensywnie korzystają z kod skryptu i stanowią szczególne wyzwanie dla debugowania. Aby uzyskać informacje na temat technik debuggowania AJAX zobacz  
   
- [Debugowanie i śledzenie — Przegląd aplikacji Ajax](http://msdn.microsoft.com/Library/92684ea0-7bb4-4a34-9203-3aa6394ce375).  
+ [Debugowanie i śledzenie — Przegląd aplikacji Ajax](https://msdn.microsoft.com/Library/92684ea0-7bb4-4a34-9203-3aa6394ce375).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie aplikacji ASP.NET i AJAX](../debugger/debugging-aspnet-and-ajax-applications.md)   
  [Ograniczenia debugowania skryptu](../debugger/limitations-on-script-debugging.md)   
- [Zmienne systemu Windows](../debugger/debugger-windows.md)   
+ [Windows zmiennej](../debugger/debugger-windows.md)   
  [Okno bezpośrednie](../ide/reference/immediate-window.md)   
- [Debugowanie i śledzenie — Przegląd aplikacji Ajax](http://msdn.microsoft.com/Library/92684ea0-7bb4-4a34-9203-3aa6394ce375)
+ [Debugowanie i śledzenie Ajax aplikacje — Przegląd](https://msdn.microsoft.com/Library/92684ea0-7bb4-4a34-9203-3aa6394ce375)

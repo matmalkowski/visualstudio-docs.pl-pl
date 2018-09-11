@@ -12,26 +12,26 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bcc6fe17d9f5e7666531086549eae6ad26741a22
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3769962829f5d0511b684f03ad8682071b48c07b
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31919993"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281159"
 ---
-# <a name="how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy"></a>Porady: synchronizowanie zestawu reguł projektu kodu z zasadami ewidencjonowania projektu zespołowego
+# <a name="how-to-synchronize-code-project-rule-sets-with-an-azure-devops-project-check-in-policy"></a>Porady: synchronizowanie zestawów reguł projektu kodu z zasadami ewidencjonowania projektu DevOps platformy Azure
 
-Możesz zsynchronizować ustawienia analizy kodu dla projektów kodu z zasadami ewidencjonowania projektu zespołowego, określając zestaw reguł, który zawiera co najmniej reguły, które są określone w regule ustawienie zasad ewidencjonowania. Twoje realizacji developer można poinformować o nazwę i lokalizację zestawu reguł dla zasad ewidencjonowania. Jedną z następujących opcji umożliwia upewnij się, że analiza kodu dla projektu używa poprawny zestaw reguł:
+Ustawienia analizy kodu dla projektów kodu z zasadami ewidencjonowania projektu DevOps platformy Azure można zsynchronizować, określając zestaw reguł, który zawiera co najmniej reguły, które są określone w regule ustawić dla zasad ewidencjonowania. Potencjalnych klientów usługi dla deweloperów może poinformować Cię o nazwę i lokalizację zestawu reguł dla zasad ewidencjonowania. Aby upewnić się, że analiza kodu dla projektu używa poprawny zestaw reguł, można użyć jednej z następujących opcji:
 
--   Zasady ewidencjonowania korzysta z jednego z zestawów reguł wbudowanych firmy Microsoft, Otwórz okno dialogowe właściwości dla projektu kodu, wyświetlona strona analizy kodu i wybierz regułę, ustaw na stronie Ustawienia projektu kodu analizy kodu. Microsoft zestawów reguł standardowe są automatycznie instalowane z programem Visual Studio są ustawione na tylko do odczytu i nie można edytować. Jeśli nie edytowania zestawów reguł, reguł w zasadzie i zestawów reguł lokalnych gwarancję do dopasowania.
+-   Zasady ewidencjonowania korzysta z jednego z Microsoft wbudowany zestaw reguł, Otwórz okno dialogowe właściwości dla projektu kodu, wyświetlenia strony analizy kodu i wybierz regułę, ustawić na stronie analizy kodu w ustawieniach projektu kodu. Microsoft standardowych zestawów reguł są automatycznie instalowane z programem Visual Studio są ustawione na tylko do odczytu i nie można edytować. Jeśli zestawy reguł nie są edytowane, gwarancję reguł w zasadzie i zestawów reguł lokalnych do dopasowania.
 
--   Jeśli zasady ewidencjonowania używa niestandardowego zestawu reguł, wykonaj operację pobierania w pliku zestawu reguł w kontroli wersji, aby utworzyć kopię lokalną. Następnie można określić lokalizacji lokalnej w ustawienia analizy kodu dla kodu projektu. Zasady dotrą do dopasowania, jeśli zestaw reguł dla zasad ewidencjonowania jest aktualny.
+-   Jeśli zasady ewidencjonowania używa niestandardowego zestawu reguł, należy wykonać operację pobrania w pliku zestawu reguł w kontroli wersji, aby utworzyć kopię lokalną. Następnie można określić lokalizacji lokalnej w ustawienia analizy kodu dla projektu kodu. Reguły są gwarantowane do dopasowania, jeśli zestaw reguł dla zasad ewidencjonowania jest aktualny.
 
-     Jeśli mapujesz lokalizację kontroli wersji na folder lokalny, który znajduje się w tej samej relacji do katalogu głównego projektu zespołowego w postaci kodu projektu lokalizacja reguły jest ustawiana za pomocą ścieżki względnej. Ścieżka względna gwarantuje, że ustawienie projektu kodu dla analizy kodu mogą być przenoszone do innych komputerów.
+     Jeśli mapujesz lokalizację kontroli wersji do lokalnego folderu, który znajduje się w tej samej relacji do katalogu głównego projektu DevOps platformy Azure jako projekt kodu lokalizacji reguły można ustawić za pomocą ścieżki względnej. Ścieżka względna gwarantuje, że ustawienie projektu kodu do analizy kodu mogą być przenoszone do innych komputerów.
 
--   Dostosuj kopię zestawu reguł dla zasad ewidencjonowania dla projektu kodu. Upewnij się, że nowy zestaw reguł zawiera wszystkie reguły w ramach zasad ewidencjonowania i innymi regułami, które chcesz dołączyć. Należy się upewnić, że zestaw reguł zawiera wszystkie reguły w regule ustawienie zasad ewidencjonowania.
+-   Dostosuj kopię zestawu reguł dla zasad ewidencjonowania dla projektu kodu. Upewnij się, że nowy zestaw reguł zawiera wszystkie reguły w zasadach ewidencjonowania i innymi regułami, które mają zostać uwzględnione. Upewnij się, że Twoje zestaw reguł zawiera wszystkie reguły w regule ustawić dla zasad ewidencjonowania.
 
-## <a name="to-specify-a-microsoft-standard-rule-set"></a>Aby określić regułę standard Microsoft Ustaw
+## <a name="to-specify-a-microsoft-standard-rule-set"></a>Aby określić regułę standard firmy Microsoft należy ustawić
 
 1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy projekt kodu, a następnie kliknij przycisk **właściwości**.
 
@@ -47,22 +47,22 @@ Możesz zsynchronizować ustawienia analizy kodu dla projektów kodu z zasadami 
 
 3.  Kliknij przycisk **analiza kodu**.
 
-4.  W **Uruchom ten zestaw reguł** kliknij  **\<Przeglądaj >**.
+4.  W **Uruchom ten zestaw reguł** kliknij  **\<Przeglądaj … >**.
 
-5.  W **Otwórz** oknie dialogowym Określ plik zestawu reguł zasad ewidencjonowania.
+5.  W **Otwórz** okna dialogowego wprowadź plik zestawu reguł zasad ewidencjonowania.
 
-## <a name="to-create-a-custom-rule-set-for-a-code-project"></a>Aby utworzyć regułę niestandardową ustawić projekt kodu
+## <a name="to-create-a-custom-rule-set-for-a-code-project"></a>Aby utworzyć regułę niestandardową należy ustawić dla projektu kodu
 
-1.  Wykonaj jedną z procedur we wcześniejszej części tego tematu, aby wybrać zasadami ewidencjonowania projektu zespołowego na stronie analizy kodu w oknie dialogowym Ustawienia projektu.
+1.  Wykonaj jedną z procedur we wcześniejszej części tego tematu, aby wybrać zasady ewidencjonowania projektu DevOps platformy Azure na stronie analizy kodu w oknie dialogowym Ustawienia projektu.
 
 2.  Kliknij przycisk **Otwórz**.
 
 3.  Dodawanie lub usuwanie reguł za pomocą [edytorze zestawu reguł](../code-quality/working-in-the-code-analysis-rule-set-editor.md).
 
-4.  Zapisz reguły zmodyfikowany plik .ruleset na komputerze lokalnym lub ścieżką UNC.
+4.  Zapisz zmodyfikowano regułę, Ustaw plik .ruleset, na komputerze lokalnym lub ścieżką UNC.
 
-5.  Otwórz okno dialogowe właściwości dla kodu projektu i wyświetlić **analizy kodu** strony.
+5.  Otwórz okno dialogowe właściwości dla projektu kodu, a następnie wyświetlić **analizy kodu** strony.
 
-6.  W **Uruchom ten zestaw reguł** kliknij  **\<Przeglądaj >**.
+6.  W **Uruchom ten zestaw reguł** kliknij  **\<Przeglądaj … >**.
 
-7.  W **Otwórz** oknie dialogowym Określ pliku zestawu reguł.
+7.  W **Otwórz** okna dialogowego wprowadź plik zestawu reguł.

@@ -23,25 +23,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b558ca0d5b8080e581dcddd07e2f89511d062cc4
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 5d7226726bc2eb9bbc53afa8920a26d342983af6
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154414"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281224"
 ---
 # <a name="walkthrough-download-satellite-assemblies-on-demand-with-the-clickonce-deployment-api"></a>Wskazówki: Pobieranie zestawów satelickich na żądanie przy użyciu wdrażania interfejsu API ClickOnce
 Aplikacje Windows Forms można skonfigurować dla wielu języków przy użyciu zestawów satelickich. A *zestawie satelickim* to zestaw, który zawiera zasoby aplikacji dla kultury innej niż aplikacja domyślna kultura.  
   
  Zgodnie z opisem w [aplikacji ClickOnce lokalizowanie](../deployment/localizing-clickonce-applications.md), może zawierać wiele zestawów satelickich dla różnych kultur, w tym samym [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożenia. Domyślnie [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] pobierze wszystkie zestawy satelickie w danym wdrożeniu na komputerze klienckim, mimo że pojedynczego klienta, prawdopodobnie będziesz potrzebować zestawu satelickiego tylko jeden.  
   
- W tym instruktażu pokazano, jak oznaczyć swoje zestawy satelickie jako opcjonalne i Pobierz tylko zestaw na komputerze klienckim musi uzyskać bieżące ustawienia kultury. W poniższej procedurze użyto narzędzi dostępnych w ramach [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Można również wykonać to zadanie w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  Zobacz też [wskazówki: Pobieranie zestawów satelickich na żądanie z wdrożeniem ClickOnce interfejsu API przy użyciu narzędzia Projektant](http://msdn.microsoft.com/library/ms366788\(v=vs.110\)) lub [wskazówki: Pobieranie zestawów satelickich na żądanie przy użyciu wdrażania interfejsu API ClickOnce Projektant](http://msdn.microsoft.com/library/ms366788\(v=vs.120\)).  
+ W tym instruktażu pokazano, jak oznaczyć swoje zestawy satelickie jako opcjonalne i Pobierz tylko zestaw na komputerze klienckim musi uzyskać bieżące ustawienia kultury. W poniższej procedurze użyto narzędzi dostępnych w ramach [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Można również wykonać to zadanie w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  Zobacz też [wskazówki: Pobieranie zestawów satelickich na żądanie z wdrożeniem ClickOnce interfejsu API przy użyciu narzędzia Projektant](/previous-versions/visualstudio/visual-studio-2012/ms366788(v=vs.110)) lub [wskazówki: Pobieranie zestawów satelickich na żądanie przy użyciu wdrażania interfejsu API ClickOnce Projektant](/previous-versions/visualstudio/visual-studio-2013/ms366788(v=vs.120)).  
   
 > [!NOTE]
 >  Do celów testowych, w poniższym przykładzie kodu programowo ustawia kulturę `ja-JP`. Zobacz sekcję "Kolejne kroki" w dalszej części tego tematu zawiera informacje na temat dostosować ten kod w środowisku produkcyjnym.  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
- W tym temacie założono, że wiesz, jak dodać zlokalizowane zasoby do aplikacji za pomocą programu Visual Studio. Aby uzyskać szczegółowe instrukcje, zobacz [Instruktaż: Lokalizowanie Windows forms](https://msdn.microsoft.com/library/vstudio/y99d1cd3\(v=vs.100\).aspx).  
+ W tym temacie założono, że wiesz, jak dodać zlokalizowane zasoby do aplikacji za pomocą programu Visual Studio. Aby uzyskać szczegółowe instrukcje, zobacz [Instruktaż: Lokalizowanie Windows forms](/previous-versions/visualstudio/visual-studio-2010/y99d1cd3(v=vs.100)).  
   
 ### <a name="to-download-satellite-assemblies-on-demand"></a>Aby pobrać zestawów satelickich na żądanie  
   

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 22d3a6ea380fdbfb8f6a41fce21d0ad283808d85
-ms.sourcegitcommit: e04e52bddf81239ad346efb4797f52e38de5cb98
+ms.openlocfilehash: 86c84314cf025652dac2670c19763ae069ea6865
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "43054481"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279766"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Znajdowanie zmian w kodzie i innych elementów historii kodu za pomocą funkcji CodeLens
 
@@ -64,7 +64,7 @@ Potrzebujesz:
 
 - Visual Studio Enterprise lub Professional programu Visual Studio
 
-- Team Foundation Server 2013 or later, Visual Studio Team Services, or Git
+- Team Foundation Server 2013 lub nowszy, usługom DevOps platformy Azure lub usługi Git
 
 - [Skype dla firm](/skypeforbusiness/), lub Lync 2010 lub nowszej, aby skontaktować się z zespołem z poziomu edytora kodu
 
@@ -80,7 +80,7 @@ Dla pliku typów innych niż *.cs* lub *.vb*, możesz uzyskać szczegółowe inf
 
 Wskaźniki poziomu elementu pozwalają zobaczyć, kto zmienił kod i jakich zmian kodu zostały wykonane. Wskaźniki poziomu elementu kodu są dostępne dla kodu C# i Visual Basic.
 
-Jest to, zobacz korzystając z Team Foundation Version Control (TFVC) w Team Foundation Server lub Visual Studio Team Services:
+Jest to, zobacz korzystając z Team Foundation Version Control (TFVC) w Team Foundation Server lub usługom DevOps platformy Azure: 
 
 ![CodeLens: Historia zmian Get dla kodu w TFVC](../ide/media/codelens-code-changes.png)
 
@@ -263,7 +263,7 @@ Włącz wskaźniki poziomu plików CodeLens, włączać i wyłączać przy użyc
 
 ### <a name="q-why-dont-i-see-the-work-item-details-for-a-commit"></a>P: Dlaczego nie widzę szczegóły elementu roboczego do zatwierdzenia
 
-**Odp.:** może się to zdarzyć, ponieważ funkcja CodeLens nie może znaleźć elementy robocze w programie TFS. Sprawdź, czy są połączone w do projektu zespołowego, który ma te elementów roboczych, i czy masz uprawnienia do wyświetlania tych elementów roboczych. Szczegóły elementu roboczego może również nie są wyświetlane czy opis zatwierdzenie ma nieprawidłowe informacje o identyfikatorach elementów roboczych w programie TFS.
+**Odp.:** może się to zdarzyć, ponieważ funkcja CodeLens nie może znaleźć elementy robocze w programie TFS. Sprawdź, czy są połączone w do projektu, który ma tych elementów roboczych, i czy masz uprawnienia do wyświetlania tych elementów roboczych. Szczegóły elementu roboczego może również nie są wyświetlane czy opis zatwierdzenie ma nieprawidłowe informacje o identyfikatorach elementów roboczych w programie TFS.
 
 ### <a name="q-why-dont-i-see-the-skype-indicators"></a>P: Dlaczego nie widzę wskaźników Skype?
 
@@ -295,7 +295,7 @@ Aby użyć klawiatury:
 
 4. Naciśnij klawisz **kartę** można przejść do **Pokaż ustawienia dla** listy, a następnie naciśnij klawisz **strzałkę w dół** wybrać **CodeLens**.
 
-### <a name="q-can-i-move-the-codelens-heads-up-display"></a>Pyt.: Czy można przesunąć ekran projekcyjny CodeLens?
+### <a name="q-can-i-move-the-codelens-heads-up-display"></a>P: czy mogę przenieść CodeLens `head`s-up wyświetlaną?
 
 **Odp.:** tak, wybierz polecenie ![ikonę dokowania](../ide/media/codelensdockwindow.png) Aby zadokować CodeLens jako okno.
 

@@ -13,49 +13,49 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 96fa2dd75c590e0841d7479e4e071154add04857
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 99f0e665e00e614cfcf3f4e285e33345e31ab42b
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33870489"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283239"
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Porady: tworzenie lub aktualizowanie standardowych zasad ewidencjonowania analizy kodu
 
-Możesz wymagać uruchomić analizy kodu dla wszystkich projektów kodu w projekcie zespołowym przy użyciu zasad analizy kodu zaewidencjonowania. Wymagających analizy kodu może poprawić jakość kodu, który jest sprawdzany w bazie kodu.
+Możesz wymagać, można uruchomić analizę kodu dla wszystkich projektów kodu w projekcie DevOps platformy Azure w przy użyciu zasady analizy kodu ewidencjonowania. Wymaga analizy kodu może poprawić jakość kodu, który jest ewidencjonowany w kodzie podstawowym.
 
 > [!NOTE]
-> Ta funkcja jest dostępna tylko w przypadku korzystania z programu Team Foundation Server.
+> Ta funkcja jest dostępna tylko wtedy, gdy używasz Team Foundation Server.
 
-Zasad ewidencjonowania analizy kodu są ustawiane w ustawieniach projektu zespołowego i stosowane do każdego projektu kodu w projekcie zespołowym. Uruchamia analizy kodu są skonfigurowane do projektów kodu w pliku projektu (.xxproj) dla projektu kodu. Uruchamia analizy kodu są wykonywane na komputerze lokalnym. Po włączeniu zasad analizy kodu zaewidencjonowania, muszą być skompilowane pliki w projekcie kodu, które mają zostać zaewidencjonowane po ich ostatniej modyfikacji i analizy kodu, w którym, zawiera co najmniej reguł w ustawieniach projektu zespołowego musi zostać wykonana na komputerze gdzie c zmiany zostały wprowadzone.
+Zasady ewidencjonowania analizy kodu są ustawiane w ustawieniach projektu i mają zastosowanie do każdego projektu kodu. Przebiegi analizy kodu są skonfigurowane dla projektów kodu w pliku projektu (.xxproj) dla projektu kodu. Przebiegi analizy kodu są wykonywane na komputerze lokalnym. Po włączeniu zasad analizy kodu ewidencjonowania, muszą być skompilowane pliki w projekcie kodu, które mają być sprawdzane po ich ostatniej modyfikacji i uruchomienia analizy kodu zwrócić, zawiera co najmniej reguły w ustawieniach projektu odbywa się na komputerze, gdzie zmiany wprowadzono s.
 
-- Dla kodu zarządzanego, ustawić zasady ewidencjonowania, określając *zestaw reguł* zawierającą podzbiór reguł analizy kodu.
+- Dla kodu zarządzanego, Ustaw zasady ewidencjonowania, określając *zestaw reguł* zawierającą podzbiór reguł analizy kodu.
 
-- Dla kodu C/C++, Visual Studio 2017 wersji 15.6 i starszych wersjach zasad ewidencjonowania wymaga, że są uruchomione wszystkie reguły analizy kodu. Można dodać przed procesora dyrektywy Aby wyłączyć określone zasady dla projektów poszczególnych kodu w projekcie zespołowym. W 15.7 i nowszych można użyć **/ analyze: zestaw reguł** Aby określić, które reguł do uruchomienia. Aby uzyskać więcej informacji, zobacz [przy użyciu zestawów reguł do określania reguł C++ do uruchomienia](using-rule-sets-to-specify-the-cpp-rules-to-run.md).
+- Dla kodu C/C++ w programie Visual Studio 2017 w wersji 15.6 i starszych wersjach zasad ewidencjonowania wymaga, że są uruchomione wszystkie reguły analizy kodu. Możesz dodać wstępne procesora dyrektywy można wyłączyć określone zasady dla poszczególnych projektów kodu projektu DevOps platformy Azure. W wersji 15.7 lub nowszej, możesz użyć **/ analyze: ruleset** Aby określić, które reguł do uruchomienia. Aby uzyskać więcej informacji, zobacz [przy użyciu zestawów reguł do określania reguł C++ do uruchomienia](using-rule-sets-to-specify-the-cpp-rules-to-run.md).
 
-Po określeniu zasad ewidencjonowania dla zarządzanego kodu członków zespołu można synchronizować swoje ustawienia analizy kodu dla projektów kodu w ustawieniach zasad projektu zespołowego.
+Po określeniu zasad ewidencjonowania dla kodu zarządzanego, członkowie zespołu mogą wykonywać synchronizację z ich ustawienia analizy kodu dla projektów kodu do ustawień zasad projektu DevOps platformy Azure.
 
 ## <a name="to-open-the-check-in-policy-editor"></a>Aby otworzyć Edytor zasad ewidencjonowania
 
-1. W programie Team Explorer, kliknij prawym przyciskiem myszy nazwę projektu zespołowego, wskaż pozycję **ustawienia projektu zespołowego**, a następnie kliknij przycisk **kontroli źródła**.
+1. W programie Team Explorer, kliknij prawym przyciskiem myszy nazwę projektu, wskaż opcję **ustawienia projektu**, a następnie kliknij przycisk **kontroli źródła**.
 
 1. W **kontroli źródła** okno dialogowe, wybierz opcję **zasad ewidencjonowania** kartę.
 
 1. Wykonaj jedną z następujących czynności:
 
-    - Kliknij przycisk **Dodaj** Aby utworzyć nowe zasady ewidencjonowania.
+    - Kliknij przycisk **Dodaj** do tworzenia nowych zasad ewidencjonowania.
 
-    - Kliknij dwukrotnie istniejące **analizy kodu** elementu **typ zasad** listy, aby zmienić zasady.
+    - Kliknij dwukrotnie istniejące **analizy kodu** pozycja **typ zasad** listy, aby zmienić zasady.
 
 ## <a name="to-set-policy-options"></a>Aby ustawić opcje zasad
 
-Wybierz lub wyczyść następujące opcje:
+Zaznacz lub wyczyść następujące opcje:
 
 |Opcja|Opis|
 |------------|-----------------|
-|**Wymuś zaewidencjonowanie obejmowało tylko pliki, które są częścią bieżącego rozwiązania.**|Kod — analiza można uruchomić tylko na plików określonych w plikach konfiguracji rozwiązania i projektu. Ta zasada gwarantuje analizy całego kodu, który jest częścią rozwiązania.|
-|**Wymuszanie analiza kodu C/C++ (/ analyze)**|Wymaga się, że wszystkie projekty języka C lub C++ zostać skompilowane z / analyze — opcja kompilatora do uruchamiania analizy kodu przed ich mogą zostać zaewidencjonowane.|
-|**Wymuszanie analizy kodu dla zarządzanego kodu**|Wymaga wszystkich projektów zarządzanych przeprowadzanie analizy kodu i kompilacji przed ich mogą zostać zaewidencjonowane.|
+|**Wymuszanie zaewidencjonowanie obejmowało tylko pliki, które są częścią bieżącego rozwiązania.**|Analiza kodu można uruchomić tylko na pliki określone w plikach konfiguracji rozwiązania i projektu. Te zasady gwarantuje, że cały kod, który jest częścią rozwiązania są analizowane.|
+|**Wymuszanie analiza kodu C/C++ (/ analyze)**|Wymaga się, że wszystkie projekty C lub C++ być kompilowany / analyze — opcja kompilatora do uruchamiania analizy kodu, zanim może zostać sprawdzone.|
+|**Wymuszanie analizy kodu dla kodu zarządzanego**|Wymaga wszystkich zarządzanych projektów uruchamiania analizy kodu i kompilacji, zanim może zostać sprawdzone.|
 
 ## <a name="to-specify-a-managed-rule-set"></a>Aby określić zestaw reguł zarządzanych
 
@@ -63,11 +63,11 @@ Z **Uruchom ten zestaw reguł** listy, użyj jednej z następujących metod:
 
 - Wybierz zestaw standardowych reguł firmy Microsoft.
 
-- Wybierz niestandardowego zestawu reguł jest klikając  **\<wybierz zestaw reguł z kontroli źródła... >**. Następnie wpisz ścieżkę kontroli wersji dla zestawu reguł w przeglądarce kontroli źródła. Składnia ścieżki kontroli wersji jest następująca:
+- Wybierz niestandardową regułę, ustaw, klikając  **\<wybierz zestaw reguł z kontroli źródła... >**. Następnie wpisz ścieżkę kontroli wersji, reguły, ustaw w przeglądarce kontroli źródła. Składnia ścieżki kontroli wersji jest następująca:
 
    **$/** `TeamProjectName` **/** `VersionControlPath`
 
-Aby uzyskać więcej informacji o sposobie tworzenia i wdrażania niestandardowych zasad ewidencjonowania reguły, zobacz [zasady niestandardowe wdrożenie zaewidencjonowania dla kodu zarządzanego](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md).
+Aby uzyskać więcej informacji o sposobie tworzenia i wdrażania reguły niestandardowe zasady ewidencjonowania, zobacz [Implementowanie niestandardowych zaewidencjonowania zasad dla zarządzanego kodu](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md).
 
 ## <a name="see-also"></a>Zobacz także
 

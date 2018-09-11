@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 0755f77b2eea2860a3514480504c7aed041711d4
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 9d2d6c30696636bc8fd2ca571940ac0165eabbcf
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379292"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44321050"
 ---
 # <a name="how-to-install-a-custom-diagnostic-data-adapter"></a>Porady: Instalowanie niestandardowego adaptera danych diagnostycznych
 
@@ -46,7 +46,7 @@ Jeśli utworzono niestandardowego adaptera danych diagnostycznych lub dostarczon
     > [!NOTE]
     > Chociaż adapter danych diagnostycznych i Edytor konfiguracji można tworzyć w tym samym projekcie i wbudowane w tym samym zestawie, można użyć osobnych projektów i utworzyć dla nich, oddzielne zestawy, jeśli użytkownik sobie tego życzy.
 
-     Aby uzyskać więcej informacji o sposobie konfigurowania ustawień testów w celu używania środowiska podczas wykonywania testów, zobacz [zbieranie danych diagnostycznych podczas wykonywania testów ręcznych (VSTS)](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests).
+     Aby uzyskać więcej informacji o sposobie konfigurowania ustawień testów w celu używania środowiska podczas wykonywania testów, zobacz [zbieranie danych diagnostycznych podczas wykonywania testów ręcznych (plany testów platformy Azure)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts).
 
 2.  Aby wybrać karty danych diagnostycznych dla testu, musisz najpierw wybrać istniejące ustawienia testu lub Utwórz nową z Microsoft Test Manager lub programu Visual Studio a następnie wybierz adaptera danych diagnostycznych na **dane i Diagnostyka** Karta wybrane ustawienia testu.
 

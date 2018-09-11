@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 140d140b94446cf6e778caf33252d4c95bf2334b
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: f744848292c4d288be82bf4ca462d7ccae257d8a
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512060"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280082"
 ---
 # <a name="graphics-frame-analysis"></a>Analiza klatek grafiki
 Użyj analizy klatek grafiki w analizatora grafiki programu Visual Studio do analizowania i zoptymalizować wydajność renderowania Direct3D grach i aplikacjach.  
@@ -34,7 +34,7 @@ Użyj analizy klatek grafiki w analizatora grafiki programu Visual Studio do ana
   
  Mimo że funkcja analizy klatek jest przeznaczona głównie do pomagają zwiększyć wydajność renderowania, może równie pomóc Ci osiągnąć lepszą jakość wizualną dla elementu docelowego wydajności danego lub ograniczyć zużycie energii procesora GPU.  
   
- Aby wyświetlić pokaz działania analizy klatek czynności dla aplikacji, możesz obejrzeć [analiza klatek grafiki programu Visual Studio](http://channel9.msdn.com/Shows/C9-GoingNative/GoingNative-25-Offline-Analysis-Graphics-Tool) wideo w witrynie Channel 9.  
+ Aby wyświetlić pokaz działania analizy klatek czynności dla aplikacji, możesz obejrzeć [analiza klatek grafiki programu Visual Studio](https://channel9.msdn.com/Shows/C9-GoingNative/GoingNative-25-Offline-Analysis-Graphics-Tool) wideo w witrynie Channel 9.  
   
 ## <a name="using-frame-analysis"></a>Za pomocą analizy klatek  
  Zanim będzie możliwe użycie analizy klatek, należy przechwytywać informacje graficzne z aplikacji po jej uruchomieniu, tak samo jak przy użyciu jednej z innych narzędzi Analizator grafiki programu. Następnie w oknie grafiki (.vsglog) dokumentu dziennika wybierz **analizy klatek** kartę.  
@@ -72,14 +72,14 @@ Użyj analizy klatek grafiki w analizatora grafiki programu Visual Studio do ana
 #### <a name="timeline"></a>Oś czasu  
  Oś czasu przedstawia omówienie czasów wywołanie rysowania względem siebie nawzajem. Ponieważ większych paski odpowiadają wydłużenie czasu rysowania, umożliwia on szybko znaleźć najbardziej kosztowne wywołania rysowania w ramce. Gdy przechwyconej ramki zawiera bardzo dużej liczby wywołań rysowania, wiele rysowania który wywołania są połączone w jeden pasek którego długość jest sumą tych narysuj wywołania.  
   
- ![Oś czasu pokazuje rysowania&#45;wywołać kosztów. ] (media/pix_frame_analysis_timeline.png "pix_frame_analysis_timeline")  
+ ![Oś czasu pokazuje rysowania&#45;wywołać kosztów. ](media/pix_frame_analysis_timeline.png "pix_frame_analysis_timeline")  
   
  Wskaźnik na pasku, aby zobaczyć, które zdarzenie wywołania rysowania pasku odpowiada. Wybierając słupek powoduje, że lista zdarzeń, które mają być synchronizowane tego zdarzenia.  
   
 #### <a name="table"></a>tabela  
  W tabeli liczb poniżej osi czasu przedstawiono względną wydajność każdego wariantu renderowania dla każdego wywołania rysowania w odniesieniu do aplikacji domyślne renderowanie. Każda kolumna Wyświetla typ variant renderowania różnią i każdy wiersz reprezentuje wywołanie rysowania różnych, która jest identyfikowana w skrajnej lewej kolumnie; w tym miejscu możesz wykonać łącze do zdarzenia w oknie Lista zdarzeń grafiki.  
   
- ![Podsumowanie tabeli przedstawiono różne odmiany. ] (media/pix_frame_analysis_summary.png "pix_frame_analysis_summary")  
+ ![Podsumowanie tabeli przedstawiono różne odmiany. ](media/pix_frame_analysis_summary.png "pix_frame_analysis_summary")  
   
  W drugiej kolumnie tabeli podsumowania skrajnie po lewej wyświetla czasu renderowania linii bazowej Twojej aplikacji — oznacza to, że czas potrzebny aplikacji domyślne renderowanie do ukończenia wywołania rysowania. Pozostałe kolumny Pokaż względną wydajność każdego wariantu renderowania jako wartość procentowa linii bazowej, tak, aby łatwiej zobaczyć, czy można zwiększyć wydajność. Przekracza 100 procent wartości procentowych trwało dłużej niż linii bazowej — czyli wydajności zakończył działanie — i mniejsze niż 100 procent zajęło mniej czasu na wartości procentowe — wydajności zmieniał.  
   
@@ -88,7 +88,7 @@ Użyj analizy klatek grafiki w analizatora grafiki programu Visual Studio do ana
 #### <a name="hot-draw-calls"></a>"Problematyczna" Rysuj wywołania  
  Aby zwrócić uwagę na rysowanie wywołania, które zużywają więcej ogólną czasu renderowania lub które mogą być niezwykle powolne dla powody, dla których można uniknąć, wiersz, który zawiera te wywołania rysowania "gorącymi" jest przyciemnione czerwony, gdy terminy odniesienia jest więcej niż jeden Odchylenie standardowe jest dłuższa niż średniego czasu linii bazowej dla wszystkich wywołań rysowania w ramce.  
   
- ![To wywołanie DrawIndexed ma gorące i zimne wariantów. ] (media/pix_frame_analysis_hot_calls.png "pix_frame_analysis_hot_calls")  
+ ![To wywołanie DrawIndexed ma gorące i zimne wariantów. ](media/pix_frame_analysis_hot_calls.png "pix_frame_analysis_hot_calls")  
   
 #### <a name="statistical-significance"></a>Obserwowane  
  Aby zwrócić uwagę na renderowanie zmian, które mają największą zgodność, analiza klatek określa statystyczne znaczenie każdego wariantu renderowania i wyświetla te znaczące jak pogrubienie. Wyświetla te, które zwiększają wydajność co w kolorze zielonym i te, które obniżenie wydajności w kolorze czerwonym. Wyświetla wyniki, które nie są statystycznie istotne jako normalnych typów.  
@@ -103,12 +103,12 @@ Użyj analizy klatek grafiki w analizatora grafiki programu Visual Studio do ana
 #### <a name="platforms-that-do-not-support-hardware-counters"></a>Platformy, które nie obsługują liczników sprzętowych  
  Większość platform nie obsługują w pełni liczniki procesora GPU sprzętu — dotyczy to wszystkich procesorach GPU znajdujących się obecnie oferowane przez firmy Intel, AMD i firmy nVidia. Jeśli nie ma żadnych liczników sprzętowych, aby zbierać, jest wyświetlana tylko jedna tabela szczegółów i zawiera średni bezwzględny czas wszystkich wariantów.  
   
- ![Tabela szczegółów i kilka wariantów odtwarzania. ] (media/pix_frame_analysis_details.png "pix_frame_analysis_details")  
+ ![Tabela szczegółów i kilka wariantów odtwarzania. ](media/pix_frame_analysis_details.png "pix_frame_analysis_details")  
   
 #### <a name="platforms-that-support-hardware-counters"></a>Temat platform obsługujących liczników sprzętowych  
  Dla platform, które obsługują liczniki procesora GPU sprzęt — na przykład procesory GPU nVidia T40 SOC i wszystkie Soc Qualcomm — kilka tabel szczegóły są wyświetlane, jeden dla każdego wariantu. Każdego licznika sprzętu są zbierane dla każdego wariantu renderowania i wyświetlane w tabeli Szczegóły.  
   
- ![Liczniki sprzętu są wyświetlane, jeśli są obsługiwane. ] (media/pix_frame.png "pix_frame")  
+ ![Liczniki sprzętu są wyświetlane, jeśli są obsługiwane. ](media/pix_frame.png "pix_frame")  
   
  Informacje o liczniku sprzętu zawiera bardzo szczegółowe widok zachowań określonych platforma sprzętowa dla każdego wywołania rysowania, które mogą pomóc Ci przyczynie wąskich gardeł wydajności bardzo dokładnie.  
   

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1ad1edbd9d093fc5f1c7f746b7b5f2a2b9d2bd31
-ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
+ms.openlocfilehash: ad1b093c224e37ce53dc77472518d03f2dc8093b
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39131885"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44320818"
 ---
 # <a name="overview-of-code-analysis-for-managed-code"></a>Omówienie analizy kodu dla kodu zarządzanego
 
@@ -71,14 +71,14 @@ Jako organizacja można wymagać, aby wszystkie zaewidencjonowania spełniały p
 
 - Uruchamianie analizy kodu jako część najnowszej kompilacji.
 
-Można to zrobić poprzez określenie zasad ewidencjonowania. Aby uzyskać więcej informacji, zobacz [udoskonalanie jakości kodu za pomocą zasad ewidencjonowania projektu zespołowego](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md).
+Można to zrobić poprzez określenie zasad ewidencjonowania. Aby uzyskać więcej informacji, zobacz [udoskonalanie jakości kodu za pomocą zasad zaewidencjonowania projektu](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md).
 
 ## <a name="team-build-integration"></a>Integracji kompilacji zespołu
 
-Zintegrowane funkcje systemu kompilacji można użyć, aby uruchomić narzędzie do analizy jako część procesu kompilacji. Aby uzyskać więcej informacji, zobacz [Build and release (VSTS) i](/vsts/build-release/index).
+Zintegrowane funkcje systemu kompilacji można użyć, aby uruchomić narzędzie do analizy jako część procesu kompilacji. Aby uzyskać więcej informacji, zobacz [potoki Azure](/azure/devops/pipelines/index?view=vsts).
 
 ## <a name="see-also"></a>Zobacz także
 
 - [Omówienie analizatorów Roslyn](../code-quality/roslyn-analyzers-overview.md)
 - [Korzystanie z zestawów reguł do grupowania reguł analizy kodu](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)
-- [Porady: Włączanie i wyłączanie automatycznej analizy kodu](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)
+- [Instrukcje: włączanie i wyłączanie automatycznej analizy kodu](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)

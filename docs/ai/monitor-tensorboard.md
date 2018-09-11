@@ -1,20 +1,20 @@
 ---
 ms.technology: vs-ai-tools
-ms.openlocfilehash: 49882db50ed60b1e76d5e791251b11a9f7072274
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: bf253a6dcad4ed87c8f028ed9b7e33962027eb75
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/28/2018
-ms.locfileid: "29708234"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281575"
 ---
-# <a name="monitor-with-tensorboard"></a>Monitorowanie za pomocą TensorBoard
+# <a name="monitor-with-tensorboard"></a>Monitorowanie za pomocą narzędzia TensorBoard
 
-Można zwizualizować z TensorBoard postęp uczenia modelu.
+Można wizualizować postęp szkolenia modelu przy użyciu narzędzia TensorBoard.
 
-1. Kliknij prawym przyciskiem myszy projekt i kliknij przycisk **Uruchom TensorBoard** następnie wybierz katalog TensorBoard rejestruje dane wyjściowe.
+1. Kliknij prawym przyciskiem myszy projekt, a następnie kliknij przycisk **uruchom narzędzia TensorBoard**; następnie wybierz katalog danych wyjściowych dzienników narzędzia TensorBoard.
 
-    ![Uruchom tensorboard](media\monitor-tensorboard\run-tensorboard.png)
+    ![Uruchom narzędzia tensorboard](media\monitor-tensorboard\run-tensorboard.png)
 
-1. Zwróć uwagę, błąd zmniejszenie nadgodziny, co oznacza, że jest poprawy jakości
+1. Zwróć uwagę, błąd, zmniejsza się wraz z upływem czasu, co oznacza, że w celu ulepszania jakości.
 
-    ![Uruchom tensorboard](media\monitor-tensorboard\tensorboard.png)
+    ![Uruchom narzędzia tensorboard](media\monitor-tensorboard\tensorboard.png)

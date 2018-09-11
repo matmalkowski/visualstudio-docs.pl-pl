@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 18d967fd25dcaeb07ea0cc58babc0493c441a7bc
-ms.sourcegitcommit: 9ea4b62163ad6be556e088da1e2a355f31366f39
+ms.openlocfilehash: a4b01cc775c32bc602699aa2753482f184661079
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43996067"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281692"
 ---
 # <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>Szybki Start: Sklonuj repozytorium kodu w języku Python w programie Visual Studio
 
@@ -30,9 +30,9 @@ Po [zainstalowane obsługi języka Python w programie Visual Studio 2017](instal
 
 1. Uruchom program Visual Studio.
 
-1. Wybierz **widoku** > **Team Explorer** otworzyć **Team Explorer** okna, w którym można połączyć się z usługi GitHub lub Visual Studio Team Services lub klonowania repozytorium. (Jeśli nie widzisz **Connect** pokazanej poniżej wybierz ikonę wtyczki na górnym pasku narzędzi, który spowoduje przejście do tej strony.)
+1. Wybierz **widoku** > **Team Explorer** otworzyć **Team Explorer** okna, w którym można nawiązać połączenie z usługi GitHub i repozytoriów platformy Azure lub klonowanie repozytorium. (Jeśli nie widzisz **Connect** pokazanej poniżej wybierz ikonę wtyczki na górnym pasku narzędzi, który spowoduje przejście do tej strony.)
 
-    ![Zespół przedstawiający okno Eksploratora Visual Studio Team Services, GitHub i klonowanie repozytorium](media/team-explorer.png)
+    ![Okno Eksploratora zespołu, wyświetlanie repozytoriów platformy Azure, usługi GitHub i klonowanie repozytorium](media/team-explorer.png)
 
 1. W obszarze **lokalne repozytoria Git**, wybierz opcję **klonowania** polecenia, a następnie wprowadź `https://github.com/gregmalcolm/python_koans` w polu adres URL wprowadź folderu na sklonowane pliki, a następnie wybierz pozycję **klonowania** przycisk.
 

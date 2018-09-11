@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a0279ffaf8f1024b4c11fb0689eed03f577e25a6
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: f5c60e0b812cd0557b266d3e34dae62cb22cc57d
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152451"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281759"
 ---
 # <a name="anatomy-of-a-vsix-package"></a>Anatomia pakietu VSIX
 Pakiet VSIX jest *.vsix* pliku, który zawiera jeden lub więcej rozszerzeń programu Visual Studio, razem z metadanymi programu Visual Studio używa do klasyfikowania i zainstalować rozszerzenia. Tych metadanych znajduje się w manifestu VSIX i *[Content_Types] .xml* pliku. Pakiet VSIX może również zawierać co najmniej jeden *Extension.vsixlangpack* plików w celu zapewnienia zlokalizowane w tekście Instalatora i może zawierać dodatkowe pakiety VSIX, aby zainstalować zależności.  
@@ -31,7 +31,7 @@ Pakiet VSIX jest *.vsix* pliku, który zawiera jeden lub więcej rozszerzeń pro
 >  Nazwy plików zawarte w pakietów VSIX nie może zawierać spacji ani znaków, które są zastrzeżone w identyfikatorach URI (Uniform Resource), zdefiniowane w obszarze [ \[specyfikacja RFC 2396\]](http://go.microsoft.com/fwlink/?LinkId=90339).  
   
 ## <a name="the-vsix-manifest"></a>VSIX manifest  
- VSIX manifest zawiera informacje dotyczące rozszerzenia do zainstalowania, a schemat VSX w następujący sposób. Aby uzyskać więcej informacji, zobacz [odwołanie do schematu 1.0 rozszerzenia VSIX](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b). Aby uzyskać przykład manifestu VSIX, zobacz [PackageManifest elementu (element główny, schemat VSX)](http://msdn.microsoft.com/en-us/f8ae42ba-775a-4d2b-976a-f556e147f187).  
+ VSIX manifest zawiera informacje dotyczące rozszerzenia do zainstalowania, a schemat VSX w następujący sposób. Aby uzyskać więcej informacji, zobacz [odwołanie do schematu 1.0 rozszerzenia VSIX](https://msdn.microsoft.com/library/76e410ec-b1fb-4652-ac98-4a4c52e09a2b). Aby uzyskać przykład manifestu VSIX, zobacz [PackageManifest elementu (element główny, schemat VSX)](https://msdn.microsoft.com/library/f8ae42ba-775a-4d2b-976a-f556e147f187).  
   
  VSIX manifest, musi nosić `extension.vsixmanifest` gdy wchodzi on w ^ pliku .vsix *.  
   
@@ -46,7 +46,7 @@ Pakiet VSIX jest *.vsix* pliku, który zawiera jeden lub więcej rozszerzeń pro
   
  Jeśli użytkownik próbuje zainstalować rozszerzenie, które ma zależności, Instalator sprawdza, czy wymagane zestawy są zainstalowane w systemie użytkownika. Jeśli nie ma wymaganych zestawów, **rozszerzenia i aktualizacje** Wyświetla listę brakujących zestawów.  
   
- Jeśli manifest rozszerzenia zawiera co najmniej jedną [odwołania](http://msdn.microsoft.com/en-us/32c52934-e81e-4b53-8cb6-4df45ef7bfa8) elementów **rozszerzenia i aktualizacje** porównuje manifest każde odwołanie do rozszerzenia, które są zainstalowane w systemie, a następnie instaluje Odwołanie do rozszerzenia, jeśli nie jest już zainstalowany. Jeśli jest zainstalowana wcześniejsza wersja odwołania rozszerzenia, nowsza wersja zastępuje go.  
+ Jeśli manifest rozszerzenia zawiera co najmniej jedną [odwołania](/previous-versions/visualstudio/visual-studio-2010/dd393687(v=vs.100)) elementów **rozszerzenia i aktualizacje** porównuje manifest każde odwołanie do rozszerzenia, które są zainstalowane w systemie, a następnie instaluje Odwołanie do rozszerzenia, jeśli nie jest już zainstalowany. Jeśli jest zainstalowana wcześniejsza wersja odwołania rozszerzenia, nowsza wersja zastępuje go.  
   
  Jeśli projektu w rozwiązaniu wieloprojektowego zawiera odwołanie do innego projektu w tym samym rozwiązaniu, pakiet VSIX zawiera zależności projektu. Zachowanie to można zastąpić, klikając odwołanie do wewnętrznego projekcie, a następnie w **właściwości** okna, ustawienie **dane wyjściowe grupy uwzględnione w VSIX** właściwość `BuiltProjectOutputGroup`.  
   
@@ -55,7 +55,7 @@ Pakiet VSIX jest *.vsix* pliku, który zawiera jeden lub więcej rozszerzeń pro
 ## <a name="installation-location"></a>Lokalizacja instalacji  
  Podczas instalacji **rozszerzenia i aktualizacje** szuka zawartości pakietu VSIX w folderze w *%LocalAppData%\Microsoft\VisualStudio\14.0\Extensions*.  
   
- Domyślnie instalacja ma zastosowanie tylko do bieżącego użytkownika, ponieważ *% LocalAppData %* jest katalogiem specyficzne dla użytkownika. Jednak jeśli ustawisz [AllUsers](http://msdn.microsoft.com/en-us/ac817f50-3276-4ddb-b467-8bbb1432455b) elementu manifestu do `True`, będzie można zainstalować rozszerzenia w ramach *... \\* VisualStudioInstallationFolder*\Common7\IDE\Extensions* i będzie dostępna dla wszystkich użytkowników komputera.  
+ Domyślnie instalacja ma zastosowanie tylko do bieżącego użytkownika, ponieważ *% LocalAppData %* jest katalogiem specyficzne dla użytkownika. Jednak jeśli ustawisz [AllUsers](https://msdn.microsoft.com/library/ac817f50-3276-4ddb-b467-8bbb1432455b) elementu manifestu do `True`, będzie można zainstalować rozszerzenia w ramach *... \\* VisualStudioInstallationFolder*\Common7\IDE\Extensions* i będzie dostępna dla wszystkich użytkowników komputera.  
   
 ## <a name="contenttypesxml"></a>[Content_Types] .xml  
  *[Content_Types] .xml* pliku Określa typy plików w rozwiniętym okienku *.vsix* pliku. Visual Studio używa tego pliku podczas instalacji pakietu, ale nie można zainstalować w samym pliku. Aby uzyskać więcej informacji na temat tego pliku, zobacz [struktura pliku [Content_types] .xml](the-structure-of-the-content-types-dot-xml-file.md).  

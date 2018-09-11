@@ -9,16 +9,16 @@ description: Dowiedz się więcej o pakiecie ModernRequirements zawartego w wybr
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 20ba0a34c54bc0b9a54282bbc50bd1e9bd61c16b
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: 5df418e14d3aa9a85ceaca341cdfeb4b203ee97c
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42624026"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279027"
 ---
 # <a name="the-modernrequirements4tfs-benefit-in-visual-studio-subscriptions"></a>Korzyść MODERNRequirements4TFS w subskrypcji programu Visual Studio
 
-Wybrane subskrypcje programu Visual Studio obejmują 6-miesięczną subskrypcję 4TFS MODERNRequirements SmartOffice i ModernRequirements4TFS.  MODERNRequirements SmartOffice4TFS zwiększa możliwości usług TFS i Visual Studio Team Services za pomocą programu Microsoft Word w oparciu raportowania i tworzenia szybkiemu, uproszczonemu tekstu sformatowanego.  ModernRequirements4TFS zapewnia elementów roboczych oraz symulacje HTML5.
+Wybrane subskrypcje programu Visual Studio obejmują 6-miesięczną subskrypcję 4TFS MODERNRequirements SmartOffice i ModernRequirements4TFS.  MODERNRequirements SmartOffice4TFS zwiększa możliwości usług TFS i usługom DevOps platformy Azure za pomocą programu Microsoft Word w oparciu raportowania i tworzenia szybkiemu, uproszczonemu tekstu sformatowanego.  ModernRequirements4TFS zapewnia elementów roboczych oraz symulacje HTML5.
 
 
 ## <a name="activation-steps"></a>Procedurę aktywacji
@@ -94,11 +94,11 @@ Wybrane subskrypcje programu Visual Studio obejmują 6-miesięczną subskrypcję
 | Visual Studio Dev Essentials | NAZWA  |Niedostępne                                                          |NAZWA     |
 | Program Visual Studio Enterprise, Visual Studio Professional (miesięcznych w chmurze) | Azure                                       | Niedostępne                                                           |NAZWA|
 
-<sup>1</sup>*obejmuje: nie for Resale (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (przedsiębiorstwo), ekwiwalentu pełnego wymiaru czasu.    Nie obejmuje: Sieci Microsoft Partner Network (Professional), MCT Software & Services dewelopera, BizSpark, Imagine, partnerem firmy Microsoft cenionym (MVP), dyrektor Region (usług pulpitu zdalnego).  MCT Software & Services.*
+<sup>1</sup>*obejmuje: nie for Resale (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (przedsiębiorstwo), ekwiwalentu pełnego wymiaru czasu.  Nie obejmuje: Sieci Microsoft Partner Network (Professional), MCT Software & Services dewelopera, BizSpark, Imagine, partnerem firmy Microsoft cenionym (MVP), dyrektor Region (usług pulpitu zdalnego).  MCT Software & Services.*
 
 Nie masz pewności której subskrypcji używasz?  Połączyć się z [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) Aby wyświetlić wszystkie subskrypcje, które są przypisane do Twojego adresu e-mail. Jeśli nie widzisz wszystkie swoje subskrypcje, mogą mieć co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby wyświetlić te subskrypcje.
 
 ## <a name="support-resources"></a>Zasoby pomocy technicznej
 -  Potrzebujesz pomocy dotyczącej produktów ModernRequirements?  Odwiedź stronę https://www.modernrequirements.com/support-2/.
 -  Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z pomocą programu Visual Studio [pomoc techniczna dla subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/).
--  Masz pytanie dotyczące środowiska IDE programu Visual Studio, Visual Studio Team Services lub innych produktów Visual Studio lub usług?  Odwiedź stronę [pomoc techniczna dla programu Visual Studio](https://visualstudio.microsoft.com/support/).
+-  Masz pytanie dotyczące programu Visual Studio IDE, usługom DevOps platformy Azure lub innych produktów Visual Studio lub usług?  Odwiedź stronę [pomoc techniczna dla programu Visual Studio](https://visualstudio.microsoft.com/support/).

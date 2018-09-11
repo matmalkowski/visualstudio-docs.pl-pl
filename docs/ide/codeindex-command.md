@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ecd73fceda6916f547c67e599777a9cd139d3bb
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 124516b0e214f1999792f40425976441bf3c9313
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176375"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283494"
 ---
 # <a name="codeindex-command"></a>Polecenie CodeIndex
 
@@ -27,7 +27,7 @@ Użyj **CodeIndex** polecenia do zarządzania indeksowaniem kodu na serwerze Tea
 
 ## <a name="required-permissions"></a>Wymagane uprawnienia
 
-Aby użyć **CodeIndex** polecenia, musi być członkiem **Administratorzy Team Foundation** grupy zabezpieczeń. Zobacz [uprawnień i grup zdefiniowanych dla usługi Team Services i serwera TFS](/vsts/organizations/security/permissions?view=vsts).
+Aby użyć **CodeIndex** polecenia, musi być członkiem **Administratorzy Team Foundation** grupy zabezpieczeń. Zobacz [uprawnień i grup zdefiniowanych dla usługom DevOps platformy Azure i TFS](/azure/devops/organizations/security/permissions?view=vsts).
 
 > [!NOTE]
 > Nawet wtedy, gdy użytkownik loguje się przy użyciu poświadczeń administracyjnych, należy otworzyć podwyższone okno Wiersz polecenia, aby uruchomić to polecenie. Należy także uruchomić to polecenie z warstwy aplikacji programu Team Foundation.
@@ -42,8 +42,8 @@ TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /
 
 |**Argument**|**Opis**|
 |------------------|---------------------|
-|`CollectionName`|Określa nazwę kolekcji projektu zespołowego. Jeśli nazwa zawiera spacje, należy ją ująć w cudzysłów, na przykład "Fabrikam Website".|
-|`CollectionId`|Określa numer identyfikujący kolekcji projektu zespołowego.|
+|`CollectionName`|Określa nazwę kolekcji projektu. Jeśli nazwa zawiera spacje, należy ją ująć w cudzysłów, na przykład "Fabrikam Website".|
+|`CollectionId`|Określa numer identyfikujący kolekcji projektu.|
 |`ServerPath`|Określa ścieżkę do pliku kodu.|
 
 |**Option**|**Opis**|
@@ -56,8 +56,8 @@ TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /
 |**/destroyCodeIndex [/noPrompt]**|Usuń indeks kodu i wszystkie indeksowane dane. Nie wymaga potwierdzenia, jeśli używasz **/noprompt** opcji.|
 |**/temporaryDataSizeLimit**: [widok &#124; <`SizeInGBs`> &#124; wyłączone]|Kontrolowanie ile tymczasowe dane CodeLens tworzy podczas przetwarzania zmian. Domyślny limit wynosi 2 GB.<br /><br /> -   **Widok**: Pokaż bieżący limit rozmiaru.<br />-   `SizeInGBs`: Zmień limit rozmiaru.<br />-   **Wyłącz**: Usuń limit rozmiaru.<br /><br /> Ten limit jest sprawdzany przed CodeLens przetwarza nowy zestaw zmian. Jeśli dane tymczasowe przekracza ten limit, CodeLens spowoduje wstrzymanie przetwarzania ostatnie zestawy zmian, nie nowe. Funkcja CodeLens spowoduje ponowne uruchomienie przetwarzania po danych jest wyczyszczone, a spadnie poniżej tego limitu. Czyszczenie jest uruchamiany automatycznie raz dziennie. Oznacza to, że dane tymczasowe może przekroczyć tego limitu, dopóki oczyszczania zacznie działać.|
 |**/indexHistoryPeriod**: [widok &#124; wszystkich &#124; <`NumberOfMonths`>]|Formant, jak długo indeksu historię zmian. Dotyczy to, ile historii CodeLens pokazuje. Domyślny limit to 12 miesięcy. Oznacza to rozwiązanie CodeLens Pokazuje historię zmian z ostatnich 12 miesięcy tylko.<br /><br /> -   **Widok**: Pokaż bieżącą liczbę miesięcy.<br />-   **wszystkie**: indeks cała historia zmian.<br />-   `NumberOfMonths`: Zmień liczbę miesięcy, używany do historii zmian indeksu.|
-|**/collectionName:** `CollectionName`|Określa nazwę kolekcji projektu zespołowego, na którym ma być uruchamiany **CodeIndex** polecenia. Wymagane, jeśli nie używasz **/CollectionId**.|
-|**/collectionId:** `CollectionId`|Określa numer identyfikujący kolekcji projektu zespołowego, na którym ma być uruchamiany **CodeIndex** polecenia. Wymagane, jeśli nie używasz **/CollectionName**.|
+|**/collectionName:** `CollectionName`|Określa nazwę kolekcji projektu, na którym ma być uruchamiany **CodeIndex** polecenia. Wymagane, jeśli nie używasz **/CollectionId**.|
+|**/collectionId:** `CollectionId`|Określa numer identyfikujący kolekcji projektu, na którym ma być uruchamiany **CodeIndex** polecenia. Wymagane, jeśli nie używasz **/CollectionName**.|
 
 ## <a name="examples"></a>Przykłady
 

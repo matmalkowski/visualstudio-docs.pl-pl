@@ -16,31 +16,31 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0a880604f14f840c3f4712e1a8d0e4d8e9cf1822
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 463bc06bb023e973ac6fe62f5f92a3d9067b2841
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36283474"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280600"
 ---
 # <a name="access-data-in-visual-studio"></a>Uzyskiwanie dostępu do danych w programie Visual Studio
 
-W programie Visual Studio, można utworzyć aplikacji, które łączenie z danymi w praktycznie dowolne bazy danych produktu lub usługi, w dowolnym miejscu i formatu — na komputerze lokalnym, w sieci lokalnej lub w chmurze public, private lub hybrydowego.
+W programie Visual Studio, można utworzyć aplikacji, które łączą się z danymi w praktycznie dowolnego produktu bazy danych lub usługi, w dowolnym formacie, dowolnym miejscu — na komputerze lokalnym, w sieci lokalnej lub w chmurze prywatnej, publicznej lub hybrydowej.
 
-W przypadku aplikacji w JavaScript, Python, PHP, Ruby lub C++ połączenie z danych tak jak wykonywanie dodatkowych czynności, uzyskując bibliotek i pisanie kodu. W przypadku aplikacji .NET Visual Studio udostępnia narzędzia, które umożliwia Eksplorowanie źródeł danych, tworzyć modele obiektów do przechowywania i obsługi danych w pamięci i powiązania danych interfejsu użytkownika. Microsoft Azure udostępnia zestawy SDK dla platformy .NET, Java, Node.js, PHP, Python, Ruby i aplikacji mobilnych i narzędzia programu Visual Studio do połączenia usługi Azure Storage.
+Dla aplikacji JavaScript, Python, PHP, Ruby lub C++ możesz łączyć się dane tak jak dowolne inne, uzyskując bibliotek i pisania kodu. Dla aplikacji .NET Visual Studio udostępnia narzędzia, które umożliwia poznawanie źródeł danych, tworzyć modele obiektów do przechowywania i manipulowanie danymi w pamięci i powiązać dane z interfejsu użytkownika. Microsoft Azure udostępnia zestawy SDK for .NET, Java, Node.js, PHP, Python, Ruby i aplikacje mobilne i narzędzi w programie Visual Studio do łączenia się z usługi Azure Storage.
 
-Następujące przedstawiono kilka z wielu systemów magazynu i bazy danych, które mogą być używane w programie Visual Studio. [Microsoft Azure](https://azure.microsoft.com/) oferty są usług danych, które obejmują wszystkie inicjowania obsługi i zarządzania odpowiedni magazyn danych. **Azure programowanie** obciążeń w [programu Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) umożliwia pracę z magazynów Azure danych bezpośrednio z programu Visual Studio.
+Poniższej przedstawiono kilka wiele systemów bazy danych i magazynu, które mogą być używane w programie Visual Studio. [Microsoft Azure](https://azure.microsoft.com/) oferty są usług danych, które obejmują aprowizacji i administrowania źródłowy magazyn danych. **Programowanie na platformie Azure** obciążenie w [programu Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) umożliwia pracę z magazynami danych na platformie Azure bezpośrednio z programu Visual Studio.
 
-![Programowanie Azure obciążenia](media/azure-development-workload.png)
+![Obciążenie programistyczne platformy Azure](media/azure-development-workload.png)
 
-Większości produktów innych SQL i NoSQL bazy danych wymienione w tym miejscu może być obsługiwany na komputerze lokalnym, w sieci lokalnej lub w systemie Microsoft Azure na maszynie wirtualnej. Jeśli na serwerze bazy danych na maszynie wirtualnej Microsoft Azure jest odpowiedzialny za zarządzanie sama baza danych.
+Większość innych języków SQL i NoSQL bazy danych produktów, które są wymienione w tym miejscu mogą być hostowane na komputerze lokalnym, w sieci lokalnej lub w systemie Microsoft Azure na maszynie wirtualnej. Jeśli na serwerze bazy danych na maszynie wirtualnej Microsoft Azure jest odpowiedzialny za zarządzanie sama baza danych.
 
 **Microsoft Azure**
 
 ||||
 |-|-|-|
-|Baza danych SQL|Azure Cosmos DB|Magazyn (obiekty BLOB, tabel, kolejek, plików)|
-|Magazyn danych SQL|Baza danych SQL Server Stretch|StorSimple|
+|Baza danych SQL|Azure Cosmos DB|Storage (obiekty BLOB, tabel, kolejek, plików)|
+|Usługa SQL Data Warehouse|SQL Server Stretch Database|Usługi StorSimple|
 
 i więcej...
 
@@ -50,7 +50,7 @@ i więcej...
 |-|-|-|
 |SQL Server 2005-2016, w tym Express i LocalDB|Firebird|MariaDB|
 |MySQL|Oracle|PostgreSQL|
-|SQLite|||
+|Bazy danych SQLite|||
 
 i więcej...
 
@@ -64,83 +64,83 @@ i więcej...
 
 i więcej...
 
-Wielu dostawców bazy danych i stron trzecich obsługiwać integracji z programem Visual Studio pakietów NuGet. Można eksplorować oferty nuget.org lub za pomocą Menedżera pakietów NuGet w programie Visual Studio (**narzędzia** > **Menedżera pakietów NuGet** > **zarządzania pakietami NuGet Pakietami dla rozwiązania**). Inne produkty bazy danych integracji z programem Visual Studio jako rozszerzenie. Przeglądaj tych ofert w programie Visual Studio Marketplace, przechodząc do **narzędzia**, **rozszerzenia i aktualizacje** , a następnie wybierając **Online** w okienku po lewej stronie okno dialogowe. Aby uzyskać więcej informacji, zobacz [systemów zgodne bazy danych dla programu Visual Studio](../data-tools/installing-database-systems-tools-and-samples.md).
+Wielu dostawców bazy danych i innych firm obsługuje integrację z programem Visual Studio przez pakiety NuGet. Możesz zapoznać się z oferty w witrynie nuget.org, lub za pośrednictwem Menedżera pakietów NuGet w programie Visual Studio (**narzędzia** > **Menedżera pakietów NuGet** > **zarządzania pakietami NuGet Pakietami dla rozwiązania**). Inne produkty bazy danych Integracja z programem Visual Studio jako rozszerzenie. Możesz przeglądać te oferty w witrynie Visual Studio Marketplace, przechodząc do **narzędzia**, **rozszerzenia i aktualizacje** , a następnie wybierając **Online** w okienku po lewej stronie okno dialogowe. Aby uzyskać więcej informacji, zobacz [zgodne systemy bazy danych dla programu Visual Studio](../data-tools/installing-database-systems-tools-and-samples.md).
 
 > [!NOTE]
-> Rozszerzona obsługa programu SQL Server 2005 zakończona w dniu 12 kwietnia 2016 r. Nie ma żadnej gwarancji, że narzędzia danych w programie Visual Studio 2015 i później będą nadal działały z programu SQL Server 2005 po tej dacie. Aby uzyskać więcej informacji, zobacz [powiadomienia zakończenia pomocy technicznej dla programu SQL Server 2005](https://www.microsoft.com/sql-server/sql-server-2005).
+> Rozszerzona pomoc techniczna dla programu SQL Server 2005 zakończona w dniu 12 kwietnia 2016 r. Nie ma żadnej gwarancji, że narzędzia danych w programie Visual Studio 2015 i nowszych wersjach będą w dalszym ciągu działać przy użyciu programu SQL Server 2005 po tej dacie. Aby uzyskać więcej informacji, zobacz [anons zakończenia okresu objęcia wsparciem dla programu SQL Server 2005](https://www.microsoft.com/sql-server/sql-server-2005).
 
 ## <a name="net-languages"></a>Języków .NET
 
-Wszystkie .NET dostępu do danych, w tym w .NET Core jest oparta na ADO.NET, zestaw klas, który definiuje interfejs do uzyskiwania dostępu do dowolnego rodzaju źródła danych relacyjnych i nierelacyjnych. Visual Studio ma kilka narzędzi i projektantów, które współpracują z ADO.NET umożliwiające nawiązywanie połączeń z bazami danych, manipulowania danymi i przedstawiają dane do użytkownika. Dokumentacja w tej sekcji opisano sposób używania tych narzędzi. Można również zaprogramować bezpośrednio przed ADO.NET— obiekty polecenia. Aby uzyskać więcej informacji na temat bezpośrednie wywoływanie interfejsów API ADO.NET, zobacz [ADO.NET](/dotnet/framework/data/adonet/index).
+.NET dostępu do wszystkich danych, w tym programie .NET Core jest oparty na ADO.NET, zestaw klas, który definiuje interfejs do uzyskiwania dostępu do dowolnego rodzaju źródła danych relacyjnych i nierelacyjnych. Program Visual Studio ma kilka narzędzi i projektantów, współpracujących za pomocą narzędzia ADO.NET w celu łatwiejszego nawiązania połączenia z bazami danych, manipulowania danymi i prezentowania danych użytkownika. W dokumentacji w tej sekcji opisano sposób używania tych narzędzi. Ponadto można programować bezpośrednio w odniesieniu do obiektów poleceń ADO.NET. Aby uzyskać więcej informacji na temat bezpośrednie wywoływanie interfejsów API ADO.NET, zobacz [ADO.NET](/dotnet/framework/data/adonet/index).
 
-Dokumentacja dostępu do danych związane z programem ASP.NET, zobacz [Praca z danymi](http://www.asp.net/web-forms/overview/presenting-and-managing-data) w witrynie platformy ASP.NET. Samouczek na platformie ASP.NET MVC przy użyciu programu Entity Framework, zobacz [wprowadzenie do programu Entity Framework 6 Code First przy użyciu MVC 5](/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application).
+Aby uzyskać dokumentację dostęp do danych związane z programem ASP.NET, zobacz [Praca z danymi](http://www.asp.net/web-forms/overview/presenting-and-managing-data) w witrynie programu ASP.NET. Samouczek dotyczący używający narzędzia Entity Framework z platformą ASP.NET MVC, zobacz [wprowadzenie do programu Entity Framework 6 Code First wykorzystaniem MVC 5](/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application).
 
-Uniwersalnych aplikacji platformy systemu Windows (UWP) w języku C# lub Visual Basic umożliwia dostęp do usługi Azure Storage i innymi usługami Azure zestaw Microsoft Azure SDK dla platformy .NET. Klasa Windows.Web.HttpClient umożliwia komunikację z dowolnej usługi RESTful. Aby uzyskać więcej informacji, zobacz [sposób nawiązywania połączenia z serwerem HTTP przy użyciu Windows.Web.Http](https://msdn.microsoft.com/library/windows/apps/dn469430.aspx).
+Uniwersalnych platformy Windows (UWP) w języku C# lub Visual Basic można użyć zestawu Microsoft Azure SDK dla platformy .NET, dostęp do usługi Azure Storage i innymi usługami platformy Azure. Klasa Windows.Web.HttpClient umożliwia komunikację z dowolnej usługi RESTful. Aby uzyskać więcej informacji, zobacz [sposób nawiązywania połączeń z serwerem HTTP przy użyciu Windows.Web.Http](https://msdn.microsoft.com/library/windows/apps/dn469430.aspx).
 
-Do przechowywania danych na komputerze lokalnym zalecanym rozwiązaniem jest użycie SQLite, w którym jest uruchomiona w tym samym procesie co aplikacja. Jeśli warstwa relacyjnej obiektu mapowania (ORM) jest wymagana, można użyć programu Entity Framework. Aby uzyskać więcej informacji, zobacz [dostęp do danych](/windows/uwp/data-access/index) w Centrum deweloperów systemu Windows.
+Do przechowywania danych na komputerze lokalnym Zalecanym podejściem jest użycie bazy danych SQLite, która jest uruchamiana w tym samym procesie co aplikacja. Jeśli wymagana jest warstwa Mapowania obiektowo relacyjny (ORM), można użyć programu Entity Framework. Aby uzyskać więcej informacji, zobacz [dostęp do danych](/windows/uwp/data-access/index) w Centrum deweloperów Windows.
 
-Jeśli łączysz się z usługami Azure, pamiętaj pobrać najnowszą [Azure SDK tools](https://azure.microsoft.com/downloads/).
+Jeśli łączysz się z usługami platformy Azure, pamiętaj pobrać najnowsze [zestawu Azure SDK tools](https://azure.microsoft.com/downloads/).
 
 ### <a name="data-providers"></a>Dostawcy danych
 
-Aby baza danych jest dostępne w ADO.NET, musi on mieć niestandardowej *dostawcy danych ADO.NET* lub #else musi ujawniać interfejsu ODBC lub OLE DB. Firma Microsoft udostępnia [listą dostawców danych ADO.NET](https://msdn.microsoft.com/data/dd363565) dla produktów programu SQL Server, a także dostawców ODBC i OLE DB.
+Aby baza danych jest w użyciu w ADO.NET, musi mieć niestandardową *dostawcy danych ADO.NET* lub inne musi ujawniać interfejsu ODBC lub OLE DB. Firma Microsoft udostępnia [listę dostawców danych ADO.NET](https://docs.microsoft.com/dotnet/framework/data/adonet/ado-net-overview) dla produktów programu SQL Server, a także dostawcami ODBC i OLE DB.
 
 ### <a name="data-modeling"></a>Modelowanie danych
 
-W środowisku .NET wyświetlane są trzy opcje do modelowania i manipulację danymi w pamięci po jej pobraniu ze źródła danych:
+Na platformie .NET dostępne są trzy możliwości do modelowania i manipulowanie danymi w pamięci po jej pobraniu ze źródła danych:
 
-[Entity Framework](../data-tools/entity-data-model-tools-in-visual-studio.md) preferowaną technologią ORM firmy Microsoft. Służy on do program względem danych relacyjnych jako najwyższej jakości obiekty .NET. Dla nowych aplikacji należy najpierw wybrać domyślne gdy model jest wymagany. Wymaga dodatkowej pomocy technicznej z podstawowym dostawcy ADO.NET.
+[Entity Framework](../data-tools/entity-data-model-tools-in-visual-studio.md) preferowaną technologię ORM firmy Microsoft. Umożliwia ona Programowanie w relacyjnej bazie danych jako najwyższej klasy obiektów platformy .NET. Gdy model jest wymagany dla nowych aplikacji, powinno być pierwszy wybór domyślny. Wymaga ona dodatkowej pomocy technicznej od podstawowego dostawcy ADO.NET.
 
-[LINQ do SQL](../data-tools/linq-to-sql-tools-in-visual-studio2.md) mapowania obiektów relacyjnych wcześniejszych generacji. Sprawdza się w przypadku mniej złożonych scenariuszy, ale nie jest już aktywne programowanie.
+[LINQ do SQL](../data-tools/linq-to-sql-tools-in-visual-studio2.md) maper obiektowo relacyjny starszej generacji. Działa dobrze sprawdza się w mniej złożonych scenariuszy, ale nie jest już aktywnie.
 
-[Zestawy danych](../data-tools/dataset-tools-in-visual-studio.md) najstarsze trzy technologie modelowania. Jest on przeznaczony głównie dla szybkiego opracowywania aplikacji "formularzy nad danymi", w których są nie przetwarzania dużych ilości danych lub wykonywanie złożonych zapytań lub przekształcenia. Obiekt DataSet składa się z elementu DataTable i DataRow obiektów, które logicznie przypominają bardziej obiekty .NET obiektów bazy danych SQL. Stosunkowo proste aplikacje oparte na SQL źródła danych zestawy danych może nadal być dobrym rozwiązaniem.
+[Zestawy danych](../data-tools/dataset-tools-in-visual-studio.md) najstarsze trzy technologie modelowania. Jest ona przeznaczona przede wszystkim do szybkiego opracowywania aplikacji "formularzy nad danymi", w których są nie przetwarzanie ogromnych ilości danych lub wykonywania kwerend złożonych lub przekształcenia. Obiekt DataSet składa się z elementu DataTable i DataRow obiektów, które logicznie znacznie więcej niż obiekty .NET podobne obiekty bazy danych SQL. Stosunkowo proste aplikacje oparte na SQL źródła danych zestawy danych nadal może być dobrym wyborem.
 
-Nie jest wymagane, aby użyć dowolnego z tych technologii. W niektórych scenariuszach, szczególnie w przypadku, gdy ma kluczowe znaczenie, po prostu umożliwia obiektu DataReader odczytu z bazy danych i skopiuj wartości, które należy do obiektu kolekcji, takie jak listy\<T >.
+Nie istnieje wymóg, aby użyć dowolnego z tych technologii. W niektórych scenariuszach, szczególnie w przypadku, gdy wydajność ma kluczowe znaczenie, po prostu służy obiekt DataReader do odczytu z bazy danych, a następnie skopiuj wartości, które należy do obiektu kolekcji, takich jak lista\<T >.
 
 ## <a name="native-c"></a>Natywnych języka C++
 
-Aplikacje w języku C++ łączących się z programem SQL Server należy używać [Microsoft® ODBC sterownika 13.1 dla programu SQL Server](https://www.microsoft.com/download/details.aspx?id=53339) w większości przypadków. Jeśli serwery są połączone, konieczne jest OLE DB i do tego użyć [SQL Server Native Client](/sql/relational-databases/native-client/sql-server-native-client). Dostęp do innych baz danych przy użyciu [ODBC](https://msdn.microsoft.com/library/ms710252\(v=vs.85\).aspx) lub bezpośrednio sterowników OLE DB. ODBC jest bieżący interfejs standardowego bazy danych, ale większość systemów bazy danych zawiera funkcje niestandardowe, które nie będą dostępne za pośrednictwem interfejsu ODBC. OLE DB jest starszych technologii dostępu do danych COM, który jest nadal obsługiwane, ale nie jest zalecane dla nowych aplikacji. Aby uzyskać więcej informacji, zobacz [dostęp do danych w programie Visual C++](/cpp/data/data-access-in-cpp).
+Skorzystaj z aplikacji w języku C++, które połączenia z serwerem SQL [® sterownik Microsoft ODBC 13.1 dla programu SQL Server](https://www.microsoft.com/download/details.aspx?id=53339) w większości przypadków. Jeśli serwery są połączone, a następnie zachodzi OLE DB i do tego użyć [SQL Server Native Client](/sql/relational-databases/native-client/sql-server-native-client). Dostęp do innych baz danych przy użyciu [ODBC](https://docs.microsoft.com/sql/odbc/microsoft-open-database-connectivity-odbc?view=sql-server-2017) lub bezpośrednio sterownikami OLE DB. ODBC jest bieżącego interfejsu database w warstwie standardowa, ale większość systemów bazy danych dostarczają niestandardowych funkcjonalności, które nie są dostępne za pośrednictwem interfejsu ODBC. OLE DB jest technologią starszą dostęp do danych modelu COM, która jest w dalszym ciągu obsługiwany, ale nie jest zalecane dla nowych aplikacji. Aby uzyskać więcej informacji, zobacz [dostęp do danych w programie Visual C++](/cpp/data/data-access-in-cpp).
 
-Programy używające usługi REST w języku C++ można użyć [C++ REST SDK](https://github.com/Microsoft/cpprestsdk).
+Programy w języku C++, korzystanie z usług REST, które można użyć [C++ REST SDK](https://github.com/Microsoft/cpprestsdk).
 
-Programy C++, które współpracują z usługi Magazyn Microsoft Azure mogą używać [klienta magazynu Microsoft Azure](http://www.nuget.org/packages/wastorage).
+Programy w języku C++, które działają z usługą Microsoft Azure Storage można użyć [Microsoft Azure Storage Client](http://www.nuget.org/packages/wastorage).
 
-Modelowanie danych&mdash;programu Visual Studio nie ma warstwy ORM dla języka C++. [ODB](http://www.codesynthesis.com/products/odb/) jest popularnych ORM open source dla języka C++.
+Modelowanie danych&mdash;programu Visual Studio nie zapewnia warstwę ORM dla języka C++. [ODB](http://www.codesynthesis.com/products/odb/) to popularne ORM typu open source dla języka C++.
 
-Aby dowiedzieć się więcej o nawiązywaniu połączeń z bazami danych z aplikacji C++, zobacz [narzędzi danych programu Visual Studio dla języka C++](../data-tools/visual-studio-data-tools-for-cpp.md). Aby uzyskać więcej informacji na temat starszych technologii dostępu do danych Visual C++, zobacz [dostęp do danych](/cpp/data/data-access-in-cpp).
+Aby dowiedzieć się więcej na temat nawiązywania połączenia z bazami danych z aplikacji C++, zobacz [narzędzia danych programu Visual Studio dla języka C++](../data-tools/visual-studio-data-tools-for-cpp.md). Aby uzyskać więcej informacji na temat technologii dostępu do danych w usłudze starszej wersji Visual C++, zobacz [dostęp do danych](/cpp/data/data-access-in-cpp).
 
 ## <a name="javascript"></a>JavaScript
 
-[JavaScript w programie Visual Studio](/scripting/javascript/javascript-language-reference) jest językiem pierwszej klasy umożliwiające tworzenie wieloplatformowych aplikacji, aplikacji platformy uniwersalnej systemu Windows, usługi w chmurze, witryn sieci Web i aplikacji sieci web. Bower, Grunt, Gulp, npm i NuGet z poziomu programu Visual Studio można użyć do zainstalowania z ulubionych bibliotek JavaScript i produkty bazy danych. Podłączanie do magazynu Azure i usług przez pobieranie zestawów SDK z [witryny sieci Web Azure](https://azure.microsoft.com/). Edge.js jest biblioteki, która łączy się ze źródłami danych ADO.NET JavaScript po stronie serwera (Node.js).
+[Język JavaScript w programie Visual Studio](/scripting/javascript/javascript-language-reference) do najważniejszych języków do tworzenia aplikacji dla wielu platform, aplikacje platformy uniwersalnej systemu Windows, usług w chmurze, witryn sieci Web i aplikacji sieci web. Bower, Grunt, Gulp, npm i NuGet z poziomu programu Visual Studio można użyć do zainstalowania z ulubionych bibliotek JavaScript i produktów w bazie danych. Podłączanie do usługi Azure storage i usług, pobierając zestawy SDK dostępne w [witryny sieci Web Azure](https://azure.microsoft.com/). Edge.js jest bibliotekę, która łączy JavaScript po stronie serwera (Node.js) do źródeł danych ADO.NET.
 
 ## <a name="python"></a>Python
 
-Zainstaluj [Python obsługi w programie Visual Studio](../python/overview-of-python-tools-for-visual-studio.md) do tworzenia aplikacji Python. Dokumentację platformy Azure ma kilka samouczków na łączenie z danymi, takie jak następujące:
+Zainstaluj [obsługi języka Python w programie Visual Studio](../python/overview-of-python-tools-for-visual-studio.md) do tworzenia aplikacji Python. Dokumentacja usługi Azure składa się kilka samouczków na temat łączenia się z danymi, takie jak następujące:
 
-- [Obsługa platformy Django i bazy danych SQL Azure](/azure/app-service/app-service-web-get-started-python)
-- [Obsługa platformy Django i MySQL na platformie Azure](/azure/app-service-web/web-sites-python-ptvs-django-mysql)
-- Praca z [obiekty BLOB](/azure/storage/blobs/storage-quickstart-blobs-python), [pliki](/azure/storage/files/storage-python-how-to-use-file-storage), [kolejek](/azure/storage/queues/storage-python-how-to-use-queue-storage), i [tabele (DB kosmetyczka)](/azure/cosmos-db/table-storage-how-to-use-python).
+- [Django i bazy danych SQL na platformie Azure](/azure/app-service/app-service-web-get-started-python)
+- [Django i MySQL na platformie Azure](/azure/app-service-web/web-sites-python-ptvs-django-mysql)
+- Praca z [obiektów blob](/azure/storage/blobs/storage-quickstart-blobs-python), [pliki](/azure/storage/files/storage-python-how-to-use-file-storage), [kolejek](/azure/storage/queues/storage-python-how-to-use-queue-storage), i [tabel (baza danych kosmetyczka)](/azure/cosmos-db/table-storage-how-to-use-python).
 
 ## <a name="related-topics"></a>Tematy pokrewne
 
-[Platforma Microsoft AI](https://azure.microsoft.com/overview/ai-platform/?v=17.42w)&mdash;zawiera wprowadzenie do chmury inteligentnego firmy Microsoft, w tym Cortana Analytics Suite i obsługę Internetu rzeczy.
+[Platforma Microsoft AI](https://azure.microsoft.com/overview/ai-platform/?v=17.42w)&mdash;zawiera wprowadzenie do inteligentnej chmury firmy Microsoft, łącznie z pakietu Cortana Analytics i pomoc techniczna dla Internetu rzeczy.
 
-[Microsoft Azure Storage](/azure/storage/)&mdash;zawiera opis usługi Azure Storage i jak tworzyć aplikacje przy użyciu Azure blob, tabel, kolejek i plików.
+[Usługa Microsoft Azure Storage](/azure/storage/)&mdash;zawiera opis usługi Azure Storage, a także jak tworzyć aplikacje przy użyciu obiektów blob platformy Azure, tabel, kolejek i plików.
 
-[Baza danych SQL Azure](/azure/sql-database/)&mdash;opisano sposób podłączania do usługi Azure SQL Database, relacyjnej bazy danych jako usługa.
+[Usługa Azure SQL Database](/azure/sql-database/)&mdash;opisano, jak połączyć się z usługi Azure SQL Database, relacyjnej bazy danych jako usługa.
 
-[SQL Server Data Tools](/sql/ssdt/download-sql-server-data-tools-ssdt)&mdash;opisano narzędzia, które upraszczają proces projektowania, eksploracji, testowania i wdrażania aplikacji połączonych danych i baz danych.
+[SQL Server Data Tools](/sql/ssdt/download-sql-server-data-tools-ssdt)&mdash;opisano narzędzia, które upraszczają projektowanie i eksploracji, testowania i wdrażania aplikacji połączonych z usługą danych i baz danych.
 
-[ADO.NET](/dotnet/framework/data/adonet/index)&mdash;opis architektury ADO.NET i jak używać klas ADO.NET, aby zarządzać danych aplikacji i korzystać z źródła danych i XML.
+[ADO.NET](/dotnet/framework/data/adonet/index)&mdash;w tym artykule opisano architekturę ADO.NET oraz jak używać klas ADO.NET do zarządzania danymi aplikacji i wchodzić w interakcje z źródła danych i XML.
 
-[ADO.NET Entity Framework](https://msdn.microsoft.com/data/ef)&mdash;opisuje sposób tworzenia aplikacji danych, które umożliwiają deweloperom program w odniesieniu do modelu koncepcyjnego zamiast bezpośrednio przed relacyjnej bazy danych.
+[ADO.NET Entity Framework](https://docs.microsoft.com/ef/ef6/)&mdash;w tym artykule opisano sposób tworzenia aplikacji do danych, które umożliwiają deweloperom programować przy użyciu modelu koncepcyjnego zamiast bezpośrednio w odniesieniu do relacyjnej bazy danych.
 
-[4.5 usługi danych WCF](/dotnet/framework/data/wcf/index)&mdash;informacje dotyczące używania [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] do wdrożenia usług danych w Internecie lub intranecie, które implementują [Open Data Protocol (OData)](http://go.microsoft.com/fwlink/?LinkID=182204).
+[4.5 usług danych WCF](/dotnet/framework/data/wcf/index)&mdash;w tym artykule opisano sposób używania [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] do wdrożenia usług danych w Internecie lub intranecie, które implementują [Open Data Protocol (OData)](http://go.microsoft.com/fwlink/?LinkID=182204).
 
-[Dane w rozwiązaniach pakietu Office](../vsto/data-in-office-solutions.md)&mdash;zawiera linki do tematów, w których opisano, jak działa dane w rozwiązaniach pakietu Office. W tym informacje o programowanie zorientowane na schemat, buforowanie danych i dostępu do danych po stronie serwera.
+[Dane w rozwiązaniach pakietu Office](../vsto/data-in-office-solutions.md)&mdash;zawiera łącza do tematów, które wyjaśniają jak działają dane w rozwiązaniach pakietu Office. W tym informacje dotyczące programowania schematycznego, buforowania danych i dostęp do danych po stronie serwera.
 
-[LINQ (zapytania język Language-Integrated)](/dotnet/csharp/linq/)&mdash;zawiera opis możliwości zapytania wbudowanych w języku C# i Visual Basic i wspólnego modelu do wykonywania zapytań relacyjnych baz danych, dokumentów XML, zestawy danych i kolekcji w pamięci.
+[LINQ (Language-Integrated Query)](/dotnet/csharp/linq/)&mdash;w tym artykule opisano możliwości zapytań wbudowane w języku C# i Visual Basic i wspólnego modelu wykonywania zapytań relacyjnych baz danych, dokumentów XML, zestawów danych i kolekcji w pamięci.
 
-[Narzędzia XML w Visual Studio](../xml-tools/xml-tools-in-visual-studio.md)&mdash;omówiono pracy z funkcjami programu .NET Framework XML debugowania XSLT danych XML i architektura zapytanie w języku XML.
+[Narzędzia XML w programie Visual Studio](../xml-tools/xml-tools-in-visual-studio.md)&mdash;omówiono pracy za pomocą funkcji programu .NET Framework XML danych debugowania XSLT XML i architektura zapytanie w języku XML.
 
-[Dokumenty XML i dane](/dotnet/standard/data/xml/index)&mdash;zawiera omówienie kompleksowy, zintegrowany zestaw klas, które współpracują z dokumentów XML i danych w programie .NET Framework.
+[Dokumenty i dane XML](/dotnet/standard/data/xml/index)&mdash;zawiera omówienie kompleksowego i zintegrowanego zestawu klas, które działają z dokumentów XML i dane w programie .NET Framework.

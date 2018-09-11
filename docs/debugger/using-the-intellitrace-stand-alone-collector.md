@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 85f146d567f429c8104017ef9441676f9cf3209b
-ms.sourcegitcommit: d7209d61e812b34d06c2aa267bdf50fbc714d0e0
+ms.openlocfilehash: 81c538897de64f6b7cc1f832cc07604991375872
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/20/2018
-ms.locfileid: "42624164"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283746"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector"></a>Korzystanie z autonomicznego modułu zbierającego funkcji IntelliTrace
 **Autonomiczny moduł zbierający IntelliTrace** umożliwia zbieranie danych diagnostycznych IntelliTrace dla aplikacji na serwerach produkcyjnych lub innych środowiskach bez instalowania programu Visual Studio na maszynie docelowej i bez wprowadzania zmian docelowe środowiska systemu. Autonomiczny moduł zbierający IntelliTrace działa w sieci web programu SharePoint, aplikacje WPF i Windows Forms. Po zakończeniu zbierania danych, po prostu usuń moduł zbierający aby go odinstalować.
@@ -382,7 +382,7 @@ ms.locfileid: "42624164"
 
 -   W programie Visual Studio Enterprise sesję debugowania funkcji IntelliTrace, zobacz temat [funkcji IntelliTrace](../debugger/intellitrace-features.md).
 
--   W sesji testowej w programie Microsoft Test Manager, zobacz [porady: zbieranie danych IntelliTrace, aby ułatwić debugowanie problemów](http://msdn.microsoft.com/Library/02b6716f-569e-4961-938a-e790a0c74b5c).
+-   W sesji testowej w programie Microsoft Test Manager, zobacz [porady: zbieranie danych IntelliTrace, aby ułatwić debugowanie problemów](/visualstudio/test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues).
 
 ## <a name="where-can-i-get-more-information"></a>Gdzie można uzyskać więcej informacji?
  [Korzystanie z zapisanych danych funkcji IntelliTrace](../debugger/using-saved-intellitrace-data.md)

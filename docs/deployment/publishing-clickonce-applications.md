@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d0c6f931af213ff7ce97ec77c2b742d6767cf733
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 9a8ef8f2ae6ed1f198fc5f7661b79764d0a790bd
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39079255"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279816"
 ---
 # <a name="publish-clickonce-applications"></a>Publikowanie aplikacji ClickOnce
 Podczas publikowania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] właściwości publikowania aplikacji po raz pierwszy, można ustawić za pomocą Kreatora publikacji. Tylko niektóre właściwości są dostępne w Kreatorze; wszystkie pozostałe właściwości są ustawione na wartości domyślne.  
@@ -98,7 +98,7 @@ Podczas publikowania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_m
 |[Wskazówki: Ręczne wdrażanie aplikacji ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)|W tym temacie omówiono wdrażanie aplikacji ClickOnce przy użyciu narzędzia .NET Framework.|  
 |[Wskazówki: Ręczne wdrażanie aplikacji ClickOnce, które nie wymagają ponownego podpisywania i zachowują informacje o znakowaniu](../deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md)|Wyjaśnia, jak wdrożyć aplikację ClickOnce bez ponownego podpisywania manifestów za pomocą narzędzia .NET Framework.|  
 |[Porady: Konfigurowanie projektów pod kątem platform docelowych](../ide/how-to-configure-projects-to-target-platforms.md)|Opisano sposób publikowania dla 64-bitowy procesor, zmieniając **Procesora docelowego** lub **platformę docelową** właściwość w projekcie.|  
-|[Przewodnik: Włączanie aplikacji ClickOnce do uruchamiania na wielu wersji programu .NET Framework](http://msdn.microsoft.com/en-us/7f4383af-ed87-4853-b4d4-02a3967a5fd9)|Wyjaśnia, jak umożliwić aplikacji ClickOnce zainstalować i uruchomić przy użyciu wielu wersji programu .NET Framework.|  
+|[Przewodnik: Włączanie aplikacji ClickOnce do uruchamiania na wielu wersji programu .NET Framework](https://msdn.microsoft.com/library/7f4383af-ed87-4853-b4d4-02a3967a5fd9)|Wyjaśnia, jak umożliwić aplikacji ClickOnce zainstalować i uruchomić przy użyciu wielu wersji programu .NET Framework.|  
 |[Przewodnik: Tworzenie niestandardowego Instalatora dla aplikacji ClickOnce](../deployment/walkthrough-creating-a-custom-installer-for-a-clickonce-application.md)|Wyjaśnia sposób tworzenia niestandardowego Instalatora, aby zainstalować aplikację ClickOnce.|  
 |[Porady: publikowanie aplikacji WPF przy użyciu włączonej funkcji stylów wizualnych](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md)|Zawiera instrukcje krok po kroku, aby rozwiązać błąd, który jest wyświetlany, gdy spróbujesz opublikować aplikację WPF, która ma włączonej funkcji stylów wizualnych.|  
   

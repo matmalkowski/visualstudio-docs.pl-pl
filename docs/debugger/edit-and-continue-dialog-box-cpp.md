@@ -21,17 +21,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e8ae9efb799c508c1ca086799e1ee444743a8d20
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 2c6d598605f229f306571e792c9b4dcfadfbda92
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481791"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44278300"
 ---
 # <a name="edit-and-continue-dialog-box-c"></a>Edytuj i Kontynuuj — okno dialogowe (C++)
-Edytuj i Kontynuuj, nie można zastosować zmiany wprowadzone w kodzie natywnym. Może to być tymczasowy warunek. Czasami Edytuj i Kontynuuj nie można zastosować zmian w kodzie macierzystym natychmiast, ale można stosować je później, podczas sesji debugowania (na przykład po zakończeniu bieżącym wywołaniu procedury wykonywania teraz). Aby uzyskać więcej informacji, zobacz [Edytuj i Kontynuuj](../debugger/edit-and-continue.md).  
+Edytuj i Kontynuuj nie może zastosować zmiany wprowadzone w kodzie natywnym. Może to być tymczasowa sytuacja. Czasami Edytuj i Kontynuuj nie można zastosować zmian w kodzie macierzystym natychmiast, ale można stosować je później, podczas sesji debugowania (na przykład po bieżącym wywołaniu procedury wykonywania teraz). Aby uzyskać więcej informacji, zobacz [Edytuj i Kontynuuj](../debugger/edit-and-continue.md).  
   
- Można edytować kod, aby naprawić błąd podczas nadal debugowania, Zatrzymaj debugowanie i poprawić kod, lub zignorować błąd i Kontynuuj debugowanie. W przypadku kontynuowania bez wprowadzania poprawki zmian kodu nie zostanie zastosowane natychmiast.  
+ Możesz edytować kod, aby naprawić ten błąd nadal debugowania, Zatrzymaj debugowanie i naprawianie kodu, lub zignorować błąd i kontynuować debugowanie. Jeśli będziesz kontynuować bez wprowadzania poprawki zmian w kodzie nie zostaną zastosowane natychmiast.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Edytuj i Kontynuuj, debugowanie, opcje — Okno dialogowe](http://msdn.microsoft.com/Library/009d225f-ef65-463f-a146-e4c518f86103)
+ [Edytuj i Kontynuuj, debugowanie, opcje — Okno dialogowe](https://msdn.microsoft.com/library/bcew296c.aspx)

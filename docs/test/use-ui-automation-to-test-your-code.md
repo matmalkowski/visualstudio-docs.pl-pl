@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 396fde582c10640bae95261a696c0d752543fc8d
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 491a70cd8ef35a1401bfe0cd8b6118709751d183
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381162"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44321206"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Używanie automatyzacji interfejsu użytkownika do testowania kodu
 
@@ -35,7 +35,7 @@ Jak pokazano na poniższej ilustracji, w środowisku projektowym typowe może by
 
 Tworzenie kodowanego testu interfejsu użytkownika jest proste. Po prostu wykonywania testu ręcznego podczas **Konstruktor kodowanego testu IU** działa w tle. Można również określić, jakie wartości powinna zostać wyświetlona w określonych polach. **Konstruktor kodowanego testu interfejsu użytkownika** rejestruje swoje działania i generuje kod z nich. Po utworzeniu testu można edytować go w edytorze specjalistyczne, która umożliwia modyfikowanie sekwencję akcji.
 
-Alternatywnie Jeśli przypadek testowy, który został zarejestrowany w programie Microsoft Test Manager, istnieje możliwość wygenerowania kodu przy jego użyciu. Aby uzyskać więcej informacji, zobacz [rekordu i odtwarzać ponownie ręcznych testów](/vsts/test/mtm/record-play-back-manual-tests).
+Alternatywnie Jeśli przypadek testowy, który został zarejestrowany w programie Microsoft Test Manager, istnieje możliwość wygenerowania kodu przy jego użyciu. Aby uzyskać więcej informacji, zobacz [rekordu i odtwarzać ponownie ręcznych testów](/azure/devops/test/mtm/record-play-back-manual-tests?view=vsts).
 
 Wyspecjalizowane **kodowanego testu interfejsu użytkownika** i Edytor testów ułatwiają tworzenie i Edycja kodowanego interfejsu użytkownika, nawet wtedy, gdy umiejętności w zakresie głównym jest skoncentrowana testowania zamiast kodowania. Ale jeśli jesteś deweloperem i chcesz rozszerzyć test w sposób bardziej zaawansowane, kod mają strukturę, aby był prosty skopiować i dostosowania. Na przykład Nagraj test do zakupu w witrynie sieci Web, a następnie edytuj wygenerowany kod, aby dodać pętlę, która kupuje się wiele elementów.
 
@@ -441,7 +441,7 @@ Możesz analizować kodowanych testów interfejsu użytkownika za pomocą zakodo
 
 - [Przeprowadzanie testów jednostkowych za pomocą narzędzia Eksplorator testów](../test/run-unit-tests-with-test-explorer.md)
 
-- [Uruchom testy w procesie kompilacji](/vsts/build-release/test/getting-started-with-continuous-testing)
+- [Uruchom testy w procesie kompilacji](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts)
 
 - [Porady: Konfigurowanie agenta testowego do uruchamiania testów, które współdziałają z pulpitem](http://msdn.microsoft.com/Library/3a94dd07-6d17-402c-ae8f-7947143755c9)
 
@@ -451,7 +451,7 @@ Możesz analizować kodowanych testów interfejsu użytkownika za pomocą zakodo
 
 - [Rozszerzanie kodowanych testów interfejsu użytkownika i nagrywania akcji](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)
 
-Kodowane testy interfejsu użytkownika są często używane do automatyzacji testów ręcznych. Aby uzyskać więcej informacji na temat testów ręcznych, zobacz [uruchamianiem ręcznych testów za pomocą programu Microsoft Test Manager](/vsts/test/mtm/run-manual-tests-with-microsoft-test-manager). Aby uzyskać więcej informacji na temat testów automatycznych, zobacz [narzędzia do testowania w programie Visual Studio](../test/improve-code-quality.md).
+Kodowane testy interfejsu użytkownika są często używane do automatyzacji testów ręcznych. Aby uzyskać więcej informacji na temat testów ręcznych, zobacz [uruchamianiem ręcznych testów za pomocą programu Microsoft Test Manager](/azure/devops/test/mtm/run-manual-tests-with-microsoft-test-manager?view=vsts). Aby uzyskać więcej informacji na temat testów automatycznych, zobacz [narzędzia do testowania w programie Visual Studio](../test/improve-code-quality.md).
 
 ## <a name="see-also"></a>Zobacz także
 

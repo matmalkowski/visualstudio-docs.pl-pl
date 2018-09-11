@@ -1,5 +1,5 @@
 ---
-title: Funkcje bardziej debugowania | Dokumentacja firmy Microsoft
+title: Funkcje debugowania bardziej | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -15,39 +15,39 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a46c62c05b762bee3233062a5b84e3ffca20e15a
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 38783f5ec228965010dbe8054373803185fe2e7c
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31482129"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282706"
 ---
 # <a name="more-debugging-features"></a>Więcej funkcji debugowania
-Ta sekcja zawiera dodatkowe funkcje, które można używać z debuger programu Visual Studio.  
+Ta sekcja zawiera dodatkowe funkcje, które za pomocą debugera programu Visual Studio.  
   
- Listę porady i wskazówki debugowanie szybciej i łatwiej, zobacz [debugowania porady i wskazówki](http://blogs.msdn.com/b/visualstudio/archive/2015/05/22/debugging-tips-and-tricks.aspx).  
+ Aby uzyskać listę porady i wskazówki dotyczące debugowanie szybciej i łatwiej, zobacz [debugowania porady i wskazówki](https://blogs.msdn.microsoft.com/visualstudio/2015/05/22/debugging-tips-and-tricks/).  
   
 ## <a name="additional-features"></a>Dodatkowe funkcje  
  [Sprawdzanie właściwości XAML podczas debugowania](../debugger/inspect-xaml-properties-while-debugging.md)  
- Opisuje **dynamicznym drzewie wizualnym** i **Live Explorer właściwości** narzędzia.  
+ W tym artykule opisano korzystanie z **dynamiczne drzewo wizualne** i **Eksplorator właściwości na żywo** narzędzia.  
   
- [Ustawienia debugowania i przygotowanie](../debugger/debugger-settings-and-preparation.md)  
- W tym artykule opisano różne ustawienia, konieczne może być skonfigurowane do korzystania z debugera w różnych kontekstach.  
+ [Ustawienia debugera i przygotowanie](../debugger/debugger-settings-and-preparation.md)  
+ W tym artykule opisano różne ustawienia, konieczne może być skonfigurowany do używania debugera w różnych kontekstach.  
   
  [Wyświetlanie danych w debugerze](../debugger/viewing-data-in-the-debugger.md)  
  W tym artykule opisano różne debugowania systemu windows i  
   
- [Debugowanie Just In Time](../debugger/just-in-time-debugging-in-visual-studio.md)  
- W tym artykule omówiono Just-In-Time debugowania, które można uruchomić debugera automatycznie podczas programu ulega awarii podczas pracy poza Visual Studio.  
+ [Debugowanie just in time](../debugger/just-in-time-debugging-in-visual-studio.md)  
+ W tym artykule omówiono Just-In-Time debugowania, która może automatycznie uruchomić debuger, gdy program ulegnie awarii podczas uruchamiania spoza Visual Studio.  
   
- [Wskazówki: Debugowanie w czasie projektowania](../debugger/walkthrough-debugging-at-design-time.md)  
- Przedstawia sposób użycia programu Visual Studio natychmiastowego okna do wykonywania funkcji lub procedury, gdy aplikacja nie jest uruchomiona. 
+ [Przewodnik: debugowanie w czasie projektowania](../debugger/walkthrough-debugging-at-design-time.md)  
+ Pokazuje, jak używać programu Visual Studio bezpośrednim do wykonania funkcji lub podprocedury, gdy aplikacja nie jest uruchomiona. 
   
- [Edytuj i Kontynuuj](../debugger/edit-and-continue.md)  
- Zawiera opis Edytuj i Kontynuuj, narzędzie, które pozwala zmienić kod źródłowy, gdy program jest w trybie przerwania i zastosować te zmiany, bez konieczności zakończenia sesji debugowania i ponownie utworzyć program i zawiera instrukcje dotyczące włączania lub wyłączania to Funkcja.  
+ [Edytuj i kontynuuj](../debugger/edit-and-continue.md)  
+ Opisuje Edit and Continue, narzędzie, które umożliwia zmianę kodu źródłowego, gdy program działa w trybie break i stosowanie tych zmian bez konieczności kończenia sesji debugowania i ponownego budowania programu i zawiera instrukcje dotyczące włączania lub wyłączania to Funkcja.  
   
- [Przy użyciu plików zrzutu](../debugger/using-dump-files.md)  
- Opisuje pliki zrzutu, w tym instrukcje dotyczące otwierania. Pliki zrzutu zawierającego migawkę stanu programu w pewnym momencie w czasie, zwykle po awarii. Jeśli test programu na komputerze, na którym nie ma plików źródłowych, zainstalować pliki PDB można zapisać pliku zrzutu po awarii występuje i przy użyciu pliku zrzutu debugowania awarii na maszynie kompilacji, która zawiera pliki źródłowe i pliki PDB. 
+ [Używanie plików zrzutów](../debugger/using-dump-files.md)  
+ Opisuje pliki zrzutu, w tym instrukcje dotyczące zapisywania i otwierania. Pliki zrzutu zawierają migawkę stanu programu w pewnym momencie w czasie, zwykle po awarii. Jeśli testujesz program na komputerze, który nie zawiera plików źródłowych ani PDB, możesz zapisać plik zrzutu podczas awarii i użyć pliku zrzutu do debugowania po awarii na maszynie kompilacji, który zawiera pliki źródłowe i PDB. 
   
- [Porady: Przywracanie ukrytych poleceń debugera](../debugger/how-to-restore-hidden-debugger-commands.md)  
- Zawiera opis sposobu wprowadzania poleceń debugera widoczne, które zostały ukryte przez ustawienia domyślne IDE.
+ [Instrukcje: przywracanie ukrytych poleceń debugera](../debugger/how-to-restore-hidden-debugger-commands.md)  
+ Opisuje sposób uwidaczniania poleceń debugera, zostały ukryte przez domyślne ustawienia IDE.

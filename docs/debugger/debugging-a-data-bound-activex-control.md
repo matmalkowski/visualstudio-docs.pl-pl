@@ -19,22 +19,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: df11571bb1e37d458fd647ce1524f67432617b8f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 310fb717be7b79f0de6fe01203c862736555999c
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31474294"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44278286"
 ---
 # <a name="debugging-a-data-bound-activex-control"></a>Debugowanie kontrolki ActiveX powiązanego z danymi
-Jeśli tworzysz formantu ActiveX, który zostanie powiązany do kontroli źródła danych można tworzyć aplikacji kontenera i debugowanie formantu ActiveX przy użyciu tego kontenera.  
+Jeśli tworzysz formant ActiveX, który zostanie powiązany do kontroli źródła danych można utworzyć aplikację kontenera i debugowanie kontrolki ActiveX przy użyciu tego kontenera.  
   
- Można na przykład tworzenia aplikacji opartych na oknach dialogowych MFC i umieścić formantu powiązanego z danymi i kontroli źródła danych, w oknie dialogowym. Można użyć tej aplikacji MFC do czasu wykonywania testów oraz jako kontenera pliku wykonywalnego do debugowania formantu ActiveX powiązanego z danymi.  
+ Na przykład możesz utworzyć aplikację oparte o okna dialogowe MFC i umieszczenie kontrolki powiązane z danymi i kontroli źródła danych, w oknie dialogowym. Tej aplikacji MFC można użyć do testowania w czasie wykonywania oraz jako kontenera pliku wykonywalnego do debugowania formant ActiveX powiązanych z danymi.  
   
 ## <a name="using-the-test-container"></a>Za pomocą kontenera testu  
- Kontener, który można łatwo zmodyfikować do obsługi różnych interfejsów albo formantu lub kontenera, należy użyć kontenera testu ActiveX jako plik wykonywalny dla sesji debugowania. W kontenerze testowym ActiveX kliknij **opcje** z **kontenera** menu, aby włączyć różnych interfejsów. Aby uzyskać więcej informacji, zobacz [testowanie właściwości i zdarzeń za pomocą kontenera testu](/cpp/mfc/testing-properties-and-events-with-test-container).  
+ Kontener, który można łatwo modyfikować do obsługi różnych interfejsów albo kontrolki lub kontener, użyć kontenera testu ActiveX jako plik wykonywalny dla sesji debugowania. W kontenerze testów ActiveX, kliknij przycisk **opcje** z **kontenera** menu, aby włączyć różnych interfejsów. Aby uzyskać więcej informacji, zobacz [testowanie właściwości i zdarzeń za pomocą kontenera testu](/cpp/mfc/testing-properties-and-events-with-test-container).  
   
- Aby wkraczać do kodu kontenera podczas debugowania, należy użyć wersji do debugowania z kontenera, lub użyj wersji do debugowania kontenera testu ActiveX. Aby uzyskać więcej informacji, zobacz [TSTCON próbki: Kontener testu formantu ActiveX](http://msdn.microsoft.com/en-us/72fa40ef-27d3-400c-813f-10b03236e600).  
+ Jeśli potrzebujesz wkraczać do kontenera kodu podczas debugowania, użyć wersji do debugowania kontenera lub wersję debugowania kontener testu ActiveX. Aby uzyskać więcej informacji, zobacz [TSTCON próbki: Kontener testu kontrolki ActiveX](https://msdn.microsoft.com/library/72fa40ef-27d3-400c-813f-10b03236e600).  
   
 ## <a name="see-also"></a>Zobacz też  
  [COM i debugowanie ActiveX](../debugger/com-and-activex-debugging.md)   

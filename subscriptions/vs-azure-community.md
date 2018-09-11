@@ -9,12 +9,12 @@ description: Więcej informacji na temat korzyści społeczności platformy Azur
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 2fd37e00e447a380dc35557f2601d570b7eccbf5
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: 92115e0beef07b50e2ea0783ccde6a9cc792c838
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42624064"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283733"
 ---
 # <a name="azure-community"></a>Azure Community
 
@@ -60,7 +60,7 @@ Dostępność korzyści społeczności platformy Azure zależy od poziomu subskr
 | Program Visual Studio Enterprise (miesięcznych w chmurze), program Visual Studio Professional (miesięcznych w chmurze), NFR<sup>1</sup>                                          | Wszystkie                                              |Niedostępne                                              |  Nie          |
 | Visual Studio Dev Essentials                                        | Brak                                              |Niedostępne                                              |  Nie          |
 |
-<sup>1</sup>*obejmuje: nie, for Resale (NFR), Microsoft ekwiwalentu pełnego wymiaru czasu, cenionym partnera firmy Microsoft (MVP), dyrektor Region (usług pulpitu zdalnego), Visual Studio Industry Partner (VSIP), BizSpark, Imagine, Microsoft Certified Trainer (MCT)* 
+<sup>1</sup>*obejmuje: nie, for Resale (NFR), Microsoft ekwiwalentu pełnego wymiaru czasu, cenionym partnera firmy Microsoft (MVP), dyrektor Region (usług pulpitu zdalnego), Visual Studio Industry Partner (VSIP), BizSpark, Imagine, Microsoft Certified Trainer (MCT)*
 
 Nie masz pewności której subskrypcji używasz?  Połączyć się z [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) Aby wyświetlić wszystkie subskrypcje, które są przypisane do Twojego adresu e-mail. Jeśli nie widzisz wszystkie swoje subskrypcje, mogą mieć co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby wyświetlić te subskrypcje.
 
@@ -68,4 +68,4 @@ Nie masz pewności której subskrypcji używasz?  Połączyć się z [ https://m
 -  Inne zasoby społeczności platformy Azure można znaleźć w ramach społeczności platformy Azure [stronę pomocy technicznej](https://azure.microsoft.com/support/forums/).
 -  [Dokumentacja usługi Azure](/azure/).
 -  Potrzebna pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio?  Skontaktuj się z programu Visual Studio [pomoc techniczna dla subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/).
--  Masz pytanie dotyczące środowiska IDE programu Visual Studio, Visual Studio Team Services lub innych produktów Visual Studio lub usług?  Odwiedź stronę [pomoc techniczna dla programu Visual Studio](https://visualstudio.microsoft.com/support/).
+-  Masz pytanie dotyczące programu Visual Studio IDE, usługom DevOps platformy Azure lub innych produktów Visual Studio lub usług?  Odwiedź stronę [pomoc techniczna dla programu Visual Studio](https://visualstudio.microsoft.com/support/).

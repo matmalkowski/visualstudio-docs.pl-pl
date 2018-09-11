@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 6fcf55ed90d2fe73c37ebc6d88e9d88bbc3f11f3
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: c213d7f7119b2c7310212f61c140177ef7c84c76
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381973"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44321076"
 ---
 # <a name="how-to-include-recordings-of-the-screen-and-voice-during-tests-using-test-settings"></a>Porady: obejmują nagrań ekranu i głosu podczas testów przy użyciu ustawień testu
 
@@ -28,7 +28,7 @@ Nagrywanie ekranu i głosu może służyć za pomocą testów ręcznych i automa
 
 ## <a name="to-configure-screen-and-voice-recording-for-your-test-settings"></a>Aby skonfigurować nagrywanie w ustawieniach testu ekranu i głosu
 
-1.  Otwórz ustawienia testu, które chcesz skonfigurować do nagrywania ekranu i głosu. Aby uzyskać więcej informacji, zobacz [zbieranie danych diagnostycznych podczas testowania (VSTS)](/vsts/manual-test/collect-diagnostic-data) lub [zbieranie informacji diagnostycznych przy użyciu ustawień testu](../test/collect-diagnostic-information-using-test-settings.md).
+1.  Otwórz ustawienia testu, które chcesz skonfigurować do nagrywania ekranu i głosu. Aby uzyskać więcej informacji, zobacz [zbieranie danych diagnostycznych podczas testowania (plany testów platformy Azure)](/azure/devops/test/collect-diagnostic-data?view=vsts) lub [zbieranie informacji diagnostycznych przy użyciu ustawień testu](../test/collect-diagnostic-information-using-test-settings.md).
 
 2.  W ustawieniach testu wybierz **roli** służące do nagrywania ekranu i głosu.
 
@@ -63,7 +63,7 @@ Nagrywanie ekranu i głosu może służyć za pomocą testów ręcznych i automa
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Zbieranie danych diagnostycznych podczas testowania (VSTS)](/vsts/manual-test/collect-diagnostic-data)
-- [Zbieranie danych diagnostycznych podczas wykonywania testów ręcznych (VSTS)](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)
+- [Zbieranie danych diagnostycznych podczas testowania (planów testowych platformy Azure)](/azure/devops/test/collect-diagnostic-data?view=vsts)
+- [Zbieranie danych diagnostycznych podczas wykonywania testów ręcznych (planów testowych platformy Azure)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)
 - [Zbieranie informacji diagnostycznych za pomocą ustawień testów](../test/collect-diagnostic-information-using-test-settings.md)
-- [Uruchamianie testów ręcznych (VSTS)](/vsts/manual-test/getting-started/run-manual-tests)
+- [Uruchamianie testów ręcznych (planów testowych platformy Azure)](/azure/devops/test/run-manual-tests?view=vsts)

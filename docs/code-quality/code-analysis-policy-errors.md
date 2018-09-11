@@ -14,25 +14,25 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dc42977953c70a9d17e1e26401a4d3c0576106e4
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: e4c06afd005d4d667d168429a922c32120987763
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39175894"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44278923"
 ---
 # <a name="code-analysis-policy-errors"></a>Błędy zasad analizy kodu
 Zasady analizy kodu nie jest spełniony podczas ewidencjonowania występować następujące błędy:
 
  **Ustawienia analizy kodu dla jednego lub więcej projektów nie są zgodne z zasadami analizy kodu.**
 
- Wymagania dotyczące analizy kodu, ewidencjonowanie do kontroli źródła projektu zespołowego nie zostało spełnione dla jednego lub więcej projektów kodu. Ten błąd może być spowodowany przez jedną lub więcej z następujących warunków:
+ Wymagania dotyczące analizy kodu, ewidencjonowanie do kontroli źródła projektu nie zostało spełnione dla jednego lub więcej projektów kodu. Ten błąd może być spowodowany przez jedną lub więcej z następujących warunków:
 
 1.  Nie włączono analizy kodu podczas kompilacji dla wszystkich projektów w rozwiązaniu.
 
-2.  Zestaw dla projektu w programie Visual Studio ma mniej restrykcyjnych reguł lokalnych **akcji** ustawienie niż zestawu reguł projektu zespołowego na przykład regułę, która jest ustawiona na **akcji**=**błąd**  na serwerze ma jego **akcji** równa **ostrzeżenie** lub **Brak** w regule ustawić są uruchamiane w programie Visual Studio).
+2.  Zestaw dla projektu w programie Visual Studio ma mniej restrykcyjnych reguł lokalnych **akcji** ustawienie niż zestaw reguł projektu na przykład regułę, która jest równa **akcji**=**błąd** na serwerze ma jego **akcji** równa **ostrzeżenie** lub **Brak** w regule ustawić są uruchamiane w programie Visual Studio).
 
-3.  Zestaw określony w programie Visual Studio reguł nie zawiera wszystkich reguł, które są określone w regule ustawić określoną w zasad ewidencjonowania analizy kodu dla projektu zespołowego.
+3.  Zestaw określony w programie Visual Studio reguł nie zawiera wszystkich reguł, które są określone w regule ustawić określoną w zasad ewidencjonowania analizy kodu dla projektu.
 
  **Zasady analizy kodu nie powiodło się. Wystąpiły błędy w projekcie {0} lub nie jest aktualny.**
 

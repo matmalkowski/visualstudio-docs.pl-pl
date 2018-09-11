@@ -30,12 +30,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 325641a143df2fe14a02d96f1103f58ddf533cd8
-ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
+ms.openlocfilehash: 455dc578e99700e4d6f53efae5a1bb5747e28d02
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37438102"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280028"
 ---
 # <a name="cc-assertions"></a>Potwierdzenia C/C++
 Instrukcji asercji określa warunek, który chcą mieć wartość true w punkcie, w programie. Jeśli ten warunek nie zostanie spełniony, potwierdzenie nie powiedzie się, wykonania programu zostanie przerwany, a [błędy potwierdzenia — okno dialogowe](../debugger/assertion-failed-dialog-box.md) pojawia się.  
@@ -159,7 +159,7 @@ _ASSERTE(_CrtIsMemoryBlock (myData, size, &requestNumber, &filename, &linenumber
  [W tym temacie](#BKMK_In_this_topic)  
   
 ##  <a name="BKMK_MFC_assertions"></a> Potwierdzenia MFC  
- Definiuje MFC [ASERCJA](http://msdn.microsoft.com/Library/1e70902d-d58c-4e7b-9f69-2aeb6cbe476c) — makro sprawdzania potwierdzenia. Umożliwia on również definiowanie `MFC ASSERT_VALID` i `CObject::AssertValid` metody do sprawdzania stanu wewnętrznego `CObject`-pochodnych obiektu.  
+ Definiuje MFC [ASERCJA](https://msdn.microsoft.com/Library/1e70902d-d58c-4e7b-9f69-2aeb6cbe476c) — makro sprawdzania potwierdzenia. Umożliwia on również definiowanie `MFC ASSERT_VALID` i `CObject::AssertValid` metody do sprawdzania stanu wewnętrznego `CObject`-pochodnych obiektu.  
   
  Jeśli argument MFC `ASSERT` — makro osiągnie wartość zero lub wartość FAŁSZ, makro zatrzymuje wykonywanie programów, a ostrzega o tym użytkownika; w przeciwnym razie wykonywanie jest kontynuowane.  
   
@@ -348,4 +348,4 @@ _ASSERT(!myErr); // Don't do this, either!
 ## <a name="see-also"></a>Zobacz też  
  [Zabezpieczenia debugera](../debugger/debugger-security.md)   
  [Debugowanie kodu natywnego](../debugger/debugging-native-code.md)   
- [Potwierdzenia w zarządzanym kodzie](../debugger/assertions-in-managed-code.md)
+ [Asercje w kodzie zarządzanym](../debugger/assertions-in-managed-code.md)

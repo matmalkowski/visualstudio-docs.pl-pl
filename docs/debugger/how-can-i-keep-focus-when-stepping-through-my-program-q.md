@@ -22,19 +22,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2729f3d3cc0cd8a2411dcc9d999ba26100ba5aa2
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 509e169c7ede0d96882fa2c97eaf7b2c6eb78afb
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31473475"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280912"
 ---
 # <a name="how-can-i-keep-focus-when-stepping-through-my-program"></a>Jak utrzymać fokus przy przechodzeniu przez program?
 ## <a name="description"></a>Opis  
- Program wystąpił problem z okna aktywacji. Krokowe wykonywanie programu z debugera koliduje z umożliwia do odtworzenia problemu, ponieważ program przechowuje utraci fokus. Czy istnieje sposób aby tego uniknąć?  
+ Program wystąpił problem z okna aktywacji. Krokowe wykonywanie programu za pomocą debugera koliduje z moich możliwość Odtwórz problem, ponieważ program przechowuje tracąc koncentracji. Czy istnieje sposobem uniknięcia tego problemu?  
   
 ## <a name="solution"></a>Rozwiązanie  
- Jeśli masz drugiego komputera, należy użyć zdalnego debugowania. Podczas uruchamiania debugera na hoście, mogą używać programu na komputerze zdalnym. Aby uzyskać więcej informacji, zobacz [porady: Wybieranie komputera zdalnego](http://msdn.microsoft.com/en-us/4332ba8e-2f0b-4f62-b96a-e762b9f3c3ba).  
+ Jeśli masz drugiego komputera, należy użyć, zdalne debugowanie. Może działać programu na komputerze zdalnym, gdy uruchamiasz debuger na hoście. Aby uzyskać więcej informacji, zobacz [porady: Wybieranie zdalnego komputera](/previous-versions/visualstudio/visual-studio-2010/w8wtw2f3(v=vs.100)).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie kodu natywnego — często zadawane pytania](../debugger/debugging-native-code-faqs.md)   

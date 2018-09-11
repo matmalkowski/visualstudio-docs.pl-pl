@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: acd2ccd526e32670afa947148f25606aee1299be
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: fb1f9ad69ebe012151a911bf8d7c02ded6af5e11
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382425"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283336"
 ---
 # <a name="configure-load-test-run-settings"></a>Konfigurowanie ustawień testu obciążenia
 
@@ -37,6 +37,6 @@ Początkowy parametr uruchomieniowy jest tworzony podczas tworzenia testu obcią
 |**Określanie liczby iteracji testowych w ustawieniach testu obciążenia:** można określić liczbę razy, aby uruchomić wszystkie sieci web wydajności i testy jednostkowe we wszystkich scenariuszach testu obciążeniowego przez skonfigurowanie **iteracje testu** Właściwość.|-   [Porady: Określanie liczby iteracji testowych w ustawieniach testu](../test/how-to-specify-the-number-of-test-iterations-in-a-load-test.md)|
 |**Określ częstotliwość próbkowania dla testu obciążeniowego uruchomieniowy:** można określić, jak często testy zbierać dane licznika wydajności, konfigurując obciążeniowe mają **częstotliwość próbkowania** właściwości.|-   [Porady: określanie wielkości próbki](../test/how-to-specify-the-sample-rate-for-a-load-test.md)|
 |**Określ opcje przechowywania szczegółów czasu:** można określić, jak zapisywać Szczegóły testu obciążeniowego przez skonfigurowanie **przechowywanie informacji** właściwości.|-   [Porady: Określanie właściwości magazynowania szczegółów chronometrażu](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md)|
-|**Określ okres przechowywania zasobów testowych:** przyspieszenia testu > Rozwiąż > przetestowanie cyklu przy zachowaniu zasobów testowych w wybranym okresie, ustawiając **czas przechowywania zasobów** właściwości.|-   [Przechowywania zasobów w celu przyspieszenia testowania obciążenia](/vsts/test/load-test/getting-started-with-performance-testing?view=vsts)|
+|**Określ okres przechowywania zasobów testowych:** przyspieszenia testu > Rozwiąż > przetestowanie cyklu przy zachowaniu zasobów testowych w wybranym okresie, ustawiając **czas przechowywania zasobów** właściwości.|-   [Przechowywania zasobów w celu przyspieszenia testowania obciążenia](/azure/devops/test/load-test/getting-started-with-performance-testing?view=vsts)|
 |**Korzystanie z parametrów kontekstu:** można użyć parametrów kontekstu do parametryzowania ciągu tekstowego. Na przykład jeśli test obciążenia zawiera test wydajności sieci web, który korzysta z serwera sieci web sparametryzowane, można dodać parametr kontekstu do parametrów uruchomieniowych, które są mapowane na inny serwer.|-   [Porady: Dodawanie parametrów kontekstu do ustawień](../test/how-to-add-context-parameters-to-a-load-test-run-setting.md)|
 |**Konfigurowanie właściwości logowania testu:** można skonfigurować, jak często dane są zapisywane w dzienniku, które jest skojarzone z parametrów uruchomieniowych testu obciążeniowego. Może to być ważne, gdy uruchamiasz duży lub złożony test obciążeniowy, ponieważ dziennik może mieć wielkość kilku gigabajtów.<br /><br /> Można także skonfigurować plik dziennika, aby automatycznie zapisywał informacje o testach obciążeniowych, które zakończyły się niepowodzeniem, aby pomóc w debugowaniu i analizowaniu aplikacji.|-   [Modyfikowanie ustawień rejestrowania testu obciążeniowego](../test/modify-load-test-logging-settings.md)|

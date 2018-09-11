@@ -15,12 +15,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: a4164f9911ae9ca0eade08c1ef8c12fc6bc46300
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 8dc6ff1e2813f1457e8a41328f759e8e27d9aa65
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381719"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279950"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Korzystanie z pokrycia kodu do określania, jaka część kodu jest poddawana testom
 
@@ -249,9 +249,9 @@ Analiza pokrycia kodu odbywa się tylko na zestawach, które są ładowane i dla
 
 Możesz skorzystać z większą kontrolę nad tym, którzy zespoły i elementy są zaznaczone dla analizy pokrycia kodu przez napisanie *.runsettings* pliku. Można np. wykluczyć zestawy określonego typu bez konieczności dodawania atrybutów do ich klas. Aby uzyskać więcej informacji, zobacz [Dostosowywanie analizy pokrycia kodu](../test/customizing-code-coverage-analysis.md).
 
-## <a name="analyze-code-coverage-in-the-build-service"></a>Analiza pokrycia kodu w usłudze kompilacji
+## <a name="analyze-code-coverage-in-azure-pipelines"></a>Analiza pokrycia kodu w potokach platformy Azure
 
-Podczas sprawdzania kodu testy będą uruchamiane na serwerze kompilacji, razem z innymi testami pozostałych członków zespołu. (Jeśli jeszcze nie skonfigurowano już to, zobacz [Uruchom testy w procesie kompilacji](http://msdn.microsoft.com/Library/d05743a1-c5cf-447e-bed9-bed3cb595e38).) Jest przydatne do analizy pokrycia kodu w usłudze kompilacji, ponieważ zapewnia najbardziej aktualny i wszechstronny obraz pokrycia całego projektu. Zawiera także automatyczne testy systemu i inne zakodowane testy, których zwykle nie uruchamia na komputerach deweloperskich.
+Podczas sprawdzania kodu testy będą uruchamiane na serwerze kompilacji, razem z innymi testami pozostałych członków zespołu. (Jeśli jeszcze nie skonfigurowano już to, zobacz [Uruchom testy w procesie kompilacji](http://msdn.microsoft.com/Library/d05743a1-c5cf-447e-bed9-bed3cb595e38).) Warto analiza pokrycia kodu w potokach platformy Azure, ponieważ zapewnia najbardziej aktualny i wszechstronny obraz pokrycia całego projektu. Zawiera także automatyczne testy systemu i inne zakodowane testy, których zwykle nie uruchamia na komputerach deweloperskich.
 
 1. W **Team Explorer**, otwórz **kompilacje**, a następnie dodaj lub Edytuj definicję kompilacji.
 

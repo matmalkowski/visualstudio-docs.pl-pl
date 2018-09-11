@@ -9,24 +9,24 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 0b16232ed69ba5a3332bad2a22bca426f5f91bbe
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 41e27d2d7a3fc79695fa1d476a76e199348c5320
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775285"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44320894"
 ---
 # <a name="devops-with-unity-apps"></a>Metodyka DevOps dla aplikacji Unity
 
 Tworzenie aplikacji dla nowoczesnych platformach obejmuje wiele działań więcej niż tylko pisania kodu. Działania te, określane jako DevOps (Programowanie + operations) obejmuje pełny cykl życia aplikacji i należy planowanie i śledzenie pracy, projektowanie i wdrażanie kodu, repozytorium kodu źródłowego, zarządzanie systemem kompilacji, zarządzanie ciągłej integracji wdrożenia, testowania (w tym testy jednostkowe i testy interfejsu użytkownika), uruchomione różne rodzaje diagnostykę w środowiskach środowisk deweloperskich i produkcyjnych i monitorowania aplikacji wydajności i zachowania użytkowników w czasie rzeczywistym za pośrednictwem danych telemetrycznych i analitycznych.
 
-Wraz z Visual Studio Team Services i serwera Team Foundation Server w programie Visual Studio udostępnia szereg możliwości środowiska DevOps. Wiele z nich mają zastosowanie do projektów dla wielu platform, w tym gier i wszechstronne graficznego aplikacji utworzonych za pomocą aparatu Unity&mdash;zwłaszcza w przypadku, gdy przy użyciu języka C# jako języka skryptowego. Jednak ponieważ Unity ma swoje własne środowisko projektowe i aparat środowiska uruchomieniowego, pewną liczbę funkcji metodyki DevOps nie mają zastosowania tak, jak do innych rodzajów projektów utworzone w programie Visual Studio.
+Wraz z usługom DevOps platformy Azure i serwera Team Foundation Server w programie Visual Studio udostępnia szereg możliwości środowiska DevOps. Wiele z nich mają zastosowanie do projektów dla wielu platform, w tym gier i wszechstronne graficznego aplikacji utworzonych za pomocą aparatu Unity&mdash;zwłaszcza w przypadku, gdy przy użyciu języka C# jako języka skryptowego. Jednak ponieważ Unity ma swoje własne środowisko projektowe i aparat środowiska uruchomieniowego, pewną liczbę funkcji metodyki DevOps nie mają zastosowania tak, jak do innych rodzajów projektów utworzone w programie Visual Studio.
 
 Poniższe tabele określają, jak funkcje DevOps w programie Visual Studio zastosowania lub nie mają zastosowania podczas pracy z użyciem aparatu Unity. Zapoznaj się z dokumentacją połączone, aby uzyskać szczegółowe informacje na temat funkcji, samodzielnie.
 
 ## <a name="agile-tools"></a>Narzędzia agile
 
-Opis łącza: [o Zwinne narzędzia i Agile zarządzanie projektem](/vsts/work/backlogs/overview?view=vsts) (przy użyciu programu Visual Studio Team Services lub TFS, w tym Team Explorer Everywhere)
+Opis łącza: [o Zwinne narzędzia i Agile zarządzanie projektem](/azure/devops/boards/backlogs/overview?view=vsts) (przy użyciu platformy Azure, tablic lub TFS, w tym Team Explorer Everywhere)
 
 Komentarz ogólny: wszystkie planowania i śledzenia funkcji są niezależne od typu projektu i języków programowania.
 
@@ -59,8 +59,8 @@ Komentarz ogólny: Mimo że te funkcje projektu są albo, niezależnie od język
 
 |Funkcja|Obsługiwane za pomocą aparatu Unity|Dodatkowe komentarze|
 |-------------|--------------------------|-------------------------|
-|[Użyj kontroli wersji serwera Team Foundation](/vsts/tfvc/overview?view=vsts) lub Visual Studio Team Services|Tak|Projekty Unity są po prostu zbiorem plików, które mogą być umieszczane systemów kontroli wersji, takich jak każdy inny projekt, ale istnieje kilka specjalnych okoliczności opisane tą tabelą.|
-|[Wprowadzenie do usługi Git w usłudze Team Services](/vsts/git/gitquickstart?view=vsts&tabs=visual-studio)|Tak|Zobacz uwagi pod tabelą.|
+|[Użyj Team Foundation Version Control (TFVC)](/azure/devops/repos/tfvc/overview?view=vsts) lub repozytoriów platformy Azure|Tak|Projekty Unity są po prostu zbiorem plików, które mogą być umieszczane systemów kontroli wersji, takich jak każdy inny projekt, ale istnieje kilka specjalnych okoliczności opisane tą tabelą.|
+|[Wprowadzenie do usługi Git w repozytoriach platformy Azure](/azure/devops/repos/git/gitquickstart?view=vsts&tabs=visual-studio)|Tak|Zobacz uwagi pod tabelą.|
 |[Podnoszenie jakości kodu](../test/improve-code-quality.md)|Tak||
 |[Znajdowanie zmian w kodzie i innych elementów historii](../ide/find-code-changes-and-other-history-with-codelens.md)|Tak||
 |[Używanie map kodu do debugowania aplikacji](../modeling/use-code-maps-to-debug-your-applications.md)|Tak||
@@ -75,13 +75,13 @@ Specjalne uwagi dotyczące kontroli wersji przy użyciu aparatu Unity:
 
 ## <a name="build"></a>Kompilacja
 
-Opis łącza:  **[kompilowania i wydawania](/vsts/build-release/index)**
+Opis łącza:  **[potoki usługi Azure](/azure/devops/pipelines/index?view=vsts)**
 
 |Funkcja|Obsługiwane za pomocą aparatu Unity|Dodatkowe komentarze|
 |-------------|--------------------------|-------------------------|
-|Lokalny serwer TFS|Możliwe|Projekty Unity są tworzone za pomocą środowiska Unity i nie przy użyciu programu Visual Studio kompilacji systemu (kompilowanie w ramach programu Visual Studio Tools dla Unity będą skrypty kompilacji, ale generuje plik wykonywalny). Istnieje możliwość [tworzenie projektów aparatu Unity z poziomu wiersza polecenia](http://docs.unity3d.com/Manual/CommandLineArguments.html) (dokumentacja aparatu Unity), dzięki czemu możliwe jest Konfigurowanie procesu programu MSBuild na serwerze TFS do wykonania odpowiednich Unity polecenia, pod warunkiem, że Unity, sama jest zainstalowany na Ten komputer.<br /><br /> Oferuje również Unity [Unity Cloud Build](https://build.cloud.unity3d.com/landing/), który monitoruje repozytorium Git lub SVN i uruchamia okresowe kompilacje. Obecnie działa z Team Foundation Version Control lub Visual Studio Team Services.|
-|Serwer kompilacji w środowisku lokalnym, połączone z Visual Studio Team Services|Możliwe|Podany tych samych warunkach co powyżej dodatkowo istnieje możliwość bezpośrednie kompilacje wyzwalane za pomocą programu Visual Studio Team Services do użycia w środowisku lokalnym komputerze z programem TFS. Zobacz [Build and release agents i](/vsts/build-release/concepts/agents/agents) instrukcje.|
-|Usługa hostowana kontrolera programu Visual Studio Team Services|Nie|Kompilacje Unity nie są obecnie obsługiwane.|
+|W środowisku lokalnym Team Foundation Server (TFS)|Możliwe|Projekty Unity są tworzone za pomocą środowiska Unity i nie przy użyciu programu Visual Studio kompilacji systemu (kompilowanie w ramach programu Visual Studio Tools dla Unity będą skrypty kompilacji, ale generuje plik wykonywalny). Istnieje możliwość [tworzenie projektów aparatu Unity z poziomu wiersza polecenia](http://docs.unity3d.com/Manual/CommandLineArguments.html) (dokumentacja aparatu Unity), dzięki czemu możliwe jest Konfigurowanie procesu programu MSBuild na serwerze TFS do wykonania odpowiednich Unity polecenia, pod warunkiem, że Unity, sama jest zainstalowany na Ten komputer.<br /><br /> Oferuje również Unity [Unity Cloud Build](https://build.cloud.unity3d.com/landing/), który monitoruje repozytorium Git lub SVN i uruchamia okresowe kompilacje. Obecnie działa z TFVC lub usługom DevOps platformy Azure.|
+|Lokalny serwer kompilacji połączyć usługom DevOps platformy Azure|Możliwe|Podany tych samych warunkach co powyżej dalsze jest możliwość bezpośredniego kompilacje wyzwalane za pomocą usługom DevOps platformy Azure do użycia w środowisku lokalnym komputerze z programem TFS. Zobacz [Build and release agents i](/azure/devops/pipelines/agents/agents?view=vsts) instrukcje.|
+|Usługa kontrolera hostowanych usług systemu Azure DevOps|Nie|Kompilacje Unity nie są obecnie obsługiwane.|
 |Tworzenie definicji przy użyciu wstępnego i skryptu używanego po utworzeniu|Tak|Definicję kompilacji niestandardowej, która używa aparatu Unity wiersza polecenia do uruchomienia kompilacji można skonfigurować w taki sposób, aby uzyskać skrypty przed i po kompilacji.|
 |W tym ciągłą integrację warunkowych zaewidencjonowań|Tak|Warunkowych zaewidencjonowań w przypadku repozytorium TFVC, tylko wtedy, gdy usługa Git działa w modelu żądania ściągnięcia, a nie do zaewidencjonowania.|
 
@@ -103,20 +103,20 @@ Opis łącza:  **[poprawią jakość kodu](../test/improve-code-quality.md)**
 |Funkcja|Obsługiwane za pomocą aparatu Unity|Dodatkowe komentarze|
 |-------------|--------------------------|-------------------------|
 |[Analizowanie jakości kodu zarządzanego](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)|Tak|Można analizować kod skryptu języka C# w programie Visual Studio.|
-|[Znajdowanie kodu zduplikowanego przy użyciu wykrywania klonu kodu](http://msdn.microsoft.com/Library/a97cd5a6-5ffa-4104-9627-8e59e513654d)|Tak|Można analizować kod skryptu języka C# w programie Visual Studio.|
+|[Znajdowanie kodu zduplikowanego przy użyciu wykrywania klonu kodu](https://msdn.microsoft.com/library/hh205279.aspx)|Tak|Można analizować kod skryptu języka C# w programie Visual Studio.|
 |[Mierzenie złożoności i łatwości konserwacji zarządzanego kodu](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)|Tak|Można analizować kod skryptu języka C# w programie Visual Studio.|
 |[Eksplorator wydajności](../profiling/performance-explorer.md)|Nie|Użyj [Profiler Unity](http://docs.unity3d.com/Manual/Profiler.html) (Unity witryny sieci Web).|
-|[Analizowanie problemów pamięci .NET Framework](https://msdn.microsoft.com/en-us/library/dn342825.aspx)|Nie|Narzędzia programu Visual Studio nie ma punktów zaczepienia w ramy Mono (jako używane przez środowisko Unity) do profilowania. Użyj [Profiler Unity](http://docs.unity3d.com/Manual/Profiler.html) (dokumentacja aparatu Unity).|
+|[Analizowanie problemów pamięci .NET Framework](https://msdn.microsoft.com/library/dn342825.aspx)|Nie|Narzędzia programu Visual Studio nie ma punktów zaczepienia w ramy Mono (jako używane przez środowisko Unity) do profilowania. Użyj [Profiler Unity](http://docs.unity3d.com/Manual/Profiler.html) (dokumentacja aparatu Unity).|
 
 ## <a name="release-management"></a>Release Management
 
-Opis łącza: [kompilowania i wydawania — omówienie](/vsts/pipelines/overview?view=vsts)
+Opis łącza: [kompilowania i wydawania w potokach platformy Azure i TFS](/azure/devops/pipelines/overview?view=vsts)
 
 |Funkcja|Obsługiwane za pomocą aparatu Unity|Dodatkowe komentarze|
 |-------------|--------------------------|-------------------------|
 |Zarządzanie procesów tworzenia wersji|Tak||
 |Wdrażanie serwerów na potrzeby ładowania bezpośredniego za pośrednictwem skryptów|Tak||
-|Przekazywanie do sklepu z aplikacjami|Częściowe|Rozszerzenia są dostępne, można zautomatyzować ten proces dla niektóre sklepy z aplikacjami. Zobacz [rozszerzenia programu Visual Studio Team Services](https://marketplace.visualstudio.com/VSTS), na przykład [rozszerzenia do witryny Google Play](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play).|
+|Przekazywanie do sklepu z aplikacjami|Częściowe|Rozszerzenia są dostępne, można zautomatyzować ten proces dla niektóre sklepy z aplikacjami. Zobacz [rozszerzeń dla usługi Azure DevOps Services](https://marketplace.visualstudio.com/VSTS), na przykład [rozszerzenia do witryny Google Play](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play).|
 
 ## <a name="monitor-with-hockeyapp"></a>Monitorowanie za pomocą platformy HockeyApp
 

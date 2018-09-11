@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: abecc0968862fd5547e8a2bdff113f1c21abb8d9
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: e4c778e66a8fa9ca2008345675c6c3504786fcdf
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42901488"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280288"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Konfigurowanie testów jednostkowych przy użyciu *.runsettings* pliku
 
@@ -24,7 +24,7 @@ Pliki parametrów uruchomieniowych są opcjonalne. Jeśli nie wymaga żadnej spe
 
 ## <a name="specify-a-run-settings-file"></a>Określ plik parametrów uruchomieniowych
 
-Ustawienia plików może służyć do konfigurowania testów, które są uruchamiane z przebiegu [wiersza polecenia](vstest-console-options.md), środowiska IDE lub w [utworzyć przepływ pracy](/vsts/pipelines/test/getting-started-with-continuous-testing?view=vsts) przy użyciu programu Visual Studio Team Services (VSTS) lub Team Foundation Server (TFS).
+Ustawienia plików może służyć do konfigurowania testów, które są uruchamiane z przebiegu [wiersza polecenia](vstest-console-options.md), środowiska IDE lub w [utworzyć przepływ pracy](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts) przy użyciu planów testowych platformy Azure lub Team Foundation Server (TFS).
 
 ### <a name="specify-a-run-settings-file-in-the-ide"></a>Określ plik parametrów uruchomieniowych w środowisku IDE
 
@@ -256,4 +256,4 @@ Te ustawienia są właściwe dla adaptera testowego, który uruchamia metody tes
 ## <a name="see-also"></a>Zobacz także
 
 - [Dostosowywanie analizy pokrycia kodu](../test/customizing-code-coverage-analysis.md)
-- [Zadanie test programu Visual Studio (VSTS)](/vsts/pipelines/tasks/test/vstest?view=vsts)
+- [Visual Studio test zadań (plany testów platformy Azure)](/azure/devops/pipelines/tasks/test/vstest?view=vsts)

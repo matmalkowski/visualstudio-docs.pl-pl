@@ -18,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: d4fa9ea1538d051aebd025c641c0520197f986ef
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: e90e8080f8f5afb7bd670d04e0f004f433420d68
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178390"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281536"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>Wskazówki: Tworzenie usługi danych WCF, WPF i Entity Framework
 W tym instruktażu przedstawiono sposób tworzenia prostej [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] hostowaną w [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacji sieci web, a następnie Uzyskaj dostęp z aplikacji Windows Forms.
@@ -106,7 +106,7 @@ W następnym kroku utworzysz [!INCLUDE[adonet_edm](../data-tools/includes/adonet
 7.  Na **wybierz wersję** wybierz **Entity Framework 5.0** przycisk opcji, a następnie wybierz **dalej** przycisku.
 
     > [!NOTE]
-    >  Aby można było używać najnowszej wersji programu Entity Framework 6 za pomocą usługi WCF, należy zainstalować pakiet NuGet dostawcy Framework jednostki usługi danych WCF. Zobacz [przy użyciu programu WCF Data Services 5.6.0 z platformą Entity Framework 6](http://blogs.msdn.com/b/odatateam/archive/2013/10/02/using-wcf-data-services-5-6-0-with-entity-framework-6.aspx).
+    >  Aby można było używać najnowszej wersji programu Entity Framework 6 za pomocą usługi WCF, należy zainstalować pakiet NuGet dostawcy Framework jednostki usługi danych WCF. Zobacz [przy użyciu programu WCF Data Services 5.6.0 z platformą Entity Framework 6](https://blogs.msdn.microsoft.com/odatateam/2013/10/02/using-wcf-data-services-5-6-0-with-entity-framework-6/).
 
 8.  Na **wybierz obiekty bazy danych** rozwiń **tabel** węzeł **klientów** pole wyboru, a następnie wybierz **Zakończ** przycisk.
 
@@ -289,5 +289,5 @@ W następnym opcjonalnym kroku dowiesz się, jak filtrować dane, które są zwr
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Windows Communication Foundation i usługi danych WCF w programie Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
+- [Usługi Windows Communication Foundation i usługi danych WCF w programie Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
 - [Porady: Dodawanie, aktualizowanie lub usuwanie odwołań usługi danych WCF](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)

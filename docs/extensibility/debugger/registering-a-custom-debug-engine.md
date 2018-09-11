@@ -13,18 +13,18 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c3203382b33184edf5618daecd9d3dc9102e2ca6
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 7c87b3749c2ea63e89e2e8fb0caf773434a38df2
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251653"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281393"
 ---
 # <a name="register-a-custom-debug-engine"></a>Rejestrowanie niestandardowego aparatu debugowania
 Aparat debugowania musi zarejestrować się jako fabrykę klas następujących konwencji COM także zarejestrować przy użyciu programu Visual Studio za pomocą podklucza rejestru programu Visual Studio.  
   
 > [!NOTE]
->  Można znaleźć przykład sposobu rejestrowania aparat debugowania, w tym przykładzie TextInterpreter powstała jako część [samouczek: tworzenie aparatu debugowania, korzystając z modelu COM ATL](http://msdn.microsoft.com/en-us/9097b71e-1fe7-48f7-bc00-009e25940c24).  
+>  Można znaleźć przykład sposobu rejestrowania aparat debugowania, w tym przykładzie TextInterpreter powstała jako część [samouczek: tworzenie aparatu debugowania, korzystając z modelu COM ATL](https://msdn.microsoft.com/library/9097b71e-1fe7-48f7-bc00-009e25940c24).  
   
 ## <a name="dll-server-process"></a>Proces serwera biblioteki DLL  
  Aparat debugowania jest zazwyczaj konfigurowane w jego własnej biblioteki DLL jako serwera COM. W efekcie aparat debugowania należy zarejestrować identyfikator CLSID jego fabryki klas z modelem COM programu Visual Studio do niego dostęp. Następnie aparat debugowania musi zarejestrować się przy użyciu programu Visual Studio można ustanowić właściwości (w przeciwnym razie znane jako metryki) debugowania aparatu obsługuje. Wybór metryki zapisywane do podklucza rejestru programu Visual Studio, zależy od funkcje, które obsługuje aparatu debugowania.  
@@ -54,4 +54,4 @@ HRESULT CTextInterpreterModule::RegisterServer(BOOL bRegTypeLib, const CLSID * p
 ## <a name="see-also"></a>Zobacz także  
  [Tworzenie niestandardowego aparatu debugowania](../../extensibility/debugger/creating-a-custom-debug-engine.md)   
  [Pomocnicy zestawu SDK do debugowania](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)   
- [Samouczek: Tworzenie aparatu debugowania, korzystając z modelu COM ATL](http://msdn.microsoft.com/en-us/9097b71e-1fe7-48f7-bc00-009e25940c24)
+ [Samouczek: Tworzenie aparatu debugowania, korzystając z modelu COM ATL](https://msdn.microsoft.com/library/9097b71e-1fe7-48f7-bc00-009e25940c24)

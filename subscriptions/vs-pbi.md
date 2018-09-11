@@ -9,12 +9,12 @@ description: Dowiedz się więcej na temat subskrypcji usługi Power BI Pro, do�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: c09035a14cf571523f7d5c757c9c41e807b0c86b
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 08e3fb3cc41ef7ada1acd984671150c1f61a0e05
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42624181"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280470"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Usługa Power BI Pro w ramach subskrypcji programu Visual Studio
 
@@ -79,7 +79,7 @@ Aby korzystać z usługi Power BI Pro, należy skonfigurować konto lub zaloguj 
 | Visual Studio Dev Essentials | NAZWA  | Niedostępne |NAZWA|
 | Program Visual Studio Enterprise (miesięcznych w chmurze) | Azure                                       | Niedostępne                                  |NAZWA|
 
-<sup>1</sup>*obejmuje: nie for Resale (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & usług dla deweloperów, MCT Software & usługi, Microsoft zwracającej partnera (MVP), dyrektor Region (usług pulpitu zdalnego).    Z wyłączeniem: Microsoft Partner Network (MPN), ekwiwalentu pełnego wymiaru czasu, Imagine.*
+<sup>1</sup>*obejmuje: nie for Resale (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & usług dla deweloperów, MCT Software & usługi, Microsoft zwracającej partnera (MVP), dyrektor Region (usług pulpitu zdalnego).  Z wyłączeniem: Microsoft Partner Network (MPN), ekwiwalentu pełnego wymiaru czasu, Imagine.*
 
 
 Nie masz pewności której subskrypcji używasz?  Połączyć się z [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) Aby wyświetlić wszystkie subskrypcje, które są przypisane do Twojego adresu e-mail. Jeśli nie widzisz wszystkie swoje subskrypcje, mogą mieć co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby wyświetlić te subskrypcje.
@@ -101,4 +101,4 @@ Odp. tak.
     - Problemy z rejestracją?  Zapoznaj się z [rejestrację w usłudze Power BI jako użytkownik indywidualny](/power-bi/service-self-service-signup-for-power-bi)
     - Poznaj najważniejsze problemy, Uzyskaj pomoc od społeczności lub Wyślij bilet pomocy technicznej na [stronę pomocy technicznej](https://powerbi.microsoft.com/support/).
 -  Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z pomocą programu Visual Studio [pomoc techniczna dla subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/).
--  Masz pytanie dotyczące środowiska IDE programu Visual Studio, Visual Studio Team Services lub innych produktów Visual Studio lub usług?  Odwiedź stronę [pomoc techniczna dla programu Visual Studio](https://visualstudio.microsoft.com/support/).
+-  Masz pytanie dotyczące programu Visual Studio IDE, usługom DevOps platformy Azure lub innych produktów Visual Studio lub usług?  Odwiedź stronę [pomoc techniczna dla programu Visual Studio](https://visualstudio.microsoft.com/support/).

@@ -16,15 +16,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d5362eaba439ff7a645a8323c4eed5d9496f6d88
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 5540573991be11230acb33b088174bbb5c39f7f7
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793561"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281718"
 ---
 # <a name="iactivescriptprofilercontrolstartprofiling"></a>IActiveScriptProfilerControl::StartProfiling
-Uruchamia profilowanie na aparatu skryptów. Aparat skryptów tworzy wystąpienie obiektu profilera poprzez wywołanie [wywołanie funkcji CoCreateInstance](http://msdn.microsoft.com/en-us/7295a55b-12c7-4ed0-a7a4-9ecee16afdec).  
+Rozpoczyna się profilowanie na silnik wykonywania skryptów. Aparat skryptów tworzy wystąpienie obiektu profiler poprzez wywołanie [CoCreateInstance](https://docs.microsoft.com/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance).  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -37,13 +37,13 @@ HRESULT StartProfiling(
   
 #### <a name="parameters"></a>Parametry  
  `clsidProfilerObject`  
- [in] Klasy identyfikator (CLSID) do utworzenia obiektu profilera.  
+ [in] Klasa identyfikator (CLSID) obiekt profiler, który ma zostać utworzony.  
   
  `dwEventMask`  
  [in] Maska bitów do 4-bajtowych, który określa typy zdarzeń. Bity są zdefiniowane w [wyliczenie PROFILER_EVENT_MASK](../../winscript/reference/profiler-event-mask-enumeration.md).  
   
  `dwContext`  
- [in] Wartość 4-bajtowych, która została przekazana do obiektu profilera.  
+ [in] Wartość 4-bajtowych, który jest przekazywany do obiektu profilera.  
   
 ## <a name="return-value"></a>Wartość zwracana  
  Zwraca wartość HRESULT. Dopuszczalne są następujące wartości:  
@@ -54,4 +54,4 @@ HRESULT StartProfiling(
 |`ACTIVPROF_E_PROFILER_PRESENT`|Profilowanie jest już włączony.|  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IActiveScriptProfilerControl](../../winscript/reference/iactivescriptprofilercontrol-interface.md)
+ [IActiveScriptProfilerControl, interfejs](../../winscript/reference/iactivescriptprofilercontrol-interface.md)

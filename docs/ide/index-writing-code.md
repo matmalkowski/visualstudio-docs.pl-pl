@@ -1,6 +1,6 @@
 ---
-title: Zapis i zarządzanie nimi kodu
-description: Dowiedz się, jak używać edytora kodu i inne narzędzia programu Visual Studio do zapisu, przejdź, zarządzania i poprawić kod.
+title: Pisanie kodu i zarządzanie nim
+description: Dowiedz się, jak używać edytora kodu i innych narzędzi w programie Visual Studio do zapisu, Nawiguj, zarządzanie i ulepszaj swój kod.
 layout: LandingPage
 ms.date: 01/01/2018
 author: gewarren
@@ -12,16 +12,16 @@ f1_keywords:
 - vs.newproject
 ms.workload:
 - multiple
-ms.openlocfilehash: f9e010f82df5f9153fc5052606b82bf97bdb7cf0
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: cb81dacbe4ff128f2e5078147653f4fd6e3c8ae8
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704515"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279043"
 ---
-# <a name="write-and-manage-code-using-visual-studio"></a>Zapis i zarządzanie nimi kodu za pomocą programu Visual Studio
+# <a name="write-and-manage-code-using-visual-studio"></a>Pisanie kodu i zarządzanie nim przy użyciu programu Visual Studio
 
-Dowiedz się, jak używać edytora kodu i inne narzędzia programu Visual Studio do zapisu, przejdź, zarządzania i poprawić kod.
+Dowiedz się, jak używać edytora kodu i innych narzędzi w programie Visual Studio do zapisu, Nawiguj, zarządzanie i ulepszaj swój kod.
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -35,7 +35,7 @@ Dowiedz się, jak używać edytora kodu i inne narzędzia programu Visual Studio
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Tworzenie projektów i rozwiązań</h3>
+                        <h3>Tworzenie rozwiązań i projektów</h3>
                     </div>
                 </div>
             </div>
@@ -71,7 +71,7 @@ Dowiedz się, jak używać edytora kodu i inne narzędzia programu Visual Studio
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Przejdź do kodu</h3>
+                        <h3>Przechodzenie do kodu</h3>
                     </div>
                 </div>
             </div>
@@ -89,7 +89,7 @@ Dowiedz się, jak używać edytora kodu i inne narzędzia programu Visual Studio
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Generowanie i napraw kodu</h3>
+                        <h3>Generowanie i naprawianie kodu</h3>
                     </div>
                 </div>
             </div>
@@ -107,7 +107,7 @@ Dowiedz się, jak używać edytora kodu i inne narzędzia programu Visual Studio
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Użyj programu Visual Studio bez projektów i rozwiązań</h3>
+                        <h3>Używanie programu Visual Studio bez projektów ani rozwiązań</h3>
                     </div>
                 </div>
             </div>
@@ -115,7 +115,7 @@ Dowiedz się, jak używać edytora kodu i inne narzędzia programu Visual Studio
         </a>
     </li>
     <li>
-        <a href="/vsts/git/share-your-code-in-git-vs-2017">
+        <a href="/azure/devops/repos/git/share-your-code-in-git-vs-2017">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -125,7 +125,7 @@ Dowiedz się, jak używać edytora kodu i inne narzędzia programu Visual Studio
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Zarządzanie kodu przy użyciu narzędzia Git w programie Visual Studio</h3>
+                        <h3>Zarządzaj kodem przy użyciu narzędzia Git w programie Visual Studio</h3>
                     </div>
                 </div>
             </div>
@@ -134,9 +134,9 @@ Dowiedz się, jak używać edytora kodu i inne narzędzia programu Visual Studio
     </li>
 </ul>
 
-## <a name="get-started-with-programming-languages-in-visual-studio"></a>Rozpoczynanie pracy z języków programowania w Visual Studio
+## <a name="get-started-with-programming-languages-in-visual-studio"></a>Wprowadzenie do języków programowania w programie Visual Studio
 
-Tworzenie pierwszej aplikacji w programie Visual Studio.
+Utwórz swoją pierwszą aplikację w programie Visual Studio.
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -168,7 +168,7 @@ Tworzenie pierwszej aplikacji w programie Visual Studio.
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Utwórz aplikację konsoli języka C++ w programie Visual Studio</h3>
+                        <h3>Tworzenie aplikacji konsoli języka C++ w programie Visual Studio</h3>
                     </div>
                 </div>
             </div>
@@ -186,7 +186,7 @@ Tworzenie pierwszej aplikacji w programie Visual Studio.
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Wprowadzenie do języka Python w programie Visual Studio</h3>
+                        <h3>Rozpoczynanie pracy z językiem Python w programie Visual Studio</h3>
                     </div>
                 </div>
             </div>
@@ -204,7 +204,7 @@ Tworzenie pierwszej aplikacji w programie Visual Studio.
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Utwórz aplikację konsoli za pomocą Visual Basic</h3>
+                        <h3>Tworzenie aplikacji konsoli za pomocą Visual Basic</h3>
                     </div>
                 </div>
             </div>
@@ -222,7 +222,7 @@ Tworzenie pierwszej aplikacji w programie Visual Studio.
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Tworzenie aplikacji sieci web za pomocą języka Node.js</h3>
+                        <h3>Tworzenie aplikacji internetowej przy użyciu środowiska Node.js</h3>
                     </div>
                 </div>
             </div>
@@ -240,7 +240,7 @@ Tworzenie pierwszej aplikacji w programie Visual Studio.
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Wprowadzenie do języka R narzędzi dla programu Visual Studio</h3>
+                        <h3>Rozpocznij pracę z narzędziami języka R dla programu Visual Studio</h3>
                     </div>
                 </div>
             </div>
@@ -276,7 +276,7 @@ Tworzenie pierwszej aplikacji w programie Visual Studio.
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Tworzenie aplikacji konsoli .NET Core w języku C#</h3>
+                        <h3>Tworzenie aplikacji konsolowej .NET Core w języku C#</h3>
                     </div>
                 </div>
             </div>
@@ -294,7 +294,7 @@ Tworzenie pierwszej aplikacji w programie Visual Studio.
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Tworzenie aplikacji sieci web platformy Azure w programie Visual Studio</h3>
+                        <h3>Utwórz aplikację internetową platformy Azure w programie Visual Studio</h3>
                     </div>
                 </div>
             </div>

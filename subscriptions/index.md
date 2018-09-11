@@ -10,21 +10,21 @@ Description: Welcome to Visual Studio Subscriptions
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 125f1fe960618648a9a04c5bd787523b86d9260f
-ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
+ms.openlocfilehash: d55e21a7324143b5bbb60ed714b9c2dc070828ce
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36946929"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279248"
 ---
 # <a name="visual-studio-subscriptions"></a>Subskrypcje programu Visual Studio
 
-Visual Studio subskrypcji jest rozbudowany zestaw zasoby umożliwiające tworzenie, wdrażanie i zarządzanie niezawodnych aplikacji na platformach preferowanych i urządzeń, takich jak Windows, iOS, Android i Linux.  Korzyści z subskrypcji obejmują dostęp do narzędzi dla deweloperów, usługi w chmurze i oprogramowania, szkoleniom i obsługę projektowania i testowania potrzeb.
+Subskrypcje programu Visual Studio jest kompleksowy zestaw zasobów, które umożliwiają tworzenie, wdrażanie i zarządzanie nimi wspaniałych aplikacji na Twoje ulubione platformy i urządzenia, w tym Windows, iOS, Android i Linux.  Korzyści z subskrypcji oferują dostęp do narzędzi programistycznych, usług w chmurze i oprogramowania, szkoleń i obsługę do programowania i testowania.
 
 ## <a name="get-started"></a>Rozpocznij
 
-Administratorzy Zaloguj się do [ https://manage.visualstudio.com ](https://manage.visualstudio.com) można przypisać subskrypcji do zespołu.<br>
-Subskrybenci Zaloguj się do [ https://my.visualstudio.com ](https://my.visualstudio.com) do korzyści z subskrypcji.
+Administratorzy Zaloguj się do [ https://manage.visualstudio.com ](https://manage.visualstudio.com) przypisywanie subskrypcji do Twojego zespołu.<br>
+Subskrybenci Zaloguj się do [ https://my.visualstudio.com ](https://my.visualstudio.com) na dostęp do korzyści z subskrypcji.
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -64,7 +64,7 @@ Subskrybenci Zaloguj się do [ https://my.visualstudio.com ](https://my.visualst
         </a>
     </li>
     <li>
-        <a href="/vsts/">
+        <a href="/azure/devops/">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -74,7 +74,7 @@ Subskrybenci Zaloguj się do [ https://my.visualstudio.com ](https://my.visualst
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Visual Studio Team Services</h3>
+                        <h3>Usługom DevOps platformy Azure</h3>
                     </div>
                 </div>
             </div>
@@ -128,20 +128,20 @@ Subskrybenci Zaloguj się do [ https://my.visualstudio.com ](https://my.visualst
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Centrum aplikacji programu Visual Studio</h3>
+                        <h3>Visual Studio App Center</h3>
                     </div>
                 </div>
             </div>
         </div>
         </a>
-    </li>   
+    </li>
 </ul>
 
 ---
 
 ## <a name="whats-new"></a>Co nowego?
 
-Aby subskrypcji jeszcze bardziej użyteczna, możemy Dodawanie i aktualizowanie subskrypcji korzyści często. Aby dowiedzieć się więcej, zobacz [nowości w ramach subskrypcji](whats-new-in-subscriptions.md) strony.
+Do Twojej subskrypcji było jeszcze bardziej użyteczny, możemy dodać i zaktualizuj często korzyści z subskrypcji. Aby dowiedzieć się więcej, zobacz [What's new in subskrypcje](whats-new-in-subscriptions.md) strony.
 
 ---
 
@@ -153,12 +153,12 @@ Aby subskrypcji jeszcze bardziej użyteczna, możemy Dodawanie i aktualizowanie 
                 <div class="card">
                     <div class="cardText">
                         <h3>Narzędzia dla deweloperów</h3>
-                        <p>Uzyskiwanie dostępu do najnowszej wersji programu Visual Studio, pełny umieszczony IDE dla systemu Android, iOS, Windows, macOS, tworzenie aplikacji sieci web i w chmurze i innych wieloplatformowych narzędzi na komputerze lub na komputerach Mac.</p>
+                        <p>Uzyskaj dostęp do najnowszych wersji programu Visual Studio, w pełni funkcjonalne środowisko IDE dla systemów Android, iOS, Windows, macOS, tworzenie aplikacji sieci web i chmury i innych platformach narzędzia na komputerach PC lub Mac.</p>
                         <ul>
                             <li><a href="/visualstudio/subscriptions/vs-ide-benefit">Visual Studio</a></li>
                             <li>Visual Studio for Mac</li>
-                            <li>Team Foundation Server i TFS CAL</li>
-                        </ul>                        
+                            <li>Team Foundation Server i licencję CAL serwera TFS</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -170,15 +170,15 @@ Aby subskrypcji jeszcze bardziej użyteczna, możemy Dodawanie i aktualizowanie 
                 <div class="card">
                     <div class="cardText">
                         <h3>Usługi w chmurze</h3>
-                        <p>W ramach subskrypcji programu Visual Studio może pojawić się miesięczne środki Azure i bezpłatny dostęp do usług platformy Azure, rabaty projektowania i testowania i wyłącznego dostępu do obrazu tylko do subskrybenta g allery z wstępnie skonfigurowanych maszyn wirtualnych. W zależności od Twojej subskrypcji usługi w chmurze mogą obejmować:</p>
+                        <p>W subskrypcji programu Visual Studio może otrzymać miesięczne środki platformy Azure i bezpłatny dostęp do usług platformy Azure, stawki z rabatem deweloperskie i testowe i wyłącznego dostępu tylko do subskrybenta obrazu g aleria wstępnie skonfigurowanych maszyn wirtualnych. W zależności od subskrypcji usługi w chmurze mogą obejmować:</p>
                         <ul>
                             <li><a href="/visualstudio/subscriptions/vs-azure">Azure</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-visual-studio-app-center">Visual Studio App Center</a></li>
-                            <li><a href="/visualstudio/subscriptions/vs-vsts">Visual Studio Team Services</a></li>
-                            <li><a href="/visualstudio/subscriptions/vs-office-dev">Subskrypcji dewelopera usługi Office 365</a></li>
+                            <li><a href="/visualstudio/subscriptions/vs-vsts">Usługom DevOps platformy Azure</a></li>
+                            <li><a href="/visualstudio/subscriptions/vs-office-dev">Subskrypcja dewelopera usługi Office 365</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-pbi">Konto dewelopera systemu Windows</a></li>
                             <li>PowerBI Pro</li>
-                        </ul>                        
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -189,18 +189,18 @@ Aby subskrypcji jeszcze bardziej użyteczna, możemy Dodawanie i aktualizowanie 
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <h3>Szkoleń i pomocy technicznej</h3>
-                        <p>Visual Studio subskrypcji obejmują techniczne i specjalistów korzyści za pośrednictwem firmy Microsoft i partnerów. Uczenie zawartości zawiera najnowsze kursy na tematy technologii i specjalistów opracowanie oprogramowania edukacyjnego dla programowania zawodowych ciągłego. Uzyskaj pomoc eksperta do rozwiązywania problemów i odpowiedzi na pytania. Subskrypcja może obejmować:</p>
+                        <h3>Szkolenia i pomoc techniczna</h3>
+                        <p>Subskrypcje programu Visual Studio obejmują szkolenia techniczne i profesjonalne korzyści za pośrednictwem firmy Microsoft i jej partnerów. Szkolenie zawartość obejmuje najnowsze kursy dotyczące tematów technologii i specjalistów kursów dla rozwoju kariery ciągłej. Uzyskaj profesjonalną pomoc w rozwiązywaniu problemów i odpowiedzieć na pytania. Twoja subskrypcja może obejmować:</p>
                         <ul>
-                            <li><a href="/visualstudio/subscriptions/vs-linkedin-learning">LinkedIn Premium</a> (business, technologii i creative)</li>
-                            <li><a href="/visualstudio/subscriptions/vs-pluralsight">Pluralsight</a> (chmury, projekt, mobilnych i dane)</li>
-                            <li><a href="/visualstudio/subscriptions/vs-datacamp">Dane Camp</a> (nauki danych i AI)</li>
-                            <li><a href="/visualstudio/subscriptions/vs-xamarin">Xamarin University</a> (Programowanie przenośne)</li>
-                            <li><a href="/visualstudio/subscriptions/vs-opsgility">Szkolenie Opsgility</a> (zorientowanych na chmurze)</li>
+                            <li><a href="/visualstudio/subscriptions/vs-linkedin-learning">LinkedIn Premium</a> (biznesowe, techniczne i creative)</li>
+                            <li><a href="/visualstudio/subscriptions/vs-pluralsight">Pluralsight</a> (cloud, projekt, telefon komórkowy i dane)</li>
+                            <li><a href="/visualstudio/subscriptions/vs-datacamp">Data Camp</a> (nauka o danych i sztuczna Inteligencja)</li>
+                            <li><a href="/visualstudio/subscriptions/vs-xamarin">Usługa Xamarin University</a> (Tworzenie aplikacji mobilnych)</li>
+                            <li><a href="/visualstudio/subscriptions/vs-opsgility">Szkolenie Opsgility</a> (skoncentrowanych na chmurze)</li>
                             <li><a href="/visualstudio/subscriptions/vs-tech-support">Zdarzenia pomocy technicznej Professional firmy Microsoft</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-azure-advisory-chat">Czat z doradcą Azure Advisor</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-azure-community">Społeczność platformy Azure</a></li>
-                        </ul>                        
+                        </ul>
                     </div>
                 </div>
             </div>

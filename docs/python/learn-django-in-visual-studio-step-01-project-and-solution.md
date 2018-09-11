@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2e561e7e5ba060258f88593cdfee0bcfb3ece5c7
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 3db94813f6d6b87d29744be2d1f53e26c3b80f26
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42624048"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280171"
 ---
 # <a name="tutorial-get-started-with-the-django-web-framework-in-visual-studio"></a>Samouczek: Rozpoczynanie pracy z usługą struktura sieci web Django w programie Visual Studio
 
@@ -100,7 +100,7 @@ Ponieważ wybrano **Utwórz nowe repozytorium Git** w **nowy projekt** okno dial
 
     ![Okno Eksploratora zespołu do wypychania do istniejącego repozytorium zdalnego](media/django/step01-push-to-github.png)
 
-    Jeśli masz istniejące repozytorium, **publikowanie w usłudze GitHub** i **Wypychanie do usługi Visual Studio Team Services** opcje pozwalają utworzyć bezpośrednio z poziomu programu Visual Studio.
+    Jeśli masz istniejące repozytorium, **publikowanie w usłudze GitHub** i **Wypychanie do usługi Azure DevOps** opcje pozwalają utworzyć bezpośrednio z poziomu programu Visual Studio.
 
 1. Podczas pracy z tym samouczkiem Uzyskaj w celu przejrzenia okresowo za pomocą formantów w programie Visual Studio można zatwierdzać i wypychać zmiany. W tym samouczku przypomina o tym, w odpowiednich miejscach.
 

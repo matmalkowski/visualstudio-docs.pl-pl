@@ -9,12 +9,12 @@ description: Więcej informacji na temat korzyści Office 365 dla deweloperów, 
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: b38d4cf27807cf2df8e85515033b98e3132f89e2
-ms.sourcegitcommit: 9ea4b62163ad6be556e088da1e2a355f31366f39
+ms.openlocfilehash: a97f32bdb2e4a2639962cb3bfc1240f27473bfd6
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43995881"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283187"
 ---
 # <a name="the-office-365-developer-subscription-benefit-in-visual-studio-subscriptions"></a>Korzyści z subskrypcji dewelopera Office 365 w ramach subskrypcji programu Visual Studio
 
@@ -78,4 +78,4 @@ Nie masz pewności której subskrypcji używasz?  Połączyć się z [ https://m
 ## <a name="support-resources"></a>Zasoby pomocy technicznej
 -  Potrzebujesz pomocy dotyczącej subskrypcji dewelopera pakietu Office? Zapoznaj się z [obsługuje](https://developer.microsoft.com/office/support) zasobów na [Centrum deweloperów pakietu Office](https://developer.microsoft.com/office).
 -  Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z pomocą programu Visual Studio [pomoc techniczna dla subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/).
--  Masz pytanie dotyczące środowiska IDE programu Visual Studio, Visual Studio Team Services lub innych produktów Visual Studio lub usług?  Odwiedź stronę [pomoc techniczna dla programu Visual Studio](https://visualstudio.microsoft.com/support/).
+-  Masz pytanie dotyczące programu Visual Studio IDE, usługom DevOps platformy Azure lub innych produktów Visual Studio lub usług?  Odwiedź stronę [pomoc techniczna dla programu Visual Studio](https://visualstudio.microsoft.com/support/).

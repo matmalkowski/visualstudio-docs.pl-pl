@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0f530dc6f1223bebeaada4f1225dd025474ceb1c
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 011dc258281eccf7d1a1eca7acbc8cc71a53f00a
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808644"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281146"
 ---
 # <a name="remote-debugging-a-c-or-visual-basic-project-in-visual-studio"></a>Zdalne debugowanie projektu C# lub Visual Basic w programie Visual Studio
 Aby debugować aplikację programu Visual Studio, która została wdrożona na innym komputerze, zainstalować i uruchomić narzędzia zdalne na komputerze, w której została wdrożona aplikacja, skonfiguruj projekt, aby nawiązać połączenie z komputerem zdalnym z programu Visual Studio, a następnie uruchom aplikację.
@@ -97,7 +97,7 @@ Debuger nie można wdrożyć aplikacje klasyczne Visual C# lub Visual Basic do m
 
      Powinieneś zobaczyć, że okna głównego aplikacji WPF jest otwarty na komputerze zdalnym.
   
-14. Jeśli to konieczne, należy podjąć działania w celu trafiony punkt przerwania. Powinieneś zobaczyć, czy punkt przerwania jest aktywny. Jeśli nie, nie zostały załadowane symbole dla aplikacji. Spróbuj ponownie, a jeśli to nie zadziała, uzyskać informacje na temat ładowania symboli i jak rozwiązywać je na [Opis plików symboli i programu Visual Studio ustawienia symboli](http://blogs.msdn.com/b/visualstudioalm/archive/2015/01/05/understanding-symbol-files-and-visual-studio-s-symbol-settings.aspx).
+14. Jeśli to konieczne, należy podjąć działania w celu trafiony punkt przerwania. Powinieneś zobaczyć, czy punkt przerwania jest aktywny. Jeśli nie, nie zostały załadowane symbole dla aplikacji. Spróbuj ponownie, a jeśli to nie zadziała, uzyskać informacje na temat ładowania symboli i jak rozwiązywać je na [Opis plików symboli i programu Visual Studio ustawienia symboli](https://blogs.msdn.microsoft.com/devops/2015/01/05/understanding-symbol-files-and-visual-studios-symbol-settings/).
   
 15. Na komputerze programu Visual Studio powinien zostać wyświetlony, że wykonywanie zostało zatrzymane w punkcie przerwania.
   

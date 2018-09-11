@@ -1,5 +1,5 @@
 ---
-title: 'Porady: wrócić do funkcji, która wywołała MFC, jeśli zostało zatrzymane | Dokumentacja firmy Microsoft'
+title: 'Porady: wrócić do funkcji, która wywołała MFC przy zatrzymaniu | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -25,20 +25,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 356e9f4950e62f3ac1399b1e79ee2fe400cec47b
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: da15793027eb643078771d33464258fea73fec9d
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31472891"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283395"
 ---
 # <a name="how-to-get-back-to-the-function-that-called-mfc-if-halted"></a>Porady: powracanie do funkcji, która wywołała MFC przy zatrzymaniu
 > [!NOTE]
->  Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić ustawienia, wybierz polecenie Import i eksport ustawień w menu Narzędzia. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
+>  Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz Importuj i Eksportuj ustawienia w menu Narzędzia. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
   
- Jeśli używasz **Podziel** na **debugowania** menu zatrzymanie program ostatecznie otrzymano w MFC i wiesz, czy problem jest w kodzie, można przejść z powrotem do funkcji stos wywołań okna. Aby uzyskać więcej informacji, zobacz [porady: Korzystanie z okna stosu wywołań](../debugger/how-to-use-the-call-stack-window.md).  
+ Jeśli użyto **Przerwij** polecenie **debugowania** menu, aby zatrzymać program zakończył w MFC i wiesz, czy problem jest w kodzie okno stosu wywołań można przejść z powrotem do funkcji. Aby uzyskać więcej informacji, zobacz [porady: Korzystanie z okna stosu wywołań](../debugger/how-to-use-the-call-stack-window.md).  
   
- Czasami kodu mogą być dzielone w przekazywanie komunikatów. W takim przypadku Brak kodu użytkownika w stosie wywołań. Aby uniknąć tego problemu, można użyć zamiast punktów przerwania (prawdopodobnie z warunkami i liczby trafień) **Podziel** polecenia. Aby uzyskać więcej informacji, zobacz [punktów przerwania i Tracepoints](http://msdn.microsoft.com/en-us/fe4eedc1-71aa-4928-962f-0912c334d583)).  
+ Czasami Twój kod może spowodować przerwanie "pompy komunikatów". W takiej sytuacji istnieje żaden kod użytkownika w stosie wywołań. Aby uniknąć tego problemu, można użyć punktów przerwania (także z warunków i liczniki trafień) zamiast **Przerwij** polecenia. Aby uzyskać więcej informacji, zobacz [punkty przerwania i śledzenia](https://msdn.microsoft.com/library/fe4eedc1-71aa-4928-962f-0912c334d583).  
   
 ### <a name="to-navigate-to-the-function-from-which-mfc-was-called"></a>Aby przejść do funkcji, z którego wywołano MFC  
   

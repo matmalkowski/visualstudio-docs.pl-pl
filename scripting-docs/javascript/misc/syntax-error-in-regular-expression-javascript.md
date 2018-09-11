@@ -20,21 +20,21 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 23492c5a5066bf3430430b544b97ee765d26512b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: b5f256639fbef222042ca3137eb9d19c2a97d702
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24788704"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280380"
 ---
 # <a name="syntax-error-in-regular-expression-javascript"></a>Błąd składni w wyrażeniu regularnym (JavaScript)
-Struktura ciąg wyszukiwania narusza co najmniej jeden z gramatyką reguł [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] wyrażenia regularnego.  
+Struktury z wyszukiwanym ciągiem narusza co najmniej reguły gramatyki [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] wyrażenia regularnego.  
   
 ### <a name="to-correct-this-error"></a>Aby poprawić ten błąd  
   
--   Upewnij się, struktura wyrażenia regularnego ciąg wyszukiwania zgodnego ze [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] składni wyrażeń regularnych.  
+-   Upewnij się, struktura ciąg wyszukiwania wyrażeń regularnych działa zgodnie z [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] składni wyrażeń regularnych.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Obiekt będący wyrażeniem regularnym](../../javascript/reference/regular-expression-object-javascript.md)   
- [Składnia wyrażeń regularnych (JavaScript)](http://msdn.microsoft.com/en-us/ab0766e1-7037-45ed-aa23-706f58358c0e)   
- [Compile — metoda (wyrażenie regularne)](../../javascript/reference/compile-method-regular-expression-javascript.md)
+ [Składnia wyrażeń regularnych (JavaScript)](https://msdn.microsoft.com/library/1400241x)   
+ [compile, metoda (Regular Expression)](../../javascript/reference/compile-method-regular-expression-javascript.md)

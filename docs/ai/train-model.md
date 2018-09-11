@@ -12,12 +12,12 @@ ms.service: multiple
 ms.technology: vs-ai-tools
 ms.workload:
 - azure
-ms.openlocfilehash: b9d66539d10fe97cefbba51295b43fcfa19be50a
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 871b4d2fdd180481bdd496aa45ef960a24b1ef18
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379835"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44278325"
 ---
 # <a name="train-ai-models-in-azure-batch-ai"></a>Trenowanie modeli sztucznej Inteligencji w usłudze Azure Batch AI
 
@@ -34,9 +34,9 @@ Jest zintegrowany z Visual Studio Tools dla sztucznej Inteligencji, dzięki czem
 
     ![Galeria przykładów](media\train-model\batchai.png)
 
-3. Wybierz **Widok > Team Explorer...**  otworzyć **Team Explorer** okna, w którym można połączyć się z usługi GitHub lub Visual Studio Team Services lub klonowanie repozytorium.
+3. Wybierz **Widok > Team Explorer...**  otworzyć **Team Explorer** okna, w którym można połączyć się z usługi GitHub lub DevOps platformy Azure lub klonowanie repozytorium.
 
-    ![Zespół przedstawiający okno Eksploratora Visual Studio Team Services, GitHub i klonowanie repozytorium](media\train-model\team-explorer.png)
+    ![Okno Eksploratora zespołu DevOps platformy Azure, usługi GitHub, wyświetlanie i klonowanie repozytorium](media\train-model\team-explorer.png)
 
 4. W polu adres URL w taki sposób, w obszarze **lokalne repozytoria Git**, wprowadź `https://github.com/Microsoft/samples-for-ai`, wprowadź folderu na sklonowane pliki i wybierz **klonowania**.
 

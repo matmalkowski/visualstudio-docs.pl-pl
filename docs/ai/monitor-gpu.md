@@ -1,20 +1,20 @@
 ---
 ms.technology: vs-ai-tools
-ms.openlocfilehash: 68656a042ba76dba3cc534e707612f02d23f640c
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: b97517b8b469e5518b3973239d1d5dc5008b6b6a
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/28/2018
-ms.locfileid: "29709105"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281588"
 ---
-# <a name="monitoring-gpu-utilization"></a>Monitorowanie wykorzystania procesora GPU
-Aby monitorować użycie procesora GPU zdalnego maszyn systemu Linux:
+# <a name="monitoring-gpu-utilization"></a>Monitorowanie użycia procesora GPU
+Aby monitorować użycie procesora GPU zdalnego maszyn z systemem Linux:
 
-1. W **Eksploratora serwera**, rozwiń węzeł **komputerach zdalnych**
-2. **Kliknij prawym przyciskiem myszy** komputera zdalnego, który chcesz monitorować
+1. W **Eksploratora serwera**, rozwiń węzeł **maszynach zdalnych**.
+2. **Kliknij prawym przyciskiem myszy** komputer zdalny, którą chcesz monitorować.
 
-    ![heatmap procesora GPU](media\monitor-gpu\gpu-heatmap-0.png)
+    ![mapy cieplnej procesora GPU](media\monitor-gpu\gpu-heatmap-0.png)
 
-2. Kliknij przycisk **Pokaż Mapa cieplna**
+2. Kliknij przycisk **Pokaż mapę cieplną**.
 
-    ![heatmap procesora GPU](media\monitor-gpu\heatmap.png)
+    ![mapy cieplnej procesora GPU](media\monitor-gpu\heatmap.png)

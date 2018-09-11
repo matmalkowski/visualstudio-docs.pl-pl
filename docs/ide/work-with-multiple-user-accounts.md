@@ -9,12 +9,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 64e51bd43d278eb681d08b785c2a7d0c9539ee23
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 0eaba2b81467c60e900aa70b633e15b81175ffc7
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179700"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283473"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Praca z wieloma kontami użytkowników
 
@@ -59,9 +59,9 @@ Usługa Azure AD umożliwia obsługę użytkownika końcowego logowania jednokro
 
 Aby uzyskać więcej informacji na temat różnych rodzajów uwierzytelniania w programie ASP.NET: zobacz [projekty sieci web ASP.NET tworzenie w programie Visual Studio 2013](http://www.asp.net/visual-studio/overview/2013/creating-web-projects-in-visual-studio#orgauth) (informacje o uwierzytelnianiu jest nadal istotne dla bieżącej wersji programu Visual Studio).
 
-### <a name="access-your-visual-studio-team-services-account"></a>Dostęp do konta programu Visual Studio Team Services
+### <a name="access-your-team-foundation-server-tfs-organization"></a>Dostęp do Twojej organizacji Team Foundation Server (TFS)
 
-W menu głównym wybierz **zespołu** > **nawiązywanie połączenia z Team Foundation Server** aby przywołać **Team Explorer** okna. Kliknij pozycję **Wybierz projekty zespołowe**, a następnie w polu listy **wybierz Team Foundation Server**, powinien zostać wyświetlony adres URL dla konta usługi Visual Studio Team Services. Po wybraniu adresu URL możesz będą rejestrowane w bez konieczności ponownego wprowadzania poświadczeń.
+W menu głównym wybierz **zespołu** > **nawiązywanie połączenia z Team Foundation Server** aby przywołać **Team Explorer** okna. Kliknij pozycję **Wybierz projekty**, a następnie w polu listy **wybierz Team Foundation Server**, powinien zostać wyświetlony adres URL dla Twojej organizacji programu TFS. Po wybraniu adresu URL możesz będą rejestrowane w bez konieczności ponownego wprowadzania poświadczeń.
 
 ## <a name="add-a-second-user-account-to-visual-studio"></a>Dodawanie drugiego konta użytkownika w programie Visual Studio
 

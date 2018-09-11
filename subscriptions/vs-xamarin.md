@@ -9,12 +9,12 @@ description: Dowiedz się więcej na temat subskrypcji platformy Xamarin Univers
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 631a8e692f494c672b8c0894ca7b8434f11525dd
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: b939aaeaa201b141e3263ddf9ae35ebc049af6f3
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42624242"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280353"
 ---
 # <a name="xamarin-university-training-benefit-in-visual-studio-subscriptions"></a>Korzyści szkoleń Xamarin University w subskrypcji programu Visual Studio
 
@@ -88,4 +88,4 @@ Konto usługi Xamarin University A: i postęp pozostaną nienaruszone, ale Twoja
 ## <a name="support-resources"></a>Zasoby pomocy technicznej
 -  Potrzebujesz pomocy przy użyciu platformy Xamarin University?  Możesz znaleźć szeroką gamę zasobów pomocy technicznej na [ https://university.xamarin.com/support ](https://university.xamarin.com/support).
 -  Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z pomocą programu Visual Studio [pomoc techniczna dla subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/).
--  Masz pytanie dotyczące środowiska IDE programu Visual Studio, Visual Studio Team Services lub innych produktów Visual Studio lub usług?  Odwiedź stronę [pomoc techniczna dla programu Visual Studio](https://visualstudio.microsoft.com/support/).
+-  Masz pytanie dotyczące programu Visual Studio IDE, usługom DevOps platformy Azure lub innych produktów Visual Studio lub usług?  Odwiedź stronę [pomoc techniczna dla programu Visual Studio](https://visualstudio.microsoft.com/support/).

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 472fcda584db4bf6cd16c386fec4b3e668f44a9f
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: d7ee37ddd9899b979d8440202c89d03284b26f48
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341679"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279079"
 ---
 # <a name="compile-and-build-in-visual-studio"></a>Skompilować i utworzyć w programie Visual Studio
 
@@ -28,7 +28,7 @@ Przez kompilacjom kodu, można szybko zidentyfikować błędy kompilacji, takie 
 
 Pomyślnej kompilacji jest zasadniczo weryfikacji, że kod źródłowy aplikacji zawiera poprawną składnię i wszystkie statyczne odwołania do bibliotek, zespoły i inne składniki zostały rozwiązane. To tworzy plik wykonywalny aplikacji, który można następnie pod kątem prawidłowego działania w obu [debugowania środowiska](../debugger/index.md) i przy użyciu różnych ręcznych i automatycznych testów [weryfikować jakość kodu](../test/improve-code-quality.md). Po w pełni przetestowano aplikację można skompilować wydaną wersję do wdrażania na klientach. Aby zapoznać się z wprowadzeniem do tego procesu, zobacz [przewodnik: budowanie aplikacji](../ide/walkthrough-building-an-application.md).
 
-W ramach rodziny produktów Visual Studio, istnieją trzy metody, które służy do tworzenia aplikacji: środowiska IDE programu Visual Studio, narzędzia wiersza polecenia programu MSBuild i Team Foundation Build w Visual Studio Team Services:
+Używasz jednej z następujących metod do tworzenia aplikacji: środowiska IDE programu Visual Studio, program MSBuild narzędzia wiersza polecenia, Team Foundation Build i usługom DevOps platformy Azure:
 
 | Metoda kompilacji | Zalety |
 | --- |--- | --- |
@@ -36,7 +36,7 @@ W ramach rodziny produktów Visual Studio, istnieją trzy metody, które służy
 | Wiersz polecenia programu MSBuild| -Kompilować projekty bez konieczności instalowania programu Visual Studio.<br />-Tworzy wykonywania wielu procesorach dla wszystkich typów projektów.<br />-Dostosować większość obszarów systemu kompilacji.|
 | Team Foundation Build | — Automatyzowanie procesu kompilacji w ramach potoku ciągłej integracji/ciągłego dostarczania.<br />-Zastosować testy automatyczne z każdą kompilacją.<br />-Zatrudniać praktycznie nieograniczona liczba zasobów w chmurze dla procesów kompilacji.<br />-Modyfikować przepływ kompilacji oraz tworzyć aktywności kompilacji, aby wykonywać zadania wysoce niestandardowe.|
 
-Dokumentacja w tej sekcji przechodzi w stan więcej szczegółowych informacji z procesu kompilacji oparte na środowisku IDE. Aby uzyskać więcej informacji o innych metodach, zobacz [MSBuild](../msbuild/msbuild.md) i [ciągłej integracji i ciągłego wdrażania](/vsts/pipelines/index?view=vsts)odpowiednio.
+Dokumentacja w tej sekcji przechodzi w stan więcej szczegółowych informacji z procesu kompilacji oparte na środowisku IDE. Aby uzyskać więcej informacji o innych metodach, zobacz [MSBuild](../msbuild/msbuild.md) i [potoki Azure](/azure/devops/pipelines/index?view=vsts)odpowiednio.
 
 ## <a name="overview-of-building-from-the-ide"></a>Omówienie tworzenia z poziomu środowiska IDE
 

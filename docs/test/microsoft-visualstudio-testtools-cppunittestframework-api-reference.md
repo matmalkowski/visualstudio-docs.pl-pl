@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: mikeblome
-ms.openlocfilehash: 0d5ee9379337f64b413b4d040f6ce5590baaeb41
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 8309ee96b0948739124e0e23c4a57dd136f63362
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43776200"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280925"
 ---
 # <a name="microsoftvisualstudiotesttoolscppunittestframework-api-reference"></a>Dokumentacja interfejsu API z Microsoft.VisualStudio.TestTools.CppUnitTestFramework
 
@@ -24,7 +24,7 @@ W tym temacie wymieniono publiczne elementy członkowskie `Microsoft::VisualStud
 
  Pliki lib znajdują się w _InstallFolder VisualStudio2012 [x 86]_**\VC\UnitTest\lib** folderu.
 
-Nagłówek i lib ścieżki zostaną automatycznie skonfigurowane w natywnego projektu testowego.
+Nagłówek i lib ścieżki są konfigurowane automatycznie w projekcie testowym natywnych.
 
 ##  <a name="In_this_topic"></a> W tym temacie
  [CppUnitTest.h](#cppUnitTest_h)

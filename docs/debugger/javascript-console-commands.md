@@ -14,16 +14,16 @@ manager: douge
 ms.workload:
 - uwp
 - cordova
-ms.openlocfilehash: c14cce73da0c83fefc3461d61d16a062af365db7
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 8642d59beb845bf2784d09133a590a4716897ed4
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154375"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282212"
 ---
 # <a name="javascript-console-commands-in-visual-studio"></a>Polecenia konsoli JavaScript w programie Visual Studio
   
- Polecenia umożliwiają wysyłanie komunikatów oraz wykonywania innych zadań w oknie konsoli JavaScript programu Visual Studio. Przykłady pokazujące, jak używać tego okna, zobacz [Szybki Start: debugowanie kodu JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md). Informacje przedstawione w tym temacie mają zastosowanie do aplikacji platformy uniwersalnej systemu Windows i aplikacje utworzone przy użyciu programu Visual Studio Tools for Apache Cordova. Aby uzyskać informacje na temat obsługiwanych konsoli poleceń w aplikacji Cordova, zobacz [Debug Your App](https://taco.visualstudio.com/en-us/docs/debug-using-visual-studio/). Aby uzyskać informacje na temat korzystania z konsoli w programie Internet Explorer F12 tools, zobacz [w tym temacie](http://msdn.microsoft.com/library/ie/dn255006.aspx).  
+ Polecenia umożliwiają wysyłanie komunikatów oraz wykonywania innych zadań w oknie konsoli JavaScript programu Visual Studio. Przykłady pokazujące, jak używać tego okna, zobacz [Szybki Start: debugowanie kodu JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md). Informacje przedstawione w tym temacie mają zastosowanie do aplikacji platformy uniwersalnej systemu Windows i aplikacje utworzone przy użyciu programu Visual Studio Tools for Apache Cordova. Aby uzyskać informacje na temat obsługiwanych konsoli poleceń w aplikacji Cordova, zobacz [Debug Your App](https://taco.visualstudio.com/en-us/docs/debug-using-visual-studio/). Aby uzyskać informacje na temat korzystania z konsoli w programie Internet Explorer F12 tools, zobacz [w tym temacie](/previous-versions/windows/internet-explorer/ie-developer/samples/dn255006(v=vs.85)).  
   
  Jeśli nastąpi zamknięcie okna konsoli języka JavaScript, możesz go otworzyć podczas debugowania w programie Visual Studio, wybierając **debugowania** > **Windows** > **języka JavaScript Konsola**.  
   
@@ -132,4 +132,4 @@ console.log("%s is %f years old!", user.first, user.age);
   
 ## <a name="see-also"></a>Zobacz też  
  [Szybki Start: Debugowanie kodu JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)   
- [Szybki Start: Debugowanie HTML i CSS](../debugger/quickstart-debug-html-and-css.md)
+ [Szybki start: debugowanie kodu HTML i CSS](../debugger/quickstart-debug-html-and-css.md)

@@ -1,5 +1,5 @@
 ---
-title: Zatrzymaj debugowanie w oknie dialogowym postępu | Dokumentacja firmy Microsoft
+title: Zatrzymywanie debugowania w okno dialogowe postępu | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -21,21 +21,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fe7eca0124869a9c636738c8641f5d2e97e63404
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 3a6e13967cc18fae8d837cc71ea8a91c60f2b1bb
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31475692"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281198"
 ---
 # <a name="stop-debugging-in-progress-dialog-box"></a>Zatrzymanie trwającego debugowania — Okno dialogowe
-To okno dialogowe jest wyświetlany, gdy debuger próbuje zatrzymać sesję debugowania, ale zatrzymywania sesji jest, aby zająć trochę czasu. Zatrzymanie sesji debugowania jest zazwyczaj bardzo szybko i nie ma tego okna dialogowego. Czasami jednak potrzebny dodatkowy czas można odłączyć od wszystkich procesów debugowany. Zatrzymanie sesji zajmuje więcej niż kilka sekund (lub jeśli wystąpi awaria detach), zostanie wyświetlone okno dialogowe. W takim przypadku często, może to być spowodowane wystąpił problem wewnętrzny i można się z pomocą techniczną.  
+To okno dialogowe pojawia się, gdy debuger próbuje zatrzymać sesję debugowania, ale zatrzymywania sesji jest zamierza zająć trochę czasu. Zatrzymywanie sesji debugowania jest zazwyczaj bardzo szybkie i nie ma tego okna dialogowego. Czasami jednak zajmuje dodatkowy czas, aby odłączyć od wszystkich procesów, które są debugowane. Jeśli zatrzymywania sesji przyjmuje więcej niż kilku sekund (lub jeśli wystąpi błąd odłączania), pojawi się okno dialogowe. W takim przypadku często, może to być spowodowane problem wewnętrzny i chcesz się z pomocą techniczną.  
   
- Poczekaj, aż procesy, aby odłączyć i to okno dialogowe do zniknąć lub użyj **Zatrzymaj** przycisk, aby wymusić natychmiastowe przerwanie działania.  
+ Poczekaj, aż procesy, które można odłączyć i to okno dialogowe zniknięcie lub użyj **Zatrzymaj** przycisk, aby wymusić natychmiastowe przerwanie działania.  
   
  **Zatrzymaj teraz**  
- Kliknij ten przycisk, aby zakończyć sesję debugowania natychmiast. Przy użyciu **Zatrzymaj** spowoduje przerwanie zamiast Odłączanie procesów debugowany. Jeśli są debugowanie procesów systemowych, zakończenie tych procesów z **Zatrzymaj** może mieć nieoczekiwane i niepożądane skutki.  
+ Kliknij ten przycisk, aby zakończyć sesję debugowania natychmiast. Za pomocą **Zatrzymaj** spowoduje przerwanie działania, a nie Odłączanie procesów debugowania. Jeśli debugujesz procesy systemowe zakończenie tych procesów za pomocą **Zatrzymaj** może mieć niepożądane i nieoczekiwane skutki.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Zabezpieczenia debugera](../debugger/debugger-security.md)   
- [Odłączanie programów](http://msdn.microsoft.com/en-us/f2c756c2-8079-474b-94c2-01c19a141a01)
+ [Trwa odłączanie programy](/previous-versions/visualstudio/visual-studio-2010/x1thkxez(v=vs.100))

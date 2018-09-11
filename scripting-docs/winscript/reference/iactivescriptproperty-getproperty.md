@@ -18,12 +18,12 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d55fb2d816931a74827d318e13860b3f97f0fd23
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 7cd5c7ac948a9001688de69f9db9ee31624ca33d
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793969"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44284149"
 ---
 # <a name="iactivescriptpropertygetproperty"></a>IActiveScriptProperty::GetProperty
 Pobiera właściwość, która jest określona przez parametr.  
@@ -43,7 +43,7 @@ HRESULT GetProperty(
   
 #### <a name="parameters"></a>Parametry  
  `dwProperty`  
- Wartości właściwości do pobrania.  
+ Wartość właściwości, które można pobrać.  
   
  `pvarIndex`  
  Nie używany.  
@@ -55,10 +55,10 @@ HRESULT GetProperty(
   
 |Stała|Wartość|Znaczenie|  
 |--------------|-----------|-------------|  
-|SCRIPTPROP_INTEGERMODE|0x00003000|Wymusza aparat skryptów do dzielenia w trybie całkowitą zamiast przestawne trybie punktu.|  
-|SCRIPTPROP_STRINGCOMPAREINSTANCE|0x00003001|Umożliwia funkcji Porównaj ciąg aparat skryptów, które mają zostać zastąpione.|  
-|SCRIPTPROP_ABBREVIATE_GLOBALNAME_RESOLUTION|0x70000002|Informuje o aparatów skryptów, który istnieje innych aparatów skryptów przyczynić się do obiektu globalnego.|  
-|SCRIPTPROP_INVOKEVERSIONING|0x00004000|Wymusza [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] aparat skryptów, aby wybrać zestaw funkcji języka aby można było obsługiwać. Domyślny zestaw funkcji językowych obsługiwanych przez [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] aparat skryptów jest odpowiednikiem języka zestaw funkcji, które znajdowały się w wersji 5.7 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] aparatu skryptów.|  
+|SCRIPTPROP_INTEGERMODE|0x00003000|Wymusza silnik wykonywania skryptów do dzielenia w trybie całkowitą zamiast tryb punktu zmiennoprzecinkowego.|  
+|SCRIPTPROP_STRINGCOMPAREINSTANCE|0x00003001|Umożliwia korzystanie z funkcji porównania ciągu aparatu obsługi skryptów, które ma zostać zastąpione.|  
+|SCRIPTPROP_ABBREVIATE_GLOBALNAME_RESOLUTION|0x70000002|Informuje o aparatów skryptów, który ma przyczyniają się do obiektów globalnych innych aparatów obsługi skryptów.|  
+|SCRIPTPROP_INVOKEVERSIONING|0x00004000|Wymusza [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] silnik wykonywania skryptów, aby wybrać zestaw funkcji języka, które są obsługiwane. Domyślny zestaw funkcji językowych obsługiwanych przez [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] silnik wykonywania skryptów jest odpowiednikiem zestawu funkcji języka, które pojawiło się w wersji 5.7 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] silnik wykonywania skryptów.|  
   
 ## <a name="return-value"></a>Wartość zwracana  
  Zwraca jedną z następujących wartości:  
@@ -67,14 +67,14 @@ HRESULT GetProperty(
 |------------------|-------------|  
 |`S_OK`|Powodzenie.|  
 |`E_INVALIDARG`|Argument jest nieprawidłowy.|  
-|`E_UNEXPECTED`|Nie oczekiwano wywołania (na przykład aparatu skryptów jeszcze nie został załadowany lub zainicjować).|  
+|`E_UNEXPECTED`|Nie oczekiwano wywołania (na przykład aparat skryptów jeszcze nie został załadowany lub zainicjowany).|  
   
 ## <a name="remarks"></a>Uwagi  
- Hosta można użyć właściwości SCRIPTPROP_ABBREVIATE_GLOBALNAME_RESOLUTION informują o tym aparatów skryptów, który istnieje innych aparatów skryptów przyczynić się do obiektu globalnego. Na przykład program Internet Explorer można poinformować [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] aparatu, zawierający tylko renderowanej strony [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] skryptów. W związku z tym tylko [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] aparat można dodać nowych właściwości do okna obiekt globalny i nie żaden aparat Visual Basic Scripting Edition (VBScript) na tym samym. Aparat można zignorować tę flagę lub służy do optymalizacji zarządzania nowych elementów członkowskich, które są dodawane do globalnego obiektu.  
+ Hosta można użyć właściwości SCRIPTPROP_ABBREVIATE_GLOBALNAME_RESOLUTION poinformować aparatów skryptów, który ma przyczyniają się do obiektów globalnych innych aparatów obsługi skryptów. Na przykład, program Internet Explorer mogą informować [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] renderowanej strony zawiera jedynie aparat [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] skryptów. W związku z tym tylko [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] aparatu można dodać nowe właściwości do okna obiekt globalny, a istnieje żaden aparat Visual Basic Scripting Edition (VBScript), aby zrobić to samo. Silnik może ignorują tę flagę lub można go używać do zarządzania nowych elementów członkowskich, które są dodawane do obiektów globalnych optymalizacji.  
   
- Hosta można użyć właściwości SCRIPTPROP_INVOKEVERSIONING wybierz zestaw funkcji języka aby być obsługiwane w przypadku [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] aparat skryptów jest uruchomiona. Jeśli ta właściwość jest ustawiona na wartość 1 (SCRIPTLANGUAGEVERSION_5_7), funkcje językowe dostępne są takie same jak te, które znajdowały się w wersji 5.7 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] aparatu skryptów. Jeśli ustawiono 2 (SCRIPTLANGUAGEVERSION_5_8), funkcje językowe dostępne są te, które znajdowały się w wersji 5.7 Oprócz funkcji, które zostały dodane w wersji 5.8. Domyślnie ta właściwość jest równa 0 (SCRIPTLANGUAGEVERSION_DEFAULT), który jest odpowiednikiem języka zestaw funkcji, które znajdowały się w wersji 5.7, chyba że host obsługuje różne domyślne zachowanie. Na przykład wybranych programu Internet Explorer 8 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] funkcje językowe obsługiwane przez wersję 5.8 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] aparat skryptów domyślnie, gdy tryb dokumentu dla programu Internet Explorer 8 jest tryb "Standardów programu Internet Explorer 8".  
+ Hosta można użyć właściwości SCRIPTPROP_INVOKEVERSIONING wybrać zestaw funkcji języka, aby być obsługiwane w przypadku [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] silnik wykonywania skryptów jest uruchomiona. Jeśli ta właściwość jest ustawiona na 1 (SCRIPTLANGUAGEVERSION_5_7), funkcje językowe dostępne są takie same, jak te, które znajdowały się w wersji 5.7 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] silnik wykonywania skryptów. Jeśli jest ustawiona na 2 (SCRIPTLANGUAGEVERSION_5_8), funkcje językowe dostępne są te, które znajdowały się w wersji 5.7 Oprócz funkcji, które zostały dodane w wersji 5.8. Domyślnie właściwość ta jest równa 0 (SCRIPTLANGUAGEVERSION_DEFAULT), który jest odpowiednikiem zestawu funkcji języka, które pojawiło się w wersji 5.7, chyba że host obsługuje różne domyślne zachowanie. Na przykład programu Internet Explorer 8 zdecyduje się na [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] funkcji językowych obsługiwanych przez wersję 5.8 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] silnik wykonywania skryptów domyślnie, gdy tryb dokumentu dla programu Internet Explorer 8 jest tryb "Standardów programu Internet Explorer 8".  
   
 ## <a name="see-also"></a>Zobacz też  
- [Definiowanie zgodności dokumentów](http://msdn.microsoft.com/library/cc288325)   
+ [Definiowanie zgodności dokumentów](https://docs.microsoft.com/previous-versions/windows/internet-explorer/ie-developer/compatibility/cc288325(v=vs.85))   
  [IActiveScriptProperty](../../winscript/reference/iactivescriptproperty.md)   
  [Informacje o wersji](../../javascript/reference/javascript-version-information.md)

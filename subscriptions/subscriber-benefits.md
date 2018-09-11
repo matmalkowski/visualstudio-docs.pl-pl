@@ -9,12 +9,12 @@ description: Dowiedz się więcej o korzyściach zawarte w Twojej subskrypcji pr
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 0dfde28ab55ffadd08d0be3d863d0772604482ed
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: a3fb7fd86a5a875c16072792d9d82737b5f19160
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381549"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282225"
 ---
 # <a name="benefits-included-in-your-visual-studio-subscription"></a>Korzyści zawarte w Twojej subskrypcji programu Visual Studio
 
@@ -23,7 +23,7 @@ Subskrypcje programu Visual Studio oferują najbardziej wszechstronny zestaw zas
 Korzyści są podzielone na trzy kategorie:
 
 ## <a name="tools"></a>Narzędzia
-Kategoria narzędzi zapewnia dostęp do szerokiej gamy korzyści, w tym sztandarowe korzyści, takich jak [środowiska IDE programu Visual Studio](vs-ide-benefit.md), [Visual Studio Team Services](vs-vsts.md), i [Azure](vs-azure.md) .  W zależności od poziomu subskrypcji również zobaczysz Windows i konta dewelopera Office 365, Visual Studio App Center i korzyści oferowanych przez partnerów, takich jak WhiteSource Bolt i ModernRequirements.
+Kategoria narzędzi zapewnia dostęp do szerokiej gamy korzyści, w tym sztandarowe korzyści, takich jak [środowiska IDE programu Visual Studio](vs-ide-benefit.md), [usługom DevOps platformy Azure](vs-azure-devops.md), i [Azure](vs-azure.md).  W zależności od poziomu subskrypcji również zobaczysz Windows i konta dewelopera Office 365, Visual Studio App Center i korzyści oferowanych przez partnerów, takich jak WhiteSource Bolt i ModernRequirements.
 
 ## <a name="professional-development"></a>Profesjonalne programowanie
 Ułatwiają ciągłe zwiększyć swoje umiejętności wykorzystać i na bieżąco najnowszych technologii, oferujemy dostęp do niektórych najbardziej dostępnego szkolenia online od liderów branży. Przykłady doskonałe dostępnej zawartości:

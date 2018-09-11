@@ -1,31 +1,31 @@
 ---
-title: Kontrola wersji TF
-description: Łączenie się z Team Foundation Server lub Visual Studio Team Services z kontrolą wersji Team Foundation.
+title: Team Foundation Version Control (TFVC)
+description: Łączenie z Team Foundation Server lub usługi Azure DevOps z Team Foundation Version Control (TFVC).
 author: conceptdev
 ms.author: crdun
-ms.date: 05/03/2018
+ms.date: 09/05/2018
 ms.topic: article
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
-ms.openlocfilehash: 101f002f6c311fe5aaefa78c246602fd45514603
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: b8d5f8f39b524bbde9e6988a924cf3b938fedb23
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42623968"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279845"
 ---
-# <a name="connecting-to-team-foundation-version-control"></a>Nawiązywanie połączenia z kontrolą wersji Team Foundation 
+# <a name="connecting-to-team-foundation-version-control"></a>Nawiązywanie połączenia z Team Foundation Version Control 
 
 > [!NOTE]
 > **Uwaga**: Obsługa kontroli wersji serwera Team Foundation jest obecnie w wersji zapoznawczej, a niektóre funkcje nie jeszcze w pełni działa. Chętnie poznamy opinii od Ciebie na wszelkie problemy w [społeczności deweloperów](https://developercommunity.visualstudio.com/spaces/41/index.html). Zmiany są nadal pochodzić!
 
-Visual Studio Team Services (VSTS) i Team Foundation Server (TFS) zapewnia dwa modele kontroli wersji: Git, która jest rozłożona Kontrola wersji i Team Foundation Version kontroli (TFVC), czyli scentralizowany formant wersji. Ten artykuł zawiera omówienie oraz punkt początkowy dla przy użyciu Team Foundation Version Control za pomocą programu Visual Studio dla komputerów Mac.
+Repozytoriów platformy Azure oferuje dwa modele kontroli wersji: Git, która jest rozłożona Kontrola wersji i Team Foundation Version kontroli (TFVC), czyli scentralizowany formant wersji. Ten artykuł zawiera omówienie oraz punkt początkowy dla zastosowaniem funkcji TFVC za pomocą programu Visual Studio dla komputerów Mac.
 
 ## <a name="requirements"></a>Wymagania
 
 * Visual Studio Community, Professional lub Enterprise dla komputerów Mac w wersji 7.5 lub nowszej.
-* Visual Studio Team Services lub serwera Team Foundation Server 2013 lub nowszym.
-* Projekt w programie Visual Studio Team Services lub Team Foundation Server skonfigurowany do używania kontroli wersji serwera Team Foundation.
+* Usługom DevOps platformy Azure lub programu Team Foundation Server 2013 lub nowszym.
+* Projekt w usługom DevOps platformy Azure lub Team Foundation Server skonfigurowany do używania kontroli wersji serwera Team Foundation.
 
 ## <a name="installation"></a>Instalacja
 
@@ -47,17 +47,19 @@ Aby uzyskać informacji na temat nowości w każdej wersji, zobacz [informacje o
 
 ## <a name="using-the-add-in"></a>Za pomocą dodatku
 
-Po zainstalowaniu rozszerzenia wybierz **kontroli wersji > TFS/VSTS > Otwórz ze zdalnego repozytorium** elementu menu. 
+Po zainstalowaniu rozszerzenia wybierz **kontroli wersji > DevOps programu TFS/platformy Azure > Otwórz ze zdalnego repozytorium** elementu menu.
 
-Wybierz pozycję Visual Studio Team Services lub serwera Team Foundation Server, aby rozpocząć pracę, a następnie naciśnij klawisz **Kontynuuj**:
+  ![Element menu, aby otworzyć rozszerzenia](media/tfvc-source-control-explorer-devops.png)
 
-  ![Łączenie z serwerem](media/tfvc-choose-server-type.png)
+Wybierz usługi VSTS lub serwera Team Foundation Server, aby rozpocząć pracę, a następnie naciśnij klawisz **Kontynuuj**:
 
-### <a name="vsts-authentication"></a>Uwierzytelnianie usługi VSTS
+  ![Łączenie z serwerem](media/tfvc-choose-server-type-devops.png)
 
-Po wybraniu projektu, który znajduje się w usłudze VSTS, monit o podanie szczegółów konta Microsoft:
+### <a name="azure-repos-authentication"></a>Uwierzytelnianie repozytoriów platformy Azure
 
-  ![Nawiązać połączenie z serwerem usługi VSTS](media/tfvc-vsts-login.png)
+Po wybraniu projektu, który znajduje się na repozytoriów platformy Azure, monit o podanie szczegółów konta Microsoft:
+
+  ![Połącz się z repozytoriów platformy Azure](media/tfvc-vsts-login.png)
 
 ### <a name="tfs-authentication"></a>Uwierzytelnianie serwera TFS
 
@@ -73,10 +75,10 @@ Po użytkownik został pomyślnie uwierzytelniony, można wyświetlić listę re
 
 To okno dialogowe jest zorganizowana przy użyciu następujących węzłów:
 
-- Konto usługi VSTS lub kolekcji — spowoduje to wyświetlenie wszystkich kont, połączone konta Microsoft, w której użytkownik jest zalogowany przy użyciu
-- Projekty zespołowe — w ramach każdej usługi VSTS, może mieć wiele projektów zespołowych. Projekt zespołowy jest hostujące kod źródłowy, elementy robocze i automatyczne kompilacje.
+- Usługa Azure DevOps usług organizacji lub kolekcji — zostaną wyświetlone wszystkie organizacje podłączone do konta Microsoft, którego zalogowano się przy użyciu.
+- Projekty — w każdej organizacji lub kolekcji, może mieć wiele projektów. Projekt jest, gdzie hostowana kod źródłowy, elementy robocze i automatyczne kompilacje.
 
-W tym momencie wyszukiwanie i filtrowanie według nazwy konta lub projektu.
+W tym momencie wyszukiwanie i filtrowanie według nazwy projektu lub organizacji.
 
 ### <a name="adding-a-new-server"></a>Dodawanie nowego serwera
 
@@ -86,7 +88,7 @@ Aby dodać nowy serwer do listy, naciśnij klawisze **Dodaj hosta** znajdujący 
 
 Wybierz dostawcę z listy, a następnie wprowadź swoje poświadczenia:
 
-![Okno dialogowe z wyświetloną opcją dostawcy kontroli źródła](media/tfvc-add-new-creds.png)
+![Okno dialogowe z wyświetloną opcją dostawcy kontroli źródła](media/tfvc-add-new-creds-devops.png)
 
 ## <a name="creating-a-new-workspace"></a>Tworzenie nowego obszaru roboczego
 
@@ -102,9 +104,7 @@ Ustaw nazwę i ścieżkę lokalną dla nowego obszaru roboczego i wybierz **Utw�
 
 Po utworzeniu obszaru roboczego i mapowany do projektu, możesz rozpocząć pracę z _Eksploratora kodu źródłowego_.
 
-Aby otworzyć Eksploratora kodu źródłowego, zaznacz **kontroli wersji > TFS/VSTS > Eksploratorze kontroli źródła**:
-
-![Element menu, aby otworzyć Eksploratora kodu źródłowego](media/tfvc-source-control-explorer.png)
+Aby otworzyć Eksploratora kodu źródłowego, zaznacz **kontroli wersji > DevOps programu TFS/platformy Azure > Eksploratorze kontroli źródła** elementu menu.
 
 Eksplorator kodu źródłowego umożliwia nawigowanie po wszystkich zamapowanych projektów, pliki i foldery. W tym obszarze można również wykonywać wszystkie akcje kontroli podstawowego źródła takie jak:
 
@@ -122,7 +122,7 @@ Wiele z tych działań są dostępne za pośrednictwem kontekst akcji dla projek
 
 ## <a name="managing-workspaces"></a>Zarządzanie obszarami roboczymi
 
-Jeśli nie jest jeszcze utworzyć obszar roboczy, zgodnie z opisem w [tworzenia obszaru roboczego](#creating-a-new-workspace) sekcji, można zauważyć, że Eksplorator kodu źródłowego jest puste:
+Jeśli nie utworzono jeszcze obszaru roboczego, zgodnie z opisem w [tworzenia obszaru roboczego](#creating-a-new-workspace) sekcji, można zauważyć, że Eksplorator kodu źródłowego jest puste:
 
 ![Źródło pusty Eksplorator kodu](media/tfvc-setup-empty-sce.png) 
 
@@ -134,11 +134,11 @@ Aby skonfigurować zdalne projektu za pomocą lokalnego obszaru roboczego, użyj
     
     ![Utwórz nowe okno dialogowe obszaru roboczego przedstawiający opcje domyślne](media/tfvc-workspace1.png) 
 
-1. Wybierz folder "$" mapowanie wszystkich projektów zespołowych na serwerze do tego samego obszaru roboczego, lub wybierz pojedynczego projektu, a następnie kliknij przycisk **OK**:
+1. Wybierz folder "$", aby mapować wszystkie projekty na serwerze do tego samego obszaru roboczego, lub wybierz pojedynczego projektu, a następnie kliknij przycisk **OK**:
     
     ![Przeglądaj w poszukiwaniu folderu okno dialogowe wyświetloną wszystkie projekty](media/tfvc-workspace2.png) 
 
-1. Wybierz lokalizację na lokalnym komputerze ma projekty, do punktu zarządzania i kliknij **wybierz Folder**.
+1. Wybierz lokalizację na lokalnym komputerze, którą chcesz zamapować te projekty do, a następnie kliknij przycisk **wybierz Folder**.
 1. Potwierdź szczegóły nowego obszaru roboczego, naciskając klawisz **OK**
     
     ![Tworzenie okna dialogowego Nowy obszar roboczy za pomocą folderu roboczego dodano](media/tfvc-workspace3.png) 
@@ -157,10 +157,10 @@ Następujące opcje może służyć do uwierzytelniania z serwerem:
 - Podstawowy
 - Uwierzytelnianie NTLM
 
-Do korzystania z uwierzytelniania podstawowego jest niezbędne do włączenia **uwierzytelniania alternatywnych poświadczeń** w usłudze VSTS, wykonując poniższe kroki:
+Do korzystania z uwierzytelniania podstawowego jest niezbędne do włączenia **uwierzytelniania alternatywnych poświadczeń** w usługom DevOps platformy Azure, wykonując poniższe kroki:
 
-1. Zaloguj się jako właściciel konta do konta usługi VSTS (https://{youraccount}.visualstudio.com).
-2. Z konto pasek narzędzi, wybierz ikonę koła zębatego, a następnie wybierz pozycję **zasad**:
+1. Zaloguj się do Twojej organizacji usługom DevOps platformy Azure jako właściciel (https://dev.azure.com/{organization}/{project}).
+2. Z organizacji paska narzędzi, wybierz ikonę koła zębatego, a następnie wybierz pozycję **zasad**:
     
     ![Wybrana opcja ustawień zasad](media/tfvc-auth2.png) 
 
@@ -172,11 +172,11 @@ Do korzystania z uwierzytelniania podstawowego jest niezbędne do włączenia **
 
 Aby ustawić się kontroli wersji Team Foundation (TFVC) na komputerze deweloperskim, możesz **musi** Utwórz obszar roboczy, zgodnie z opisem w [zarządzanie obszarami roboczymi](#managing-workspaces) sekcji.
 
-W Eksploratorze kontroli źródła, naciśnij klawisz **zarządzanie obszarami roboczymi** przycisku. Wykonaj kroki, aby zmapowanie projektu zespołowego do folderu na komputerze deweloperskim.
+W Eksploratorze kontroli źródła, naciśnij klawisz **zarządzanie obszarami roboczymi** przycisku. Wykonaj kroki do mapowania projektu do folderu na komputerze deweloperskim.
 
 ### <a name="i-do-not-see-any--all-of-my-projects"></a>Nie widzę żadnych / all moich projektów
 
-Po uwierzytelnieniu powinien zostać wyświetlony listy projektów. Domyślnie wyświetlane są tylko projekty TFS do. Aby wyświetlić innych typów projektów, zaznacz pole "Zobacz wszystkich projektów".
+Po uwierzytelnieniu powinien zostać wyświetlony listy projektów. Domyślnie są wyświetlane tylko w projektach programu TFS. Aby wyświetlić innych typów projektów, zaznacz pole "Zobacz wszystkich projektów".
 
 Należy pamiętać, że projekty, które znajdują się na serwerze nie będą widoczne, jeśli nie masz poprawne uprawnienia.
 

@@ -1,5 +1,5 @@
 ---
-title: Przy użyciu zapisywane są dane funkcji IntelliTrace | Dokumentacja firmy Microsoft
+title: Przy użyciu zapisanych danych funkcji IntelliTrace | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -17,260 +17,260 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 54412cff3047f12ec17c8192dc40cd4ebfcbf55b
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 6d3afcfc29dcb01de307f0aefc3a943626bc213d
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31479601"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44321219"
 ---
-# <a name="using-saved-intellitrace-data"></a>Przy użyciu zapisanych danych funkcji IntelliTrace
-Przejdź do określonych punktów podczas wykonywania aplikacji po rozpoczęciu debugowania z pliku IntelliTrace (.iTrace) dziennika. Ten plik może zawierać zdarzenia dotyczące wydajności, wyjątki wątków, kroków testu, moduły i inne informacje o systemie, czy rekordów funkcji IntelliTrace podczas sekwencji aplikacji.  
-  
- Upewnij się, że masz:  
-  
--   Dopasowywanie plików źródłowych i plików symboli (.pdb) dla kodu aplikacji. W przeciwnym razie program Visual Studio nie można rozpoznać lokalizacji źródłowej i zawiera komunikat "Nie odnaleziono symboli". Zobacz [Określ symboli (.pdb) i pliki źródłowe](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) i [diagnozowanie problemów po wdrożeniu](../debugger/diagnose-problems-after-deployment.md).  
-  
--   Visual Studio Enterprise (ale nie Professional lub Community Edition) na komputerze dewelopera lub innym komputerze można otworzyć .iTrace, pliki  
-  
--   Plik .iTrace z jednego z tych źródeł:  
-  
-    |**Źródło**|**Zobacz**|  
-    |----------------|-------------|  
-    |Sesji funkcji IntelliTrace w Visual Studio Enterprise (ale nie Professional lub Community Edition)|[Funkcje IntelliTrace](../debugger/intellitrace-features.md)|  
-    |Sesję testu w programie Microsoft Test Manager. Pliku .iTrace to dołącza do elementu roboczego Team Foundation Server.|[Zbieranie większej ilości danych podczas wykonywania testów ręcznych](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)|  
-    |Microsoft Monitoring Agent, albo samodzielnie lub z programu System Center 2012 R2 Operations Manager, platformy ASP.NET sieci web aplikacji i systemem we wdrożeniu aplikacji SharePoint|-   [Diagnozowanie problemów po wdrożeniu](../debugger/diagnose-problems-after-deployment.md)<br />-   [Co to jest nowe w programie System Center 2012 R2 Operations Manager](http://technet.microsoft.com/library/dn249700.aspx)|  
-  
-##  <a name="GetStarted"></a> Co chcesz zrobić?  
-  
--   [Otworzyć dziennika funkcji IntelliTrace](#Open)  
-  
--   [Zrozumienie dziennika funkcji IntelliTrace](#Understand)  
-  
--   [Rozpocznij debugowanie z dziennika funkcji IntelliTrace](#StartDebugging)  
-  
-##  <a name="Open"></a> Otworzyć dziennika funkcji IntelliTrace  
- Na komputerze przy użyciu programu Visual Studio Enterprise Otwórz plik .iTrace.  
-  
--   Kliknij dwukrotnie plik .iTrace poza programem Visual Studio lub Otwórz plik w programie Visual Studio.  
-  
-     \- lub -  
-  
--   Jeśli pliku .iTrace jest dołączony do elementu roboczego Team Foundation Server, wykonaj następujące kroki w elementu roboczego:  
-  
-    -   W obszarze **wszystkie linki**, odnaleźć pliku .iTrace. Go otworzyć.  
-  
-         \- lub -  
-  
-    -   W obszarze **Opisz kroki**, wybierz **IntelliTrace** łącza.  
-  
+# <a name="using-saved-intellitrace-data"></a>Korzystanie z zapisanych danych funkcji IntelliTrace
+Przejdź do określonych punktów w wykonywaniu swojej aplikacji, gdy zaczynasz debugowanie z pliku dziennika (.iTrace) funkcji IntelliTrace. Ten plik może zawierać zdarzeń dotyczących wydajności, wyjątki, wątki, kroki testu, moduły i inne informacje systemowe, że IntelliTrace podczas pracy Twojej aplikacji.
+
+ Upewnij się, że masz:
+
+-   Pasujące pliki źródłowe i pliki symboli (.pdb) dla kodu aplikacji. W przeciwnym razie program Visual Studio nie może rozpoznać lokalizacji źródłowych i wyświetla komunikat "Nie można odnaleźć symboli". Zobacz [Określ symboli (.pdb) i plików źródłowych](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) i [diagnozowanie problemów po wdrożeniu](../debugger/diagnose-problems-after-deployment.md).
+
+-   Program Visual Studio Enterprise (ale nie Professional lub Community Edition) na komputerze deweloperskim lub innym komputerze, aby otworzyć pliki .iTrace
+
+-   Plik .iTrace z jednego z tych źródeł:
+
+    |**Źródło**|**Zobacz**|
+    |----------------|-------------|
+    |Sesja IntelliTrace w Visual Studio Enterprise (ale nie Professional lub Community)|[Funkcje IntelliTrace](../debugger/intellitrace-features.md)|
+    |Sesji testowej w programie Microsoft Test Manager. Dołącza plik .iTrace do elementu roboczego Team Foundation Server.|[Zbieranie większej ilości danych podczas wykonywania testów ręcznych](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)|
+    |Program Microsoft Monitoring Agent, albo samodzielnie lub z programem System Center 2012 R2 Operations Manager dla platformy ASP.NET i aplikacje sieci web aplikacji programu SharePoint, działające we wdrożeniu|-   [Diagnozowanie problemów po wdrożeniu](../debugger/diagnose-problems-after-deployment.md)<br />-   [What's New for System Center 2012 R2 Operations Manager](http://technet.microsoft.com/library/dn249700.aspx)|
+
+##  <a name="GetStarted"></a> Co chcesz zrobić?
+
+-   [Otwórz dziennik IntelliTrace](#Open)
+
+-   [Informacje w dzienniku IntelliTrace](#Understand)
+
+-   [Rozpocznij debugowanie z dziennika funkcji IntelliTrace](#StartDebugging)
+
+##  <a name="Open"></a> Otwórz dziennik IntelliTrace
+ Na komputerze przy użyciu programu Visual Studio Enterprise Otwórz plik .iTrace.
+
+-   Kliknij dwukrotnie plik .iTrace, poza Visual Studio lub Otwórz plik z poziomu programu Visual Studio.
+
+     \- lub —
+
+-   Jeśli plik .iTrace jest dołączony do elementu roboczego Team Foundation Server, wykonaj następujące kroki w elemencie roboczym:
+
+    -   W obszarze **wszystkie łącza**, Znajdź plik .iTrace. Otwórz go.
+
+         \- lub —
+
+    -   W obszarze **kroki odtwarzania**, wybierz **IntelliTrace** łącza.
+
 > [!TIP]
->  Jeśli został zamknięty pliku funkcji IntelliTrace podczas debugowania, możesz uruchomić go w prosty sposób. Przejdź do **debugowania** menu, wybierz **IntelliTrace**, **wyświetlić podsumowanie dziennika**. Można również wybrać **wyświetlić podsumowanie dziennika** w **IntelliTrace** okna. To jest dostępna tylko podczas debugowania przy użyciu funkcji IntelliTrace.  
-  
-##  <a name="Understand"></a> Zrozumienie dziennika funkcji IntelliTrace  
- Niektóre z następujących sekcji w pliku .iTrace są wyświetlane tylko wtedy, gdy użytkownik zbiera dane z określonego źródła, na przykład z programu Test Manager lub z aplikacji programu SharePoint.  
-  
-|**Sekcja**|**zawiera**|**Źródło kolekcji**|  
-|-----------------|------------------|---------------------------|  
-|[Naruszeń wydajności](#Performance)|Zdarzenia wydajności z wywołania funkcji, które przekracza skonfigurowany próg|Microsoft Monitoring Agent, albo autonomiczny moduł zbierający lub za pomocą programu System Center 2012 R2 Operations Manager dla aplikacji sieci web ASP.NET hostowanych w usługach IIS|  
-|[Dane wyjątku](#ExceptionData)|Wyjątki, łącznie ze stosu wywołań pełny dla każdego wyjątku|Wszystkie źródła|  
-|[Analiza](#Analysis)|SharePoint 2010 oraz SharePoint 2013 tylko dla aplikacji. Diagnozowanie zdarzenia funkcji IntelliTrace i programu SharePoint, na przykład zdarzenia debugera, ULS zdarzeń nieobsługiwanych wyjątków i inne dane, które są zarejestrowane w usłudze Microsoft Monitoring Agent.|Microsoft Monitoring Agent, albo autonomiczny moduł zbierający lub za pomocą programu System Center 2012 R2 Operations Manager|  
-|[Informacje o systemie](#SystemInfo)|Ustawienia i specyfikacji systemu hosta|Wszystkie źródła|  
-|[Lista wątków](#ThreadsList)|Wątki uruchomione podczas zbierania|Wszystkie źródła|  
-|[Dane testowe](#TestData)|Kroki testu i ich wyniki z sesji testowania|Test Manager|  
-|[Moduły](#Modules)|Moduły załadowanych w kolejności ich załadować procesu docelowego.|Wszystkie źródła| 
-|[Żądanie sieci Web](#Modules)|Dane żądania sieci Web w środowisku produkcyjnym IIS sieci web, aplikacji i programu SharePoint 2010 oraz SharePoint 2013|Microsoft Monitoring Agent i autonomiczny moduł zbierający| 
-  
- Oto kilka porad ułatwiających znajdowanie informacji w każdej sekcji:  
-  
--   Wybierz nagłówek kolumny, aby posortować dane.  
-  
--   Użyj pola wyszukiwania do filtrowania danych. Zwykły tekst wyszukiwania działa we wszystkich kolumnach, z wyjątkiem kolumn czasu. Można również filtrować wyszukiwania do określonej kolumny z jednego filtru dla kolumny. Wpisz nazwę kolumny nie może zawierać spacji, dwukropek (**:**), a wartość wyszukiwania. Wykonaj to średnikiem (**;**), aby dodać inną wartość w kolumnie i wyszukiwania.  
-  
-     Na przykład można znaleźć zdarzeń wydajności, które mają słowo "powolna" w **opis** kolumny, wpisz:  
-  
-     `Description:slow`  
-  
-##  <a name="StartDebugging"></a> Rozpocznij debugowanie z dziennika funkcji IntelliTrace  
-  
-###  <a name="Performance"></a> Naruszeń wydajności  
- Przejrzyj zdarzenia wydajności, które zostały zarejestrowane dla aplikacji. Te zdarzenia, które nie występują często można ukryć.  
-  
-##### <a name="to-start-debugging-from-a-performance-event"></a>Aby rozpocząć debugowanie z zdarzeń wydajności  
-  
-1.  W obszarze **naruszeń wydajności**, przejrzyj zdarzenia zarejestrowane wydajności, łączny czas wykonywania i innych informacji o zdarzeniu. Następnie zagłęb się w metody, które zostały wywołane podczas zdarzenia dotyczącego wydajności.  
-  
-     ![Wyświetl szczegóły zdarzeń dotyczących wydajności](../debugger/media/ffr_itsummarypageperformance.png "FFR_ITSummaryPagePerformance")  
-  
-     Możesz także po prostu dwukrotnie kliknąć zdarzenie.  
-  
-2.  Na stronie zdarzeń przejrzyj czasy wykonania dla tych wywołań. Odszukaj spowalniające wywołanie w drzewie wykonywania.  
-  
-     Najwolniejsze wywołania pojawiają się we własnej sekcji w przypadku wielu wywołań, zagnieżdżonych lub innych.  
-  
-3.  Rozwiń węzeł, że wywołanie wyświetlić zagnieżdżone wywołania i wartości parametrów, które zostały zarejestrowane w danym momencie.  
-  
-     (Klawiatury: Aby wyświetlić lub ukryć zagnieżdżone wywołania, naciśnij klawisz **Strzałka w prawo** lub **Strzałka w lewo** odpowiednio klucza. Aby pokazać lub ukryć wartości parametrów dla wywołania zagnieżdżonych, naciśnij klawisz **miejsca** klucza.)  
-  
-     Uruchom profilowanie z wywołania.  
-  
-     ![Rozpocznij debugowanie z wywołania metody](../debugger/media/ffr_itsummarypageperformancemethodscalled.png "FFR_ITSummaryPagePerformanceMethodsCalled")  
-  
-     Można także po prostu kliknij dwukrotnie połączenie lub naciśnij klawisz **Enter** klucza.  
-  
-     Jeśli metoda ta jest w kodzie aplikacji, program Visual Studio przechodzi do tej metody.  
-  
-     ![Przejdź do kodu aplikacji ze zdarzenia wydajności](../debugger/media/ffr_itsummarypageperformancegotocode.png "FFR_ITSummaryPagePerformanceGoToCode")  
-  
-     Teraz można przeglądać inne zarejestrowane wartości stosu wywołań kroków opisanych w kodzie, lub użyj **IntelliTrace** okna [przechodzenie wstecz lub do przodu "w czasie" między innymi metodami](../debugger/intellitrace.md) które zostały wywołane podczas To zdarzenie wydajności.  
-  
-###  <a name="ExceptionData"></a> Dane wyjątku  
- Przejrzyj wyjątki, które były generowane i zarejestrowane dla aplikacji. Możesz grupować wyjątki, które mają ten sam typ i stos wywołań, aby zobaczyć najnowsze wyjątek.  
-  
-##### <a name="to-start-debugging-from-an-exception"></a>Aby rozpocząć debugowanie z Wystąpił wyjątek  
-  
-1.  W obszarze **wyjątku**, przejrzeć zdarzenia zarejestrowane wyjątków, ich typów, wiadomości, i gdy wystąpiły wyjątki. Aby poznać więcej szczegółów związanych z kodem, rozpocznij debugowanie od ostatniego zdarzenia w grupie wyjątków.  
-  
-     ![Rozpocznij debugowanie z zdarzenie wyjątku](../debugger/media/ffr_itsummarypageexception.png "FFR_ITSummaryPageException")  
-  
-     Możesz także po prostu dwukrotnie kliknąć zdarzenie. Jeśli nie są grupowane zdarzenia, wybierz **debugowania tego zdarzenia**.  
-  
-     Jeśli wystąpił wyjątek w kodzie aplikacji, program Visual Studio przechodzi do tego miejsca.  
-  
-     ![Przejdź do kodu aplikacji z zdarzenie wyjątku](../debugger/media/ffr_itsummarypageexceptiongotocode.png "FFR_ITSummaryPageExceptionGoToCode")  
-  
-     Teraz można przejrzeć inne zarejestrowane wartości, stos wywołań, lub użyj **IntelliTrace** okna [przechodzenie wstecz lub do przodu "w czasie" między inne zarejestrowane zdarzenia](../debugger/intellitrace.md), kodu powiązanego i rejestrowane w wartości te punkty w czasie.  
-  
-    |**Kolumny**|**Pokazuje**|  
-    |----------------|-------------------|  
-    |**Typ**|Typ architektury .NET wyjątku|  
-    |**Najnowsze wiadomości** dla grupowane wyjątków lub **komunikat** niezgrupowane wyjątków|Komunikat wyjątku|  
-    |**Liczba** dla grupowane wyjątków|Ile razy został zgłoszony wyjątek|  
-    |**Identyfikator wątku** niezgrupowane wyjątków|Identyfikator wątku, który zgłosił wyjątek|  
-    |**Czas trwania zdarzenia najnowsze** lub **czas trwania zdarzenia**|Sygnatura czasowa rejestrowane, gdy wyjątek został zgłoszony|  
-    |**Stos wywołań**|Stos wywołań dla wyjątku.<br /><br /> Aby zobaczyć stos wywołań, wybierz z listy wyjątków. Stos wywołań pojawia się poniżej listy wyjątków.|  
-  
-###  <a name="Analysis"></a> Analiza  
- Diagnozowanie problemów z aplikacjami programu SharePoint 2010 oraz SharePoint 2013 za pomocą identyfikator korelacji programu SharePoint lub przejrzyj nieobsługiwanych wyjątków, które można odnaleźć programu Microsoft Monitoring Agent.  
-  
--   Użyj identyfikator korelacji programu SharePoint można znaleźć jego zgodne żądanie sieci web i zdarzeń. Wybierz zdarzenie, a następnie uruchom debugowanie w punkcie, gdzie i kiedy zdarzenie wystąpiło.  
-  
--   Jeśli programu Microsoft Monitoring Agent znaleziono nieobsługiwane wyjątki, wybierz wyjątek, a następnie uruchom debugowanie w punkcie gdzie i kiedy wystąpił wyjątek.  
-  
-##### <a name="start-debugging-with-a-sharepoint-correlation-id"></a>Uruchom debugowanie z identyfikatorem korelacji programu SharePoint  
-  
-1.  Skopiuj identyfikator korelacji programu SharePoint z jej źródła.  
-  
-     Na przykład:  
-  
-     ![IntelliTrace &#45; błąd SharePoint &#45; identyfikator korelacji](../debugger/media/sharepointerror_intellitrace.png "SharePointError_IntelliTrace")  
-  
-2.  Otwórz plik .iTrace, a następnie przejdź do **analizy** i wprowadź identyfikator korelacji programu SharePoint, aby przejrzeć zgodne żądanie sieci web i zarejestrowane zdarzenia.  
-  
-     ![Dziennika IntelliTrace &#45; SharePoint wprowadź identyfikator korelacji](../debugger/media/entersharepointcorrelationid.png "EnterSharePointCorrelationID")  
-  
-3.  W obszarze **żądania zdarzenia**, przejrzeć zdarzenia. Począwszy od góry, zdarzenia są wyświetlane w kolejności ich wystąpił.  
-  
-    1.  Wybierz zdarzenie, aby wyświetlić jego szczegóły.  
-  
-    2.  Wybierz **Rozpocznij debugowanie** można rozpocząć debugowania w momencie, w którym wystąpiło zdarzenie.  
-  
-     ![Plik dziennika IntelliTrace &#45; żądania sieci web widoku &#43; zdarzenia](../debugger/media/entersharepointcorrelationid2.png "EnterSharePointCorrelationID2")  
-  
- Możesz zobaczyć te rodzaje zdarzeń programu SharePoint oraz zdarzenia funkcji IntelliTrace:  
-  
--   **Zdarzenia profilu użytkownika**  
-  
-     Tych zdarzeń, SharePoint ładuje profilu użytkownika i właściwości profilu użytkownika są odczytywane lub zmienić.  
-  
--   **Ujednolicone zdarzeń systemu rejestrowanie (ULS)**  
-  
-     Microsoft Monitoring Agent rejestruje podzbiór tych pól i zdarzenia ULS programu SharePoint:  
-  
-    |**Pole IntelliTrace**|**Pole ULS programu SharePoint**|  
-    |----------------------------|------------------------------|  
-    |**Id**|**Identyfikator zdarzenia**|  
-    |**poziom**|**poziom**|  
-    |**Identyfikator kategorii**|**Identyfikator kategorii**|  
-    |**Kategoria**|**Kategoria**|  
-    |**Obszar**|**Produktu**|  
-    |**Output**|**Komunikat**|  
-    |**Identyfikator korelacji**|**Identyfikator korelacji**|  
-  
-##### <a name="start-debugging-from-an-unhandled-exception"></a>Uruchom debugowanie z nieobsłużonego wyjątku  
-  
-1.  Wybierz identyfikator korelacji programu SharePoint dla wyjątku. Wyjątki są grupowane według typu i stos wywołań.  
-  
-2.  (Opcjonalnie) Rozwiń węzeł **stos wywołań** aby zobaczyć stos wywołań wyjątków grupy.  
-  
-3.  Wybierz **debugowania wyjątek** można rozpocząć debugowania w punkcie, gdzie i kiedy wystąpił wyjątek.  
-  
-     ![Dziennika IntelliTrace &#45; SharePoint nieobsługiwane wyjątki](../debugger/media/sharepointunhandledexceptions_intellitrace.png "SharePointUnhandledExceptions_IntelliTrace")  
-  
- Aby uzyskać wskazówki, zobacz [wskazówki: debugowanie aplikacji SharePoint przy użyciu funkcji IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md). Dla typów danych, które rekordy agenta, zobacz [funkcji IntelliTrace](../debugger/intellitrace-features.md).  
-  
-###  <a name="ThreadsList"></a> Lista wątków  
- Sprawdź, czy zarejestrowane wątków, które były uruchamiane w procesie docelowym. Można uruchomić debugowania z pierwszego prawidłowy zdarzenia funkcji IntelliTrace w wybranych wątku.  
-  
-##### <a name="to-start-debugging-from-a-specific-thread"></a>Aby rozpocząć debugowanie z określonego wątku  
-  
-1.  W obszarze **listy wątków**, wybierz wątku.  
-  
-2.  W dolnej części **listy wątków**, wybierz **Rozpocznij debugowanie**. Możesz również kliknąć dwukrotnie wątek.  
-  
-     Aby rozpocząć debugowanie, z którym rozpoczyna się aplikacji, kliknij dwukrotnie **wątku głównego**. Zobacz [funkcji IntelliTrace](../debugger/intellitrace-features.md).  
-  
- Użytkownik tworzy dane wątku mogą być przydatne bardziej niż wątków, które serwer tworzy i którymi zarządza dla aplikacji hostowanych przez usługi IIS sieci Web.  
-  
-|**Kolumny**|**Pokazuje**|  
-|----------------|-------------------|  
-|**ID**|Identyfikator wątku|  
-|**Nazwa**|Nazwa wątku. Nienazwane wątki są wyświetlane jako "\<bez nazwy >".|  
-|**Godzina rozpoczęcia**|Godzina utworzenia wątku|  
-|**Godzina zakończenia**|Czas zakończenia wątku|  
-  
-###  <a name="TestData"></a> Dane testowe  
- Przeanalizuj dane funkcji IntelliTrace, który Test Manager zapisane podczas testowania aplikacji.  
-  
-##### <a name="to-start-debugging-from-a-specific-test-step"></a>Aby rozpocząć debugowanie z kroku specyficznego testu  
-  
-1.  Rozwiń węzeł **testowania czynności siatki**. Wybierz krok testu.  
-  
-2.  W dolnej części **siatki kroki testu**, wybierz **Rozpocznij debugowanie**. Możesz również kliknąć dwukrotnie krok testu.  
-  
-     Spowoduje to uruchomienie debugowania z pierwszego zdarzenia funkcji IntelliTrace prawidłowe po wybrane kroki testu.  
-  
-     Jeśli istnieje danych testowych, IntelliTrace próbuje rozpoznać skojarzone kompilacji Team Foundation Server, która została użyta do wykonania uruchomienia testu. Jeśli kompilacja zostanie znaleziony, skojarzony symboli dla aplikacji są rozpoznawane automatycznie.  
-  
-|**Pole**|**Pokazuje**|  
-|---------------|-------------------|  
-|**Sesja testowa**|Sesje testowania, które zostały zarejestrowane. Zazwyczaj jest tylko jeden. Ta lista jest pusta, jeśli dane testowe został utworzony przy użyciu ręcznego testu eksploracyjnego.|  
-|**Przypadek testowy**|Przypadki testowe z sesji wybranego testu. Ta lista jest pusta, jeśli dane testowe został utworzony przy użyciu ręcznego testu eksploracyjnego.|  
-|**Siatka kroki testu**|Kroki, które zostały zarejestrowane w wyniku testu przebiegu testu lub zakończyć się niepowodzeniem|  
-  
-###  <a name="SystemInfo"></a> Informacje o systemie  
- W tej sekcji przedstawia szczegółowe informacje dotyczące systemu, który hostował aplikacji, na przykład, sprzętu, systemu operacyjnego, informacje dotyczące procesu i środowiska.  
-  
-###  <a name="Modules"></a> Moduły  
- W tej sekcji przedstawiono moduły załadowane procesu docelowego. Moduły są wyświetlane w kolejności ich załadowane.  
-  
-|**Kolumny**|**Pokazuje**|  
-|----------------|-------------------|  
-|**Nazwa modułu**|Nazwa pliku modułu|  
-|**Ścieżka modułu**|Lokalizacja, w której moduł został załadowany na dysku|  
-|**Identyfikator modułu**|Unikatowy identyfikator moduł, który jest przeznaczone do wersji i przyczynia się do pasujących plików symboli (PDB). Zobacz [wyszukiwanie plików symboli (.pdb) i pliki źródłowe](http://msdn.microsoft.com/en-us/05384c85-d264-4e18-abaa-aa482ab25470).|  
-  
-### <a name="where-can-i-get-more-information"></a>Gdzie można uzyskać więcej informacji?  
- [Korzystanie z autonomicznego modułu zbierającego funkcji IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)  
-  
- [Funkcje IntelliTrace](../debugger/intellitrace-features.md)  
-  
- [Zbieranie większej ilości danych podczas wykonywania testów ręcznych](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)  
-  
- [IntelliTrace](../debugger/intellitrace.md)  
-  
-#### <a name="forums"></a>Fora  
- [Visual Studio Debugger](http://go.microsoft.com/fwlink/?LinkId=262263)  
-  
-#### <a name="guidance"></a>Wskazówki  
- [Testowanie pod kątem ciągłego dostarczania w programie Visual Studio 2012 — rozdział 6: testowanie przybornika](http://go.microsoft.com/fwlink/?LinkID=255203)
+>  Jeśli plik IntelliTrace został zamknięty podczas debugowania, możesz uruchomić go w łatwy sposób. Przejdź do **debugowania** menu, wybierz **IntelliTrace**, **Pokaż podsumowanie dziennika**. Można również wybrać **Pokaż podsumowanie dziennika** w **IntelliTrace** okna. Jest on dostępny tylko podczas debugowania przy użyciu funkcji IntelliTrace.
+
+##  <a name="Understand"></a> Informacje w dzienniku IntelliTrace
+ Niektóre z poniższych sekcji w pliku .iTrace są wyświetlane tylko wtedy, gdy zostały zebrane dane z określonego źródła, na przykład z programu Test Manager lub aplikacji programu SharePoint.
+
+|**Sekcja**|**zawiera**|**Źródło kolekcji**|
+|-----------------|------------------|---------------------------|
+|[Naruszenia wydajności](#Performance)|Zdarzenia wydajności w przypadku wywołań funkcji, która przekracza skonfigurowany próg|Program Microsoft Monitoring Agent, albo autonomiczny moduł zbierający lub za pomocą programu System Center 2012 R2 Operations Manager dla aplikacji sieci web ASP.NET obsługiwanych przez usługi IIS|
+|[Dane wyjątku](#ExceptionData)|Wyjątki, w tym pełny stos wywołania dla każdego wyjątku|Wszystkie źródła|
+|[Analiza](#Analysis)|SharePoint 2010 i SharePoint 2013 tylko dla aplikacji. Diagnozowanie zdarzeń IntelliTrace i programu SharePoint, takich jak zdarzenia debugera, zdarzenia usługi ULS, nieobsłużone wyjątki i inne dane zarejestrowane przez program Microsoft Monitoring Agent.|Program Microsoft Monitoring Agent, albo autonomiczny moduł zbierający lub za pomocą programu System Center 2012 R2 Operations Manager|
+|[Informacje o systemie](#SystemInfo)|Ustawienia i specyfikacje systemu hosta|Wszystkie źródła|
+|[Lista wątków](#ThreadsList)|Wątki, które uruchomiono podczas procesu kolekcji|Wszystkie źródła|
+|[Dane testowe](#TestData)|Kroki testu i ich wyniki z sesji testowej|Test Manager|
+|[Moduły](#Modules)|Moduły załadowane w procesie ładowania w kolejności załadowania.|Wszystkie źródła|
+|[Żądania sieci Web](#Modules)|Dane żądania sieci Web w środowisku produkcyjnym IIS sieci web, aplikacji i programu SharePoint 2010 i SharePoint 2013|Program Microsoft Monitoring Agent i standalone collector|
+
+ Poniżej przedstawiono kilka wskazówek, aby pomóc w znalezieniu informacji w każdej sekcji:
+
+-   Wybierz nagłówek kolumny, aby posortować dane.
+
+-   Użyj pola wyszukiwania do filtrowania danych. Zwykłe wyszukiwanie tekstu działa we wszystkich kolumnach, z wyjątkiem kolumn czasowych. Można także filtrować wyszukiwania do określonej kolumny za pomocą jednego filtru na kolumnę. Wpisz nazwę kolumny bez spacji, dwukropka (**:**) ani wartości wyszukiwania. Postępuj zgodnie z tym przy użyciu średnika (**;**) aby dodać inną wartość w kolumnie i wyszukiwania.
+
+     Na przykład, aby znaleźć zdarzenia wydajności, które zawierają wyraz "wolne" w **opis** kolumny, wpisz:
+
+     `Description:slow`
+
+##  <a name="StartDebugging"></a> Rozpocznij debugowanie z dziennika funkcji IntelliTrace
+
+###  <a name="Performance"></a> Naruszenia wydajności
+ Przejrzyj zdarzenia wydajności, które zostały zarejestrowane dla aplikacji. Można ukryć te zdarzenia, które nie występują często.
+
+##### <a name="to-start-debugging-from-a-performance-event"></a>Aby rozpocząć debugowanie ze zdarzenia wydajności
+
+1.  W obszarze **naruszeń wydajności**, przejrzyj zarejestrowane zdarzenia wydajności, ich całkowity czas realizacji i inne informacje o zdarzeniach. Następnie zagłęb się w metody, które zostały wywołane podczas zdarzenia dotyczącego wydajności.
+
+     ![Wyświetl szczegóły zdarzeń dotyczących wydajności](../debugger/media/ffr_itsummarypageperformance.png "FFR_ITSummaryPagePerformance")
+
+     Możesz także po prostu dwukrotnie kliknąć zdarzenie.
+
+2.  Na stronie zdarzeń przejrzyj czasy wykonania dla tych wywołań. Odszukaj spowalniające wywołanie w drzewie wykonywania.
+
+     Najwolniejsze wywołania pojawiają się we własnej sekcji w przypadku wielu wywołań, zagnieżdżonych lub innych.
+
+3.  Rozwiń, że wywołanie, aby przejrzeć wszelkie zagnieżdżone wywołania i wartości parametrów, które zostały zarejestrowane w danym momencie.
+
+     (Klawiatura: Aby wyświetlić lub ukryć zagnieżdżone wywołania, naciśnij klawisz **Strzałka w prawo** lub **Strzałka w lewo** odpowiednio klucza. Aby pokazać i ukryć wartości parametrów dla zagnieżdżonych wywołań, naciśnij klawisz **miejsca** klucza.)
+
+     Uruchom debugowanie z wywołania.
+
+     ![Rozpocznij debugowanie z wywołania metody](../debugger/media/ffr_itsummarypageperformancemethodscalled.png "FFR_ITSummaryPagePerformanceMethodsCalled")
+
+     Możesz też po prostu dwukrotnie kliknąć wywołanie lub naciśnij **Enter** klucza.
+
+     Jeśli metoda ta jest w kodzie aplikacji, program Visual Studio przechodzi do tej metody.
+
+     ![Przejdź do kodu aplikacji ze zdarzenia wydajności](../debugger/media/ffr_itsummarypageperformancegotocode.png "FFR_ITSummaryPagePerformanceGoToCode")
+
+     Teraz można przejrzeć inne zarejestrowane wartości, stos wywołań, przejść przez kod lub przy użyciu **IntelliTrace** okna [Przenieś tyłu lub do przodu "w czasie" między innymi metodami](../debugger/intellitrace.md) które zostały wywołane podczas tego zdarzenia dotyczącego wydajności.
+
+###  <a name="ExceptionData"></a> Dane wyjątku
+ Przejrzyj wyjątki, które zostały zgłoszone i rejestrowane dla swojej aplikacji. Można grupować wyjątki, które mają tego samego typu i stosu wywołań, aby wyświetlić najbardziej aktualne wyjątku.
+
+##### <a name="to-start-debugging-from-an-exception"></a>Aby rozpocząć debugowanie z wyjątku
+
+1.  W obszarze **dane o wyjątkach**, przejrzyj zarejestrowane zdarzenia wyjątków, ich typy, wiadomości, i czas ich wystąpienia. Aby poznać więcej szczegółów związanych z kodem, rozpocznij debugowanie od ostatniego zdarzenia w grupie wyjątków.
+
+     ![Rozpocząć debugowanie ze zdarzenia wyjątków](../debugger/media/ffr_itsummarypageexception.png "FFR_ITSummaryPageException")
+
+     Możesz także po prostu dwukrotnie kliknąć zdarzenie. Jeśli zdarzenia nie są grupowane, wybierz opcję **debugować tego zdarzenia**.
+
+     Jeśli wystąpił wyjątek w kodzie aplikacji, program Visual Studio przechodzi do tego miejsca.
+
+     ![Przejdź do kodu aplikacji ze zdarzenia wyjątków](../debugger/media/ffr_itsummarypageexceptiongotocode.png "FFR_ITSummaryPageExceptionGoToCode")
+
+     Teraz można przejrzeć inne zarejestrowane wartości, stos wywołań, lub użyć **IntelliTrace** okna [przenoszenie tyłu lub do przodu "w czasie" między innymi zarejestrowanymi zdarzeniami](../debugger/intellitrace.md), kodu powiązany i wartości odnotowane w te punkty w czasie.
+
+    |**Kolumny**|**Pokazuje**|
+    |----------------|-------------------|
+    |**Typ**|Typ architektury .NET wyjątku|
+    |**Najnowszy komunikat** dla grupowane wyjątki lub **komunikat** niezgrupowane wyjątków|Komunikat o wyjątku|
+    |**Liczba** dla grupowane wyjątków|Liczba przypadków, gdy wyjątek został zgłoszony.|
+    |**Identyfikator wątku** niezgrupowane wyjątków|Identyfikator wątku, który wygenerował wyjątek|
+    |**Czas najnowszego zdarzenia** lub **czas trwania zdarzenia**|Sygnatura czasowa zapisana, gdy wyjątek został zgłoszony|
+    |**Stos wywołań**|Stos wywołań dla wyjątku.<br /><br /> Aby zobaczyć stos wywołań, wybierz wyjątek z listy. Stos wywołań jest wyświetlany poniżej listy wyjątków.|
+
+###  <a name="Analysis"></a> Analiza
+ Diagnozowanie problemów z aplikacjami programu SharePoint 2010 i SharePoint 2013 za pomocą Identyfikatora korelacji programu SharePoint, lub przejrzyj nieobsłużone wyjątki, które zostały odnalezione przez program Microsoft Monitoring Agent.
+
+-   Użyj identyfikator korelacji programu SharePoint, aby znaleźć jego odpowiadające żądanie sieci web i zdarzenia. Wybierz zdarzenie, a następnie rozpocząć debugowanie w punkcie gdzie i kiedy wystąpiło zdarzenie.
+
+-   Jeśli program Microsoft Monitoring Agent znalazł nieobsłużone wyjątki, wybierz wyjątek, a następnie rozpocząć debugowanie w punkcie, w którym wyjątek wystąpił.
+
+##### <a name="start-debugging-with-a-sharepoint-correlation-id"></a>Uruchom debugowanie z identyfikatorem korelacji programu SharePoint
+
+1.  Skopiuj identyfikator korelacji SharePoint z jej źródła.
+
+     Na przykład:
+
+     ![IntelliTrace &#45; błąd SharePoint &#45; identyfikator korelacji](../debugger/media/sharepointerror_intellitrace.png "SharePointError_IntelliTrace")
+
+2.  Otwórz plik .iTrace, a następnie przejdź do **analizy** i wprowadź identyfikator korelacji programu SharePoint, aby przejrzeć odpowiadające żądanie sieci web i rejestrowane zdarzenia.
+
+     ![Dziennik IntelliTrace &#45; identyfikator korelacji SharePoint wprowadź](../debugger/media/entersharepointcorrelationid.png "EnterSharePointCorrelationID")
+
+3.  W obszarze **zdarzenia żądań**, zbadaj zdarzenia. Począwszy od góry, zdarzenia są wyświetlane w kolejności ich wystąpienia.
+
+    1.  Wybierz zdarzenie, aby wyświetlić jego szczegóły.
+
+    2.  Wybierz **Rozpocznij debugowanie** aby rozpocząć debugowanie w punkcie, w której zaszło zdarzenie.
+
+     ![Plik dziennika IntelliTrace &#45; żądania sieci web widoku &#43; zdarzenia](../debugger/media/entersharepointcorrelationid2.png "EnterSharePointCorrelationID2")
+
+ Możesz zobaczyć te rodzaje zdarzeń programu SharePoint oraz zdarzenia IntelliTrace:
+
+-   **Zdarzenia profilu użytkownika**
+
+     Te zdarzenia mają miejsce, gdy program SharePoint ładuje profil użytkownika i gdy właściwości profilu użytkownika są odczytywane lub zmieniane.
+
+-   **Ujednoliconego systemu rejestrowania (ULS) zdarzenia**
+
+     Program Microsoft Monitoring Agent zapisuje podzbiór zdarzeń ULS programu SharePoint i następujące pola:
+
+    |**Pole IntelliTrace**|**Pole ULS programu SharePoint**|
+    |----------------------------|------------------------------|
+    |**Id**|**Identyfikator zdarzenia**|
+    |**poziom**|**poziom**|
+    |**Identyfikator kategorii**|**Identyfikator kategorii**|
+    |**Kategoria**|**Kategoria**|
+    |**Obszar**|**Produkt**|
+    |**Output**|**Komunikat**|
+    |**Identyfikator korelacji**|**Identyfikator korelacji**|
+
+##### <a name="start-debugging-from-an-unhandled-exception"></a>Uruchom debugowanie z nieobsłużonego wyjątku
+
+1.  Wybierz identyfikator korelacji programu SharePoint, dla wyjątku. Wyjątki są pogrupowane według typu i stosu wywołań.
+
+2.  (Opcjonalnie) Rozwiń **stos wywołań** aby zobaczyć stos wywołań dla grupy wyjątki.
+
+3.  Wybierz **wyjątek debugowania** aby rozpocząć debugowanie w punkcie, w którym wyjątek wystąpił.
+
+     ![Dziennik IntelliTrace &#45; SharePoint nieobsługiwane wyjątki](../debugger/media/sharepointunhandledexceptions_intellitrace.png "SharePointUnhandledExceptions_IntelliTrace")
+
+ Aby uzyskać wskazówki, zobacz [wskazówki: debugowanie aplikacji SharePoint przy użyciu funkcji IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md). Do tego rodzaju danych, które rekordy agenta, zobacz [funkcji IntelliTrace](../debugger/intellitrace-features.md).
+
+###  <a name="ThreadsList"></a> Lista wątków
+ Badać zarejestrowane wątki, które uruchomiono w procesie docelowym. Możesz rozpocząć debugowanie od pierwszego prawidłowego zdarzenia IntelliTrace w wybranym wątku.
+
+##### <a name="to-start-debugging-from-a-specific-thread"></a>Aby rozpocząć debugowanie z określonego wątku
+
+1.  W obszarze **Lista wątków**, wybierz wątek.
+
+2.  W dolnej części **Lista wątków**, wybierz **Rozpocznij debugowanie**. Możesz także dwukrotnie kliknąć na wątek.
+
+     Aby rozpocząć debugowanie, od której rozpoczyna się aplikacja, kliknij dwukrotnie **główny wątek**. Zobacz [funkcji IntelliTrace](../debugger/intellitrace-features.md).
+
+ Dane wątku, który użytkownik utworzył mogą być bardziej przydatne niż wątki, które serwer tworzy i którymi zarządza w zakresie aplikacji sieci Web obsługiwanych przez usługi IIS.
+
+|**Kolumny**|**Pokazuje**|
+|----------------|-------------------|
+|**ID**|Numer identyfikacyjny wątku|
+|**Nazwa**|Nazwa wątku. Nienazwane wątki są wyświetlane jako "\<bez nazwy >".|
+|**Godzina rozpoczęcia**|Godzina utworzenia wątku|
+|**Godzina zakończenia**|Czas zakończenia wątku|
+
+###  <a name="TestData"></a> Dane testowe
+ Przeanalizuj dane funkcji IntelliTrace programu Test Manager rejestrowane podczas testowania aplikacji.
+
+##### <a name="to-start-debugging-from-a-specific-test-step"></a>Aby rozpocząć debugowanie z określonego etapu testu
+
+1.  Rozwiń **siatka etapów testu**. Wybierz etap badania.
+
+2.  W dolnej części **siatka etapów testu**, wybierz **Rozpocznij debugowanie**. Możesz również kliknąć dwukrotnie krok testu.
+
+     Uruchomiony zostanie program debugowania z pierwszego odpowiedniego zdarzenia IntelliTrace po wybrany krok testu.
+
+     Jeśli istnieją dane testowe, IntelliTrace próbuje rozpoznać skojarzone kompilacji Team Foundation Server, która została użyta do wykonania przebiegu testu. Jeśli kompilacja zostanie znaleziona, skojarzone z nią symbole dla aplikacji są rozpoznawane automatycznie.
+
+|**Pole**|**Pokazuje**|
+|---------------|-------------------|
+|**Sesja testowa**|Sesje testowe, które zostały zapisane. Zazwyczaj występuje tylko jeden. Ta lista jest pusta, jeśli dane testowe został utworzony za pomocą manualnego testu poznawczego.|
+|**Przypadek testowy**|Przypadki testowe z wybranej sesji testowej. Ta lista jest pusta, jeśli dane testowe został utworzony za pomocą manualnego testu poznawczego.|
+|**Siatka etapów testu**|Kroki, które zostały zapisane z wynikiem testu w przebiegu testu lub się nie powieść|
+
+###  <a name="SystemInfo"></a> Informacje o systemie
+ Ta sekcja zawiera szczegółowe informacje o systemie, który obsługiwał aplikację, na przykład sprzęt, system operacyjny, informacje dotyczące procesu i środowiska.
+
+###  <a name="Modules"></a> Moduły
+ W tej sekcji przedstawiono moduły, które załadowane w procesie ładowania. Moduły są wyświetlane w kolejności załadowania.
+
+|**Kolumny**|**Pokazuje**|
+|----------------|-------------------|
+|**Nazwa modułu**|Nazwa pliku modułu|
+|**Ścieżka modułu**|Lokalizację dysku, na którym moduł został załadowany|
+|**Identyfikator modułu**|Unikatowy identyfikator modułu, który jest specyficzny dla wersji i przyczynia się do pasujących plików symboli (PDB). Zobacz [znajdowanie plików symboli (.pdb) i pliki źródłowe](/visualstudio/debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger).|
+
+### <a name="where-can-i-get-more-information"></a>Gdzie można uzyskać więcej informacji?
+ [Korzystanie z autonomicznego modułu zbierającego funkcji IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)
+
+ [Funkcje IntelliTrace](../debugger/intellitrace-features.md)
+
+ [Zbieranie większej ilości danych podczas wykonywania testów ręcznych](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)
+
+ [IntelliTrace](../debugger/intellitrace.md)
+
+#### <a name="forums"></a>Fora
+ [Visual Studio Debugger](http://go.microsoft.com/fwlink/?LinkId=262263)
+
+#### <a name="guidance"></a>Wskazówki
+ [Testowanie dostarczania ciągłego w programie Visual Studio 2012 — rozdział 6: przybornik testowy](http://go.microsoft.com/fwlink/?LinkID=255203)

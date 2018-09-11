@@ -14,12 +14,12 @@ manager: douge
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: d8ca3f4b847e00f029b22d32965fb3ca89ff871a
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: d4640616b12a07c475503d45f9297c1bbf663f91
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380486"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44284123"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-uwp-apps"></a>Przewodnik: tworzenie i uruchamianie testów jednostkowych dla aplikacji platformy UWP
 
@@ -109,4 +109,4 @@ W **Edytor kodu**, Edytuj test jednostkowy oraz Dodaj potwierdzenia i logikę wy
 ## <a name="see-also"></a>Zobacz także
 
 - [Testowanie aplikacji platformy uniwersalnej systemu Windows z programem Visual Studio](../test/testing-store-apps-with-visual-studio.md)
-- [Tworzenie i testowanie aplikacji platformy uniwersalnej systemu Windows](/vsts/build-release/apps/windows/universal?tabs=vsts)
+- [Tworzenie i testowanie aplikacji platformy uniwersalnej systemu Windows](/azure/devops/pipelines/apps/windows/universal?tabs=vsts)

@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 65929ec5b58e0629b3f52e31299f670543b3cd08
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 56b9e68767d4191aab016e3c0d976efb808aff01
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154388"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282615"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Problemy z konfiguracją serwera i klienta we wdrożeniach ClickOnce
 Jeśli używasz usług Internet Information Services (IIS) w systemie Windows Server, a wdrożenie zawiera typ pliku, który nie rozpoznaje Windows, takich jak plik programu Microsoft Word, usługi IIS będą odrzucać do przekazywania pliku, a wdrożenie zakończy się niepowodzeniem.  
@@ -41,7 +41,7 @@ Jeśli używasz usług Internet Information Services (IIS) w systemie Windows Se
   
 -   *.Deploy* 
   
- Jednak tę opcję można wyłączyć, usuwając zaznaczenie **rozszerzenie pliku ".deploy"** opcja [okno dialogowe Opcje publikowania](http://msdn.microsoft.com/en-us/fd9baa1b-7311-4f9e-8ffb-ae50cf110592), w którym to przypadku należy skonfigurować serwer sieci Web, aby odblokować wszystkie rozszerzenia plików używane w aplikacji.  
+ Jednak tę opcję można wyłączyć, usuwając zaznaczenie **rozszerzenie pliku ".deploy"** opcja [okno dialogowe Opcje publikowania](/previous-versions/visualstudio/visual-studio-2010/7z83t16a(v=vs.100)), w którym to przypadku należy skonfigurować serwer sieci Web, aby odblokować wszystkie rozszerzenia plików używane w aplikacji.  
   
  Trzeba będzie skonfigurować *.manifest*, *.application*, i *.deploy*, na przykład, jeśli używasz usług IIS, w którym nie zainstalowano [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], czy jesteś przy użyciu innego serwera sieci Web (np. Apache).  
   

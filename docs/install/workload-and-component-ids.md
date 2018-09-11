@@ -17,12 +17,12 @@ ms.prod: visual-studio-dev15
 ms.assetid: 34e19ef1-abfb-44fd-aad2-33c5d7874482
 ms.workload:
 - multiple
-ms.openlocfilehash: 4565a757eb7f0f7362ec9710ffb5ca6ab7ba5695
-ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
+ms.openlocfilehash: c46ce842bc9d95ffe783918b364a8cedaabf95c2
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44124934"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44284058"
 ---
 # <a name="visual-studio-2017-workload-and-component-ids"></a>Visual Studio 2017 obciążeń i składników identyfikatorów
 
@@ -35,7 +35,7 @@ Kliknij nazwy wersji w tabeli poniżej, aby wyświetlić dostępne obciążenia 
 | [Visual&nbsp;Studio Enterprise&nbsp;2017](workload-component-id-vs-enterprise.md) | Microsoft.VisualStudio.Product.Enterprise | Rozwiązanie Microsoft DevOps zapewniające wzrost produktywności i koordynacji między zespołami o dowolnej wielkości |
 | [Visual&nbsp;Studio Professional&nbsp;2017](workload-component-id-vs-professional.md) | Microsoft.VisualStudio.Product.Professional | Profesjonalne narzędzia i usługi dla małych zespołów |
 | [Visual&nbsp;Studio Community&nbsp;2017](workload-component-id-vs-community.md) | Microsoft.VisualStudio.Product.Community | Bezpłatne, w pełni funkcjonalne środowisko IDE dla uczniów, typu open source i indywidualnych deweloperów |
-| [Visual&nbsp;Studio Team&nbsp;Explorer&nbsp;2017](workload-component-id-vs-team-explorer.md) | Microsoft.VisualStudio.Product.TeamExplorer | Interakcja z Team Foundation Server i Visual Studio Team Services bez zestawu narzędzi dewelopera programu Visual Studio |
+| [Visual&nbsp;Studio Team&nbsp;Explorer&nbsp;2017](workload-component-id-vs-team-explorer.md) | Microsoft.VisualStudio.Product.TeamExplorer | Interakcja z Team Foundation Server i usługom DevOps platformy Azure bez zestawu narzędzi dewelopera programu Visual Studio |
 | [Visual Studio 2017 Express pulpitu](workload-component-id-vs-express.md) | Microsoft.VisualStudio.Workload.WDExpress | Twórz aplikacje natywne i zarządzane, takie jak WPF, WinForms i Win32 edytowania kodu uwzględniającej składnię, kontroli kodu źródłowego i zarządzania elementami roboczymi. Obejmuje obsługę języka C#, Visual Basic i Visual C++. |
 | [Visual&nbsp;Studio Build&nbsp;Tools&nbsp;2017](workload-component-id-vs-build-tools.md) | Microsoft.VisualStudio.Product.BuildTools | Visual Studio Build Tools umożliwia tworzenie natywnych i zarządzanych aplikacji opartych na platformie MSBuild bez konieczności używania środowiska IDE programu Visual Studio. Dostępne są opcje instalacji kompilatorów języka Visual C++ i bibliotek, MFC, ATL i C + +/ interfejsu wiersza polecenia. |
 | [Visual&nbsp;Studio Test&nbsp;Agent&nbsp;2017](workload-component-id-vs-test-agent.md)  | Microsoft.VisualStudio.Product.TestAgent | Obsługuje zdalne uruchamianie zautomatyzowanych testów i testów obciążenia |

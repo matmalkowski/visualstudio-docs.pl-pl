@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 48cc5bfdf53f6a3d6e214b73b46c0fa46267787e
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: d0bde2f36aa644bf9335ce74cf4a1ac3bd433a6c
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468302"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282069"
 ---
 # <a name="debugger-settings-and-preparation"></a>Ustawienia debugera i przygotowanie
 W tej sekcji opisano ustawienia właściwości związane z debugerem i przygotowania potrzebne debugowaniem programu za pomocą [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] debugera. Jeśli tworzysz swój program w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] przy użyciu szablonów projektu, te ustawienia są ustawione prawidłowo dla Ciebie w konfiguracji debugowania.  
@@ -39,10 +39,10 @@ W tej sekcji opisano ustawienia właściwości związane z debugerem i przygotow
  [Debugowanie projektów DLL](../debugger/debugging-dll-projects.md)  
  W tym artykule opisano ustawienia projektu zalecane debugowanie projektów DLL, jak debugowanie z projektu DLL, jak debugowanie w trybie mieszanym i jak można debugować kodu zarządzanego Biblioteka formantów sieci Web.  
   
- [Projekty startowe](../debugger/debugging-preparation-console-projects.md)  
+ [Projekty konsoli](../debugger/debugging-preparation-console-projects.md)  
  Instrukcje dotyczące sposobu konfigurowania projekty startowe do debugowania.   
   
- [Porady: debugowanie pliku wykonywalnego nie jest częścią rozwiązania programu Visual Studio](../debugger/how-to-debug-an-executable-not-part-of-a-visual-studio-solution.md)  
+ [Instrukcje: debugowanie pliku wykonywalnego, który nie jest częścią rozwiązania programu Visual Studio](../debugger/how-to-debug-an-executable-not-part-of-a-visual-studio-solution.md)  
  Wyjaśnia, jak można debugować plik wykonywalny, który nie został utworzony jako część projektu programu Visual Studio.  
   
  [Instrukcje: debugowanie przy użyciu źródła Code Center Premium](../debugger/how-to-debug-with-code-center-premium-source.md)  
@@ -51,7 +51,7 @@ W tej sekcji opisano ustawienia właściwości związane z debugerem i przygotow
  [Debugowanie aplikacji 64-bitowych](../debugger/debug-64-bit-applications.md)  
  W tym artykule opisano sposób debugowania aplikacji 64-bitowych.  
   
- [Porady: określanie wersji programu .NET Framework do debugowania](../debugger/how-to-specify-a-dotnet-framework-version-for-debugging.md)  
+ [Instrukcje: określanie wersji programu .NET Framework do debugowania](../debugger/how-to-specify-a-dotnet-framework-version-for-debugging.md)  
  W tym artykule opisano, jak ustawić klucz rejestru, aby wskazać do debugera w wyborze wersji do użycia.  
   
 ## <a name="see-also"></a>Zobacz też  

@@ -1,6 +1,6 @@
 ---
 title: Visual Studio 2017 klienta opinii obciążeń i składników identyfikatorów
-description: Identyfikatory obciążeń i składników programu Visual Studio umożliwiają przesyłanie bogatych opinii dotyczących Visual Studio Team Services lub serwera Team Foundation Server
+description: Identyfikatory obciążeń i składników programu Visual Studio umożliwiają przesyłanie bogatych opinii dotyczących usługom DevOps platformy Azure lub serwera Team Foundation Server
 keywords: ''
 author: TerryGLee
 ms.author: tglee
@@ -17,12 +17,12 @@ ms.prod: visual-studio-dev15
 ms.assetid: 7392a100-100c-458c-9394-828695109015
 ms.workload:
 - multiple
-ms.openlocfilehash: d56d68768be45fc3ab4eb8e30b777ae14abe4343
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: 5037870cfbe1df0a4f997f16ef196d78de983aaa
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43138782"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281562"
 ---
 # <a name="visual-studio-feedback-client-2017-component-directory"></a>Visual Studio 2017 klienta opinii składników katalogu
 
@@ -43,7 +43,7 @@ Aby uzyskać więcej informacji na temat używania tych identyfikatorów, zobacz
 
 **ID:** Microsoft.VisualStudio.Workload.FeedbackClient
 
-**Opis:** Feedback client umożliwia uczestnikom projektu przesyłanie bogatych opinii dla Visual Studio Team Services lub serwera Team Foundation Server.
+**Opis:** Feedback client umożliwia uczestnikom projektu przesyłanie bogatych opinii usługom DevOps platformy Azure lub serwera Team Foundation Server.
 
 ### <a name="components-included-by-this-workload"></a>Składniki przez to obciążenie
 

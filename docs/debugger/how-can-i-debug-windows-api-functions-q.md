@@ -23,25 +23,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 042f243c0469b8b37e301cf5c9f2410cf201f7be
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 7cc765c6da62973469280e97759fbab566ca6f37
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37058615"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281679"
 ---
 # <a name="how-can-i-debug-windows-api-functions"></a>Jak można debugować funkcje API systemu Windows?
-Jeśli chcesz debugować funkcji interfejsu API systemu Windows, która ma załadować symbole NT, wykonaj następujące czynności.  
+Jeśli chcesz debugować funkcja interfejsu API Windows, która zawiera symbole NT załadowane, wykonaj następujące czynności.  
   
-### <a name="to-set-a-breakpoint-on-a-windows-api-function-with-nt-symbols-loaded"></a>Aby ustawić punkt przerwania w funkcji interfejsu API systemu Windows przy użyciu symboli NT załadowany  
+### <a name="to-set-a-breakpoint-on-a-windows-api-function-with-nt-symbols-loaded"></a>Aby ustawić punkt przerwania w funkcji Windows API z symbole NT załadowane  
   
--   Wprowadź nazwę funkcji, łącznie z nazwą biblioteki DLL, w której znajduje się funkcja. W 32-bitowy kod formularz ozdobione nazwy funkcji. Aby ustawić punkt przerwania na **MessageBeep**, na przykład, musisz wprowadzić następujące.  
+-   Podaj nazwę funkcji wraz z nazwą biblioteki DLL, w której znajduje się funkcja. W 32-bitowego kodu formularz dekorowane nazwy funkcji. Aby ustawić punkt przerwania na **MessageBeep**, na przykład, należy wprowadzić następujące czynności.  
   
     ```cpp
     {,,USER32.DLL}_MessageBeep@4  
     ```  
   
-     Aby uzyskać nazwa, zobacz [wyświetlanie nazwy dekorowane](http://msdn.microsoft.com/en-us/f79e2717-a4db-4d12-a689-69830cce2be0).  
+     Aby uzyskać nazwę z atrybutami, zobacz [wyświetlania nazw Ozdobionych](https://msdn.microsoft.com/library/f79e2717-a4db-4d12-a689-69830cce2be0).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie kodu natywnego — często zadawane pytania](../debugger/debugging-native-code-faqs.md)   

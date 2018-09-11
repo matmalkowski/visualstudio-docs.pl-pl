@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b31a8631497b5c4f39b2c0e6ebffa469282da157
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: 40898b249fae9f8d13d3fd5a80eafc3c72e3e819
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43138394"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281094"
 ---
 # <a name="troubleshooting-network-related-errors-when-you-install-or-use-visual-studio"></a>Rozwiązywanie problemów z błędami związanych z siecią, podczas instalowania lub użyć programu Visual Studio
 
@@ -73,7 +73,7 @@ Ten błąd występuje zazwyczaj, gdy użytkownicy są połączeni z Internetem z
 
 ## <a name="error-the-underlying-connection-was-closed"></a>Błąd: "Połączenie podstawowe zostało zamknięte"
 
-Jeśli używasz programu Visual Studio w sieci prywatnej z zaporą, Visual Studio nie można nawiązać połączenia z niektórych zasobów sieciowych. Te zasoby mogą obejmować Visual Studio Team Services (VSTS) do logowania i licencjonowania NuGet i usług platformy Azure. Visual Studio nie może połączyć się z tych zasobów, może zostać wyświetlony następujący komunikat o błędzie:
+Jeśli używasz programu Visual Studio w sieci prywatnej z zaporą, Visual Studio nie można nawiązać połączenia z niektórych zasobów sieciowych. Te zasoby mogą obejmować usługom DevOps platformy Azure do logowania i licencjonowania NuGet i usług platformy Azure. Visual Studio nie może połączyć się z tych zasobów, może zostać wyświetlony następujący komunikat o błędzie:
 
   **Połączenie podstawowe zostało zamknięte: Wystąpił nieoczekiwany błąd podczas wysyłania**
 
@@ -103,7 +103,7 @@ Włącz połączenia dla następujących adresów URL:
 
 - CDN.vsassets.IO (hosty usługa content delivery network lub sieci CDN, zawartości)
 
-- &#42;. gallerycdn.vsassets.io (rozszerzenia VSTS hostów)
+- &#42;. gallerycdn.vsassets.io (hosty rozszerzenia usługom DevOps platformy Azure)
 
 - static2.sharepointonline.com (hosty zasobów używanych przez program Visual Studio w zestawie danych sieci szkieletowej interfejsu użytkownika pakietu Office, takie jak czcionki)
 

@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e18ee3a48320c076659d54a7ae9d996a982162b
-ms.sourcegitcommit: d7209d61e812b34d06c2aa267bdf50fbc714d0e0
+ms.openlocfilehash: b3c0c17da3bd5b83260556a7762733924cfe276c
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/20/2018
-ms.locfileid: "42624149"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283629"
 ---
 # <a name="validate-your-system-during-development"></a>Weryfikacja systemu w czasie opracowywania
 Visual Studio może pomóc zachować oprogramowania zgodne z wymagań użytkowników oraz przy użyciu architektury Twojego systemu.
@@ -42,7 +42,7 @@ Visual Studio może pomóc zachować oprogramowania zgodne z wymagań użytkowni
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Testowanie aplikacji](/vsts/test/overview?view=vsts)
+- [Testowanie aplikacji](/azure/devops/test/overview?view=vsts)
 - [Wymagania modelu użytkownika](../modeling/model-user-requirements.md)
 - [Analizowanie i modelowanie architektury](../modeling/analyze-and-model-your-architecture.md)
 

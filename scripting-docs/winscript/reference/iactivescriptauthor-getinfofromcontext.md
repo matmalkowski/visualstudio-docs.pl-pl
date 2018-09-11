@@ -18,15 +18,15 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 27c13dbe51bb1150554275b5fbeacd00be2e445f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 3465552b99b2185ea475c5479f044ee7b27704ae
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793333"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281250"
 ---
 # <a name="iactivescriptauthorgetinfofromcontext"></a>IActiveScriptAuthor::GetInfoFromContext
-Zwraca typu informacji i pozycji zakotwiczenia dla danego znaku w bloku kodu. IntelliSense, wykazy globalne i porady parametru zapewnia informacje dla elementu członkowskiego.  
+Zwraca typu informacji i pozycji zakotwiczenia dla danego znaku w bloku kodu. Zawiera informacje dla elementu członkowskiego, IntelliSense, wykazy globalne i porady dotyczące parametru.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -47,7 +47,7 @@ HRESULT GetInfoFromContext(
   
 #### <a name="parameters"></a>Parametry  
  `pszCode`  
- [in] Adres ciągu bloku kodu służącego do generowania wyników informacji.  
+ [in] Adres ciągu bloku kodu, które są używane do generowania wyników informacji.  
   
  `cchCode`  
  [in] Długość bloku kodu.  
@@ -61,28 +61,28 @@ HRESULT GetInfoFromContext(
 |Stała|Wartość|Opis|  
 |--------------|-----------|-----------------|  
 |SCRIPT_CMPL_NOLIST|0x0000|Brak listy.|  
-|SCRIPT_CMPL_MEMBERLIST|0X0001|Lista elementów członkowskich.|  
-|SCRIPT_CMPL_ENUMLIST|0X0002|Lista wyliczenia.|  
-|SCRIPT_CMPL_PARAMLIST|0X0004|Wywołanie metody listy parametrów.|  
-|SCRIPT_CMPL_GLOBALLIST|0X0008|Globalna lista.|  
+|SCRIPT_CMPL_MEMBERLIST|0x0001|Lista elementów członkowskich.|  
+|SCRIPT_CMPL_ENUMLIST|0x0002|Lista wyliczenia.|  
+|SCRIPT_CMPL_PARAMLIST|0x0004|Wywołaj liście parametrów metody.|  
+|SCRIPT_CMPL_GLOBALLIST|0x0008|Globalna lista.|  
   
- Typ SCRIPT_CMPL_GLOBALLIST jest traktowany jako domyślny element ukończenia można łączyć przy użyciu operatora OR z innymi elementami ukończenia. Skrypt tworzenia aparatu najpierw próbuje wypełnić informacji o typie dla innych listy uzupełniania. W przypadku niepowodzenia aparat wypełnienie dla SCRIPT_CMPL_GLOBALLIST.  
+ Typ SCRIPT_CMPL_GLOBALLIST jest traktowany jako domyślny element ukończenia można łączyć za pomocą operatora OR z innymi elementami ukończenia. Skrypt tworzenia aparatu najpierw próbuje wypełnić informacji o typie dla inne listy uzupełniania. W przypadku niepowodzenia aparat wypełnienie dla SCRIPT_CMPL_GLOBALLIST.  
   
  `pdwListTypesProvided`  
  [out] Typ listy.  
   
  `pichListAnchorPosition`  
- [out] Indeks początkowy kontekstu, która zawiera bieżące położenie. Indeks początkowy jest określana względem początku bloku.  
+ [out] Indeks początkowy kontekst, który zawiera bieżącej pozycji. Indeks początkowy jest określana względem początku bloku.  
   
- To jest wypełniana tylko wtedy, gdy `dwListTypesRequested` obejmuje SCRIPT_CMPL_MEMBERLIST, SCRIPT_CMPL_ENUMLIST lub SCRIPT_CMPL_GLOBALLIST. W przypadku innych typów Żądana lista wynik jest niezdefiniowany.  
+ To jest wypełniana tylko wtedy, gdy `dwListTypesRequested` obejmuje SCRIPT_CMPL_MEMBERLIST, SCRIPT_CMPL_ENUMLIST lub SCRIPT_CMPL_GLOBALLIST. Dla innych typów żądanej listy wynik jest niezdefiniowany.  
   
  `pichFuncAnchorPosition`  
  [out] Indeks początkowy wywołania funkcji, która zawiera bieżące położenie. Indeks początkowy jest określana względem początku bloku.  
   
- To jest wypełniana tylko wtedy, gdy kontekstu, która zawiera bieżące położenie jest wywołanie funkcji, a gdy `dwListTypesRequested` obejmuje SCRIPT_CMPL_PARAMLIST. W przeciwnym razie wynikiem jest niezdefiniowany.  
+ To jest wypełniana tylko wtedy, gdy kontekst, który zawiera bieżące położenie jest wywołanie funkcji, a gdy `dwListTypesRequested` obejmuje SCRIPT_CMPL_PARAMLIST. W przeciwnym razie wynik jest niezdefiniowany.  
   
  `pmemid`  
- [out] MEMBERID funkcji, zgodnie z definicją typu w `IProvideMultipleClassInfo``ppunk` parametr wyjściowy.  
+ [out] MEMBERID funkcji, zgodnie z definicją według typu w `IProvideMultipleClassInfo``ppunk` parametr wyjściowy.  
   
  To jest wypełniana tylko wtedy, gdy `dwListTypesRequested` obejmuje SCRIPT_CMPL_PARAMLIST.  
   
@@ -104,5 +104,5 @@ HRESULT GetInfoFromContext(
 ## <a name="remarks"></a>Uwagi  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IProvideMultipleClassInfo](https://msdn.microsoft.com/library/microsoft.visualstudio.ole.interop.iprovidemultipleclassinfo.aspx)   
- [Interfejs IActiveScriptAuthor](../../winscript/reference/iactivescriptauthor-interface.md)
+ [Interfejs IProvideMultipleClassInfo](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.ole.interop.iprovidemultipleclassinfo)   
+ [IActiveScriptAuthor, interfejs](../../winscript/reference/iactivescriptauthor-interface.md)

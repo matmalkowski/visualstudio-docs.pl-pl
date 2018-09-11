@@ -2,19 +2,19 @@
 layout: HubPage
 hide_bc: true
 title: Dokumentacja programu Visual Studio | Dokumentacja firmy Microsoft
-description: Dowiedz się, jak używać programu Visual Studio 2017 do opracowywania aplikacji, usług i narzędzi w języku wybranym platform i urządzeń.
+description: Dowiedz się, jak używać programu Visual Studio 2017 do tworzenia aplikacji, usług i narzędzi w języku wybranym dla platform i urządzeń.
 ms.topic: landing-page
 searchScope: []
-ms.openlocfilehash: 728091071a7e9409ac523ee078800915cba84814
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
-ms.translationtype: MT
+ms.openlocfilehash: 6baee6be451ba1997f44e24d5a1690f7b451c3a2
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34690601"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280977"
 ---
 <div id="main" class="v2">
     <div class="container">
-        <h1>Dokumentację dla produktów programu Visual Studio</h1>
+        <h1>Dokumentację dla produktów Visual Studio</h1>
         <ul class="pivots">
             <li>
                 <a href="#products"></a>
@@ -34,7 +34,7 @@ ms.locfileid: "34690601"
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Visual Studio IDE</h3>
-                                                    <p>Tworzenie aplikacji i gier, przy użyciu systemu Windows, aby osiągnąć każde urządzenie Android, iOS, Windows, sieci web lub chmury.</p>
+                                                    <p>Twórz aplikacje i gry umożliwiające dotarcie do każdego urządzenia przy użyciu systemu Android, iOS, Windows, sieci web i chmury przy użyciu Windows.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -42,7 +42,7 @@ ms.locfileid: "34690601"
                                 </a>
                             </li>
                             <li>
-                                <a href="https://docs.microsoft.com/vsts" title="Visual Studio Team Services">
+                                <a href="/azure/devops/" title="Usługom DevOps platformy Azure">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -52,8 +52,8 @@ ms.locfileid: "34690601"
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Visual Studio Team Services</h3>
-                                                    <p>Zwiększenie produktywności zespołu z projektami narzędzia i raporty. Tworzenie, testowanie i wdrażanie projektów z kontrolą źródła przy użyciu nowoczesnych narzędzi CI/CD.</p>
+                                                    <h3>Usługom DevOps platformy Azure</h3>
+                                                    <p>Zwiększ produktywność zespołu za pomocą narzędzi Agile projektów i raportów. Tworzenia, testowania i wdrażania projektów z kontrolą źródła, za pomocą nowoczesnych narzędzi ciągłej integracji/ciągłego wdrażania.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -61,7 +61,7 @@ ms.locfileid: "34690601"
                                 </a>
                             </li>
                             <li>
-                                <a href="https://docs.microsoft.com/tfs" title="Team Foundation Server">
+                                <a href="/tfs/" title="Team Foundation Server">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -72,7 +72,7 @@ ms.locfileid: "34690601"
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Team Foundation Server</h3>
-                                                    <p>Zainstalować, uaktualnić i zarządzanie wdrożeniami lokalnymi.</p>
+                                                    <p>Instalowania, uaktualniania i zarządzanie wdrożeniami w środowisku lokalnym.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -91,7 +91,7 @@ ms.locfileid: "34690601"
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Visual Studio Code</h3>
-                                                    <p>Zaawansowane edytowanie i debugowanie w setki języków na MacOS, Linux i Windows</p>
+                                                    <p>Zaawansowane edytowanie i debugowanie w setkach języków w systemach MacOS, Linux i Windows</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -110,7 +110,7 @@ ms.locfileid: "34690601"
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Visual Studio for Mac</h3>
-                                                    <p>Tworzenie aplikacji i gier, za pomocą komputera Mac, dla chmury, iOS, Android, macOS i wearables.</p>
+                                                    <p>Twórz aplikacje i gry za pomocą Mac, dla chmury, z systemem iOS, Android, macOS i wearables.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -118,7 +118,7 @@ ms.locfileid: "34690601"
                                 </a>
                             </li>
                             <li>
-                                <a href="https://docs.microsoft.com/appcenter" title="Centrum aplikacji programu Visual Studio">
+                                <a href="/appcenter/" title="Visual Studio App Center">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -128,8 +128,8 @@ ms.locfileid: "34690601"
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Centrum aplikacji programu Visual Studio</h3>
-                                                    <p>Ciągłej integracji, dostarczania i uczenia dla aplikacji systemu Android, iOS, system macOS i Windows. 5 gwiazdek, wyższej jakości aplikacje są dostarczane szybsze i zaufania.</p>
+                                                    <h3>Visual Studio App Center</h3>
+                                                    <p>Ciągła integracja, dostarczanie i uczenie dla aplikacji systemów Android, iOS, macOS i Windows. Publikuj 5-gwiazdkowe, najwyższej jakości aplikacje szybciej i pewniej.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -137,7 +137,7 @@ ms.locfileid: "34690601"
                                 </a>
                             </li>
                             <li>
-                                <a href="https://aka.ms/vs-subscriptions" title="Centrum aplikacji programu Visual Studio">
+                                <a href="/subscriptions/" title="Subskrypcje programu Visual Studio">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -148,7 +148,7 @@ ms.locfileid: "34690601"
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Subskrypcje programu Visual Studio</h3>
-                                                    <p>Narzędzia deweloperskie, usługami w chmurze, szkolenia i obsługuje w jednym miejscu.</p>
+                                                    <p>Narzędzia dla deweloperów, usługi w chmurze, szkoleń i pomocy technicznej w jednym miejscu.</p>
                                                 </div>
                                             </div>
                                         </div>

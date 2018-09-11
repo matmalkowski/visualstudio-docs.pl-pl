@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3f927a3215a415745c2e9004573810101c229ab5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e085cc144c35c59a50ec7c46f8087ccbae46fcd7
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31119562"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283252"
 ---
 # <a name="idebugprogrampublisher2"></a>IDebugProgramPublisher2
-Ten interfejs umożliwia aparat debugowania (DE) lub dostawcy niestandardowego numeru portu do zarejestrowania programy do debugowania.  
+Ten interfejs umożliwia aparat debugowania (DE) lub dostawców port niestandardowy, można zarejestrować programy do debugowania.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -32,24 +32,24 @@ IDebugProgramPublisher2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Uwagi dotyczące implementacji  
- Visual Studio implementuje ten interfejs, aby zarejestrować programy debugowany aby stały się widoczne dla debugowania wielu procesom.  
+ Program Visual Studio implementuje ten interfejs, aby zarejestrować debugowane aby stały się widoczne dla debugowania wielu procesom programy.  
   
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania  
- Wywołania modelu COM `CoCreateInstance` działać z `CLSID_ProgramPublisher` uzyskanie tego interfejsu (Zobacz przykład). Niemcy lub dostawcy niestandardowego numeru portu używa tego interfejsu zarejestrować program węzły, które reprezentują debugowane programy.  
+ Wywołania modelu COM `CoCreateInstance` funkcją `CLSID_ProgramPublisher` uzyskać tego interfejsu (Zobacz przykład). DE lub dostawcy niestandardowego portu ten interfejs jest używana do zarejestrowania węzły programu, które reprezentują debugowane programy.  
   
-## <a name="methods-in-vtable-order"></a>Metody w kolejności Vtable  
+## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności  
  Ten interfejs implementuje następujących metod:  
   
 |Metoda|Opis|  
 |------------|-----------------|  
-|[PublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md)|Udostępnia węzła programu DEs i sesja debugowania Menedżera (SDM).|  
-|[UnpublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogramnode.md)|Usunięcie węzła programu tak, aby nie jest już dostępne.|  
+|[PublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md)|Udostępnia węzła programu DEs i sesja debugowania manager (SDM).|  
+|[UnpublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogramnode.md)|Usuwa węzła program nie jest już dostępna.|  
 |[PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md)|Udostępnia program DEs i SDM.|  
-|[UnpublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogram.md)|Usuwa program, aby nie jest już dostępne.|  
+|[UnpublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogram.md)|Usuwa program, więc nie jest już dostępna.|  
 |[SetDebuggerPresent](../../../extensibility/debugger/reference/idebugprogrampublisher2-setdebuggerpresent.md)|Ustawia flagę wskazującą, czy jest obecny debuger.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ten interfejs udostępnia programy i węzły programu (to znaczy "" je opublikował) dla DEs i Menedżer debugowania sesji (SDM). Aby uzyskać dostęp do programów publikowanych i węzły program, należy użyć [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md) interfejsu. Jest to tylko sposób Visual Studio może rozpoznać jest debugowany program.  
+ Ten interfejs udostępnia programy oraz węzły programu (czyli "" spowoduje ich opublikowanie) do użycia przez DEs i Menedżer debugowania sesji (SDM). Dostęp do opublikowanych programów i węzły programu, należy użyć [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md) interfejsu. To jest jedynym sposobem, w których program Visual Studio jest w stanie rozpoznać jest debugowany program.  
   
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: msdbg.h  
@@ -59,7 +59,7 @@ IDebugProgramPublisher2 : IUnknown
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="example"></a>Przykład  
- W tym przykładzie przedstawiono sposób tworzenia wystąpienia wydawca programu i zarejestrować węzła programu. To jest pobierana z samouczka [publikowania w węźle programu](http://msdn.microsoft.com/en-us/d0100e02-4e2b-4e72-9e90-f7bc11777bae).  
+ Ten przykład przedstawia sposób tworzenia wystąpienia wydawca programu i zarejestruj węzeł program. To jest pobierana z tego samouczka [publikowanie węzła programu](https://msdn.microsoft.com/library/d0100e02-4e2b-4e72-9e90-f7bc11777bae).  
   
 ```cpp  
 // This is how m_srpProgramPublisher is defined in the class definition:  
@@ -93,5 +93,5 @@ void CProgram::Start(IDebugEngine2 * pEngine)
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejsy Core](../../../extensibility/debugger/reference/core-interfaces.md)   
+ [Interfejsy podstawowe](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)

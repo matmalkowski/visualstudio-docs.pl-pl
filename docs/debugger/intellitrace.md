@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ad3344d688159ded35cd8f6c6aa757cc8a7a478
-ms.sourcegitcommit: d7209d61e812b34d06c2aa267bdf50fbc714d0e0
+ms.openlocfilehash: 7bddba938360b56b0ed86d4aca35aa963cdd7a84
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/20/2018
-ms.locfileid: "42624163"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44321022"
 ---
 # <a name="intellitrace"></a>IntelliTrace
 
@@ -35,7 +35,7 @@ Spędzisz mniej czasu na debugowaniu aplikacji, jeśli będziesz używać Intell
 
 - Rejestruje określone zdarzenia
 
-     Sprawdzić kod pokrewny, dane wyświetlane w **lokalne** okna podczas zdarzenia debuger i informacje o wywołaniach funkcji
+   Sprawdzić kod pokrewny, dane wyświetlane w **lokalne** okna podczas zdarzenia debuger i informacje o wywołaniach funkcji
 
 - Debugowanie błędów, które są trudne do odtworzenia lub zdarzyły się we wdrożeniu
 
@@ -46,7 +46,7 @@ Za pomocą funkcji IntelliTrace w programie Visual Studio Enterprise (ale nie w 
 |||
 |-|-|
 |**Debuguj aplikację przy użyciu funkcji IntelliTrace:**<br /><br /> — Pokaż poprzednie zdarzenia.<br />— Pokaż informacje wywołań w przeszłych zdarzeń.<br />-Zapisz sesję IntelliTrace.<br />-Control IntelliTrace zbiera dane.|- [Przewodnik: Używanie funkcji IntelliTrace](../debugger/walkthrough-using-intellitrace.md)<br />- [Funkcje IntelliTrace](../debugger/intellitrace-features.md)<br />- [Debugowanie historyczne](../debugger/historical-debugging.md)<br />- [Wyświetlanie migawki za pomocą funkcji IntelliTrace krok do tyłu](../debugger/how-to-use-intellitrace-step-back.md)|
-|**Zbieraj dane IntelliTrace podczas sesji testowej w programie Test Manager**|- [Zbieranie większej ilości danych podczas wykonywania testów ręcznych](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)|
+|**Zbieraj dane IntelliTrace podczas sesji testowej w programie Test Manager**|- [Zbieranie większej ilości danych podczas wykonywania testów ręcznych](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)|
 |**Zbieraj dane IntelliTrace z wdrożonych aplikacji**|- [Przy użyciu autonomicznego modułu zbierającego IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)|
 |**Uruchom debugowanie z pliku dziennika IntelliTrace (plik itrace).**|- [Przy użyciu zapisanych danych funkcji IntelliTrace](../debugger/using-saved-intellitrace-data.md)|
 
@@ -89,7 +89,7 @@ Możesz zapisywać dane IntelliTrace z następujących źródeł:
 
 - Aplikacja przestaje działać na komputerze testowym, ale pomyślnie działa na komputerze deweloperskim.
 
-     Możesz zbierać dane IntelliTrace z Microsoft Test Manager, zapisać dane w pliku iTrace i dołączyć ten plik do elementu pracy programu Team Foundation Server, aby przeprowadzić późniejszą analizę. Zobacz [zbieranie większej ilości danych podczas wykonywania testów ręcznych](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests) i [korzystanie z zapisanych danych funkcji IntelliTrace](../debugger/using-saved-intellitrace-data.md).
+     Możesz zbierać dane IntelliTrace z Microsoft Test Manager, zapisać dane w pliku iTrace i dołączyć ten plik do elementu pracy programu Team Foundation Server, aby przeprowadzić późniejszą analizę. Zobacz [zbieranie większej ilości danych podczas wykonywania testów ręcznych](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts) i [korzystanie z zapisanych danych funkcji IntelliTrace](../debugger/using-saved-intellitrace-data.md).
 
 - Błąd lub awaria ma miejsce we wdrożonej aplikacji.
 
@@ -129,9 +129,7 @@ Domyślnie IntelliTrace zapisuje tylko zdarzenia funkcji IntelliTrace: debugera,
 
 - **Zdarzenia .NET framework**
 
-     IntelliTrace domyślnie zapisuje najbardziej typowe zdarzenia .NET Framework. Na przykład:
-
-    - W przypadku zdarzenia sprawdzania pola wyboru IntelliTrace zbiera stan pola wyboru i tekst.
+   IntelliTrace domyślnie zapisuje najbardziej typowe zdarzenia .NET Framework. Na przykład ror w przypadku zdarzenia sprawdzania pola wyboru IntelliTrace zbiera stan pola wyboru i tekst.
 
 - **Zdarzenia aplikacji programów SharePoint 2010 i SharePoint 2013**
 
@@ -180,8 +178,10 @@ Gromadzenie informacji o wywołaniach może znacznie spowolnić pracę aplikacji
 ## <a name="in-this-section"></a>W tej sekcji
 
 [Funkcje IntelliTrace](../debugger/intellitrace-features.md)
-[diagnozowanie problemów po wdrożeniu](../debugger/diagnose-problems-after-deployment.md)
-[korzystanie z zapisanych danych funkcji IntelliTrace](../debugger/using-saved-intellitrace-data.md)
+
+[Diagnozowanie problemów po wdrożeniu](../debugger/diagnose-problems-after-deployment.md)
+
+[Korzystanie z zapisanych danych funkcji IntelliTrace](../debugger/using-saved-intellitrace-data.md)
 
 ### <a name="blogs"></a>Blogi
 

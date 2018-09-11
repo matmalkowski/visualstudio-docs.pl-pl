@@ -11,12 +11,12 @@ ms.author: shoag
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: db88545393eeda280df898ee896f54123f4a1627
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: de4306b2fa56bf00fd51a741441395b90ed314e5
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251543"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280808"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>Opracowywanie aplikacji na platformę uniwersalną systemu Windows (UWP)
 Dzięki platformie Universal Windows i naszych jednego rdzenia Windows można uruchamiać tę samą aplikację na dowolnym urządzeniu systemu Windows 10, od telefonów do komputerów stacjonarnych. Tworzenie aplikacji Universal Windows za pomocą programu Visual Studio i narzędzia do programowania uniwersalnych aplikacji Windows.
@@ -47,7 +47,7 @@ Platformy uniwersalnej Windows jest po prostu kolekcją umów i wersji. Te pozwa
 Po zainstalowaniu tego oprogramowania, należy włączyć urządzenia z systemem Windows 10 do tworzenia aplikacji. Zobacz [włączyć urządzenia na potrzeby programowania](/windows/uwp/get-started/enable-your-device-for-development). Nie potrzebujesz już licencję dewelopera dla każdego urządzenia z systemem Windows 10.
 
 ## <a name="universal-windows-apps"></a>Universal Windows apps
-Wybierz język preferowany programowania w języku C#, Visual Basic, C++ lub JavaScript do tworzenia aplikacji Universal Windows Platform dla urządzeń z systemem Windows 10. Odczyt [Utwórz swoją pierwszą aplikację](/windows/uwp/get-started/your-first-app) lub Obejrzyj [narzędzia dla systemu Windows 10 — omówienie](http://channel9.msdn.com/Series/ConnectOn-Demand/229) wideo.
+Wybierz język preferowany programowania w języku C#, Visual Basic, C++ lub JavaScript do tworzenia aplikacji Universal Windows Platform dla urządzeń z systemem Windows 10. Odczyt [Utwórz swoją pierwszą aplikację](/windows/uwp/get-started/your-first-app) lub Obejrzyj [narzędzia dla systemu Windows 10 — omówienie](https://channel9.msdn.com/Series/ConnectOn-Demand/229) wideo.
 
 Jeśli masz istniejące aplikacje Windows Store 8.1, aplikacje systemu Windows Phone 8.1 lub Windows Universal aplikacje, które zostały utworzone przy użyciu programu Visual Studio 2015, konieczne będzie portu tych aplikacji mają być użyj najnowszej wersji uniwersalnej platformy Windows. Zobacz [przenoszenie ze środowiska wykonawczego Windows 8.x do platformy uniwersalnej systemu Windows](/windows/uwp/porting/w8x-to-uwp-root).
 

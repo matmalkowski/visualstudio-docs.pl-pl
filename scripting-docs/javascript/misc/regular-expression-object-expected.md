@@ -20,20 +20,20 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9a5a0f3cb3b86e2e01d522f85d0dae23e9c9d3ca
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 1b8e3c48b116680fe73d4cc318038cb2c13c4164
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24788647"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280317"
 ---
 # <a name="regular-expression-object-expected"></a>Oczekiwano obiektu będącego wyrażeniem regularnym
-Użytkownik próbował wywołać **RegExp.prototype.toString** lub **RegExp.prototype.valueOf** metody dla obiekt typu innego niż `RegExp`. Obiekt tego typu wywołania musi być typu `RegExp`.  
+Podjęto próbę wywołania **RegExp.prototype.toString** lub **RegExp.prototype.valueOf** metody na obiekt typu innego niż `RegExp`. Obiekt tego typu wywołania musi być typu `RegExp`.  
   
 ### <a name="to-correct-this-error"></a>Aby poprawić ten błąd  
   
--   Tylko wywołania **RegExp.prototype.toString** lub **RegExp.prototype.valueOf** metod na obiektach typu `RegExp`.  
+-   Tylko wywołania **RegExp.prototype.toString** lub **RegExp.prototype.valueOf** metod obiektów typu `RegExp`.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Obiekt będący wyrażeniem regularnym](../../javascript/reference/regular-expression-object-javascript.md)   
- [Składnia wyrażeń regularnych (JavaScript)](http://msdn.microsoft.com/en-us/ab0766e1-7037-45ed-aa23-706f58358c0e)
+ [Składnia wyrażeń regularnych (JavaScript)](https://msdn.microsoft.com/library/1400241x)

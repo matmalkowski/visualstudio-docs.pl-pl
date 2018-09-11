@@ -13,12 +13,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 6cf63d830a90e7240ec0adb4d191b8b765ebb1d4
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 1222f1aaa68c573a61bf10e3935e21330aa63260
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380368"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44320907"
 ---
 # <a name="unit-test-your-code"></a>Kod testu jednostkowego
 
@@ -49,8 +49,8 @@ Należy skorzystać z następujących tematów, aby lepiej zrozumieć i z łatwo
 |**Testy jednostkowe kodu C++**|-   [Pisanie testów jednostkowych dla języka C/C++ za pomocą Frameworka testów jednostkowych firmy Microsoft dla języka C++](../test/writing-unit-tests-for-c-cpp-with-the-microsoft-unit-testing-framework-for-cpp.md)|
 |**Izolowanie testów jednostkowych**|-   [Izolowanie testowanego kodu za pomocą Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)|
 |**Użycie pokrycia kodu do identyfikacji, jaka część kodu projektu jest testowana:** więcej informacji na temat funkcjonalności pokrycia kodu w programie Visual Studio, narzędzia do testowania.|-   [Użycie pokrycia kodu, aby ustalić, ile kodu jest poddawana testom](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)|
-|**Wykonywanie analizy wytrzymałościowej i wydajnościowej przez użycie testów obciążeniowych:** można utworzyć test obciążenia i dodać testy jednostkowe do niej, aby pomóc wyizolować problemy wytrzymałościowe i wydajnościowe w aplikacji.|-   [Ładowanie testów (usługi VSTS i TFS)](/vsts/load-test/)|
-|**Ustaw bramki jakości:** można tworzyć bramy jakości, aby wymusić Uruchamianie testów przed zaewidencjonowaniem kodu, aby zapewnić jakość kodu.|-   [Zasady ewidencjonowania (VSTS)](/vsts/tfvc/add-check-policies)|
+|**Wykonywanie analizy wytrzymałościowej i wydajnościowej przez użycie testów obciążeniowych:** można utworzyć test obciążenia i dodać testy jednostkowe do niej, aby pomóc wyizolować problemy wytrzymałościowe i wydajnościowe w aplikacji.|-   [Ładowanie testowania (Azure planów testów i TFS)](/azure/devops/test/load-test/index?view=vsts)|
+|**Ustaw bramki jakości:** można tworzyć bramy jakości, aby wymusić, że testy są uruchamiane przed kod jest zaewidencjonowany lub scalić, aby zapewnić jakość kodu.|-   [Zasady ewidencjonowania (Azure repozytoriów TFVC)](/azure/devops/repos/tfvc/add-check-policies?view=vsts)|
 |**Ustawianie opcji testowania:** na przykład określić, gdzie są przechowywane wyniki testu.|[Konfigurowanie testów jednostkowych przy użyciu pliku runsettings](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)|
 
 ## <a name="api-reference-documentation"></a>Dokumentacja interfejsu API

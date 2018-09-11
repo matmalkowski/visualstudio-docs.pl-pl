@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d8b8ec4495c12132b89561bcbbaaf8ebfdbe3483
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 10dc2effb90e754a91f6c9f008c6f8b1692bc252
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42624372"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281068"
 ---
 # <a name="step-6-use-the-polls-django-web-project-template"></a>Krok 6: Należy użyć szablonu projektu sieci Web Django sond
 
@@ -376,8 +376,8 @@ Uruchamianie aplikacji sieci web na komputerze deweloperskim jest tylko jeden kr
 
 - Należy zmodyfikować aplikację tak, z bazy danych SQLite w magazynie danych na poziomie produkcyjnym, takich jak PostgreSQL, MySQL i SQL Server (które mogą być hostowane na platformie Azure). Zgodnie z opisem na [kiedy należy używać bazy danych SQLite](https://www.sqlite.org/whentouse.html) (sqlite.org) działa prawidłowo dla witryn o średnim ruchu z mniej niż 100 tysięcy trafień/dzień działania niskiej SQLite, ale nie jest zalecany do większej ilości. Jest także ograniczona do jednego komputera, więc nie można używać w każdym scenariuszu wielu serwerów, takich jak Równoważenie obciążenia i replikację geograficzną. Aby uzyskać informacje na temat obsługi Django w innych bazach danych, zobacz [Konfiguracja bazy danych](https://docs.djangoproject.com/en/2.0/intro/tutorial02/#database-setup). Można również użyć [zestawu Azure SDK dla języka Python](azure-sdk-for-python.md) do pracy z usług Azure storage, takich jak tabele i obiektów blob.
 
-- Skonfiguruj potok ciągłej integracji/ciągłego wdrażania w usłudze, takich jak Visual Studio Team Services (VSTS). Oprócz Praca z kontrolą źródła (w usłudze VSTS, GitHub lub gdzie indziej), może mieć VSTS automatycznie uruchomić testy jednostkowe jako warunek wstępny dla wersji, a także skonfigurować potok do wdrażania na serwerze tymczasowym dla dodatkowych testów przed wdrożeniem Produkcja. Usługi VSTS, ponadto integruje się z usługą monitorowania rozwiązań, takich jak usługi App Insights i zamknięcie całego cyklu za pomocą narzędzi planowania agile. Aby uzyskać więcej informacji, zobacz:
+- Skonfiguruj potok ciągłej integracji/ciągłego wdrażania usługi, takie jak potoki usługi Azure. Oprócz Praca z kontrolą źródła (na repozytoriów platformy Azure, GitHub lub w innym miejscu), może mieć plany testów Azure automatycznie uruchomić testy jednostkowe jako warunek wstępny dla wersji, a także skonfigurować potok do wdrażania na serwerze tymczasowym dla dodatkowych testów przed do wdrożenia produkcyjnego. Usług platformy Azure DevOps, ponadto integruje się z usługą monitorowania rozwiązań, takich jak usługi App Insights i zamknięcie całego cyklu za pomocą narzędzi planowania agile. Aby uzyskać więcej informacji, zobacz:
 
-  - [Tworzenie potoku ciągłej integracji/ciągłego Dostarczania dla języka Python za pomocą projektu DevOps platformy Azure](/azure/devops-project/azure-devops-project-python?view=vsts)
+  - [Tworzenie potoku ciągłej integracji/ciągłego Dostarczania dla języka Python za pomocą usługi Azure DevOps Projects](/azure/devops-project/azure-devops-project-python?view=vsts)
   - [Programowanie w języku Python na platformie Azure przy użyciu programu Visual Studio Team Services (wideo, 11m 21s)](https://azure.microsoft.com/resources/videos/connect-2017-python-development-in-azure-with-visual-studio-team-services/).
 

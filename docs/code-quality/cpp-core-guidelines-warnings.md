@@ -1,5 +1,5 @@
 ---
-title: Ostrzeżenia wytyczne Core C++
+title: Ostrzeżenia dotyczące podstawowych wytycznych dotyczących języka C++
 ms.date: 08/10/2017
 ms.topic: conceptual
 ms.assetid: 7c83814a-f21d-4323-ad5f-13bac40d3e38
@@ -10,32 +10,32 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ef0b06be65322dc6a15f92b1d808d585960f0331
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 035f1fe305576eb7f5bf05fb6cc5f6343e256dca
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746069"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279753"
 ---
-# <a name="using-the-c-core-guidelines-checkers"></a>Przy użyciu programy wytyczne Core C++
-Wskazówki Core C++ są przenośny zestaw wskazówki, reguł i najlepsze rozwiązania dotyczące pisania kodu w języku C++ utworzone przez ekspertów C++ i projektantów. Program Visual Studio obsługuje obecnie podzbiór tych reguł jako część jej narzędzi analizy kodu dla języka C++. Podstawowe wytyczne są instalowane domyślnie w programie Visual Studio 2017 oraz są [dostępne jako pakietu NuGet dla programu Visual Studio 2015](#vs2015_corecheck).
+# <a name="using-the-c-core-guidelines-checkers"></a>Za pomocą narzędzia do sprawdzania podstawowych wytycznych dotyczących języka C++
+Podstawowych wytycznych dotyczących języka C++ są przenośne zbiór wytycznych, reguł i najlepsze rozwiązania dotyczące programowania w języku C++, utworzone przez ekspertów z C++ i projektantów. Program Visual Studio obsługuje obecnie podzbiór tych reguł w ramach jego narzędzi analizy kodu dla języka C++. Podstawowe wytyczne są instalowane domyślnie w programie Visual Studio 2017 oraz są [dostępne jako pakiet NuGet dla programu Visual Studio 2015](#vs2015_corecheck).
 
-## <a name="the-c-core-guidelines-project"></a>Projekt wytycznych C++ Core
- Utworzone przez Bjarne Stroustrup i inne osoby, wskazówki Core C++ są przewodnik przy użyciu nowoczesnych wersji języka C++, bezpieczne i efektywnie. Wytyczne wyróżnianie statycznego typu bezpieczeństwa i bezpieczeństwa zasobów. Zidentyfikować sposobów, aby wyeliminować lub minimalizowanie najbardziej podatnych części języka i zasugerować jak kod był prostszy i wydajności więcej w niezawodny sposób. Wskazówki te są obsługiwane przez standardowe Foundation C++. Aby dowiedzieć się więcej, zajrzyj do dokumentacji [C++ podstawowe wskazówki](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines)i uzyskać dostęp do plików projektu dokumentacji C++ podstawowe wskazówki na [GitHub](https://github.com/isocpp/CppCoreGuidelines).
+## <a name="the-c-core-guidelines-project"></a>C++ podstawowych wytycznych dotyczących projektu
+ Utworzone przez Bjarne'a Stroustrupa i innym osobom, podstawowych wytycznych dotyczących języka C++ to przewodnik do wykorzystania nowoczesnym języku C++, bezpiecznie i wydajnie. Wytyczne podkreślić bezpieczeństwa typu statycznego i bezpieczeństwa zasobów. Identyfikowanie sposoby wyeliminowania lub zminimalizować najbardziej podatne na błędy części języka i sugeruje jak sprawić, że kod jest prostszy i wydajniej w niezawodny sposób. Te wytyczne są obsługiwane przez Standard C++ Foundation. Aby dowiedzieć się więcej, zapoznaj się z dokumentacją, [podstawowych wytycznych dotyczących języka C++](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines), a dostęp do plików projektu dokumentacji podstawowych wytycznych dotyczących języka C++ na [GitHub](https://github.com/isocpp/CppCoreGuidelines).
 
-## <a name="enable-the-c-core-check-guidelines-in-code-analysis"></a>Włącz C++ podstawowe sprawdzanie wskazówki zawarte w analizy kodu
- Można włączyć analizy kodu w projekcie, wybierając **Włącz analizę kodu podczas kompilacji** checkbox w **analizy kodu** sekcji **strony właściwości** okno dialogowe projektu.
+## <a name="enable-the-c-core-check-guidelines-in-code-analysis"></a>Włącz wskazówki podstawowe sprawdzanie języka C++ w analizie kodu
+ Można włączyć analizę kodu projektu, wybierając **Włącz analizę kodu podczas kompilacji** pola wyboru w **analizy kodu** części **stron właściwości** okno dialogowe Projekt.
 
- ![Strony właściwości dla ustawienia ogólne analizy kodu](../code-quality/media/cppcorecheck_codeanalysis_general.png)
+ ![Strony właściwości dla ustawień ogólnych analizy kodu](../code-quality/media/cppcorecheck_codeanalysis_general.png)
 
- Sprawdź Core C++ reguły są rozszerzenia do zestawów reguł domyślne uruchamianych podczas analizy kodu jest włączone. Ponieważ zasady Sprawdź Core C++ są opracowywane, niektóre reguły są utrwalonego, a niektóre może nie być gotowy do użycia na cały kod, ale nadal mogą służyć jako źródło informacji. Reguły są podzielone na dwie grupy: zwolniono i eksperymentalne. Możesz wybrać, czy do uruchamiania zasady zwolniony lub eksperymentalne we właściwościach projektu.
+ Podstawowe sprawdzanie języka C++ reguły są rozszerzenia do zestawów reguł domyślne, które są uruchamiane po włączeniu analizy kodu. Ponieważ zasady podstawowe sprawdzanie języka C++, są w fazie projektowania, niektóre reguły dobrze się, a niektóre mogą nie być gotowe do użycia na cały kod, ale może być zawierającego wiele użytecznych informacji. Reguły są podzielone na dwie grupy: zwolniono i eksperymentalne. Możesz wybrać, czy do uruchamiania reguły wydana lub eksperymentalnych we właściwościach projektu.
 
  ![Strony właściwości dla ustawień rozszerzenia analizy kodu](../code-quality/media/cppcorecheck_codeanalysis_extensions.png)
 
- Aby włączyć lub wyłączyć zestawy reguł sprawdzania Core C++, otwórz **strony właściwości** okna dialogowego dla projektu. W obszarze **właściwości konfiguracji**, rozwiń węzeł **analizy kodu**, **rozszerzenia**. W menu rozwijanym obok pozycji kontroli **włączyć sprawdzanie Core C++ (zwolnione)** lub **włączyć sprawdzanie Core C++ (eksperymentalne)**, wybierz **tak** lub **nr**. Wybierz **OK** lub **Zastosuj** Aby zapisać zmiany.
+ Aby włączyć lub wyłączyć zestawy reguł podstawowe sprawdzanie języka C++, otwórz **stron właściwości** okno dialogowe dla Twojego projektu. W obszarze **właściwości konfiguracji**, rozwiń węzeł **analizy kodu**, **rozszerzenia**. W menu rozwijanym obok kontrolować **Włącz podstawowe sprawdzanie języka C++ (wydania)** lub **Włącz podstawowe sprawdzanie języka C++ (funkcja eksperymentalna)**, wybierz **tak** lub **nie**. Wybierz **OK** lub **Zastosuj** Aby zapisać zmiany.
 
 ## <a name="examples"></a>Przykłady
- Oto przykład niektórych problemów, które można znaleźć reguły Sprawdź Core C++:
+ Oto przykład niektórych problemów, które można znaleźć reguły podstawowe sprawdzanie języka C++:
 
 ```cpp
 // CoreCheckExample.cpp
@@ -56,15 +56,15 @@ int main()
 }
 ```
 
- W tym przykładzie pokazano kilka ostrzeżeń, które można znaleźć reguły Sprawdź Core C++:
+ W tym przykładzie pokazano kilka ostrzeżeń, które można znaleźć reguły podstawowe sprawdzanie języka C++:
 
--   C26494 jest reguła Type.5: zawsze zainicjować obiektu.
+-   C26494 jest reguła Type.5: zawsze Inicjuj obiekt.
 
--   C26485 jest reguła Bounds.3: nie zanikania tablicy na wskaźnik.
+-   C26485 jest reguła Bounds.3: nie zanikania tablicy do wskaźnika.
 
 -   C26481 jest reguła Bounds.1: nie używaj arytmetyki wskaźnika. Zamiast nich należy używać słów kluczowych `span`.
 
- Jeśli zestawów reguł C++ Core Sprawdź analizy kodu nie zostaną zainstalowane i włączone podczas kompilowania tego kodu, pierwsze dwa ostrzeżenia są dane wyjściowe, ale trzeci jest pomijane. Oto przykładowy kod dane wyjściowe kompilacji:
+ Jeśli zestawów reguł podstawowe sprawdzanie języka C++ analizy kodu są zainstalowane i włączone, skompilować ten kod, pierwsze dwa ostrzeżenia są dane wyjściowe, ale trzecie jest pomijane. Oto dane wyjściowe kompilacji z przykładowego kodu:
 
 ```Output
 1>------ Build started: Project: CoreCheckExample, Configuration: Debug Win32 ------
@@ -76,27 +76,27 @@ c:\users\username\documents\visual studio 2015\projects\corecheckexample\coreche
 ========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
 ```
 
-Wytyczne Core C++ istnieją ułatwia pisanie kodu lepsze i bezpieczniejsze. Jednak jeśli masz wystąpienie, w którym nie można zastosować reguły lub profilu jest łatwy do pomijania go bezpośrednio w kodzie. Można użyć `gsl::suppress` atrybutu, aby sprawdzić Core C++ wykrywanie i zgłoszenie naruszenia reguły w następujący blok kodu. Możesz oznaczyć poszczególne instrukcje, aby pominąć określone zasady. Można nawet pominąć wszystkie profile granice pisząc `[[gsl::suppress(bounds)]]` bez uwzględniania określonej reguły.
+Podstawowych wytycznych dotyczących języka C++, istnieją ułatwia pisanie kodu lepsze i bezpieczniejsze. Jednak w przypadku wystąpienia, gdzie nie należy zastosować regułę lub profil jest łatwy do pomijania go bezpośrednio w kodzie. Możesz użyć `gsl::suppress` atrybutu, aby zapobiec podstawowe sprawdzanie języka C++ wykrywania i raportowania wszelkie naruszenia reguły w następującym fragmencie kodu. Możesz oznaczyć pojedyncze instrukcje, aby pominąć określone zasady. Można nawet pominąć cały profil granic, pisząc `[[gsl::suppress(bounds)]]` bez uwzględniania numer określonej reguły.
 
 ## <a name="supported-rule-sets"></a>Obsługiwane zestawy reguł
-Jak nowe zasady zostaną dodane do sprawdzania wytyczne Core C++, może zwiększyć liczbę ostrzeżeń, które są tworzone dla istniejącego kodu. Zestawy wstępnie zdefiniowanych reguł służy do filtrowania rodzajów reguły, aby włączyć. Począwszy od programu Visual Studio 2017 wersji 15 ustęp 3 zestawy reguł obsługiwane są:
-  - **Reguły wskaźnika właściciela** wymusić [zarządzanie zasobami sprawdza powiązany właściciel<T> z wytycznymi Core C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
+Po dodaniu nowych zasad do wytycznych podstawowe sprawdzanie języka C++, może wzrosnąć liczba ostrzeżeń, które są tworzone dla wcześniej napisanego kodu. Zestawy wstępnie zdefiniowanych reguł można użyć do filtrowania, jakie rodzaje zasad, aby włączyć. Począwszy od programu Visual Studio 2017 w wersji 15.3 zestawów reguł obsługiwane są:
+  - **Właściciel — reguły dotyczące wskaźnika** wymusić [zarządzania zasobami sprawdza związane z właścicielem<T> podstawowych wytycznych dotyczących języka C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
 
-  - **Reguły Const** wymusić [powiązane const kontroli z wytycznymi Core C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con-constants-and-immutability).
+  - **Reguły dotyczące zmiennych** wymusić [operacje sprawdzania powiązane z podstawowych wytycznych dotyczących języka C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con-constants-and-immutability).
 
-  - **Wskaźnik reguł** wymusić [zarządzanie zasobami sprawdza wskaźniki związanych z pierwotnych z wytycznymi Core C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
+  - **Reguły dotyczące wskaźnika surowego** wymusić [sprawdza, zarządzania zasobami powiązane z surowe wskaźniki podstawowych wytycznych dotyczących języka C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
 
-  - **Unikatowe zasady wskaźnika** wymusić [zarządzanie zasobami sprawdza związanych z typami z semantyki unikatowy wskaźnika z wytycznymi Core C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
+  - **Unikatowe reguły dotyczące wskaźnika** wymusić [zarządzania zasobami sprawdza powiązane z typami z semantyką unikatowego wskaźnika podstawowych wytycznych dotyczących języka C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
 
-  - **Zakresem reguły** wymusić [zakresem profilu wytycznych Core C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile).
+  - **Reguły dotyczące granic** wymusić [granic profilu podstawowych wytycznych dotyczących języka C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile).
 
-  - **Typ reguły** wymusić [typu profilu wytycznych Core C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#prosafety-type-safety-profile).
+  - **Reguły typu** wymusić [typu profilu podstawowych wytycznych dotyczących języka C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#prosafety-type-safety-profile).
 
 
- Można ograniczyć ostrzeżenia do tylko jednej lub kilku grup. **Native Minimum** i **natywnego zalecane** Sprawdź Core C++ reguł oprócz innych PREfast kontroli dołączania zestawów reguł. Aby wyświetlić dostępne zestawów reguł, Otwórz okno dialogowe właściwości projektu, zaznacz **Analysis\General kod**, otwórz menu rozwijanego w **zestawów reguł** pole kombi i pobrania **Wybierz wiele zestawów reguł** . Aby uzyskać więcej informacji o korzystaniu z zestawów reguł w programie Visual Studio, zobacz [przy użyciu zestawów reguł do grupowania reguł analizy kodu](using-rule-sets-to-group-code-analysis-rules.md).
+ Można ograniczyć ostrzeżeń do tylko jednej lub kilku grup. **Native Minimum** i **natywny zalecany** reguły zestawy reguł podstawowe sprawdzanie języka C++, oprócz innych PREfast kontroli. Aby wyświetlić dostępnych zestawów reguł, Otwórz okno dialogowe właściwości projektu, wybierz **Analysis\General kodu**, Otwórz na liście rozwijanej **zestawów reguł** pola kombi i pobrania **Wybierz wiele zestawów reguł** . Aby uzyskać więcej informacji na temat Korzystanie z zestawów reguł w programie Visual Studio, zobacz [przy użyciu zestawów reguł do grupowania reguł analizy kodu](using-rule-sets-to-group-code-analysis-rules.md).
 
 ## <a name="macros"></a>Makra
- Sprawdzanie wskazówki Core C++ jest dostarczany z pliku nagłówka, który definiuje makra, które ułatwiają Pomiń całych kategorii ostrzeżeń w kodzie:
+ Wytyczne dotyczące podstawowe sprawdzanie języka C++ jest dostarczany z pliku nagłówka, który definiuje makra, które ułatwiają Pomiń całych kategorii ostrzeżeń w kodzie:
 
 ```cpp
 ALL_CPPCORECHECK_WARNINGS
@@ -108,7 +108,7 @@ CPPCORECHECK_UNIQUE_POINTER_WARNINGS
 CPPCORECHECK_BOUNDS_WARNINGS
 ```
 
-Te makra odpowiadają zestawów reguł i rozszerzyć do rozdzielonej spacjami listy numerów ostrzeżeń. Przy użyciu konstrukcji odpowiednie pragma można skonfigurować skuteczne zestaw reguł jest interesujące dla projektu lub sekcji kodu. W poniższym przykładzie analizę kodu tylko ostrzegać brak modyfikatorów stałe:
+Te makra odpowiadają zestawów reguł i rozszerzyć do rozdzielonej spacjami listy numerów ostrzeżeń. Za pomocą konstrukcji odpowiednie pragma można skonfigurować efektywne zestaw reguł, który jest interesujące dla projektu lub sekcji kodu. W poniższym przykładzie analizę kodu tylko wyświetli ostrzeżenie o brakujące Modyfikatory stałe:
 
 ```cpp
 #include <CppCoreCheck\Warnings.h>
@@ -117,8 +117,8 @@ Te makra odpowiadają zestawów reguł i rozszerzyć do rozdzielonej spacjami li
 ```
 
 ## <a name="attributes"></a>Atrybuty
- Kompilator Microsoft Visual C++ ma ograniczoną obsługę GSL Pomiń atrybutu.
-Może służyć do Pomijaj ostrzeżenia w przypadku wyrażenia i instrukcje bloku wewnątrz funkcji.
+ Kompilator Microsoft Visual C++ ma ograniczoną obsługę GSL Pomiń atrybut.
+Może służyć do Pomijaj ostrzeżenia w przypadku wyrażeń i instrukcji bloku wewnątrz funkcji.
 
 ```cpp
 // Supress only warnings from the 'r.11' rule in expression.
@@ -141,32 +141,32 @@ Może służyć do Pomijaj ostrzeżenia w przypadku wyrażenia i instrukcje blok
 ```
 
 ## <a name="suppressing-analysis-by-using-command-line-options"></a>Pomijanie analizy przy użyciu opcji wiersza polecenia
- Zamiast #pragmas możesz użyć opcji wiersza polecenia na stronie właściwości pliku do pomijanie ostrzeżeń dla projektu lub pojedynczym plikiem. Na przykład, aby wyłączyć ostrzeżenia 26400 dla pliku:
+ Zamiast #pragmas umożliwia opcje wiersza polecenia na stronie właściwości pliku pomijanie ostrzeżeń dla projektu lub pojedynczy plik. Na przykład, aby wyłączyć ostrzeżenia 26400 dla pliku:
 
  1) Kliknij prawym przyciskiem myszy plik w **Eksploratora rozwiązań**
 
- 2) Wybierz **właściwości | C C ++ / | Wiersz polecenia**
+ 2) Wybierz **właściwości | C / C ++ | Wiersz polecenia**
 
- 3) W **dodatkowe opcje** okna, Dodaj `/wd26400`.
+ 3) W **dodatkowe opcje** oknie Dodaj `/wd26400`.
 
- Opcja wiersza polecenia można tymczasowo wyłączyć, określając analizę kodu dla pliku `/analyze-`. Spowoduje to utworzenie ostrzeżenie *D9025 zastępowanie "/ analyze" z "/ analyze-"*, który przypomina ponownie później włączyć analizy kodu.
+ Można użyć opcji wiersza polecenia, aby tymczasowo wyłączyć wszystkie analizy kodu dla pliku, określając `/analyze-`. Generuje to ostrzeżenie *zastępowanie D9025 "/ analyze" z "/ analyze-"*, która wyświetli Ci przypomnienie po można ponownie włączyć później analizy kodu.
 
- ## <a name="corecheck_per_file"></a> Włączenie sprawdzania C++ podstawowe wskazówki dotyczące plików określonego projektu
-Czasami mogą być przydatne do analizy kodu fokus i nadal korzystaj środowiska IDE programu Visual Studio. Poniżej znajduje się przykładowy scenariusz, który może służyć do dużych projektów, aby zapisać czas kompilacji i łatwiejsze do wyników filtrowania.
-1.  W powłoce poleceń programu ustawić `esp.extension` i `esp.annotationbuildlevel` zmiennych środowiskowych.
-2.  Uruchom program Visual Studio z powłoki poleceń umożliwiającej dziedziczą tych zmiennych.
-3.  Załadowanie projektu i otwórz jej właściwości.
-4.  Włącz analizę kodu, wybierz odpowiednią regułę zestawów, ale nie należy włączać rozszerzenia analizy kodu.
-5.  Przejdź do pliku, który ma być analizowane za pomocą sprawdzanie wskazówki Core C++ i otwórz jej właściwości.
-6.  Wybierz **C / C ++ \Command opcji wiersza** i Dodaj `/analyze:plugin EspXEngine.dll`
-7.  Wyłącz użycie prekompilowanego nagłówka (**C / C ++ \Precompiled nagłówki**). Jest to konieczne, ponieważ aparat rozszerzenia może próbować odczytywać wewnętrznych informacji prekompilowanego nagłówka, a jeśli jego został skompilowany z domyślne opcje projektu, nie będzie zgodny.
-8.  Skompiluj ponownie projekt. Typowe kontroli PREFast należy uruchomić we wszystkich plikach. Ponieważ sprawdzanie wskazówki Core C++ nie jest domyślnie włączona, należy wykonać tylko w pliku, który jest skonfigurowany do używania go.
+ ## <a name="corecheck_per_file"></a> Włączanie podstawowe sprawdzanie języka C++ wytyczne dotyczące plików w określonym projekcie
+Czasami może być przydatne do analizy kodu czy skupia się i nadal korzystaj środowiska IDE programu Visual Studio. Poniżej przedstawiono przykładowy scenariusz, który może służyć do dużych projektów, aby zapisać czas kompilacji i ułatwić filtrowania wyników.
+1.  W powłoce poleceń ustaw `esp.extension` i `esp.annotationbuildlevel` zmiennych środowiskowych.
+2.  Uruchom program Visual Studio z powłoki poleceń w celu odziedziczenia tych zmiennych.
+3.  Ładowanie projektu i otwórz jej właściwości.
+4.  Włącz analizę kodu, wybierz odpowiednią reguł, ale nie należy włączać rozszerzenia analizy kodu.
+5.  Przejdź do pliku, który chcesz analizować za pomocą wytycznych podstawowe sprawdzanie języka C++ i otwórz jej właściwości.
+6.  Wybierz **C / C ++ \Command opcje linii** i Dodaj `/analyze:plugin EspXEngine.dll`
+7.  Wyłącz używaniem prekompilowanego nagłówka (**C / C ++ \Precompiled nagłówki**). Jest to konieczne, ponieważ aparat rozszerzenia może próbować odczytywać wewnętrznych informacji prekompilowanego pliku nagłówkowego, a jeśli one został skompilowany przy użyciu domyślnej opcji projektu, nie będzie zgodny.
+8.  Skompiluj ponownie projekt. Typowe kontrole PREFast należy uruchomić we wszystkich plikach. Wytyczne dotyczące podstawowe sprawdzanie języka C++ nie jest domyślnie włączona, dlatego go powinien działać tylko na pliku, który jest skonfigurowany do używania go.
 
-## <a name="how-to-use-the-c-core-guidelines-checker-outside-of-visual-studio"></a>Jak używać sprawdzania C++ podstawowe wskazówki dotyczące poza Visual Studio
-Umożliwia sprawdzanie wskazówki Core C++ w kompilacjach zautomatyzowanych.
+## <a name="how-to-use-the-c-core-guidelines-checker-outside-of-visual-studio"></a>Jak używać podstawowe sprawdzanie języka C++ wytycznych poza programem Visual Studio
+Sprawdzanie w podstawowych wytycznych dotyczących języka C++ można użyć w kompilacjach zautomatyzowanych.
 
 ### <a name="msbuild"></a>MSBuild
- Narzędzie sprawdzania analizy kodu natywnego (PREfast) jest zintegrowany środowiska MSBuild przez pliki niestandardowych obiektów docelowych. Możesz ją włączyć za pomocą właściwości projektu i dodać sprawdzanie wskazówki Core C++, (która jest oparta na PREfast):
+ Narzędzie do sprawdzania analizy kodu natywnego (PREfast) jest zintegrowana środowiska MSBuild przez pliki niestandardowych elementów docelowych. Można użyć właściwości projektu, aby ją włączyć, a następnie dodaj podstawowe sprawdzanie wytyczne dotyczące języka C++, (które opiera się na PREfast):
 
  ```xml
   <PropertyGroup>
@@ -175,9 +175,9 @@ Umożliwia sprawdzanie wskazówki Core C++ w kompilacjach zautomatyzowanych.
     <RunCodeAnalysis>true</RunCodeAnalysis>
   </PropertyGroup>
 ```
-Upewnij się, że te właściwości, przed zaimportowaniem plików Microsoft.Cpp.targets dodawane. Można pobranie zestawów reguł określone lub utworzyć niestandardowego zestawu reguł lub użyj domyślnego zestawu reguł, który zawiera inne kontrole PREfast.
+Upewnij się, że możesz dodać te właściwości, przed zaimportowaniem pliku Microsoft.Cpp.targets. Można wybrać zestawów reguł określone lub Tworzenie niestandardowego zestawu reguł lub użycie domyślnego zestawu reguł, zawierający inne kontrole PREfast.
 
-Sprawdzania Core C++ można uruchomić tylko na określonych plików, przy użyciu tej samej metody jako [opisanych wcześniej](#coreckeck_per_file), ale przy użyciu programu MSBuild plików. Zmienne środowiskowe można ustawić przy użyciu `BuildMacro` elementu:
+Podstawowe sprawdzanie języka C++ można uruchomić tylko na określonych plików, przy użyciu tej samej metody co [opisanej wcześniej](#coreckeck_per_file), ale przy użyciu plików programu MSBuild. Zmienne środowiskowe można ustawić za pomocą `BuildMacro` elementu:
 
 ```xml
 <ItemGroup>
@@ -198,40 +198,40 @@ Jeśli nie chcesz zmodyfikować plik projektu, można przekazać właściwości 
 msbuild /p:EnableCppCoreCheck=true /p:RunCodeAnalysis=true /p:CodeAnalysisRuleSet=CppCoreCheckRules.ruleset ...
 ```
 
-### <a name="non-msbuild-projects"></a>Inne niż MSBuild projektów
-Jeśli używasz systemu kompilacji, które nie korzystają z programu MSBuild nadal można uruchomić narzędzie sprawdzania, ale należy zapoznać się z niektóre funkcje wewnętrzne Konfiguracja aparatu analizy kodu (który nie jest gwarantowana w przyszłości obsługiwane).
+### <a name="non-msbuild-projects"></a>Projekty inne niż MSBuild
+Jeśli używasz systemu kompilacji, który nie jest zależny od programu MSBuild, nadal można uruchomić narzędzie sprawdzania, ale należy zapoznać się z niektóre funkcje wewnętrzne Konfiguracja aparatu analizy kodu, (która jest nie musi być obsługiwane w przyszłości).
 
-Należy ustawić kilka zmienne środowiskowe i użyć opcji wiersza polecenia właściwe dla kompilatora. Najlepiej do pracy w środowisku "natywny wiersz polecenia narzędzi", dzięki czemu nie trzeba wyszukiwać określone ścieżki dla kompilatora, Dołącz katalogi itp.
+Należy ustawić kilka zmiennych środowiskowych i użyć właściwych opcji wiersza polecenia dla kompilatora. Zaleca się pracować w ramach środowiska "natywnych wiersz polecenia narzędzi", dzięki czemu nie trzeba wyszukiwania dla określonych ścieżek dla kompilatora, obejmują katalogi itp.
 
 1.  **Zmienne środowiskowe**
-  - `set esp.extensions=cppcorecheck.dll` Ta wartość informuje aparat można załadować modułu C++ podstawowe wskazówki.
-  - `set esp.annotationbuildlevel=ignore` Powoduje wyłączenie logikę, która przetwarza adnotacji SAL. Adnotacje nie wpływają na analizy kodu w module sprawdzania C++ podstawowe wskazówki dotyczące, ale ich zajmuje przetwarzanie czasu (czasami mnóstwo czasu). To ustawienie jest opcjonalne, lecz zdecydowanie zalecane.
-  - `set caexcludepath=%include%` Zdecydowanie zaleca się wyłączenie ostrzeżenia, które wyzwalać na standardowych nagłówków. Możesz dodać więcej ścieżek, na przykład ścieżki do wspólnych nagłówków w projekcie.
+  - `set esp.extensions=cppcorecheck.dll` Oznacza to, aparat, który można załadować modułu podstawowych wytycznych dotyczących języka C++.
+  - `set esp.annotationbuildlevel=ignore` Powoduje to wyłączenie logiki, która przetwarza adnotacji SAL. Adnotacji nie mają wpływu na analizę kodu w wytycznych podstawowe sprawdzanie języka C++, ale trwa jego przetwarzanie czasu (czasami dużo czasu). To ustawienie jest opcjonalne, lecz zdecydowanie zalecane.
+  - `set caexcludepath=%include%` Zdecydowanie zalecamy, aby wyłączyć ostrzeżenia, które są uruchamiane na standardowych nagłówków. Możesz dodać więcej ścieżek, na przykład ścieżki do typowych nagłówków w projekcie.
 2.  **Opcje wiersza polecenia**
-  - `/analyze`  Analiza kodu umożliwia (Rozważ też użycie / analyze: tylko i / analyze: quiet).
-  - `/analyze:plugin EspXEngine.dll` Ta opcja ładuje aparat rozszerzenia analizy kodu do PREfast. Ten aparat ładuje z kolei sprawdzanie wskazówki Core C++.
+  - `/analyze`  Włącza analizę kodu (należy wziąć pod uwagę, również przy użyciu / analyze: tylko i / analyze: quiet).
+  - `/analyze:plugin EspXEngine.dll` Ta opcja ładuje aparatu rozszerzenia analizy kodu do PREfast. Ten aparat ładuje z kolei wytycznych podstawowe sprawdzanie języka C++.
 
 
 
-## <a name="use-the-guideline-support-library"></a>Korzystanie z biblioteki obsługi wytyczne
- Podstawowa biblioteka obsługi zaprojektowano w celu ułatwienia postępuj zgodnie z wytycznymi Core. GSL zawiera definicje, które umożliwiają Zamień podatnych konstrukcje bezpieczniejszych alternatyw. Na przykład można zastąpić `T*, length` para parametrów z `span<T>` typu. GSL znajduje się w temacie [ http://www.nuget.org/packages/Microsoft.Gsl ](http://www.nuget.org/packages/Microsoft.Gsl). Biblioteka jest typu open source, aby wyświetlić źródła, wprowadzania komentarzy lub współtworzenia. Projekt można znaleźć w folderze [ https://github.com/Microsoft/GSL ](https://github.com/Microsoft/GSL).
+## <a name="use-the-guideline-support-library"></a>Korzystanie z biblioteki obsługi wskazówek dotyczących
+ Biblioteka obsługi wskazówek dotyczących zaprojektowano w celu postępuj zgodnie z podstawowych wytycznych dotyczących. GSL zawiera definicje, które umożliwiają Zamień podatne konstrukcje bezpieczniejszych alternatyw. Na przykład, możesz zastąpić `T*, length` pary parametrów za pomocą `span<T>` typu. GSL znajduje się w temacie [ http://www.nuget.org/packages/Microsoft.Gsl ](http://www.nuget.org/packages/Microsoft.Gsl). Biblioteka jest typu open source, dzięki czemu można wyświetlić źródła, dodawać komentarze lub współtworzyć. Projekt, można znaleźć w folderze [ https://github.com/Microsoft/GSL ](https://github.com/Microsoft/GSL).
 
- ## <a name="vs2015_corecheck"></a> Użyj wytycznych Sprawdź Core C++ w projektach Visual Studio 2015
-  Jeśli używasz programu Visual Studio 2015 zestawów reguł analizy kodu C++ Core Sprawdź nie są instalowane domyślnie. Należy wykonać dodatkowe kroki, aby można było włączyć sprawdzanie Core C++ narzędzi analizy kodu programu Visual Studio 2015. Firma Microsoft zapewnia obsługę projektów programu Visual Studio 2015 przy użyciu pakietu Nuget. Pakiet nosi nazwę Microsoft.CppCoreCheck i jest dostępny w [ http://www.nuget.org/packages/Microsoft.CppCoreCheck ](http://www.nuget.org/packages/Microsoft.CppCoreCheck). Ten pakiet wymaga się, że co najmniej zainstalowanego programu Visual Studio 2015 Update 1.
+ ## <a name="vs2015_corecheck"></a> Użyj wytycznych podstawowe sprawdzanie języka C++ w projektach programu Visual Studio 2015
+  Jeśli używasz programu Visual Studio 2015, zestawów reguł analizy kodu podstawowe sprawdzanie języka C++ nie są zainstalowane domyślnie. Aby można było włączyć narzędzi analizy kodu podstawowe sprawdzanie języka C++ w programie Visual Studio 2015, należy wykonać kilka dodatkowych kroków. Firma Microsoft zapewnia obsługę dla projektów programu Visual Studio 2015, przy użyciu pakietu Nuget. Pakiet o nazwie Microsoft.CppCoreCheck i jest on dostępny w [ http://www.nuget.org/packages/Microsoft.CppCoreCheck ](http://www.nuget.org/packages/Microsoft.CppCoreCheck). Ten pakiet wymaga, że masz co najmniej zainstalowanego programu Visual Studio 2015 z aktualizacją Update 1.
 
- Pakiet instaluje inny pakiet jako zależność, tylko nagłówek wskazówek dotyczących pomocy technicznej biblioteki (GSL). GSL jest również dostępna w witrynie GitHub pod [ https://github.com/Microsoft/GSL ](https://github.com/Microsoft/GSL).
+ Pakiet instaluje też inny pakiet jako zależność, tylko nagłówek wskazówek dotyczących pomocy technicznej biblioteki (GSL). GSL jest również dostępna w witrynie GitHub pod [ https://github.com/Microsoft/GSL ](https://github.com/Microsoft/GSL).
 
  Ze względu na sposób, w jaki są ładowane reguł analizy kodu należy zainstalować pakiet Microsoft.CppCoreCheck NuGet do każdego projektu C++, który chcesz sprawdzić w programie Visual Studio 2015.
 
-#### <a name="to-add-the-microsoftcppcorecheck-package-to-your-project-in-visual-studio-2015"></a>Aby dodać pakiet Microsoft.CppCoreCheck do projektu programu Visual Studio 2015
+#### <a name="to-add-the-microsoftcppcorecheck-package-to-your-project-in-visual-studio-2015"></a>Aby dodać pakiet Microsoft.CppCoreCheck do projektu w programie Visual Studio 2015
 
-1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy, aby otworzyć menu kontekstowe projektu w rozwiązaniu, które mają zostać dodane do pakietu. Wybierz **Zarządzaj pakietami NuGet** otworzyć **Menedżera pakietów NuGet**.
+1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy, aby otworzyć menu kontekstowe projektu w rozwiązaniu, które chcesz dodać pakiet do. Wybierz **Zarządzaj pakietami NuGet** otworzyć **Menedżera pakietów NuGet**.
 
-2.  W **Menedżera pakietów NuGet** okna, wyszukiwanie Microsoft.CppCoreCheck.
+2.  W **Menedżera pakietów NuGet** okna, wyszukaj Microsoft.CppCoreCheck.
 
-     ![Pakiet CppCoreCheck Pokazuje okno Menedżera pakietów Nuget](../code-quality/media/cppcorecheck_nuget_window.png)
+     ![Pokazuje okno Menedżera pakietów Nuget, pakietów CppCoreCheck](../code-quality/media/cppcorecheck_nuget_window.png)
 
-3.  Wybierz pakiet Microsoft.CppCoreCheck, a następnie wybierz pozycję **zainstalować** przycisk, aby dodać reguły do projektu.
+3.  Wybierz pakiet Microsoft.CppCoreCheck, a następnie wybierz **zainstalować** przycisk, aby dodać reguły do projektu.
 
- Pakiet NuGet dodaje dodatkowe pliki .targets MSBuild do projektu, które jest wywoływane, gdy Włącz analizę kodu w projekcie. Ten plik .targets dodaje reguł C++ podstawowej — sprawdź jako dodatkowe rozszerzenia do narzędzie do analizy kodu programu Visual Studio. Po zainstalowaniu pakietu służy okna dialogowego strony właściwości do włączania lub wyłączania reguł zwolnione i eksperymentalne.
+ Pakiet NuGet dodaje dodatkowe pliki .targets MSBuild do projektu, która jest wywoływana po włączeniu analizy kodu w projekcie. Ten plik .targets dodaje zasady podstawowe sprawdzanie języka C++ jako dodatkowe rozszerzenia narzędzie do analizy kodu programu Visual Studio. Po zainstalowaniu pakietu można użyć okna dialogowego strony właściwości do włączania lub wyłączania reguły zwolniono i eksperymentalne.
 

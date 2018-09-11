@@ -9,12 +9,12 @@ description: Więcej informacji na temat konta dewelopera Windows, które są do
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: f134289fbc110fa68b4600841a15ec118bcb5223
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: c9d7bc13013d3dd98f675a22b5fb01ac46b2b134
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42624285"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279326"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Konto dewelopera Windows w subskrypcji programu Visual Studio
 
@@ -68,4 +68,4 @@ Nie masz pewności której subskrypcji używasz?  Połączyć się z [ https://m
 * Potrzebujesz pomocy dotyczącej korzystania z konta dewelopera Windows?  Zapoznaj się z [obsługuje](https://developer.microsoft.com/windows/support) zasobów na [Centrum deweloperów Windows](https://developer.microsoft.com/windows).
 * [Tworzenie aplikacji dla systemu Windows](/windows/)
 * Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z pomocą programu Visual Studio [pomoc techniczna dla subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/).
-* Masz pytanie dotyczące środowiska IDE programu Visual Studio, Visual Studio Team Services lub innych produktów Visual Studio lub usług?  Odwiedź stronę [pomoc techniczna dla programu Visual Studio](https://visualstudio.microsoft.com/support/).
+* Masz pytanie dotyczące programu Visual Studio IDE, usługom DevOps platformy Azure lub innych produktów Visual Studio lub usług?  Odwiedź stronę [pomoc techniczna dla programu Visual Studio](https://visualstudio.microsoft.com/support/).

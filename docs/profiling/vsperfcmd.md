@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6895cc7a7b390f83f717158b78e65aa8336d8a98
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 23abc362b3c91579585272e4ebf1b190cab55dde
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774823"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44320985"
 ---
 # <a name="vsperfcmd"></a>VSPerfCmd
 *VSPerfCmd.exe* narzędzie umożliwia uruchamianie i zatrzymywanie zbierania danych o wydajności. Używa następującej składni:  
@@ -83,7 +83,7 @@ VSPerfCmd [/U] [/options]
   
 |Opcja|Opis|  
 |------------|-----------------|  
-|**Admin:Security** \< **Zezwalaj&#124;ODMÓW**> *po prawej stronie*[ *po prawej stronie*] \< *użytkownika*  &#124; *Grupy*>|Zezwala lub nie zezwala określonemu użytkownikowi lub grupie dostępu do usług profilowania.<br /><br /> `Right` może być:<br /><br /> CrossSession — zapewnia użytkownikowi dostęp do usługi w celu krzyżowego sesji profilowania.<br /><br /> SampleProfiling — daje użytkownikowi dostęp do sterownika, aby włączyć profilowanie próbkowania. Umożliwia również dostęp do informacji przejścia jądra podczas profilowania śledzenia.<br /><br /> FullAccess — zapewnia dostęp zarówno CrossSession, jak i SampleProfiling.|  
+|**Admin:Security**, \< **Zezwalaj&#124;ODMÓW**>, *po prawej stronie*[ *po prawej stronie*], \< *użytkownika* &#124; *Grupy*>|Zezwala lub nie zezwala określonemu użytkownikowi lub grupie dostępu do usług profilowania.<br /><br /> `Right` może być:<br /><br /> CrossSession — zapewnia użytkownikowi dostęp do usługi w celu krzyżowego sesji profilowania.<br /><br /> SampleProfiling — daje użytkownikowi dostęp do sterownika, aby włączyć profilowanie próbkowania. Umożliwia również dostęp do informacji przejścia jądra podczas profilowania śledzenia.<br /><br /> FullAccess — zapewnia dostęp zarówno CrossSession, jak i SampleProfiling.|  
 |**Admin:Security, lista**|Wyświetla listę bieżącego stanu usług profilowania i wyświetla listę uprawnień użytkownika.|  
 |**Administrator:** \< *usługi*&#124;*sterownika*>\<**START**&#124;**STOP**  &#124; **Zainstalować**&#124;**DEZINSTALACJI**>|Uruchamia, zatrzymuje, instaluje lub odinstalowuje składnik usługi profilowania (service) lub sterownik urządzenia trybu jądra (driver).|  
 |**Administrator:** \< *usługi*&#124;*sterownika*>**AutoStart**\<**na** &#124; **OFF**>|Włącza lub wyłącza automatyczne uruchamianie usługi profilowania (service) lub sterownik urządzenia trybu jądra (driver) po ponownym uruchomieniu.|  

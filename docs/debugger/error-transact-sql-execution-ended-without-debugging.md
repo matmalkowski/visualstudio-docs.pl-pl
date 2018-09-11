@@ -17,38 +17,38 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b3ccb86621295bb102738e5154f30bd45c6db358
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 5e6ae81608ee476e3748fde6830dfaa11c119f7a
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31474014"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283135"
 ---
 # <a name="error-transact-sql-execution-ended-without-debugging"></a>Błąd: Wykonanie Transact-SQL zakończyło się bez debugowania
-Ten błąd występuje, gdy chcesz debugować języka Transact-SQL lub procedury SQLCLR i debuger nie odbiera komunikaty debugowania z programu SQL Server.  
+Ten błąd występuje podczas próby debugowania języka Transact-SQL lub procedury SQLCLR i debuger nie odbiera komunikaty debugowania z programu SQL Server.  
   
- Może to być spowodowane problemami z siecią lub problemów w programie SQL Server, ale najbardziej prawdopodobną przyczyną jest problem uprawnień.  
+ Może to być ze względu na problemy z siecią lub problemy w programie SQL Server, ale najbardziej prawdopodobną przyczyną jest problem z uprawnieniami.  
   
- Obejmuje dwa konta:  
+ Zaangażowanych dwa konta:  
   
--   Konto aplikacji jest konto użytkownika, który [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] działa jako.  
+-   Konto aplikacji znajduje się konto użytkownika, który [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] działa jako.  
   
--   Konto połączenia jest tożsamość użyta do nawiązania połączenia z programem SQL Server. To nie jest zawsze taki sam jak tożsamości, która Visual Studio działa tak, jakby połączenie za pomocą uwierzytelniania SQL.  
+-   Konto połączenia jest to tożsamość używana do nawiązywania połączeń z programem SQL Server. To nie jest zawsze taki sam jak tożsamość, która Visual Studio działa tak, jakby połączenie za pomocą uwierzytelniania SQL.  
   
- Debugowanie SQL wymaga, aby konto aplikacji musi zgodne z kontem połączenia lub być sysadmin.  
+ Debugowanie SQL wymaga, aby konto aplikacji musi odpowiadać kontu połączenia lub być sysadmin.  
   
- Jeśli używasz identyfikatora logowania SQL, takich jak sa, konto aplikacji należy skonfigurować w programie SQL Server jako administratora systemu. Domyślnie administratorów na komputerze serwera SQL jest uruchomiona na są sysadmins programu SQL Server.  
+ Jeśli używasz identyfikatora logowania SQL, takich jak Ameryka Południowa konta aplikacji musi być Instalatora na serwerze SQL, administrator systemu. Domyślnie administratorzy na komputerze program SQL server jest uruchomiony są głównym programu SQL Server.  
   
- Aby rozwiązać ten problem, może być konieczne:  
+ Aby naprawić ten błąd, konieczne może być:  
   
--   Sprawdź ustawienia uprawnień. Aby uzyskać więcej informacji, zobacz [porady: Ustawianie uprawnień serwera SQL dla debugowania](http://msdn.microsoft.com/en-us/84e088d0-0409-41d4-841b-f5d4b0fda414).  
+-   Sprawdź ustawienia uprawnień. Aby uzyskać więcej informacji, zobacz [porady: Ustawianie uprawnień programu SQL Server dla debugowania](http://msdn.microsoft.com/en-us/84e088d0-0409-41d4-841b-f5d4b0fda414).  
   
--   Upewnij się, że debugowanie SQL, jeśli są nieprawidłowo skonfigurowane.  
+-   Upewnij się, że debugowanie SQL, jeśli skonfigurowane prawidłowo.  
   
 -   Zapoznaj się z administratorem sieci lub bazy danych.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Konfigurowanie debugowania SQL](http://msdn.microsoft.com/en-us/3db09e68-edcc-42de-9c22-4e97cfd55ab3)   
+ [Konfigurowanie debugowania SQL](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100))   
  [Porady: Ustawianie uprawnień programu SQL Server do debugowania](http://msdn.microsoft.com/en-us/84e088d0-0409-41d4-841b-f5d4b0fda414)   
- [Ustawienia debugowania i przygotowanie](../debugger/debugger-settings-and-preparation.md)   
+ [Ustawienia debugera i przygotowanie](../debugger/debugger-settings-and-preparation.md)   
  [Debugowanie zdalne](../debugger/remote-debugging.md)

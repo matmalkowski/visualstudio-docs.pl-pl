@@ -9,12 +9,12 @@ description: Więcej informacji na temat korzyści Concierge Chat uwzględniony 
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 395b05d3b3caa7a800cc28ca1f93c944e6320d1e
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: 1163feb7b1a55a816eef3b4b5f106de01c34669a
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42624045"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282525"
 ---
 # <a name="concierge-chat"></a>Konsjerż — Rozmowa
 
@@ -48,7 +48,7 @@ Uzyskiwanie pomocy za pośrednictwem usługi Konsjerż — Rozmowa jest bardzo p
 | Program Visual Studio Enterprise, Visual Studio Professional (miesięcznych w chmurze) | Azure | Niedostępne | Brak |
 | Visual Studio Dev Essentials | NAZWA  | Niedostępne |Brak |
 
-<sup>1</sup>*obejmuje: nie for Resale (NFR) programu Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark.    Nie obejmuje: Ekwiwalentu pełnego wymiaru czasu, Microsoft zwracającej partnera (MVP), dyrektor Region (usług pulpitu zdalnego), Microsoft Partner Network (MPN), Imagine.*
+<sup>1</sup>*obejmuje: nie for Resale (NFR) programu Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark.  Nie obejmuje: Ekwiwalentu pełnego wymiaru czasu, Microsoft zwracającej partnera (MVP), dyrektor Region (usług pulpitu zdalnego), Microsoft Partner Network (MPN), Imagine.*
 
 Nie masz pewności której subskrypcji używasz?  Połączyć się z [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) Aby wyświetlić wszystkie subskrypcje, które są przypisane do Twojego adresu e-mail. Jeśli nie widzisz wszystkie swoje subskrypcje, mogą mieć co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby wyświetlić te subskrypcje.
 
@@ -59,7 +59,7 @@ Nie masz pewności której subskrypcji używasz?  Połączyć się z [ https://m
 
 ## <a name="support-resources"></a>Zasoby pomocy technicznej
 -  Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z pomocą programu Visual Studio [pomoc techniczna dla subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/).
--  Masz pytanie dotyczące środowiska IDE programu Visual Studio, Visual Studio Team Services lub innych produktów Visual Studio lub usług?  Odwiedź stronę [pomoc techniczna dla programu Visual Studio](https://visualstudio.microsoft.com/support/).
+-  Masz pytanie dotyczące programu Visual Studio IDE, usługom DevOps platformy Azure lub innych produktów Visual Studio lub usług?  Odwiedź stronę [pomoc techniczna dla programu Visual Studio](https://visualstudio.microsoft.com/support/).
 
 
 

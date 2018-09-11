@@ -20,20 +20,20 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3b6d1dbf8364ce34af090bfe35cfad965f610ea1
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 141d7239ebbd32ceff9be45a8b4be97afd8887b0
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24788881"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283278"
 ---
 # <a name="expected-39-39"></a>Oczekiwano &#39;-&#39;
-Podjęto próbę utworzenia literał wyrażenia regularnego, ale nie zawiera jeden z ukośnikami (/). Tak samo, jak literały ciągu są zapisywane jako znaków w pary znaków cudzysłowu, wyrażenie regularne literały są wyrażane jako znaków w pary znaków ukośnika (/).  
+Podjęto próbę utworzenia literał wyrażenia regularnego, ale nie zawiera jeden z ukośnikami (/). Tak, jak literały ciągów są zapisywane jako znaki w obrębie dwa znaki cudzysłowu, literałów wyrażeń regularnych są wyrażane jako znaki w ciągu pary znaków ukośnika (/).  
   
 ### <a name="to-correct-this-error"></a>Aby poprawić ten błąd  
   
--   Wstaw ukośnikiem Trwa przerywanie działania można oznaczyć końca wyrażenia regularnego.  
+-   Wstaw kończący ukośnik można oznaczyć końca wyrażenia regularnego.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Obiekt będący wyrażeniem regularnym](../../javascript/reference/regular-expression-object-javascript.md)   
- [Składnia wyrażeń regularnych (JavaScript)](http://msdn.microsoft.com/en-us/ab0766e1-7037-45ed-aa23-706f58358c0e)
+ [Składnia wyrażeń regularnych (JavaScript)](https://msdn.microsoft.com/library/1400241x)

@@ -1,5 +1,5 @@
 ---
-title: Wykonywanie zapytania. Plik PDB | Dokumentacja firmy Microsoft
+title: Wykonywanie zapytań. Plik PDB | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -15,19 +15,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b552300926ae0448aacd084b54934f03527f81e
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: a13f98e9d1507c0044057099d61b625e1142929e
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31470065"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282056"
 ---
 # <a name="querying-the-pdb-file"></a>Używanie zapytań dotyczących pliku .Pdb
-Plik bazy danych programu (rozszerzenia .pdb) to plik binarny, który zawiera typie i symboliczną informację o debugowaniu zebranych w trakcie kompilowanie i łączenie projektu. Plik PDB jest tworzony podczas kompilowania programu C/C++ przy użyciu **/zi** lub **/zi** lub [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)], [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)], lub [!INCLUDE[jsprjscript](../../debugger/debug-interface-access/includes/jsprjscript_md.md)] programu z **/debug** Opcja. Pliki obiektów zawierają odwołania do pliku PDB dla informacji debugowania. Aby uzyskać więcej informacji na pdb, pliki, zobacz [PDB, pliki](http://msdn.microsoft.com/en-us/1761c84e-8c2c-4632-9649-b5f99964ed3f). Aplikacji DIA można użyć następujące ogólne kroki, aby uzyskać szczegółowe informacje o różnych symbole, obiekty i elementy danych w ramach obrazu wykonywalnego.  
+Plik bazy danych programu (z rozszerzeniem .pdb) to plik binarny, który zawiera typ i symboliczne informacje debugowania, zbierane w miarę upływu kompilowanie i łączenie projektu. Tworzony jest plik PDB podczas kompilowania programu C/C++ przy użyciu **/zi** lub **/zi** lub [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)], [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)], lub [!INCLUDE[jsprjscript](../../debugger/debug-interface-access/includes/jsprjscript_md.md)] programowanie z **/debug** Opcja. Pliki obiektów zawierają odwołania do pliku .pdb, aby uzyskać informacje o debugowaniu. Aby uzyskać więcej informacji na temat plików pdb, zobacz [plików PDB](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/yd4f8bd1(v=vs.100)). Aplikacja DIA służy następujące ogólne kroki do uzyskania szczegółowych informacji dotyczących różnych symboli, obiektów i danych elementów w obrębie obrazu wykonywalnego.  
   
-### <a name="to-query-the-pdb-file"></a>W zapytaniu pliku .pdb  
+### <a name="to-query-the-pdb-file"></a>Do wykonywania zapytań w pliku .pdb  
   
-1.  Uzyskanie źródła danych, tworząc [idiadatasource —](../../debugger/debug-interface-access/idiadatasource.md) interfejsu.  
+1.  Uzyskiwanie źródła danych, tworząc [idiadatasource —](../../debugger/debug-interface-access/idiadatasource.md) interfejsu.  
   
     ```C++  
     CComPtr<IDiaDataSource> pSource;  
@@ -43,7 +43,7 @@ Plik bazy danych programu (rozszerzenia .pdb) to plik binarny, który zawiera ty
     }  
     ```  
   
-2.  Wywołanie [IDiaDataSource::loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md) lub [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) można załadować informacji o debugowaniu.  
+2.  Wywołaj [idiadatasource::loaddatafrompdb —](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md) lub [idiadatasource::loaddataforexe —](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) ładuje te informacje debugowania.  
   
     ```C++  
     wchar_t wszFilename[ _MAX_PATH ];  
@@ -57,7 +57,7 @@ Plik bazy danych programu (rozszerzenia .pdb) to plik binarny, który zawiera ty
     }  
     ```  
   
-3.  Wywołanie [IDiaDataSource::openSession](../../debugger/debug-interface-access/idiadatasource-opensession.md) otworzyć [idiasession —](../../debugger/debug-interface-access/idiasession.md) uzyskanie dostępu do informacji o debugowaniu.  
+3.  Wywołaj [idiadatasource::opensession —](../../debugger/debug-interface-access/idiadatasource-opensession.md) otworzyć [idiasession —](../../debugger/debug-interface-access/idiasession.md) do uzyskania dostępu do informacji debugowania.  
   
     ```C++  
     CComPtr<IDiaSession> psession;  
@@ -67,7 +67,7 @@ Plik bazy danych programu (rozszerzenia .pdb) to plik binarny, który zawiera ty
     }  
     ```  
   
-4.  Użyj metody w `IDiaSession` zapytania dla symboli w źródle danych.  
+4.  Używanie metod w `IDiaSession` można wyszukiwać symbole w źródle danych.  
   
     ```C++  
     CComPtr<IDiaSymbol> pglobal;  
@@ -77,7 +77,7 @@ Plik bazy danych programu (rozszerzenia .pdb) to plik binarny, który zawiera ty
     }  
     ```  
   
-5.  Użyj `IDiaEnum*` informacje o debugowaniu interfejsy, wyliczenia i skanowanie za pomocą symboli lub innych elementów.  
+5.  Użyj `IDiaEnum*` informacje o debugowaniu interfejsy do wyliczenia, a następnie przeprowadź skanowanie za pomocą symboli lub inne elementy.  
   
     ```C++  
     CComPtr<IDiaEnumTables> pTables;  

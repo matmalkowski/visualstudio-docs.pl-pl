@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c712114918f2e0feae2a0820ef9e90a6060e80ec
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 8072c19a5ee5bdf8e8fe28e94334faf0cf7fd44a
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43780547"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281731"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger"></a>Określanie plików symboli (pdb) i plików źródłowych w debugerze programu Visual Studio
 Plik programu bazy danych (PDB), nazywany także plikiem symboli, mapuje identyfikatory, które tworzysz w kodzie źródłowym dla klas, metod i innego kodu, identyfikatory, które są używane w skompilowanych plikach wykonywalnych projektu. Plik .pdb mapuje również instrukcje zawarte w kodzie źródłowym na instrukcje wykonania w plikach wykonywalnych. Debuger używa tych informacji do określenia dwóch kluczowych informacji:
@@ -255,6 +255,6 @@ Aby zobaczyć, jakie symbole są dostępne w tabeli eksportu biblioteki dll, uż
      Należy pamiętać, że oba **Zezwalaj na serwerze źródłowym na częściowo zaufane zestawy (tylko kod zarządzany)** i **zawsze uruchamiaj niezaufane polecenia serwera źródłowego bez monitowania użytkownika o** mogą zwiększyć zagrożenia dla bezpieczeństwa omówione powyżej.  
   
 ## <a name="see-also"></a>Zobacz też  
-[Opis plików symboli i ustawienia symboli programu Visual Studio](https://blogs.msdn.microsoft.com/visualstudioalm/2015/01/05/understanding-symbol-files-and-visual-studios-symbol-settings/)
+[Opis plików symboli i ustawienia symboli programu Visual Studio](https://blogs.msdn.microsoft.com/devops/2015/01/05/understanding-symbol-files-and-visual-studios-symbol-settings/)
 
-[Zdalnym zmiany w programie Visual Studio 2012 i 2013 ładowaniu symboli .NET](http://blogs.msdn.com/b/visualstudioalm/archive/2013/10/16/net-remote-symbol-loading-changes-in-visual-studio-2012-and-2013.aspx)
+[Zdalnym zmiany w programie Visual Studio 2012 i 2013 ładowaniu symboli .NET](https://blogs.msdn.microsoft.com/devops/2013/10/16/net-remote-symbol-loading-changes-in-visual-studio-2012-and-2013/)

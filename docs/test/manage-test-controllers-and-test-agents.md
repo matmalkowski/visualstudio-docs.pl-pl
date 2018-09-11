@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b130f6272e5ccc04cc15a6c027afe9b95d65c668
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 4107f06658c081bc249e9e1b3a26d2a3480584dc
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381123"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279978"
 ---
 # <a name="manage-test-controllers-and-test-agents"></a>Zarządzanie kontrolerami testów i agentami testowymi
 
@@ -104,7 +104,7 @@ Agent testowy musi być równa stanu offline, można było usunąć.
 
 ### <a name="to-remove-a-test-agent-from-a-test-controller"></a>Aby usunąć agenta testowego z kontrolerem testów
 
-1. Jeśli kontroler testów nie jest zarejestrowany w projekcie zespołowym, wykonaj następujące kroki.
+1. Jeśli kontroler testów nie jest zarejestrowany w projekcie, wykonaj następujące kroki.
 
     1. W programie Visual Studio Otwórz plik ustawień testu dla projektu testowego, wybierz polecenie **roli** i wybierz polecenie **Zarządzaj kontrolerami testów** z listy rozwijanej dla **kontrolera** pola.
 
@@ -117,7 +117,7 @@ Agent testowy musi być równa stanu offline, można było usunąć.
         > [!NOTE]
         > Usuwanie agenta testowego, po prostu usunięcie go z kontrolera testów. Aby całkowicie odinstalować agenta testowego, użyj **programy i funkcje** Panelu sterowania na komputerze agenta testowego.
 
-2. Jeśli kontroler testów jest zarejestrowany w projekcie zespołowym, należy usunąć agenta przy użyciu Microsoft Test Manager.
+2. Jeśli kontroler testów jest zarejestrowany w projekcie, Usuń agenta przy użyciu Microsoft Test Manager.
 
 ## <a name="change-the-settings-for-a-test-agent"></a>Zmień ustawienia dla agenta testowego
 
@@ -135,7 +135,7 @@ Można zmienić stan i inne ustawienia dla agenta testowego, korzystając z poni
 ### <a name="to-change-the-settings-of-a-test-agent"></a>Aby zmienić ustawienia agenta testowego
 
 > [!NOTE]
-> Jeśli agent testowy jest zarejestrowany na kontrolerze testów, który jest zarejestrowany w projekcie zespołowym, należy zmienić ustawienia w programie Microsoft Test Manager.
+> Jeśli agent testowy jest zarejestrowany na kontrolerze testów, który jest zarejestrowany w projekcie, należy zmienić ustawienia w programie Microsoft Test Manager.
 
 1. Aby skonfigurować i monitorować kontroler testów oraz wszelkich zarejestrowanych agentów dla testu obciążenia, wybierz opcję **Test obciążenia** menu w programie Visual Studio, a następnie wybierz **Zarządzaj kontrolerami testów**. Do innych testów, otwórz plik ustawień testu dla projektu testowego w programie Visual Studio, wybierz polecenie **roli** i wybierz polecenie **Zarządzaj kontrolerami testów** z listy rozwijanej dla **kontrolera**pola.
 
@@ -153,7 +153,7 @@ Można zmienić stan i inne ustawienia dla agenta testowego, korzystając z poni
 |-------------------------|-----------------|
 |**Wagi**|Używane do dystrybucji obciążenia, podczas korzystania z agentów testowych z różnymi poziomami osiągów. Na przykład agent testowy przy zastosowaniu wagi 100 otrzymuje dwa razy obciążenia jako agent testowy przy zastosowaniu wagi 50.|
 |**Przełączanie adresów IP**|Używane do konfigurowania przełączania IP. Przełączanie IP pozwala agentowi testowemu wysyłać żądania do serwera przy użyciu zakresu adresów IP. Symuluje to wywołania, które pochodzą z różnych komputerów klienckich.<br /><br /> Przełączanie IP jest ważne, jeśli test obciążenia uzyskuje dostęp do farmy sieci web. Większość usług równoważenia obciążenia ustanawia koligację między klientem i serwerem namierzenie internetowego przy użyciu adresu IP klienta. Jeśli wszystkie żądania wydają się przychodzić od jednego klienta, moduł równoważenia obciążenia nie zrównoważy obciążenia. Aby uzyskać równowagę obciążenia w kolektywie serwerów sieci web, upewnij się, że żądania pochodzą z zakresu adresów IP. **Uwaga:** możesz określić kartę sieciową lub użyć **(wszystkie nieprzypisane)** Aby automatycznie wybrać taką, która obecnie nie jest używany. <br /><br /> Aby użyć funkcji przełączania IP, usługa Visual Studio Test Agent musi działać jako użytkownik w grupie Administratorzy dla tego komputera agenta. Ten użytkownik jest zaznaczany podczas instalacji agenta, ale może zostać zmieniona przez zmodyfikowanie właściwości usługi i ponowne jej uruchomienie.<br /><br /> Aby sprawdzić, czy przełączanie IP działa poprawnie, Włącz rejestrowanie na serwerze sieci web usług IIS, sprawdź, że żądania pochodzą z adresów IP, które skonfigurowano przy użyciu funkcji rejestrowania usług IIS.|
-|**Atrybuty**|Zestaw par nazwa/wartość, które mogą być używane podczas wybierania agenta testowego. Na przykład test może wymagać określonego systemu operacyjnego. Możesz dodać atrybuty w **role** kartę testu pliku ustawień i może służyć do wybierania agenta testowego, który ma pasujące atrybuty. Jeśli chcesz uruchomić test na wielu komputerach, Utwórz atrybut w roli ustawień testów, który jest skonfigurowany do uruchamiania testów, a następnie skonfiguruj pasujący atrybut na każdym agencie testowym, którego chcesz użyć w tej roli... **Uwaga:** to ustawienie jest dostępna tylko dla agentów testowych, które są zarejestrowane z kontrolerem testów, który nie jest zarejestrowany z projektem zespołowym, ponieważ te atrybuty są używane tylko w ustawieniach testu dla programu Visual Studio.|
+|**Atrybuty**|Zestaw par nazwa/wartość, które mogą być używane podczas wybierania agenta testowego. Na przykład test może wymagać określonego systemu operacyjnego. Możesz dodać atrybuty w **role** kartę testu pliku ustawień i może służyć do wybierania agenta testowego, który ma pasujące atrybuty. Jeśli chcesz uruchomić test na wielu komputerach, Utwórz atrybut w roli ustawień testów, który jest skonfigurowany do uruchamiania testów, a następnie skonfiguruj pasujący atrybut na każdym agencie testowym, którego chcesz użyć w tej roli... **Uwaga:** to ustawienie jest dostępna tylko dla agentów testowych, które są zarejestrowane z kontrolerem testów, który nie jest zarejestrowany do projektu, ponieważ te atrybuty są używane tylko w ustawieniach testu dla programu Visual Studio.|
 
 Przetestuj agenta wagę test agent atrybutów i zmiany zaczną obowiązywać natychmiast, ale nie ma wpływu na testy, które są uruchomione. Zakres adresów IP staje się skuteczny po ponownym uruchomieniu kontrolera testów.
 
@@ -164,12 +164,12 @@ Przetestuj agenta wagę test agent atrybutów i zmiany zaczną obowiązywać nat
 
 ## <a name="configure-a-test-controller"></a>Skonfiguruj kontroler testu
 
-Aby skonfigurować kontroler testów, należy użyć **narzędzie konfiguracji kontrolera testów zespołu**. Podczas konfigurowania kontrolera testów, możesz zarejestrować kontroler testów z inną kolekcją projektów zespołowych lub wyrejestrować kontroler testów z kolekcji projektów zespołowych.
+Aby skonfigurować kontroler testów, należy użyć **narzędzie konfiguracji kontrolera testów zespołu**. Podczas konfigurowania kontrolera testów, możesz zarejestrować kontroler testów z innym zbiorze projektów lub wyrejestrować kontroler testów z kolekcji projektu.
 
-Jeśli chcesz zarejestrować kontroler testów z kolekcji projektów Team Foundation Server, konto, którego używasz dla usługi kontrolera testu musi być członkiem grupy kont usług testowych kolekcji projektów dla kolekcji projektów zespołowych, lub konto, którego używasz do uruchamiania narzędzia konfiguracji kontrolera testu musi być administratorem kolekcji projektów.
+Jeśli chcesz zarejestrować kontroler testów z kolekcji projektów Team Foundation Server, konto, którego używasz dla usługi kontrolera testu musi być członkiem grupy kont usług testowych kolekcji projektów dla kolekcji projektu lub konto Czy używasz do uruchamiania narzędzia konfiguracji kontrolera testów musi być administratorem kolekcji projektów.
 
 > [!NOTE]
-> Jeśli wyrejestrujesz kontroler testów z kolekcji projektu zespołowego, który ma istniejące środowiska w kolekcji projektów zespołowych, środowiska nadal są obsługiwane, jeśli przeniesiono tę kolekcję projektu zespołowego i ponownie zarejestrować kontroler testów dla tego zespołu przeniesiony Kolekcja projektów.
+> Jeśli wyrejestrujesz kontroler testów z kolekcji projektu, który ma istniejące środowiska w kolekcji projektów, środowiska nadal są obsługiwane, jeśli przeniesiono tej kolekcji projektu i ponownie zarejestrować kontroler testów do tej kolekcji projektu przeniesione.
 
 ### <a name="to-configure-a-test-controller"></a>Aby skonfigurować kontroler testu
 
@@ -182,7 +182,7 @@ Jeśli chcesz zarejestrować kontroler testów z kolekcji projektów Team Founda
     > [!NOTE]
     > Hasła puste nie są obsługiwane dla kont użytkowników.
 
-4. (Opcjonalnie) Jeśli nie chcesz użyć kontrolera testu w środowisku laboratoryjnym, ale tylko do uruchomienia testów z programu Visual Studio, usuń zaznaczenie **zarejestrować z kolekcją projektu zespołowego**.
+4. (Opcjonalnie) Jeśli nie chcesz użyć kontrolera testu w środowisku laboratoryjnym, ale tylko do uruchomienia testów z programu Visual Studio, usuń zaznaczenie **zarejestrować z kolekcją projektu**.
 
 5. (Opcjonalnie) Aby skonfigurować kontroler testu do testowania obciążenia, wybierz **konfigurowanie do testowania obciążenia**. Następnie wpisz wystąpienia programu SQL Server w **wyniki testu obciążeniowego tworzenie bazy danych w następującym wystąpieniu programu SQL Server**.
 

@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 071f6782350a3786b1a3b61b1ef3292d76867531
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e46301c84b1a9b27eed8cb6667b312ff73af2960
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42626117"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280640"
 ---
 # <a name="general-debugging-options-dialog-box"></a>Ogólne, debugowanie, okno dialogowe Opcje
 **Narzędzia > Opcje > debugowanie > Ogólne** stronie pozwala ustawić opcje opisane w tym artykule.
@@ -72,7 +72,7 @@ W warunku, 2 i 3, wyjątek jest czasami zgłoszony przez kod zarządzany w `msco
   
 - **Wywołaj funkcję konwersji ciągu na obiektach w oknach zmiennych (C# i JavaScript tylko)** wykonuje wywołanie niejawnej konwersji ciągu podczas szacowania wartości obiektów w oknach zmiennych. Wynik jest wyświetlany jako ciąg, nie nazwę typu. Dotyczy to tylko podczas debugowania kodu C#. To ustawienie może być zastąpiona przez atrybut DebuggerDisplay (zobacz [korzystanie z atrybutu DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md)).  
   
-**Włącz obsługę serwera źródłowego** nakazuje debugerowi programu Visual Studio pobranie plików źródłowych z serwerów źródłowych, które implementują SrcSrv (`srcsrv.dll`) protokołu. Team Foundation Server i Debugging Tools for Windows to dwa serwery źródłowe implementujące ten protokół. Aby uzyskać więcej informacji o konfiguracji SrcSrv, zobacz [SrcSrv](https://msdn.microsoft.com/library/windows/hardware/ff558791(v=vs.85).aspx) dokumentacji. Ponadto zobacz [Określ symboli (.pdb) i plików źródłowych](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
+**Włącz obsługę serwera źródłowego** nakazuje debugerowi programu Visual Studio pobranie plików źródłowych z serwerów źródłowych, które implementują SrcSrv (`srcsrv.dll`) protokołu. Team Foundation Server i Debugging Tools for Windows to dwa serwery źródłowe implementujące ten protokół. Aby uzyskać więcej informacji o konfiguracji SrcSrv, zobacz [SrcSrv](/windows-hardware/drivers/debugger/srcsrv) dokumentacji. Ponadto zobacz [Określ symboli (.pdb) i plików źródłowych](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
   
 > [!IMPORTANT]
 > Ponieważ czytania *.pdb* plików może wykonywać dowolny kod w plikach, upewnij się, że masz zaufanie do serwera.  

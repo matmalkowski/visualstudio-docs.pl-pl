@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d1157a4475b12a51f9833131b550e31ad1c218ad
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: a1ff82ec2b86eeaf078576a437481ec2b7c39aa4
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176918"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279489"
 ---
 # <a name="debugging-preparation-visual-c-project-types"></a>Przygotowanie debugowania: Typy projektów Visual C++
 W tej sekcji opisano sposób debugowania projektu podstawowych typów utworzonych przez [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] szablony projektów.  
@@ -98,7 +98,7 @@ W tej sekcji opisano sposób debugowania projektu podstawowych typów utworzonyc
  [W tym temacie](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)  
   
 ##  <a name="BKMK_Windows_Forms_Applications___NET_"></a> Aplikacje Windows Forms (.NET)  
- **Windows Forms aplikacji (.NET)** szablon umożliwia utworzenie [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] aplikacji Windows Forms. Aby uzyskać więcej informacji, zobacz [porady: Tworzenie projektu aplikacji Windows](http://msdn.microsoft.com/en-us/b2f93fed-c635-4705-8d0e-cf079a264efa).  
+ **Windows Forms aplikacji (.NET)** szablon umożliwia utworzenie [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] aplikacji Windows Forms. Aby uzyskać więcej informacji, zobacz [porady: Tworzenie projektu aplikacji Windows](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100)).  
   
  Debugowanie tego typu aplikacji w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] jest podobny, jak w zarządzanych aplikacjach Windows Forms.  
   
@@ -115,4 +115,4 @@ W tej sekcji opisano sposób debugowania projektu podstawowych typów utworzonyc
  [Ustawienia projektu dla konfiguracji debugowania języka C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)   
  [Dołączanie do programu uruchomione lub wielu programów](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
  [Konfiguracji Debug i Release](../debugger/how-to-set-debug-and-release-configurations.md)   
- [Porady: Tworzenie projektu aplikacji Windows](http://msdn.microsoft.com/en-us/b2f93fed-c635-4705-8d0e-cf079a264efa)
+ [Porady: Tworzenie projektu aplikacji Windows](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100))

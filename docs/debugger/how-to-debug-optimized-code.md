@@ -23,72 +23,72 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d6ada3b5375737cb4deec777f64344096fbdaae
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 47b26883d0800611f2fba5cbf7a02907fef1d948
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37058513"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280821"
 ---
 # <a name="how-to-debug-optimized-code"></a>Porady: debugowanie zoptymalizowanego kodu
 > [!NOTE]
->  Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić ustawienia, wybierz polecenie Import i eksport ustawień w menu Narzędzia. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
+>  Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz Importuj i Eksportuj ustawienia w menu Narzędzia. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
   
 > [!NOTE]
->  [/Zo (zwiększenia zoptymalizowanych pod kątem debugowania)](/cpp/build/reference/zo-enhance-optimized-debugging)— opcja kompilatora (wprowadzona w programie Visual Studio Update 3) generuje bardziej rozbudowane informacje debugowania zoptymalizowanego kodu (projektów, które nie zostały skompilowane z **/Od** — Opcja kompilatora. Zobacz [/O opcje (Optymalizuj kod)](/cpp/build/reference/o-options-optimize-code)). W tym ulepszoną obsługę debugowania zmiennych lokalnych i funkcji śródwierszowych.  
+>  [/Zo (Rozszerzanie zoptymalizowane pod kątem debugowanie)](/cpp/build/reference/zo-enhance-optimized-debugging)(zostanie wprowadzony w programie Visual Studio Update 3) — opcja kompilatora generuje bogatsze informacje debugowania dla zoptymalizowanego kodu (projekty, które nie są tworzone za pomocą **/Od** — Opcja kompilatora. Zobacz [/O opcje (Optymalizuj kod)](/cpp/build/reference/o-options-optimize-code)). W tym Ulepszona obsługa debugowania zmienne lokalne i funkcje śródwierszowe.  
 >   
->  [Edytuj i Kontynuuj](../debugger/edit-and-continue-visual-csharp.md) jest wyłączona, gdy **/Zo** jest używana opcja ocompiler.  
+>  [Edytuj i Kontynuuj](../debugger/edit-and-continue-visual-csharp.md) jest wyłączona, gdy **/Zo** ocompiler opcja jest używana.  
   
- Gdy kompilator optymalizuje kod, zmiana i Reorganizuje instrukcje. Powoduje to efektywniejsze skompilowanego kodu. Ze względu na to rozmieszczania debuger nie może zidentyfikować zawsze kodu źródłowego, umożliwiająca zestaw instrukcji.  
+ Gdy kompilator optymalizuje kod, powoduje przeniesienie i Reorganizuje instrukcje. Skutkuje to bardziej wydajne skompilowanego kodu. Z powodu ta zmiana położenia debuger zawsze nie może zidentyfikować kod źródłowy, który odnosi się do zestawu instrukcji.  
   
  Optymalizacja może mieć wpływ na:  
   
--   Zmienne lokalne, które mogą zostać usunięte przez optymalizator lub przenieść do lokalizacji, których nie rozpoznaje debugera.  
+-   Zmienne lokalne, które mogą zostać usunięte przez optymalizator lub przeniesiony do lokalizacji, których nie rozumie debugera.  
   
--   Położenie wewnątrz funkcji, które są zmieniane po Optymalizator scala bloków kodu.  
+-   Położenie wewnątrz funkcji, które są zmieniane, gdy Optymalizator scala bloków kodu.  
   
 -   Nazwy funkcji ramek na stosie wywołań, która może być nieprawidłowy, jeśli Optymalizator scala dwie funkcje.  
   
- Ramek, które są wyświetlane w stosie wywołań są prawie zawsze poprawne, jednak przy założeniu, że masz symboli dla wszystkie ramki. Ramek na stosie wywołań będą nieprawidłowe, jeśli masz uszkodzenie stosu, jeśli masz napisane w języku zestawu funkcji lub jeśli istnieją ramki systemu operacyjnego bez pasującego symboli w stosie wywołań.  
+ Klatek, które widać w stosie wywołań są prawie zawsze poprawna, jednak przy założeniu, że symbole dla wszystkich ramek. Ramek na stosie wywołań będą nieprawidłowe, jeśli masz uszkodzenie stosu, jeśli masz functions napisanej w języku zestawu lub w przypadku ramek systemu operacyjnego bez pasującego symboli w stosie wywołań.  
   
- Zmienne globalne i statyczne są zawsze wyświetlane prawidłowo. Dlatego jest układ struktury. Jeśli masz wskaźnika do struktury i wartość wskaźnika jest poprawna, co zmiennej członkowskiej struktury wyświetli poprawną wartość.  
+ Zmiennych globalnych i statycznych są zawsze wyświetlane prawidłowo. Więc układ struktury. Jeśli masz wskaźnik do struktury, a wartość wskaźnika jest poprawna, co zmiennej składowej struktury pokaże poprawnej wartości.  
   
- Ze względu na ograniczenia te powinny debugowania, jeśli to możliwe przy użyciu zoptymalizowanego wersji programu. Domyślnie Optymalizacja jest wyłączone w konfiguracji debugowania programu Visual C++ i włączone w konfiguracji wydanie.  
+ Ze względu na ograniczenia te powinny debugowania, jeśli to możliwe przy użyciu niezoptymalizowanym wersji programu. Domyślnie Optymalizacja jest wyłączone w konfiguracji debugowania programu Visual C++ i włączone w konfiguracji wydania.  
   
- Jednak błąd może występować tylko w zoptymalizowanej wersji programu. W takim przypadku należy debugowania zoptymalizowanego kodu.  
+ Jednak błąd może pojawić się tylko w przypadku zoptymalizowanych wersję programu. W takim przypadku należy debugować zoptymalizowany kod.  
   
-### <a name="to-turn-on-optimization-in-a-debug-build-configuration"></a>Aby włączyć funkcję Konfiguracja kompilacji optymalizacji podczas debugowania  
+### <a name="to-turn-on-optimization-in-a-debug-build-configuration"></a>Aby włączyć optymalizację podczas debugowania Konfiguracja kompilacji  
   
-1.  Podczas tworzenia nowego projektu, zaznacz `Win32 Debug` docelowej. Użyj `Win32``Debug` docelowe, dopóki program pełni debugowania i wszystko jest gotowe do tworzenia `Win32 Release` docelowej. Kompilator nie optymalizuje `Win32 Debug` docelowej.  
+1.  Podczas tworzenia nowego projektu wybierz `Win32 Debug` docelowej. Użyj `Win32``Debug` docelowe, dopóki program pełni debugowania i można przystąpić do tworzenia `Win32 Release` docelowej. Kompilator nie optymalizuje `Win32 Debug` docelowej.  
   
 2.  Wybierz projekt w Eksploratorze rozwiązań.  
   
-3.  Na **widoku** menu, kliknij przycisk **strony właściwości**.  
+3.  Na **widoku** menu, kliknij przycisk **stron właściwości**.  
   
-4.  W **strony właściwości** okna dialogowego upewnij się, `Debug` wybrano **konfiguracji** listy rozwijanej.  
+4.  W **stron właściwości** okna dialogowego pole, upewnij się, `Debug` wybrano **konfiguracji** listy rozwijanej.  
   
-5.  W widoku folderów po lewej stronie wybierz **C/C++** folderu.  
+5.  W widoku folderu po lewej stronie wybierz **C/C++** folderu.  
   
-6.  W obszarze **C++** folderu, wybierz opcję `Optimization`.  
+6.  W obszarze **C++** folderu, wybierz `Optimization`.  
   
-7.  Na liście po prawej stronie właściwości znaleźć `Optimization`. Ustawienie obok niej prawdopodobnie mówi `Disabled (` [/Od](/cpp/build/reference/od-disable-debug)`)`. Wybierz jedną z opcji (`Minimum Size``(`[/O1](/cpp/build/reference/o1-o2-minimize-size-maximize-speed)`)`, `Maximum Speed``(` [/O2](/cpp/build/reference/o1-o2-minimize-size-maximize-speed)`)`, `Full Optimization``(` [ox](/cpp/build/reference/ox-full-optimization) `)`, lub `Custom`).  
+7.  Na liście właściwości po prawej stronie Znajdź `Optimization`. Prawdopodobnie wynika z ustawieniem obok niego `Disabled (` [/Od](/cpp/build/reference/od-disable-debug)`)`. Wybierz jedną z opcji (`Minimum Size``(`[/O1](/cpp/build/reference/o1-o2-minimize-size-maximize-speed)`)`, `Maximum Speed``(` [/O2](/cpp/build/reference/o1-o2-minimize-size-maximize-speed)`)`, `Full Optimization``(` [ox](/cpp/build/reference/ox-full-optimization) `)`, lub `Custom`).  
   
-8.  Jeśli została wybrana opcja `Custom` opcja dla `Optimization`, można teraz ustawić opcje dla innych właściwości wyświetlane na liście właściwości.  
+8.  Jeśli została wybrana opcja `Custom` opcja dla `Optimization`, można teraz ustawić opcje dla każdego z pozostałych właściwości wyświetlane na liście właściwości.  
   
-9. Wybierz pozycję Właściwości konfiguracji, C/C++, węzeł wiersza polecenia strony właściwości projektu i dodać `(` [/Zo](/cpp/build/reference/zo-enhance-optimized-debugging) `)` do **dodatkowe opcje** pola tekstowego.  
+9. Wybierz właściwości konfiguracji, C/C++, węzeł wiersza polecenia na stronie właściwości projektu i Dodaj `(` [/Zo](/cpp/build/reference/zo-enhance-optimized-debugging) `)` do **dodatkowe opcje** pola tekstowego.  
   
     > [!WARNING]
-    >  `/Zo` wymaga programu Visual Studio 2013 Update 3 lub nowszym.  
+    >  `/Zo` wymaga programu Visual Studio 2013 Update 3 lub nowszej wersji.  
     >   
     >  Dodawanie `/Zo` spowoduje wyłączenie [Edytuj i Kontynuuj](../debugger/edit-and-continue-visual-csharp.md).  
   
- Podczas debugowania zoptymalizowanego kodu, użyj **dezasemblacji** okna, aby zobaczyć, jakie instrukcje faktycznie są tworzone i wykonywane. W przypadku ustawienia punktów przerwania, musisz wiedzieć, że punkt przerwania może przenosić wraz z instrukcji. Rozważmy na przykład następujący kod:  
+ Podczas debugowania zoptymalizowanego kodu, należy użyć **dezasemblacji** okna, aby zobaczyć, jakie instrukcje są faktycznie utworzone i są stosowane. Podczas ustawiania punktów przerwania, musisz wiedzieć, że punkt przerwania może przenieść wraz z instrukcji. Na przykład rozważmy następujący kod:  
   
 ```cpp
 for (x=0; x<10; x++)  
 ```  
   
- Załóżmy, że Ustaw punkt przerwania w tym wierszu. Może spodziewać się punkt przerwania są osiągane 10 razy, ale jeśli kod jest zoptymalizowany, punkt przerwania zostaje trafiony tylko jeden raz. Wynika to z pierwszej instrukcji, która ustawia wartości `x` na 0. Kompilator rozpoznaje, że to tylko musi odbywać się jeden raz i przenosi ją poza pętli. Punkt przerwania przenoszona razem z nim. Instrukcje porównywania i zwiększyć `x` pozostają w pętli. Po wyświetleniu **dezasemblacji** okna, [jednostka kroku](http://msdn.microsoft.com/en-us/8791dac9-64d1-4bb9-b59e-8d59af1833f9) jest automatycznie ustawiana instrukcji większej kontroli, co jest przydatne, gdy krokowo zoptymalizowanego kodu.  
+ Załóżmy, że Ustaw punkt przerwania w tym wierszu. Można by oczekiwać punkt przerwania zostanie osiągnięty 10 razy, ale jeśli kod jest zoptymalizowany, punkt przerwania zostaje trafiony tylko jeden raz. Wynika to pierwsza instrukcja ustawia wartość `x` na 0. Kompilator rozpoznaje, że to tylko należy wykonać jeden raz i przenosi ją wyjścia z pętli. Przenosi punkt przerwania z nim. Instrukcje, które porównania i zwiększ `x` pozostają wewnątrz pętli. Po wyświetleniu **dezasemblacji** oknie [jednostka kroku](/previous-versions/visualstudio/visual-studio-2010/ek13f001(v=vs.100)) jest automatycznie ustawiana na instrukcji lepszą kontrolę, co jest przydatne, jeśli krok po kroku przez zoptymalizowany kod.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Zabezpieczenia debugera](../debugger/debugger-security.md)   

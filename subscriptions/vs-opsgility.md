@@ -9,12 +9,12 @@ description: Dowiedz się, Opsgility szkolenia korzyści dołączone do wybranej
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 036c063aa49f3f5221736f35cb3ada35f854c325
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: cd0409eef71ebd97b98f93631b0229d5d8526362
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42623922"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280899"
 ---
 # <a name="the-opsgility-benefit-in-visual-studio-subscriptions"></a>Firma Opsgility korzyści w ramach subskrypcji programu Visual Studio
 
@@ -55,4 +55,4 @@ Nie masz pewności której subskrypcji używasz?  Połączyć się z [ https://m
 ## <a name="support-resources"></a>Zasoby pomocy technicznej
 -  Potrzebujesz pomocy dotyczącej Opsgility?  Wyślij bilet pomocy technicznej za pośrednictwem [skontaktuj się z nami](https://www.opsgility.com/SupportTicket) strony.
 -  Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z pomocą programu Visual Studio [pomoc techniczna dla subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/).
--  Masz pytanie dotyczące środowiska IDE programu Visual Studio, Visual Studio Team Services lub innych produktów Visual Studio lub usług?  Odwiedź stronę [pomoc techniczna dla programu Visual Studio](https://visualstudio.microsoft.com/support/).
+-  Masz pytanie dotyczące programu Visual Studio IDE, usługom DevOps platformy Azure lub innych produktów Visual Studio lub usług?  Odwiedź stronę [pomoc techniczna dla programu Visual Studio](https://visualstudio.microsoft.com/support/).

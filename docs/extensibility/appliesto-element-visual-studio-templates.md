@@ -11,19 +11,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 567b9f2651c2140f101aa3848e4136d47a75ef1e
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 6f399e0b054b5f9b112733399d644e1357837049
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39151119"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280735"
 ---
 # <a name="appliesto-element-visual-studio-templates"></a>AppliesTo, element (szablony Visual Studio)
 Określa opcjonalne wyrażenie porównywania z jedną lub kilkoma funkcjami (zobacz <xref:Microsoft.VisualStudio.Shell.Interop.VsProjectCapabilityExpressionMatcher>). Funkcje są udostępniane przez typy projektów za pośrednictwem hierarchii jako właściwość <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID5>. W ten sposób szablon może być współużytkowany przez wiele typów projektów, które mają wspólne odnośne funkcje.  
   
  Ten element jest opcjonalny. Plik szablonu może zawierać maksymalnie jedno jego wystąpienie. Element umożliwia jedynie potwierdzenie zgodności szablonu elementu z funkcjami aktualnie zaznaczonego aktywnego projektu. Nie można za jego pomocą ustawić niezgodności szablonu. Jeśli `AppliesTo` jest nieobecny lub wyrażenie pomyślnie zgadzaj, następnie `TemplateID` lub `TemplateGroupID` służy do potwierdzana, jak w poprzednich wersjach produktu.  
   
- Wprowadzona w programie Visual Studio 2013 Update 2. Aby odwoływać się do poprawnej wersji, zobacz [odwoływanie się do zestawów dostarczane w Visual Studio 2013 SDK Update 2](http://msdn.microsoft.com/en-us/42b65c3e-e42b-4c39-98c8-bea285f25ffb).  
+ Wprowadzona w programie Visual Studio 2013 Update 2. Aby odwoływać się do poprawnej wersji, zobacz [odwoływanie się do zestawów dostarczane w Visual Studio 2013 SDK Update 2](https://msdn.microsoft.com/library/42b65c3e-e42b-4c39-98c8-bea285f25ffb).  
   
  \<VSTemplate>  
  \<TemplateData >  

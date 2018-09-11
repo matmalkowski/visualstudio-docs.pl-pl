@@ -18,15 +18,15 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 150628f1822c721f1e349005de457951e226ef1b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e1122b5327da5573071bc534b5eb1a16fa69b873
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793279"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283382"
 ---
 # <a name="iactivescriptauthoraddtypelib"></a>IActiveScriptAuthor::AddTypeLib
-Dodaje bibliotekę typów do przestrzeni nazw dla skryptu.  
+Dodaje bibliotekę typów, do przestrzeni nazw skryptu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -44,10 +44,10 @@ HRESULT AddTypeLib(
  [in] Identyfikator CLSID (identyfikator klasy) biblioteki typów do dodania.  
   
  `dwMajor`  
- [in] Numer wersji głównej.  
+ [in] Główny numer wersji.  
   
  `dwMinor`  
- [in] Numer wersji pomocniczej.  
+ [in] Pomocniczy numer wersji.  
   
  `dwFlags`  
  [in] Nie jest używany.  
@@ -60,9 +60,9 @@ HRESULT AddTypeLib(
 |`S_OK`|Wykonanie metody powiodło się.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda wywołuje `LoadTypeLib` można załadować biblioteki typów. Na sukces, ta metoda wywołuje `IActiveScriptAuthor::AddNamedItem` można dodać informacji o typie.  
+ Ta metoda wywołuje `LoadTypeLib` można załadować biblioteki typów. W razie powodzenia, ta metoda wywołuje `IActiveScriptAuthor::AddNamedItem` można dodać informacji o typie.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Interfejs IActiveScriptAuthor](../../winscript/reference/iactivescriptauthor-interface.md)   
  [IActiveScriptAuthor::AddNamedItem](../../winscript/reference/iactivescriptauthor-addnameditem.md)   
- [LoadTypeLib](http://msdn.microsoft.com/en-us/155b48e5-5438-409e-9342-630a6a500f60)
+ [LoadTypeLib](https://docs.microsoft.com/previous-versions/windows/desktop/api/oleauto/nf-oleauto-loadtypelib)

@@ -9,12 +9,12 @@ description: Dowiedz się, jak aktywować subskrypcję WhiteSource Bolt zawartyc
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: e4c1039018eb745c7a04c6269b4b98e737461f7c
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 765b96955b27b83acd0c0674eed6a40f8d153ee1
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42624142"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279170"
 ---
 #  <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>Użyj narzędzia WhiteSource Bolt w subskrypcji programu Visual Studio
 
@@ -38,13 +38,15 @@ Znajdowanie i eliminowanie luk w zabezpieczeniach typu open source oraz generowa
 
 4.  W **aktywować konta** sekcji strony poprowadzą Cię przez cztery kroki:
 
-    - [Zainstaluj](https://marketplace.visualstudio.com/items?itemName=whitesource.ws-bolt) rozszerzenia WhiteSource Bolt z programu Microsoft Visual Studio marketplace. Jeśli nie masz uprawnienia do instalowania rozszerzeń, zobacz [zainstalować bezpłatne rozszerzenia usługi VSTS](/vsts/marketplace/install-vsts-extension?view=vsts).
+    - [Zainstaluj](https://marketplace.visualstudio.com/items?itemName=whitesource.ws-bolt) rozszerzenia WhiteSource Bolt z programu Microsoft Visual Studio marketplace. Jeśli nie masz uprawnienia do instalowania rozszerzeń, zobacz [instalowanie bezpłatnych rozszerzeń dla usługi Azure DevOps Services](/azure/devops/marketplace/install-vsts-extension?view=vsts).
 
-    Kliknij zielony **zainstalować** przycisk, jeśli używasz usługi VSTS, lub **Pobierz** przycisk programu Team Foundation Server.  W tym przykładzie używamy usługi VSTS.
+
+    Kliknij zielony **zainstalować** przycisk, jeśli używasz usługi DevOps platformy Azure, lub **Pobierz** przycisk programu Team Foundation Server.  W tym przykładzie używamy usługom DevOps platformy Azure.
     > [!div class="mx-imgBorder"]
     > ![WhiteSource korzyści instalowanie rozszerzeń](_img\vs-whitesource\vs-whitesource-download-install.png)
 
-    - Następnie wybierz konto usługi VSTS, którego chcesz użyć, a następnie kliknij przycisk **Potwierdź**.  (Jeśli usługi VSTS nie zostały jeszcze skonfigurowany, odwiedź stronę [korzyści](https://my.visualstudio.com/benefits) strony i aktywować swoje korzyści z usługi VSTS.)
+    - Następnie wybierz organizację usługom DevOps platformy Azure, które chcesz użyć, a następnie kliknij przycisk **Potwierdź**.  (Jeśli usługom DevOps platformy Azure nie mają jeszcze skonfigurowany, odwiedź stronę [korzyści](https://my.visualstudio.com/benefits) strony i aktywować swoje korzyści usługom DevOps platformy Azure.)
+
     > [!div class="mx-imgBorder"]
     > ![WhiteSource korzyści Potwierdź konto](_img\vs-whitesource\vs-whitesource-confirm-account.png)
 
@@ -52,7 +54,7 @@ Znajdowanie i eliminowanie luk w zabezpieczeniach typu open source oraz generowa
     > [!div class="mx-imgBorder"]
     > ![Ukończono instalację WhiteSource korzyści](_img\vs-whitesource\vs-whitesource-install-complete.png)
 
-5.  Otwórz pulpit nawigacyjny projektu programu Visual Studio Team Services (VSTS), kliknij pozycję **kompilowanie i wydawanie** menu i wybrać **WhiteSource Bolt**.
+5.  Otwórz pulpit nawigacyjny projektu usługom DevOps platformy Azure, kliknij pozycję **potoki Azure** menu i wybierz polecenie **WhiteSource Bolt**.
     > [!div class="mx-imgBorder"]
     > ![WhiteSource korzyści Dodaj rozszerzenie](_img\vs-whitesource\vs-whitesource-installed-cropped.png)
 
@@ -82,7 +84,7 @@ Znajdowanie i eliminowanie luk w zabezpieczeniach typu open source oraz generowa
 | Visual Studio Dev Essentials | NAZWA  | Niedostępne |NAZWA |
 | Program Visual Studio Enterprise, Visual Studio Professional (miesięcznych w chmurze) | Azure                                       | Niedostępne                                                           |NAZWA|
 
-<sup>1</sup>*obejmuje: sieci Microsoft Partner Network (przedsiębiorstwo).    Nie obejmuje: Inne Not for Resale (NFR), Visual Studio Industry Partner (VSIP), ekwiwalentu pełnego wymiaru czasu, MCT Software & deweloperów usług, BizSpark, Imagine, cenionym partnera firmy Microsoft (MVP), dyrektor Region (usług pulpitu zdalnego), MCT Software & Services, Microsoft Partner Network () Professional).*
+<sup>1</sup>*obejmuje: sieci Microsoft Partner Network (przedsiębiorstwo).  Nie obejmuje: Inne Not for Resale (NFR), Visual Studio Industry Partner (VSIP), ekwiwalentu pełnego wymiaru czasu, MCT Software & deweloperów usług, BizSpark, Imagine, cenionym partnera firmy Microsoft (MVP), dyrektor Region (usług pulpitu zdalnego), MCT Software & Services, Microsoft Partner Network () Professional).*
 
 Nie masz pewności której subskrypcji używasz?  Połączyć się z [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) Aby wyświetlić wszystkie subskrypcje, które są przypisane do Twojego adresu e-mail. Jeśli nie widzisz wszystkie swoje subskrypcje, mogą mieć co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby wyświetlić te subskrypcje.
 
@@ -90,4 +92,4 @@ Nie masz pewności której subskrypcji używasz?  Połączyć się z [ https://m
 
 -  Potrzebujesz pomocy dotyczącej WhiteSource Bolt?  Porozmawiaj z przedstawicielem WhiteSource Bolt na żywo w https://www.whitesourcesoftware.com/vse_whitesource_bolt/
 -  Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z pomocą programu Visual Studio [pomoc techniczna dla subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/).
--  Masz pytanie dotyczące środowiska IDE programu Visual Studio, Visual Studio Team Services lub innych produktów Visual Studio lub usług?  Odwiedź stronę [pomoc techniczna dla programu Visual Studio](https://visualstudio.microsoft.com/support/).
+-  Masz pytanie dotyczące programu Visual Studio IDE, usługom DevOps platformy Azure lub innych produktów Visual Studio lub usług?  Odwiedź stronę [pomoc techniczna dla programu Visual Studio](https://visualstudio.microsoft.com/support/).

@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: bbafd92f34671564a91926066a2353a1e0421b63
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: edf1f279ef858b70eab82604cace9546fbc3cf5c
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179245"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283213"
 ---
 # <a name="code-a-custom-extraction-rule-for-a-web-performance-test"></a>Kod niestandardowej reguły wyodrębniania dla testów wydajności sieci web
 
@@ -44,7 +44,7 @@ Użytkownicy mogą tworzyć własne reguły wyodrębniania. W tym celu należy u
 
 5.  (Opcjonalnie) Skompiluj nowy projekt Biblioteka klas.
 
-6.  (Opcjonalnie) W projekcie Test dodaj odwołanie do projektu Biblioteka klas zawierającego niestandardową regułę wyodrębniania.
+6.  (Opcjonalnie) W projekcie testowym Dodaj odwołanie do projektu Biblioteka klas zawierającego niestandardową regułę wyodrębniania.
 
 7.  W projekcie Test Otwórz test wydajności sieci web, w **edytora testów wydajności sieci Web**.
 

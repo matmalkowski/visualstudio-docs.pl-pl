@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c3669bf931b90b3d021c8601fd4934ae7c84bf7b
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 418ea3661f236866bbadcf278f288632c5e49435
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774755"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280097"
 ---
 # <a name="step-5-use-the-polls-flask-web-project-template"></a>Krok 5: Należy użyć szablonu projektu sieci Web Flask sond
 
@@ -356,7 +356,7 @@ Uruchamianie aplikacji sieci web na komputerze deweloperskim jest tylko jeden kr
 
 - Dodaj implementację repozytorium, która używa innego magazynu danych na poziomie produkcyjnym, takich jak PostgreSQL, MySQL i SQL Server (które mogą być hostowane na platformie Azure). Można również użyć [zestawu Azure SDK dla języka Python](azure-sdk-for-python.md) do pracy z usług Azure storage, takie jak tabele i obiektów blob, a także usługi Cosmos DB.
 
-- Skonfiguruj potok ciągłej integracji/ciągłego wdrażania w usłudze, takich jak Visual Studio Team Services (VSTS). Oprócz Praca z kontrolą źródła (w usłudze VSTS, GitHub lub gdzie indziej), może mieć VSTS automatycznie uruchomić testy jednostkowe jako warunek wstępny dla wersji, a także skonfigurować potok do wdrażania na serwerze tymczasowym dla dodatkowych testów przed wdrożeniem Produkcja. Usługi VSTS, ponadto integruje się z usługą monitorowania rozwiązań, takich jak usługi App Insights i zamknięcie całego cyklu za pomocą narzędzi planowania agile. Aby uzyskać więcej informacji, zobacz:
+- Skonfiguruj potok ciągłej integracji/ciągłego wdrażania usługi, takie jak potoki usługi Azure. Oprócz Praca z kontrolą źródła (na repozytoriów platformy Azure, GitHub lub w innym miejscu), może mieć plany testów Azure automatycznie uruchomić testy jednostkowe jako warunek wstępny dla wersji, a także skonfigurować potok do wdrażania na serwerze tymczasowym dla dodatkowych testów przed do wdrożenia produkcyjnego. Usług platformy Azure DevOps, ponadto integruje się z usługą monitorowania rozwiązań, takich jak usługi App Insights i zamknięcie całego cyklu za pomocą narzędzi planowania agile. Aby uzyskać więcej informacji, zobacz:
 
-  - [Tworzenie potoku ciągłej integracji/ciągłego Dostarczania dla języka Python za pomocą projektu DevOps platformy Azure](/azure/devops-project/azure-devops-project-python?view=vsts)
+  - [Tworzenie potoku ciągłej integracji/ciągłego Dostarczania dla języka Python za pomocą usługi Azure DevOps Projects](/azure/devops-project/azure-devops-project-python?view=vsts)
   - [Programowanie w języku Python na platformie Azure przy użyciu programu Visual Studio Team Services (wideo, 11m 21s)](https://azure.microsoft.com/resources/videos/connect-2017-python-development-in-azure-with-visual-studio-team-services/).

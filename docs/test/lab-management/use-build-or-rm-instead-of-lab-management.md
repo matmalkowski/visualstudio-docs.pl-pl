@@ -1,5 +1,5 @@
 ---
-title: Użyj kompilacji lub zarządzania zleceniami dla automatycznego testowania w programie Visual Studio
+title: Używanie kompilacji lub usługi Release Management na potrzeby automatycznego testowania w programie Visual Studio
 ms.date: 03/02/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -11,68 +11,68 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 454407c3572f7a7c7a1c0f795462d2aec539049a
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: cc8935db33f5c4b584cf825a46ae62f0d31d2351
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34845382"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44320621"
 ---
-# <a name="use-build-and-release-management-instead-of-lab-management-for-automated-testing"></a>Użyj kompilacji i zarządzania zleceniami zamiast Lab Management dla testowanie automatyczne
+# <a name="use-build-and-release-management-instead-of-lab-management-for-automated-testing"></a>Używanie zarządzania kompilacjami i wydaniami zamiast Lab Management na potrzeby automatycznego testowania
 
-Jeśli używasz programu Microsoft Test Manager (MTM) i Lab Management do testów automatycznych lub automatyzacji kompilacja wdrażanie testy w tym temacie wyjaśniono, jak można osiągnąć te same cele przy użyciu [kompilacji i wydania](/vsts/build-release/) funkcji w programie Team Foundation Server (TFS) i Visual Studio Team Services (VSTS).
+Jeśli używasz Microsoft Test Manager (MTM) i Lab Management do testów automatycznych lub w przypadku usługi automation kompilacja wdrożenie test w tym temacie wyjaśniono, jak można uzyskać te same cele przy użyciu [kompilowania i wydawania](/azure/devops/pipelines/index?view=vsts) funkcji w programie Team Foundation Server (TFS) i planów testowych platformy Azure.
 
-## <a name="build-deploy-test-automation"></a>Automatyzacja kompilacja wdrażanie testy
+## <a name="build-deploy-test-automation"></a>Kompilacja wdrożenie test automatyzacji
 
-MTM i Lab Management korzystają z definicji kompilacji XAML do automatyzowania kompilacji, wdrażania i testowania aplikacji. Kompilacji XAML polega na różne konstrukcje utworzone w programie MTM, takich jak środowisko laboratoryjne, zestawów testów i ustawień testowania i na różnych składników infrastruktury, takich jak kontroler kompilacji, agentów kompilacji kontrolera testów i agentów testowych na osiągnięcie tego celu. Można to wykonać za pomocą mniejszej liczby kroków kompilacji lub zarządzania zleceniami w programie TFS i usługi Team Services.
+MTM i Lab Management, zależą od definicji kompilacji XAML w celu automatyzacji tworzenia, wdrażania i testowania aplikacji. Kompilacja XAML opiera się na różnych konstrukcji utworzone w programie MTM, takich jak środowisko laboratoryjne, zestawy testów i ustawień testowania i na różnych składników infrastruktury, takich jak kontroler kompilacji, agentów kompilacji, kontroler testów i agentów testowych na osiągnięcie tego celu. Można wykonać takie same, w ramach mniejszej liczby czynności przy użyciu kompilacji lub zarządzania wydaniami w programie TFS i potoków usługi Azure.
 
-| Kroki | Z kompilacji XAML | Z kompilacji lub zarządzania zleceniami |
+| Kroki | Z kompilacji XAML | Za pomocą kompilacji lub usługi Release Management |
 |-------|----------------------|-----------------|
-| Zidentyfikuj maszyny do kompilacji do wdrażania i uruchamiania testów. | Utwórz środowisko laboratoryjne standardowe w programie MTM z tych maszyn. | n/d |
-| Określ testy do uruchomienia. | Tworzenie zestawu testów w programie MTM, tworzenie przypadków testowych i kojarzenie automatyzacji z każdego przypadku testowego. Tworzenie ustawień testów w programie MTM identyfikowanie roli maszyn w środowisku laboratoryjnym, w którym należy uruchomić testy. | Utwórz w programie MTM zestawu testów automatycznych w taki sam sposób jak Jeśli planowane jest zarządzanie testowania przy użyciu planów testów. Alternatywnie można pominąć, to jeśli chcesz uruchomić testy bezpośrednio z utworzonego przez kompilacji plików binarnych testów. Nie istnieje potrzeba do tworzenie ustawień testów w każdym przypadku. |
-| Automatyzowania wdrażania i testowania. | Tworzenie definicji kompilacji XAML przy użyciu LabDefaultTemplate.*.xaml. Określ kompilację, zestawów testów i środowiska laboratoryjnego w definicji kompilacji. | Utwórz [kompilacji lub wersji definicji](/vsts/build-release/) z jednym środowiskiem. Uruchom sam skrypt wdrażania (od definicji kompilacji XAML) za pomocą zadania wiersza polecenia i Uruchamianie testów automatycznych przy użyciu zadania wdrażania agenta testowego i uruchom testy funkcjonalne. Określ listę maszyn i poświadczeń jako dane wejściowe, aby te zadania. |
+| Zidentyfikuj maszyny w celu kompilacji, aby wdrażać i uruchamiać testy. | Utwórz standardowe środowisko laboratoryjne w programie MTM przy użyciu tych maszyn. | n/d |
+| Określ testy do uruchomienia. | Tworzenie zestawu testów w programie MTM, tworzyć przypadki testowe i kojarzenie automatyzacji z każdego przypadku testowego. Utwórz ustawienia testu w programie MTM identyfikowanie roli maszyn w środowisku laboratoryjnym, w którym należy uruchomić testy. | Tworzenie zautomatyzowanych testów w programie MTM w taki sam sposób, jeśli mają być zarządzane, testowanie za pomocą planów testu. Alternatywnie można pominąć to jeśli chcesz uruchamiać testy bezpośrednio z poziomu testu pliki binarne wytworzone przez kompilacji. Nie ma potrzeby tworzenia ustawień testu w obu przypadkach. |
+| Automatyzuj wdrażanie i testowanie. | Utwórz definicję kompilacji XAML, za pomocą LabDefaultTemplate.*.xaml. W definicji kompilacji, należy określić kompilację, zestawy testów i środowiska laboratoryjnego. | Tworzenie [kompilacji lub potoku wydania](/azure/devops/pipelines/index?view=vsts) przy użyciu jednego środowiska. Uruchom ten sam skrypt wdrażania (od definicji kompilacji XAML) przy użyciu wiersza polecenia zadania i uruchamiania testów automatycznych za pomocą zadań wdrożenie agenta testowego i uruchom testy funkcjonalne. Określ listę maszyn i poświadczeń jako dane wejściowe z tymi zadaniami. |
 
-Niektóre korzyści wynikające ze stosowania kompilacji lub zarządzania zleceniami w tym scenariuszu są:
+Korzyści z używania kompilacji lub usługi Release Management dla tego scenariusza, należą:
 
-* Nie trzeba kontroler kompilacji lub kontrolera testów.
-* Agent testowy jest zainstalowany za pomocą zadania jako część kompilacji lub wersji.
-* To proste dostosować procedury wdrażania. Nie jesteś już ograniczona do za pomocą jednego skryptu. Można również korzystać z wielu zadań, które są dostępne w ramach produktu, a także jak Visual Studio Marketplace.
-* Nie masz Obsługa pakietów testowych. Można bezpośrednio uruchomić testy z plików binarnych.
-* Możesz uzyskać wbudowanego bardziej zaawansowane funkcje raportowania środowisko dla testów, które został uruchomiony w ramach każdego kompilacji lub wersji.
-* Trwałe, które można śledzić (zlecenia, tworzenie elementów roboczych, zatwierdzeń) są obecnie wdrożone i przetestowane w każdym środowisku.
-* Można dostosować i rozszerzenie automatyzacji, aby łatwo wdrożyć wiele środowisk testowych, a nawet produkcji.
-* Można zaplanować automatyzacji nastąpić zawsze, gdy istnieje ewidencjonowania lub zatwierdzania lub każdego dnia o określonej godzinie.
+* Nie trzeba kontrolera kompilacji lub kontrolera testów.
+* Agent testowy jest zainstalowany za pomocą zadania jako część kompilacji lub wydania.
+* To można łatwo dostosować procedury wdrażania. Nie jesteś już ograniczone do korzystania z jednego skryptu. Możesz również korzystać z zalet wiele zadań, które są dostępne w ramach produktu, a także jak Visual Studio Marketplace.
+* Nie masz Obsługa zestawów testów. Można bezpośrednio uruchomić testy z plików binarnych.
+* Uzyskasz bardziej zaawansowane wbudowane, raportowanie środowisko dla testów uruchomionych w ramach każdej kompilacji lub wydania.
+* Trwałe, które można śledzić (wydania, tworzenie elementów roboczych, zatwierdzeń) są obecnie wdrożone i przetestowane w każdym środowisku.
+* Można dostosować i rozszerzyć automatyzację, aby łatwo wdrożyć do wielu środowisk testowych, a nawet do środowiska produkcyjnego.
+* Można zaplanować automatyzacji, który ma być wykonywana zawsze, gdy występuje lub ewidencjonowania zatwierdzenia lub codziennie o określonej godzinie.
 
 ## <a name="self-service-management-of-scvmm-environments"></a>Samoobsługowe zarządzanie środowiska SCVMM
 
-[Centrum testów programu Microsoft Test Manager](/vsts/manual-test/mtm/guidance-mtm-usage) obsługuje zarządzanie biblioteki szablonów środowiska, a także udostępnić środowisk na żądanie przy użyciu [serwer SCVMM](/system-center/vmm/overview?view=sc-vmm-1801).
+[Centrum testów w programie Microsoft Test Manager](/azure/devops/test/mtm/guidance-mtm-usage?view=vsts) obsługuje możliwość bibliotekę szablonów środowiska zarządzania, a także aprowizować środowiska na żądanie przy użyciu [serwera SCVMM](/system-center/vmm/overview?view=sc-vmm-1801).
 
-Samoobsługowe funkcje inicjowania obsługi administracyjnej Centrum laboratoryjnego ma dwa różne cele:
+Samoobsługowe funkcje inicjowania obsługi Centrum laboratoryjnego ma dwa różne cele:
 
-* Podaj prostszy sposób zarządzania infrastrukturą. Zarządzanie szablonami maszyny Wirtualnej i środowiska i automatyczne tworzenie sieci prywatne, aby odizolować klony środowisk od siebie były przykłady infrastruktury zarządzania.
+* Zapewnia prostszy sposób zarządzania infrastrukturą. Automatyczne tworzenie sieci prywatnych do izolowania klony środowiska od siebie nawzajem i zarządzanie nimi szablonów maszyn wirtualnych i środowisku zostały przykłady zarządzania infrastrukturą.
 
-* Podaj prostszy sposób dla zespołów użycie maszyn wirtualnych w ich testowania, wdrażania i działania. Tworzenie laboratorium używanego środowiska dostępne przez ten sam model zabezpieczeń projektu zespołowego i zintegrowane z tych maszyn wirtualnych w scenariuszach testów zostały przykłady łatwość użycia.
+* Prostsze umożliwiają zespołom korzystanie z maszyn wirtualnych w swoich działaniach testowanie i wdrażanie. Podejmowanie środowisk laboratoryjnych, dostępne za pośrednictwem tego samego modelu zabezpieczeń projektu i zintegrowane korzystanie z tych maszyn wirtualnych w scenariuszach testowych, były przykłady łatwość użycia.
 
-Jednak takie jak podane rozwoju bardziej rozbudowane chmur publicznych i prywatnych systemów zarządzania [Microsoft Azure](https://azure.microsoft.com/) i [Microsoft Azure stosu](https://azure.microsoft.com/overview/azure-stack/), nie istnieje żadne zmiany infrastruktury funkcji zarządzania w TFS 2017 i nowszych. Zamiast tego jest nadal fokus na łatwość użycia zasobów zarządzanych za pomocą takich infrastruktury chmury.
+Jednak ze względu ewolucji bogatsze chmur publicznych i prywatnych systemów zarządzania takie jak [Microsoft Azure](https://azure.microsoft.com/) i [Microsoft Azure Stack](https://azure.microsoft.com/overview/azure-stack/), nie ma żadnych rozwój funkcji zarządzania infrastrukturą w Serwer TFS 2017 i nowszych. Zamiast tego kontynuuje skoncentrować się na łatwość użycia zasobów zarządzanych przy użyciu takich infrastruktur chmury.
 
-W poniższej tabeli przedstawiono typowych działań, wykonywanych w Centrum laboratoryjnego i jak można wykonać je za pomocą programu SCVMM albo Azure (jeśli są działania związane z zarządzaniem infrastruktury) lub za pomocą TFS i usługi Team Services (jeśli są one działań testów lub wdrożenia):
+W poniższej tabeli podsumowano typowych działań, które wykonujesz w Centrum laboratoryjnego i jak można wykonać je za pomocą programu SCVMM lub na platformie Azure (jeśli są działania związane z zarządzaniem infrastrukturą) lub TFS i usługom DevOps platformy Azure (jeśli są one testu lub wdrożenia czynności):
 
-| Kroki | Z Centrum laboratoryjnym | Z kompilacji lub zarządzania zleceniami |
+| Kroki | Przy użyciu Centrum laboratoryjnego | Za pomocą kompilacji lub usługi Release Management |
 |-------|----------------------|-----------------|
-| Zarządzanie biblioteki szablonów środowiska. | Utworzyć środowisko laboratoryjne. Zainstaluj oprogramowanie na maszynach wirtualnych. Narzędzie Sysprep i magazynu środowiska jako szablon w bibliotece. | Używana jest Konsola administracyjna programu SCVMM bezpośrednio do tworzenia i zarządzania nimi, szablony maszyn wirtualnych lub szablonów usług. Podczas korzystania z usługi Azure, wybierz jedną z [szablonów Szybki Start Azure](https://azure.microsoft.com/resources/templates/). |
-| Utworzyć środowisko laboratoryjne. | Wybierz szablon środowiska w bibliotece, a następnie wdrożyć go. Podaj parametry niezbędne do dostosowania konfiguracji maszyn wirtualnych. | Bezpośrednio za pomocą konsoli administracyjnej programu SCVMM za pomocą szablonów można tworzyć maszyn wirtualnych i wystąpień usługi. Bezpośrednio za pomocą portalu Azure utworzenie zasobów. Lub Utwórz definicję wersji ze środowiskiem. Użyj platformy Azure, zadania lub zadania związane z [rozszerzenia integracji programu SCVMM](https://marketplace.visualstudio.com/items?itemname=ms-vscs-rm.scvmmapp) do utworzenia nowej maszyny wirtualnej. Tworzenie nowej wersji tej definicji jest odpowiednikiem tworzenia nowego środowiska w Centrum laboratoryjnego. |
-| Połączyć się z komputerami. | Otwórz środowisko laboratoryjne w przeglądarce środowiska. | Bezpośrednio za pomocą konsoli administracyjnej programu SCVMM połączenia z maszynami wirtualnymi. Aby otworzyć sesji pulpitu zdalnego można również użyć adresu IP lub nazwy DNS maszyn wirtualnych. |
-| Utwórz punkt kontrolny środowiska, lub przywrócić środowiska do czystą punktu kontrolnego. | Otwórz środowisko laboratoryjne w przeglądarce środowiska. Wybierz opcję Utwórz punkt kontrolny lub przywracania do poprzedniego punktu kontrolnego. | Bezpośrednio za pomocą konsoli administracyjnej programu SCVMM wykonywać te operacje na maszynach wirtualnych. Lub, aby wykonać te czynności w ramach większych automatyzacji, obejmują zadań punkt kontrolny z [rozszerzenia integracji programu SCVMM](https://marketplace.visualstudio.com/items?itemname=ms-vscs-rm.scvmmapp) jako część środowiska w definicji wersji. |
+| Zarządzaj bibliotekę szablonów środowiska. | Utwórz środowisko laboratoryjne. Niezbędne oprogramowanie należy zainstalować na maszynach wirtualnych. Narzędzie Sysprep i magazynu środowisko jako szablon w bibliotece. | Użyj konsoli administracji SCVMM bezpośrednio do tworzenia i zarządzania nimi, szablony maszyn wirtualnych lub szablonów usług. Korzystając z platformy Azure, wybierz jedną z [szablony szybkiego startu platformy](https://azure.microsoft.com/resources/templates/). |
+| Utwórz środowisko laboratoryjne. | Wybierz szablon środowiska w bibliotece, a następnie wdrożyć ją. Podaj niezbędne parametry, aby dostosować konfiguracje maszyny wirtualnej. | Bezpośrednio za pomocą konsoli administracyjnej SCVMM za pomocą szablonów można tworzyć maszyny wirtualne lub wystąpienia usługi. Bezpośrednio za pomocą witryny Azure portal utworzyć zasoby. Lub Utwórz definicję wersji ze środowiskiem. Użycie platformy Azure, zadania lub zadania z [rozszerzeniu integracji programu SCVMM](https://marketplace.visualstudio.com/items?itemname=ms-vscs-rm.scvmmapp) umożliwia tworzenie nowych maszyn wirtualnych. Tworzenie nowej wersji ta definicja jest odpowiednikiem Tworzenie nowego środowiska w laboratorium. |
+| Łączyć się z maszynami. | Otwórz środowisko laboratoryjne w podglądu środowiska. | Bezpośrednio za pomocą konsoli administracyjnej SCVMM nawiązać połączenie z maszynami wirtualnymi. Można również użyć adresu IP lub nazwy DNS maszyn wirtualnych, aby otworzyć sesji pulpitu zdalnego. |
+| Punkt kontrolny środowiska lub przywrócić środowiska do czystego punktu kontrolnego. | Otwórz środowisko laboratoryjne w podglądu środowiska. Wybierz opcję Utwórz punkt kontrolny lub przywrócić do poprzedniego punktu kontrolnego. | Bezpośrednio za pomocą konsoli administracyjnej SCVMM wykonywać te operacje na maszynach wirtualnych. Lub, jako część większych automatyzacji, należy wykonać te kroki, obejmują zadania punkt kontrolny z [rozszerzeniu integracji programu SCVMM](https://marketplace.visualstudio.com/items?itemname=ms-vscs-rm.scvmmapp) jako część środowiska w definicji wydania. |
 
 ## <a name="creation-of-network-isolated-environments"></a>Tworzenie środowisk sieci izolowanych
 
-Środowisko laboratorium izolowane sieci jest grupą SCVMM maszyn wirtualnych, które można bezpiecznie sklonować bez powodowania konfliktach sieciowych. Zostało to zrobić w programie MTM przy użyciu szeregu instrukcji, które umożliwiają skonfigurowanie maszyn wirtualnych w sieci publicznej zestaw kart interfejsu sieciowego można skonfigurować maszyn wirtualnych w sieci prywatnej, a innego zestawu kart interfejsu sieciowego.
+Środowisko laboratorium izolowane sieci to grupa maszyn wirtualnych programu SCVMM, które można bezpiecznie sklonować bez powodowania konfliktów sieci. W programie MTM stało się przy użyciu szereg instrukcji, które umożliwiają skonfigurowanie maszyn wirtualnych w sieci publicznej zbiór kart interfejsu sieciowego, aby skonfigurować maszyn wirtualnych w sieci prywatnej, a inny zbiór kart interfejsu sieciowego.
 
-Jednak VSTS i TFS w połączeniu z programu SCVMM kompilacji i zadanie wdrażania, można użyć do zarządzania środowisk programu SCVMM, udostępniania izolowanych sieci wirtualnych i zaimplementować scenariusze kompilacja wdrażanie testy. Na przykład można użyć zadania:
+Jednak plany testów platformy Azure i TFS, w połączeniu z programem SCVMM kompilacji zadanie wdrażania, może służyć do zarządzania środowisk SCVMM, udostępniania izolowanych sieci wirtualnej i implementowanie scenariuszy kompilacja wdrożenie test. Na przykład można użyć zadania:
 
-* Tworzenie, przywracania i Usuń punkty kontrolne
+* Tworzenie, przywracania i usunąć punkty kontrolne
 * Tworzenie nowych maszyn wirtualnych przy użyciu szablonu
 * Uruchamianie i zatrzymywanie maszyn wirtualnych
-* Uruchamianie niestandardowych skryptów programu PowerShell dla programu SCVMM
+* Uruchamianie niestandardowych skryptów środowiska PowerShell dla programu SCVMM
 
-Aby uzyskać więcej informacji, zobacz [Utwórz środowisko wirtualne sieci izolowanej dla scenariuszy kompilacja wdrażanie testy](/vsts/build-release/actions/virtual-networks/create-virtual-network).
+Aby uzyskać więcej informacji, zobacz [Utwórz środowisko wirtualne sieci izolowanej scenariuszach kompilacja wdrożenie test](/azure/devops/pipelines/targets/create-virtual-network?view=vsts).

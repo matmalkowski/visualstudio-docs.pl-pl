@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4752556fadead75bb29b6920d51ebbb54a5679aa
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 26e96116ca03cad074639c5753a8cb076dc70adf
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080802"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281978"
 ---
 # <a name="how-to-publish-a-project-that-has-a-specific-locale"></a>Porady: publikowanie projektu o specyficznych ustawieniach regionalnych
 Nie jest niczym niezwykłym aplikacji zawierają składniki, które mają różnych ustawień regionalnych. W tym scenariuszu może utworzyć rozwiązanie, które ma kilka projektów, a następnie opublikuj oddzielnych projektów dla poszczególnych ustawień regionalnych. Ta procedura pokazuje, jak publikować pierwszego projektu w rozwiązaniu przy użyciu ustawień regionalnych "PL" za pomocą makra. Jeśli chcesz wypróbować tę procedurę za pomocą ustawień regionalnych innych niż "en", upewnij się ustawić `localeString` w makrze zgodne z ustawieniami regionalnymi, którego używasz (na przykład, "de" lub "de-DE").  
@@ -165,6 +165,6 @@ Nie jest niczym niezwykłym aplikacji zawierają składniki, które mają różn
   
 ## <a name="see-also"></a>Zobacz także  
  [Publikowanie aplikacji ClickOnce](../deployment/publishing-clickonce-applications.md)   
- [Makra środowiska deweloperskiego](http://msdn.microsoft.com/en-us/d23105d8-34fe-4ad9-8278-fae2c660aeac)   
- [Okno Eksploratora — makro](http://msdn.microsoft.com/en-us/762169e6-f83f-44b4-bffa-d0f107cae9a3)   
- [Porady: edytowanie i programowe tworzenie makra](http://msdn.microsoft.com/en-us/6716f820-1feb-48ad-a718-27eb6b473c5a)
+ [Makra środowiska deweloperskiego](/previous-versions/visualstudio/visual-studio-2010/fb30sxt3(v=vs.100))   
+ [Okno Eksploratora — makro](/previous-versions/visualstudio/visual-studio-2010/wwkx67sw(v=vs.100))   
+ [Porady: edytowanie i programowe tworzenie makra](/previous-versions/visualstudio/visual-studio-2010/k91y6132(v=vs.100))

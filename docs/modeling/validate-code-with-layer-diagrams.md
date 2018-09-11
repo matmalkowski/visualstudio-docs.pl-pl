@@ -21,12 +21,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 85c7aad0ef5f9374c722a58ec35c001695e55013
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 22d51fff3dcfea81676e18c7b13d91bb5567dde8
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567197"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44321128"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Weryfikacja kodu przy użyciu diagramów zależności
 
@@ -218,7 +218,7 @@ W tej wersji programu Visual Studio Weryfikacja odbywa się w czasie rzeczywisty
 
  Aby uzyskać więcej informacji na temat błędów sprawdzania poprawności, zobacz [omówienie i rozwiązywanie błędów walidacji warstwy](#UnderstandingValidationErrors). Aby uzyskać więcej informacji na temat [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)], zobacz:
 
--   [Kompilowanie i wydawanie](/vsts/build-release/index)
+-   [Potoki usługi Azure](/azure/devops/pipelines/index?view=vsts)
 
 -   [Użyj domyślnego szablonu procesu kompilacji](http://msdn.microsoft.com/Library/43930b12-c21b-4599-a980-2995e3d16e31)
 

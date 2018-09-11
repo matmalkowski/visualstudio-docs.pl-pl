@@ -9,12 +9,12 @@ description: Zarejestruj się otrzymać Subskrypcja magazynu MSDN Magazine zawar
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: ea89d30c9174cc0bd3080131363edad4ef66eb77
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: a988c6cd546aee767c0900f2319bc456a79da266
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42624271"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283590"
 ---
 # <a name="the-msdn-magazine-benefit-in-visual-studio-subscriptions"></a>Korzyść MSDN Magazine w subskrypcji programu Visual Studio
 
@@ -57,7 +57,7 @@ Wersja cyfrowa jest dostępne dla członków programu Visual Studio Dev Essentia
 |Program Visual Studio Enterprise, Visual Studio Professional (miesięcznych w chmurze)   | Azure |Niedostępne      |  NAZWA         |
 |Visual Studio Dev Essentials| NAZWA |Wersja cyfrowa       |  Tak|
 
-<sup>1</sup>*wydrukowana edition: nie for Resale (NFR), Visual Studio Industry Partner (VSIP), ekwiwalentu pełnego wymiaru czasu, Microsoft Partner Network (przedsiębiorstwo), Imagine (Premium).* 
+<sup>1</sup>*wydrukowana edition: nie for Resale (NFR), Visual Studio Industry Partner (VSIP), ekwiwalentu pełnego wymiaru czasu, Microsoft Partner Network (przedsiębiorstwo), Imagine (Premium).*
 
 *Wersja cyfrowa: MCT Software & Services, cenionym partnera firmy Microsoft (Professional), dyrektor Region (usług pulpitu zdalnego).*
 
@@ -68,4 +68,4 @@ Nie masz pewności której subskrypcji używasz?  Połączyć się z [ https://m
 
 ## <a name="support-resources"></a>Zasoby pomocy technicznej
 -  Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z pomocą programu Visual Studio [pomoc techniczna dla subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/).
--  Masz pytanie dotyczące środowiska IDE programu Visual Studio, Visual Studio Team Services lub innych produktów Visual Studio lub usług?  Odwiedź stronę [pomoc techniczna dla programu Visual Studio](https://visualstudio.microsoft.com/support/).
+-  Masz pytanie dotyczące programu Visual Studio IDE, usługom DevOps platformy Azure lub innych produktów Visual Studio lub usług?  Odwiedź stronę [pomoc techniczna dla programu Visual Studio](https://visualstudio.microsoft.com/support/).

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fb117a10a7f736e36b30806adfc5e07fe0b8aecf
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 36d001a14815e5e8e8639ba0937506a1c06d3fc2
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512256"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280574"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Zmiany w rozszerzalności programu Visual Studio 2017
 
@@ -73,7 +73,7 @@ Większość zestawów podstawowych programu Visual Studio są już zainstalowan
     "culture"="neutral"
     "version"=15.0.0.0
     ```
-    W czasie wykonywania w podsystemie pkgdef programu Visual Studio spowoduje scalenie tych wpisów w pliku konfiguracji środowiska uruchomieniowego procesu programu Visual Studio (w obszarze *[VSAPPDATA]\devenv.exe.config*) jako [ `<codeBase>` ](https://msdn.microsoft.com/en-us/library/efs781xb(v=vs.110).aspx) elementy. Jest to zalecany sposób umożliwić procesu programu Visual Studio, Znajdź w swoim zestawie, ponieważ eliminuje przeszukiwania sondowania ścieżek.
+    W czasie wykonywania w podsystemie pkgdef programu Visual Studio spowoduje scalenie tych wpisów w pliku konfiguracji środowiska uruchomieniowego procesu programu Visual Studio (w obszarze *[VSAPPDATA]\devenv.exe.config*) jako [ `<codeBase>` ](/dotnet/framework/configure-apps/file-schema/runtime/codebase-element) elementy. Jest to zalecany sposób umożliwić procesu programu Visual Studio, Znajdź w swoim zestawie, ponieważ eliminuje przeszukiwania sondowania ścieżek.
 
 ### <a name="reacting-to-this-breaking-change"></a>Reagowanie na tej istotnej zmiany
 
@@ -87,7 +87,7 @@ Większość zestawów podstawowych programu Visual Studio są już zainstalowan
 
 ### <a name="global-com-registration"></a>Globalne rejestracji modelu COM
 
-* Wcześniej zainstalowany program Visual Studio wielu kluczy rejestru na HKEY_CLASSES_ROOT i HKEY_LOCAL_MACHINE gałęzie do obsługi rejestracji modelu COM macierzystego. Aby wyeliminować wpływ, używa teraz program Visual Studio [aktywacji bez rejestracji składników COM](https://msdn.microsoft.com/en-us/library/ms973913.aspx).
+* Wcześniej zainstalowany program Visual Studio wielu kluczy rejestru na HKEY_CLASSES_ROOT i HKEY_LOCAL_MACHINE gałęzie do obsługi rejestracji modelu COM macierzystego. Aby wyeliminować wpływ, używa teraz program Visual Studio [aktywacji bez rejestracji składników COM](https://msdn.microsoft.com/library/ms973913.aspx).
 * W rezultacie, TLB większość / OLB / plików biblioteki DLL w % ProgramFiles (x86) %\Common Files\Microsoft Shared\MSEnv są już zainstalowane domyślnie w programie Visual Studio. Te pliki są teraz instalowane w ramach [INSTALLDIR] za pomocą odpowiedniego manifesty COM bez rejestrowania używane w procesie hosta programu Visual Studio.
 * W rezultacie kod zewnętrzny, która zależy od globalnej rejestracji COM dla interfejsów COM usługi Visual Studio nie jest już znajduje się tyto registrace. Kodzie działającym wewnątrz procesu programu Visual Studio nie będzie widoczna różnica.
 
@@ -106,5 +106,5 @@ Większość zestawów podstawowych programu Visual Studio są już zainstalowan
 
 * Kod zewnętrzny powinny być konwertowane na potrzeby aktywacji bez rejestracji składników COM, jak również.
 * Składniki zewnętrzne, można znaleźć lokalizacji programu Visual Studio [postępując zgodnie ze wskazówkami zawartymi w tym miejscu](https://blogs.msdn.microsoft.com/heaths/2016/09/15/changes-to-visual-studio-15-setup).
-* Zalecane jest używanie składników zewnętrznych [zewnętrznego Menedżera ustawień](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.settings.externalsettingsmanager.aspx) zamiast odczytu/zapisu bezpośrednio do kluczy rejestru programu Visual Studio.
+* Zalecane jest używanie składników zewnętrznych [zewnętrznego Menedżera ustawień](/dotnet/api/microsoft.visualstudio.settings.externalsettingsmanager) zamiast odczytu/zapisu bezpośrednio do kluczy rejestru programu Visual Studio.
 * Sprawdź, czy składniki, które używa rozszerzenia mogą wdrażać inna technika rejestracji. Na przykład rozszerzenia debugera można korzystać z zalet nowego [msvsmon rejestracji COM plik JSON](migrate-debugger-COM-registration.md).

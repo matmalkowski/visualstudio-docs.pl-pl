@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 0973e110d7f321caa88bef0a3672191298f8fe8e
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 94b1b46ce7d2843c733e1baf13f12672c98a3989
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380895"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44321193"
 ---
 # <a name="how-to-create-a-diagnostic-data-adapter"></a>Porady: tworzenie adaptera danych diagnostycznych
 
@@ -257,7 +257,7 @@ Aby utworzyć *adaptera danych diagnostycznych*, Utwórz bibliotekę klas przy u
     >
     > Inne przykłady plików konfiguracji w następującej ścieżce bazującej na katalogu instalacji: *10.0\Common7\IDE\PrivateAssemblies\DataCollectors Program Files\Microsoft Visual Studio*.
 
-     Aby uzyskać więcej informacji o sposobie konfigurowania ustawień testów w celu używania środowiska podczas wykonywania testów, zobacz [zbieranie danych diagnostycznych podczas wykonywania testów ręcznych (VSTS)](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests).
+     Aby uzyskać więcej informacji o sposobie konfigurowania ustawień testów w celu używania środowiska podczas wykonywania testów, zobacz [zbieranie danych diagnostycznych podczas wykonywania testów ręcznych (plany testów platformy Azure)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts).
 
      Aby uzyskać więcej informacji na temat instalowania plików konfiguracji, zobacz [porady: Instalowanie niestandardowego adaptera danych diagnostycznych](../test/how-to-install-a-custom-diagnostic-data-adapter.md)
 
@@ -265,7 +265,7 @@ Aby utworzyć *adaptera danych diagnostycznych*, Utwórz bibliotekę klas przy u
 
 13. Aby uzyskać informacje o instalowaniu niestandardowego edytora, zobacz [porady: Instalowanie niestandardowego adaptera danych diagnostycznych](../test/how-to-install-a-custom-diagnostic-data-adapter.md).
 
-14. Aby uzyskać więcej informacji o sposobie konfigurowania ustawień testów w celu używania środowiska podczas wykonywania testów, zobacz [zbieranie danych diagnostycznych podczas wykonywania testów ręcznych (VSTS)](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests).
+14. Aby uzyskać więcej informacji o sposobie konfigurowania ustawień testów w celu używania środowiska podczas wykonywania testów, zobacz [zbieranie danych diagnostycznych podczas wykonywania testów ręcznych (plany testów platformy Azure)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts).
 
 15. Aby zaznaczyć kartę danych diagnostycznych, należy najpierw wybrać istniejące ustawienia testu lub utworzyć nowy z Microsoft Test Manager lub programu Visual Studio. Adapter jest wyświetlany na **dane i Diagnostyka** kartę ustawień testu z przyjazną nazwą, która została przypisana do tej klasy.
 
@@ -285,6 +285,6 @@ Aby utworzyć *adaptera danych diagnostycznych*, Utwórz bibliotekę klas przy u
 - <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorFriendlyNameAttribute>
 - <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorEnabledByDefaultAttribute>
 - [Zbieranie informacji diagnostycznych za pomocą ustawień testów](../test/collect-diagnostic-information-using-test-settings.md)
-- [Zbieranie danych diagnostycznych podczas wykonywania testów ręcznych (VSTS)](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)
-- [Zbieranie danych diagnostycznych podczas testowania (VSTS)](/vsts/manual-test/collect-diagnostic-data)
+- [Zbieranie danych diagnostycznych podczas wykonywania testów ręcznych (planów testowych platformy Azure)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)
+- [Zbieranie danych diagnostycznych podczas testowania (planów testowych platformy Azure)](/azure/devops/test/collect-diagnostic-data?view=vsts)
 - [Porady: tworzenie edytora niestandardowego dla danych dla adaptera danych diagnostycznych](../test/how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter.md)

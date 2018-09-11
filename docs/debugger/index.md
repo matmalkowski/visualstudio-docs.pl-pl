@@ -1,22 +1,22 @@
 ---
 layout: LandingPage
 title: Debugowanie aplikacji w programie Visual Studio | Dokumentacja firmy Microsoft
-description: Dowiedz się, jak używać programu Visual Studio 2017 do debugowania aplikacji, usług i narzędzi w języku wybranym platform i urządzeń.
+description: Dowiedz się, jak używać programu Visual Studio 2017 do debugowania aplikacji, usług i narzędzi w języku wybranym dla platform i urządzeń.
 ms.topic: landing-page
 ms.technology: vs-ide-debug
 ms.author: mikejo
 author: mikejo5000
 manager: douge
-ms.openlocfilehash: ba5cad803a49b97d193d156e46c6235d7c5f8312
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: 1fd0777cdb30a5a458a0578129cf22607fd8c1e3
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36303299"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281211"
 ---
 # <a name="debugging-in-visual-studio"></a>Debugowanie w Visual Studio
 
-Debuger programu Visual Studio pozwala przyjrzeć się zachowaniu środowiska wykonawczego programu i wyszukiwanie problemów. Debuger współpracuje z wszystkie języki programowania Visual Studio i ich skojarzonych bibliotek. Z debugera możesz przerwać wykonywanie programu zbadanie kodu, przejrzyj i Edytuj zmienne, wyświetlić rejestrów, zapoznaj się z instrukcjami utworzone na podstawie kodu źródłowego i wyświetlanie obszaru pamięci używanych przez aplikację.
+Debuger programu Visual Studio pomaga obserwowania zachowania w czasie wykonywania programu i znajdowanie problemów. Debuger działa z wszystkich języków programowania Visual Studio i skojarzonymi z nimi bibliotekami. Za pomocą debugera przerwanie wykonywania programu, aby zbadać jego kod, sprawdzić i edytować zmienne, przejrzeć rejestry, zapoznaj się z instrukcjami, utworzone na podstawie kodu źródłowego i przejrzeć obszar pamięci używane przez aplikację.
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -48,7 +48,7 @@ Debuger programu Visual Studio pozwala przyjrzeć się zachowaniu środowiska wy
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Debugowanie dla początkujących bezwzględne</h3>
+                        <h3>Debugowanie dla całkowicie początkujących</h3>
                     </div>
                 </div>
             </div>
@@ -66,7 +66,7 @@ Debuger programu Visual Studio pozwala przyjrzeć się zachowaniu środowiska wy
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Dowiedz się debugować</h3>
+                        <h3>Dowiedz się, jak debugowanie</h3>
                     </div>
                 </div>
             </div>
@@ -84,7 +84,7 @@ Debuger programu Visual Studio pozwala przyjrzeć się zachowaniu środowiska wy
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Obejrzyj film na korzystanie z debugera</h3>
+                        <h3>Obejrzyj film wideo na temat korzystania z debugera</h3>
                     </div>
                 </div>
             </div>
@@ -102,7 +102,7 @@ Debuger programu Visual Studio pozwala przyjrzeć się zachowaniu środowiska wy
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Dowiedz się więcej o debugowanie zdalne</h3>
+                        <h3>Dowiedz się więcej o zdalnym debugowaniu</h3>
                     </div>
                 </div>
             </div>
@@ -120,7 +120,7 @@ Debuger programu Visual Studio pozwala przyjrzeć się zachowaniu środowiska wy
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Wyświetlić migawki IntelliTrace (Visual Studio Enterprise)</h3>
+                        <h3>Wyświetl migawki IntelliTrace (Visual Studio Enterprise)</h3>
                     </div>
                 </div>
             </div>
@@ -192,7 +192,7 @@ Debuger programu Visual Studio pozwala przyjrzeć się zachowaniu środowiska wy
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Zobacz, co&#39;s nowego w debugerze</h3>
+                        <h3>Zobacz, jak&#39;nowego w debugerze</h3>
                     </div>
                 </div>
             </div>
@@ -206,12 +206,12 @@ Debuger programu Visual Studio pozwala przyjrzeć się zachowaniu środowiska wy
 
 <ul class="panelContent cardsW">
     <li>
-        <a href="https://msdn.microsoft.com/library/ee661590.aspx">
+        <a href="/visualstudio/debugger/api-reference-for-intellitrace-extensibility">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <h3>Odwołanie do funkcji IntelliTrace</h3>
+                        <h3>Dokumentacja funkcji IntelliTrace</h3>
                     </div>
                 </div>
             </div>

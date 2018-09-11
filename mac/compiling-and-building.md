@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: FB253757-DB00-4889-A6BF-E44722E25BD1
-ms.openlocfilehash: 8e742706117b318a5614484c97b9ecda0b2c3f51
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: a66cc250b0d019b3efa4873b89eef252af44b8a6
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42624109"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283707"
 ---
 # <a name="compiling-and-building-in-visual-studio-for-mac"></a>Kompilowanie i tworzenie w programie Visual Studio dla komputerów Mac
 
@@ -44,7 +44,7 @@ Można użyć aparatu kompilacji MSBuild do kompilowania aplikacji z poziomu wie
 
 Zobacz [MSBuild](/visualstudio/msbuild/msbuild) zawartości, aby uzyskać więcej informacji na temat korzystania z programu MSBuild.
 
-## <a name="building-from-visual-studio-team-services"></a>Tworzenie z poziomu programu Visual Studio Team Services
+## <a name="building-from-azure-pipelines"></a>Tworzenie z potoków platformy Azure
 
 * [Tworzenie aplikacji platformy Xamarin](/vsts/pipelines/apps/mobile/xamarin?view=vsts&tabs=vsts)
 * [Ciągła integracja za pomocą platformy Xamarin](https://developer.xamarin.com/guides/cross-platform/ci/)

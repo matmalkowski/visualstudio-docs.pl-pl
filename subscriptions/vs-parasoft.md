@@ -9,12 +9,12 @@ description: Dowiedz się, jak aktywować subskrypcję Parasoft wirtualizacji/SO
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: ce10ed292644179f348b2599898b04ae2679c9d6
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 9636bd3a264cf3cdd364382ffdffb11c376f1598
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42624140"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283161"
 ---
 # <a name="parasoft-virtualizesoatest-professional-desktop-in-visual-studio-subscriptions"></a>Parasoft wirtualizacji/SOAtest Professional Desktop w subskrypcji programu Visual Studio
 
@@ -82,7 +82,7 @@ Przetestuj wcześniej i częściej.  Symuluj i Testuj zachowanie niedostępny el
 | Visual Studio Dev Essentials | NAZWA  | Niedostępne|NAZWA |
 | Program Visual Studio Enterprise, Visual Studio Professional (miesięcznych w chmurze) | Azure                                       | Niedostępne                                                           |NAZWA|
 
-<sup>1</sup>*obejmuje: sieci Microsoft Partner Network (przedsiębiorstwo).    Nie obejmuje: Nie for Resale (NFR) programu Visual Studio Industry Partner (VSIP), ekwiwalentu pełnego wymiaru czasu, MCT Software & deweloperów usług, BizSpark, Imagine, partnerem firmy Microsoft cenionym (MVP), dyrektor Region (usług pulpitu zdalnego).  MCT Software & Services.*
+<sup>1</sup>*obejmuje: sieci Microsoft Partner Network (przedsiębiorstwo).  Nie obejmuje: Nie for Resale (NFR) programu Visual Studio Industry Partner (VSIP), ekwiwalentu pełnego wymiaru czasu, MCT Software & deweloperów usług, BizSpark, Imagine, partnerem firmy Microsoft cenionym (MVP), dyrektor Region (usług pulpitu zdalnego).  MCT Software & Services.*
 
 
 
@@ -91,4 +91,4 @@ Przetestuj wcześniej i częściej.  Symuluj i Testuj zachowanie niedostępny el
     - Pomoc techniczna:  https://www.parasoft.com/support/
     - Parasoft Centrum zasobów:  https://www.parasoft.com/resources/
 -  Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z pomocą programu Visual Studio [pomoc techniczna dla subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/).
--  Masz pytanie dotyczące środowiska IDE programu Visual Studio, Visual Studio Team Services lub innych produktów Visual Studio lub usług?  Odwiedź stronę [pomoc techniczna dla programu Visual Studio](https://visualstudio.microsoft.com/support/).
+-  Masz pytanie dotyczące programu Visual Studio IDE, usługom DevOps platformy Azure lub innych produktów Visual Studio lub usług?  Odwiedź stronę [pomoc techniczna dla programu Visual Studio](https://visualstudio.microsoft.com/support/).

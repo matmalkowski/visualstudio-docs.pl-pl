@@ -19,27 +19,27 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b1bf6b73c0df37d232c1ebd12ae00bbb4803ac13
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 0445ad1cb92e2206a3e37e76a6f55c9a42ca1558
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481947"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282370"
 ---
 # <a name="how-to-stop-code-changes"></a>Porady: zatrzymywanie zmian kodu
-Edytuj i Kontynuuj jest w trakcie stosowania zmian kodu, można zatrzymać operacji.  
+Gdy Edytuj i Kontynuuj Trwa stosowanie zmian kodu, można zatrzymać operacji.  
   
 > [!CAUTION]
->  Zatrzymywanie zmian kodu w kodzie zarządzanym może spowodować nieoczekiwane wyniki. Wprowadzanie zmian do kodu zarządzanego jest zwykle procesem szybki w tak rzadko występuje potrzeba zatrzymywanie zmian kodu w kodzie zarządzanym.  
+>  Zatrzymywanie zmian kodu w kodzie zarządzanym może spowodować nieoczekiwane wyniki. Stosowanie zmian do kodu zarządzanego jest zwykle proces szybkiego, w, rzadko jest konieczność zatrzymywanie zmian kodu w kodzie zarządzanym.  
   
 ### <a name="to-stop-applying-code-changes"></a>Aby zatrzymać stosowanie zmian kodu  
   
 -   Wybierz **Zatrzymaj stosowanie zmian kodu** z **debugowania** menu.  
   
- Ten element menu jest widoczny tylko wtedy, gdy Trwa stosowanie zmian kodu.  
+ Ten element menu jest widoczny tylko wtedy, gdy zmiany kodu są stosowane.  
   
- Jeśli wybierzesz tę opcję, żaden zmian kodu nie jest zatwierdzona.  
+ Jeśli ta opcja jest wybrana, żadne zmiany kodu są zatwierdzone.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Edytuj i Kontynuuj](../debugger/edit-and-continue.md)   
- [Edytuj i Kontynuuj, debugowanie, opcje — Okno dialogowe](http://msdn.microsoft.com/Library/009d225f-ef65-463f-a146-e4c518f86103)
+ [Edytuj i Kontynuuj, debugowanie, opcje — Okno dialogowe](https://msdn.microsoft.com/library/bcew296c.aspx)

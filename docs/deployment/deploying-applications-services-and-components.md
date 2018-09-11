@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5824876adc75430085ea0f69dc6f01be722526f5
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 83b6449d3f9fb41280d9e0b051c5baf3edbf5a66
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39231229"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44320556"
 ---
 # <a name="quickstart-first-look-at-deployment-in-visual-studio"></a>Szybki Start: Pierwsze spojrzenie na wdrażanie, w programie Visual Studio
 
@@ -45,7 +45,7 @@ Wdrożenia w lokalnym folderze zazwyczaj służy do testowania lub w celu rozpoc
 
     ![Wybierz polecenie Publikuj](../deployment/media/quickstart-publish.png)
 
-- **Środowisko uruchomieniowe Visual C++**: możesz wdrożyć środowisko wykonawcze Visual C++ przy użyciu wdrożenia lokalnego lub łączenia statycznego. Aby uzyskać więcej informacji, zobacz [wdrażanie natywnych aplikacji komputerowych (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp). 
+- **Środowisko uruchomieniowe Visual C++**: możesz wdrożyć środowisko wykonawcze Visual C++ przy użyciu wdrożenia lokalnego lub łączenia statycznego. Aby uzyskać więcej informacji, zobacz [wdrażanie natywnych aplikacji komputerowych (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp).
 
 ## <a name="publish-to-azure"></a>Publikowanie na platformie Azure
 
@@ -76,7 +76,7 @@ Wdrożenia w lokalnym folderze zazwyczaj służy do testowania lub w celu rozpoc
 
     Można także wdrożyć aplikacji ASP.NET i usług na wiele różnych sposobów. Aby uzyskać więcej informacji, zobacz [usług i aplikacji sieci web ASP.NET wdrażanie](http://www.asp.net/aspnet/overview/deployment).
 
-- **Środowisko uruchomieniowe Visual C++**: możesz wdrożyć środowisko wykonawcze Visual C++ przy użyciu wdrożenia centralnego. Aby uzyskać więcej informacji, zobacz [wdrażanie natywnych aplikacji komputerowych (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp). 
+- **Środowisko uruchomieniowe Visual C++**: możesz wdrożyć środowisko wykonawcze Visual C++ przy użyciu wdrożenia centralnego. Aby uzyskać więcej informacji, zobacz [wdrażanie natywnych aplikacji komputerowych (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp).
 
 - **Windows desktop** możesz opublikować aplikację pulpitu Windows, na serwerze sieci web lub w sieciowym udziale plików za pomocą wdrażania ClickOnce. Użytkownicy mogą następnie zainstalować aplikację za pomocą jednego kliknięcia. Aby uzyskać więcej informacji, zobacz [wdrażanie aplikacji klasycznej przy użyciu aplikacji ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) i [wdrażanie aplikacji natywnej za pomocą technologii ClickOnce](/cpp/ide/clickonce-deployment-for-visual-cpp-applications).
 
@@ -114,7 +114,7 @@ Aby umożliwić bardziej wyrafinowane projektowanie i testowanie przez wdrożeni
 
 ## <a name="devops-deployment"></a>Wdrożenie metodyki DevOps
 
-W środowisku zespołowym można użyć programu Visual Studio Team Services (VSTS) umożliwia ciągłe wdrażanie aplikacji. Aby uzyskać więcej informacji, zobacz [kompilowania i wydawania](/vsts/build-release/index) i [Wdróż na platformie Azure](/vsts/deploy-azure/index).
+W środowisku zespołowym potoki Azure służy również do włączyć ciągłe wdrażanie aplikacji. Aby uzyskać więcej informacji, zobacz [potoki Azure](/azure/devops/pipelines/index?view=vsts) i [Wdróż na platformie Azure](/azure/devops/deploy-azure/index?view=vsts).
 
 ## <a name="deployment-for-other-app-types"></a>Wdrożenia dla innych typów aplikacji
 
@@ -122,7 +122,7 @@ W środowisku zespołowym można użyć programu Visual Studio Team Services (VS
 | --- | --- | --- |
 | **Aplikacja pakietu Office** | Możesz opublikować dodatek dla pakietu Office w programie Visual Studio. | [Wdrażanie i publikowanie dodatku pakietu Office](https://dev.office.com/docs/add-ins/publish/publish) |
 | **Usługa WCF lub OData**  | Inne aplikacje mogą używać usług WCF RIA, które są wdrażane na serwerze sieci web. | [Tworzenie i wdrażanie usług danych WCF](/dotnet/framework/data/wcf/developing-and-deploying-wcf-data-services) |
-| **LightSwitch** | LightSwitch nie jest już obsługiwana w programie Visual Studio 2017, ale nadal można wdrożyć z programu Visual Studio 2015 i starszych wersji. | [Wdrażanie aplikacji LightSwitch](http://msdn.microsoft.com/Library/4818d933-295c-4ecc-9148-7ad9ca28dcdb) | 
+| **LightSwitch** | LightSwitch nie jest już obsługiwana w programie Visual Studio 2017, ale nadal można wdrożyć z programu Visual Studio 2015 i starszych wersji. | [Wdrażanie aplikacji LightSwitch](https://msdn.microsoft.com/Library/4818d933-295c-4ecc-9148-7ad9ca28dcdb) |
 
 ## <a name="next-steps"></a>Następne kroki
 

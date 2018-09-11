@@ -31,22 +31,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 58acebc2607ba05f121a7673f726d8f4bbcb38bd
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 138567792ed57aff0c1471b7f9004999c357764b
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057216"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281109"
 ---
 # <a name="finding-memory-leaks-using-the-crt-library"></a>Wyszukiwanie przecieków pamięci za pomocą biblioteki CRT
-Przecieki pamięci, zdefiniowane jako błąd, aby poprawnie zwolnić pamięć, która była przydzielona wcześniej, są najbardziej delikatny i twardych do wykrycia błędów w aplikacji C/C++. Przeciek pamięci może pozostać niezauważone w pierwszej, ale wraz z upływem czasu, przeciek pamięci progresywnego może spowodować objawy zakresu spadek wydajności do awarii po uruchomieniu aplikacji za mało pamięci. Gorsze ulatniający aplikacji, która używa wszystkich dostępną pamięć, może spowodować inna aplikacja awarię, tworzenie pomyłek, które odpowiada aplikacji. Przecieki pamięci nieszkodliwe może być nawet pozornie objawowych innych problemów, które powinno zostać naprawione.  
+Przecieki pamięci, zdefiniowane jako niepowodzenie poprawnie npamięci, które zostały uprzednio alokowane, znajdują się wśród najbardziej subtelnych i twardych wykrywania usterek w aplikacjach języka C/C++. Niewielki przeciek pamięci mogą nie być niezauważone po raz pierwszy, ale wraz z upływem czasu, progresywnego przeciek pamięci może powodować objawy tego zakresu z których wydajność pogorszyła się uległa awarii, gdy aplikacja zostanie uruchomiona za mało pamięci. Co gorsza przeciek aplikacji, która zużywa się całą dostępną pamięć może spowodować awarię, innej aplikacji zamieszania, które aplikacja jest odpowiedzialna. W końcu nawet pozornie nieszkodliwe przecieki pamięci mogą być objawem innych problemów, które powinny zostać poprawione.  
   
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Debugera i bibliotek C Run-Time (CRT) zapewniają sposób wykrywania i identyfikacji przecieki pamięci.  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Debuger i biblioteki wykonawczej C (CRT) zapewniają środki do wykrywania i identyfikacji przecieków pamięci.  
   
 ## <a name="enabling-memory-leak-detection"></a>Włączanie wykrywania przecieków pamięci  
- Funkcje sterty debugowania jest podstawowe narzędzia do wykrywania pamięci to przecieki debugera i biblioteki wykonawcze języka C (CRT).  
+ Podstawowe narzędzia do wykrywania wycieków pamięci to debuger i biblioteki wykonawczej C (CRT) funkcje stosu debugowania.  
   
- Aby włączyć funkcje sterty debugowania, Dołącz poniższe instrukcje w programie:  
+ Aby włączyć funkcje stosu debugowania, Dołącz poniższe instrukcje w programach:  
   
 ```cpp
 #define _CRTDBG_MAP_ALLOC  
@@ -54,34 +54,34 @@ Przecieki pamięci, zdefiniowane jako błąd, aby poprawnie zwolnić pamięć, k
 #include <crtdbg.h>  
 ```  
   
- Dla funkcji CRT działał prawidłowo `#include` instrukcji należy wykonać w kolejności przedstawionej w tym miejscu.  
+ Aby funkcje CRT działały prawidłowo `#include` instrukcji należy wykonać pokazaną tu kolejność.  
   
- Tym mapy crtdbg.h `malloc` i [wolnego](/cpp/c-runtime-library/reference/free) funkcji w celu ich wersje debugowania [_malloc_dbg —](/cpp/c-runtime-library/reference/malloc-dbg) i `free`, który śledzi przydzielanie pamięci i cofania alokacji. To mapowanie występuje tylko w przypadku kompilacji do debugowania, które mają `_DEBUG`. Kompilacjami wydania Użyj niestandardowych `malloc` i `free` funkcji.  
+ Łącznie z mapy crtdbg.h `malloc` i [bezpłatne](/cpp/c-runtime-library/reference/free) funkcje do ich wersji debugowej [_malloc_dbg](/cpp/c-runtime-library/reference/malloc-dbg) i `free`, którye śledzą alokację i dezalokację pamięci. To mapowanie występuje tylko w debugowanych kompilacjach, które mają `_DEBUG`. Kompilacje wydania używają zwykłej `malloc` i `free` funkcji.  
   
- `#define` Instrukcji mapuje wersja podstawowa funkcji CRT sterty z odpowiedniej wersji do debugowania. W przypadku pominięcia `#define` instrukcji zrzutu przeciek pamięci będzie mniej szczegółowe.  
+ `#define` Instrukcji mapuje wersję podstawową stosu CRT na odpowiednią wersję debugowania. Jeżeli pominięto `#define` instrukcji, zrzut przecieku pamięci będzie mniej dokładny.  
   
- Po włączeniu funkcji sterty debugowania przy użyciu tych instrukcji, możesz nawiązać połączenie z `_CrtDumpMemoryLeaks` przed punkt wyjścia aplikacji, aby wyświetlić raport przeciek pamięci, gdy aplikacja jest kończona:  
+ Po włączeniu funkcji debugowania stert za pomocą tych instrukcji, można umieścić wywołanie `_CrtDumpMemoryLeaks` przed punktem wyjścia aplikacji, aby wyświetlić raport przeciek pamięci, gdy aplikacja zakończy działanie:  
   
 ```cpp
 _CrtDumpMemoryLeaks();  
 ```  
   
- Jeśli aplikacja zawiera wielu wyjść, nie trzeba ręcznie nawiązać połączenie z [_crtdumpmemoryleaks —](/cpp/c-runtime-library/reference/crtdumpmemoryleaks) w każdym punkcie wyjścia. Wywołanie `_CrtSetDbgFlag` na początku aplikacji spowoduje automatyczne wywołanie `_CrtDumpMemoryLeaks` w każdej zamknąć punktu. Należy ustawić pól bitowych dwóch pokazano poniżej:  
+ Jeśli aplikacja ma wiele wyjść, nie trzeba ręcznie umieszczać wywołania do [_CrtDumpMemoryLeaks](/cpp/c-runtime-library/reference/crtdumpmemoryleaks) w każdym punkcie wyjścia. Wywołanie `_CrtSetDbgFlag` na początku aplikacji spowoduje automatyczne wywołanie `_CrtDumpMemoryLeaks` na każdym punkcie wyjścia. Należy ustawić dwa pola bitowe pokazane tutaj:  
   
 ```cpp
 _CrtSetDbgFlag ( _CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF );  
 ```  
   
- Domyślnie `_CrtDumpMemoryLeaks` generuje raport przeciek pamięci, aby **debugowania** okienku **dane wyjściowe** okna. Można użyć `_CrtSetReportMode` przekierować raport do innej lokalizacji.  
+ Domyślnie `_CrtDumpMemoryLeaks` wyświetla raport przecieku pamięci, aby **debugowania** okienku **dane wyjściowe** okna. Możesz użyć `_CrtSetReportMode` Aby przekierować raport do innej lokalizacji.  
   
- Jeśli używasz biblioteki biblioteki może zresetować dane wyjściowe do innej lokalizacji. W takim przypadku można ustawić lokalizacja danych wyjściowych do **dane wyjściowe** okna, jak pokazano poniżej:  
+ Jeśli używasz biblioteki, biblioteka może zresetować dane wyjściowe do innej lokalizacji. W takiej sytuacji można ustawić położenie wyjściowe powrót do **dane wyjściowe** okna, jak pokazano poniżej:  
   
 ```cpp
 _CrtSetReportMode( _CRT_ERROR, _CRTDBG_MODE_DEBUG );  
 ```  
   
-## <a name="interpreting-the-memory-leak-report"></a>Interpretowanie raportu przeciek pamięci  
- Jeśli aplikacja nie ma zdefiniowanej `_CRTDBG_MAP_ALLOC`, [_crtdumpmemoryleaks —](/cpp/c-runtime-library/reference/crtdumpmemoryleaks) wyświetla raport przeciek pamięci, że wygląda podobnie do następującej:  
+## <a name="interpreting-the-memory-leak-report"></a>Interpretowanie raport przecieku pamięci  
+ Jeśli aplikacja nie definiuje `_CRTDBG_MAP_ALLOC`, [_CrtDumpMemoryLeaks](/cpp/c-runtime-library/reference/crtdumpmemoryleaks) wyświetla raport przecieku pamięci, który wygląda podobnie do tego:  
   
 ```cmd
 Detected memory leaks!  
@@ -91,7 +91,7 @@ Dumping objects ->
 Object dump complete.  
 ```  
   
- Jeśli aplikacja definiuje `_CRTDBG_MAP_ALLOC`, raport przeciek pamięci wygląda następująco:  
+ Jeśli aplikacja definiuje `_CRTDBG_MAP_ALLOC`, raport przecieku pamięci wygląda następująco:  
   
 ```cmd
 Detected memory leaks!  
@@ -102,25 +102,25 @@ normal block at 0x00780E80, 64 bytes long.
 Object dump complete.  
 ```  
   
- Różnica polega na tym, że drugi raport zawiera nazwę pliku i numer wiersza, w którym najpierw jest przydzielana pamięć ujawnione.  
+ Różnica polega na tym, że drugi raport zawiera nazwę pliku i numer wiersza, gdzie najpierw zaalokowano przecieku pamięci.  
   
- Określa, czy należy zdefiniować `_CRTDBG_MAP_ALLOC` lub nie, spowoduje raportu przeciek pamięci wyświetlić następujące informacje:  
+ Czy można zdefiniować `_CRTDBG_MAP_ALLOC` lub nie będą raport przecieku pamięci wyświetlić następujące informacje:  
   
 -   Numer alokacji pamięci, która jest `18` w tym przykładzie  
   
--   [Zablokować typu](http://msdn.microsoft.com/en-us/e2f42faf-0687-49e7-aa1f-916038354f97), który jest `normal` w tym przykładzie.  
+-   [Typ bloku](https://msdn.microsoft.com/library/e2f42faf-0687-49e7-aa1f-916038354f97), czyli `normal` w tym przykładzie.  
   
--   Lokalizacji pamięci szesnastkowa, która jest `0x00780E80` w tym przykładzie.  
+-   Lokalizacja pamięci szesnastkowej, czyli `0x00780E80` w tym przykładzie.  
   
 -   Rozmiar bloku, `64 bytes` w tym przykładzie.  
   
--   Pierwszych 16 bajtów danych w bloku, w postaci szesnastkowej.  
+-   Pierwsze 16 bajtów danych w bloku, w postaci szesnastkowej.  
   
- Raport przeciek pamięci identyfikuje bloku pamięci jako normalny, klienta lub CRT. A *normalne bloku* zwykłej pamięci przydzielonej przez program. A *bloku klienta* jest specjalnym rodzajem blok pamięci używane przez programy MFC dla obiektów, które wymagają destruktora. MFC `new` operator tworzy normalne bloku lub blok klienta na potrzeby tworzony obiekt. A *bloku CRT* został przydzielony Biblioteka CRT dla tego urządzenia. Biblioteka CRT obsługuje dezalokacji dla tych bloków. W związku z tym jest mało prawdopodobne, zobaczysz je w raporcie przeciek pamięci niewłaściwa chyba, że dany element jest znacznie, na przykład biblioteki CRT jest uszkodzony.  
+ Raport przecieku pamięci określa blok pamięci jako normalny, klienta lub CRT. A *Blok normalny* to zwykła pamięć przydzielana przez Twój program. A *blok klienta* to specjalny rodzaj bloku pamięci używany przez programy MFC dla obiektów, które wymagają destruktora. MFC `new` operator tworzy Blok normalny lub blok klienta, odpowiednio do tworzonego obiektu. A *blok CRT* jest przydzielany przez bibliotekę CRT na własny użytek. Biblioteka CRT obsługuje dezalokację dla tych bloków. Dlatego jest mało prawdopodobne, zobaczysz je w raporcie o przeciekach pamięci, chyba że występuje jakiś poważny problem, na przykład biblioteka CRT jest uszkodzona.  
   
- Istnieją dwa typy bloków pamięci, które nigdy nie są wyświetlane w raportach przeciek pamięci. A *bloku wolnego* pamięci, który został zwolniony. Oznacza to, że jej jest nie przedostają, zgodnie z definicją. *Ignoruj bloku* jest pamięć, która jawnie oznaczone jako Aby wykluczyć go z raportu przeciek pamięci.  
+ Istnieją dwa typy bloków pamięci, które nigdy nie są wyświetlane w raportach o przeciekach pamięci. A *wolny blok* pamięci, która została zwolniona. Oznacza to, że nie jest to przeciek, zgodnie z definicją. *Ignoruj blok* jest pamięcią, która jawnie oznaczone jako celu wykluczenia go ze raport przecieku pamięci.  
   
- Te techniki pracy pamięci przydzielony przy użyciu standardowych CRT `malloc` funkcji. Jeśli program przydziela pamięć przy użyciu języka C++ `new` operatora, jednak może widoczne są tylko liczby plików i wierszy gdzie implementacji globalnych `operator new` wywołania `_malloc_dbg` w raporcie przeciek pamięci. Ponieważ tego zachowania nie jest bardzo przydatny, można zmienić go do raportu na wiersz zawierający wprowadzone Alokacja za pomocą makra, który wygląda następująco: 
+ Techniki te działają w przypadku pamięci przydzielonej przy użyciu standardowych CRT `malloc` funkcji. Jeśli Twój program przydziela pamięć przy użyciu języka C++ `new` operatora, jednak użytkownik może być widoczna tylko plik i numer wiersza gdzie wdrożenia globalnego `operator new` wywołania `_malloc_dbg` w raporcie o przecieku pamięci. To zachowanie nie jest bardzo przydatny, można zmienić go zgłosić wiersz, który wprowadzone alokacji za pomocą makra, który wygląda w następujący sposób: 
  
 ```C++  
 #ifdef _DEBUG
@@ -132,7 +132,7 @@ Object dump complete.
 #endif
 ```  
   
-Teraz można zastąpić `new` operator przy użyciu `DBG_NEW` makra w kodzie. W kompilacjach do debugowania to używane jest przeciążenie globalnych `operator new` pobierającej dodatkowe parametry typ bloku, plików i numer wiersza. To przeciążenie metody `new` wywołania `_malloc_dbg` zarejestrować dodatkowych informacji. Jeśli używasz `DBG_NEW`, przeciek pamięci raporty Pokaż nazwę i numer wiersza, gdzie przydzielone obiekty ujawnione. W kompilacjach detalicznej używa domyślnie `new`. (Nie zaleca się utworzenie makra preprocesora o nazwie `new`, ani żadnych innych słów kluczowych języka.) Oto przykład techniki:  
+Teraz możesz zastąpić `new` operator przy użyciu `DBG_NEW` makra w kodzie. W kompilacjach do debugowania, to używane jest przeciążenie globalnego `operator new` , wymaga dodatkowych parametrów, aby uzyskać typ bloku, pliku i numer wiersza. To przeciążenie `new` wywołania `_malloc_dbg` do rejestrowania dodatkowych informacji. Kiedy używasz `DBG_NEW`, przeciek pamięci, raporty, Pokaż nazwę pliku i numer wiersza, gdzie zostały przydzielone obiekty ujawnione. W kompilacjach do sprzedaży detalicznej używa domyślnie `new`. (Nie zaleca się tworzenie makro preprocesora, o nazwie `new`, i wszelkich innych słów kluczowych języka.) Oto przykład techniki:  
   
 ```C++  
 // debug_new.cpp
@@ -162,7 +162,7 @@ void main() {
 }
 ```  
   
-Po uruchomieniu tego kodu w debugerze programu Visual Studio, wywołanie `_CrtDumpMemoryLeaks` generuje raport w **dane wyjściowe** okna, która wygląda podobnie do poniższego:  
+Po uruchomieniu tego kodu w debugerze programu Visual Studio, wywołanie `_CrtDumpMemoryLeaks` generuje raport w **dane wyjściowe** okno, które wygląda podobnie do następującej:  
   
 ```Output  
 Detected memory leaks!
@@ -173,34 +173,34 @@ c:\users\username\documents\projects\debug_new\debug_new.cpp(20) : {75}
 Object dump complete.
 ```  
   
-Oznacza to, że ujawnione przydział został w wierszu 20 debug_new.cpp.  
+Oznacza to, że ujawnione przydział był przeznaczony w wierszu 20 debug_new.cpp.  
   
-## <a name="setting-breakpoints-on-a-memory-allocation-number"></a>Ustawianie punktów przerwania na numer alokacji pamięci  
- Liczba alokacji pamięci informuje, kiedy został przydzielony blok pamięci ujawnione. Blok o liczbie alokacji pamięci 18, na przykład jest 18 blok pamięci przydzielony przy uruchomieniu aplikacji. Raport CRT zlicza wszystkie alokacje blok pamięci podczas uruchamiania. W tym przydziały biblioteki CRT i innych bibliotek, takich jak MFC. W związku z tym blok o liczbie alokacji pamięci 18 nie może być 18 blok pamięci przydzielony w kodzie. Zazwyczaj nie będzie.  
+## <a name="setting-breakpoints-on-a-memory-allocation-number"></a>Ustawianie punktów przerwania dla numeru alokacji pamięci  
+ Numer alokacji pamięci informuje, kiedy przydzielono blok pamięci z przeciekiem. Blok z liczbą alokacji pamięci 18, jest na przykład 18 blokiem pamięci przydzielonej podczas uruchomienia aplikacji. Raport CRT zlicza wszystkie alokacje bloków pamięci podczas uruchamiania. Obejmuje to alokacje przez bibliotekę CRT i inne biblioteki, takie jak MFC. Dlatego blok o numerze alokacji pamięci 18 może nie być 18 blok pamięci alokowanym przez kod. Zazwyczaj nie będzie.  
   
- Liczba alokacji umożliwia Ustaw punkt przerwania w alokacji pamięci.  
+ Liczba alokacji umożliwia ustawianie punktu przerwania alokacji pamięci.  
   
-#### <a name="to-set-a-memory-allocation-breakpoint-using-the-watch-window"></a>Aby ustawić punkt przerwania alokacji pamięci przy użyciu okna czujki  
+#### <a name="to-set-a-memory-allocation-breakpoint-using-the-watch-window"></a>Aby ustawić punkt przerwania alokacji pamięci za pomocą okna czujki  
   
-1.  Ustaw punkt przerwania w pobliżu uruchomienia aplikacji, a następnie uruchom aplikację.  
+1.  Ustaw punkt przerwania w pobliżu początku aplikacji, a następnie uruchom aplikację.  
   
-2.  Gdy aplikacja dzieli się na punkt przerwania, **czujki** okna.  
+2.  Gdy aplikacja przerywa w punkcie przerwania, **Obejrzyj** okna.  
   
-3.  W **czujki** wpisz `_crtBreakAlloc` w **nazwa** kolumny.  
+3.  W **Obejrzyj** okna, typ `_crtBreakAlloc` w **nazwa** kolumny.  
   
-     Jeśli używane są wielowątkowe wersja DLL biblioteki CRT (opcja / / MD), należy uwzględnić w operatorze kontekstu: `{,,ucrtbased.dll}_crtBreakAlloc`  
+     Jeśli używasz wielowątkowej wersji DLL biblioteki CRT (opcja/MD), Dodaj operator kontekstu: `{,,ucrtbased.dll}_crtBreakAlloc`  
   
-4.  Naciśnij klawisz **ZWRACAĆ**.  
+4.  Naciśnij klawisz **zwracają**.  
   
-     Debuger daje w wyniku wywołania i umieszcza wynik w **wartość** kolumny. Ta wartość będzie -1, jeśli nie zdefiniowano żadnych punktów przerwania w alokacji pamięci.  
+     Debuger ocenia wywołanie i umieszcza wynik w **wartość** kolumny. Ta wartość będzie mieć wartość -1, jeśli nie ustawiono żadnych punktów przerwania w alokacjach pamięci.  
   
-5.  W **wartość** kolumny, zastąp wartość pokazana z liczbą alokacji alokacji pamięci, której chcesz przerwać.  
+5.  W **wartość** kolumny, Zamień wartość widoczną z liczbą alokacji alokacji pamięci, w którym chcesz przerwać.  
   
- Po skonfigurowaniu punktu przerwania na liczbę alokacji pamięci można debugować. Należy zachować ostrożność uruchomić program na warunkach jako poprzedniego uruchomienia, aby nie zmieniać kolejności alokacji pamięci. Jeśli program dzieli w alokacji pamięci określona, możesz użyć **stos wywołań** oknami debugera określenie warunków, w których została przydzielona pamięć. Następnie można kontynuować wykonywania, aby sprawdzić, co się dzieje z obiektem i ustalić, dlaczego on jest nie poprawnie cofnąć alokacji.  
+ Po ustawieniu punktu przerwania na liczbę alokacji pamięci można kontynuować debugowanie. Uważaj uruchomić program w tych samych warunkach jako poprzedniego uruchomienia, tak, aby nie zmienia kolejność alokacji pamięci. Kiedy program przerywa w określonej alokacji pamięci, możesz użyć **stos wywołań** okna i innych oknach debugera, aby określić warunki, w jakich pamięć została alokowana. Następnie można kontynuować wykonywanie, aby obserwować, co się dzieje z obiektem i ustalić, dlaczego go jest nie jest poprawnie dezalokowany.  
   
- Ustawianie punktu przerwania danych dla obiekt może być również przydatne. Aby uzyskać więcej informacji, zobacz [przy użyciu punktów przerwania](../debugger/using-breakpoints.md).  
+ Ustawianie punktu przerwania danych obiektu może być również przydatne. Aby uzyskać więcej informacji, zobacz [przy użyciu punktów przerwania](../debugger/using-breakpoints.md).  
   
- Można również ustawić alokacji pamięci punktów przerwania w kodzie. Istnieją dwa sposoby wykonania tej czynności:  
+ Można również ustawić punkty przerwania alokacji pamięci, w kodzie. Istnieją dwa sposoby wykonania tej czynności:  
   
 ```cpp
 _crtBreakAlloc = 18;  
@@ -212,8 +212,8 @@ _crtBreakAlloc = 18;
 _CrtSetBreakAlloc(18);  
 ```  
   
-## <a name="comparing-memory-states"></a>Porównywanie stanów pamięci  
- Innej techniki do lokalizowania przecieki pamięci obejmuje tworzenie migawek stan pamięci aplikacji w punktach klucza. Aby utworzyć migawkę stanu pamięci w danym punkcie w aplikacji, Utwórz **_crtmemstate —** struktury i przekaż go do `_CrtMemCheckpoint` funkcji. Ta funkcja wprowadza w strukturze migawki bieżący stan pamięci:  
+## <a name="comparing-memory-states"></a>Porówywanie stanów pamięci  
+ Inna technika lokalizowania przecieków pamięci zakłada robienie migawek stanu pamięci aplikacji w najważniejszych punktach. Aby zrobić migawkę stanu pamięci w danym punkcie w aplikacji, należy utworzyć **_CrtMemState** struktury i przekazać ją do `_CrtMemCheckpoint` funkcji. Ta funkcja wypełnia strukturę migawką bieżącego stanu pamięci:  
   
 ```cpp
 _CrtMemState s1;  
@@ -221,16 +221,16 @@ _CrtMemCheckpoint( &s1 );
   
 ```  
   
- `_CrtMemCheckpoint` wypełnia struktury migawki bieżący stan pamięci.  
+ `_CrtMemCheckpoint` wypełnia strukturę migawką bieżącego stanu pamięci.  
   
- Do wyjściowego zawartość **_crtmemstate —** struktury należy przekazać do struktury `_ CrtMemDumpStatistics` funkcji:  
+ Aby wyprowadzić zawartość **_CrtMemState** struktury, należy przekazać strukturę do `_ CrtMemDumpStatistics` funkcji:  
   
 ```cpp
 _CrtMemDumpStatistics( &s1 );  
   
 ```  
   
- `_ CrtMemDumpStatistics` generuje zrzutu pamięci stan, który wygląda następująco:  
+ `_ CrtMemDumpStatistics` Wyświetla zrzut stanu pamięci, który wygląda w następujący sposób:  
   
 ```cmd
 0 bytes in 0 Free Blocks.  
@@ -243,7 +243,7 @@ Total allocations: 3764 bytes.
   
 ```  
   
- Aby ustalić, czy w sekcji kodu wystąpił wyciek pamięci, można wykonać migawki stanu pamięci przed i po sekcji i następnie użyć `_ CrtMemDifference` Aby porównać dwa stany:  
+ Aby ustalić, czy wystąpił przeciek pamięci, w sekcji kodu, należy można wykonać migawki stanu pamięci przed i po sekcji, a następnie użyć `_ CrtMemDifference` do porównywania dwóch stanów:  
   
 ```cpp
 _CrtMemCheckpoint( &s1 );  
@@ -254,12 +254,12 @@ if ( _CrtMemDifference( &s3, &s1, &s2) )
    _CrtMemDumpStatistics( &s3 );  
 ```  
   
- `_CrtMemDifference` porównuje stanów pamięci `s1` i `s2` i zwraca wynik (`s3`) czyli różnica `s1` i `s2`.  
+ `_CrtMemDifference` porównuje stany pamięci `s1` i `s2` i zwraca wynik w (`s3`) czyli różnicę `s1` i `s2`.  
   
- Wyszukiwanie przecieków pamięci jeden technika rozpoczyna się przez umieszczenie `_CrtMemCheckpoint` wywołania na początku i na końcu aplikację, następnie za pomocą `_CrtMemDifference` porównanie wyników. Jeśli `_CrtMemDifference` pokazuje przeciek pamięci, możesz dodać więcej `_CrtMemCheckpoint` wywołania do dzielenia programie za pomocą wyszukiwanie binarne, dopóki nie mają odizolowane źródło systemu.  
+ Jedna z technik do znajdowania przecieki pamięci rozpoczyna się od wprowadzania `_CrtMemCheckpoint` wywołania na początku i na końcu aplikacji, a następnie użyć `_CrtMemDifference` porównanie wyników. Jeśli `_CrtMemDifference` pokazuje przeciek pamięci, można dodać więcej `_CrtMemCheckpoint` wywołań, aby dzielić program za pomocą wyszukiwania binarnego do momentu wykrycia źródła przecieku.  
   
-## <a name="false-positives"></a>Fałszywych alarmów  
- W niektórych przypadkach `_CrtDumpMemoryLeaks` można podać fałszywych informacji przecieków pamięci. Taka sytuacja może wystąpić, jeśli korzystasz z biblioteki, która oznacza wewnętrzny alokacji jako _NORMAL_BLOCKs zamiast `_CRT_BLOCK`s lub `_CLIENT_BLOCK`s. W takim przypadku `_CrtDumpMemoryLeaks` nie może odróżnić alokacji użytkownika i Wewnętrzna biblioteka alokacji. Jeśli globalne destruktory dla alokacji biblioteki Uruchom od momentu, gdy wywołanie `_CrtDumpMemoryLeaks`, każdej operacji przydzielenia pamięci wewnętrznej biblioteki został zgłoszony jako przeciek pamięci. Starsze wersje standardowa biblioteka szablonów, starszych niż program Visual Studio .NET, spowodowane `_CrtDumpMemoryLeaks` zgłoszenia takie false alarmów, ale został rozwiązany w najnowszych wersjach.  
+## <a name="false-positives"></a>Wyniki fałszywie dodatnie  
+ W niektórych przypadkach `_CrtDumpMemoryLeaks` może dać fałszywe wskazania przecieków pamięci. Taka sytuacja może wystąpić, jeśli używasz biblioteki, która oznacza wewnętrzne alokacje jako bloki _normal_block zamiast `_CRT_BLOCK`s lub `_CLIENT_BLOCK`s. W takim przypadku `_CrtDumpMemoryLeaks` jest w stanie odróżnić alokacje użytkownika i alokacje biblioteki wewnętrznej. Jeśli globalne destruktory dla alokacji biblioteki działają po punkcie, w gdzie jest wywoływana `_CrtDumpMemoryLeaks`, każda wewnętrzna alokacja biblioteki jest raportowana jako przeciek pamięci. Starsze wersje biblioteki STL, starszych niż program Visual Studio .NET, spowodowały `_CrtDumpMemoryLeaks` do zgłaszania takich fałszywych alarmów, ale został rozwiązany w ostatnich wersjach.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Szczegóły dotyczące sterty debugowania CRT](../debugger/crt-debug-heap-details.md)   

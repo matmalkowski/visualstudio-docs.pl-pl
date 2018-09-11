@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d81aa731a12dedc1237d8af661c718930318f8cd
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 62033dc78e5595cefdf4f3ae39a95e68c64b9ee4
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39231503"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283226"
 ---
 # <a name="choose-between-shared-and-versioned-vspackages"></a>Wybieranie między udostępnionymi i wersjonowanymi pakietami VSPackage
 Różne wersje programu Visual Studio mogą współistnieć na tym samym komputerze. Pakietów VSPackage może obsługiwać dowolnej kombinacji [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] wersji.  
@@ -38,7 +38,7 @@ Różne wersje programu Visual Studio mogą współistnieć na tym samym kompute
   
     -   Usługi pakietu VSPackage, aby dostosować je do wersji programu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , w którym jest uruchomiona. Następnie, jeśli zapytania dla nowszej usługi nie powiedzie się, Twoje pakietu VSPackage zaoferować innych usług, które są obsługiwane w starszych wersjach programu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
--   Zarejestruj swoje pakietu VSPackage odpowiednio. Aby uzyskać więcej informacji, zobacz [Rejestracja pakietu VSPackage](../extensibility/internals/vspackage-registration.md) i [rejestracji zarządzanego pakietu VSPackage](http://msdn.microsoft.com/en-us/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1).  
+-   Zarejestruj swoje pakietu VSPackage odpowiednio. Aby uzyskać więcej informacji, zobacz [Rejestracja pakietu VSPackage](../extensibility/internals/vspackage-registration.md) i [rejestracji zarządzanego pakietu VSPackage](https://msdn.microsoft.com/library/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1).  
   
 -   Rejestrowanie rozszerzeń plików odpowiednio. Aby uzyskać więcej informacji, zobacz [rejestrowanie rozszerzeń nazw plików dla wdrożeń side-by-side](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md).  
   

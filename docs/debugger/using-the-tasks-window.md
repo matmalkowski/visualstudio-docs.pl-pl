@@ -19,22 +19,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f86812bc1258c0381adc716a883a8cbc98b48eec
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 6d22202e50c973c52bf2b47374b9eda583fb3fe8
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512294"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280886"
 ---
 # <a name="using-the-tasks-window"></a>Korzystanie z okna zadań
 
-**Zadania** przypomina okna **wątków** okna, z wyjątkiem, że przedstawia informacje na temat <xref:System.Threading.Tasks.Task?displayProperty=fullName>, [task_handle](/cpp/parallel/concrt/reference/task-group-class), lub [WinJS.Promise ](http://msdn.microsoft.com/library/windows/apps/br211867.aspx) obiekty zamiast każdego wątku. Takie jak wątki zadania reprezentują operacje asynchroniczne, które można uruchomić jednocześnie; Jednak wiele zadań może działać na tym samym wątku.
+**Zadania** przypomina okna **wątków** okna, z wyjątkiem, że przedstawia informacje na temat <xref:System.Threading.Tasks.Task?displayProperty=fullName>, [task_handle](/cpp/parallel/concrt/reference/task-group-class), lub [WinJS.Promise ](/previous-versions/windows/apps/br211867(v=win.10)) obiekty zamiast każdego wątku. Takie jak wątki zadania reprezentują operacje asynchroniczne, które można uruchomić jednocześnie; Jednak wiele zadań może działać na tym samym wątku.
 
 W kodzie zarządzanym można używać **zadania** okna podczas pracy z <xref:System.Threading.Tasks.Task?displayProperty=fullName> obiektów lub za pomocą **await** i **async** słowa kluczowe (**Await** i **Async** w języka Visual Basic). Aby uzyskać więcej informacji o zadaniach w kodzie zarządzanym, zobacz [programowania równoległego](/dotnet/standard/parallel-programming/index).
 
 W kodzie natywnym można użyć **zadania** okna podczas pracy z [grupy zadań](/cpp/parallel/concrt/task-parallelism-concurrency-runtime), [równoległe algorytmy](/cpp/parallel/concrt/parallel-algorithms), [agentów asynchronicznych](/cpp/parallel/concrt/asynchronous-agents), i [zadań lekkich](/cpp/parallel/concrt/task-scheduler-concurrency-runtime). Aby uzyskać więcej informacji o zadaniach w kodzie natywnym, zobacz [współbieżność środowiska wykonawczego](/cpp/parallel/concrt/concurrency-runtime).
 
-W języku JavaScript, można użyć okna zadań podczas pracy z promise `.then` kodu. Zobacz [asynchronicznego programowania w języku JavaScript (platformy uwp)](http://msdn.microsoft.com/library/windows/apps/hh700330.aspx) Aby uzyskać więcej informacji.
+W języku JavaScript, można użyć okna zadań podczas pracy z promise `.then` kodu. Zobacz [asynchronicznego programowania w języku JavaScript (platformy uwp)](/previous-versions/windows/apps/hh700330(v=win.10)) Aby uzyskać więcej informacji.
 
 Możesz użyć **zadania** okna zawsze wtedy, gdy wkroczenia do debugera. Dostęp na **debugowania** menu, klikając **Windows** , a następnie klikając polecenie **zadania**. Poniższa ilustracja przedstawia **zadania** okna trybu domyślnego.
 
@@ -97,8 +97,8 @@ Kolumny w **zadania** okna są wyświetlane następujące dane.
 ## <a name="see-also"></a>Zobacz także
 
 - [Podstawowe informacje o debugerze](../debugger/getting-started-with-the-debugger.md)
-- [Debugowanie zarządzanego kodu](../debugger/debugging-managed-code.md)
+- [Debugowanie kodu zarządzanego](../debugger/debugging-managed-code.md)
 - [Programowanie równoległe](/dotnet/standard/parallel-programming/index)
 - [Środowisko uruchomieniowe współbieżności](/cpp/parallel/concrt/concurrency-runtime)
 - [Korzystanie z okna stosów równoległych](../debugger/using-the-parallel-stacks-window.md)
-- [Wskazówki: Debugowanie aplikacji równoległych](../debugger/walkthrough-debugging-a-parallel-application.md)
+- [Przewodnik: debugowanie aplikacji równoległych](../debugger/walkthrough-debugging-a-parallel-application.md)

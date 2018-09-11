@@ -1,5 +1,5 @@
 ---
-title: 'Porady: debugowanie pliku wykonywalnego, który nie jest częścią rozwiązania Visual Studio | Dokumentacja firmy Microsoft'
+title: 'Porady: debugowanie pliku wykonywalnego, który nie jest częścią rozwiązania programu Visual Studio | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -20,53 +20,53 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e16a938eda683a607dbf7d9418b2a7bd4455a0da
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: ce84c4acdc2cf4324c76dbbf7fe0b39ca9715b3c
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31476250"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279105"
 ---
 # <a name="how-to-debug-an-executable-that-is-not-part-of-a-visual-studio-solution"></a>Porady: debugowanie pliku wykonywalnego, który nie jest częścią rozwiązania programu Visual Studio
-Czasami może chcesz debugować plik wykonywalny (.exe plik), który nie jest częścią [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projektu. Może być utworzony poza plik wykonywalny [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] lub pliku wykonywalnego otrzymany od kogoś innego.  
+Czasami możesz chcieć debugować plik wykonywalny (plik .exe), który nie jest częścią [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projektu. Może być wykonywalny, który został utworzony poza [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] lub wykonywalny, który otrzymałeś od kogoś innego.  
   
-Zwykle odpowiedzią na ten problem ma uruchomić plik wykonywalny poza Visual Studio i Dołącz do niej przy użyciu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] debugera. Aby uzyskać więcej informacji, zobacz [dołączyć do uruchamiania procesów](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
+Zwykle rozwiązaniem tego problemu jest uruchomienie pliku wykonywalnego poza programem Visual Studio i dołączenie do niego przy użyciu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] debugera. Aby uzyskać więcej informacji, zobacz [dołączenia do uruchamiania procesów](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
   
-Dołączanie do aplikacji wymaga niektórych ręczne wykonanie czynności, dlatego zajmuje kilka sekund. To niewielkie opóźnienie oznacza, że dołączanie nie pomoże, jeśli chcesz debugować problem występujący podczas uruchamiania. Ponadto jeśli debugowany program, który nie oczekuje danych wejściowych użytkownika i kończy się szybko, nie masz czasu można dołączyć do niego. Jeśli masz [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] i [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] zainstalowana, można utworzyć projektu EXE dla takiego programu.
+Dołączanie do aplikacji wymaga dodatkowych ręcznych czynności, więc zajmuje kilka sekund. To niewielkie opóźnienie oznacza, że dołączanie nie pomoże, jeśli chcesz debugować problem, który występuje podczas uruchamiania. Ponadto Jeśli debugujesz program, który nie czeka na dane wejściowe użytkownika i szybko się kończy, możesz nie mieć czasu, aby dołączyć do niego. Jeśli masz [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] i [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] zainstalowane, można utworzyć projekt EXE dla takiego programu.
 
 > [!NOTE]
->  Nie wszystkie języki programowania obsługuje projekty EXE.
+>  Nie wszystkie języki programowania wspierają projekty EXE.
 
-Podczas debugowania pliku wykonywalnego, który nie jest częścią rozwiązania Visual Studio, dostępne funkcje debugowania można ograniczyć, czy dołączyć do uruchomienia pliku wykonywalnego lub Dodaj plik wykonywalny do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozwiązania.
+Podczas debugowania pliku wykonywalnego, który nie jest częścią rozwiązania programu Visual Studio, dostępne funkcje debugowania może być ograniczona, czy dołączyć do uruchomionego pliku wykonywalnego lub dodać plik wykonywalny do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozwiązania.
 
-- Jeśli masz kod źródłowy, najlepiej zaimportować kodu źródłowego w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] i Utwórz kompilację debugowania pliku wykonywalnego w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
-- Jeśli nie masz kod źródłowy i plik wykonywalny został skompilowany bez [informacje o debugowaniu](../debugger/how-to-set-debug-and-release-configurations.md) w formacie zgodnym z, dostępne funkcje debugowania są bardzo ograniczone. 
+- Jeśli masz kod źródłowy, najlepszym rozwiązaniem jest zaimportowanie kodu źródłowego do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] i utworzenie kompilacja do debugowania pliku wykonywalnego w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+- Jeśli nie masz kod źródłowy i plik wykonywalny został skompilowany bez [informacje o debugowaniu](../debugger/how-to-set-debug-and-release-configurations.md) w zgodnym formacie, dostępne funkcje debugowania są bardzo ograniczona. 
   
-### <a name="to-create-an-exe-project-for-an-existing-executable"></a>Aby utworzyć plik EXE projektu dla istniejącego pliku wykonywalnego  
+### <a name="to-create-an-exe-project-for-an-existing-executable"></a>Aby utworzyć projekt EXE dla istniejącego pliku wykonywalnego  
   
 1.  Na **pliku** menu, kliknij przycisk **Otwórz** i wybierz **projektu**.  
   
-2.  W **Otwórz projekt** okno dialogowe, kliknij przycisk Dalej, aby wyświetlić listę listy rozwijanej **nazwę pliku** i wybierz **wszystkie pliki projektu**.  
+2.  W **Otwórz projekt** okno dialogowe, kliknij listę rozwijaną listę obok **nazwy pliku** i zaznacz **wszystkie pliki projektu**.  
   
-3.  Zlokalizuj plik wykonywalny, a następnie kliknij przycisk **OK**.  
+3.  Znajdź plik wykonywalny, a następnie kliknij przycisk **OK**.  
 
-    Spowoduje to utworzenie tymczasowego rozwiązania, które zawiera pliku wykonywalnego.
+    Tworzy to rozwiązanie tymczasowe, które zawiera plik wykonywalny.
 
-5.  Uruchom plik wykonywalny, wybierając polecenie wykonywania, takie jak **Start**, z **debugowania** menu.    
+5.  Uruchom plik wykonywalny, wybierając polecenie wykonania, takie jak **Start**, z **debugowania** menu.    
   
-### <a name="to-import-an-executable-into-a-visual-studio-solution"></a>Aby zaimportować plik wykonywalny do rozwiązania Visual Studio  
+### <a name="to-import-an-executable-into-a-visual-studio-solution"></a>Aby zaimportować plik wykonywalny do rozwiązania programu Visual Studio  
   
-1.  Na **pliku** menu wskaż **Dodawanie projektu**, a następnie kliknij przycisk **istniejący projekt**.  
+1.  Na **pliku** menu wskaż **Dodaj projekt**, a następnie kliknij przycisk **istniejący projekt**.  
   
-2.  W **Dodaj istniejący projekt** okno dialogowe, kliknij przycisk Dalej, aby wyświetlić listę listy rozwijanej **nazwę pliku** i wybierz **wszystkie pliki projektu**.  
+2.  W **Dodaj istniejący projekt** okno dialogowe, kliknij listę rozwijaną listę obok **nazwy pliku** i zaznacz **wszystkie pliki projektu**.  
   
 3.  Znajdź i zaznacz plik wykonywalny.  
   
 4.  Kliknij przycisk **OK**.  
   
-5.  Uruchom plik wykonywalny, wybierając polecenie wykonywania, takie jak **Start**, z **debugowania** menu.    
+5.  Uruchom plik wykonywalny, wybierając polecenie wykonania, takie jak **Start**, z **debugowania** menu.    
   
 ## <a name="see-also"></a>Zobacz też  
- [Ustawienia debugowania i przygotowanie](../debugger/debugger-settings-and-preparation.md)   
+ [Ustawienia debugera i przygotowanie](../debugger/debugger-settings-and-preparation.md)   
  [Zabezpieczenia debugera](../debugger/debugger-security.md)   
- [DBG, pliki](http://msdn.microsoft.com/en-us/91e449e9-8b65-4123-960f-2107cd1f1cfd)
+ [DBG, pliki](/previous-versions/visualstudio/visual-studio-2010/da528y14(v=vs.100))

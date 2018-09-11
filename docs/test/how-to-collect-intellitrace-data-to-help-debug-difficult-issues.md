@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 42bc0ed6cea6025ad59c13566504daed7222ac2b
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 30a6cb4f2d39e16a9ff5334bc0676707e4c65dce
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39203855"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44321154"
 ---
 # <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>Porady: zbieranie danych IntelliTrace aby pomóc w debugowaniu trudnych problemów
 
@@ -110,7 +110,7 @@ Przed wykonaniem kroków w tej procedurze należy otworzyć Ustawienia testu z p
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Zbieranie danych diagnostycznych podczas testowania (VSTS)](/vsts/manual-test/collect-diagnostic-data)
-- [Zbieranie danych diagnostycznych podczas wykonywania testów ręcznych (VSTS)](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)
+- [Zbieranie danych diagnostycznych podczas testowania (planów testowych platformy Azure)](/azure/devops/test/collect-diagnostic-data?view=vsts)
+- [Zbieranie danych diagnostycznych podczas wykonywania testów ręcznych (planów testowych platformy Azure)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)
 - [Zbieranie informacji diagnostycznych za pomocą ustawień testów](../test/collect-diagnostic-information-using-test-settings.md)
 - [Zbieranie danych funkcji IntelliTrace](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md)

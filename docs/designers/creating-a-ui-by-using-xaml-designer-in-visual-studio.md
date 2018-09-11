@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 3daf20ee3fcb2472e88d2387abf870862b0d5c47
-ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
+ms.openlocfilehash: f18814d14c28d1f0263950579767490cd7deca38
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37889970"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283694"
 ---
 # <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>Tworzenie interfejsu użytkownika przy użyciu projektanta XAML w programie Visual Studio
 Projektant XAML w programie Visual Studio udostępnia interfejs graficzny, aby ułatwić projektowanie oparte na XAML Windows i aplikacje sieci Web. Można utworzyć interfejsów użytkownika dla aplikacji poprzez przeciąganie kontrolek z **przybornika** i ustawianie właściwości w **właściwości** okna. Można również edytować XAML bezpośrednio w widoku XAML.
@@ -41,7 +41,7 @@ Projektant XAML w programie Visual Studio udostępnia interfejs graficzny, aby u
 
  **Linii przyciągania** linii przyciągania są *granice wyrównanie* , są wyświetlane jako linia przerywana red wierszy do wyświetlenia po wyrównania krawędzi kontrolki lub kiedy są wyrównane linii bazowych tekstu. Wyrównanie granice są wyświetlane tylko wtedy, gdy **przyciąganie do linii wyrównania** jest włączona.
 
- **Siatka rails** `Grid` rails są używane do zarządzania, wierszy i kolumn w [siatki](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx) panelu. Można tworzyć i usuwać wiersze i kolumny, a można dostosować ich względne szerokości i wysokości. Szyny siatki pionowej, która pojawia się po lewej stronie obszaru roboczego, jest używany dla wierszy i linii poziomej, która pojawia się u góry, jest używany dla kolumn.
+ **Siatka rails** `Grid` rails są używane do zarządzania, wierszy i kolumn w [siatki](/uwp/api/Windows.UI.Xaml.Controls.Grid) panelu. Można tworzyć i usuwać wiersze i kolumny, a można dostosować ich względne szerokości i wysokości. Szyny siatki pionowej, która pojawia się po lewej stronie obszaru roboczego, jest używany dla wierszy i linii poziomej, która pojawia się u góry, jest używany dla kolumn.
 
  **Moduły definiowania układu siatki** moduł definiowania układu siatki jest wyświetlany jako trójkąt z linią pionową lub poziomą podłączone do niego na szynie siatki. Podczas przeciągania moduł definiowania układu siatki szerokości lub wysokości przyległe kolumny lub wiersze aktualizacji podczas przesuwania myszy.
 
@@ -49,7 +49,7 @@ Projektant XAML w programie Visual Studio udostępnia interfejs graficzny, aby u
 
  **Uchwyty zmiany rozmiaru** uchwytami zmiany rozmiaru pojawiają się w zaznaczonych kontrolek oraz pozwalające użytkownikowi na zmienianie rozmiaru formantów. Podczas zmiany rozmiaru kontrolki wartości szerokości i wysokości wyświetlane są zwykle ułatwiające rozmiar kontrolki. Aby uzyskać więcej informacji na temat manipulowanie kontrolami w **projektowania** wyświetlić, zobacz [Praca z elementami w Projektancie XAML](../designers/working-with-elements-in-xaml-designer.md).
 
- **Marginesy** marginesy reprezentują ilość stały odstęp między krawędzią formantu a krawędzią jej kontenera. Można ustawić marginesy kontrolki przy użyciu [margines](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.frameworkelement.margin.aspx) właściwości pod **układ** w oknie dialogowym właściwości.
+ **Marginesy** marginesy reprezentują ilość stały odstęp między krawędzią formantu a krawędzią jej kontenera. Można ustawić marginesy kontrolki przy użyciu [margines](/uwp/api/windows.ui.xaml.frameworkelement.margin) właściwości pod **układ** w oknie dialogowym właściwości.
 
  **Moduły definiowania układu marginesu** moduły definiowania układu marginesu można użyć, aby zmienić margines elementu względem jego kontener układu. Gdy marginesu jest otwarty, margines nie jest ustawiona, a moduł definiowania układu marginesu zawiera przerwany łańcuch. Gdy margines nie jest ustawiona, elementy pozostają przy zmianie rozmiaru kontener układu w czasie wykonywania. Po zamknięciu marginesu marginesu Wyświetla nieprzerwany łańcuch, a elementy przeniesione z marginesem jako kontener układu zmiany rozmiaru w czasie wykonywania (margines pozostaje stały).
 

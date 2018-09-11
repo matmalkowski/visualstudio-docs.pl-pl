@@ -9,12 +9,12 @@ description: Więcej informacji na temat korzyści LinkedIn Learning dołączone
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: bb3611b485bd36b1268f12ca06b29d8962eab8ae
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: a1007f8cafe162f6afa09690bfa500f359793962
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42623970"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44278812"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>LinkedIn Learning korzyści w ramach subskrypcji programu Visual Studio
 
@@ -101,7 +101,7 @@ Aby aktywować subskrypcję LinkedIn Premium i LinkedIn Learning korzyści:
 | Visual Studio Dev Essentials | NAZWA  | 3 miesiące |Nie.  Dostępne tylko dla nowych subskrybentów |
 | Program Visual Studio Enterprise, Visual Studio Professional (miesięcznych w chmurze) | Azure                                       | Niedostępne                                                           |NAZWA|
 
-<sup>1</sup>*obejmuje: nie for Resale (NFR) programu Visual Studio Industry Partner (VSIP).    Nie obejmuje: Sieci Microsoft Partner Network (MPN), ekwiwalentu pełnego wymiaru czasu, MCT Software & deweloperów usług, BizSpark, Imagine, partnerem firmy Microsoft cenionym (MVP), dyrektor Region (usług pulpitu zdalnego).  MCT Software & Services.*
+<sup>1</sup>*obejmuje: nie for Resale (NFR) programu Visual Studio Industry Partner (VSIP).  Nie obejmuje: Sieci Microsoft Partner Network (MPN), ekwiwalentu pełnego wymiaru czasu, MCT Software & deweloperów usług, BizSpark, Imagine, partnerem firmy Microsoft cenionym (MVP), dyrektor Region (usług pulpitu zdalnego).  MCT Software & Services.*
 
 
 
@@ -116,4 +116,4 @@ Odp.: nie oferta LinkedIn Learning jest dostępna tylko dla nowych subskrybentó
     - Pomoc dotycząca [za pomocą usługi LinkedIn Learning](https://www.linkedin.com/help/learning).
     - Pomoc w przypadku ogólnych pytań na temat [LinkedIn](https://www.linkedin.com/help/linkedin) takich jak tworzenie kont i profilów oraz utrzymanie sieci.
 -  Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z pomocą programu Visual Studio [pomoc techniczna dla subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/).
--  Masz pytanie dotyczące środowiska IDE programu Visual Studio, Visual Studio Team Services lub innych produktów Visual Studio lub usług?  Odwiedź stronę [pomoc techniczna dla programu Visual Studio](https://visualstudio.microsoft.com/support/).
+-  Masz pytanie dotyczące programu Visual Studio IDE, usługom DevOps platformy Azure lub innych produktów Visual Studio lub usług?  Odwiedź stronę [pomoc techniczna dla programu Visual Studio](https://visualstudio.microsoft.com/support/).

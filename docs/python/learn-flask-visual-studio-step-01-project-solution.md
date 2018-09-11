@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ae096096c77ee1584d1799c85bda3e0b7b6e5d13
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: e010dd429c0ef182d9e6dc5ed205e04624c1f367
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775933"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283421"
 ---
 # <a name="tutorial-get-started-with-the-flask-web-framework-in-visual-studio"></a>Samouczek: Rozpoczynanie pracy z usługą Flask struktury sieci web w programie Visual Studio
 
@@ -95,7 +95,7 @@ Ponieważ wybrano **Utwórz nowe repozytorium Git** w **nowy projekt** okno dial
 
     ![Okno Eksploratora zespołu do wypychania do istniejącego repozytorium zdalnego](media/flask/step01-push-to-github.png)
 
-    Jeśli masz istniejące repozytorium, **publikowanie w usłudze GitHub** i **Wypychanie do usługi Visual Studio Team Services** opcje pozwalają utworzyć bezpośrednio z poziomu programu Visual Studio.
+    Jeśli masz istniejące repozytorium, **publikowanie w usłudze GitHub** i **Wypychanie do usługi Azure DevOps** opcje pozwalają utworzyć bezpośrednio z poziomu programu Visual Studio.
 
 1. Podczas pracy z tym samouczkiem Uzyskaj w celu przejrzenia okresowo za pomocą formantów w programie Visual Studio można zatwierdzać i wypychać zmiany. W tym samouczku przypomina o tym, w odpowiednich miejscach.
 

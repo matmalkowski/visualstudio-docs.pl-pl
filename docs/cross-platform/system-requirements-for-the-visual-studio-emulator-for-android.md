@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c4cedcdc55d5c0103c7005289191928fa14ac7a3
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 8cd9884c950d7cf6adefe997cf13fdd78fa7203d
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251552"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279404"
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>Wymagania systemowe dotyczące emulatora programu Visual Studio dla systemu Android
 Visual Studio Emulator for Android działa jako maszyna wirtualna funkcji Hyper-v, technologia wirtualizacji systemu Windows 8 i nowszych. Aby uruchomić emulator, komputer musi spełniać wymagania do uruchomienia funkcji Hyper-V, zgodnie z opisem w tym temacie.  
@@ -117,7 +117,7 @@ Visual Studio Emulator for Android działa jako maszyna wirtualna funkcji Hyper-
   
 |Wymaganie|Jak sprawdzić i włączyć to wymaganie|  
 |-----------------|----------------------------------------------|  
-|Musi być zainstalowana funkcja Hyper-V|Postępuj zgodnie z instrukcjami w tym samym umożliwia [Włączanie funkcji Hyper-V na emulator Windows Phone](https://msdn.microsoft.com/en-us/library/windows/apps/jj863509\(v=vs.105\).aspx).<br /><br /> Sprawdź stan **zarządzania maszynami wirtualnymi funkcji Hyper-V** usługi w przystawce usługi.|  
+|Musi być zainstalowana funkcja Hyper-V|Postępuj zgodnie z instrukcjami w tym samym umożliwia [Włączanie funkcji Hyper-V na emulator Windows Phone](https://docs.microsoft.com/previous-versions/windows/apps/jj863509(v=vs.105)).<br /><br /> Sprawdź stan **zarządzania maszynami wirtualnymi funkcji Hyper-V** usługi w przystawce usługi.|  
 |Musi być uruchomiona funkcja Hyper-V.|Aby uzyskać więcej informacji na temat zarządzania usługami zobacz następujące tematy:<br /><br /> -   [Uruchom, Zatrzymaj, Wstrzymaj, Wznów lub ponownego uruchomienia usługi](https://technet.microsoft.com/library/cc736564\(v=WS.10\).aspx)<br />-   [Konfigurowanie sposobu uruchamiania usługi](https://technet.microsoft.com/%20library/cc739213\(v=ws.10\))|  
   
  Musisz być członkiem lokalnej grupy Administratorzy funkcji Hyper-V.  

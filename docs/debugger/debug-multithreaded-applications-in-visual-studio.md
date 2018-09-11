@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 46f165896947f541a7f7be2c48658b83dfd3d102
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 80618257e61356285d9b8c9c2bcf2a7a2e11e831
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677519"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279549"
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>Debuguj aplikacje wielowątkowe w programie Visual Studio
 Wątek jest sekwencją instrukcji, do których system operacyjny przydziela czas procesora. Każdy proces, który jest uruchomiony w systemie operacyjnym, składa się z co najmniej jeden wątek. Procesy, które mają więcej niż jeden wątek nazywane są wielowątkowymi.  
@@ -95,7 +95,7 @@ Debugowanie aplikacji wielowątkowej, która ma interfejs użytkownika może by�
  [Wątkowość](/dotnet/standard/threading/index)  
  Pojęcia wielowątkowości w [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] programowania, w tym przykładzie kodu.  
   
- [Wielowątkowość w składnikach](http://msdn.microsoft.com/Library/2fc31e68-fb71-4544-b654-0ce720478779)  
+ [Wielowątkowość w składnikach](https://msdn.microsoft.com/Library/2fc31e68-fb71-4544-b654-0ce720478779)  
  Jak używać wielowątkowości w [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] składników.  
   
  [Obsługa wielowątkowości w przypadku starszego kodu (Visual C++)](/cpp/parallel/multithreading-support-for-older-code-visual-cpp)  

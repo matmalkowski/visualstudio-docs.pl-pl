@@ -13,17 +13,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 49f2559ecd2937ed1d54940416d5653b9dd59dbb
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 98aece47b3936108b171ad7e2e1100e98d601312
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924010"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282797"
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>Jak utworzyć i stosowanie zasobów
-Style i szablony dla elementów w Projektancie XAML są przechowywane w jednostkach wielokrotnego użytku, o nazwie zasoby. Style umożliwiają ustawianie właściwości elementu i ponownie użyć tych ustawień, aby uzyskać spójny wygląd między wieloma elementami. A [ControlTemplate](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.controltemplate.aspx) definiuje wygląd formantu i mogą być również stosowane jako zasób. Aby uzyskać więcej informacji, zobacz [Szybki Start: style formantów](http://go.microsoft.com/fwlink/?LinkID=248239) i [Szybki Start: kontrolowanie szablony](http://go.microsoft.com/fwlink/?LinkID=247982).
+Style i szablony dla elementów w Projektancie XAML są przechowywane w jednostkach wielokrotnego użytku, o nazwie zasoby. Style umożliwiają ustawianie właściwości elementu i ponownie użyć tych ustawień, aby uzyskać spójny wygląd między wieloma elementami. A [ControlTemplate](/uwp/api/Windows.UI.Xaml.Controls.ControlTemplate) definiuje wygląd formantu i mogą być również stosowane jako zasób. Aby uzyskać więcej informacji, zobacz [Szybki Start: style formantów](http://go.microsoft.com/fwlink/?LinkID=248239) i [Szybki Start: kontrolowanie szablony](http://go.microsoft.com/fwlink/?LinkID=247982).
 
- Zawsze, gdy tworzysz nowy zasób z istniejącej właściwości [styl](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.style.aspx), lub `ControlTemplate`, **Utwórz zasób** okno dialogowe pozwala na zdefiniowanie zasobu na poziomie aplikacji w poziomie dokumentu lub na poziomie elementu. Te poziomy określają, w którym może korzystać z zasobów. Na przykład jeśli zdefiniujesz zasób na poziomie elementu, zasób może być stosowane tylko do elementu, na którym został utworzony. Istnieje również możliwość przechowywania zasobu w słowniku zasobów, oddzielnym pliku, który można użyć ponownie w innym projekcie.
+ Zawsze, gdy tworzysz nowy zasób z istniejącej właściwości [styl](/uwp/api/Windows.UI.Xaml.Style), lub `ControlTemplate`, **Utwórz zasób** okno dialogowe pozwala na zdefiniowanie zasobu na poziomie aplikacji w poziomie dokumentu lub na poziomie elementu. Te poziomy określają, w którym może korzystać z zasobów. Na przykład jeśli zdefiniujesz zasób na poziomie elementu, zasób może być stosowane tylko do elementu, na którym został utworzony. Istnieje również możliwość przechowywania zasobu w słowniku zasobów, oddzielnym pliku, który można użyć ponownie w innym projekcie.
 
 ### <a name="to-create-a-new-resource"></a>Aby utworzyć nowy zasób
 

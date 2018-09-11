@@ -9,12 +9,12 @@ description: Więcej informacji na temat korzyści programu Visual Studio App Ce
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: ec1938dca476dcc04c892d183cedbf7f057aef40
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 266ce307b8ee06eed427385d67c48d4258ae2a1c
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42623912"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283174"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Visual Studio App Center w subskrypcji programu Visual Studio
 
@@ -50,7 +50,7 @@ Wprowadzenie do programu Visual Studio App Center jest proste.
 | Visual Studio Dev Essentials | NAZWA  | Uwzględnione                                                            |Tak |
 
 
-<sup>1</sup>*obejmuje: nie, for Resale (NFR) ekwiwalentu pełnego wymiaru czasu, Visual Studio Industry Partner (VSIP), Imagine sieci Microsoft Partner Network (MPN), MCT Software & Services, MCT Software & deweloperów usług, BizSpark, Microsoft zwracającej partnera (MVP ), Dyrektor region (usług pulpitu zdalnego).* 
+<sup>1</sup>*obejmuje: nie, for Resale (NFR) ekwiwalentu pełnego wymiaru czasu, Visual Studio Industry Partner (VSIP), Imagine sieci Microsoft Partner Network (MPN), MCT Software & Services, MCT Software & deweloperów usług, BizSpark, Microsoft zwracającej partnera (MVP ), Dyrektor region (usług pulpitu zdalnego).*
 
 Nie masz pewności której subskrypcji używasz?  Połączyć się z [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) Aby wyświetlić wszystkie subskrypcje, które są przypisane do Twojego adresu e-mail. Jeśli nie widzisz wszystkie swoje subskrypcje, mogą mieć co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby wyświetlić te subskrypcje.
 
@@ -69,4 +69,4 @@ Teraz można uzyskać dostęp do portalu usługi App Center i utworzyć konto.
     - Uzyskaj porady i odpowiedzi od zespołu roboczego aplikacji w [Centrum pomocy Centrum aplikacji](https://intercom.help/appcenter/).
     - Zapoznaj się z pełną [dokumentacji platformy App Center](/appcenter/)
 -  Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z pomocą programu Visual Studio [pomoc techniczna dla subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/).
--  Masz pytanie dotyczące środowiska IDE programu Visual Studio, Visual Studio Team Services lub innych produktów Visual Studio lub usług?  Odwiedź stronę [pomoc techniczna dla programu Visual Studio](https://visualstudio.microsoft.com/support/).
+-  Masz pytanie dotyczące programu Visual Studio IDE, usługom DevOps platformy Azure lub innych produktów Visual Studio lub usług?  Odwiedź stronę [pomoc techniczna dla programu Visual Studio](https://visualstudio.microsoft.com/support/).
