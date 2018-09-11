@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 27a4204394003f0b4ea6baf7691c9591d3a5b613
-ms.sourcegitcommit: d7209d61e812b34d06c2aa267bdf50fbc714d0e0
+ms.openlocfilehash: ca90a78643b8abc1f73ca61da3d1627261fff59c
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/20/2018
-ms.locfileid: "42624196"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44321167"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Scenariusz: Zmiana projektu z wykorzystaniem wizualizacji i modelowania
 
@@ -216,9 +216,9 @@ Jako postępem prac zespoły aktualizują elementy robocze, aby odzwierciedlić 
 
 Zobacz:
 
-- [Śledzenie pracy za pomocą programu Visual Studio Team Services lub serwera Team Foundation Server](http://msdn.microsoft.com/Library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)
+- [Narzędzia Agile i Zwinne Zarządzanie projektami — informacje](/azure/devops/boards/backlogs/overview?view=vsts)
 
-- [Wykresy, pulpitów nawigacyjnych i widżetów (VSTS)](/vsts/report/dashboards/overview?view=vsts)
+- [Wykresy, pulpitów nawigacyjnych i widżetów (usługom DevOps platformy Azure)](/azure/devops/report/dashboards/overview?view=vsts)
 
 - [Tworzenie zaległości i zadań za pomocą programu Project](http://msdn.microsoft.com/Library/be5cef4f-755f-4ffe-8dd7-876d1e02c330)
 
@@ -238,13 +238,13 @@ Aby upewnić się, że kod odpowiada wymaganiom projektu, zespoły konfigurują 
 
 Zobacz:
 
-- [Testowanie aplikacji](/vsts/test/overview?view=vsts)
+- [Testowanie aplikacji](/azure/devops/test/overview?view=vsts)
 
 - [Weryfikacja systemu w czasie opracowywania](../modeling/validate-your-system-during-development.md)
 
 - [Korzystanie z kontroli wersji](http://go.microsoft.com/fwlink/?LinkID=525605)
 
-- [Kompilowanie i wydawanie](/vsts/build-release/index)
+- [Potoki usługi Azure](/azure/devops/pipelines/index?view=vsts)
 
 ## <a name="update-the-system-using-visualization-and-modeling"></a>Aktualizowanie systemu przy użyciu wizualizacji i modelowania
 

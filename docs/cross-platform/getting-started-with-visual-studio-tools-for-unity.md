@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: ac45a535a3c9f3a8ec8a45e00d46a028db51b014
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: dbe546f43b0a66abc78b94480894b63dc4f5eafa
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775313"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283115"
 ---
 # <a name="get-started-with-visual-studio-tools-for-unity"></a>Rozpoczynanie pracy z usługą Visual Studio Tools for Unity
 
@@ -85,7 +85,7 @@ Począwszy od Unity 2018.1, Visual Studio powinien być domyślnego edytora skry
 
 - For Visual Studio 2015 Community, Visual Studio 2015 Professional, or Visual Studio 2015 Enterprise:
 
-   [Pobierz program Visual Studio 2015 Tools for Unity](https://visualstudiogallery.msdn.microsoft.com/8d26236e-4a64-4d64-8486-7df95156aba9)
+   [Pobierz program Visual Studio 2015 Tools for Unity](https://marketplace.visualstudio.com/items?itemName=SebastienLebreton.VisualStudio2015ToolsforUnity)
 
 > [!NOTE]
 > Visual Studio Tools for Unity wymaga Unity 5.2 i powyżej, a także wersji programu Visual Studio, która obsługuje rozszerzeń, takich jak program Visual Studio Community, Professional, Premium lub Enterprise. Aby sprawdzić, czy program Visual Studio Tools for Unity są włączone w instalacji programu Unity, wybierz **o Unity** z **pomocy** menu i zwróć uwagę na tekst "Microsoft Visual Studio Tools for Unity włączona" w lewym dolnym rogu okna dialogowego.
