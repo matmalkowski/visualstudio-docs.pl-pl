@@ -9,12 +9,12 @@ ms.author: ghogen
 manager: douge
 ms.workload:
 - azure
-ms.openlocfilehash: f842d1f9c103e9673d3295b2b285498d6ff58045
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: 778ad9112d4133871bd15292847d21af73c3ad86
+ms.sourcegitcommit: 12e2f963dac76d53f87569c01198f6d0396d64cf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43138946"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44701712"
 ---
 # <a name="get-started-with-visual-studio-kubernetes-tools"></a>Rozpoczynanie pracy z usługą Visual Studio Tools rozwiązania Kubernetes
 
@@ -38,7 +38,7 @@ Aby korzystać z tej nowej funkcji, należy:
 
     1.  Polecenie Helm interfejsu wiersza polecenia, zainstalowane na deweloperskiej stacji roboczej. Aby uzyskać więcej informacji, zobacz [instalowanie narzędzia Helm](https://github.com/kubernetes/helm/blob/master/docs/install.md).
 
-    1.  Polecenie Helm skonfigurowane dla klastra usługi AKS. Aby uzyskać więcej informacji na temat jak to zrobić, zobacz [sposobu konfigurowania Helm](/azure/aks/kubernetes-helm#configure-helm).
+    1.  Skonfigurowane dla klastra usługi AKS przy użyciu narzędzia Helm `helm init` polecenia. Aby uzyskać więcej informacji na temat jak to zrobić, zobacz [sposobu konfigurowania Helm](/azure/aks/kubernetes-helm#configure-helm).
 
 ## <a name="create-a-new-kubernetes-project"></a>Utwórz nowy projekt rozwiązania Kubernetes
 
@@ -82,7 +82,7 @@ Wszystkie te pliki w miejscu można użyć środowiska IDE programu Visual Studi
 
 Po utworzeniu działanie kodu tak jak chcesz, możesz opublikować bezpośrednio z programu Visual Studio klastra usługi AKS.
 
-Aby to zrobić, należy najpierw skonfigurować profil publikowania, który publikuje obraz kontenera do usługi Azure Container Registry (ACR). Następnie AKS można ściągnąć obraz kontenera z rejestru Azure container Registry i wdrożenia go w klastrze.
+Aby to zrobić, należy najpierw upewnić się, że zainstalowano wszystkie elementy zgodnie z opisem w [wymagania wstępne](#prerequisities) w obszarze elementu do publikowania w usłudze AKS, a następnie uruchom wszystkie kroki z wiersza polecenia podanych w łączach. Następnie skonfiguruj profil publikowania, który publikuje obraz kontenera do usługi Azure Container Registry (ACR). Następnie AKS można ściągnąć obraz kontenera z rejestru Azure container Registry i wdrożenia go w klastrze.
 
 1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy użytkownika *projektu* i wybierz polecenie **Publikuj**.
 

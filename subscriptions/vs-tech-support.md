@@ -9,12 +9,12 @@ description: Dowiedz się, jak aktywować korzyść pomocy technicznej dołączo
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: df279c52c0e971acdac3e9f4ad22550cd05b0aa5
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 072a0c7dc7679f965c84de06c969034db02766a2
+ms.sourcegitcommit: 12e2f963dac76d53f87569c01198f6d0396d64cf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42624098"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44701770"
 ---
 # <a name="activate-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Aktywuj korzyść pomocy technicznej w ramach subskrypcji programu Visual Studio
 
@@ -32,12 +32,13 @@ Rozwiązywanie problemów wymagających usunięcia awarii w środowiskach niepro
 3.  Aby ukończyć proces, należy zapewnić przedstawiciel za pomocą:
     - Adres e-mail, którego używasz do logowania się do subskrypcji
     - Identyfikator subskrypcji, w której znajduje się na [subskrypcje](https://my.visualstudio.com/subscriptions) kartę.
+
     > [!div class="mx-imgBorder"]
     > ![Identyfikator subskrypcji znajduje się korzyści z pomocy technicznej](_img\vs-tech-support\vs-tech-support-subID-cropped.png)
 
 
-    > [!NOTE]
-    > Aby aktywować swoje konto pomocy technicznej w języku innym niż angielski, wybierz swój kraj, z [tej listy](https://support.microsoft.com/help/14084/activate-support-contract).   
+> [!NOTE]
+> Aby aktywować swoje konto pomocy technicznej w języku innym niż angielski, wybierz swój kraj, z [tej listy](https://support.microsoft.com/help/14084/activate-support-contract).   
 
 
 ## <a name="how-to-submit-an-incident"></a>Jak przesłać żądanie
