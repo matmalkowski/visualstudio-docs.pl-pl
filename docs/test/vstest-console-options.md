@@ -12,12 +12,12 @@ author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e78491f9e811a6ee9e6166734e11077fad272370
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 7f090607f1ebae6a03c7f12536e0dd5d46199f6e
+ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279690"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45612665"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>Opcje wiersza poleceń narzędzia VSTest.Console.exe
 
@@ -54,6 +54,10 @@ Poniższa tabela zawiera listę wszystkich opcji *VSTest.Console.exe* i krótkie
 |**/ ListSettingsProviders**|Wyświetla listę zainstalowanych dostawców ustawień testu.|
 |**/ Polecenia blame**|Śledzi testów, ponieważ są one wykonywane i, jeśli wystąpiła awaria procesu hosta testów, emituje nazwy testów, w kolejności ich wykonywania do i łącznie z określonego testu, która była uruchomiona w chwili pojawienia się awarii. Te dane wyjściowe ułatwia izolowania naruszającym testu i przeprowadzić dalszą diagnozę. [Więcej informacji na](https://github.com/Microsoft/vstest-docs/blob/master/docs/extensions/blame-datacollector.md).|
 |**/ Diag: [*nazwy pliku*]**|Zapisuje diagnostyczne dzienniki śledzenia w określonym pliku.|
+|**/ ResultsDirectory: [*ścieżki*]**|Katalog wyników testu zostaną utworzone w określonej ścieżce Jeśli nie istnieje.<br />Przykład: `/ResultsDirectory:<pathToResultsDirectory>`|
+|**/ ParentProcessId: [*parentProcessId*]**|Identyfikator procesu nadrzędnego odpowiedzialna za uruchamianie bieżącego procesu.|
+|**/ Port: [*portu*]**|Port do połączenia z gniazdem i odbierania komunikatów zdarzeń.|
+|**/ Zbieranie: [*dataCollector friendlyName*]**|Włącza moduł zbierający dane dla przebiegu testu. [Więcej informacji na](https://aka.ms/vstest-collect).|
 
 > [!TIP]
 > Opcje i wartości nie jest rozróżniana wielkość liter.

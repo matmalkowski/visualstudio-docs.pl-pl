@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f39b2ce216ce909837f37fd09fb556a4733098ce
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3a2873f691fdaa1251a5562e21e2bbd0467eb2e2
+ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42627344"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45612756"
 ---
 # <a name="specify-whether-to-debug-only-user-code-using-just-my-code-in-visual-studio"></a>Określ, czy w celu debugowania tylko kodu użytkownika przy użyciu tylko mój kod w programie Visual Studio
 Można skonfigurować w programie Visual Studio automatycznie Przekrocz nad systemu, framework i innymi wywołaniami niespowodowanymi przez użytkownika i zwinąć te wywołania w oknie stosu wywołań. Funkcja, która włącza lub wyłącza to zachowanie jest nazywane *tylko mój kod*. W tym temacie opisano sposób używania tylko mój kod w projektach w językach C#, Visual Basic, C++ i JavaScript.
@@ -37,6 +37,10 @@ Dla większości języków programowania tylko mój kod jest włączona domyśln
   
 > [!NOTE]
 >  **Pokaż kod zewnętrzny** ustawienia są zapisywane do profilera bieżącego użytkownika. Jest stosowana do wszystkich projektów we wszystkich językach, które są otwierane przez użytkownika.
+
+##  <a name="identify-user-code-while-debugging"></a>Identyfikator użytkownika kodu podczas debugowania 
+
+**Modułów** okna można stwierdzić, które moduły kodu debuger jest traktowanie jako kod użytkownika lub Mój kod, wraz z informacjami, takich jak symboli podczas ładowania stanu modułu. Aby uzyskać więcej informacji, zobacz [zapoznać się z jak dołącza debuger do swojej aplikacji](../debugger/debugger-tips-and-tricks.md#modules_window).
   
 ##  <a name="BKMK__NET_Framework_Just_My_Code"></a> .NET framework tylko mój kod  
   

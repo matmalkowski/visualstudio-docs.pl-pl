@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bb37faa194e3c370f92f9a82c7866373dd8f26d3
-ms.sourcegitcommit: a6734c4d76dae3d21b55b10f3bc618dfa6b62dea
+ms.openlocfilehash: 6c10032bf12060c8c5e42f93f6596fe576adfccf
+ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "42623900"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45612678"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>Jak debugować dla całkowicie początkujących
 
@@ -327,9 +327,9 @@ Po znalezieniu region kodu z tym problemem, należy użyć debugera, aby zbadać
 > [!TIP]
 > Możesz użyć debugera, aby pomóc w znalezieniu błędów. Narzędzie do debugowania można znaleźć błędy *dla Ciebie* tylko wtedy, gdy wie celem swój kod. To narzędzie można tylko zamiar kodu, jeśli informacje możesz developer, express, tym przeznaczeniem. Zapisywanie [testów jednostkowych](../test/improve-code-quality.md) się, jak to zrobić.
 
-## <a name="next-steps"></a>Następne kroki
+## <a name="next-steps"></a>Kolejne kroki
 
 W tym artykule wyjaśniono kilka ogólnych pojęć debugowania. Następnie można uruchomić, jak można debugować za pomocą programu Visual Studio.
 
 > [!div class="nextstepaction"]
-> [Przewodnik po funkcjach debugera](../debugger/debugger-feature-tour.md)
+> [Naucz się debugować przy użyciu programu Visual Studio](../debugger/getting-started-with-the-debugger.md)

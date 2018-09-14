@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8717c8f4c9d4bae12acf576620368b4aac64a185
-ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
+ms.openlocfilehash: f12e1e95daed3a4e9c6228808123f87174f2202a
+ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2018
-ms.locfileid: "44384230"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45612691"
 ---
 # <a name="tutorial-learn-to-debug-using-visual-studio"></a>Samouczek: Dowiedz się, jak debugowanie za pomocą programu Visual Studio
 
@@ -439,9 +439,9 @@ Funkcje, które pozwalają na sprawdzanie zmiennych są jednymi z najbardziej pr
 
     Gratulujemy wykonanie kroków tego samouczka!
 
-## <a name="next-steps"></a>Następne kroki
+## <a name="next-steps"></a>Kolejne kroki
 
 W tym samouczku wyjaśniono sposób uruchamiania debugera, Przechodź przez kod i Sprawdź zmienne. Możesz chcieć wysokiego poziomu poznać funkcje debugera, wraz z linkami do dodatkowych informacji.
 
 > [!div class="nextstepaction"]
-> [Przewodnik po funkcjach debugera](../debugger/debugger-feature-tour.md)
+> [Porady i wskazówki dotyczące debugera](../debugger/debugger-tips-and-tricks.md)

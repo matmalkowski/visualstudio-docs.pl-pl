@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 145640d63191b72d2bce880f9ecab637dcbf0246
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: b9167970030919073bf5a58ccf7368cff69dc896
+ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45552100"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45612743"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger"></a>Określanie plików symboli (pdb) i plików źródłowych w debugerze programu Visual Studio
 Plik programu bazy danych (PDB), nazywany także plikiem symboli, mapuje identyfikatory, które tworzysz w kodzie źródłowym dla klas, metod i innego kodu, identyfikatory, które są używane w skompilowanych plikach wykonywalnych projektu. Plik .pdb mapuje również instrukcje zawarte w kodzie źródłowym na instrukcje wykonania w plikach wykonywalnych. Debuger używa tych informacji do określenia dwóch kluczowych informacji:
@@ -45,7 +45,11 @@ Plik programu bazy danych (PDB), nazywany także plikiem symboli, mapuje identyf
 Plik symboli zawiera także oryginalną lokalizację plików źródłowych i opcjonalnie lokalizację serwera źródeł, z którego mogą być pobierane pliki źródłowe.
   
 > [!TIP]
-> Jeśli chcesz debugować kod poza kodem źródłowym projektu, takich jak Windows kod lub kod zewnętrznych aplikacji wywoływanych w projekcie, należy określić lokalizację .pdb (i opcjonalnie plików źródłowych kodu zewnętrznego), a te pliki muszą dokładnie odpowiadać kompilacji t on plików wykonywalnych.  
+> Jeśli chcesz debugować kod poza kodem źródłowym projektu, takich jak Windows kod lub kod zewnętrznych aplikacji wywoływanych w projekcie, należy określić lokalizację .pdb (i opcjonalnie plików źródłowych kodu zewnętrznego), a te pliki muszą dokładnie odpowiadać kompilacji t on plików wykonywalnych. 
+
+##  <a name="how-can-i-manage-symbol-files-while-debugging"></a>Jak zarządzać pliki symboli podczas debugowania 
+
+**Modułów** okna można stwierdzić, które moduły kodu debuger jest traktowanie jako kod użytkownika lub Mój kod i symboli podczas ładowania stanu modułu. To okno umożliwia również Załaduj symbole podczas debugowania. Aby uzyskać więcej informacji, zobacz [zapoznać się z jak dołącza debuger do swojej aplikacji](../debugger/debugger-tips-and-tricks.md#modules_window).
  
 ##  <a name="BKMK_Find_symbol___pdb__files"></a> Gdzie debugera wyszukiwania plików symboli 
   
