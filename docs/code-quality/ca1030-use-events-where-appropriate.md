@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9349321319b8bab81a2d9e7b52e7f2d25e87f796
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6d1b0bac434ad7a182dc56ac08173646068623bd
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31900066"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547553"
 ---
 # <a name="ca1030-use-events-where-appropriate"></a>CA1030: Używaj zdarzeń wszędzie, gdzie jest to odpowiednie
 |||
@@ -32,23 +32,23 @@ ms.locfileid: "31900066"
 |Zmiana kluczowa|Bez podziału|
 
 ## <a name="cause"></a>Przyczyna
- Nazwa metody publicznych, chronionych lub prywatnych rozpoczyna się od jednego z następujących:
+ Nazwy metody publiczne, protected lub private rozpoczyna się od jednego z następujących czynności:
 
--   Dodatek
+- Dodatek
 
--   RemoveOn
+- RemoveOn
 
--   Fire
+- Ogień
 
--   Zgłoś
+- Zgłoś
 
 ## <a name="rule-description"></a>Opis reguły
- Ta reguła wykrywa metody o nazwach, które normalnie mogą być używane dla zdarzeń. Wzorzec projektowy obserwatora lub publikowania / subskrypcji; wykonaj zdarzenia są one używane podczas zmiany stanu w jeden obiekt musi zostać przekazany inne obiekty. Jeśli metoda jest wywoływana w odpowiedzi na zmianę stanu jasno określone, metoda powinna być wywoływana przez program obsługi zdarzeń. Obiekty, które wywołują tę metodę, powinny wywoływać zdarzenia, a nie bezpośrednio metodę.
+ Ta reguła wykrywa metody o nazwach, które normalnie mogą być używane dla zdarzeń. Zdarzenia wykonaj wzorzec projektowy obserwatora lub publikowania i subskrybowania; są one używane podczas zmiany stanu, w jeden obiekt musi zostać przekazany innych obiektów. Jeśli metoda jest wywoływana w odpowiedzi na jasno określoną zmianę stanu, metoda powinna być wywoływany przez program obsługi zdarzeń. Obiekty, które wywołują tę metodę, powinny wywoływać zdarzenia, a nie bezpośrednio metodę.
 
- Typowe przykłady zdarzeń znajdują się w aplikacji interfejsu użytkownika, gdy akcja użytkownika, takie jak kliknięcie przycisku powoduje segment kodu do wykonania. [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] Model zdarzeń nie jest ograniczona do interfejsów użytkownika; należy używać, gdziekolwiek muszą komunikować się stan zmieni się na co najmniej jeden obiekt.
+ Typowe przykłady zdarzeń znajdują się w aplikacji interfejsu użytkownika, gdy akcja użytkownika, takie jak kliknięcie przycisku powoduje, że segment kodu do wykonania. [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] Modelu zdarzeń nie jest ograniczona do interfejsów użytkownika; powinno być używane wszędzie muszą komunikować się stan zmieni się na co najmniej jeden obiekt.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Jeśli metoda jest wywoływana po zmianie stanu obiektu, należy rozważyć zmianę projektu do użycia [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] modelu zdarzeń.
+ Jeśli metoda jest wywoływana, gdy zmieni się stan obiektu, należy rozważyć zmianę projektu do użycia [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] modelu zdarzeń.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Pomiń ostrzeżenie od tej reguły, jeśli metoda nie działa z [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] model zdarzeń.
+ Pomijaj ostrzeżeń dla tej reguły, jeśli metoda nie działa z [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] modelu zdarzeń.

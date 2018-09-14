@@ -16,36 +16,41 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 36ced0a2ef262a274931e3a17236da11e894f393
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 74746897f8ce27a79f666ae1d691b235035b4626
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31915897"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548600"
 ---
 # <a name="ca1707-identifiers-should-not-contain-underscores"></a>CA1707: Identyfikatory nie powinny zawierać podkreśleń
+
 |||
 |-|-|
 |TypeName|IdentifiersShouldNotContainUnderscores|
 |CheckId|CA1707|
 |Kategoria|Microsoft.Naming|
-|Zmiana kluczowa|Dzielenie — gdy zestawów<br /><br /> Dzielenie non - zgłoszony w parametrach typu|
+|Zmiana kluczowa|Istotne — gdy wywoływane zestawów<br /><br /> Dzielenie non - zgłoszony w parametrach typu|
 
 ## <a name="cause"></a>Przyczyna
- Nazwa identyfikatora zawiera znak podkreślenia (_).
+
+Nazwa identyfikatora zawiera znak podkreślenia (\_) znaków.
 
 ## <a name="rule-description"></a>Opis reguły
- Przez konwencję identyfikatory nazw nie zawierają znaku podkreślenia (_). Reguła sprawdza przestrzeni nazw, typy elementów członkowskich i parametry.
 
- Konwencje nazewnictwa Podaj wygląd wspólnej dla bibliotek przeznaczonych środowisko uruchomieniowe języka wspólnego. Zmniejsza to nauki jest wymagany dla nowej biblioteki oprogramowania, którą można tworzyć bardziej niezawodne klienta, czy biblioteka został opracowany przez osobę, która ma doświadczenia w rozwijającym się kodu zarządzanego.
+Według Konwencji nazwy identyfikatorów nie zawierają znaku podkreślenia (\_) znaków. Reguła sprawdza przestrzenie nazw, typów, elementów członkowskich i parametry.
+
+Konwencje nazewnictwa Obejmij wygląd wspólnych bibliotek obiektu docelowego środowiska uruchomieniowego języka wspólnego. Zmniejsza to nauki, jest wymagany dla nowe biblioteki oprogramowania, która zwiększa poziom zaufania klientów, że biblioteka został opracowany przez osobę, która ma doświadczenie w tworzenie kodu zarządzanego.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Usuń wszystkie znaki podkreślenia z nazwy.
+
+Usuń wszystkie znaki podkreślenia z nazwy.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Nie pomijaj ostrzeżeń dla tej reguły.
 
-## <a name="related-rules"></a>Powiązanych reguł
- [CA1709: Identyfikatory powinny mieć prawidłową wielkość liter](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+Nie pomijaj ostrzeżeń dla tej reguły.
 
- [CA1708: Identyfikatory powinny różnić się nie tylko wielkością liter](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+## <a name="related-rules"></a>Powiązane reguły
+
+- [CA1709: Identyfikatory powinny mieć prawidłową wielkość liter](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+- [CA1708: Identyfikatory powinny różnić się nie tylko wielkością liter](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)

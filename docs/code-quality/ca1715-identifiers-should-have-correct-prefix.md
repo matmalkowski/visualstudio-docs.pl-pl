@@ -14,14 +14,18 @@ ms.assetid: cf45f8df-6855-4cb6-a4e2-7cfed714cf2f
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CPP
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 883b5a5a00f5be3203b8113103193dd3e597ddfd
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0e3e040b659b4e4b1484f7557a3ccececffa20e2
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31916028"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549924"
 ---
 # <a name="ca1715-identifiers-should-have-correct-prefix"></a>CA1715: Identyfikatory powinny mieć poprawny prefiks
 |||
@@ -29,57 +33,57 @@ ms.locfileid: "31916028"
 |TypeName|IdentifiersShouldHaveCorrectPrefix|
 |CheckId|CA1715|
 |Kategoria|Microsoft.Naming|
-|Zmiana kluczowa|Przerywanie — po w interfejsach.<br /><br /> Bez podziału — gdy na parametry typu ogólnego.|
+|Zmiana kluczowa|Przerywanie — gdy wywoływane na interfejsach.<br /><br /> Bez podziału — gdy wywoływane w parametrach typu ogólnego.|
 
 ## <a name="cause"></a>Przyczyna
- Nazwa interfejsu widoczne na zewnątrz nie rozpoczyna się wielkimi literami "I".
+ Nazwa widocznego na zewnątrz interfejsu nie rozpoczyna się od wielkie litery "I".
 
  —lub—
 
- Nazwa parametru typu ogólnego, na zewnątrz typu lub metody nie rozpoczyna się wielką t ".
+ Nazwa parametru typu ogólnego na widocznych zewnętrznie typie lub metodzie nie rozpoczyna się od wielkiej litery t ".
 
 ## <a name="rule-description"></a>Opis reguły
- Konwencja nazwy niektórych elementów programowania rozpoczynają się od określonego prefiksu.
+ Według Konwencji nazwy niektórych elementów programowania zaczynać od określonego prefiksu.
 
- Nazwy interfejsów powinien się rozpoczynać wielkie litery, który następuje "I" innego wielką literę. Ta zasada zgłasza naruszeń dla nazwy interfejsu, takie jak "MyInterface" i "IsolatedInterface".
+ Nazwy interfejsów powinna rozpoczynać się wielką który "I" następuje innego wielką literą. Ta zasada zgłasza naruszenia nazwy interfejsu, takie jak "MyInterface" i "IsolatedInterface".
 
- Nazwy parametrów typu ogólnego powinien zaczynać się od wielkiej litery 'T' i opcjonalnie może następować innego wielką literę. Ta zasada zgłasza naruszeń dla nazwy parametru typu ogólnego, takie jak "V" i "Type".
+ Nazwy parametrów typu ogólnego powinien zaczynać się wielką t "i opcjonalnie może następować innego wielką literą. Ta zasada zgłasza naruszenia nazwy parametru typu ogólnego, takie jak "V" i "Type".
 
- Konwencje nazewnictwa Podaj wygląd wspólnej dla bibliotek przeznaczonych środowisko uruchomieniowe języka wspólnego. Zmniejsza to nauki jest wymagany dla nowej biblioteki oprogramowania, którą można tworzyć bardziej niezawodne klienta, czy biblioteka został opracowany przez osobę, która ma doświadczenia w rozwijającym się kodu zarządzanego.
+ Konwencje nazewnictwa Obejmij wygląd wspólnych bibliotek obiektu docelowego środowiska uruchomieniowego języka wspólnego. Zmniejsza to nauki, jest wymagany dla nowe biblioteki oprogramowania, która zwiększa poziom zaufania klientów, że biblioteka został opracowany przez osobę, która ma doświadczenie w tworzenie kodu zarządzanego.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Zmień nazwę identyfikatora, aby poprawnie jest prefiksem.
+ Zmień nazwę identyfikatora, tak, aby poprawnie jest poprzedzana.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
  Nie pomijaj ostrzeżeń dla tej reguły.
 
 ## <a name="example"></a>Przykład
- **W poniższym przykładzie przedstawiono niepoprawnie nazwanego interfejsu.**
+ **Poniższy kod przedstawia interfejs niepoprawnie nazwanych.**
 
  [!code-cpp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix#1](../code-quality/codesnippet/CPP/ca1715-identifiers-should-have-correct-prefix_1.cpp)]
  [!code-vb[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix#1](../code-quality/codesnippet/VisualBasic/ca1715-identifiers-should-have-correct-prefix_1.vb)]
  [!code-csharp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix#1](../code-quality/codesnippet/CSharp/ca1715-identifiers-should-have-correct-prefix_1.cs)]
 
 ## <a name="example"></a>Przykład
- **Poniższy przykład poprawki poprzedniej naruszenie, prefiksu interfejsu z "I".**
+ **Poniższy przykład naprawia wcześniejszego naruszenia praw przez dodanie przedrostka interfejsu prefiksem "I".**
 
  [!code-csharp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix2#1](../code-quality/codesnippet/CSharp/ca1715-identifiers-should-have-correct-prefix_2.cs)]
  [!code-cpp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix2#1](../code-quality/codesnippet/CPP/ca1715-identifiers-should-have-correct-prefix_2.cpp)]
  [!code-vb[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix2#1](../code-quality/codesnippet/VisualBasic/ca1715-identifiers-should-have-correct-prefix_2.vb)]
 
 ## <a name="example"></a>Przykład
- **W poniższym przykładzie przedstawiono parametr niepoprawnie nazwanego typu ogólnego.**
+ **Poniższy przykład pokazuje parametr niepoprawnie o nazwie typu ogólnego.**
 
  [!code-cpp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix3#1](../code-quality/codesnippet/CPP/ca1715-identifiers-should-have-correct-prefix_3.cpp)]
  [!code-vb[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix3#1](../code-quality/codesnippet/VisualBasic/ca1715-identifiers-should-have-correct-prefix_3.vb)]
  [!code-csharp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix3#1](../code-quality/codesnippet/CSharp/ca1715-identifiers-should-have-correct-prefix_3.cs)]
 
 ## <a name="example"></a>Przykład
- **Poniższy przykład poprawki poprzedniej naruszenie, parametru typu ogólnego z 'T prefiksu ".**
+ **Poniższy przykład naprawia wcześniejszego naruszenia praw przez dodanie przedrostka parametr typu ogólnego przy użyciu t ".**
 
  [!code-cpp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix4#1](../code-quality/codesnippet/CPP/ca1715-identifiers-should-have-correct-prefix_4.cpp)]
  [!code-csharp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix4#1](../code-quality/codesnippet/CSharp/ca1715-identifiers-should-have-correct-prefix_4.cs)]
  [!code-vb[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix4#1](../code-quality/codesnippet/VisualBasic/ca1715-identifiers-should-have-correct-prefix_4.vb)]
 
-## <a name="related-rules"></a>Powiązanych reguł
+## <a name="related-rules"></a>Powiązane reguły
  [CA1722: Identyfikatory nie powinny mieć niepoprawnego prefiksu](../code-quality/ca1722-identifiers-should-not-have-incorrect-prefix.md)

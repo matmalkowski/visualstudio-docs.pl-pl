@@ -14,16 +14,20 @@ ms.assetid: 335b57ca-a6e8-41b4-a20e-57ee172c97c3
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: b5ebcd4164f9db28d4cb1f150ee3a4bb21b21cde
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ddc827e77b37de6490cb4bee081748f317865b57
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31920114"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549563"
 ---
 # <a name="ca2214-do-not-call-overridable-methods-in-constructors"></a>CA2214: Nie należy wywoływać nadpisywalnych metod w konstruktorach
+
 |||
 |-|-|
 |TypeName|DoNotCallOverridableMethodsInConstructors|
@@ -32,25 +36,32 @@ ms.locfileid: "31920114"
 |Zmiana kluczowa|Bez podziału|
 
 ## <a name="cause"></a>Przyczyna
- Konstruktor typu niezapieczętowany wywołuje metody wirtualnej zdefiniowanej w klasie.
+
+Konstruktor obiektu niezapieczętowanego typu wywołuje metody wirtualnej zdefiniowanej w swojej klasie.
 
 ## <a name="rule-description"></a>Opis reguły
- Gdy wywoływana jest metoda wirtualna, rzeczywisty typ, który wykonuje metodę nie jest zaznaczone do czasu wykonywania. Konstruktor wywołuje metody wirtualnej, jest to możliwe, że Konstruktor wywołuje metodę wystąpienie nie zostało wykonane.
+
+Po wywołaniu metody wirtualnej rzeczywisty typ, który wykonuje metodę nie jest zaznaczone do czasu wykonywania. Gdy Konstruktor wywołuje metodę wirtualną, jest możliwe, że Konstruktor wystąpienia, które wywołuje metodę nie zostało wykonane.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej reguły, nie należy wywoływać metody wirtualne typu z konstruktorów typu.
+
+Aby naprawić naruszenie tej zasady, nie wywołuj metody wirtualne typu z konstruktorów typu.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Nie pomijaj ostrzeżeń dla tej reguły. Konstruktor powinien przeprojektowany tak, aby wyeliminować wywołanie metody wirtualnej.
+
+Nie pomijaj ostrzeżeń dla tej reguły. Konstruktor powinien przeprojektowane, aby wyeliminować wywołanie wirtualnej metody.
 
 ## <a name="example"></a>Przykład
- Poniższy przykład ilustruje efekt naruszenie tej reguły. Aplikacja testowa tworzy wystąpienie `DerivedType`, co powoduje, że jej klasa podstawowa (`BadlyConstructedType`) konstruktora do wykonania. `BadlyConstructedType`firmy Konstruktor niepoprawnie wywołuje metodę wirtualną `DoSomething`. Jak pokazano na dane wyjściowe, `DerivedType.DoSomething()` wykonuje i jest więc przed `DerivedType`tego konstruktora.
 
- [!code-csharp[FxCop.Usage.CtorVirtual#1](../code-quality/codesnippet/CSharp/ca2214-do-not-call-overridable-methods-in-constructors_1.cs)]
- [!code-vb[FxCop.Usage.CtorVirtual#1](../code-quality/codesnippet/VisualBasic/ca2214-do-not-call-overridable-methods-in-constructors_1.vb)]
+Poniższy przykład ilustruje efekt naruszenie tej zasady. Aplikacja testowa tworzy wystąpienie `DerivedType`, co powoduje, że jej klasa podstawowa (`BadlyConstructedType`) Konstruktor do wykonania. `BadlyConstructedType`jego Konstruktor niepoprawnie wywołuje metodę wirtualną `DoSomething`. Dane wyjściowe pokazują, `DerivedType.DoSomething()` wykonuje, a więc przed jest `DerivedType`przez konstruktora.
 
- W tym przykładzie tworzy następujące dane wyjściowe.
+[!code-csharp[FxCop.Usage.CtorVirtual#1](../code-quality/codesnippet/CSharp/ca2214-do-not-call-overridable-methods-in-constructors_1.cs)]
+[!code-vb[FxCop.Usage.CtorVirtual#1](../code-quality/codesnippet/VisualBasic/ca2214-do-not-call-overridable-methods-in-constructors_1.vb)]
 
- **Wywoływanie podstawowej ctor. ** 
- **Pochodnych DoSomething jest nazywany - zainicjować? Nie**
-**telefonicznej pochodnych ctor.**
+Ten przykład generuje następujące wyniki:
+
+```txt
+Calling base ctor.
+Derived DoSomething is called - initialized ? No
+Calling derived ctor.
+```

@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 991358ec361e414c9f5d335feb43eadde628a763
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 83dc61c31d2951d230c04fb52d7d1e6ffd932a03
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31924677"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45550310"
 ---
 # <a name="ca2225-operator-overloads-have-named-alternates"></a>CA2225: Operator overloads ma nazwanych zastępców
 |||
@@ -35,27 +35,27 @@ ms.locfileid: "31924677"
  Wykryto przeciążony operator i nie znaleziono metody alternatywnej o oczekiwanej nazwie.
 
 ## <a name="rule-description"></a>Opis reguły
- Przeładowanie operatora umożliwia korzystanie z symboli do reprezentowania obliczenia dla typu. Na przykład typ, który overloads znak plus (+) do dodania zwykle mają inny członek o nazwie "Dodaj". Nazwane alternatywnego element członkowski zapewnia dostęp do funkcji operatora i jest dostępne dla deweloperów, którzy programów w językach, które nie obsługują operatory przeciążone.
+ Przeciążanie operatora umożliwia korzystanie z symboli do reprezentowania obliczeń dla typu. Na przykład typ, który przeciążenia symbol znaku plus (+) do dodania zwykle mają alternatywny element członkowski o nazwie "Dodaj". Nazwany alternatywny element członkowski udostępnia taką samą funkcjonalność jak operator i jest dostarczany deweloperom programującym w językach, które nie obsługują przeciążonych operatorów.
 
  Ta reguła sprawdza, czy operatory wymienione w poniższej tabeli.
 
-|C#|Visual Basic|C++|Alternatywna nazwa|
+|C#|Visual Basic|C++|Nazwa alternatywna|
 |---------|------------------|-----------|--------------------|
-|+ (plik binarny)|+|+ (plik binarny)|Dodaj|
+|+ (binarnych)|+|+ (binarnych)|Dodaj|
 |+=|+=|+=|Dodaj|
-|&|I|&|BitwiseAnd|
+|&|i|&|BitwiseAnd|
 |&=|I =|&=|BitwiseAnd|
 |&#124;|Lub|&#124;|BitwiseOr|
 |&#124;=|Lub =|&#124;=|BitwiseOr|
-|--|Brak|--|Dekrementacji|
-|/|/|/|Podziel|
-|/=|/=|/=|Podziel|
+|--|Brak|--|Dekrementacja|
+|/|/|/|Dzielenie|
+|/=|/=|/=|Dzielenie|
 |==|=|==|równa się|
 |^|XOR|^|XOR|
 |^=|XOR =|^=|XOR|
 |>|>|>|{1&gt;Compare&lt;1}|
 |>=|>=|>=|{1&gt;Compare&lt;1}|
-|++|Brak|++|Przyrost|
+|++|Brak|++|Inkrementacja|
 |<>|!=|równa się|
 |<<|<<|<<|LeftShift|
 |<<=|<<=|<<=|LeftShift|
@@ -66,36 +66,36 @@ ms.locfileid: "31924677"
 |!|Brak|!|LogicalNot|
 |%|Mod|%|Mod lub pozostałej|
 |%=|Brak|%=|Mod|
-|* (binary)|*|*|Mnożenia|
-|*=|Brak|*=|Mnożenia|
+|* (binarnych)|*|*|Mnożenie|
+|*=|Brak|*=|Mnożenie|
 |~|nie|~|OnesComplement|
 |>>|>>|>>|RightShift|
 =|Brak|>>=|RightShift|
-|-(plik binarny)|-(plik binarny)|-(plik binarny)|Odejmowanie|
+|-(binarnych)|-(binarnych)|-(binarnych)|Odejmowanie|
 |-=|Brak|-=|Odejmowanie|
 |true|IsTrue|Brak|IsTrue (właściwość)|
-|-(jednoargumentowy)|Brak|-|Negate —|
-|+ (jednoargumentowy)|Brak|+|plus|
+|-(jednoargumentowy)|Brak|-|negate —|
+|+ (jednoargumentowy)|Brak|+|znak plus|
 |false|IsFalse|False|IsTrue (właściwość)|
 
- Brak == nie może zostać przeciążony w wybranym języku.
+ N/d == nie mogą być przeciążone w wybranym języku.
 
- Reguła sprawdza również operatory rzutowania jawne i niejawne w typie (`SomeType`) przez skontrolowanie metody o nazwie `ToSomeType` i `FromSomeType`.
+ Zasada sprawdza również operatory rzutowania jawne i niejawne w typie (`SomeType`) przez sprawdzenie, czy metody o nazwie `ToSomeType` i `FromSomeType`.
 
- W języku C# Jeśli jest przeciążony operator binarny, odpowiedniego operatora przypisania, jest również niejawnie przeciążona.
+ W języku C# gdy jest przeciążony operator binarny, odpowiedniego operatora przypisania, jest również niejawnie przeciążona.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby rozwiązać naruszenie tej reguły, zaimplementuj alternatywną metodą dla operatora; Nazwa przy użyciu zalecanych alternatywnej nazwy.
+ Aby naprawić naruszenie tej zasady, należy zaimplementować alternatywną metodę dla operatora; Nadaj mu przy użyciu zalecane alternatywne nazwy.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Nie pomijaj ostrzeżenia od tej reguły, w przypadku wdrażania biblioteki udostępnionej. Aplikacje można zignorować ostrzeżenie od tej reguły.
+ Nie pomijaj ostrzeżeń dla tej reguły, w przypadku wdrażania biblioteki udostępnionej. Aplikacje można zignorować ostrzeżenie od tej reguły.
 
 ## <a name="example"></a>Przykład
- W poniższym przykładzie zdefiniowano strukturę, która narusza tę regułę. Aby rozwiązać problem w przykładzie, Dodaj publiczną `Add(int x, int y)` metody w strukturze.
+ W poniższym przykładzie zdefiniowano strukturę, która narusza tę regułę. Aby rozwiązać problem w przykładzie, należy dodać publiczny `Add(int x, int y)` metody w strukturze.
 
  [!code-csharp[FxCop.Usage.OperatorOverloadsHaveNamedAlternates#1](../code-quality/codesnippet/CSharp/ca2225-operator-overloads-have-named-alternates_1.cs)]
 
-## <a name="related-rules"></a>Powiązanych reguł
+## <a name="related-rules"></a>Powiązane reguły
  [CA1046: Nie przeciążaj operatora równości w typach referencyjnych](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)
 
  [CA2226: Operatory powinny mieć symetryczne przeciążenia](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)

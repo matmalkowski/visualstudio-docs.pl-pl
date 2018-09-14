@@ -1,5 +1,5 @@
 ---
-title: 'CA2101: Należy określić marshaling dla argumentów ciągu P Invoke'
+title: 'CA2101: Określ marshaling dla argumentów ciągu wywołania P-Invoke'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dc32aedf38430ab3ce9657f3a7e4d8d9e416fa57
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b560f2be6cad77bd4381d9ca9968c42c37b462ab
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31918860"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548349"
 ---
 # <a name="ca2101-specify-marshaling-for-pinvoke-string-arguments"></a>CA2101: Należy określić marshaling dla argumentów typu string P/Invoke
 |||
@@ -32,20 +32,20 @@ ms.locfileid: "31918860"
 |Zmiana kluczowa|Bez podziału|
 
 ## <a name="cause"></a>Przyczyna
- Wywołanie platformy elementu członkowskiego umożliwia częściowo zaufanych wywołań ma parametr typu string, a nie jawnie kierować ten ciąg.
+ Wywołania platformy elementu członkowskiego umożliwia częściowo zaufanych wywołań, ma parametr typu ciąg, a nie kieruje jawnie tego ciągu.
 
 ## <a name="rule-description"></a>Opis reguły
- Podczas konwertowania z Unicode na ANSI, jest to możliwe, że nie wszystkie znaki Unicode może być reprezentowany w określonej strony kodowej ANSI. *Mapowanie najlepszego dopasowania* próbuje rozwiązać ten problem, zastępując znak znaku, który nie może być przedstawiony. Używanie tej funkcji może spowodować potencjalne luki w zabezpieczeniach, ponieważ nie można kontrolować znak, który zostanie wybrany. Na przykład złośliwy kod celowo można utworzyć ciągu Unicode, który zawiera znaki, które nie znajdują się na stronie określonego kodu, które są konwertowane na znaki specjalne systemu plików, takich jak ".." lub "/". Należy pamiętać, że kontrole zabezpieczeń dla znaków specjalnych często występują przed jest przekonwertowanie ciągu na ANSI.
+ Podczas konwersji z Unicode ANSI jest to możliwe, że nie wszystkie znaki Unicode mogą być reprezentowane w określonej strony kodowej ANSI. *Mapowanie najlepszego dopasowania* próbuje rozwiązać ten problem, zastępując znak znak, który nie może być reprezentowana. Używanie tej funkcji może spowodować potencjalne luki w zabezpieczeniach, ponieważ nie można kontrolować znak, który jest wybierany. Na przykład złośliwy kod celowo utworzyć ciąg Unicode, który zawiera znaki, które nie znajdują się na stronie konkretnego kodu, które są konwertowane na system plików, znaków specjalnych, takich jak ".." lub "/". Należy zauważyć, że sprawdzanie zabezpieczeń dla znaków specjalnych często występują przed ten ciąg jest konwertowany na ANSI.
 
- Mapowanie najlepszego dopasowania jest ustawieniem domyślnym dla konwersji niezarządzanego, WChar do MBajtów. Chyba że jawnie wyłącz mapowanie najlepszego dopasowania, kod może zawierać luki w zabezpieczeniach kończona z powodu tego błędu.
+ Mapowanie najlepszego dopasowania jest ustawieniem domyślnym dla niezarządzanych konwersji WChar do MBajtów. Chyba że jawnie wyłącz mapowanie najlepszego dopasowania, Twój kod może zawierać luki w zabezpieczeniach możliwe do wykorzystania z powodu tego problemu.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej reguły, jawnie organizowania danych typu ciąg.
+ Aby naprawić naruszenie tej zasady, kieruje jawnie tego ciągu typów danych.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
  Nie pomijaj ostrzeżeń dla tej reguły.
 
 ## <a name="example"></a>Przykład
- W poniższym przykładzie przedstawiono metodę, która narusza tę regułę, a następnie pokazano, jak rozwiązać naruszenie.
+ Poniższy przykład przedstawia metodę, która narusza tę regułę, a następnie pokazano, jak naprawić naruszenia.
 
  [!code-csharp[FxCop.Security.PinvokeAnsiUnicode#1](../code-quality/codesnippet/CSharp/ca2101-specify-marshaling-for-p-invoke-string-arguments_1.cs)]

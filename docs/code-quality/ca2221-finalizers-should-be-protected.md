@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 25d67c99a9c2b30461170b7e8b5090e0c08241ee
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1ac3f9116366920f833fe8d907181473d6fda106
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917872"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551288"
 ---
 # <a name="ca2221-finalizers-should-be-protected"></a>CA2221: Finalizatory powinny być chronione
+
 |||
 |-|-|
 |TypeName|FinalizersShouldBeProtected|
@@ -32,19 +33,19 @@ ms.locfileid: "31917872"
 |Zmiana kluczowa|Bez podziału|
 
 ## <a name="cause"></a>Przyczyna
- Publiczny typ implementuje finalizator, która nie określa rodziny dostępu (chronione).
+ Typ publiczny implementuje finalizator, który nie określa rodziny dostępu (chroniony).
 
 ## <a name="rule-description"></a>Opis reguły
- Finalizatory muszą korzystać z modyfikatora dostępu „family”. Ta reguła jest wymuszone przez Kompilatory języka C#, Visual Basic i Visual C++.
+ Finalizatory muszą korzystać z modyfikatora dostępu „family”. Ta zasada jest wymuszana przez kompilatory C#, Visual Basic i Visual C++.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby usunąć naruszenie tej reguły, zmienić finalizator była dostępna rodziny.
+ Aby naprawić naruszenie tej zasady, należy zmienić finalizator dostępne rodziny.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
  Nie pomijaj ostrzeżeń dla tej reguły.
 
 ## <a name="example"></a>Przykład
- Nie można oznaczać naruszenie tej reguły w dowolnym języku .NET wysokiego poziomu; można naruszone, jeśli piszesz język pośredni firmy Microsoft.
+ Ta zasada nie naruszone w dowolnym języku .NET wysokiego poziomu; można naruszone, jeśli piszesz języka Microsoft Intermediate Language.
 
 ```
 // =============== CLASS MEMBERS DECLARATION ===================
@@ -79,5 +80,6 @@ ms.locfileid: "31917872"
 } // end of namespace
 ```
 
-## <a name="see-also"></a>Zobacz też
- [Wzorzec Dispose](/dotnet/standard/design-guidelines/dispose-pattern)
+## <a name="see-also"></a>Zobacz także
+
+- [Wzorzec Dispose](/dotnet/standard/design-guidelines/dispose-pattern)

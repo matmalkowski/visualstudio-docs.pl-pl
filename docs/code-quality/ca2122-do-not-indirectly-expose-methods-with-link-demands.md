@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c43cfc1a448d9073a8bbe493d75c7c117f57d737
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8d17c2981e4dabe82817aeedcf4fcab93e970b47
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31915559"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548902"
 ---
 # <a name="ca2122-do-not-indirectly-expose-methods-with-link-demands"></a>CA2122: Nie należy pośrednio ujawniać metod w żądaniach konsolidacji
+
 |||
 |-|-|
 |TypeName|DoNotIndirectlyExposeMethodsWithLinkDemands|
@@ -32,29 +33,35 @@ ms.locfileid: "31915559"
 |Zmiana kluczowa|Bez podziału|
 
 ## <a name="cause"></a>Przyczyna
- Publiczne lub chronione element członkowski ma [Linkdemand](/dotnet/framework/misc/link-demands) i jest wywoływana przez element członkowski, który nie sprawdza zabezpieczeń.
+ Element członkowski publiczny lub chroniony ma [zapotrzebowania na łącza](/dotnet/framework/misc/link-demands) i jest wywoływany przez element członkowski, który nie sprawdza zabezpieczeń.
 
 ## <a name="rule-description"></a>Opis reguły
- Zapotrzebowanie na łącza sprawdza uprawnienia tylko bezpośredniego wywołującego. Jeśli element członkowski `X` sprawia, że nie żądania kontroli zabezpieczeń wywołań i wywołań kodu chroniony przez żądanie łącza obiekt wywołujący bez niezbędnych uprawnień, można użyć `X` uzyskać dostępu do chronionego członka.
+ Zapotrzebowanie na łącza sprawdza uprawnienia tylko bezpośredniego wywołującego. Jeśli członek `X` sprawia, że nie żądania kontroli zabezpieczeń jego wywołań i wywołuje kod chroniony przez żądanie łącza, obiekt wywołujący bez niezbędnych uprawnień, można użyć `X` uzyskać dostępu do chronionego członka.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Dodawanie zabezpieczeń [dane i modelowanie](/dotnet/framework/data/index) lub łącze żądanie do elementu członkowskiego, dzięki czemu nie jest już zapewnia niezabezpieczona dostęp do elementu członkowskiego chronionego żądanie łącza.
+ Dodawanie zabezpieczeń [dane i modelowanie](/dotnet/framework/data/index) lub połączyć żądanie do elementu członkowskiego, tak aby nie jest już zapewnia niezabezpieczony dostęp do składowej chronionej przez żądanie łącza.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Aby bezpiecznie pominąć ostrzeżenie od tej reguły, powinien upewnić się, że kod nie przyznaje elementy wywołujące pod dostęp do operacji lub zasobów, które mogą być używane w szkodliwy sposób.
+ Aby bezpiecznie pominąć ostrzeżenie od tej reguły, należy upewnić się, że Twój kod nie przyznaje wywołujące dostęp do operacji lub zasobów, które mogą być używane w szkodliwy sposób.
 
-## <a name="example"></a>Przykład
- W poniższych przykładach pokazano biblioteki, która narusza regułę, a aplikacja, która przedstawia osłabienia biblioteki. Biblioteka próbki udostępnia dwie metody, naruszających zasady. `EnvironmentSetting` Metody jest chroniony przez żądanie łącza, aby uzyskać nieograniczony dostęp do zmiennych środowiskowych. `DomainInformation` Metoda pozwala nie wymagania zabezpieczeń elementy wywołujące pod przed wywołaniem `EnvironmentSetting`.
+## <a name="example-1"></a>Przykład 1
+ W poniższych przykładach pokazano bibliotekę, która narusza regułę i aplikacji, która pokazuje słabość biblioteki. Biblioteka przykładowe udostępnia dwie metody, naruszających zasady. `EnvironmentSetting` Metody jest zabezpieczony przez zapotrzebowania na łącza, aby uzyskać nieograniczony dostęp do zmiennych środowiskowych. `DomainInformation` Metoda przeprowadza nie wymogów bezpieczeństwa z wywołujące przed wywołaniem `EnvironmentSetting`.
 
  [!code-csharp[FxCop.Security.UnsecuredDoNotCall#1](../code-quality/codesnippet/CSharp/ca2122-do-not-indirectly-expose-methods-with-link-demands_1.cs)]
 
-## <a name="example"></a>Przykład
- Następującej aplikacji wywołuje element członkowski niezabezpieczona biblioteki.
+## <a name="example-2"></a>Przykład 2
+ Następująca aplikacja wywołuje składowej niezabezpieczonej biblioteki.
 
  [!code-csharp[FxCop.Security.TestUnsecuredDoNot1#1](../code-quality/codesnippet/CSharp/ca2122-do-not-indirectly-expose-methods-with-link-demands_2.cs)]
 
- W tym przykładzie tworzy następujące dane wyjściowe.
+Ten przykład generuje następujące wyniki:
 
- **Wartość z zakresu od niezabezpieczonego elementu członkowskiego: seattle.corp.contoso.com**
-## <a name="see-also"></a>Zobacz też
- [Wytyczne dotyczące bezpiecznego programowania](/dotnet/standard/security/secure-coding-guidelines) [Link zapotrzebowanie](/dotnet/framework/misc/link-demands) [dane i modelowanie](/dotnet/framework/data/index)
+```txt
+*Value from unsecured member: seattle.corp.contoso.com
+```
+
+## <a name="see-also"></a>Zobacz także
+
+- [Wytyczne dotyczące bezpiecznego programowania](/dotnet/standard/security/secure-coding-guidelines)
+- [Zapotrzebowanie na łącza](/dotnet/framework/misc/link-demands)
+- [Dane i modelowanie](/dotnet/framework/data/index)

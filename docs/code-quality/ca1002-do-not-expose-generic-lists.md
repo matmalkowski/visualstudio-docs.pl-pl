@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a2131ef8cb0b8f0ba540d7403d7c5f8dbb8b89df
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 016b9f72567f6ff70b19bfa9e781e0f0d14cb702
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31901099"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549355"
 ---
 # <a name="ca1002-do-not-expose-generic-lists"></a>CA1002: Nie ujawniaj list generycznych
 |||
@@ -32,24 +32,24 @@ ms.locfileid: "31901099"
 |Zmiana kluczowa|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
- Typ zawiera widoczne na zewnątrz elementu członkowskiego, który jest <xref:System.Collections.Generic.List%601?displayProperty=fullName> wpisz zwraca <xref:System.Collections.Generic.List%601?displayProperty=fullName> typu lub którego sygnatura zawiera <xref:System.Collections.Generic.List%601?displayProperty=fullName> parametru.
+ Typ zawiera widoczne na zewnątrz elementu członkowskiego, który jest <xref:System.Collections.Generic.List%601?displayProperty=fullName> wpisz zwraca <xref:System.Collections.Generic.List%601?displayProperty=fullName> typu lub którego podpis zawiera <xref:System.Collections.Generic.List%601?displayProperty=fullName> parametru.
 
 ## <a name="rule-description"></a>Opis reguły
- <xref:System.Collections.Generic.List%601?displayProperty=fullName> jest kolekcją ogólnego, który zaprojektowano pod kątem wydajności i dziedziczenie nie. <xref:System.Collections.Generic.List%601?displayProperty=fullName> nie zawiera wirtualnych elementów członkowskich, które ułatwiają zmianę zachowania dziedziczonej klasie. Następujące kolekcje ogólne są przeznaczone dla dziedziczenia i powinny zostać ujawnione zamiast <xref:System.Collections.Generic.List%601?displayProperty=fullName>.
+ <xref:System.Collections.Generic.List%601?displayProperty=fullName> jest kolekcją ogólną, zapewniające wydajność i nie o dziedziczeniu. <xref:System.Collections.Generic.List%601?displayProperty=fullName> nie zawiera wirtualnych elementów członkowskich, które ułatwiają zmiany zachowania odziedziczoną klasę. Następujące kolekcje ogólne są zaprojektowane do obsługi dziedziczenia i powinny zostać ujawnione zamiast <xref:System.Collections.Generic.List%601?displayProperty=fullName>.
 
--   <xref:System.Collections.ObjectModel.Collection%601?displayProperty=fullName>
+- <xref:System.Collections.ObjectModel.Collection%601?displayProperty=fullName>
 
--   <xref:System.Collections.ObjectModel.ReadOnlyCollection%601?displayProperty=fullName>
+- <xref:System.Collections.ObjectModel.ReadOnlyCollection%601?displayProperty=fullName>
 
--   <xref:System.Collections.ObjectModel.KeyedCollection%602?displayProperty=fullName>
+- <xref:System.Collections.ObjectModel.KeyedCollection%602?displayProperty=fullName>
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby usunąć naruszenie tej reguły, zmienić <xref:System.Collections.Generic.List%601?displayProperty=fullName> typu ogólnego kolekcji, które jest przeznaczone do dziedziczenia.
+ Aby naprawić naruszenie tej zasady, należy zmienić <xref:System.Collections.Generic.List%601?displayProperty=fullName> typu do jednej z kolekcji ogólnych, które jest przeznaczone do obsługi dziedziczenia.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Nie pomijaj ostrzeżenie od tej reguły, chyba że zestaw, który wywołuje to ostrzeżenie jest nie należy traktować jako biblioteki do ponownego użycia. Na przykład byłoby bezpiecznie pominąć to ostrzeżenie w aplikacji wydajność dostosowana gdzie poprawiać wydajność uzyskane z użycia list ogólnych.
+ Nie pomijaj ostrzeżeń dla tej reguły, chyba, że zestaw, który generuje to ostrzeżenie jest nie należy traktować jako biblioteki do ponownego użycia. Na przykład będzie bezpiecznie pominąć to ostrzeżenie w aplikacji wydajność dostosowana gdzie uzyskane korzyści wydajności z użycia list ogólnych.
 
-## <a name="related-rules"></a>Powiązanych reguł
+## <a name="related-rules"></a>Powiązane reguły
  [CA1005: Unikaj nadużywania parametrów w typach ogólnych](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)
 
  [CA1010: Kolekcje powinny implementować interfejs ogólny](../code-quality/ca1010-collections-should-implement-generic-interface.md)
@@ -64,5 +64,5 @@ ms.locfileid: "31901099"
 
  [CA1007: Używaj typów ogólnych wszędzie tam, gdzie jest to odpowiednie](../code-quality/ca1007-use-generics-where-appropriate.md)
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
  [Typy ogólne](/dotnet/csharp/programming-guide/generics/index)

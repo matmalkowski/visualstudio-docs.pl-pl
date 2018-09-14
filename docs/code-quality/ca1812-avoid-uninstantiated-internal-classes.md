@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d2b59e9b0947c6d2b1cbb37cdc850a144976d495
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 68597c0748fbc235178da6b6e583c48b9f1b422f
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31915600"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551772"
 ---
 # <a name="ca1812-avoid-uninstantiated-internal-classes"></a>CA1812: Unikaj wewnętrznych klas bez wystąpień
 |||
@@ -35,41 +35,41 @@ ms.locfileid: "31915600"
  Wystąpienie typu na poziomie zestawu nie jest tworzone przez kod w zestawie.
 
 ## <a name="rule-description"></a>Opis reguły
- Ta zasada próbuje zlokalizować wywołania do jednego z konstruktorów typu i zgłasza naruszenie, jeśli połączenie nie zostanie znaleziony.
+ Ta zasada próbuje zlokalizować wywołań do jednego z konstruktorów typu i zgłasza naruszenie, jeśli brak wywołania zostanie znaleziony.
 
  Następujące typy nie są sprawdzane przez tę regułę:
 
--   Typy wartości
+- Typy wartości
 
--   Typy abstrakcyjne
+- Typy abstrakcyjne
 
--   Wyliczenia
+- Wyliczenia
 
--   Delegaty
+- Delegaty
 
--   Typy tablic wysyłanego kompilatora
+- Typy tablic emitowane przez kompilator
 
--   Typy, którego nie można utworzyć wystąpienia i definiującą `static` (`Shared` w języku Visual Basic) tylko metody.
+- Typy, którego nie można utworzyć wystąpienia i definiują `static` (`Shared` w języku Visual Basic) tylko metody.
 
- W przypadku zastosowania <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute?displayProperty=fullName> do zestawu, który jest analizowana, ta reguła zostanie przeprowadzona na wszystkie konstruktory oznaczone jako `internal` , ponieważ nie można sprawdzić, czy pole jest używana przez inną `friend` zestawu.
+ Jeśli zastosujesz <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute?displayProperty=fullName> do zestawu, który jest analizowana, ta zasada zostanie przeprowadzona na żadnych konstruktorów, które są oznaczone jako `internal` , ponieważ nie można sprawdzić, czy pole jest używany przez inny `friend` zestawu.
 
- Mimo że nie można obejść to ograniczenie w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] analizy kodu zewnętrznego autonomiczna programu FxCop nastąpi na wewnętrzny konstruktorów Jeśli co `friend` zestawu znajduje się w analizy.
+ Mimo że nie można obejść to ograniczenie w Visual Studio Code Analysis, zewnętrzne autonomicznego programu FxCop wystąpi na wewnętrzny konstruktory co `friend` zestawu znajduje się w analizie.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby rozwiązać naruszenie tej reguły, Usuń typem lub Dodaj kod, który korzysta z niego. Jeśli typ zawiera tylko metody statyczne, Dodaj jedną z następujących do typu, aby zapobiec przez kompilator domyślnego konstruktora wystąpienia publicznego emitowanie:
+ Aby naprawić naruszenie tej zasady, Usuń typ lub Dodaj kod, który korzysta z niego. Jeśli typ zawiera tylko metody statyczne, Dodaj jedną z następujących do typu, aby uniemożliwić kompilatorowi emitowania publiczne wystąpienia domyślnego konstruktora:
 
--   Konstruktor prywatny dla typów obiektu docelowego [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] w wersjach 1.0 i 1.1.
+- Konstruktor prywatny dla typów, których platformą docelową [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] w wersjach 1.0 i 1.1.
 
--   `static` (`Shared` w języku Visual Basic) modyfikator typy kierowanych [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)].
+- `static` (`Shared` w języku Visual Basic) modyfikator dla typów, których platformą docelową [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)].
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
  Jest bezpieczne pominąć ostrzeżenie od tej reguły. Firma Microsoft zaleca, aby pominąć to ostrzeżenie w następujących sytuacjach:
 
--   Klasa jest tworzony za pomocą odbicia z późnym wiązaniem metod takich jak <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>.
+- Klasa jest tworzona za pośrednictwem metody z późnym wiązaniem odbicia, takich jak <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>.
 
--   Klasa jest tworzona automatycznie przez środowisko uruchomieniowe lub [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Na przykład klasy, które implementują <xref:System.Configuration.IConfigurationSectionHandler?displayProperty=fullName> lub <xref:System.Web.IHttpHandler?displayProperty=fullName>.
+- Klasa jest tworzony automatycznie w czasie wykonywania lub [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Na przykład klas, które implementują <xref:System.Configuration.IConfigurationSectionHandler?displayProperty=fullName> lub <xref:System.Web.IHttpHandler?displayProperty=fullName>.
 
--   Klasa jest przekazywany jako parametru typu ogólnego, który ma nowego ograniczenia. Na przykład poniższy przykład zgłosi tej reguły.
+- Klasa jest przekazywany jako parametr typu ogólnego, który ma nowe ograniczenie. Na przykład poniższy przykład zgłosi tej reguły.
 
     ```csharp
     internal class MyClass
@@ -90,9 +90,9 @@ ms.locfileid: "31915600"
     mc.Create();
     ```
 
- W takich przypadkach zaleca się, że możesz pominąć to ostrzeżenie.
+ W takich przypadkach zaleca się, że pominąć to ostrzeżenie.
 
-## <a name="related-rules"></a>Powiązanych reguł
+## <a name="related-rules"></a>Powiązane reguły
  [CA1811: Unikaj niewywoływanego kodu prywatnego](../code-quality/ca1811-avoid-uncalled-private-code.md)
 
  [CA1801: Przejrzyj nieużywane parametry](../code-quality/ca1801-review-unused-parameters.md)

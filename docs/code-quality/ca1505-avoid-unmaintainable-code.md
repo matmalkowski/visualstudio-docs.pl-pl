@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 41600d40091ed2c656ab189a257a0ef2db6e0271
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9aae34f6e999bcf74fdfbae4597b22529863e34f
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31914409"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45546918"
 ---
 # <a name="ca1505-avoid-unmaintainable-code"></a>CA1505: Unikaj kodu niemożliwego w utrzymaniu
+
 |||
 |-|-|
 |TypeName|AvoidUnmantainableCode|
@@ -35,15 +36,17 @@ ms.locfileid: "31914409"
  Typ lub metoda ma niską wartość indeksu konserwacji.
 
 ## <a name="rule-description"></a>Opis reguły
- Indeks łatwości utrzymania jest obliczana przy użyciu następujących metryk: wierszy kodu, program woluminu i złożoność cyklomatyczną. Program wolumin jest miarą trudności zrozumienia typu lub metody, która jest oparta na liczbie operatory i argumenty w kodzie. Złożoność Cyklomatyczną jest miarą strukturalnych złożoność typu lub metody. Dowiedz się więcej o metryk kodu [mierzenie złożoności i łatwości konserwacji zarządzanego kodu](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md).
+ Indeks łatwości utrzymania jest obliczana przy użyciu następujących metryk: wiersze kodu, program woluminu i złożoność cykliczną. Program wolumin jest miarą trudności wiedzę na temat typu lub metody, która opiera się na liczbie operatorów i argumentów operacji w kodzie. Złożoność Cyklomatyczna jest miarą strukturalnych złożoność tego typu lub metody. Dowiedz się więcej na temat metryk kodu [mierzenie złożoności i łatwości konserwacji zarządzanego kodu](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md).
 
- Indeks łatwości utrzymania niski wskazuje, że typ lub metoda jest prawdopodobnie trudne w utrzymaniu i będzie odpowiednimi kandydatami do.
+ Niski indeks konserwacji wskazuje, że typ lub metoda są prawdopodobnie trudne do utrzymania i jest dobrym kandydatem do przeprojektowania.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić to naruszenie, zmodyfikowanie typu lub metody i spróbuj podzielić go na mniejsze i bardziej ukierunkowaną typach lub metodach.
+ Aby rozwiązać problem to naruszenie, zmodyfikowanie typu lub metody i spróbuj podzielić ją na mniejsze i bardziej ukierunkowaną typów ani metod.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Wyklucz to ostrzeżenie, gdy typ lub metoda jest nadal łatwy w obsłudze, niezależnie od jego duży rozmiar lub typ lub metoda nie może zostać podzielony.
+ Wyklucz to ostrzeżenie, gdy typ lub metoda jest nadal uważana za łatwego w utrzymaniu, niezależnie od jego duży rozmiar lub typie lub metodzie nie można podzielić.
 
-## <a name="see-also"></a>Zobacz też
- [Ostrzeżenia dotyczące utrzymania](../code-quality/maintainability-warnings.md) [mierzenie złożoności i łatwości konserwacji zarządzanego kodu](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)
+## <a name="see-also"></a>Zobacz także
+
+- [Ostrzeżenia dotyczące konserwacji](../code-quality/maintainability-warnings.md)
+- [Mierzenie złożoności i poziomu łatwości konserwacji kodu zarządzanego](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)

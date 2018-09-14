@@ -18,14 +18,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c02de86564f6d7754b3c9db86d93577c374a72e0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 98f7793890bc938f6f1e89f653985b91a99393a9
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31918439"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548291"
 ---
 # <a name="ca2140-transparent-code-must-not-reference-security-critical-items"></a>CA2140: Jawny kod nie może odwoływać się do elementów krytycznych dla zabezpieczeń
+
 |||
 |-|-|
 |TypeName|TransparentMethodsMustNotReferenceCriticalCode|
@@ -34,43 +35,53 @@ ms.locfileid: "31918439"
 |Zmiana kluczowa|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
- Metoda przezroczysty.
 
--   obsługuje typ wyjątków krytycznych zabezpieczeń
+Metoda przezroczysty.
 
--   Parametr oznaczony jako typ krytyczne zabezpieczeń
+- obsługuje typ wyjątków krytycznych zabezpieczeń
 
--   Parametr ogólny z ograniczeniami krytyczne zabezpieczeń
+- ma parametr, który jest oznaczony jako typu krytycznego dla zabezpieczeń
 
--   ma zmiennej lokalnej typu krytycznego zabezpieczeń
+- ma parametr ogólny z ograniczeniami krytyczne zabezpieczeń
 
--   odwołuje się do typu, który jest oznaczony jako zabezpieczenia krytyczne
+- ma zmiennej lokalnej typu krytycznego dla zabezpieczeń
 
--   wywołuje metodę, która jest oznaczona jako zabezpieczenia krytyczne
+- odwołuje się do typu, która jest oznaczona jako zabezpieczeń krytycznych
 
--   odwołuje się do pola, który jest oznaczony jako zabezpieczenia krytyczne
+- wywołuje metodę, która jest oznaczona jako zabezpieczeń krytycznych
 
--   Zwraca typ, który jest oznaczony jako zabezpieczenia krytyczne
+- odwołuje się do pola, która jest oznaczona jako zabezpieczeń krytycznych
+
+- Zwraca typ, który jest oznaczony jako zabezpieczeń krytycznych
 
 ## <a name="rule-description"></a>Opis reguły
- Element kodu, który jest oznaczony atrybutem <xref:System.Security.SecurityCriticalAttribute> atrybut jest krytyczne dla zabezpieczeń. Przezroczysta metoda nie może użyć elementu krytycznego dla zabezpieczeń. Jeśli typem przezroczysty próbuje użyć zabezpieczenia krytyczne <xref:System.TypeAccessException>, <xref:System.MethodAccessException> , lub <xref:System.FieldAccessException> jest wywoływane.
+
+Element kodu, który jest oznaczony za pomocą <xref:System.Security.SecurityCriticalAttribute> atrybutu jest krytyczny dla bezpieczeństwa. Przezroczysta metoda nie może użyć elementu krytycznego dla zabezpieczeń. Jeśli przezroczysty typ próbuje użyć typu krytycznego dla zabezpieczeń <xref:System.TypeAccessException>, <xref:System.MethodAccessException> , lub <xref:System.FieldAccessException> jest wywoływane.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej reguły, wykonaj jedną z następujących czynności:
 
--   Oznacz element kodu, który korzysta z kodu krytycznego dla zabezpieczeń z <xref:System.Security.SecurityCriticalAttribute> atrybutu
+Aby naprawić naruszenie tej zasady, wykonaj jedną z następujących czynności:
 
-     \- lub -
+- Oznacz element kodu, który korzysta z kodu krytycznego zabezpieczeń za pomocą <xref:System.Security.SecurityCriticalAttribute> atrybutu
 
--   Usuń <xref:System.Security.SecurityCriticalAttribute> atrybut z elementy kodu, które są oznaczone jako zabezpieczenia krytyczne i zamiast tego oznacz je za pomocą <xref:System.Security.SecuritySafeCriticalAttribute> lub <xref:System.Security.SecurityTransparentAttribute> atrybutu.
+     \- lub —
+
+- Usuń <xref:System.Security.SecurityCriticalAttribute> atrybut od elementów kodu, które są oznaczone jako zabezpieczeń krytycznych i zamiast tego oznacz je za pomocą <xref:System.Security.SecuritySafeCriticalAttribute> lub <xref:System.Security.SecurityTransparentAttribute> atrybutu.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Nie pomijaj ostrzeżeń dla tej reguły.
+
+Nie pomijaj ostrzeżeń dla tej reguły.
 
 ## <a name="example"></a>Przykład
- W poniższych przykładach przezroczysty — metoda próbuje odwołać zabezpieczeń kolekcji ogólny krytycznych, pola krytyczne zabezpieczeń i krytyczne metodę zabezpieczeń.
 
- [!code-csharp[FxCop.Security.CA2140.TransparentMethodsMustNotReferenceCriticalCode#1](../code-quality/codesnippet/CSharp/ca2140-transparent-code-must-not-reference-security-critical-items_1.cs)]
+W poniższych przykładach metoda przezroczysta pod względem próbuje odwołania zabezpieczeń krytycznych kolekcji ogólnych, zabezpieczeń krytycznych pola i metody krytycznej zabezpieczeń.
 
-## <a name="see-also"></a>Zobacz też
- <xref:System.Security.SecurityTransparentAttribute> <xref:System.Security.SecurityCriticalAttribute> <xref:System.Security.SecurityTransparentAttribute> <xref:System.Security.SecurityTreatAsSafeAttribute> <xref:System.Security?displayProperty=fullName>
+[!code-csharp[FxCop.Security.CA2140.TransparentMethodsMustNotReferenceCriticalCode#1](../code-quality/codesnippet/CSharp/ca2140-transparent-code-must-not-reference-security-critical-items_1.cs)]
+
+## <a name="see-also"></a>Zobacz także
+
+- <xref:System.Security.SecurityTransparentAttribute>
+- <xref:System.Security.SecurityCriticalAttribute>
+- <xref:System.Security.SecurityTransparentAttribute>
+- <xref:System.Security.SecurityTreatAsSafeAttribute>
+- <xref:System.Security?displayProperty=fullName>

@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 669f0ffc2e61d67bd57e965a4030b17af1eb1bb2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 033c7a73c404a2bd5146a17a1a7b4f2fa8b9c540
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31914591"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45545716"
 ---
 # <a name="ca1601-do-not-use-timers-that-prevent-power-state-changes"></a>CA1601: Nie używaj czasomierzy, które uniemożliwiają zmianę stanu zasilania
 |||
@@ -32,10 +32,10 @@ ms.locfileid: "31914591"
 |Zmiana kluczowa|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
- Czasomierz ma interwał ustawić występuje więcej niż jeden raz na sekundę.
+ Czasomierz został interwał występuje więcej niż jeden raz na sekundę.
 
 ## <a name="rule-description"></a>Opis reguły
- Nie wykonuj sondowania częściej niż raz na sekundę lub użyj czasomierzy, które częściej niż jeden czasu na sekundę. Wyższa częstotliwość działań okresowych sprawi, że procesor będzie zajęty, co zakłóci działanie czasomierzy bezczynności oszczędzających energię, które wyłączają ekran i dyski twarde.
+ Nie częściej niż jeden raz na sekundę lub użyj czasomierzy, które występować częściej niż jeden sondowania czas na sekundę. Wyższa częstotliwość działań okresowych sprawi, że procesor będzie zajęty, co zakłóci działanie czasomierzy bezczynności oszczędzających energię, które wyłączają ekran i dyski twarde.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
  Ustaw czasomierz interwałów występuje mniej niż jeden raz na sekundę.

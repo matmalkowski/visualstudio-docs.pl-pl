@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 10dc2effb90e754a91f6c9f008c6f8b1692bc252
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 433ec0e4df5108dfcf0bae1c8c62af5b0536bc5e
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281068"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548234"
 ---
 # <a name="step-6-use-the-polls-django-web-project-template"></a>Krok 6: Należy użyć szablonu projektu sieci Web Django sond
 
@@ -118,7 +118,7 @@ Wybór jest powiązany z sondowania za pośrednictwem `poll` pola, zawiera opis 
 
 Pełna lista typów pól jest `CharField` (ograniczoną tekstu) `TextField` (nieograniczona liczba tekst), `EmailField`, `URLField`, `DateTimeField`, `IntegerField`, `DecimalField`, `BooleanField`, `ForeignKey`, i `ManyToMany`. Każde pole ma niektórych atrybutów, takich jak `max_length`. `blank=True` Atrybut oznacza, że pole jest opcjonalne; `null=true` oznacza, że wartość jest opcjonalna. Istnieje również `choices` atrybut, który ogranicza wartości do wartości w tablicy krotki wartości wartość/wyświetlania danych. (Zobacz [modelu odwołania do pól](https://docs.djangoproject.com/en/2.0/ref/models/fields/) w dokumentacji Django.)
 
-Możesz potwierdzić dokładnie co to jest przechowywany w bazie danych, sprawdzając *db.sqlite3* pliku w projekcie przy użyciu narzędzia, takiego jak [przeglądarki SQLite](http://sqlitebrowser.org/). W bazie danych, zobaczysz, że pola klucza obcego, takich jak `poll` w wyborze modelu są przechowywane jako `poll_id`; Django obsługuje mapowanie automatycznie.
+Możesz potwierdzić dokładnie co to jest przechowywany w bazie danych, sprawdzając *db.sqlite3* pliku w projekcie przy użyciu narzędzia, takiego jak [przeglądarki SQLite](https://sqlitebrowser.org/). W bazie danych, zobaczysz, że pola klucza obcego, takich jak `poll` w wyborze modelu są przechowywane jako `poll_id`; Django obsługuje mapowanie automatycznie.
 
 Ogólnie rzecz biorąc pracy z bazą danych w Django oznacza, że działa wyłącznie w ramach modeli tak, aby zarządzać Django podstawowej bazy danych w Twoim imieniu.
 
@@ -154,7 +154,7 @@ def seed(request):
     return HttpResponseRedirect(reverse('app:home'))
 ```
 
-Aby zobaczyć efekt, uruchom aplikację, aby dowiedzieć się, że nie ankiety, ale istnieje. Następnie skorzystaj z adresu URL "/ materiału siewnego", a zwrócona do strony głównej aplikacji powinien zostać wyświetlony, sond, są dostępne. Ponownie, możesz sprawdzić nieprzetworzonych *db.sqlite3* pliku przy użyciu narzędzia, takiego jak [przeglądarki SQLite](http://sqlitebrowser.org/).
+Aby zobaczyć efekt, uruchom aplikację, aby dowiedzieć się, że nie ankiety, ale istnieje. Następnie skorzystaj z adresu URL "/ materiału siewnego", a zwrócona do strony głównej aplikacji powinien zostać wyświetlony, sond, są dostępne. Ponownie, możesz sprawdzić nieprzetworzonych *db.sqlite3* pliku przy użyciu narzędzia, takiego jak [przeglądarki SQLite](https://sqlitebrowser.org/).
 
 ![Aplikacja projektu sieci Web Django ankiety z wypełnionych bazy danych](media/django/step06-app-with-seeded-database.png)
 

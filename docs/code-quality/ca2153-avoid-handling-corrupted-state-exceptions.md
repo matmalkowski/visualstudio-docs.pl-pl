@@ -1,5 +1,5 @@
 ---
-title: 'CA2153: Unikaj Obsługa wyjątków stan uszkodzony'
+title: 'CA2153: Unikaj obsługiwania uszkodzonych wyjątków stanu'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -9,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ca36093afa0915352c6c6d90995bde99fb655c8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5043c8cb9cefb8ffdb600083ba2dc4bb49d5e3f5
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31922857"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547529"
 ---
-# <a name="ca2153-avoid-handling-corrupted-state-exceptions"></a>CA2153: Unikaj Obsługa wyjątków stan uszkodzony
+# <a name="ca2153-avoid-handling-corrupted-state-exceptions"></a>CA2153: Unikaj obsługiwania uszkodzonych wyjątków stanu
 
 |||
 |-|-|
@@ -27,35 +27,39 @@ ms.locfileid: "31922857"
 
 ## <a name="cause"></a>Przyczyna
 
-[Uszkodzony rozszerzenie stanu wyjątków (klienta)](https://msdn.microsoft.com/magazine/dd419661.aspx) wskazać, że pamięć uszkodzenie istnieje w procesie. Przechwytywanie tych zamiast zezwolenia na awarii procesu może prowadzić do luk w zabezpieczeniach, jeśli osoba atakująca może wykorzystać do obszaru uszkodzenia pamięci.
+[Uszkodzony stan wyjątków (rozszerzenie klienta)](https://msdn.microsoft.com/magazine/dd419661.aspx) wskazać, że pamięć uszkodzenie istnieje w procesie. Przechwytywanie tych zamiast zezwalać awarię procesu może prowadzić do luk w zabezpieczeniach, jeśli osoba atakująca może wykorzystać do regionu pamięci uszkodzony.
 
 ## <a name="rule-description"></a>Opis reguły
- Rozszerzenie klienta wskazuje, że stan procesu został uszkodzony i nie przechwycono przez system. W scenariuszu uszkodzony ogólne obsługi tylko przechwytuje wyjątek po zaznaczeniu metodę poprawne `HandleProcessCorruptedStateExceptions` atrybutu. Domyślnie [środowiska uruchomieniowego języka wspólnego (CLR)](/dotnet/standard/clr) nie wywoła obsługi catch w przypadku rozszerzeń klienta.
 
- Stosowanie się, że proces awarii bez Przechwytywanie rodzaju wyjątki jest najbezpieczniejsza opcja, jako nawet rejestrowania kodu może umożliwić atakującemu wykorzystać usterki uszkodzenie pamięci.
+Rozszerzenie klienta wskazuje, że stan procesu został uszkodzony i nie zgłoszony przez system. W tym scenariuszu uszkodzony ogólny program obsługi tylko przechwytuje wyjątek po oznaczeniu metodę poprawne `HandleProcessCorruptedStateExceptions` atrybutu. Domyślnie [środowiska uruchomieniowego języka wspólnego (CLR)](/dotnet/standard/clr) nie wywoła obsługi catch w przypadku rozszerzeń klienta.
 
- To ostrzeżenie jest wyzwalane po Przechwytywanie rozszerzeń klienta z ogólny program obsługi, który przechwytuje wszystkie wyjątki, takie jak catch(exception) lub catch (Brak specyfikacji wyjątku).
+Zezwolenie na proces awarii bez wychwytywanie tych rodzajów wyjątków jest najbezpieczniejsza opcja, jako nawet rejestrowania kodu może umożliwić atakującemu wykorzystać błędy uszkodzenia pamięci.
+
+To ostrzeżenie uaktywnia Przechwytywanie rozszerzeń klienta za pomocą ogólny program obsługi, który przechwytuje wszystkie wyjątki, takie jak catch(exception) ani catch (bez określenia wyjątków).
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby rozwiązać to ostrzeżenie powinien wykonaj jedną z następujących czynności:
 
- 1. Usuń `HandleProcessCorruptedStateExceptions` atrybutu. Przywraca domyślne zachowanie środowiska uruchomieniowego, gdzie rozszerzeń klienta nie są przekazywane do obsługi catch.
+Aby rozwiązać tego ostrzeżenia, wykonaj jedną z następujących czynności:
 
- 2. Usuń program obsługi catch ogólne in preference of obsługi, które Przechwytuj typów określony wyjątek.  Może to obejmować rozszerzeń klienta, przy założeniu, że kod obsługi można bezpiecznie obsługiwać je (bardzo rzadko).
+- Usuń `HandleProcessCorruptedStateExceptions` atrybutu. Przywraca domyślne zachowanie środowiska uruchomieniowego, gdzie rozszerzeń klienta nie zostaną przekazane do obsługi catch.
 
- 3. Ponowne generowanie rozszerzenie klienta programu obsługi catch, który zapewnia wyjątek jest przekazywany do obiektu wywołującego i spowoduje zakończenie uruchomionego procesu.
+- Usuń procedurę obsługi catch ogólne, in preference of programów obsługi, które Przechwytuj typów wyjątków określonych. Może to obejmować rozszerzeń klienta, przy założeniu, że kod procedury obsługi bezpiecznie mógł je obsłużyć (rzadkiego).
+
+- Zgłoś ponownie rozszerzenie klienta w obsłudze catch, która zapewnia wyjątku jest przekazywany do obiektu wywołującego i spowoduje zakończenie uruchomionego procesu.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Nie pomijaj ostrzeżeń dla tej reguły.
+
+Nie pomijaj ostrzeżeń dla tej reguły.
 
 ## <a name="pseudo-code-example"></a>Przykładowy pseudo-kod
 
-### <a name="violation"></a>Naruszenie
- Poniższy pseudo-kod przedstawia wzorzec wykryte przez tę regułę.
+### <a name="violation"></a>Naruszenie zasad
 
-```
+Poniższy pseudo-kod przedstawiono wzorzec wykryte przez tę regułę.
+
+```csharp
 [HandleProcessCorruptedStateExceptions]
-//method to handle and log CSE exceptions
+// Method to handle and log CSE exceptions.
 void TestMethod1()
 {
     try
@@ -64,15 +68,16 @@ void TestMethod1()
     }
     catch (Exception e)
     {
-        // Handle error
+        // Handle error.
     }
 }
 ```
 
 ### <a name="solution-1"></a>Rozwiązanie 1
- Usuwanie atrybutu HandleProcessCorruptedExceptions gwarantuje, że wyjątki będą nie obsługiwane.
 
-```
+Usuwanie atrybutu HandleProcessCorruptedExceptions gwarantuje, że wyjątki będą nie obsługiwane.
+
+```csharp
 void TestMethod1()
 {
     try
@@ -81,19 +86,20 @@ void TestMethod1()
     }
     catch (IOException e)
     {
-        // Handle error
+        // Handle error.
     }
     catch (UnauthorizedAccessException e)
     {
-        // Handle error
+        // Handle error.
     }
 }
 ```
 
 ### <a name="solution-2"></a>Rozwiązanie 2
- Usuń obsługi catch ogólne i catch tylko typów określonych wyjątków.
 
-```
+Usuń procedurę obsługi catch ogólne i przechwytywać tylko typy określonego wyjątku.
+
+```csharp
 void TestMethod1()
 {
     try
@@ -102,19 +108,20 @@ void TestMethod1()
     }
     catch (IOException e)
     {
-        // Handle error
+        // Handle error.
     }
     catch (UnauthorizedAccessException e)
     {
-        // Handle error
+        // Handle error.
     }
 }
 ```
 
 ### <a name="solution-3"></a>Rozwiązanie 3
- Ponowne zgłoszenie wyjątku.
 
-```
+Zgłoś ponownie wyjątek.
+
+```csharp
 void TestMethod1()
 {
     try
@@ -123,7 +130,7 @@ void TestMethod1()
     }
     catch (Exception e)
     {
-        // Handle error
+        // Handle error.
         throw;
     }
 }

@@ -14,16 +14,20 @@ ms.assetid: 1002748d-ac8d-404f-85dd-7a12d1ad3e05
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: bf38fde258a033fd4050e93d3ad69015f365dc60
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5bff984d9ea11ba8fd7f2e42deb5898f04da7d44
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31899990"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548490"
 ---
 # <a name="ca1050-declare-types-in-namespaces"></a>CA1050: Deklaruj typy w przestrzeni nazw
+
 |||
 |-|-|
 |TypeName|DeclareTypesInNamespaces|
@@ -32,25 +36,25 @@ ms.locfileid: "31899990"
 |Zmiana kluczowa|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
- Typu publiczne lub chronione jest zdefiniowany poza zakresem nazwanych przestrzeni nazw.
+ Typ publiczny lub chroniony jest zdefiniowana poza zakresem o nazwie przestrzeni nazw.
 
 ## <a name="rule-description"></a>Opis reguły
- Typ został zadeklarowany w przestrzeni nazw, aby uniknąć konfliktów nazw, jak i sposób organizowania powiązanych typów w hierarchii obiektów. Typy, które są poza nazwanych przestrzeni nazw znajdują się w globalnej przestrzeni nazw, która nie może być przywoływany w kodzie.
+ Typy są deklarowane w przestrzeni nazw, aby zapobiec kolizjom nazw oraz jako sposób organizowania typów powiązanych w hierarchii obiektów. Typy, które wykraczają poza dowolnego obszaru nazw, o nazwie znajdują się w globalnej przestrzeni nazw, który nie można się odwoływać w kodzie.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej reguły, umieść typ w przestrzeni nazw.
+ Aby naprawić naruszenie tej zasady, należy umieścić w przestrzeni nazw typu.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Chociaż nie trzeba pominąć ostrzeżenie od tej reguły, jest bezpieczne, gdy zestaw nigdy nie będzie można używać razem z innych zestawów.
+ Mimo, że masz nigdy nie Pomijaj ostrzeżeń dla tej reguły, jest bezpieczne to zrobić, gdy zestaw nigdy nie będzie używany wraz z innymi zestawami.
 
 ## <a name="example"></a>Przykład
- W poniższym przykładzie przedstawiono biblioteki, która ma typ niepoprawnie zadeklarowany poza obszar nazw i typ, który ma taką samą nazwę zadeklarowana w przestrzeni nazw.
+ Poniższy przykład pokazuje, biblioteki, która ma typ niepoprawnie zadeklarowanej na zewnątrz przestrzeni nazw i typ, który ma taką samą nazwę, zadeklarowany w przestrzeni nazw.
 
  [!code-csharp[FxCop.Design.TypesLiveInNamespaces#1](../code-quality/codesnippet/CSharp/ca1050-declare-types-in-namespaces_1.cs)]
  [!code-vb[FxCop.Design.TypesLiveInNamespaces#1](../code-quality/codesnippet/VisualBasic/ca1050-declare-types-in-namespaces_1.vb)]
 
 ## <a name="example"></a>Przykład
- Biblioteka, która została zdefiniowana wcześniej aplikację. Należy pamiętać, że typ, który jest zadeklarowana poza przestrzeni nazw jest tworzone, gdy nazwa `Test` nie jest kwalifikowana przez przestrzeni nazw. Należy zauważyć, że dostęp do `Test` wpisz `Goodspace`, wymagana jest nazwa przestrzeni nazw.
+ Następująca aplikacja używa biblioteki, która została zdefiniowana wcześniej. Należy pamiętać, czy typ, który jest zadeklarowana poza przestrzeni nazw jest tworzone, gdy nazwa `Test` nie jest kwalifikowana przez obszar nazw. Należy zauważyć, że dostęp do `Test` wpisać `Goodspace`, wymagane jest podanie nazwy przestrzeni nazw.
 
  [!code-csharp[FxCop.Design.TestTypesLive#1](../code-quality/codesnippet/CSharp/ca1050-declare-types-in-namespaces_2.cs)]
  [!code-vb[FxCop.Design.TestTypesLive#1](../code-quality/codesnippet/VisualBasic/ca1050-declare-types-in-namespaces_2.vb)]

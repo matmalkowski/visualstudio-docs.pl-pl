@@ -15,59 +15,62 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b4f83e7754bcb96de05eac3273133cabbc8b8f61
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c81bd543a6695adcea37db5ab8570ff7749c0160
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917830"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551457"
 ---
 # <a name="ca1726-use-preferred-terms"></a>CA1726: Używaj preferowanych terminów
+
 |||
 |-|-|
 |TypeName|UsePreferredTerms|
 |CheckId|CA1726|
 |Kategoria|Microsoft.Naming|
-|Zmiana kluczowa|Dzielenie — po zestawów<br /><br /> Dzielenie non - po w parametrach typu|
+|Zmiana kluczowa|Istotne — gdy wywoływane zestawów<br /><br /> Podziału non - gdy wywoływane w parametrach typu|
 
 ## <a name="cause"></a>Przyczyna
- Nazwa widocznego na zewnątrz identyfikatora zawiera termin, dla którego istnieje alternatywny, preferowany zamiennik. Nazwa zawiera również termin flagi lub flagi.
+
+Nazwa widocznego na zewnątrz identyfikatora zawiera termin, dla którego istnieje alternatywny, preferowany zamiennik. Alternatywnie nazwa zawiera określenie Flag lub flag.
 
 ## <a name="rule-description"></a>Opis reguły
- Ta zasada analizuje identyfikator na tokeny. Każdego pojedynczego token i ciągłe kombinacja podwójną tokenu jest porównywany terminów, które są wbudowane w regule i w sekcji uznane za przestarzałe żadnych niestandardowych słowników. W poniższej tabeli przedstawiono warunki, które są wbudowane w zasady i ich preferowanego alternatyw.
+
+Ta reguła analizuje identyfikator na tokeny. Każdy pojedynczy token i ciągłe kombinację dwóch tokenu jest porównywany warunki, które są wbudowane w regule, jak i w sekcji uznane za przestarzałe słowników niestandardowych. W poniższej tabeli przedstawiono warunki, które są wbudowane w zasady i ich preferowany alternatyw.
 
 |Przestarzałe termin|Preferowany termin|
 |-------------------|--------------------|
-|nie są|AreNot|
-|Anulowane|Anulowane|
-|Nie można|Nie można|
-|ComPlus|EnterpriseServices|
-|Couldnt|CouldNot|
-|Didnt|DidNot|
-|Numer nie|Nie|
-|Nie|Nie|
-|Flaga lub flagi|Nie ma żadnego warunku zastąpienia. Nie używać.|
-|nie|HadNot|
-|Nie|HasNot|
-|nie zostało to jeszcze|HaveNot|
-|Indeksy|Indeksy|
-|nie jest|IsNot|
-|Logowanie|Logowanie|
-|Wyloguj|Wyloguj|
-|Shouldnt|ShouldNot|
-|Logować|Logowanie|
-|Wyrejestrowanie|Wyloguj się|
-|Wasnt|WasNot|
-|nie zostały|WereNot|
-|Nie można|Iść|
-|Wouldnt|WouldNot|
-|Zapisywalne|Zapisywalny|
+|`Arent`|`AreNot`|
+|`Cancelled`|`Canceled`|
+|`Cant`|`Cannot`|
+|`ComPlus`|`EnterpriseServices`|
+|`Couldnt`|`CouldNot`|
+|`Didnt`|`DidNot`|
+|`Doesnt`|`DoesNot`|
+|`Dont`|`DoNot`|
+|`Flag` lub `Flags`|Nie ma żadnych zastąpienie terminu. Nie używać.|
+|`Hadnt`|`HadNot`|
+|`Hasnt`|`HasNot`|
+|`Havent`|`HaveNot`|
+|`Indices`|`Indexes`|
+|`Isnt`|`IsNot`|
+|`LogIn`|`LogOn`|
+|`LogOut`|`LogOff`|
+|`Shouldnt`|`ShouldNot`|
+|`SignOn`|`SignIn`|
+|`SignOff`|`SignOut`|
+|`Wasnt`|`WasNot`|
+|`Werent`|`WereNot`|
+|`Wont`|`WillNot`|
+|`Wouldnt`|`WouldNot`|
+|`Writeable`|`Writable`|
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej reguły, Zamień termin na preferowany termin alternatywny.
+ Aby naprawić naruszenie tej zasady, Zamień termin na preferowany termin alternatywny.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Pomiń ostrzeżenie od tej zasady tylko wtedy, gdy nazwa identyfikatora jest zamierzone i dotyczy w szczególności pierwotny termin zamiast preferowanych terminów.
+ Pomijaj ostrzeżeń dla tej reguły, tylko wtedy, gdy nazwa identyfikatora jest zamierzone i dotyczy oryginalnej termin zamiast preferowany termin.
 
-## <a name="related-rules"></a>Powiązanych reguł
+## <a name="related-rules"></a>Powiązane reguły
  [Ostrzeżenia dotyczące nazewnictwa](../code-quality/naming-warnings.md)

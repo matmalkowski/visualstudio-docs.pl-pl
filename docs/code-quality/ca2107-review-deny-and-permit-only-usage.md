@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d777379cdf5dc5d6be36989f95aadd80ca757e69
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5ef4857b88c6e18b83cdc0e43bb1b8cf031221f4
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31915685"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45550115"
 ---
 # <a name="ca2107-review-deny-and-permit-only-usage"></a>CA2107: Przejrzyj użycie akcji Deny i Permit Only
 |||
@@ -32,49 +32,56 @@ ms.locfileid: "31915685"
 |Zmiana kluczowa|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
- Metoda zawiera kontrola zabezpieczeń, określająca akcji zabezpieczeń PermitOnly lub Odmów.
+ Metoda zawiera sprawdzanie zabezpieczeń, które określa akcji zabezpieczeń PermitOnly lub Odmów.
 
 ## <a name="rule-description"></a>Opis reguły
- <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName> Zabezpieczeń akcji powinna być używana tylko przez tych, którzy mają zaawansowanej wiedzy na temat programu [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] zabezpieczeń. Kod, który używa tych akcji zabezpieczeń, należy poddać przeglądowi zabezpieczeń.
+ <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName> Akcji zabezpieczeń powinny być używane tylko przez tych, którzy mają zaawansowaną wiedzę o [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] zabezpieczeń. Kod, który używa tych akcji zabezpieczeń, należy poddać przeglądowi zabezpieczeń.
 
- Odmów zmienia domyślne zachowanie przeszukiwania stosu, który występuje w odpowiedzi na żądanie zabezpieczeń. Umożliwia określenie uprawnień, które nie udziela na czas trwania odmawia metody, niezależnie od uprawnień wywołań w stosie wywołań. Jeśli przeszukiwana stosu wykrywa metody, która jest chroniony przez Odmów i żądane uprawnienie jest uwzględniony w odmówiono uprawnień, przeszukiwania stosu nie powiedzie się. PermitOnly również zmienia domyślne zachowanie przeszukiwania stosu. Dzięki temu kod, aby określić tylko te uprawnienia, które można otrzymać, niezależnie od uprawnień do wywoływania. Jeśli przeszukiwania stosu wykrywa metody, która jest chroniony przez PermitOnly i uprawnienia, które są określone przez PermitOnly nie ma wymaganego uprawnienia, przeszukiwania stosu nie powiedzie się.
+ Odmów zmienia domyślne zachowanie przeszukiwania stosu, który występuje w odpowiedzi na żądania zabezpieczeń. Dzięki temu można określić uprawnienia, które nie muszą być przyznawane na czas trwania odmowy metody, niezależnie od rzeczywistego uprawnień obiektów wywołujących w stosie wywołań. Jeśli przejście przez stos wykrywa metody, która jest zabezpieczony przez Odmów, a Jeśli żądane uprawnienie jest zawarte w odmówionych uprawnień, przejście przez stos nie powiedzie się. PermitOnly również zmienia domyślne zachowanie przeszukiwania stosu. Umożliwia ona kod, aby określić te uprawnienia, które mogą być udzielane, niezależnie od uprawnień obiektom wywołującym. Jeśli przejście przez stos wykrywa metody, która jest zabezpieczony przez PermitOnly i żądane uprawnienie nie jest uwzględniony w uprawnieniach, które są określone przez PermitOnly, przejście przez stos nie powiedzie się.
 
- Kod, który korzysta z tych akcji powinny być dokładnie oceniane pod kątem luk w zabezpieczeniach ze względu na ich ograniczone użyteczność i zachowanie niewielkie. Rozważ następujące opcje:
+ Kod, który opiera się na te akcje należy dokładnie ocenić dla luki w zabezpieczeniach ze względu na ograniczone użyteczność i zachowanie subtelne. Rozważ następujące opcje:
 
--   [Link zapotrzebowanie](/dotnet/framework/misc/link-demands) nie dotyczy Deny i PermitOnly.
+- [Link zapotrzebowanie](/dotnet/framework/misc/link-demands) nie dotyczy Deny lub PermitOnly.
 
--   Jeśli w tym samym ramki stosu jako żądanie, która powoduje występowanie przeszukiwania stosu występuje Deny i PermitOnly, akcje zabezpieczeń nie mają wpływu.
+- Jeśli Deny lub PermitOnly występuje w tej samej ramki stosu jako żądanie, która powoduje przejście przez stos, akcje zabezpieczeń nie mają wpływu.
 
--   Zazwyczaj można określić wartości, które są używane do konstruowania uprawnień na podstawie ścieżki na wiele sposobów. Odmowa dostępu do tego samego formularza ścieżki nie odmowa dostępu do wszystkich formularzy. Na przykład jeśli udział plików \\\Server\Share jest mapowany dysk sieciowy X:, aby odmówić dostępu do pliku w udziale, musi Odmów \\\Server\Share\File, X:\File i co ścieżki, który uzyskuje dostęp do pliku.
+- Zazwyczaj można określić wartości, które są używane do konstruowania uprawnień opartych na ścieżkę na wiele sposobów. Odmowa dostępu do tego samego formularza ścieżki nie odmowa dostępu do wszystkich formularzy. Na przykład jeśli udział pliku \\\Server\Share jest zamapowany dysk sieciowy X:, aby odmówić dostępu do plików w udziale, należy odmówić \\\Server\Share\File X:\File oraz każdej innej ścieżki, który uzyskuje dostęp do pliku.
 
--   <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName> Przed osiągnięciem Deny i PermitOnly może zakończyć przeszukiwania stosu.
+- <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName> Przed osiągnięciem Deny lub PermitOnly może zakończyć przeszukiwania stosu.
 
--   Jeśli odmowy ma wpływ, a mianowicie, gdy obiekt wywołujący ma uprawnienia, które jest zablokowana z powodu odmowy, wywołujący można dostępu do chronionego zasobu bezpośrednio, pomijanie Odmów. Podobnie jeśli element wywołujący nie ma odmówiono uprawnienia, przeszukiwania stosu nie powiedzie się bez Odmów.
+- Jeśli stan odmowa ma żadnego efektu, to znaczy, gdy obiekt wywołujący ma uprawnienie, który jest zablokowany przez Odmów, obiekt wywołujący można dostępu do chronionego zasobu bezpośrednio, pomijanie Odmów. Podobnie jeśli obiekt wywołujący nie ma odmowy uprawnień, przejście przez stos może zakończyć się niepowodzeniem bez Odmów.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Naruszenie spowoduje, że każde korzystanie z tych akcji zabezpieczeń. Aby naprawić naruszenie, nie należy używać tych akcji zabezpieczeń.
+ Naruszenie zasad spowoduje, że każde użycie tych akcji zabezpieczeń. Aby naprawić naruszenie, nie należy używać tych akcji zabezpieczeń.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Pomiń ostrzeżenie od tej reguły, dopiero po zakończeniu weryfikacji zabezpieczeń.
+ Pomijaj ostrzeżeń dla tej reguły, tylko w przypadku, po zakończeniu przeglądu zabezpieczeń.
 
-## <a name="example"></a>Przykład
+## <a name="example-1"></a>Przykład 1
  W poniższym przykładzie pokazano kilka ograniczeń Odmów.
 
- Następująca biblioteka zawiera klasy, która ma dwie metody, które są identyczne z wyjątkiem żądania kontroli zabezpieczeń, które je chronić.
+ Następująca biblioteka zawiera klasę, która ma dwie metody, które są identyczne, z wyjątkiem wymogów bezpieczeństwa, które je chronić.
 
  [!code-csharp[FxCop.Security.PermitAndDeny#1](../code-quality/codesnippet/CSharp/ca2107-review-deny-and-permit-only-usage_1.cs)]
 
-## <a name="example"></a>Przykład
- Następującej aplikacji pokazuje skutków Odmów zabezpieczonych metod z biblioteki.
+## <a name="example-2"></a>Przykład 2
+ Następującej aplikacji przedstawia skutki Odmów zabezpieczonej metod z biblioteki.
 
  [!code-csharp[FxCop.Security.TestPermitAndDeny#1](../code-quality/codesnippet/CSharp/ca2107-review-deny-and-permit-only-usage_2.cs)]
 
- W tym przykładzie tworzy następujące dane wyjściowe.
+Ten przykład generuje następujące wyniki:
 
- **Żądanie: Odmów wywołującego nie ma wpływu na żądanie z uprawnieniem potwierdzone. ** 
- **LinkDemand: Odmów wywołującego nie ma wpływu na żądanie LinkDemand z uprawnieniem potwierdzone.** 
- **LinkDemand: Odmów wywołującego nie obowiązuje kodem chronionej przez żądanie LinkDemand.** 
- **LinkDemand: odmowa ten nie ma wpływu kodem chronionej przez żądanie LinkDemand.**
-## <a name="see-also"></a>Zobacz też
- <xref:System.Security.CodeAccessPermission.PermitOnly%2A?displayProperty=fullName> <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName> <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName> <xref:System.Security.IStackWalk.PermitOnly%2A?displayProperty=fullName> [Wytyczne dotyczące bezpiecznego programowania](/dotnet/standard/security/secure-coding-guidelines)
+```txt
+Demand: Caller's Deny has no effect on Demand with the asserted permission.
+LinkDemand: Caller's Deny has no effect on LinkDemand with the asserted permission.
+LinkDemand: Caller's Deny has no effect with LinkDemand-protected code.
+LinkDemand: This Deny has no effect with LinkDemand-protected code.
+```
 
+## <a name="see-also"></a>Zobacz także
+
+- <xref:System.Security.CodeAccessPermission.PermitOnly%2A?displayProperty=fullName>
+- <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName>
+- <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName>
+- <xref:System.Security.IStackWalk.PermitOnly%2A?displayProperty=fullName>
+- [Wytyczne dotyczące bezpiecznego programowania](/dotnet/standard/security/secure-coding-guidelines)

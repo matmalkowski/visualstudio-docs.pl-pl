@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: feafc7d53e8d450bc980b6d842e9c2a5f0ade2e4
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: 4f395d146b01548d90cf74dc67b4ea8fda1bcade
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468819"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551757"
 ---
 # <a name="profile-python-code"></a>Profiluj kod języka Python
 
@@ -37,7 +37,7 @@ Po wybraniu **OK**, program profilujący jest uruchamiany i otwiera raport wydaj
 | ![Ikona aparatu film wideo](../install/media/video-icon.png "Obejrzyj klip wideo") | [Obejrzyj film wideo (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Profiling-Python-s6FoC6LWE_1005918567) demonstracyjne Python profilowania (3 m 00s).|
 
 > [!Note]
-> Obecnie program Visual Studio obsługuje tylko na tym poziomie profilowania pełnej aplikacji, ale chcemy poznać Twoją opinię na temat przyszłych funkcji bez obaw. Użyj [ **Prześlij opinię o produkcie** przycisk](#feedback) u dołu tej strony.
+> Obecnie program Visual Studio obsługuje tylko na tym poziomie profilowania pełnej aplikacji, ale chcemy poznać Twoją opinię na temat przyszłych funkcji bez obaw. Użyj [ **opinie o produkcie** przycisk](#feedback) u dołu tej strony.
 
 ## <a name="profiling-for-ironpython"></a>Profilowanie w przypadku v Ironpythonu
 
@@ -45,4 +45,4 @@ Ponieważ IronPython interpreterem na podstawie języka CPython, powyżej funkcj
 
 Zamiast tego należy użyć profilera Visual Studio .NET, uruchamiając *ipy.exe* bezpośrednio w aplikacji docelowej za pomocą odpowiednie argumenty do uruchomienia skryptu uruchamiania. Obejmują `-X:Debug` w wierszu polecenia, aby upewnij się, że wszystkie Twoje Python kod może być debugowania i profilowania. Ten argument wygenerowanie raportu dotyczącego wydajności, w tym czas środowiska uruchomieniowego IronPython i kodu. Twój kod jest identyfikowany przy użyciu zniekształcone nazwy.
 
-Alternatywnie IronPython ma kilka swój własny profilowanie wbudowana, ale nie ma obecnie nie dobrej Wizualizator dla niego. Zobacz [Profiler IronPython](http://blogs.msdn.com/b/curth/archive/2009/03/29/an-ironpython-profiler.aspx) (blogi MSDN) na co jest dostępne.
+Alternatywnie IronPython ma kilka swój własny profilowanie wbudowana, ale nie ma obecnie nie dobrej Wizualizator dla niego. Zobacz [Profiler IronPython](https://blogs.msdn.microsoft.com/curth/2009/03/30/an-ironpython-profiler/) (blogi MSDN) na co jest dostępne.

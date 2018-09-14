@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f3dcac11312b15049c743d596914b06819000801
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bc5c3432c13850c1fcd619629ef0368d4e78126e
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31915965"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45550508"
 ---
 # <a name="ca1600-do-not-use-idle-process-priority"></a>CA1600: Nie używaj priorytetu procesu bezczynności
 |||
@@ -32,13 +32,13 @@ ms.locfileid: "31915965"
 |Zmiana kluczowa|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
- Tej reguły występuje, gdy procesy są ustawione na `ProcessPriorityClass.Idle`.
+ Ta reguła jest uruchamiana podczas procesów są ustawione na `ProcessPriorityClass.Idle`.
 
 ## <a name="rule-description"></a>Opis reguły
- Nie należy ustawiać priorytetu procesu na Idle. Procesy, które mają `System.Diagnostics.ProcessPriorityClass.Idle` będą używać Procesora, gdy byłby bezczynności i w związku z tym będzie blokować stan wstrzymania.
+ Nie należy ustawiać priorytetu procesu na Idle. Procesy, które mają `System.Diagnostics.ProcessPriorityClass.Idle` , zajmują Procesor, może być bezczynne, a zatem będą blokować stan wstrzymania.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
  Ustaw procesy `ProcessPriorityClass.BelowNormal`.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Ta reguła ma być pomijana, tylko wtedy, gdy jest wymagane priorytetu procesu bezczynności i zagadnienia mobilności można bezpiecznie zignorować.
+ Ta reguła ma być pomijana, tylko wtedy, gdy priorytetu procesu bezczynności jest wymagany i zagadnienia dotyczące mobilności można bezpiecznie zignorować.

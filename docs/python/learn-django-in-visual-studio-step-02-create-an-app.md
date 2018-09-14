@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d1458fc07bf90257ae2cc6f404d5d0661df01c18
-ms.sourcegitcommit: 9ea4b62163ad6be556e088da1e2a355f31366f39
+ms.openlocfilehash: 7e9f5506efb74735975bdddc6f1f5c483c1e5dea
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43995966"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547935"
 ---
 # <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>Krok 2: Tworzenie aplikacji Django z widoków i szablonów stron
 
@@ -125,7 +125,7 @@ Odpowiedź: W wyrażeń regularnych, które definiują wzorce adresów URL ^ ozn
 
 Jeśli nie używasz końcowe $ w wyrażeniu regularnym, podobnie jak w przypadku `^home`, a następnie dopasowuje wzorzec adresu URL *wszelkie* adresu URL, który rozpoczyna się od "home", takich jak "domowy", "przydzielaj", "homestead" i "home192837".
 
-Aby eksperymentować z różnych wyrażeń regularnych, spróbuj online narzędzia takie jak [regex101.com](https://regex101.com) na [pythex.org](http://www.pythex.org).
+Aby eksperymentować z różnych wyrażeń regularnych, spróbuj online narzędzia takie jak [regex101.com](https://regex101.com) na [pythex.org](https://www.pythex.org).
 
 ## <a name="step-2-3-render-a-view-using-html"></a>Krok 2-3: renderowania widoku przy użyciu języka HTML
 

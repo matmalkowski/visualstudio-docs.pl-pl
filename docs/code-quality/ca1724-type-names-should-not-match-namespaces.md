@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3944aba1a8b967e8da2bee007a4bbd4bacf4d6b1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c178558743ca69fb3b62eccaf8164e4b49167ad3
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31915831"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547571"
 ---
 # <a name="ca1724-type-names-should-not-match-namespaces"></a>CA1724: Nazwy typów nie powinny odpowiadać nazwom pól
 |||
@@ -35,10 +35,10 @@ ms.locfileid: "31915831"
  Nazwa typu odpowiada [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] nazwy przestrzeni nazw w porównania bez uwzględniania wielkości liter.
 
 ## <a name="rule-description"></a>Opis reguły
- Nazwy typów nie powinny odpowiadać nazwy przestrzeni nazw, które są zdefiniowane w [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] biblioteki klas. Naruszenie tej zasady może zmniejszyć użyteczność biblioteki.
+ Nazwy typów nie powinny odpowiadać nazwom przestrzeni nazw, które są zdefiniowane w [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] biblioteki klas. Naruszenie tej zasady może zmniejszyć użyteczność biblioteki.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
  Wybierz nazwę typu, który nie jest zgodna z nazwą elementu [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] biblioteki klas w przestrzeni nazw.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- W nowych wdrożeniach, Brak znanego scenariusze wystąpić, gdy należy pominąć ostrzeżenie od tej reguły. Aby pominąć to ostrzeżenie, należy rozważyć, jak użytkownicy biblioteki mogą być pomylone przez tej nazwy. Dla wysyłania bibliotek, może być konieczne pominąć ostrzeżenie od tej reguły.
+ W nowych wdrożeniach Brak znanego scenariusze wystąpić, gdy trzeba Pomijaj ostrzeżeń dla tej reguły. Zanim można pominąć to ostrzeżenie, zastanów się, jak użytkownicy biblioteki mogą być pomylone według tej nazwy. Do wysłania biblioteki, trzeba będzie Pomijaj ostrzeżeń dla tej reguły.

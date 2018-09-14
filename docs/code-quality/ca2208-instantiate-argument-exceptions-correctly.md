@@ -14,16 +14,21 @@ ms.assetid: e2a48939-d9fa-478c-b2f9-3bdbce07dff7
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CPP
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: cc4a13746182136e10cb550bb7235a8bad2528fd
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f7a10d126d5432a80b146fe2086c01064d83006e
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31919130"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547438"
 ---
 # <a name="ca2208-instantiate-argument-exceptions-correctly"></a>CA2208: Utwórz poprawne wystąpienia wyjątków argumentów
+
 |||
 |-|-|
 |TypeName|InstantiateArgumentExceptionsCorrectly|
@@ -32,48 +37,50 @@ ms.locfileid: "31919130"
 |Zmiana kluczowa|Bez podziału|
 
 ## <a name="cause"></a>Przyczyna
- Możliwe przyczyny: w następujących sytuacjach:
 
--   Wywołanie domyślnego (bezparametrowego) konstruktora typu wyjątku, który jest lub pochodzi z <xref:System.ArgumentException>.
+Możliwe przyczyny: w następujących sytuacjach:
 
--   Argument niepoprawny ciąg jest przekazywany do konstruktora sparametryzowane typu wyjątku, który jest lub pochodzi z <xref:System.ArgumentException>.
+- Połączenie jest nawiązywane w przypadku domyślnego (bezparametrowego) konstruktora typu wyjątku, który jest lub pochodzi od klasy <xref:System.ArgumentException>.
+
+- Niepoprawny argument ciągu jest przekazywany do sparametryzowania konstruktora typu wyjątku, który jest lub pochodzi od klasy <xref:System.ArgumentException>.
 
 ## <a name="rule-description"></a>Opis reguły
- Zamiast wywoływania domyślnego konstruktora, wywoływanie jednego z przeciążeń konstruktora, które umożliwia bardziej zrozumiałej komunikat o wyjątku mają zostać podane. Komunikat o wyjątku powinien celem dewelopera i wyjaśniają warunek błędu i jak rozwiązać lub uniknąć wyjątek.
 
- Podpisy jeden i dwa parametry konstruktorów <xref:System.ArgumentException> i jego typów pochodnych nie są spójne w odniesieniu do `message` i `paramName` parametrów. Upewnij się, że te konstruktory są nazywane z argumentami poprawny ciąg. Podpisy są następujące:
+Zamiast wywoływania domyślnego konstruktora, należy wywołać jedną z przeciążeń konstruktora, które umożliwia bardziej zrozumiały komunikat o wyjątku należy podać. Komunikat o wyjątku powinien docelowe dewelopera i wyjaśniają warunek błędu i jak rozwiązać lub uniknąć wyjątku.
 
- <xref:System.ArgumentException>(ciąg `message`)
+Podpisy konstruktorów ciąg jednego i dwa z <xref:System.ArgumentException> i jego typów pochodnych nie są zgodne w odniesieniu do `message` i `paramName` parametrów. Upewnij się, że te konstruktory są wywoływane z argumentami prawidłowy ciąg. Podpisy są następujące:
 
- <xref:System.ArgumentException>(ciąg `message`, ciąg `paramName`)
+ <xref:System.ArgumentException>(string `message`)
 
- <xref:System.ArgumentNullException>(ciąg `paramName`)
+ <xref:System.ArgumentException>(string `message`, ciąg `paramName`)
 
- <xref:System.ArgumentNullException>(ciąg `paramName`, ciąg `message`)
+ <xref:System.ArgumentNullException>(string `paramName`)
 
- <xref:System.ArgumentOutOfRangeException>(ciąg `paramName`)
+ <xref:System.ArgumentNullException>(string `paramName`, ciąg `message`)
 
- <xref:System.ArgumentOutOfRangeException>(ciąg `paramName`, ciąg `message`)
+ <xref:System.ArgumentOutOfRangeException>(string `paramName`)
 
- <xref:System.DuplicateWaitObjectException>(ciąg `parameterName`)
+ <xref:System.ArgumentOutOfRangeException>(string `paramName`, ciąg `message`)
 
- <xref:System.DuplicateWaitObjectException>(ciąg `parameterName`, ciąg `message`)
+ <xref:System.DuplicateWaitObjectException>(string `parameterName`)
+
+ <xref:System.DuplicateWaitObjectException>(string `parameterName`, ciąg `message`)
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Ustalenie naruszenie tej reguły, wywołać konstruktora, który pobiera komunikat i/lub nazwę parametru i upewnij się, że argumenty są odpowiednie dla typu <xref:System.ArgumentException> wywoływane.
+ Aby naprawić naruszenie tej reguły, wywołanie konstruktora przyjmującego komunikat i/lub nazwę parametru i upewnij się, argumenty są odpowiednie dla typu <xref:System.ArgumentException> wywoływana.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Jest bezpieczne pominąć ostrzeżenie od tej zasady tylko w przypadku, gdy sparametryzowanym konstruktorze została wywołana z argumentami poprawny ciąg.
+ Jest bezpieczne pominąć ostrzeżenie od tej reguły, tylko wtedy, gdy jest to sparametryzowania konstruktora jest wywoływana z argumentami prawidłowy ciąg.
 
-## <a name="example"></a>Przykład
- W poniższym przykładzie przedstawiono niepoprawnie tworzącym wystąpienie typu argumentnullexception — konstruktora.
+## <a name="example-1"></a>Przykład 1
+ Poniższy przykład pokazuje konstruktora, który jest niepoprawnie tworzy wystąpienie typu ArgumentNullException.
 
  [!code-cpp[FxCop.Usage.InstantiateArgumentExceptionsCorrectly#1](../code-quality/codesnippet/CPP/ca2208-instantiate-argument-exceptions-correctly_1.cpp)]
  [!code-csharp[FxCop.Usage.InstantiateArgumentExceptionsCorrectly#1](../code-quality/codesnippet/CSharp/ca2208-instantiate-argument-exceptions-correctly_1.cs)]
  [!code-vb[FxCop.Usage.InstantiateArgumentExceptionsCorrectly#1](../code-quality/codesnippet/VisualBasic/ca2208-instantiate-argument-exceptions-correctly_1.vb)]
 
-## <a name="example"></a>Przykład
- Poniższy przykład rozwiązuje powyżej naruszenie przełączając argumentów konstruktora.
+## <a name="example-2"></a>Przykład 2
+ Poniższy przykład naprawia powyżej naruszenie, przełączając argumentach konstruktora.
 
  [!code-cpp[FxCop.Usage.InstantiateArgumentExceptionsCorrectly#2](../code-quality/codesnippet/CPP/ca2208-instantiate-argument-exceptions-correctly_2.cpp)]
  [!code-csharp[FxCop.Usage.InstantiateArgumentExceptionsCorrectly#2](../code-quality/codesnippet/CSharp/ca2208-instantiate-argument-exceptions-correctly_2.cs)]

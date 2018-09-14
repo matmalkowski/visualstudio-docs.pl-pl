@@ -1,4 +1,10 @@
 ### YamlMime:XRefMap
+ms.openlocfilehash: 580ff7b4e99e79aa146a4c3d15eec255b3ae84f1
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.translationtype: MT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "24752197"
 hrefUpdated: true
 references:
 - uid: EnvDTE80
@@ -18,14 +24,14 @@ references:
 - uid: Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction.Invoke*
   commentId: M:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction.Invoke(System.Threading.CancellationToken)
   href: https://msdn.microsoft.com/library/microsoft.visualstudio.language.intellisense.isuggestedaction.invoke.aspx
-  name: Invoke
+  name: wywoływanie
   name.vb: Invoke
   fullName: ISuggestedAction.Invoke
   fullName.vb: ISuggestedAction.Invoke
 - uid: Microsoft.VisualStudio.Shell.OleMenuCommand.Text*
   commentId: P:Microsoft.VisualStudio.Shell.OleMenuCommand.Text
   href: https://msdn.microsoft.com/library/microsoft.visualstudio.shell.olemenucommand.text.aspx
-  name: Text
+  name: Tekst
   name.vb: Text
   fullName: OleMenuCommand.Text
   fullName.vb: OleMenuCommand.Text
@@ -39,7 +45,7 @@ references:
 - uid: System.Activator.CreateInstance*
   commentId: Overload:System.Activator.CreateInstance
   href: https://msdn.microsoft.com/library/system.activator.createinstance.aspx
-  name: CreateInstance
+  name: CreateInstance —
   name.vb: CreateInstance
   fullName: Activator.CreateInstance
   fullName.vb: Activator.CreateInstance
@@ -67,7 +73,7 @@ references:
 - uid: Microsoft.Office.Tools.Excel.ControlCollection.AddControl*
   commentId: Overload:Microsoft.Office.Tools.Excel.ControlCollection.AddControl
   href: https://msdn.microsoft.com/library/microsoft.office.tools.excel.controlcollection.addcontrol.aspx
-  name: AddControl
+  name: addControl
   name.vb: AddControl
   fullName: ControlCollection.AddControl
   fullName.vb: ControlCollection.AddControl
@@ -88,7 +94,7 @@ references:
 - uid: Microsoft.Office.Tools.Word.ControlCollection.AddControl*
   commentId: Overload:Microsoft.Office.Tools.Word.ControlCollection.AddControl
   href: https://msdn.microsoft.com/library/microsoft.office.tools.word.controlcollection.addcontrol.aspx
-  name: AddControl
+  name: addControl
   name.vb: AddControl
   fullName: ControlCollection.AddControl
   fullName.vb: ControlCollection.AddControl
@@ -116,7 +122,7 @@ references:
 - uid: Microsoft.VisualStudio.SharePoint.IAnnotationDictionary.Add*
   commentId: Overload:Microsoft.VisualStudio.SharePoint.IAnnotationDictionary.Add
   href: https://msdn.microsoft.com/library/microsoft.visualstudio.sharepoint.iannotationdictionary.add.aspx
-  name: Add
+  name: Dodaj
   name.vb: Add
   fullName: IAnnotationDictionary.Add
   fullName.vb: IAnnotationDictionary.Add
@@ -137,14 +143,14 @@ references:
 - uid: Microsoft.VisualStudio.SharePoint.ISharePointProjectItemCollection.Add*
   commentId: Overload:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemCollection.Add
   href: https://msdn.microsoft.com/library/microsoft.visualstudio.sharepoint.isharepointprojectitemcollection.add.aspx
-  name: Add
+  name: Dodaj
   name.vb: Add
   fullName: ISharePointProjectItemCollection.Add
   fullName.vb: ISharePointProjectItemCollection.Add
 - uid: Microsoft.VisualStudio.SharePoint.Features.IPropertyCollection.Add*
   commentId: Overload:Microsoft.VisualStudio.SharePoint.Features.IPropertyCollection.Add
   href: https://msdn.microsoft.com/library/microsoft.visualstudio.sharepoint.features.ipropertycollection.add.aspx
-  name: Add
+  name: Dodaj
   name.vb: Add
   fullName: IPropertyCollection.Add
   fullName.vb: IPropertyCollection.Add
@@ -242,21 +248,21 @@ references:
 - uid: System.Runtime.Serialization.ISerializable.GetObjectData
   commentId: M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
   href: https://msdn.microsoft.com/library/system.runtime.serialization.iserializable.getobjectdata.aspx
-  name: GetObjectData
+  name: Metodę GetObjectData
   name.vb: GetObjectData
   fullName: .ISerializable.GetObjectData
   fullName.vb: .ISerializable.GetObjectData
 - uid: Microsoft.Office.Tools.CustomTaskPaneCollection.Add*
   commentId: Overload:Microsoft.Office.Tools.CustomTaskPaneCollection.Add
   href: https://msdn.microsoft.com/library/microsoft.office.tools.customtaskpanecollection.add.aspx
-  name: Add
+  name: Dodaj
   name.vb: Add
   fullName: CustomTaskPaneCollection.Add
   fullName.vb: CustomTaskPaneCollection.Add
 - uid: Microsoft.Office.Tools.CustomTaskPane.Dispose*
   commentId: Overload:Microsoft.Office.Tools.CustomTaskPane.Dispose
   href: https://msdn.microsoft.com/library/microsoft.office.tools.customtaskpane.dispose.aspx
-  name: Dispose
+  name: Metody Dispose
   name.vb: Dispose
   fullName: CustomTaskPane.Dispose
   fullName.vb: CustomTaskPane.Dispose

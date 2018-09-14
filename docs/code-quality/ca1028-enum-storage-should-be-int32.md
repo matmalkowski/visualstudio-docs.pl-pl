@@ -14,16 +14,20 @@ ms.assetid: 87160825-9f39-4142-8d7f-a31fe7ac7b84
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: f0f9dec006f3684259541811e905eaf75a790c3a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 51e4177b01dc15177b74394d6967651905da2122
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31900291"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547831"
 ---
 # <a name="ca1028-enum-storage-should-be-int32"></a>CA1028: Pamięć wyliczenia powinna być Int32
+
 |||
 |-|-|
 |TypeName|EnumStorageShouldBeInt32|
@@ -32,36 +36,36 @@ ms.locfileid: "31900291"
 |Zmiana kluczowa|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
- Nie jest typem podstawowym Wyliczenie publiczne <xref:System.Int32?displayProperty=fullName>.
+ Nie jest podstawowym typem wyliczenia publiczne <xref:System.Int32?displayProperty=fullName>.
 
 ## <a name="rule-description"></a>Opis reguły
- Wyliczenie to typ wartości, który definiuje zestaw powiązanych, nazwanych stałych. Domyślnie <xref:System.Int32?displayProperty=fullName> — typ danych jest używany do przechowywania wartości stałej. Mimo że można go zmienić typ podstawowy, nie jest konieczne ani zalecana dla większości scenariuszy. Należy pamiętać, że nie są bardziej wydajne istotne jest realizowane za pośrednictwem typu danych, która jest mniejsza niż <xref:System.Int32>. Jeśli nie możesz użyć domyślnego typu danych, należy użyć jednej wspólnej systemu języka (CLS)-zgodne typy całkowite, <xref:System.Byte>, <xref:System.Int16>, <xref:System.Int32>, lub <xref:System.Int64> aby upewnić się, że wszystkie wartości wyliczenia można przedstawić w Zgodne ze specyfikacją CLS języków programowania.
+ Wyliczenie to typ wartości, który definiuje zestaw powiązanych, nazwanych stałych. Domyślnie <xref:System.Int32?displayProperty=fullName> typ danych jest używany do przechowywania wartości stałej. Mimo że możesz to zmienić, typ podstawowy, nie jest wymagane lub zalecane w przypadku większości scenariuszy. Należy pamiętać, że żadnych korzyści istotnie poprawiającą wydajność odbywa się za pomocą typu danych, który jest mniejszy niż <xref:System.Int32>. Jeśli nie możesz użyć domyślnego typu danych, należy użyć jednej wspólnej systemu Language (CLS)-zgodnych typów całkowitych <xref:System.Byte>, <xref:System.Int16>, <xref:System.Int32>, lub <xref:System.Int64> aby upewnić się, że wszystkie wartości wyliczenia mogą być reprezentowane w Zgodne ze specyfikacją CLS języków programowania.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby rozwiązać naruszenie tej reguły, o ile istnieją problemy rozmiaru lub zgodność, należy użyć <xref:System.Int32>. W sytuacjach, gdy <xref:System.Int32> nie jest wystarczająco duży, aby pomieścić wartości, użyj <xref:System.Int64>. Jeśli zgodność z poprzednimi wersjami wymaga na mniejszy typ danych, należy użyć <xref:System.Byte> lub <xref:System.Int16>.
+ Aby naprawić naruszenie tej reguły, chyba że występują problemy z rozmiar lub zgodność, należy użyć <xref:System.Int32>. W sytuacjach, gdzie <xref:System.Int32> nie jest wystarczająco duży, aby przechowywać wartości, użyj <xref:System.Int64>. Jeśli zgodność ze starszymi wersjami wymaga mniejszych typów danych, należy użyć <xref:System.Byte> lub <xref:System.Int16>.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Pomiń ostrzeżenie od tej zasady tylko wtedy, gdy problemy ze zgodnością z poprzednimi wersjami tego wymagają. W aplikacjach brak zgodności z tą regułą zazwyczaj nie powoduje problemów. W bibliotekach, w którym wymagany jest współdziałanie języków, brak zgodności z tą regułą może niekorzystnie wpłynąć na użytkowników.
+ Pomijaj ostrzeżeń dla tej reguły, tylko wtedy, gdy problemy ze zgodnością z poprzednimi wersjami tego wymagają. W aplikacjach Niezachowanie zgodności z tą regułą, zazwyczaj nie powoduje problemów. W bibliotekach, gdy wymagana jest współdziałanie języków, brak zgodności z tą regułą może niekorzystnie wpłynąć na użytkowników.
 
 ## <a name="example-of-a-violation"></a>Przykładem naruszenia
 
 ### <a name="description"></a>Opis
- Poniższy przykład przedstawia dwa wyliczenia, które nie korzystają z zalecanych podstawowy typ danych.
+ Poniższy przykład przedstawia dwa wyliczenia, które nie korzystają z zalecanych odpowiedniego typu danych.
 
 ### <a name="code"></a>Kod
  [!code-vb[FxCop.Design.EnumIntegralType#1](../code-quality/codesnippet/VisualBasic/ca1028-enum-storage-should-be-int32_1.vb)]
  [!code-csharp[FxCop.Design.EnumIntegralType#1](../code-quality/codesnippet/CSharp/ca1028-enum-storage-should-be-int32_1.cs)]
 
-## <a name="example-of-how-to-fix"></a>Przykładem do naprawy
+## <a name="example-of-how-to-fix"></a>Przykład działania do naprawy
 
 ### <a name="description"></a>Opis
- Poniższy przykład poprawki poprzedniej naruszenie, zmieniając typ podstawowy danych do <xref:System.Int32>.
+ Poniższy przykład naprawia wcześniejszego naruszenia praw, zmieniając odpowiedniego typu danych w celu <xref:System.Int32>.
 
 ### <a name="code"></a>Kod
  [!code-csharp[FxCop.Design.EnumIntegralTypeFixed#1](../code-quality/codesnippet/CSharp/ca1028-enum-storage-should-be-int32_2.cs)]
  [!code-vb[FxCop.Design.EnumIntegralTypeFixed#1](../code-quality/codesnippet/VisualBasic/ca1028-enum-storage-should-be-int32_2.vb)]
 
-## <a name="related-rules"></a>Powiązanych reguł
+## <a name="related-rules"></a>Powiązane reguły
  [CA1008: Wyliczenia powinny zawierać wartość zero](../code-quality/ca1008-enums-should-have-zero-value.md)
 
  [CA1027: Oznacz typy wyliczeniowe atrybutem Flags](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
@@ -72,5 +76,9 @@ ms.locfileid: "31900291"
 
  [CA1712: Nie poprzedzaj wartości wyliczenia nazwą typu](../code-quality/ca1712-do-not-prefix-enum-values-with-type-name.md)
 
-## <a name="see-also"></a>Zobacz też
- <xref:System.Byte?displayProperty=fullName> <xref:System.Int16?displayProperty=fullName> <xref:System.Int32?displayProperty=fullName> <xref:System.Int64?displayProperty=fullName>
+## <a name="see-also"></a>Zobacz także
+
+- <xref:System.Byte?displayProperty=fullName>
+- <xref:System.Int16?displayProperty=fullName>
+- <xref:System.Int32?displayProperty=fullName>
+- <xref:System.Int64?displayProperty=fullName>

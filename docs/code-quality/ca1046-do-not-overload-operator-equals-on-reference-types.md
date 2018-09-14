@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6809534d14b58d60759133e972b5220fcfd58d61
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3f0aeb519fdc22d3fb68812d24979c7aa6c23f85
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31899753"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551710"
 ---
 # <a name="ca1046-do-not-overload-operator-equals-on-reference-types"></a>CA1046: Nie przeciążaj operatora equals w typach referencyjnych
+
 |||
 |-|-|
 |TypeName|DoNotOverloadOperatorEqualsOnReferenceTypes|
@@ -32,16 +33,16 @@ ms.locfileid: "31899753"
 |Zmiana kluczowa|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
- Typ publicznego lub zagnieżdżone odwołanie do publicznego overloads operatora równości.
+ Odwołanie do publicznego lub publiczny zagnieżdżony typ przeciążenia operatora równości.
 
 ## <a name="rule-description"></a>Opis reguły
  Dla typów odwołań domyślna implementacja operatora równości jest prawie zawsze poprawna. Domyślnie dwa odwołania są równe tylko wtedy, gdy wskazują ten sam obiekt.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby rozwiązać naruszenie tej reguły, Usuń implementacji operatora równości.
+ Aby naprawić naruszenie tej zasady, Usuń implementacja operatora równości.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Jest to bezpieczne Pomiń ostrzeżenie od tej reguły, gdy typ referencyjny zachowuje się jak typ wbudowany wartości. Jeśli jest to przydatne w celu dodawania lub odejmowania na wystąpienie typu, jest prawdopodobnie poprawna wdrożenia operator równości i Pomiń naruszenie.
+ Jest bezpieczne pominąć ostrzeżenie od tej reguły, gdy typ odwołania, który zachowuje się jak określonym wbudowanym typie wartości. Jeśli jest to istotne w celu dodawania lub odejmowania na wystąpienia typu, jest prawdopodobnie poprawna, implementuje operatora równości i pominąć naruszenia.
 
 ## <a name="example"></a>Przykład
  W poniższym przykładzie pokazano domyślne zachowanie podczas porównywania dwóch odwołań.
@@ -49,18 +50,25 @@ ms.locfileid: "31899753"
  [!code-csharp[FxCop.Design.RefTypesNoEqualityOp#1](../code-quality/codesnippet/CSharp/ca1046-do-not-overload-operator-equals-on-reference-types_1.cs)]
 
 ## <a name="example"></a>Przykład
- Następującej aplikacji porównuje niektórych odwołań.
 
- [!code-csharp[FxCop.Design.TestRefTypesNoEqualityOp#1](../code-quality/codesnippet/CSharp/ca1046-do-not-overload-operator-equals-on-reference-types_2.cs)]
+Następująca aplikacja porównuje niektórych odwołań.
 
- W tym przykładzie tworzy następujące dane wyjściowe.
+[!code-csharp[FxCop.Design.TestRefTypesNoEqualityOp#1](../code-quality/codesnippet/CSharp/ca1046-do-not-overload-operator-equals-on-reference-types_2.cs)]
 
- **= Nowy (2,2), b = nowy (2,2) są takie same? Nie**
-**c i są takie same? Tak**
-**b i są ==? Nie**
-**c i czy ==? Tak**
-## <a name="related-rules"></a>Powiązanych reguł
- [CA1013: Dokonaj przeciążenia operatora równości przy przeciążaniu operatorów dodawania i odejmowania](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md)
+Ten przykład generuje następujące wyniki:
 
-## <a name="see-also"></a>Zobacz też
- <xref:System.Object.Equals%2A?displayProperty=fullName> [Operatory porównania](/dotnet/standard/design-guidelines/equality-operators)
+```txt
+a = new (2,2) and b = new (2,2) are equal? No
+c and a are equal? Yes
+b and a are == ? No
+c and a are == ? Yes
+```
+
+## <a name="related-rules"></a>Powiązane reguły
+
+[CA1013: Dokonaj przeciążenia operatora równości przy przeciążaniu operatorów dodawania i odejmowania](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md)
+
+## <a name="see-also"></a>Zobacz także
+
+- <xref:System.Object.Equals%2A?displayProperty=fullName>
+- [Operatory równości](/dotnet/standard/design-guidelines/equality-operators)

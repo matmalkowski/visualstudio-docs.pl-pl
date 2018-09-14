@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 340b0e7deb12d4568a76d4871eabd49641926dcb
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ebb37743f9259390aba400a5d89d24b5f41a0d49
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31920365"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45546983"
 ---
 # <a name="ca2123-override-link-demands-should-be-identical-to-base"></a>CA2123: Przesłonięcia żądań konsolidacji powinny być identyczne z bazowym
+
 |||
 |-|-|
 |TypeName|OverrideLinkDemandsShouldBeIdenticalToBase|
@@ -32,23 +33,25 @@ ms.locfileid: "31920365"
 |Zmiana kluczowa|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
- Publiczne lub chronione metody w typie publicznego zastępuje metodę lub implementuje interfejs, a nie ma takie same [Linkdemand](/dotnet/framework/misc/link-demands) jako interfejs lub metoda wirtualna.
+ Metoda publiczna lub chroniona w typie publicznym zastępuje metody lub implementuje interfejs i nie ma takie same [zapotrzebowania na łącza](/dotnet/framework/misc/link-demands) jako interfejs lub metoda wirtualna.
 
 ## <a name="rule-description"></a>Opis reguły
- Ta reguła dopasowuje metodę do jej metody podstawowej, która jest interfejsem lub metodą wirtualną innego typu, a następnie porównuje zapotrzebowania na łącza na każdym z nich. Naruszenie jest zgłaszany, gdy metodę lub metody podstawowej ma żądanie łącza, a drugi nie.
+ Ta reguła dopasowuje metodę do jej metody podstawowej, która jest interfejsem lub metodą wirtualną innego typu, a następnie porównuje zapotrzebowania na łącza na każdym z nich. Naruszenie zasad jest zgłaszany, jeśli metoda lub metoda podstawowa ma zapotrzebowania na łącza, a drugi nie.
 
- Jeżeli naruszenia tej reguły, wywołujący złośliwego można pominąć linkdemand przez wywołanie metody niezabezpieczona.
+ Jeśli zasada ta jest naruszona, złośliwy wywołujący może pominąć zapotrzebowanie na łącza przez wywołanie niezabezpieczonej metody.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej reguły, dotyczą tego samego linkdemand zastąpić te metody lub wdrożenia. Jeśli nie jest to możliwe, oznacz metodę z pełne żądanie lub całkowicie Usuń atrybut.
+ Aby naprawić naruszenie tej zasady, dotyczą tego samego zapotrzebowania na łącza metodę przesłaniającą lub implementacji. Jeśli nie jest to możliwe, oznacz metodę z pełnego żądania lub całkowicie Usuń atrybut.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
  Nie pomijaj ostrzeżeń dla tej reguły.
 
 ## <a name="example"></a>Przykład
- W poniższym przykładzie przedstawiono różne naruszeń tej reguły.
+ Poniższy przykład pokazuje różne naruszenie tej zasady.
 
  [!code-csharp[FxCop.Security.OverridesAndSecurity#1](../code-quality/codesnippet/CSharp/ca2123-override-link-demands-should-be-identical-to-base_1.cs)]
 
-## <a name="see-also"></a>Zobacz też
- [Wytyczne dotyczące bezpiecznego programowania](/dotnet/standard/security/secure-coding-guidelines) [Link wymagań](/dotnet/framework/misc/link-demands)
+## <a name="see-also"></a>Zobacz także
+
+- [Wytyczne dotyczące bezpiecznego programowania](/dotnet/standard/security/secure-coding-guidelines)
+- [Zapotrzebowanie na łącza](/dotnet/framework/misc/link-demands)

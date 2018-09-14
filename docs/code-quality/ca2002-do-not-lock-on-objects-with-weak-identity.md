@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 7708f5e968fed8765ca27bff99d479957927440b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0ddeb32032f7fbd6ff088980c342405261e5b473
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31916557"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548468"
 ---
 # <a name="ca2002-do-not-lock-on-objects-with-weak-identity"></a>CA2002: Nie należy blokować obiektów z słabą tożsamością
 
@@ -36,13 +36,13 @@ ms.locfileid: "31916557"
 
 ## <a name="cause"></a>Przyczyna
 
-Wątek próbuje uzyskać blokady obiektu, który ma słabej tożsamości.
+Wątek próbuje uzyskać blokadę na obiekcie o słabej tożsamości.
 
 ## <a name="rule-description"></a>Opis reguły
 
 Obiekt ma słabą tożsamość, gdy można uzyskać do niego bezpośredni dostęp poza granicami domeny aplikacji. Wątek, który próbuje uzyskać blokadę na obiekcie o słabej tożsamości, może zostać zablokowany przez drugi wątek w domenie innej aplikacji, która ma blokady dla tego samego obiektu.
 
-Następujące typy mają słaby tożsamości i są oznaczone przez regułę:
+Następujące typy ma słabą tożsamość i są oznaczone przez regułę:
 
 - <xref:System.String>
 
@@ -64,26 +64,26 @@ Następujące typy mają słaby tożsamości i są oznaczone przez regułę:
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 
-Aby rozwiązać naruszenie tej reguły, użyj obiektu z typem, który nie jest na liście w sekcji Opis.
+Aby naprawić naruszenie tej zasady, użyj obiektu z typem, który nie ma na liście w sekcji Opis.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
 
 Nie pomijaj ostrzeżeń dla tej reguły.
 
-## <a name="related-rules"></a>Powiązanych reguł
+## <a name="related-rules"></a>Powiązane reguły
 
 [CA2213: Pola możliwe do likwidacji powinny zostać zlikwidowane](../code-quality/ca2213-disposable-fields-should-be-disposed.md)
 
 ## <a name="example"></a>Przykład
 
-W poniższym przykładzie przedstawiono niektóre blokady obiektu, które naruszają zasady.
+Poniższy przykład przedstawia niektóre blokady obiektu, które naruszają reguły.
 
 [!code-vb[FxCop.Reliability.LockWeakObjects#1](../code-quality/codesnippet/VisualBasic/ca2002-do-not-lock-on-objects-with-weak-identity_1.vb)]
 [!code-csharp[FxCop.Reliability.LockWeakObjects#1](../code-quality/codesnippet/CSharp/ca2002-do-not-lock-on-objects-with-weak-identity_1.cs)]
 
 ## <a name="see-also"></a>Zobacz także
 
-<xref:System.Threading.Monitor>
-<xref:System.AppDomain>
-[Lock — instrukcja (C#)](/dotnet/csharp/language-reference/keywords/lock-statement)
-[SyncLock — instrukcja (Visual Basic)](/dotnet/visual-basic/language-reference/statements/synclock-statement)
+- <xref:System.Threading.Monitor>
+- <xref:System.AppDomain>
+- [Lock — instrukcja (C#)](/dotnet/csharp/language-reference/keywords/lock-statement)
+- [SyncLock — instrukcja (Visual Basic)](/dotnet/visual-basic/language-reference/statements/synclock-statement)

@@ -19,14 +19,15 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 34c03adb8ff34d3590ed93264d77536c4cdff080
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a1db0f421f72e5b63b14c95a706b738bea1a4174
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31915572"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45550521"
 ---
 # <a name="ca1800-do-not-cast-unnecessarily"></a>CA1800: Nie przeprowadzaj niepotrzebnych operacji rzutowania
+
 |||
 |-|-|
 |TypeName|DoNotCastUnnecessarily|
@@ -35,31 +36,32 @@ ms.locfileid: "31915572"
 |Zmiana kluczowa|Bez podziału|
 
 ## <a name="cause"></a>Przyczyna
-Metoda wykonuje zduplikowanych rzutowań w jednym z jego argumentów lub zmiennych lokalnych.
+Metoda wykonuje zduplikowane rzutowania na jednym z jego argumentów ani zmiennych lokalnych.
 
-Do ukończenia analizy przez tę regułę przetestowany zestaw muszą zostać skompilowane przy użyciu informacji o debugowaniu, a program skojarzony plik bazy danych (.pdb) muszą być dostępne.
+Zakończenie analizy przez tę regułę przetestowane zestawu muszą zostać skompilowane przy użyciu informacji o debugowaniu, a plik bazy danych (PDB) programu skojarzone muszą być dostępne.
 
 ## <a name="rule-description"></a>Opis reguły
-Zduplikowane rzutowania zmniejszają wydajność, zwłaszcza gdy rzutowania są wykonywane w niedużej iteracji. Dla operacji jawnego rzutowania duplikatów Zapisz wynik rzutowania w zmiennej lokalnej i użyć zmiennej lokalnej zamiast operacji rzutowania zduplikowane.
+Zduplikowane rzutowania zmniejszają wydajność, zwłaszcza gdy rzutowania są wykonywane w niedużej iteracji. W przypadku jawnego rzutowania zduplikowanych operacji przechować wynik rzutowania w zmiennej lokalnej, a następnie użyć zmiennej lokalnej zamiast operacji zduplikowane rzutowania.
 
-Jeśli C# `is` operator używany do sprawdzania, czy rzutowanie powiedzie się przed wykonaniem rzeczywistego rzutowania należy wziąć pod uwagę testowanie `as` operator zamiast tego. To zapewnia te same funkcje bez wykonywanego przez operację niejawne rzutowanie `is` operatora. W języku C# w wersji 7.0 lub nowszy, należy użyć `is` operatora z [dopasowanie wzorca](/dotnet/csharp/language-reference/keywords/is#pattern-matching-with-is) można sprawdzić konwersji typu i rzutowania wyrażenia ze zmienną tego typu w jednym kroku.
+Jeśli C# `is` operator jest używany do sprawdzenia, czy rzutowanie zostanie wykonane pomyślnie, przed wykonaniem rzeczywiste rzutowania należy wziąć pod uwagę testowanie oddziaływania `as` operator zamiast tego. Dzięki temu te same funkcje bez operacji niejawne rzutowanie, która jest wykonywana przez `is` operatora. W języku C# 7.0 i nowszych, należy użyć `is` operator [dopasowywania do wzorca](/dotnet/csharp/language-reference/keywords/is#pattern-matching-with-is) sprawdzenia konwersji typu, i rzutowane wyrażenia do zmiennej tego typu w jednym kroku.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby rozwiązać naruszenie tej reguły, zmodyfikuj implementacji metody, aby zminimalizować liczbę operacji rzutowania.
+ Aby naprawić naruszenie tej zasady, należy zmodyfikować implementacji metody, aby zminimalizować liczbę operacji rzutowania.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Jest bezpieczne, aby pominąć ostrzeżenie od tej reguły lub całkowicie, ignorowanie reguły, jeśli wydajność nie ma znaczenia.
+ Jest bezpieczne, ostrzeżenia od tej reguły lub całkowicie, ignorowanie reguły, jeśli wydajność nie ma znaczenia.
 
 ## <a name="examples"></a>Przykłady
- W poniższym przykładzie przedstawiono metodę, która narusza regułę przy użyciu języka C# `is` operatora. Druga metoda spełnia reguły, zastępując `is` operatora z testem przed wynik `as` operatora, co zmniejsza liczbę operacji rzutowania na iteracji od dwóch do jednego. Trzecia metoda spełnia również reguły za pomocą `is` z [dopasowanie wzorca](/dotnet/csharp/language-reference/keywords/is#pattern-matching-with-is) utworzyć zmienną odpowiedniego typu, jeśli konwersja typu powiedzie się.
+ W poniższym przykładzie pokazano metodę, która narusza regułę przy użyciu języka C# `is` operatora. Druga metoda spełnia reguły, zastępując `is` operatora z testem względem wynik `as` operatora, co zmniejsza liczbę operacji rzutowania na iterację od dwóch do jednego. Trzecia metoda spełnia również reguły za pomocą `is` z [dopasowywania do wzorca](/dotnet/csharp/language-reference/keywords/is#pattern-matching-with-is) utworzyć zmienną żądanego typu, jeśli konwersja typu powiedzie się.
 
  [!code-csharp[FxCop.Performance.UnnecessaryCastsAsIs#1](../code-quality/codesnippet/CSharp/ca1800-do-not-cast-unnecessarily_1.cs)]
 
- W poniższym przykładzie przedstawiono metodę, `start_Click`, który ma wiele zduplikowanych rzutowań jawne, który narusza reguły i metody, `reset_Click`, które spełniają reguły, przechowując rzutowanie w zmiennej lokalnej.
+ W poniższym przykładzie pokazano metodę `start_Click`, ma wiele zduplikowanych ma jawnych rzutowań, który narusza regułę, a metoda `reset_Click`, spełniającego reguły, przechowując rzutowanie w zmiennej lokalnej.
 
  [!code-vb[FxCop.Performance.UnnecessaryCasts#1](../code-quality/codesnippet/VisualBasic/ca1800-do-not-cast-unnecessarily_2.vb)]
  [!code-csharp[FxCop.Performance.UnnecessaryCasts#1](../code-quality/codesnippet/CSharp/ca1800-do-not-cast-unnecessarily_2.cs)]
 
-## <a name="see-also"></a>Zobacz też
-[jako (odwołanie w C#)](/dotnet/csharp/language-reference/keywords/as)
-[jest (odwołanie w C#)](/dotnet/csharp/language-reference/keywords/is)
+## <a name="see-also"></a>Zobacz także
+
+- [jako (odwołanie w C#)](/dotnet/csharp/language-reference/keywords/as)
+- [jest (odwołanie w C#)](/dotnet/csharp/language-reference/keywords/is)

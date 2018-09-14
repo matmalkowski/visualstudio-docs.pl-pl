@@ -14,16 +14,20 @@ ms.assetid: 9e934746-1a4d-492a-91e4-085201abafa4
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 62270ac1917dea24586247ade5f8f5e802f84707
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0627d246fe9f9f72a95cded7daf8d2c94bf20b3a
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31914396"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45546970"
 ---
 # <a name="ca1501-avoid-excessive-inheritance"></a>CA1501: Unikaj nadmiernego dziedziczenia
+
 |||
 |-|-|
 |TypeName|AvoidExcessiveInheritance|
@@ -38,13 +42,13 @@ ms.locfileid: "31914396"
  Hierarchie typów głęboko zagnieżdżonych mogą być trudne do śledzenia, zrozumienia i utrzymania. Ta zasada ogranicza analizy do hierarchii, w tym samym module.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej reguły, typ lub pochodzić od typu podstawowego, który jest mniej głębokie w hierarchii dziedziczenia wyeliminować niektóre typy podstawowe pośrednich.
+ Aby naprawić naruszenie tej zasady, typ lub pochodzić od typu podstawowego, który jest mniej szczegółowa w hierarchii dziedziczenia eliminują część pośredniego typów podstawowych.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Jest bezpieczne pominąć ostrzeżenie od tej reguły. Jednak kod może być bardziej trudne w utrzymaniu. Należy pamiętać, że w zależności od widoczność typów podstawowych rozpoznawania naruszeń tej reguły może utworzyć najważniejszych zmian. Na przykład usunięcie publicznej typów podstawowych jest istotne zmiany.
+ Jest bezpieczne pominąć ostrzeżenie od tej reguły. Jednak kod może być trudne do utrzymania. Należy pamiętać, że w zależności od widoczność typów podstawowych, rozpoznawanie naruszenie tej zasady może utworzyć przełomowe zmiany. Na przykład usunięcie publicznej typów podstawowych jest istotną zmianę.
 
 ## <a name="example"></a>Przykład
- Poniższy przykład przedstawia typu, który narusza zasady.
+ Poniższy przykład pokazuje typ, który narusza regułę.
 
  [!code-csharp[FxCop.Maintainability.ExcessiveInheritance#1](../code-quality/codesnippet/CSharp/ca1501-avoid-excessive-inheritance_1.cs)]
  [!code-vb[FxCop.Maintainability.ExcessiveInheritance#1](../code-quality/codesnippet/VisualBasic/ca1501-avoid-excessive-inheritance_1.vb)]

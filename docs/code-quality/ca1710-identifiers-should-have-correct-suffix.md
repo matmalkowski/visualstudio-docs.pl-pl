@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f5e36fef8745e4068a8dd4ad9281a69aa653ed73
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 263870511715757c8771b0b596e443d82be91525
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917159"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549894"
 ---
 # <a name="ca1710-identifiers-should-have-correct-suffix"></a>CA1710: Identyfikatory powinny mieć poprawny przyrostek
+
 |||
 |-|-|
 |TypeName|IdentifiersShouldHaveCorrectSuffix|
@@ -32,14 +33,16 @@ ms.locfileid: "31917159"
 |Zmiana kluczowa|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
- Identyfikator nie ma odpowiedniego sufiksu.
+
+Identyfikator nie ma poprawny sufiks.
 
 ## <a name="rule-description"></a>Opis reguły
- Konwencja nazwy typów, które rozszerzać niektórych typów podstawowych lub zawierają implementację niektórych interfejsów lub typy pochodzące z tych typów mieć sufiks, który jest skojarzony z typu podstawowego lub interfejs.
 
- Konwencje nazewnictwa Podaj wygląd wspólnej dla bibliotek przeznaczonych środowisko uruchomieniowe języka wspólnego. Zmniejsza to nauki jest wymagany dla nowej biblioteki oprogramowania, którą można tworzyć bardziej niezawodne klienta, czy biblioteka został opracowany przez osobę, która ma doświadczenia w rozwijającym się kodu zarządzanego.
+Według Konwencji nazwy typów, które rozszerzają pewne typy podstawowe lub implementują określone interfejsy lub typy pochodzące z tych typów, mają sufiks, który jest skojarzony z typem bazowym lub interfejsem.
 
- W poniższej tabeli wymieniono typy podstawowe i interfejsy, które administrator skojarzył sufiksy.
+Konwencje nazewnictwa Obejmij wygląd wspólnych bibliotek obiektu docelowego środowiska uruchomieniowego języka wspólnego. Zmniejsza to nauki, jest wymagany dla nowe biblioteki oprogramowania, która zwiększa poziom zaufania klientów, że biblioteka został opracowany przez osobę, która ma doświadczenie w tworzenie kodu zarządzanego.
+
+W poniższej tabeli wymieniono typy podstawowe i interfejsy, które mają skojarzone sufiksy.
 
 |Interfejs podstawowy|Suffix|
 |--------------------------|------------|
@@ -49,8 +52,8 @@ ms.locfileid: "31917159"
 |<xref:System.Collections.ICollection?displayProperty=fullName>|Kolekcja|
 |<xref:System.Collections.IDictionary?displayProperty=fullName>|Słownik|
 |<xref:System.Collections.IEnumerable?displayProperty=fullName>|Kolekcja|
-|<xref:System.Collections.Queue?displayProperty=fullName>|Kolekcji lub kolejki|
-|<xref:System.Collections.Stack?displayProperty=fullName>|Kolekcji lub stosu|
+|<xref:System.Collections.Queue?displayProperty=fullName>|Kolekcja lub kolejki|
+|<xref:System.Collections.Stack?displayProperty=fullName>|Kolekcja lub stos|
 |<xref:System.Collections.Generic.ICollection%601?displayProperty=fullName>|Kolekcja|
 |<xref:System.Collections.Generic.IDictionary%602?displayProperty=fullName>|Słownik|
 |<xref:System.Data.DataSet?displayProperty=fullName>|DataSet|
@@ -58,38 +61,43 @@ ms.locfileid: "31917159"
 |<xref:System.IO.Stream?displayProperty=fullName>|Strumień|
 |<xref:System.Security.IPermission?displayProperty=fullName>|Uprawnienie|
 |<xref:System.Security.Policy.IMembershipCondition?displayProperty=fullName>|Warunek|
-|Delegat obsługi zdarzeń.|EventHandler|
+|Delegat programu obsługi zdarzeń.|EventHandler|
 
- Typy, które implementują <xref:System.Collections.ICollection> i są uogólniony typ struktury danych, takimi jak słownika, stack lub queue, są dozwolone nazw, które zawierają istotne informacje o zamierzone użycie typu.
+Typami, które implementują <xref:System.Collections.ICollection> i są uogólnionych typów struktury danych, takich jak słownik, stosu lub kolejki są dozwolone nazwy, które zawierają istotne informacje o zamierzone użycie tego typu.
 
- Typy, które implementują <xref:System.Collections.ICollection> i znajdują się, których nazwa kończy się wyrazem "Kolekcji" ma zbiór wybranych elementów. Na przykład kolekcja <xref:System.Collections.Queue> obiektów może mieć nazwy "QueueCollection". Z sufiksem "Collection" oznacza, że Członkowie kolekcji mogą być wyliczane przy użyciu `foreach` (`For Each` w [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) instrukcji.
+Typami, które implementują <xref:System.Collections.ICollection> i Kolekcja elementów określonego ma nazwy kończące się wyrazem "Collection". Na przykład zbiór <xref:System.Collections.Queue> obiekty będzie mieć nazwę "QueueCollection". Sufiks "Collection" oznacza, że elementy członkowskie kolekcji mogą być wyliczane przy użyciu `foreach` (`For Each` w [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) instrukcji.
 
- Typy, które implementują <xref:System.Collections.IDictionary> mają nazwy, które kończą się słowem "Słownik" nawet wtedy, gdy typ implementuje również <xref:System.Collections.IEnumerable> lub <xref:System.Collections.ICollection>. Konwencje nazewnictwa sufiksem "Collection" i "Słownik" Użytkownicy rozróżnienia następujące wzorce dwóch wyliczenia.
+Typami, które implementują <xref:System.Collections.IDictionary> ma nazwy kończące się wyrazem "Słownik", nawet jeśli typ implementuje również <xref:System.Collections.IEnumerable> lub <xref:System.Collections.ICollection>. Konwencje nazewnictwa sufiksem "Collection" i "Słownik" pozwalają użytkownikom na rozróżnienie między następujące wzorce dwóch wyliczenia.
 
- Typy z sufiksem "Collection" wykonaj tego wzorca wyliczenia.
+Typy z sufiksem "Collection" korzystać z tego wzoru wyliczenia.
 
 ```
 foreach(SomeType x in SomeCollection) { }
 ```
 
- Typy z sufiksem "Słownik" wykonaj tego wzorca wyliczenia.
+Typy z sufiksem "Słownik" korzystać z tego wzoru wyliczenia.
 
 ```
 foreach(SomeType x in SomeDictionary.Values) { }
 ```
 
- A <xref:System.Data.DataSet> obiekt składa się z kolekcją <xref:System.Data.DataTable> obiektów, które składają się z kolekcji <xref:System.Data.DataColumn?displayProperty=fullName> i <xref:System.Data.DataRow?displayProperty=fullName> obiektów, między innymi. Te kolekcje, wdrożenia <xref:System.Collections.ICollection> za pośrednictwem podstawowym <xref:System.Data.InternalDataCollectionBase?displayProperty=fullName> klasy.
+A <xref:System.Data.DataSet> obiekt składa się z kolekcją <xref:System.Data.DataTable> obiektów, które składają się z kolekcji <xref:System.Data.DataColumn?displayProperty=fullName> i <xref:System.Data.DataRow?displayProperty=fullName> obiektów, między innymi. Te kolekcje implementują <xref:System.Collections.ICollection> za pośrednictwem base <xref:System.Data.InternalDataCollectionBase?displayProperty=fullName> klasy.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Zmień nazwę typu, dzięki czemu jest on sufiks terminem poprawne.
+
+Tak, aby jako sufiks terminem poprawne, należy zmienić nazwę typu.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Jest bezpieczne pominąć ostrzeżenie do użycia z sufiksem "Collection", jeśli typ jest strukturą danych ogólnych, może zostać rozszerzony lub który będzie zawierać dowolny zestaw różnych elementów. W takim przypadku nazwę, która zawiera przydatne informacje dotyczące implementacji, wydajność lub z innymi charakterystykami struktury danych może być uzasadnione (na przykład BinaryTree). W przypadkach, gdy typ reprezentuje kolekcję określonego typu (na przykład StringCollection), nie Pomijaj ostrzeżenia od tej reguły, ponieważ sufiks wskazuje, że typ mogą być wyliczane przy użyciu `foreach` instrukcji.
 
- Dla innych sufiksów nie Pomijaj ostrzeżenia od tej reguły. Sufiks umożliwia przeznaczenia być widoczne z nazwy typu.
+Jest bezpieczne ostrzeżenia używać sufiksem "Collection", jeśli typ jest strukturą danych uogólniony, może zostać rozszerzony lub który będzie przechowywać dowolny zestaw różnych elementów. W tym przypadku nazwę, która zawiera istotne informacje dotyczące implementacji, wydajności i inne cechy charakterystyczne struktury danych może mieć sens (na przykład BinaryTree). W przypadkach, gdzie typ reprezentuje kolekcję określonego typu (na przykład właściwości StringCollection), nie Pomijaj ostrzeżeń dla tej reguły, ponieważ sufiks wskazuje, że typ mogą być wyliczane przy użyciu `foreach` instrukcji.
 
-## <a name="related-rules"></a>Powiązanych reguł
- [CA1711: Identyfikatory nie powinny mieć niepoprawnego sufiksu](../code-quality/ca1711-identifiers-should-not-have-incorrect-suffix.md)
+Dla innych sufiksów nazw głównych nie Pomijaj ostrzeżeń dla tej reguły. Sufiks umożliwia zamierzonego użycia, aby być widoczne na podstawie nazwy typu.
 
-## <a name="see-also"></a>Zobacz też
- [Atrybuty](/dotnet/standard/design-guidelines/attributes) [Obsługa i wywoływanie zdarzeń](/dotnet/standard/events/index)
+## <a name="related-rules"></a>Powiązane reguły
+
+[CA1711: Identyfikatory nie powinny mieć niepoprawnego sufiksu](../code-quality/ca1711-identifiers-should-not-have-incorrect-suffix.md)
+
+## <a name="see-also"></a>Zobacz także
+
+- [Atrybuty](/dotnet/standard/design-guidelines/attributes)
+- [Obsługa i wywoływanie zdarzeń](/dotnet/standard/events/index)

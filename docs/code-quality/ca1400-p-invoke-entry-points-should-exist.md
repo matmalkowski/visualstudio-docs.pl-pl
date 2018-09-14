@@ -1,5 +1,5 @@
 ---
-title: 'CA1400: Powinny istnieć punkty wejścia P Invoke'
+title: 'CA1400: Powinny istnieć punkty wejścia P-Invoke'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 36bd2e74b5abb021b66dda8ddd62260cc58fe181
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e7f3aaa373da4fbf13efcc1d836a6de688cc1117
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31901663"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549628"
 ---
 # <a name="ca1400-pinvoke-entry-points-should-exist"></a>CA1400: Powinny istnieć punkty wejścia P/Invoke
 |||
@@ -32,21 +32,21 @@ ms.locfileid: "31901663"
 |Zmiana kluczowa|Bez podziału|
 
 ## <a name="cause"></a>Przyczyna
- Metody publiczne lub chronione jest oznaczony atrybutem <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>. Nie można zlokalizować biblioteki niezarządzanej lub dopasować metody do funkcji w bibliotece. Jeśli reguła nie może znaleźć nazwę metody, dokładnie tak, jak określono, szuka ANSI lub wersji znaków dwubajtowych metody przez suffixing nazwę metody "" lub "W". Jeśli nie znaleziono, reguła próbuje zlokalizować funkcję przy użyciu formatu nazwy __stdcall (_MyMethod@12, gdzie 12 reprezentuje długość argumenty). Jeśli nie znaleziono nazwy metody rozpoczyna się od '#', reguły będzie przeszukiwana funkcji jako odwołanie do liczby porządkowej zamiast odwołania do nazwy.
+ Metoda publiczna lub chroniona jest oznaczona atrybutem <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>. Nie można zlokalizować biblioteki niezarządzanej lub dopasować metody do funkcji w bibliotece. Jeśli zasada nie można odnaleźć nazwy metody, dokładnie tak, jak zostało to określone, szuka ANSI lub wersjami szerokich znaków metody dodając nazwę metody z '' lub 'W'. Jeśli nie zostanie znalezione dopasowanie, reguła próbuje zlokalizować funkcję przy użyciu formatu nazwy __stdcall (_MyMethod@12, gdzie 12 reprezentuje długość argumentów). Jeśli nie zostanie znalezione dopasowanie, a nazwę metody zaczyna się od '#', reguła szuka funkcji jako odwołanie porządkowej zamiast nazwy odwołania.
 
 ## <a name="rule-description"></a>Opis reguły
- Bez sprawdzania kompilacji jest dostępny dla upewnij się, że metody oznaczone za pomocą <xref:System.Runtime.InteropServices.DllImportAttribute> znajdują się w bibliotece DLL niezarządzanych do którego istnieje odwołanie. Jeśli żadna funkcja, która ma określoną nazwę znajduje się w bibliotece lub argumentów dla metody są niezgodne z argumentów funkcji, środowisko uruchomieniowe języka wspólnego zgłasza wyjątek.
+ Sprawdzanie kompilacji nie jest dostępna dla upewnij się, że metody, które są oznaczone <xref:System.Runtime.InteropServices.DllImportAttribute> znajdują się w przywoływanych niezarządzaną biblioteką DLL. Jeśli żadna funkcja, która ma określoną nazwę znajduje się w bibliotece lub argumenty do metody nie są zgodne z argumentów funkcji, środowisko uruchomieniowe języka wspólnego generuje wyjątek.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby rozwiązać naruszenie tej reguły, Popraw metodę, która ma <xref:System.Runtime.InteropServices.DllImportAttribute> atrybutu. Upewnij się, czy biblioteka niezarządzane istnieje i znajduje się w tym samym katalogu co zestaw, który zawiera metodę. Biblioteka jest obecny i prawidłowo przywoływany, sprawdź, że nazwa metody, zwracany typ i podpisu argumentu zgodne funkcji biblioteki.
+ Aby naprawić naruszenie tej zasady, popraw metody, która ma <xref:System.Runtime.InteropServices.DllImportAttribute> atrybutu. Upewnij się, że biblioteki niezarządzanej istnieje i znajduje się w tym samym katalogu co zestaw, który zawiera metodę. Biblioteka jest obecny i prawidłowo przywoływany, sprawdź, czy nazwa metody, zwracany typ i podpisu argumentu odpowiadają funkcji biblioteki.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Nie pomijaj ostrzeżenie od tej reguły, gdy biblioteka niezarządzane znajduje się w tym samym katalogu co zestaw zarządzany, która odwołuje się on. Może być bezpiecznie pominąć ostrzeżenie od tej reguły w przypadku, gdy niezarządzany biblioteki nie można zlokalizować.
+ Nie pomijaj ostrzeżeń dla tej reguły, gdy biblioteką niezarządzaną znajduje się w tym samym katalogu co zestaw zarządzany, który odwołuje się do niej. Może być bezpiecznie Pomijaj ostrzeżeń dla tej reguły, w przypadku, gdy biblioteką niezarządzaną nie można zlokalizować.
 
 ## <a name="example"></a>Przykład
- Poniższy przykład przedstawia typu, który narusza zasady. Żadnej funkcji o nazwie `DoSomethingUnmanaged` występuje w kernel32.dll.
+ Poniższy przykład pokazuje typ, który narusza regułę. Brak funkcji o nazwie `DoSomethingUnmanaged` występuje w kernel32.dll.
 
  [!code-csharp[FxCop.Interoperability.DLLExists#1](../code-quality/codesnippet/CSharp/ca1400-p-invoke-entry-points-should-exist_1.cs)]
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
  <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>

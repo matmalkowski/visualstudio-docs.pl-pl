@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 2093f8a2f2d048661b7fb23f45c5317011f25076
-ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
+ms.openlocfilehash: 619ea075394305d81d2ffddb8ea1047d2a306ccc
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44124921"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548221"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Samouczek: Tworzenie środowiska Node.js i Express aplikacji w programie Visual Studio
 Tego samouczka do tworzenia aplikacji programu Visual Studio przy użyciu środowiska Node.js i Express służy do tworzenia prostą aplikację sieci web środowiska Node.js, Dodaj kod, zapoznaj się z niektórymi funkcjami środowiska IDE i uruchamiania aplikacji. Jeśli jeszcze nie zainstalowano programu Visual Studio, zainstaluj go bezpłatnie [tutaj](http://visualstudio.microsoft.com).
@@ -195,6 +195,8 @@ Następnie zamierzasz uruchomić aplikację w debugerze programu Visual Studio. 
 1. Wybierz cel debugowania na pasku narzędzi debugowania.
 
     ![Wybierz element docelowy debugowania](../javascript/media/tutorial-nodejs-deploy-target.png)
+
+    Aby dodać element docelowy innej przeglądarki, takich jak dla programu Chrome, zaznacz **przeglądanie za pomocą**.
 
 1. Naciśnij klawisz **F5** (**debugowania** > **Rozpocznij debugowanie**) do uruchamiania aplikacji.
 

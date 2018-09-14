@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4faed3f5d49c6c08ca0a9bc90465f4e21ef3fec8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e3c9b23e555d0752ee33f2031fb883bdf50ff897
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31916961"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549735"
 ---
 # <a name="ca1711-identifiers-should-not-have-incorrect-suffix"></a>CA1711: Identyfikatory powinny mieć poprawny przyrostek
+
 |||
 |-|-|
 |TypeName|IdentifiersShouldNotHaveIncorrectSuffix|
@@ -32,12 +33,14 @@ ms.locfileid: "31916961"
 |Zmiana kluczowa|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
- Identyfikator ma nieprawidłowy sufiks.
+
+Identyfikator ma niepoprawnego sufiksu.
 
 ## <a name="rule-description"></a>Opis reguły
- Według Konwencji szczególnych zarezerwowane sufiksy powinna kończyć tylko nazwy typów, które rozszerzać niektórych typów podstawowych lub zawierają implementację niektórych interfejsów lub typy pochodzące z tych typów. Inne nazwy typów nie powinny używać tych zarezerwowanych sufiksów.
 
- W poniższej tabeli wymieniono zastrzeżonych sufiksów i typy podstawowe i interfejsy, które są skojarzone.
+Według Konwencji nazwy typów, które rozszerzają pewne typy podstawowe lub implementują określone interfejsy lub typy pochodzące z tych typów, powinien kończyć się określonym zarezerwowanym sufiksem. Inne nazwy typów nie powinny używać tych zarezerwowanych sufiksów.
+
+W poniższej tabeli wymieniono zarezerwowanym sufiksem i typy podstawowe i interfejsy, z którymi są skojarzone.
 
 |Suffix|Interfejs podstawowy|
 |------------|--------------------------|
@@ -45,33 +48,38 @@ ms.locfileid: "31916961"
 |Kolekcja|<xref:System.Collections.ICollection?displayProperty=fullName><br /><br /> <xref:System.Collections.IEnumerable?displayProperty=fullName><br /><br /> <xref:System.Collections.Queue?displayProperty=fullName><br /><br /> <xref:System.Collections.Stack?displayProperty=fullName><br /><br /> <xref:System.Collections.Generic.ICollection%601?displayProperty=fullName><br /><br /> <xref:System.Data.DataSet?displayProperty=fullName><br /><br /> <xref:System.Data.DataTable?displayProperty=fullName>|
 |Słownik|<xref:System.Collections.IDictionary?displayProperty=fullName><br /><br /> <xref:System.Collections.Generic.IDictionary%602?displayProperty=fullName>|
 |EventArgs|<xref:System.EventArgs?displayProperty=fullName>|
-|EventHandler|Obiekt delegowany obsługi zdarzeń|
+|EventHandler|Delegat programu obsługi zdarzeń|
 |Wyjątek|<xref:System.Exception?displayProperty=fullName>|
 |Uprawnienie|<xref:System.Security.IPermission?displayProperty=fullName>|
-|Kolejki|<xref:System.Collections.Queue?displayProperty=fullName>|
+|kolejki|<xref:System.Collections.Queue?displayProperty=fullName>|
 |Stos|<xref:System.Collections.Stack?displayProperty=fullName>|
 |Strumień|<xref:System.IO.Stream?displayProperty=fullName>|
 
- Ponadto następujące sufiksy powinny **nie** można użyć:
+Ponadto następujące sufiksy powinny **nie** można użyć:
 
--   Delegate
+- `Delegate`
 
--   Wyliczenie
+- `Enum`
 
--   Impl — zamiast tego użyj "Core"
+- `Impl` (Użyj `Core` zamiast)
 
--   Ex lub podobne sufiks odróżniający go od wcześniejszej wersji tego samego typu
+- `Ex` lub podobny sufiksu w odróżnieniu od starszej wersji tego samego typu
 
- Konwencje nazewnictwa Podaj wygląd wspólnej dla bibliotek przeznaczonych środowisko uruchomieniowe języka wspólnego. Zmniejsza to nauki jest wymagany dla nowej biblioteki oprogramowania, którą można tworzyć bardziej niezawodne klienta, czy biblioteka został opracowany przez osobę, która ma doświadczenia w rozwijającym się kodu zarządzanego.
+Konwencje nazewnictwa Obejmij wygląd wspólnych bibliotek obiektu docelowego środowiska uruchomieniowego języka wspólnego. Zmniejsza to nauki, jest wymagany dla nowe biblioteki oprogramowania, która zwiększa poziom zaufania klientów, że biblioteka został opracowany przez osobę, która ma doświadczenie w tworzenie kodu zarządzanego.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Usuń sufiks z nazwą typu.
+
+Usuń sufiks z nazwą typu.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Nie pomijaj ostrzeżenia od tej reguły, chyba że sufiks ma znaczenie jednoznaczne w domenie aplikacji.
 
-## <a name="related-rules"></a>Powiązanych reguł
- [CA1710: Identyfikatory powinny mieć poprawny sufiks](../code-quality/ca1710-identifiers-should-have-correct-suffix.md)
+Nie pomijaj ostrzeżeń dla tej reguły, chyba że sufiksem ma jednoznaczną znaczenie w domenie aplikacji.
 
-## <a name="see-also"></a>Zobacz też
- [Atrybuty](/dotnet/standard/design-guidelines/attributes) [Obsługa i wywoływanie zdarzeń](/dotnet/standard/events/index)
+## <a name="related-rules"></a>Powiązane reguły
+
+- [CA1710: Identyfikatory powinny mieć poprawny sufiks](../code-quality/ca1710-identifiers-should-have-correct-suffix.md)
+
+## <a name="see-also"></a>Zobacz także
+
+- [Atrybuty](/dotnet/standard/design-guidelines/attributes)
+- [Obsługa i wywoływanie zdarzeń](/dotnet/standard/events/index)

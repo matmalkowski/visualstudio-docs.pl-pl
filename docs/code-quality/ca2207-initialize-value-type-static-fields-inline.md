@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 883e5d842346a0821b54b2b4eacad3cbc92028b6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a5730acf02cf12dce6d98e7cbd1b6f38f7ece05e
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917689"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45550573"
 ---
 # <a name="ca2207-initialize-value-type-static-fields-inline"></a>CA2207: Inicjowanie pól statycznych typu wartościowego
 |||
@@ -32,18 +32,18 @@ ms.locfileid: "31917689"
 |Zmiana kluczowa|Bez podziału|
 
 ## <a name="cause"></a>Przyczyna
- Typ wartości deklaruje jawny Konstruktor statyczny.
+ Typ wartości deklaruje jawny, statyczny Konstruktor.
 
 ## <a name="rule-description"></a>Opis reguły
- Po zadeklarowaniu jest typem wartości, ulega on inicjowanie domyślnych, gdzie wszystkie pola typu wartości zostaną ustawione na zero, a wszystkie pola typu odwołania są ustawione na `null` (`Nothing` w języku Visual Basic). Jawny Konstruktor statyczny jest gwarantowaną jedynie do uruchomienia przed konstruktora wystąpienia lub statyczny element członkowski tego typu jest nazywana. W związku z tym jeśli typ zostanie utworzona bez wywoływania konstruktora wystąpienia, Konstruktor statyczny nie jest gwarantowana do uruchomienia.
+ Gdy typ wartości jest zadeklarowany, wewnętrzny ulega inicjowanie domyślne, gdzie wszystkie pola typu wartości są ustawione na zero, a wszystkie pola typu odwołania są ustawione na `null` (`Nothing` w języku Visual Basic). Jawny, statyczny Konstruktor tylko jest gwarantowane do uruchomienia przed w konstruktorze wystąpienia lub statyczną składową typu jest wywoływana. W związku z tym jeśli typ jest tworzony bez wywoływania konstruktora wystąpienia, Konstruktor statyczny nie jest gwarantowane do uruchomienia.
 
- Jeśli wszystkie dane statyczne są wbudowane zainicjowane i zadeklarowano nie jawny Konstruktor statyczny, Dodaj Kompilatory języka C# i Visual Basic `beforefieldinit` flagi do definicji klasy MSIL. Kompilatory również dodać prywatnej Konstruktor statyczny zawierający kod inicjujący statycznych. Ten statyczny Konstruktor prywatny jest gwarantowana do uruchomienia przed uzyskaniem dostępu do dowolnego pola statyczne typu.
+ Jeśli wszystkie dane statyczne są wbudowane zainicjowane, a nie jawny, statyczny Konstruktor jest zadeklarowany, Kompilatory języka C# i Visual Basic Dodaj `beforefieldinit` flagi do definicji klasy MSIL. Kompilatory również dodać Konstruktor statyczny prywatny, zawierający kod inicjowania statycznych. Ten konstruktor statyczny prywatny jest gwarantowane, zanim wszystkie pola statyczne typu są dostępne.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby rozwiązać naruszenie tej reguły zainicjować wszystkie dane statyczne, kiedy zadeklarowano i Usuń Konstruktor statyczny.
+ Aby naprawić naruszenie tej zasady Zainicjuj wszystkie dane statyczne, gdy jest zadeklarowany i Usuń Konstruktor statyczny.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
  Nie pomijaj ostrzeżeń dla tej reguły.
 
-## <a name="related-rules"></a>Powiązanych reguł
+## <a name="related-rules"></a>Powiązane reguły
  [CA1810: Inicjuj pola statyczne typu referencyjnego śródwierszowo](../code-quality/ca1810-initialize-reference-type-static-fields-inline.md)

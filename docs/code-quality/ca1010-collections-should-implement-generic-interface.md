@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cb43481b80726171414fab6b6a65fee8a5e29cb0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f79a0e4fcb9cf4f82b85e9d62ffa51ef969293c7
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31902019"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551002"
 ---
 # <a name="ca1010-collections-should-implement-generic-interface"></a>CA1010: Kolekcje powinny implementować interfejs generyczny
 |||
@@ -32,60 +32,60 @@ ms.locfileid: "31902019"
 |Zmiana kluczowa|Bez podziału|
 
 ## <a name="cause"></a>Przyczyna
- Widoczne na zewnątrz typ implementuje <xref:System.Collections.IEnumerable?displayProperty=fullName> interfejsu, ale nie implementuje <xref:System.Collections.Generic.IEnumerable%601?displayProperty=fullName> interfejsu i celów zestawu zawierającego [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]. Ta zasada powoduje ignorowanie typów, które implementują <xref:System.Collections.IDictionary?displayProperty=fullName>.
+ Typ widoczny na zewnątrz implementuje <xref:System.Collections.IEnumerable?displayProperty=fullName> interfejsu, ale nie implementuje <xref:System.Collections.Generic.IEnumerable%601?displayProperty=fullName> interfejsu i zawierający obiekty docelowe zestawu [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]. Ta zasada powoduje ignorowanie typy, które implementują <xref:System.Collections.IDictionary?displayProperty=fullName>.
 
 ## <a name="rule-description"></a>Opis reguły
- Aby poszerzyć użyteczność kolekcji, zaimplementuj jeden z interfejsów kolekcji generycznej. Następnie Kolekcja może być używana do wypełniania typy kolekcji ogólnych, takie jak następujące:
+ Aby poszerzyć użyteczność kolekcji, zaimplementuj jeden z interfejsów kolekcji generycznej. Następnie Kolekcja może być używana, aby wypełnić typy generyczne kolekcji, takie jak następujące:
 
--   <xref:System.Collections.Generic.List%601?displayProperty=fullName>
+- <xref:System.Collections.Generic.List%601?displayProperty=fullName>
 
--   <xref:System.Collections.Generic.Queue%601?displayProperty=fullName>
+- <xref:System.Collections.Generic.Queue%601?displayProperty=fullName>
 
--   <xref:System.Collections.Generic.Stack%601?displayProperty=fullName>
+- <xref:System.Collections.Generic.Stack%601?displayProperty=fullName>
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej reguły, implementować jeden z następujących interfejsów kolekcji ogólnych:
+ Aby naprawić naruszenie tej zasady, należy zaimplementować jedną z następujących interfejsów kolekcji generycznej:
 
--   <xref:System.Collections.Generic.IEnumerable%601?displayProperty=fullName>
+- <xref:System.Collections.Generic.IEnumerable%601?displayProperty=fullName>
 
--   <xref:System.Collections.Generic.ICollection%601?displayProperty=fullName>
+- <xref:System.Collections.Generic.ICollection%601?displayProperty=fullName>
 
--   <xref:System.Collections.Generic.IList%601?displayProperty=fullName>
+- <xref:System.Collections.Generic.IList%601?displayProperty=fullName>
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Można bezpiecznie pominąć ostrzeżenie od tej reguły; Kolekcja będzie jednak bardziej ograniczone użycie.
+ Bezpiecznie Pomijaj ostrzeżeń dla tej reguły; Kolekcja będzie jednak bardziej ograniczone użycie.
 
-## <a name="example-violation"></a>Przykład naruszenie
+## <a name="example-violation"></a>Przykład naruszenia
 
 ### <a name="description"></a>Opis
- W poniższym przykładzie przedstawiono klasy (typ odwołania), która pochodzi z nieogólnego `CollectionBase` klasy, która narusza tę regułę.
+ W poniższym przykładzie pokazano klasę (typ odwołania), która pochodzi z inną niż ogólna `CollectionBase` klasy, która narusza tę regułę.
 
 ### <a name="code"></a>Kod
  [!code-csharp[FxCop.Design.CollectionsGenericViolation#1](../code-quality/codesnippet/CSharp/ca1010-collections-should-implement-generic-interface_1.cs)]
 
 ### <a name="comments"></a>Komentarze
- Aby naprawić naruszenie to naruszenie, powinien implementować interfejsów ogólnych lub zmień klasy podstawowej typu, który już implementuje zarówno ogólne i inny niż ogólny interfejsów, takich jak `Collection<T>` klasy.
+ Aby naprawić naruszenie tej naruszenia, należy zaimplementować interfejsów ogólnych lub Zmień klasę bazową do typu, który już implementuje zarówno ogólnych i nieogólnych interfejsy, takie jak `Collection<T>` klasy.
 
-## <a name="fix-by-base-class-change"></a>Rozwiązać przez zmianę w klasie podstawowej
+## <a name="fix-by-base-class-change"></a>Rozwiązać przez zmianę w klasie bazowej
 
 ### <a name="description"></a>Opis
- Poniższy przykład poprawia naruszenie, zmieniając klasy podstawowej kolekcji z nieogólnego `CollectionBase` klasy ogólnej `Collection<T>` (`Collection(Of T)` w [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) klasy.
+ Poniższy przykład naprawia naruszenia, zmieniając klasy bazowej kolekcji z inną niż ogólna `CollectionBase` klasy ogólnej `Collection<T>` (`Collection(Of T)` w [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) klasy.
 
 ### <a name="code"></a>Kod
  [!code-csharp[FxCop.Design.CollectionsGenericBase#1](../code-quality/codesnippet/CSharp/ca1010-collections-should-implement-generic-interface_2.cs)]
 
 ### <a name="comments"></a>Komentarze
- Zmiana klasy podstawowej klasy już zwolnione jest uznawane za istotną zmianę dla istniejących konsumentów.
+ Zmiana klasy bazowej klasy już wydana jest uznawane za istotną zmianę dla istniejących konsumentów.
 
-## <a name="fix-by-interface-implementation"></a>Usuń przez implementację interfejsu
+## <a name="fix-by-interface-implementation"></a>Napraw, implementacja interfejsu
 
 ### <a name="description"></a>Opis
- Poniższy przykład poprawia naruszenie zaimplementowanie te interfejsy ogólne: `IEnumerable<T>`, `ICollection<T>`, i `IList<T>` (`IEnumerable(Of T)`, `ICollection(Of T)`, i `IList(Of T)` w [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]).
+ Poniższy przykład naprawia naruszenia przez zaimplementowanie tych interfejsów ogólnych: `IEnumerable<T>`, `ICollection<T>`, i `IList<T>` (`IEnumerable(Of T)`, `ICollection(Of T)`, i `IList(Of T)` w [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]).
 
 ### <a name="code"></a>Kod
  [!code-csharp[FxCop.Design.CollectionsGenericInterface#1](../code-quality/codesnippet/CSharp/ca1010-collections-should-implement-generic-interface_3.cs)]
 
-## <a name="related-rules"></a>Powiązanych reguł
+## <a name="related-rules"></a>Powiązane reguły
  [CA1005: Unikaj nadużywania parametrów w typach ogólnych](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)
 
  [CA1000: Nie deklaruj składowych statycznych w typach ogólnych](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)
@@ -100,5 +100,5 @@ ms.locfileid: "31902019"
 
  [CA1007: Używaj typów ogólnych wszędzie tam, gdzie jest to odpowiednie](../code-quality/ca1007-use-generics-where-appropriate.md)
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
  [Typy ogólne](/dotnet/csharp/programming-guide/generics/index)

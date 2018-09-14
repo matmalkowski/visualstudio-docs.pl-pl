@@ -19,12 +19,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1de4f6a71394c38ef72224cfeacd23663b0bac7b
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: b158955c9730898c3624c9a832f5cc75c62ba338
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468660"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549654"
 ---
 # <a name="options-for-python-in-visual-studio"></a>Opcje dla języka Python w programie Visual Studio
 
@@ -46,7 +46,7 @@ Dostępne są również dodatkowe opcje specyficzne dla języka Python na **edyt
 | **Pokaż okno danych wyjściowych, podczas tworzenia środowisk wirtualnych**| On | Usuń zaznaczenie, aby zapobiec **dane wyjściowe** znajdujących się w oknie. |
 | **Pokaż okno dane wyjściowe podczas instalowania lub usuwania pakietów** | On | Usuń zaznaczenie, aby zapobiec **dane wyjściowe** znajdujących się w oknie. |
 | **Zawsze uruchamiaj pip jako administrator** | Off | Zawsze skutkująca podniesieniem uprawnień `pip install` operacje dla wszystkich środowisk. Podczas instalowania pakietów, Visual Studio monituje o uprawnienia administratora, jeśli środowisko znajduje się w obszarze chronionym systemu plików takich jak *c:\Program Files*. W wierszu polecenia, że użytkownik może zawsze podniesienie poziomu `pip install` danego tylko jednego środowiska. Zobacz [karcie pakiety](python-environments-window-tab-reference.md#packages-tab). |
-| **Automatyczne generowanie bazy danych uzupełniania przy pierwszym użyciu** | On | *Podczas korzystania z bazy danych IntelliSense, stosuje się do programu Visual Studio 2017 w wersji 15.5 i starszych i nowszych wersjach.* Priorytet uzupełniania bazy danych biblioteki podczas pisania kodu, który korzysta z niego. Aby uzyskać więcej informacji, zobacz [dokumentacja okna środowiska — karta Intellisense](python-environments-window-tab-reference.md). |
+| **Automatyczne generowanie bazy danych uzupełniania przy pierwszym użyciu** | On | *Podczas korzystania z bazy danych IntelliSense, stosuje się do programu Visual Studio 2017 w wersji 15.5 i starszych i nowszych wersjach.* Priorytet uzupełniania bazy danych biblioteki podczas pisania kodu, który korzysta z niego. Aby uzyskać więcej informacji, zobacz [karta Intellisense](python-environments-window-tab-reference.md#intellisense-tab). |
 | **Ignoruj zmienne PYTHONPATH całego systemu** | On | PYTHONPATH jest ignorowana domyślnie, ponieważ program Visual Studio zapewnia bardziej bezpośrednie oznacza, że do określania ścieżek wyszukiwania w środowiskach i projektów. Zobacz [ścieżki wyszukiwania](search-paths.md) Aby uzyskać szczegółowe informacje. |
 | **Aktualizowanie ścieżki wyszukiwania podczas dodawania plików połączonych** | On | Gdy ustawiona, dodając [połączonego pliku](managing-python-projects-in-visual-studio.md#linked-files) z projektem aktualizacje [ścieżki wyszukiwania](search-paths.md) tak, aby funkcja IntelliSense może zawierać zawartość folderu plików połączonych ze swojej bazy danych uzupełniania. Usuń zaznaczenie tej opcji, aby wykluczyć takiej zawartości z bazy danych uzupełniania. |
 | **Ostrzeżenie podczas importowania, że nie można odnaleźć modułu** | On | Wyczyść tę opcję, aby pominąć ostrzeżenia, gdy wiadomo, zaimportowanego modułu nie jest obecnie dostępna, ale w przeciwnym razie nie ma wpływu na działanie kodu. |
@@ -111,7 +111,7 @@ Dostępne są również dodatkowe opcje specyficzne dla języka Python na **edyt
 
 | Opcja | Domyślny | Opis |
 | --- | --- | --- |
-| **Zatwierdzone, wpisując następujące znaki** | **{}[]().,:; +-* / % &&#124;^ ~ = <> #@\\** | Te znaki wykonaj zazwyczaj identyfikator, który może wybrać z listy uzupełniania, dzięki czemu jest to wygodne potwierdzić zakończenie po prostu wpisując znak. Możesz usunąć lub dodać określonych znaków do listy zgodnie z potrzebami.  |
+| **Zatwierdzone, wpisując następujące znaki** | **{}\[\]().,:; +-* / % &&#124;^ ~ = <> #@\\** | Te znaki wykonaj zazwyczaj identyfikator, który może wybrać z listy uzupełniania, dzięki czemu jest to wygodne potwierdzić zakończenie po prostu wpisując znak. Możesz usunąć lub dodać określonych znaków do listy zgodnie z potrzebami.  |
 | **Wprowadź bieżące ukończenia zatwierdzenia** | On | Po ustawieniu **Enter** klucz wybiera i stosuje ukończenie aktualnie wybranego podobnie jak w powyższym znaków (ale oczywiście nie ma znak dla **Enter** więc nie można go bezpośrednio przejść do tej listy!). |
 | **Dodaj nowy wiersz po naciśnięciu klawisza enter na końcu pełnego wpisanego wyrazu** | Off | Domyślnie, jeśli wpiszesz cały wyraz, który pojawia się w menu podręczne ukończenia, a następnie naciśnij klawisz **Enter**, zatwierdzenia tej ukończenia. Przez ustawienie tej opcji, efektywnie zatwierdzić uzupełnienia po zakończeniu wpisywania identyfikatora, tak, aby **Enter** powoduje wstawienie nowego wiersza. |
 

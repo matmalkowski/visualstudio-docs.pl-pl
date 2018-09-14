@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bb38d11ca7312a7eda2ec4b516ab384741f9ab7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a11c5bdf6cd5d2c1e278d7e8943aa672621672cd
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917295"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551652"
 ---
 # <a name="ca2141transparent-methods-must-not-satisfy-linkdemands"></a>Metody CA2141:Transparent nie mogą spełniać LinkDemands
 |||
@@ -28,20 +28,20 @@ ms.locfileid: "31917295"
 |Zmiana kluczowa|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
- Metoda przezroczysty zabezpieczeń wywołuje metodę w zestawie, który nie jest oznaczony atrybutem <xref:System.Security.AllowPartiallyTrustedCallersAttribute> atrybutu (APTCA) lub metody przezroczysty zabezpieczeń spełnia <xref:System.Security.Permissions.SecurityAction> `.LinkDemand` dla typu lub metody.
+ Metoda przezroczysta pod względem bezpieczeństwa wywołuje metodę w zestawie, który nie jest oznaczony atrybutem <xref:System.Security.AllowPartiallyTrustedCallersAttribute> atrybutu (APTCA) lub metoda przezroczysta pod względem zabezpieczeń spełnia <xref:System.Security.Permissions.SecurityAction> `.LinkDemand` dla typu lub metody.
 
 ## <a name="rule-description"></a>Opis reguły
- Spełniające LinkDemand jest poufnych operacji zabezpieczeń, co może spowodować niezamierzoną podniesienie uprawnień. Kod o przezroczystym zabezpieczeń nie mogą spełniać LinkDemands, ponieważ nie podlega ona te same wymagania inspekcji zabezpieczeń jako kod krytyczny dla zabezpieczeń. Jawne metody w zestawach poziom 1 zestaw reguł zabezpieczeń spowoduje, że wszystkie LinkDemands spełniają ma zostać przekonwertowane na pełne wymagania w czasie wykonywania, co może spowodować problemy z wydajnością. W zestawy poziomu 2 zestaw reguł zabezpieczeń jawne metody zakończy się niepowodzeniem do skompilowania kompilatora just in time (JIT) przy próbie spełniają LinkDemand.
+ Spełnia LinkDemand jest poufnych operacji zabezpieczeń, który może spowodować niezamierzone podniesienie uprawnień. Przezroczysty kod zabezpieczeń nie mogą spełniać LinkDemands, ponieważ nie podlega ona te same wymagania inspekcji zabezpieczeń, jak kodu krytycznego dla zabezpieczeń. Metody w zestawy poziomu 1 zestaw reguł zabezpieczeń spowoduje, że wszystkie LinkDemands, że spełniają one do przekonwertowania w pełnych żądań w czasie wykonywania, co może powodować problemy z wydajnością. W zestawy poziomu 2 zestaw reguł zabezpieczeń metody przezroczyste zakończy się niepowodzeniem skompilować w kompilator just-in-time (JIT), przy próbie spełnia LinkDemand.
 
- W zestawach zgłasza tego usee zabezpieczeń poziomu 2, prób przez metodę przezroczysty zabezpieczeń spełniają LinkDemand lub wywołanie metody w zestawie-APTCA <xref:System.MethodAccessException>; w zestawach poziomu 1 LinkDemand staje się pełne żądanie.
+ W zestawach, które korzystają z zabezpieczeń na poziomie 2 próby ustalenia przez metoda przezroczysta pod względem zabezpieczeń spełnia żądanie LinkDemand lub wywołanie metody w zestawie APTCA nie zgłasza <xref:System.MethodAccessException>; w zestawach poziomu 1 żądanie LinkDemand staje się pełnego żądania.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej reguły, oznacz podczas uzyskiwania dostępu do metody z <xref:System.Security.SecurityCriticalAttribute> lub <xref:System.Security.SecuritySafeCriticalAttribute> atrybut lub usunąć LinkDemand z metody dostępu.
+ Aby naprawić naruszenie tej zasady, należy oznaczyć metody uzyskiwania dostępu do <xref:System.Security.SecurityCriticalAttribute> lub <xref:System.Security.SecuritySafeCriticalAttribute> atrybut lub Usuń żądanie LinkDemand z metody dostępu.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
  Nie pomijaj ostrzeżeń dla tej reguły.
 
 ## <a name="example"></a>Przykład
- W tym przykładzie przezroczysty — metoda podejmuje próbę wywołania metody, która ma LinkDemand. Ta reguła zostanie zastosowana dla tego kodu.
+ W tym przykładzie metoda przezroczysta pod względem próbuje wywołać metodę, która ma żądanie LinkDemand. Ta reguła zostanie zastosowana dla tego kodu.
 
  [!code-csharp[FxCop.Security.CA2141.TransparentMethodsMustNotSatisfyLinkDemands#1](../code-quality/codesnippet/CSharp/ca2141-transparent-methods-must-not-satisfy-linkdemands_1.cs)]

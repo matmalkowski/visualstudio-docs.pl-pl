@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 99d87f5b8a8a5ee0ad69b6f6d0da121799262c9f
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: ef83d9caebbeea1496a627282ba2c30b47cc0e22
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320972"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45552113"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Praca z językiem Python w programie Visual Studio na Windows
 
@@ -64,7 +64,7 @@ Informacje dodatkowe:
 
 ## <a name="interactive-window"></a>Okno interaktywne
 
-Dla każdego środowiska Python, wiadomo, że program Visual Studio możesz łatwo otworzyć tego samego środowiska interaktywnego (REPL) dla interpretera języka Python, bezpośrednio z poziomu programu Visual Studio, a nie przy użyciu oddzielnych wiersza polecenia. Można łatwo przełączać się między środowiskami, jak również. (Aby otworzyć osobnym wierszu polecenia, wybierz żądane środowiska w **środowiska Python** okna, następnie wybierz pozycję **Otwórz w programie PowerShell** polecenia jak wyjaśniono wcześniej w [pomocy technicznej dla wielu interpretery](#support-for-multiple=interpreters).)
+Dla każdego środowiska Python, wiadomo, że program Visual Studio możesz łatwo otworzyć tego samego środowiska interaktywnego (REPL) dla interpretera języka Python, bezpośrednio z poziomu programu Visual Studio, a nie przy użyciu oddzielnych wiersza polecenia. Można łatwo przełączać się między środowiskami, jak również. (Aby otworzyć osobnym wierszu polecenia, wybierz żądane środowiska w **środowiska Python** okna, następnie wybierz pozycję **Otwórz w programie PowerShell** polecenia jak wyjaśniono wcześniej w [pomocy technicznej dla wielu interpretery](#support-for-multipleiinterpreters).)
 
 ![Oknie interakcyjnym środowiska Python w programie Visual Studio](media/interactive-window.png)
 
@@ -161,11 +161,11 @@ A. W tej chwili nie możesz nawet głosować na żądanie, ale [UserVoice](https
 
 **PYTANIA I ODPOWIEDZI. Do czego można używać do tworzenia interfejsu użytkownika za pomocą języka Python?**
 
-A. Oferta głównego, w tym obszarze jest [projektu Qt](https://www.qt.io/qt-for-application-development/), powiązań dla języka Python, znane jako [PySide (oficjalna powiązania)](http://wiki.qt.io/PySide) (Zobacz też [PySide pliki do pobrania](https://download.qt.io/official_releases/pyside/.)) i [ PyQt](https://wiki.python.org/moin/PyQt). W chwili obecnej Obsługa w języku Python w programie Visual Studio nie ma żadnych określone narzędzia do tworzenia interfejsu użytkownika.
+A. Oferta głównego, w tym obszarze jest [projektu Qt](https://www.qt.io/qt-for-application-development/), powiązań dla języka Python, znane jako [PySide (oficjalna powiązania)](https://wiki.qt.io/PySide) (Zobacz też [PySide pliki do pobrania](https://download.qt.io/official_releases/pyside/.)) i [ PyQt](https://wiki.python.org/moin/PyQt). W chwili obecnej Obsługa w języku Python w programie Visual Studio nie ma żadnych określone narzędzia do tworzenia interfejsu użytkownika.
 
 **PYTANIA I ODPOWIEDZI. Projektu języka Python, mogą wygenerować autonomicznego pliku wykonywalnego?**
 
-A. Języka Python jest zwykle języku interpretowanych za pomocą którego kod jest uruchamiany na żądanie w odpowiednim środowisku obsługą języka Python, takie jak Visual Studio i serwery sieci web. Visual Studio nie obecnie udostępnia środki do utworzenia autonomicznego pliku wykonywalnego, co oznacza programu przy użyciu osadzonych interpreter języka Python. Jednak społeczności Python dostarczonych różne sposoby, aby utworzyć pliki wykonywalne, zgodnie z opisem na [StackOverflow](http://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency). CPython obsługuje również osadzona w aplikacji macierzystej, zgodnie z opisem na wpis w blogu [pliku zip możliwego do osadzenia przy użyciu CPython](https://blogs.msdn.microsoft.com/pythonengineering/2016/04/26/cpython-embeddable-zip-file/).
+A. Języka Python jest zwykle języku interpretowanych za pomocą którego kod jest uruchamiany na żądanie w odpowiednim środowisku obsługą języka Python, takie jak Visual Studio i serwery sieci web. Visual Studio nie obecnie udostępnia środki do utworzenia autonomicznego pliku wykonywalnego, co oznacza programu przy użyciu osadzonych interpreter języka Python. Jednak społeczności Python dostarczonych różne sposoby, aby utworzyć pliki wykonywalne, zgodnie z opisem na [StackOverflow](https://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency). CPython obsługuje również osadzona w aplikacji macierzystej, zgodnie z opisem na wpis w blogu [pliku zip możliwego do osadzenia przy użyciu CPython](https://blogs.msdn.microsoft.com/pythonengineering/2016/04/26/cpython-embeddable-zip-file/).
 
 ## <a name="features-matrix"></a>Tabela funkcji
 
@@ -283,19 +283,19 @@ Visual Studio 2015 i starsze są dostępne pod adresem [visualstudio.microsoft.c
 | Debuguj test | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10007; |
 <br/>
 
-1. Obsługa Git programu Visual Studio 2012 jest dostępny w Visual Studio Tools dla rozszerzenia cyfry, dostępne na [galerii Visual Studio](http://visualstudiogallery.msdn.microsoft.com/abafc7d6-dcaa-40f4-8a5e-d6724bdb980c).
+1. Obsługa Git programu Visual Studio 2012 jest dostępny w Visual Studio Tools dla rozszerzenia cyfry, dostępne na [galerii Visual Studio](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.VisualStudioToolsforGit).
 
-1. Wdrożenie do witryny sieci Web platformy Azure wymaga [zestawu Azure SDK dla platformy .NET 2.1 — Visual Studio 2010 SP1](http://go.microsoft.com/fwlink/?LinkId=313855). Nowsze wersje nie obsługują programu Visual Studio 2010.
+1. Wdrożenie do witryny sieci Web platformy Azure wymaga [zestawu Azure SDK dla platformy .NET 2.1 — Visual Studio 2010 SP1](https://go.microsoft.com/fwlink/?LinkId=313855). Nowsze wersje nie obsługują programu Visual Studio 2010.
 
-1. Pomoc techniczna dla roli sieci Web platformy Azure i roli procesu roboczego wymaga [zestawu Azure SDK dla platformy .NET 2.3 — VS 2012](http://go.microsoft.com/fwlink/?LinkId=323511) lub nowszej.
+1. Pomoc techniczna dla roli sieci Web platformy Azure i roli procesu roboczego wymaga [zestawu Azure SDK dla platformy .NET 2.3 — VS 2012](https://go.microsoft.com/fwlink/?LinkId=323511) lub nowszej.
 
-1. Pomoc techniczna dla roli sieci Web platformy Azure i roli procesu roboczego wymaga [zestawu Azure SDK dla platformy .NET 2.3 — VS 2013](http://go.microsoft.com/fwlink/?LinkId=323510) lub nowszej.
+1. Pomoc techniczna dla roli sieci Web platformy Azure i roli procesu roboczego wymaga [zestawu Azure SDK dla platformy .NET 2.3 — VS 2013](https://go.microsoft.com/fwlink/?LinkId=323510) lub nowszej.
 
 1. Edytor szablonów Django w programie Visual Studio 2013 zawiera niektóre znane problemy, które są rozpoznawane przez instalowania aktualizacji Update 2.
 
-1. Wymaga systemu Windows 8 lub nowszy. Visual Studio Express 2013 for Web nie ma **dołączyć do procesu** okna dialogowego, ale witryny sieci Web platformy Azure, zdalne debugowanie jest nadal możliwe przy użyciu **dołączanie debugera (Python)** polecenia w pliku **serwera Eksplorator**. Zdalne debugowanie wymaga [zestawu Azure SDK dla platformy .NET 2.3 — Visual Studio 2013](http://go.microsoft.com/fwlink/?LinkId=323510) lub nowszej.
+1. Wymaga systemu Windows 8 lub nowszy. Visual Studio Express 2013 for Web nie ma **dołączyć do procesu** okna dialogowego, ale witryny sieci Web platformy Azure, zdalne debugowanie jest nadal możliwe przy użyciu **dołączanie debugera (Python)** polecenia w pliku **serwera Eksplorator**. Zdalne debugowanie wymaga [zestawu Azure SDK dla platformy .NET 2.3 — Visual Studio 2013](https://go.microsoft.com/fwlink/?LinkId=323510) lub nowszej.
 
-1. Wymaga systemu Windows 8 lub nowszy. **Dołącz debuger (Python)** polecenia w pliku **Eksploratora serwera** wymaga [zestawu Azure SDK dla platformy .NET 2.3 — Visual Studio 2013](http://go.microsoft.com/fwlink/?LinkId=323510) lub nowszej.
+1. Wymaga systemu Windows 8 lub nowszy. **Dołącz debuger (Python)** polecenia w pliku **Eksploratora serwera** wymaga [zestawu Azure SDK dla platformy .NET 2.3 — Visual Studio 2013](https://go.microsoft.com/fwlink/?LinkId=323510) lub nowszej.
 
 1. Wymaga systemu Windows 8 lub nowszy.
 

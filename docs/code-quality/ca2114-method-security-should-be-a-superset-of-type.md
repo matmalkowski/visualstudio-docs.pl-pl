@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d2fc6fb60dd837dd93de1db2758ee0e2c216850
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 66fe0031380139c55942a1a47f71066a327d5e24
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31914955"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551431"
 ---
 # <a name="ca2114-method-security-should-be-a-superset-of-type"></a>CA2114: Metody zabezpieczeń powinny być nadzbiorem typu
+
 |||
 |-|-|
 |TypeName|MethodSecurityShouldBeASupersetOfType|
@@ -32,33 +33,41 @@ ms.locfileid: "31914955"
 |Zmiana kluczowa|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
- Zabezpieczenia deklaracyjne ma typ ma jeden z jego metody zabezpieczenia deklaratywne dla tego samego działania zabezpieczeń i akcji zabezpieczeń nie jest [Linkdemand](/dotnet/framework/misc/link-demands), i sprawdzana przez typ uprawnienia nie są podzbiorem uprawnienia sprawdzony przez metodę.
+ Typ ma zabezpieczenia deklaratywne, jeden z jego metody ma zabezpieczenia deklaratywne dla tego samego działania zabezpieczeń i akcji zabezpieczeń nie jest [zapotrzebowania na łącza](/dotnet/framework/misc/link-demands), i uprawnienia sprawdzana przez typ nie są podzbiorem uprawnienia sprawdzane przez metodę.
 
 ## <a name="rule-description"></a>Opis reguły
- Metoda nie powinna mieć zarówno metoda poziomie typu i zabezpieczenia deklaratywne dla tego samego działania. Sprawdza dwie nie są połączone; dotyczy tylko żądanie na poziomie metody. Na przykład, jeśli typem wymaga uprawnień `X`, i jedną z metod wymaga uprawnień `Y`, kod nie musi mieć uprawnienie `X` można wykonać metody.
+ Metoda nie powinna mieć zarówno metody typu poziomie i zabezpieczenia deklaratywne dla tego samego działania. Dwa testy nie są połączone; dotyczy tylko żądanie poziom metody. Na przykład, jeśli typem zażąda uprawnień `X`, oraz jednej z jego metod zażąda uprawnień `Y`, kod nie musi mieć uprawnienie `X` wykonania metody.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Sprawdź swój kod, aby upewnić się, że obie akcje są wymagane. Jeśli wymagane są obie akcje, upewnij się, że poziom metody akcji zawiera zabezpieczeń ustawionych na poziomie typu. Na przykład, jeśli z danym typem wymaga uprawnień `X`, a jej metodę musi również zażądać uprawnień `Y`, metoda jawnie należy zażądać `X` i `Y`.
+ Przejrzyj kod, aby upewnić się, że wymagane są obie akcje. Jeśli wymagane są obie akcje, upewnij się, że czynność na poziomie obejmuje zabezpieczeń określone na poziomie typu. Na przykład, jeśli danego typu zażąda uprawnień `X`, i jej metodę także musi żądać uprawnienia `Y`, metoda jawnie zażądać `X` i `Y`.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Jest bezpieczne pominąć ostrzeżenie od tej reguły, jeśli metoda nie wymaga zabezpieczeń określone przez typ. Jednak to nie jest scenariusz zwykłej i może wskazywać na potrzebę przeglądu zachować ostrożność podczas projektowania.
+ Jest bezpieczne pominąć ostrzeżenie od tej reguły, jeśli metoda nie wymaga zabezpieczeń określone przez typ. Jednak to nie jest to zwykła scenariusz i mogą wskazywać na potrzeby przeglądu zachowania ostrożności podczas projektowania.
 
-## <a name="example"></a>Przykład
- W poniższym przykładzie użyto uprawnienia środowiska, aby zademonstrować zagrożenia naruszenie tej reguły. W tym przykładzie kodu aplikacji tworzy wystąpienia typu zabezpieczonych przed odmową uprawnień wymaganych przez ten typ. W przypadku zagrożenia rzeczywistych aplikacji wymaga innym sposobem uzyskania wystąpienia obiektu.
+## <a name="example-1"></a>Przykład 1
 
- W poniższym przykładzie zapotrzebowanie biblioteki uprawnienie dla typu zapisu i uprawnienia do metody odczytu.
+W poniższym przykładzie użyto uprawnienia dotyczące środowiska, aby zademonstrować niebezpieczeństwa naruszenie tej zasady. W tym przykładzie kodu aplikacji tworzy wystąpienia typu zabezpieczonego, zanim nastąpi odmowa uprawnień wymaganych przez typ. W przypadku rzeczywistych zagrożeń aplikacja będzie wymagać innym sposobem na uzyskanie wystąpienia obiektu.
 
- [!code-csharp[FxCop.Security.MethodLevelSecurity#1](../code-quality/codesnippet/CSharp/ca2114-method-security-should-be-a-superset-of-type_1.cs)]
+W poniższym przykładzie zapotrzebowanie biblioteki uprawnienia dla typu zapisu i uprawnienia dla metody do odczytu.
 
-## <a name="example"></a>Przykład
- Poniższy kod aplikacji przedstawia luki w zabezpieczeniach biblioteki przez wywołanie metody, nawet jeśli nie spełnia wymagania zabezpieczeń na poziomie typu.
+[!code-csharp[FxCop.Security.MethodLevelSecurity#1](../code-quality/codesnippet/CSharp/ca2114-method-security-should-be-a-superset-of-type_1.cs)]
 
- [!code-csharp[FxCop.Security.TestMethodLevelSecurity#1](../code-quality/codesnippet/CSharp/ca2114-method-security-should-be-a-superset-of-type_2.cs)]
+## <a name="example-2"></a>Przykład 2
 
- W tym przykładzie tworzy następujące dane wyjściowe.
+Poniższy kod aplikacji przedstawia luk w zabezpieczeniach biblioteki przez wywołanie metody, nawet jeśli nie spełnia on wymagania zabezpieczeń na poziomie typu.
 
- **[Wszystkie uprawnienia] Informacje osobiste: 6/16/1964 12:00:00 AM**
- **[nie uprawnień do zapisu (wymagany przez typ)] informacje osobiste: 6/16/1964 12:00:00 AM**
- **[do odczytu (uprawnień wymagany przez metodę)] nie może uzyskać dostępu do danych osobowych: żądanie nie powiodło się.**
-## <a name="see-also"></a>Zobacz też
- [Wytyczne dotyczące bezpiecznego programowania](/dotnet/standard/security/secure-coding-guidelines) [Link zapotrzebowanie](/dotnet/framework/misc/link-demands) [dane i modelowanie](/dotnet/framework/data/index)
+[!code-csharp[FxCop.Security.TestMethodLevelSecurity#1](../code-quality/codesnippet/CSharp/ca2114-method-security-should-be-a-superset-of-type_2.cs)]
+
+Ten przykład generuje następujące wyniki:
+
+```txt
+[All permissions] Personal information: 6/16/1964 12:00:00 AM
+[No write permission (demanded by type)] Personal information: 6/16/1964 12:00:00 AM
+[No read permission (demanded by method)] Could not access personal information: Request failed.
+```
+
+## <a name="see-also"></a>Zobacz także
+
+- [Wytyczne dotyczące bezpiecznego programowania](/dotnet/standard/security/secure-coding-guidelines)
+- [Zapotrzebowanie na łącza](/dotnet/framework/misc/link-demands)
+- [Dane i modelowanie](/dotnet/framework/data/index)

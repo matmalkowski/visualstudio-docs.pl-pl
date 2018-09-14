@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 0615f557d67c16698e0c737d97e45639be8a5eac
-ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
+ms.openlocfilehash: 1d02922d4d28f41ced952c9ef8c990d55f78a226
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44125005"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548208"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Samouczek: Tworzenie aplikacji Node.js i React w programie Visual Studio
 
@@ -312,9 +312,11 @@ Każdym wprowadzeniu zmiany *app.tsx*, należy ponownie uruchomić polecenie web
 
 ## <a name="run-the-app"></a>Uruchamianie aplikacji
 
-1. Upewnij się, że dla programu Chrome jest wybrany jako bieżący obiekt docelowy debugowania.
+1. Wybierz dla programu Chrome, jak bieżący obiekt docelowy debugowania.
 
     ![Wybierz cel debugowania Chrome](../javascript/media/tutorial-nodejs-react-debug-target.png)
+
+    Jeśli dla programu Chrome jest dostępne na danym komputerze, ale nie są wyświetlane jako opcja, wybierz opcję **przeglądanie za pomocą** z listy rozwijanej docelowego debugowania i wybierz opcję dla programu Chrome jako domyślny element docelowy przeglądarki (wybierz **Ustaw jako domyślny**).
 
 1. Aby uruchomić aplikację, naciśnij klawisz **F5** (**debugowania** > **Rozpocznij debugowanie**) lub przycisku zieloną strzałkę.
 
@@ -361,6 +363,8 @@ W poprzedniej sekcji debuger jest dołączony do kodu w języku Node.js po stron
 1. Przełącz się do programu Visual Studio i ustaw punkt przerwania *bundle.js aplikacji* możesz pisać kod w `render()` funkcji, jak pokazano na poniższej ilustracji:
 
     ![Ustaw punkt przerwania](../javascript/media/tutorial-nodejs-react-set-breakpoint-client-code.png)
+
+    Można znaleźć `render()` działa w programach *bundle.js aplikacji*, użyj **Ctrl**+**F** (**Edytuj**  >   **Znajdź i Zamień** > **szybkiego wyszukiwania**).
 
 1. Za pomocą przeglądarki Chrome wybrany jako cel debugowania w programie Visual Studio, naciśnij klawisz **Ctrl**+**F5** (**debugowania** > **Rozpocznij bez debugowania** ) do uruchomienia aplikacji w przeglądarce.
 

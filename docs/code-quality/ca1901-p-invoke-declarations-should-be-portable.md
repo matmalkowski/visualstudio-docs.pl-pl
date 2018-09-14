@@ -1,5 +1,5 @@
 ---
-title: 'CA1901: Deklaracje P Invoke powinny być przenośne'
+title: 'CA1901: Deklaracje P-Invoke powinny być przenośne'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ed9821d9b80309311a6fd108c4a29f52b2e882bf
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 58a7df06d3707e0ed8c9bed9a04b79c3ea99dd04
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31915024"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45550638"
 ---
 # <a name="ca1901-pinvoke-declarations-should-be-portable"></a>CA1901: Deklaracje P/Invoke powinny być przenośne
 |||
@@ -29,26 +29,26 @@ ms.locfileid: "31915024"
 |TypeName|PInvokeDeclarationsShouldBePortable|
 |CheckId|CA1901|
 |Kategoria|Microsoft.Portability|
-|Zmiana kluczowa|Dzielenie - P/Invoke jest widoczna poza zestaw. Bez podziału — Jeśli P/Invoke nie jest widoczna poza zestaw.|
+|Zmiana kluczowa|Istotne - P/Invoke jest widoczna spoza zestawu. Bez podziału — Jeśli P/Invoke nie jest widoczna spoza zestawu.|
 
 ## <a name="cause"></a>Przyczyna
- Ta zasada oblicza rozmiar każdego parametru i wartość zwracaną P/Invoke i sprawdza, czy ich rozmiar przekazywane do kodu niezarządzanego na platformach 32-bitowe i 64-bitowych, jest poprawny. Najbardziej typowe naruszenie tej reguły jest do przekazania liczby całkowitej stałym rozmiarze, gdy wymagane jest zależny od platformy, wielkości wskaźnika zmiennej.
+ Ta reguła oblicza rozmiar każdego parametru oraz wartość zwracaną metody P/Invoke i sprawdza, czy ich rozmiar przekazywania do kodu niezarządzanego na platformach 32-bitowych i 64-bitowych jest poprawny. Najbardziej typowe naruszenie tej zasady jest do przekazania liczby całkowitej stałych rozmiarach, w których wymagane jest zależny od platformy, wskaźnika wielkości zmiennej.
 
 ## <a name="rule-description"></a>Opis reguły
- Jedną z poniższych scenariuszy narusza tę regułę występuje:
+ Jedną z następujących scenariuszy narusza tę regułę występuje:
 
--   Zwracana wartość lub parametr jest typu jako liczba całkowita stałym rozmiarze, gdy należy wpisać jako `IntPtr`.
+- Wartość zwracana lub parametr jest wpisane jako liczba całkowita stałym rozmiarze, gdy powinna być typizowana jako `IntPtr`.
 
--   Zwracana wartość lub parametr jest typu `IntPtr` po powinny być typizowane jako liczba całkowita stałym rozmiarze.
+- Wartość zwracana lub parametr jest wpisana jako `IntPtr` kiedy powinna być typizowana jako liczbą całkowitą o stałym rozmiarze.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- To naruszenie można rozwiązać przy użyciu `IntPtr` lub `UIntPtr` do reprezentowania uchwytów zamiast `Int32` lub `UInt32`.
+ To naruszenie można rozwiązać za pomocą `IntPtr` lub `UIntPtr` do reprezentowania dojścia, zamiast `Int32` lub `UInt32`.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
  Nie należy pominąć to ostrzeżenie.
 
 ## <a name="example"></a>Przykład
- W poniższym przykładzie pokazano naruszenie tej reguły.
+ W poniższym przykładzie pokazano naruszenie tej zasady.
 
 ```csharp
 internal class NativeMethods
@@ -59,7 +59,7 @@ internal class NativeMethods
 }
 ```
 
- W tym przykładzie `nIconIndex` parametru jest zadeklarowany jako `IntPtr`, które wynosi 4 bajty szerokości na 32-bitowej platformy i 8 bajtów szerokości na 64-bitowej platformy. W deklaracji niezarządzane poniżej, można stwierdzić, że `nIconIndex` jest liczbą całkowitą bez znaku 4-bajtowych na wszystkich platformach.
+ W tym przykładzie `nIconIndex` parametru jest zadeklarowany jako `IntPtr`, który wynosi 4 bajty szerokiego to platforma 32-bitowych i 8 bajtów szerokości na platformie 64-bitowej. W deklaracji niezarządzanych poniżej, możesz zobaczyć, że `nIconIndex` jest 4-bajtowa liczba całkowita bez znaku na wszystkich platformach.
 
 ```csharp
 HICON ExtractIcon(HINSTANCE hInst, LPCTSTR lpszExeFileName,
@@ -67,7 +67,7 @@ HICON ExtractIcon(HINSTANCE hInst, LPCTSTR lpszExeFileName,
 ```
 
 ## <a name="example"></a>Przykład
- Aby naprawić naruszenie, zmień deklarację do następującego:
+ Aby naprawić naruszenie, zmień deklarację do następujących:
 
 ```csharp
 internal class NativeMethods{
@@ -77,5 +77,5 @@ internal class NativeMethods{
 }
 ```
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
  [Ostrzeżenia dotyczące przenośności](../code-quality/portability-warnings.md)

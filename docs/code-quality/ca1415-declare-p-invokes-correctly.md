@@ -1,5 +1,5 @@
 ---
-title: 'CA1415: Deklarowanie wywołuje P poprawnie'
+title: 'CA1415: Poprawnie zadeklaruj metody P-Invoke'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a690baeb804d3722d442c30077cc07d260a8952
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 603ba2448e9716a77ec7610a32d016dfc124c72c
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31915766"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548650"
 ---
 # <a name="ca1415-declare-pinvokes-correctly"></a>CA1415: Należy poprawnie zadeklarować P/Invokes
 |||
@@ -29,24 +29,24 @@ ms.locfileid: "31915766"
 |TypeName|DeclarePInvokesCorrectly|
 |CheckId|CA1415|
 |Kategoria|Microsoft.Interoperability|
-|Zmiana kluczowa|Nie można zobaczyć podziału non - Jeśli P/Invoke, który deklaruje parametr poza zestaw. Przerywanie — Jeśli P/Invoke, który deklaruje parametru może być widoczny spoza zestawu.|
+|Zmiana kluczowa|Bez podziału — Jeśli P/Invoke, która deklaruje parametru nie są widoczne poza zestawem. Przerywanie — Jeśli P/Invoke, która deklaruje parametr są widoczne poza zestawem.|
 
 ## <a name="cause"></a>Przyczyna
- Platforma wywołania metody jest niepoprawnie zadeklarowany.
+ Metoda wywołania platformy nieprawidłowo zadeklarowano.
 
 ## <a name="rule-description"></a>Opis reguły
- Platforma wywołania metody uzyskuje dostęp do niezarządzanego kodu i jest definiowana za pomocą `Declare` — słowo kluczowe w [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] lub <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>. Obecnie ta reguła szuka deklaracje metody, przeznaczonych funkcje Win32, które mają wskaźnik do parametru struktury OVERLAPPED wywołanie platformy i odpowiadającego mu parametru zarządzanego nie jest wskaźnikiem do <xref:System.Threading.NativeOverlapped?displayProperty=fullName> struktury.
+ Platforma wywołania metody uzyskuje dostęp do niezarządzanego kodu i jest definiowana za pomocą `Declare` — słowo kluczowe w [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] lub <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>. Obecnie ta reguła będzie wyglądać dla deklaracji metod, których platformą docelową funkcji Win32, które mają wskaźnikiem do parametru struktury OVERLAPPED wywołania platformy, a odpowiadający parametr zarządzalny nie jest wskaźnikiem do <xref:System.Threading.NativeOverlapped?displayProperty=fullName> struktury.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej reguły, poprawnie zadeklarować platformy wywołania metody.
+ Aby naprawić naruszenie tej zasady, należy poprawnie zadeklarować platformy wywołania metody.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
  Nie pomijaj ostrzeżeń dla tej reguły.
 
 ## <a name="example"></a>Przykład
- W poniższym przykładzie przedstawiono platformy wywoływania metod, które naruszają zasady i spełniać reguły.
+ W poniższym przykładzie pokazano wywołanie platformy metody, które naruszają reguły i spełniać reguły.
 
  [!code-csharp[FxCop.Interoperability.DeclarePInvokes#1](../code-quality/codesnippet/CSharp/ca1415-declare-p-invokes-correctly_1.cs)]
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
  [Współdziałanie z kodem niezarządzanym](/dotnet/framework/interop/index)

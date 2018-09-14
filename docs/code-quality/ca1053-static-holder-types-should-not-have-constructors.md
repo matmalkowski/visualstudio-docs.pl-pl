@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d7f99804abeac1c9f536c94c542f6e031bf16ec6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e58d76c07fc302b2b2a6dcc8c0831ba1e0d160ae
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31896595"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549398"
 ---
 # <a name="ca1053-static-holder-types-should-not-have-constructors"></a>CA1053: Typy obsługi statycznej nie powinny mieć konstruktorów
 |||
@@ -35,18 +35,18 @@ ms.locfileid: "31896595"
  Typ publiczny lub publiczny zagnieżdżony deklaruje tylko statyczne elementy członkowskie i ma publiczny lub chroniony konstruktor domyślny.
 
 ## <a name="rule-description"></a>Opis reguły
- Konstruktor jest zbędny, ponieważ wywołanie statycznego elementu członkowskiego nie wymaga wystąpienia tego typu. Ponadto ponieważ typ nie ma elementów członkowskich niestatyczna, tworzenia wystąpienia nie zapewnia dostępu do żadnego z elementów członkowskich typu.
+ Konstruktor jest zbędny, ponieważ wywołanie statycznego elementu członkowskiego nie wymaga wystąpienia tego typu. Ponadto ponieważ typ nie ma niestatycznych elementów członkowskich, tworzenia wystąpienia nie zapewnia dostępu do dowolnych elementów członkowskich typu.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej reguły, Usuń domyślnego konstruktora lub przekształcenie jej w prywatną.
+ Aby naprawić naruszenie tej zasady, Usuń domyślnego konstruktora, lub Oznacz jako prywatne.
 
 > [!NOTE]
->  Jeśli typ nie definiuje żadnych konstruktorów niektóre kompilatory automatyczne tworzenie publicznego konstruktora domyślnego. Jeśli jest to w przypadku danego typu, Dodaj konstruktora domyślnego prywatne, aby wyeliminować naruszenie.
+>  Niektóre kompilatory automatycznie tworzyć publicznego konstruktora domyślnego, jeśli typ nie zdefiniujesz żadnych konstruktorów. Jeśli ma to miejsce w przypadku danego typu, Dodaj Konstruktor prywatny, aby wyeliminować naruszenia.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Nie pomijaj ostrzeżeń dla tej reguły. Obecność konstruktora sugeruje, że typ nie jest typem statycznych.
+ Nie pomijaj ostrzeżeń dla tej reguły. Obecność konstruktora sugeruje, że typ nie jest typu statycznego.
 
 ## <a name="example"></a>Przykład
- Poniższy przykład przedstawia typu, który narusza tę regułę. Zwróć uwagę, że nie jest Brak domyślnego konstruktora kodu źródłowego. Podczas tego kodu jest kompilowany do zestawu, kompilator języka C# zostanie wstawiona domyślnego konstruktora, który będzie naruszają tę regułę. Aby rozwiązać ten problem, należy zadeklarować Konstruktor prywatny.
+ Poniższy przykład pokazuje typ, który narusza tę regułę. Należy zauważyć, że w kodzie źródłowym jest Brak domyślnego konstruktora. Gdy ten kod jest kompilowany do zestawu, kompilator języka C# powoduje wstawienie domyślnego konstruktora, który będzie narusza tę regułę. Aby rozwiązać ten problem, należy zadeklarować Konstruktor prywatny.
 
  [!code-csharp[FxCop.Design.StaticTypes#1](../code-quality/codesnippet/CSharp/ca1053-static-holder-types-should-not-have-constructors_1.cs)]

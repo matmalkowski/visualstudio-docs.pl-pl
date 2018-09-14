@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3eeff4eca5bcc6d2490fc077501726e3ba7e8de1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 169d079538852042d6add5df1a1278f90a2f84f4
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917179"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549864"
 ---
 # <a name="ca2118-review-suppressunmanagedcodesecurityattribute-usage"></a>CA2118: Przegląd wykorzystania SuppressUnmanagedCodeSecurityAttribute
+
 |||
 |-|-|
 |TypeName|ReviewSuppressUnmanagedCodeSecurityUsage|
@@ -32,43 +33,47 @@ ms.locfileid: "31917179"
 |Zmiana kluczowa|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
- Publiczne lub chronione typ lub element członkowski ma <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> atrybutu.
+ Typ publiczny lub chroniony lub elementu członkowskiego ma <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> atrybutu.
 
 ## <a name="rule-description"></a>Opis reguły
- <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> Zmienia domyślne zachowanie systemu zabezpieczeń dla członków, których wykonanie kodu niezarządzanego, przy użyciu wywołania COM interop lub platformy. Ogólnie rzecz biorąc, system sprawia, że [dane i modelowanie](/dotnet/framework/data/index) dla uprawnień kodu niezarządzanego. To żądanie występuje w czasie wykonywania dla każdego wywołania elementu członkowskiego i sprawdza co wywołującego w stosie wywołań uprawnień. Gdy obecny jest atrybut zapewnia system [Linkdemand](/dotnet/framework/misc/link-demands) uprawnienia: uprawnienia bezpośredniego obiektu wywołującego są zaznaczone, gdy obiekt wywołujący jest kompilacji JIT.
+ <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> Zmienia domyślne zachowanie systemu zabezpieczeń dla elementów członkowskich wykonujących kod niezarządzany, za pomocą wywołań międzyoperacyjnych COM lub platformy. Ogólnie rzecz biorąc, system sprawia, że [dane i modelowanie](/dotnet/framework/data/index) uprawnienia kodu niezarządzanego. To żądanie występuje w czasie wykonywania dla każdego wywołania elementu członkowskiego i sprawdza, czy każdy obiekt wywołujący w stosie wywołań, aby uzyskać uprawnienia. Gdy atrybut nie jest obecny, system sprawia, że [zapotrzebowania na łącza](/dotnet/framework/misc/link-demands) uprawnienia: Jeśli element wywołujący jest kompilowany dokładnie na czas, sprawdzane są uprawnienia bezpośredniego obiektu wywołującego.
 
- Atrybut ten jest używany głównie w celu zwiększenia wydajności; jednak wzrost wydajności powoduje znaczące zagrożenia dla bezpieczeństwa. Jeśli umieścisz atrybutu na publiczne elementy członkowskie, które wywołują metod natywnych wywołań w stosie wywołań (inne niż bezpośredniego obiektu wywołującego) nie ma potrzeby kodu niezarządzanego uprawnienia do wykonywania kodu niezarządzanego. W zależności od publicznego elementu członkowskiego działania i obsługi danych wejściowych może mieć niezaufanym wywołań funkcji dostępu zazwyczaj ograniczone do zaufanego kodu.
+ Atrybut ten jest używany głównie w celu zwiększenia wydajności; jednak wzrost wydajności powoduje znaczące zagrożenia dla bezpieczeństwa. Jeśli umieścisz ten atrybut na publiczne elementy członkowskie, które wywołują metody natywnej obiektów wywołujących w stosie wywołań (inne niż bezpośredniego obiektu wywołującego) nie ma potrzeby kodu niezarządzanego uprawnienia do wykonywania kodu niezarządzanego. W zależności od członka publicznego działania i obsługi danych wejściowych jego Zezwalaj na niezaufane wywołań do dostępu do funkcjonalności zazwyczaj ograniczone do zaufanego kodu.
 
- [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] Zależy od kontroli zabezpieczeń, aby uniemożliwić obiekty wywołujące bezpośredni dostęp do przestrzeni adresowej bieżącego procesu. Omija normalne zabezpieczeń, ten atrybut kod stanowi poważne zagrożenie, jeśli może być używany do odczytu lub zapisu w pamięci procesu. Należy pamiętać, że ryzyko nie jest ograniczona do metody celowo zapewniające dostęp do pamięci; procesu również znajduje się w żadnym scenariuszu, gdzie złośliwego kodu można uzyskać dostępu w dowolny sposób na przykład, dostarczając danych wejściowych zaskakująco, źle sformułowany lub nieprawidłowy.
+ [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] Bazuje na kontroli zabezpieczeń uniemożliwia wywołującym uzyskania bezpośredniego dostępu do przestrzeni adresowej bieżącego procesu. Omija normalne zabezpieczeń, ten atrybut kodzie stwarza poważne zagrożenie, jeśli może służyć do odczytu lub zapisu w pamięci procesu. Należy pamiętać, że ryzyko nie jest ograniczona do metod, które celowo zapewniają dostęp do pamięci; procesu jest również obecny w każdym scenariuszu, w których złośliwy kod może osiągnąć dostępu w jakikolwiek sposób, na przykład przez podanie danych wejściowych Zaskakujące, źle sformułowany lub nieprawidłowy.
 
- Domyślnych zasad zabezpieczeń nie powoduje przyznania uprawnień kodu niezarządzanego do zestawu, o ile jest wykonywane z komputera lokalnego lub nie jest członkiem jednej z następujących grup:
+ Domyślne zasady zabezpieczeń nie powoduje przyznania uprawnień kodu niezarządzanego do zestawu, chyba że jest wykonywane z komputera lokalnego, lub jest ono członkiem jednej z następujących grup:
 
--   Grupa kodów strefy Mój komputer
+- Moja grupa kodu strefy
 
--   Grupa kodów nazwy silnej firmy Microsoft
+- Grupy kodu programu Microsoft silnej nazwy
 
--   Grupa kodów nazwy silnej ECMA
+- Grupy kodu programu ECMA silnej nazwy
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Uważnie przejrzyj swój kod, aby upewnić się, że ten atrybut jest bezwzględnie konieczne. Jeśli masz doświadczenia w pracy z kodu zarządzanego zabezpieczeń lub nie rozumiesz konsekwencje zabezpieczeń przy użyciu tego atrybutu, należy go usunąć z kodu. Jeśli ten atrybut jest wymagany, należy się upewnić, że obiekty wywołujące nie mogą używać złośliwy kod. Jeśli w kodzie nie ma uprawnienia do wykonywania kodu niezarządzanego, ten atrybut nie ma wpływu i powinna zostać usunięta.
+ Należy dokładnie przejrzeć swój kod, aby upewnić się, że ten atrybut jest to absolutnie konieczne. Jeśli znasz zakresu zabezpieczeń dla kodu zarządzanego lub ich nie zrozumieć implikacje zabezpieczeń korzystające z tego atrybutu, należy go usunąć z kodu. Jeśli ten atrybut jest wymagany, upewnij się, że obiekty wywołujące nie mogą używać złośliwie swój kod. Jeśli Twój kod nie ma uprawnienia do wykonywania kodu niezarządzanego, ten atrybut nie ma wpływu i powinny zostać usunięte.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Aby bezpiecznie pominąć ostrzeżenie od tej reguły, pamiętaj, że kodu nie zawiera obiektów wywołujących dostępu do natywnych operacji lub zasobów, które mogą być używane w szkodliwy sposób.
+ Aby bezpiecznie pominąć ostrzeżenie od tej reguły, upewnij się, że Twój kod nie zawiera obiektów wywołujących dostęp do natywnych operacji lub zasobów, które mogą być używane w szkodliwy sposób.
 
-## <a name="example"></a>Przykład
- Poniższy przykład naruszają tę regułę.
+## <a name="example-1"></a>Przykład 1
+ Poniższy przykład narusza regułę.
 
  [!code-csharp[FxCop.Security.TypesDoNotSuppress#1](../code-quality/codesnippet/CSharp/ca2118-review-suppressunmanagedcodesecurityattribute-usage_1.cs)]
 
-## <a name="example"></a>Przykład
- W poniższym przykładzie `DoWork` metody udostępnia ścieżkę publicznie kod do metody wywołania platformy `FormatHardDisk`.
+## <a name="example-2"></a>Przykład 2
+ W poniższym przykładzie `DoWork` metoda zapewnia ścieżkę publicznie kod do metody wywołania platformy `FormatHardDisk`.
 
  [!code-csharp[FxCop.Security.PInvokeAndSuppress#1](../code-quality/codesnippet/CSharp/ca2118-review-suppressunmanagedcodesecurityattribute-usage_2.cs)]
 
-## <a name="example"></a>Przykład
- W poniższym przykładzie metoda publiczna `DoDangerousThing` powoduje naruszenie. Aby rozwiązać naruszenie, `DoDangerousThing` należy prywatnej, a dostęp do niego powinna być za pośrednictwem publicznej metody zabezpieczone przez żądanie zabezpieczeń, jak pokazano `DoWork` — metoda.
+## <a name="example-3"></a>Przykład 3
+ W poniższym przykładzie metoda publiczna `DoDangerousThing` powoduje naruszenie zasad. Aby rozwiązać naruszenie, `DoDangerousThing` powinno się prywatny i powinna być do niego dostęp za pośrednictwem publicznej metody zabezpieczonego przez żądanie zabezpieczeń, zgodnie z przedstawionymi `DoWork` — metoda.
 
  [!code-csharp[FxCop.Security.TypeInvokeAndSuppress#1](../code-quality/codesnippet/CSharp/ca2118-review-suppressunmanagedcodesecurityattribute-usage_3.cs)]
 
-## <a name="see-also"></a>Zobacz też
- <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> [Wytyczne dotyczące bezpiecznego programowania](/dotnet/standard/security/secure-coding-guidelines) [dane i modelowanie](/dotnet/framework/data/index) [Link wymagań](/dotnet/framework/misc/link-demands)
+## <a name="see-also"></a>Zobacz także
+
+- <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName>
+- [Wytyczne dotyczące bezpiecznego programowania](/dotnet/standard/security/secure-coding-guidelines)
+- [Dane i modelowanie](/dotnet/framework/data/index)
+- [Zapotrzebowanie na łącza](/dotnet/framework/misc/link-demands)

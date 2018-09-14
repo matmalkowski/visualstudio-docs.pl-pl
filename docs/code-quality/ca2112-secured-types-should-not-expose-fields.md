@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9784ec48193ae580d7ed41cb745f0befb1f1fde9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 538c7ac89643c168086d6bdcb514d88295e482dc
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31915251"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548364"
 ---
 # <a name="ca2112-secured-types-should-not-expose-fields"></a>CA2112: Typy zabezpieczone nie powinny uwidaczniać pól
+
 |||
 |-|-|
 |TypeName|SecuredTypesShouldNotExposeFields|
@@ -32,42 +33,48 @@ ms.locfileid: "31915251"
 |Zmiana kluczowa|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
- Typu publiczne lub chronione zawiera pola publiczne i jest chroniony przez [Linkdemand](/dotnet/framework/misc/link-demands).
+ Typ publiczny lub chroniony zawiera pola publiczne i jest zabezpieczony przez [zapotrzebowania na łącza](/dotnet/framework/misc/link-demands).
 
 ## <a name="rule-description"></a>Opis reguły
  Jeśli kod ma dostęp do wystąpienia typu zabezpieczonego przez żądanie łącza, kod nie musi spełniać zapotrzebowania na łącza, aby uzyskać dostęp do pól typu.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej reguły, ustawianie niepublicznych pól i dodać publicznej właściwości lub metody, które zwracają dane pola. Kontrole zabezpieczeń LinkDemand dla typów ochrony dostępu do właściwości i metod typu. Jednak zabezpieczenia dostępu kodu nie ma zastosowania do pól.
+ Aby naprawić naruszenie tej zasady, ustawianie niepublicznych pól i dodać publiczny właściwości lub metody, które zwracają pola danych. Kontrole zabezpieczeń żądanie LinkDemand dla typów ochrony dostępu do właściwości i metod typu. Zabezpieczenia dostępu kodu nie ma zastosowania do pól.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Zarówno w przypadku problemów z zabezpieczeniami i dobrej projektu należy naprawić naruszeń dokonując nonpublic pola publiczne. Ostrzeżenie od tej reguły można pominąć, jeśli pole nie zawiera informacje, które powinny pozostać zabezpieczonych i nie należy polegać na zawartość tego pola.
+ Zarówno związane z zabezpieczeniami i dobrego projektowania należy naprawić naruszenia, wprowadzając nonpublic pola publiczne. Ostrzeżenie od tej reguły można pominąć, jeśli pole nie zawiera informacje, które powinny być zabezpieczone. Ponadto nie należy polegać na zawartości pola.
 
 ## <a name="example"></a>Przykład
- Poniższy przykład składa się z typu biblioteki (`SecuredTypeWithFields`) z polami niezabezpieczoną, typem (`Distributor`) który można utworzyć wystąpienia typu biblioteki i przekazuje omyłkowo wystąpiła wystąpień typów nie ma uprawnienia do tworzenia ich i kodu aplikacji mogą odczytywać pól wystąpień, nawet jeśli nie ma uprawnień, która zabezpiecza typu.
+ Poniższy przykład składa się z typu biblioteki (`SecuredTypeWithFields`) z polami niezabezpieczone, typu (`Distributor`), można utworzyć wystąpienia typu biblioteki i przekazuje omyłkowe wystąpień typów nie masz uprawnień do ich utworzenia i kodu aplikacji może odczytywać pól wystąpień, nawet jeśli nie ma uprawnienia, które zabezpiecza typu.
 
- Poniższy kod biblioteki naruszają tę regułę.
+ Poniższy kod biblioteki narusza regułę.
 
  [!code-csharp[FxCop.Security.LinkDemandOnField#1](../code-quality/codesnippet/CSharp/ca2112-secured-types-should-not-expose-fields_1.cs)]
 
-## <a name="example"></a>Przykład
- Aplikacji nie można utworzyć wystąpienia z powodu linkdemand, która chroni zabezpieczonych typu. Następujące klasy umożliwia aplikacji można uzyskać wystąpienia typu zabezpieczonych.
+## <a name="example-1"></a>Przykład 1
+ Aplikacja nie można utworzyć wystąpienia ze względu na żądanie łącza, które chroni zabezpieczonego typu. Następujące klasy umożliwia aplikacji, aby uzyskać wystąpienia typu zabezpieczonego.
 
  [!code-csharp[FxCop.Security.LDOnFieldsDistributor#1](../code-quality/codesnippet/CSharp/ca2112-secured-types-should-not-expose-fields_2.cs)]
 
-## <a name="example"></a>Przykład
- Następującej aplikacji przedstawiono, jak, bez uprawnienia do zabezpieczonej typu metody dostępu kodu można uzyskać dostęp do swoich pól.
+## <a name="example-2"></a>Przykład 2
+ Następująca aplikacja ilustruje, jak to zrobić, bez uprawnienia dostępu metody zabezpieczonego typu, kod może uzyskać dostęp jej pola.
 
  [!code-csharp[FxCop.Security.TestLinkDemandOnFields#1](../code-quality/codesnippet/CSharp/ca2112-secured-types-should-not-expose-fields_3.cs)]
 
- W tym przykładzie tworzy następujące dane wyjściowe.
+Ten przykład generuje następujące wyniki:
 
- **Tworzenie wystąpienia SecuredTypeWithFields. ** 
- **Pola typu bezpieczne: 22, 33**
-**zmiana pola typu zabezpieczonych... ** 
- **Pola obiektu w pamięci podręcznej: 99, 33**
-## <a name="related-rules"></a>Powiązanych reguł
- [CA1051: Nie deklaruj widocznych pól wystąpienia](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)
+```txt
+Creating an instance of SecuredTypeWithFields.
+Secured type fields: 22, 33
+Changing secured type's field...
+Cached Object fields: 99, 33
+```
 
-## <a name="see-also"></a>Zobacz też
- [Link zapotrzebowanie](/dotnet/framework/misc/link-demands) [dane i modelowanie](/dotnet/framework/data/index)
+## <a name="related-rules"></a>Powiązane reguły
+
+- [CA1051: Nie deklaruj widocznych pól wystąpienia](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)
+
+## <a name="see-also"></a>Zobacz także
+
+- [Zapotrzebowanie na łącza](/dotnet/framework/misc/link-demands)
+- [Dane i modelowanie](/dotnet/framework/data/index)

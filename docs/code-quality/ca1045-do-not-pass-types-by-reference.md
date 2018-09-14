@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ddb9a54b440e4b76ebfac8300278483cf166d4d7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6ee365dd36a3a88b896fe9ec6e2f676b4e29bf1e
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31900584"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547844"
 ---
 # <a name="ca1045-do-not-pass-types-by-reference"></a>CA1045: Nie przekazuj typów przez odwołanie
+
 |||
 |-|-|
 |TypeName|DoNotPassTypesByReference|
@@ -32,57 +33,60 @@ ms.locfileid: "31900584"
 |Zmiana kluczowa|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
- Zawiera publiczne lub chronione metody w typie publicznego `ref` parametr, który przyjmuje typu pierwotnego, typu odwołania lub typem wartości, która nie jest jedną z wbudowanych typów.
+ Metoda publiczna lub chroniona w typie publicznym ma `ref` parametru, która przyjmuje typ pierwotny, typem referencyjnym lub typem wartości, który nie jest jedną z wbudowanych typów.
 
 ## <a name="rule-description"></a>Opis reguły
- Przekazywanie typów przez odwołanie (przy użyciu `out` lub `ref`) wymaga środowiska z wskaźników, zrozumienie, jak są różne typy wartości i typy referencyjne i obsługi metod, które mają wiele wartości zwrotnych. Ponadto to różnica między `out` i `ref` parametry powszechnie jest niezrozumiały.
+ Przekazywanie typów przez odwołanie (używając `out` lub `ref`) wymaga doświadczenia w zakresie za pomocą wskaźników, zrozumienie, jak różnią się typami wartości i typami odwołania oraz umiejętności obsługi metod z wieloma wartościami zwracanymi. Ponadto różnica między `out` i `ref` parametrów nie jest powszechnie zrozumiała.
 
- Po "przez odwołanie" jest typem referencyjnym, metoda zamierza użyć parametru do zwrócenia innego wystąpienia obiektu. (Przekazywanie poprzez odwołanie typu referencyjnego jest nazywany również przy użyciu podwójnego wskaźnika, wskaźnika do wskaźnika lub double pośredni.) Przy użyciu domyślnego wywoływanie Konwencji, która jest przekazanie "przez wartość", parametr, który ma już typ referencyjny uzyskuje wskaźnik do obiektu. Wskaźnik nie obiekt, który wskazuje, jest przekazywany przez wartość. Przekazywanie poprzez wartość oznacza, że metoda nie można zmienić wskaźnik, aby go wskazać nowe wystąpienie klasy odwołania typu, ale można zmienić obiektu, na które wskazuje zawartość. Dla większości aplikacji jest wystarczające i daje zachowanie, które mają.
+ Gdy typ odwołania jest przekazywany "przez odwołanie", metoda zamierza użyć parametru, aby powrócić do innego wystąpienia obiektu. (Przekazywanie typu odwołania przez odwołanie jest również znany jako za pomocą podwójnego wskaźnika, wskaźnik do wskaźnika lub podwójne pośredniego.) Przy użyciu domyślnego Konwencja wywoływania, który jest przekazać "value", parametr, który przyjmuje typ odwołania już otrzymuje wskaźnik do obiektu. Wskaźnik, a nie obiekt, na który wskazuje, jest przekazywany przez wartość. Przekazywanie poprzez wartość oznacza, że metody nie można zmienić wskaźnik, aby wskazywała na nowe wystąpienie odwołania do typu, ale można zmienić zawartość obiektu, na którą wskazuje. W przypadku większości aplikacji jest wystarczająca i daje zachowanie, które chcesz.
 
- Jeśli metoda musi zwracać innego wystąpienia, w tym celu należy użyć wartość zwracaną przez metodę. Zobacz <xref:System.String?displayProperty=fullName> klasy dla różnych metod, które działają na ciągi i zwraca nowe wystąpienie ciągu. Przy użyciu tego modelu, jest pozostawiany do wywołującego zdecydować, czy jest zachowywana oryginalna obiektu.
+ Jeśli metoda musi zwracać inne wystąpienie, w tym celu należy użyć wartość zwracaną metody. Zobacz <xref:System.String?displayProperty=fullName> klasy dla różnych metod, które działają na ciągi i zwrócić nowe wystąpienie ciągu. Za pomocą tego modelu, pozostało do obiektu wywołującego zdecydować, czy jest zachowywana oryginalnego obiektu.
 
- Mimo że wartości zwracane są typowe, a rzadko, odpowiednia `out` i `ref` parametrów wymaga kodowania w językach umiejętności i pośredniego projektu. Biblioteka architektów, którzy projektowania dla wszystkich użytkowników nie oczekiwać użytkownikom pracy wzorca z `out` lub `ref` parametrów.
+ Mimo że wartości zwracane są powszechne i intensywnie używane, odpowiednia `out` i `ref` parametrów wymaga pośrednich projektu i umiejętności kodowania. Architektów biblioteki, którzy tworzą dla wszystkich nie powinni oczekiwać od użytkowników do wzorca pracę z `out` lub `ref` parametrów.
 
 > [!NOTE]
->  Podczas pracy z parametrami dużych struktur dodatkowych zasobów, które są wymagane, aby skopiować te struktury może spowodować wpływ na wydajność podczas przekazywania przez wartość. W takich sytuacjach należy rozważyć przy użyciu `ref` lub `out` parametrów.
+>  Podczas pracy z parametrami, które są duże struktury dodatkowe zasoby, które są wymagane, aby skopiować te struktury może spowodować wpływ na wydajność podczas przekazywania przez wartość. W takich przypadkach należy rozważyć przy użyciu `ref` lub `out` parametrów.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Ustalenie naruszenie tej reguły, która jest spowodowany przez typ wartości ma metodę zwracać obiektu jako jego wartości zwracanej. Jeśli metoda musi zwracać wiele wartości, zmodyfikowanie go do zwrócenia przez pojedyncze wystąpienie obiektu, który zawiera wartości.
+ Aby naprawić naruszenie tej reguły, która jest spowodowany przez typ wartości, należy mieć metoda może zwracać obiektu jako jego wartość zwracaną. Jeśli metoda musi zwracać wiele wartości, należy ponownie zaprojektować go do zwrócenia pojedynczego wystąpienia obiektu, który przechowuje wartości.
 
- Aby rozwiązać naruszenie tej reguły, która jest spowodowany przez typ referencyjny, upewnij się, czy zachowanie, które mają ma zwrócić nowe wystąpienie klasy odwołania. Jeśli tak jest, metoda należy używać jej wartości zwracanej w tym celu.
+ Aby naprawić naruszenie tej reguły, która jest spowodowany przez typ odwołania, upewnij się, że zachowanie, które chcesz, aby zwrócić nowe wystąpienie klasy odwołania. Jeśli tak jest, metody użyć jego zwracanej wartości w tym celu.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Można bezpiecznie pominąć ostrzeżenie od tej reguły; Ten projekt może jednak spowodować problemów z użytecznością.
+ Bezpiecznie Pomijaj ostrzeżeń dla tej reguły; Jednak w tym projekcie może spowodować problemy z użytecznością.
 
 ## <a name="example"></a>Przykład
- Następująca biblioteka zawiera dwa implementacji klasy, która generuje odpowiedzi na opinie użytkownika. Pierwszy implementacji (`BadRefAndOut`) wymusza na użytkowniku biblioteki, aby zarządzać trzy wartości zwracanych. Drugi implementacji (`RedesignedRefAndOut`) upraszcza czynności użytkownika przez zwrócenie wystąpienia klasy kontenera (`ReplyData`) który zarządza danych jako pojedyncza jednostka.
+ Następująca biblioteka zawiera dwie implementacje klasy, która generuje odpowiedzi na opinie użytkownika. Pierwszy implementacji (`BadRefAndOut`) wymusza na użytkowniku biblioteki zarządzania trzy wartości zwracane. Drugi implementacji (`RedesignedRefAndOut`) upraszcza środowisko użytkownika, zwraca wystąpienie klasy kontenera (`ReplyData`) która zarządza danymi jako pojedyncza jednostka.
 
  [!code-csharp[FxCop.Design.NoRefOrOut#1](../code-quality/codesnippet/CSharp/ca1045-do-not-pass-types-by-reference_1.cs)]
 
 ## <a name="example"></a>Przykład
- Następującej aplikacji przedstawiono czynności użytkownika. Wywołanie do biblioteki zmienioną (`UseTheSimplifiedClass` — metoda) jest bardziej bezpośrednie i informacje, które jest zwracany przez metodę można łatwo zarządzać. Dane wyjściowe z dwóch metod jest identyczne.
+ Następująca aplikacja ilustruje środowisko użytkownika. Wywołania do biblioteki przeprojektowana (`UseTheSimplifiedClass` metody) jest bardziej bezpośredni informacji, który jest zwracany przez metodę jest łatwe w zarządzaniu. Dane wyjściowe z dwóch metod jest taka sama.
 
  [!code-csharp[FxCop.Design.TestNoRefOrOut#1](../code-quality/codesnippet/CSharp/ca1045-do-not-pass-types-by-reference_2.cs)]
 
 ## <a name="example"></a>Przykład
- Biblioteki następujący przykład przedstawia sposób `ref` parametrów dla typów odwołań są używane i pokazuje lepiej zaimplementować tę funkcję.
+ Następujące biblioteki przykład ilustruje sposób `ref` parametrów dla typów referencyjnych są używane i pokazuje lepszy sposób w celu zaimplementowania tej funkcji.
 
  [!code-csharp[FxCop.Design.RefByRefNo#1](../code-quality/codesnippet/CSharp/ca1045-do-not-pass-types-by-reference_3.cs)]
 
 ## <a name="example"></a>Przykład
- Następującej aplikacji wywołuje każdą z tych metod w bibliotece, aby zademonstrować zachowanie.
+ Następująca aplikacja wywołuje każdej metody w bibliotece, aby zademonstrować zachowanie.
 
  [!code-csharp[FxCop.Design.TestRefByRefNo#1](../code-quality/codesnippet/CSharp/ca1045-do-not-pass-types-by-reference_4.cs)]
 
- W tym przykładzie tworzy następujące dane wyjściowe.
+Ten przykład generuje następujące wyniki:
 
- **Zmiana wskaźnik - przekazany przez wartość:**
-**12345**
-**12345**
-**wskaźnik zmiana - przekazany przez odwołanie:** 
- ** 12345**
-**12345 ABCDE**
-**przekazanie przez wartość zwrotna:**
-**12345 ABCDE**
-## <a name="related-rules"></a>Powiązanych reguł
+```txt
+Changing pointer - passed by value:
+12345
+12345
+Changing pointer - passed by reference:
+12345
+12345 ABCDE
+Passing by return value:
+12345 ABCDE
+```
+
+## <a name="related-rules"></a>Powiązane reguły
  [CA1021: Unikaj parametrów out](../code-quality/ca1021-avoid-out-parameters.md)

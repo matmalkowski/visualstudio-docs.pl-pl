@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c299652e779476f2936c193a8bdb646e7b655dd4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 738c214e845cb962bc6c28aa63806dee2858c295
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31916148"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551243"
 ---
 # <a name="ca2124-wrap-vulnerable-finally-clauses-in-outer-try"></a>CA2124: Kodowanie wrażliwych klauzul finally w zewnętrznym try
+
 |||
 |-|-|
 |TypeName|WrapVulnerableFinallyClausesInOuterTry|
@@ -32,16 +33,16 @@ ms.locfileid: "31916148"
 |Zmiana kluczowa|Bez podziału|
 
 ## <a name="cause"></a>Przyczyna
- W wersjach 1.0 i 1.1 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], zawiera metodę publiczną lub chronioną `try` / `catch` / `finally` bloku. `finally` Blok pojawia się Resetowanie stanu zabezpieczeń i nie jest ujęta w `finally` bloku.
+ W wersjach 1.0 i 1.1 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], metoda publiczna lub chroniona zawiera `try` / `catch` / `finally` bloku. `finally` Bloku pojawia się, aby zresetować stan zabezpieczeń i nie jest ujęty w `finally` bloku.
 
 ## <a name="rule-description"></a>Opis reguły
- Ta zasada lokalizuje `try` / `finally` bloki w kodzie, przeznaczonego dla wersji 1.0, 1.1 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] co może być narażony na filtry wyjątków złośliwego obecne w stosie wywołań. Jeśli poufnych operacje takie jak personifikacji są wykonywane w bloku try, a jest zgłaszany wyjątek, filtr może zostać uruchomiony przed `finally` bloku. Na przykład personifikacji oznacza to, że filtr jest wykonywany jak nazwa personifikowanego użytkownika. Filtry są obecnie implementable tylko w języku Visual Basic.
+ Ta zasada lokalizuje `try` / `finally` bloki w kodzie, który jest przeznaczony dla wersji 1.0 i 1.1 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] , mogą być narażone na filtry wyjątków złośliwego obecne w stosie wywołań. Jeśli poufnych operacje, takie jak personifikacji występują w bloku try, zgłaszany jest wyjątek, filtr, można wykonać przed `finally` bloku. Na przykład personifikacji oznacza to, że filtr jest wykonywany jako nazwa spersonifikowanego użytkownika. Filtry są obecnie implementable tylko w języku Visual Basic.
 
-> [!WARNING]
->  **Uwaga** w wersji 2.0 lub nowszej [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], środowisko uruchomieniowe automatycznie chroni `try` / `catch` /  `finally` blokować z filtry wyjątków złośliwe, jeśli występuje resetowania bezpośrednio w metodzie zawierający bloku wyjątków.
+> [!NOTE]
+> W wersji 2.0 lub nowszej [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], środowisko wykonawcze automatycznie chroni `try` / `catch` /  `finally` uniemożliwiaj filtry wyjątków złośliwy, gdy następuje bezpośrednio w metodzie, zawiera blok wyjątku.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Umieść odkodowany `try` / `finally` w zewnętrzny blok try. Zobacz drugi przykład poniżej. Dzięki temu `finally` do uruchomienia przed kod filtru.
+ Umieść nieopakowane `try` / `finally` w zewnętrzny blok try. Zobacz drugim przykładzie poniżej. Zmusza to `finally` do wykonania przed uruchomieniem kodu filtru.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
  Nie pomijaj ostrzeżeń dla tej reguły.
@@ -49,11 +50,10 @@ ms.locfileid: "31916148"
 ## <a name="pseudo-code-example"></a>Przykładowy pseudo-kod
 
 ### <a name="description"></a>Opis
- Poniższy pseudo-kod przedstawia wzorzec wykryte przez tę regułę.
 
-### <a name="code"></a>Kod
+Poniższy pseudo-kod przedstawiono wzorzec wykryte przez tę regułę.
 
-```
+```csharp
 try {
    // Do some work.
    Impersonator imp = new Impersonator("John Doe");
@@ -65,10 +65,9 @@ finally {
 }
 ```
 
-## <a name="example"></a>Przykład
- Poniższy pseudo-kod przedstawia wzorzec, w której można zabezpieczyć kod i spełniają tej reguły.
+Pseudo-poniższy kod przedstawia wzorzec służące do ochrony kodu i spełniają tej reguły.
 
-```
+```csharp
 try {
      try {
         // Do some work.

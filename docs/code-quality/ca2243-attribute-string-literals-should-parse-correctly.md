@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b6aa6fe4cf38d89e76fc7151f493aac414179064
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c6808520f3b28a2da8421394619550166d88d52d
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31923380"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551941"
 ---
 # <a name="ca2243-attribute-string-literals-should-parse-correctly"></a>CA2243: Literały ciągu atrybutu powinny być analizowane poprawnie
+
 |||
 |-|-|
 |TypeName|AttributeStringLiteralsShouldParseCorrectly|
@@ -32,33 +33,34 @@ ms.locfileid: "31923380"
 |Zmiana kluczowa|Bez podziału|
 
 ## <a name="cause"></a>Przyczyna
- Parametr literału ciągu atrybutu nie poprawnie przeanalizować adresu URL, GUID lub wersji.
+ Parametr literału ciągu atrybutu nie analizuje poprawnie adresu URL, identyfikator GUID lub wersji.
 
 ## <a name="rule-description"></a>Opis reguły
- Ponieważ atrybuty są uzyskiwane z <xref:System.Attribute?displayProperty=fullName>i w czasie kompilacji są używane atrybuty, tylko wartości stałych można przekazać do ich konstruktorów. Parametry atrybutów reprezentujące musi adresów URL, identyfikatory GUID i wersje nie może być typizowana jako <xref:System.Uri?displayProperty=fullName>, <xref:System.Guid?displayProperty=fullName>, i <xref:System.Version?displayProperty=fullName>, ponieważ te typy nie może być reprezentowany jako stałe. Zamiast tego musi być reprezentowana przez parametry.
+ Ponieważ atrybuty są uzyskiwane z <xref:System.Attribute?displayProperty=fullName>i atrybuty są używane w czasie kompilacji, tylko wartości stałych można przekazać do ich konstruktory. Parametry atrybutów reprezentujące musi adresy URL, identyfikatory GUID i wersji nie może być typizowana jako <xref:System.Uri?displayProperty=fullName>, <xref:System.Guid?displayProperty=fullName>, i <xref:System.Version?displayProperty=fullName>, ponieważ te typy nie może być reprezentowana jako stałe. Zamiast tego musi być reprezentowana przez parametry.
 
- Ponieważ parametr jest typu ciąg, jest możliwe, że parametr niepoprawnie sformatowany można przekazany w czasie kompilacji.
+ Ponieważ parametru zostanie podana jako ciąg znaków, jest możliwe, że w czasie kompilacji można przekazać parametr niepoprawnie sformatowany.
 
- Ta zasada używa nazewnictwa heurystyki w celu wyszukania parametry, które reprezentują jednolitego identyfikatora zasobów (URI), globalnie unikatowy identyfikator (GUID) lub wersji i sprawdza, czy przekazana wartość jest poprawna.
+ Ta reguła używa heurystyki nazewnictwa w celu odnalezienia parametry, które reprezentują jednolity identyfikator zasobów (URI), globalnie unikatowy identyfikator (GUID) lub wersji i sprawdza, czy przekazana wartość jest poprawna.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Zmień ciąg parametru poprawnie sformułowany adres URL, GUID lub wersji.
+ Zmień ciąg parametru na poprawnie sformułowany adres URL, identyfikator GUID lub wersji.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Jest bezpieczne pominąć ostrzeżenie od tej reguły, jeśli parametr nie reprezentuje adres URL, GUID lub wersji.
+ Jest bezpieczne pominąć ostrzeżenie od tej reguły, jeśli parametr nie reprezentuje adres URL, identyfikator GUID lub wersji.
 
 ## <a name="example"></a>Przykład
- Poniższy przykład przedstawia kod dla AssemblyFileVersionAttribute, który narusza tę regułę.
+ Poniższy przykład zawiera kod dla AssemblyFileVersionAttribute, który narusza tę regułę.
 
  [!code-csharp[FxCop.Usage.AttributeStringLiteralsShouldParseCorrectly#1](../code-quality/codesnippet/CSharp/ca2243-attribute-string-literals-should-parse-correctly_1.cs)]
 
- Reguła jest wyzwalana przez następujące czynności:
+ Reguła jest wyzwalana przez następujące parametry:
 
--   Parametry, które zawierają "version" i nie można przeanalizować System.Version.
+- Parametry, które zawierają "version" i nie można przeanalizować System.Version.
 
--   Parametry, które zawierają "guid" i nie można przeanalizować System.Guid.
+- Parametry, które zawierają "guid" i nie można przeanalizować System.Guid.
 
--   Parametry, które zawierają "uri", "urn" lub "url" i nie może być analizowana na System.Uri.
+- Parametry, które zawierają "uri", "urn" lub "url" i nie można przeanalizować na System.Uri.
 
-## <a name="see-also"></a>Zobacz też
- [CA1054: Parametry identyfikatora URI nie powinny być ciągami](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)
+## <a name="see-also"></a>Zobacz także
+
+- [CA1054: Parametry identyfikatora URI nie powinny być ciągami](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)

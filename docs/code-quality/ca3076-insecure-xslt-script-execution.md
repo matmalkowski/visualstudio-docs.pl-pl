@@ -1,5 +1,5 @@
 ---
-title: 'CA3076: Wykonywanie skryptu niezabezpieczonych XSLT'
+title: 'CA3076: Niezabezpieczone wykonywanie skryptu XSLT'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -9,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a6b495572786bc4934d2972dfdfd27642803d3f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 74fe556d775e60dec5dde4528a1924e55ab4c2ed
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31919846"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45546395"
 ---
-# <a name="ca3076-insecure-xslt-script-execution"></a>CA3076: Wykonywanie skryptu niezabezpieczonych XSLT
+# <a name="ca3076-insecure-xslt-script-execution"></a>CA3076: Niezabezpieczone wykonywanie skryptu XSLT
 
 |||
 |-|-|
@@ -27,27 +27,27 @@ ms.locfileid: "31919846"
 
 ## <a name="cause"></a>Przyczyna
 
-Jeśli nimi wykonane arkusze stylów języka przekształcenia XSLT (Extensible) w aplikacjach .NET, procesor może rozwiązać niezaufanych odwołań do identyfikatora URI, które można ujawnić poufne informacje do osoby atakujące, co może prowadzić do odmowy usługi i Cross-Site ataki. Aby uzyskać więcej informacji, zobacz [Considerations(.NET Guide) zabezpieczeń XSLT](/dotnet/standard/data/xml/xslt-security-considerations).
+Jeżeli insecurely wykonać Extensible arkuszy stylów języka przekształcenia (XSLT) w aplikacjach platformy .NET, procesor może zostać rozwiązany niezaufanych odwołań do identyfikatora URI, które można ujawnić poufne informacje do osoby atakujące, co prowadzi do "odmowa usługi" i Cross-Site ataki. Aby uzyskać więcej informacji, zobacz [Considerations(.NET Guide) zabezpieczeń XSLT](/dotnet/standard/data/xml/xslt-security-considerations).
 
 ## <a name="rule-description"></a>Opis reguły
 
-**XSLT** jest standardem sieci World Wide Web konsorcjum W3C do transformacji danych XML. XSLT jest zwykle używana podczas zapisu arkusze stylów do transformacji danych XML w innych formatach, takich jak HTML, stała długość tekstu, tekst rozdzielany przecinkami lub innego formatu XML. Mimo że zabronione domyślnie, możesz ją włączyć dla projektu.
+**XSLT** jest standardem World Wide Web Consortium (W3C) do przekształcania danych XML. XSLT zazwyczaj używany do zapisywania arkuszy stylów do przekształcania danych XML do innych formatów, takich jak HTML, tekst o stałej długości, tekst rozdzielany przecinkami lub w innym formacie XML. Mimo że będzie to zabronione przez domyślne, można ją włączyć dla Twojego projektu.
 
-Aby upewnić się, nie jest ujawniany ataku, ta zasada wyzwala po każdej zmianie XslCompiledTransform.<xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> odbiera wystąpień niezabezpieczonych kombinacja <xref:System.Xml.Xsl.XsltSettings> i <xref:System.Xml.XmlResolver>, która pozwala na przetwarzanie złośliwy skrypt.
+Aby upewnić się, nie jest ujawniany obszar narażony na ataki, ta zasada wyzwala zawsze, gdy XslCompiledTransform.<xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> odbiera wystąpień kombinacji niezabezpieczone <xref:System.Xml.Xsl.XsltSettings> i <xref:System.Xml.XmlResolver>, która pozwala na przetwarzanie złośliwy skrypt.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 
-- Zastąp niezabezpieczonych argument XsltSettings XsltSettings.<xref:System.Xml.Xsl.XsltSettings.Default%2A> lub z wystąpieniem, które ma wyłączone dokumentu wykonywania funkcji i skryptów.
+- Zastąp niezabezpieczone argument XsltSettings XsltSettings.<xref:System.Xml.Xsl.XsltSettings.Default%2A> lub z wystąpieniem, wyłączył możliwość wykonywania funkcji i skryptów dokumentu.
 
-- Zastąp <xref:System.Xml.XmlResolver> argument o wartości null lub <xref:System.Xml.XmlSecureResolver> wystąpienia.
+- Zastąp <xref:System.Xml.XmlResolver> argumentu o wartości null lub <xref:System.Xml.XmlSecureResolver> wystąpienia.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
 
-Jeśli nie masz pewności, czy dane wejściowe jest znany jako z zaufanego źródła, nie Pomijaj reguły z to ostrzeżenie.
+Jeśli nie masz pewności, że dane wejściowe jest znany jako z zaufanego źródła, nie Pomijaj reguły z tego ostrzeżenia.
 
 ## <a name="pseudo-code-examples"></a>Przykłady pseudo-kodu
 
-### <a name="violationmdashuses-xsltsettingstrustedxslt"></a>Naruszenie&mdash;używa XsltSettings.TrustedXslt
+### <a name="violation-that-uses-xsltsettingstrustedxslt"></a>Naruszenia zasad, która używa XsltSettings.TrustedXslt
 
 ```csharp
 using System.Xml;
@@ -68,7 +68,7 @@ namespace TestNamespace
 }
 ```
 
-### <a name="solutionmdashuse-xsltsettingsdefault"></a>Rozwiązanie&mdash;Użyj XsltSettings.Default
+### <a name="solution-that-uses-xsltsettingsdefault"></a>Rozwiązanie, które używa XsltSettings.Default
 
 ```csharp
 using System.Xml;
@@ -89,7 +89,7 @@ namespace TestNamespace
 }
 ```
 
-### <a name="violationmdashdocument-function-and-script-execution-not-disabled"></a>Naruszenie&mdash;dokumentu wykonywania funkcji i skryptów nie jest wyłączone
+### <a name="violationmdashdocument-function-and-script-execution-not-disabled"></a>Naruszenie&mdash;dokumentu wykonanie funkcji i skryptów, nie jest wyłączone
 
 ```csharp
 using System.Xml;
@@ -114,7 +114,7 @@ namespace TestNamespace
 }
 ```
 
-### <a name="solutionmdashdisable-document-function-and-script-execution"></a>Rozwiązanie&mdash;wyłączyć wykonanie funkcji i skryptów dokumentu
+### <a name="solutionmdashdisable-document-function-and-script-execution"></a>Rozwiązanie&mdash;wyłączyć wykonywanie funkcji i skryptów dokumentu
 
 ```csharp
 using System.Xml;
@@ -143,4 +143,4 @@ namespace TestNamespace
 
 ## <a name="see-also"></a>Zobacz także
 
-[Zagadnienia dotyczące zabezpieczeń XSLT (Przewodnik .NET)](/dotnet/standard/data/xml/xslt-security-considerations)
+- [Zagadnienia dotyczące zabezpieczeń XSLT (Przewodnik platformy .NET)](/dotnet/standard/data/xml/xslt-security-considerations)

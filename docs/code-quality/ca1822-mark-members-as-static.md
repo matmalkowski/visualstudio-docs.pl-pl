@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 498a3638a02891683aff1b343431418d1a82bab0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 09aa3a879fad84f511d3649e98e5be98e62f4038
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31914988"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45546801"
 ---
 # <a name="ca1822-mark-members-as-static"></a>CA1822: Oznacz elementy członkowskie jako statyczne
 |||
@@ -29,21 +29,21 @@ ms.locfileid: "31914988"
 |TypeName|MarkMembersAsStatic|
 |CheckId|CA1822|
 |Kategoria|Microsoft.Performance|
-|Zmiana kluczowa|Dzielenie non - Jeśli element członkowski nie jest widoczny spoza zestawu, niezależnie od tego, zmiany wprowadzone. Bez podziału — element członkowski w przypadku zmiany tylko do elementu członkowskiego wystąpienia z `this` — słowo kluczowe.<br /><br /> Przerywanie — Jeśli zmienisz element członkowski z elementu członkowskiego wystąpienia statyczny element członkowski i widoczny spoza zestawu.|
+|Zmiana kluczowa|Podziału non - Jeśli element członkowski nie jest widoczna spoza zestawu, niezależnie od tego, zmiany wprowadzone. Bez podziału — w przypadku tylko zmiany elementu członkowskiego do elementu członkowskiego wystąpienia z `this` — słowo kluczowe.<br /><br /> Przerywanie — Jeśli zmienisz element członkowski z elementu członkowskiego wystąpienia statyczną składową i jest on widoczny spoza zestawu.|
 
 ## <a name="cause"></a>Przyczyna
- Element członkowski, który nie dostępu do danych wystąpienia nie jest oznaczony jako statyczne (Shared w [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]).
+ Element członkowski, który nie uzyskać dostępu do danych wystąpienia nie jest oznaczony jako statyczne (współużytkowane w [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]).
 
 ## <a name="rule-description"></a>Opis reguły
- Elementy członkowskie, które nie uzyskują dostęp do wystąpienia danych lub wywołanie metody wystąpienia może być oznaczony jako statyczne (Shared w [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]). Po oznaczeniu metod jako statyczne kompilator wygeneruje niewirtualne wywołania do tych członków. Emitowanie miejsc wywołania niewirtualne uniemożliwi sprawdzenie w czasie wykonywania dla każdego wywołania, który sprawia, że bieżący wskaźnik obiektu jest różna od null. Można to osiągnąć są bardziej wydajne mierzalnych dla wrażliwych wydajność kodu. W niektórych przypadkach błąd dostępu do bieżącego wystąpienia obiektu reprezentuje problem poprawności.
+ Elementy członkowskie, które nie uzyskuje dostępu do wystąpienia danych lub wywołanie metody wystąpienia mogą zostać oznaczone jako statyczne (współużytkowane w [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]). Po oznaczeniu metod jako statyczne kompilator wygeneruje niewirtualne wywołania do tych członków. Emitowanie niewirtualne wywołania uniemożliwi sprawdzanie w czasie wykonywania dla każdego wywołania, który sprawia, że bieżący wskaźnik do obiektu jest różna od null. Można to osiągnąć wymierny zysk wydajnościowy dla kodu wrażliwego na wydajność. W niektórych przypadkach błąd dostępu do bieżącego wystąpienia obiektu reprezentuje problem poprawności.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Oznacz element członkowski jako statyczny (lub Shared w [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) lub użyj parametru "this" / "Me" w metodzie body, w razie potrzeby.
+ Oznacz składową jako statyczną (lub udostępniane w [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) lub użyj "this" / "Me" w metodzie body, jeśli to stosowne.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Jest bezpieczne pominąć ostrzeżenie od tej reguły dla uprzednio wysłane kodu, dla którego poprawkę byłoby na istotne zmiany.
+ Jest bezpieczne pominąć ostrzeżenie od tej reguły dla uprzednio wysłane kodu, dla których poprawki będą istotnej zmiany.
 
-## <a name="related-rules"></a>Powiązanych reguł
+## <a name="related-rules"></a>Powiązane reguły
  [CA1811: Unikaj niewywoływanego kodu prywatnego](../code-quality/ca1811-avoid-uncalled-private-code.md)
 
  [CA1812: Unikaj klas wewnętrznych bez wystąpień](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)

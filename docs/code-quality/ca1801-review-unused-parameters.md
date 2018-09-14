@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 142ed6bca0513022b8edd1a062c443aa50d08191
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 708d2175afe8d1b0e6bec7c7ec419eac1ee4821f
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31918624"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551967"
 ---
 # <a name="ca1801-review-unused-parameters"></a>CA1801: Przejrzyj nieużywane parametry
 |||
@@ -30,40 +30,40 @@ ms.locfileid: "31918624"
 |TypeName|ReviewUnusedParameters|
 |CheckId|CA1801|
 |Kategoria|Microsoft.Usage|
-|Zmiana kluczowa|Bez podziału — Jeśli element członkowski nie jest widoczny spoza zestawu, niezależnie od tego, wprowadzone zmiany.<br /><br /> Bez podziału — Jeśli zmienisz element członkowski, aby użyć parametru w jego treści.<br /><br /> Przerywanie — Jeśli Usuń parametr i jest on widoczny spoza zestawu.|
+|Zmiana kluczowa|Bez podziału — Jeśli element członkowski nie jest widoczna spoza zestawu, niezależnie od tego, zmiany wprowadzone.<br /><br /> Bez podziału — w przypadku zmiany należy użyć parametru w swojej treści.<br /><br /> Przerywanie — Usuń parametr, jeśli jest on widoczny spoza zestawu.|
 
 ## <a name="cause"></a>Przyczyna
- Podpis metody zawiera parametr, który nie jest używany w jej treści. Ta zasada nie bada następujących metod:
+ Podpis metody zawiera parametr, który nie jest używany w jej treści. Ta reguła analizuje następujących metod:
 
--   Metody odwołuje się delegata.
+- Metody odwołuje się obiekt delegowany.
 
--   Metody stosowane jako procedury obsługi zdarzeń.
+- Metody stosowane jako programów obsługi zdarzeń.
 
--   Metody zadeklarowane jako z `abstract` (`MustOverride` w języku Visual Basic) modyfikator.
+- Metody zadeklarowane za pomocą `abstract` (`MustOverride` w języku Visual Basic) modyfikator.
 
--   Metody zadeklarowane jako z `virtual` (`Overridable` w języku Visual Basic) modyfikator.
+- Metody zadeklarowane za pomocą `virtual` (`Overridable` w języku Visual Basic) modyfikator.
 
--   Metody zadeklarowane jako z `override` (`Overrides` w języku Visual Basic) modyfikator.
+- Metody zadeklarowane za pomocą `override` (`Overrides` w języku Visual Basic) modyfikator.
 
--   Metody zadeklarowane jako z `extern` (`Declare` instrukcji w języku Visual Basic) modyfikator.
+- Metody zadeklarowane za pomocą `extern` (`Declare` instrukcji w języku Visual Basic) modyfikator.
 
 ## <a name="rule-description"></a>Opis reguły
- Przejrzyj parametry w metodach-virtual, które nie są używane w treści metody do upewnij się, że istnieje nie poprawności wokół błąd dostępu do nich. Nieużywane parametry pociągnąć za sobą wydajność i koszty.
+ Przejrzyj parametry w metod niewirtualnych, które nie są używane w treści metody, aby upewnić się, że nie poprawność istnieje wokół nie można uzyskać do nich dostęp. Nieużywane parametry ponosić kosztów konserwacji i wydajności.
 
- Czasami naruszenie tej reguły może wskazywać na błąd implementacji w metodzie. Na przykład parametr powinien mieć używany w treści metody. Pomijanie ostrzeżeń tej reguły, jeśli parametr musi istnieć z powodu zgodności z poprzednimi wersjami.
+ Czasami naruszenie tej zasady może wskazywać na błąd implementacji w metodzie. Na przykład parametr powinien mieć używany w treści metody. Pomijanie ostrzeżeń, tej reguły, jeśli parametr musi istnieć ze względu na zgodność z poprzednimi wersjami.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej reguły, Usuń nieużywane parametr (istotne zmiany), lub użyj parametru w treści metody (z systemem innym niż istotnej zmiany).
+ Aby naprawić naruszenie tej zasady, Usuń nieużywany parametr (istotnej zmiany), lub użyj parametru w treści metody (zmiany niepowodujące niezgodności).
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Jest bezpieczne pominąć ostrzeżenie od tej reguły dla uprzednio wysłane kodu, dla którego poprawkę byłoby na istotne zmiany.
+ Jest bezpieczne pominąć ostrzeżenie od tej reguły dla uprzednio wysłane kodu, dla których poprawki będą istotnej zmiany.
 
 ## <a name="example"></a>Przykład
- W poniższym przykładzie przedstawiono dwie metody. Jedna z metod naruszają tę regułę i innej metody spełnia reguły.
+ Poniższy przykład przedstawia dwa sposoby. Narusza regułę określającą jedną z metod i inne metody spełnia reguły.
 
  [!code-csharp[FxCop.Usage.ReviewUnusedParameters#1](../code-quality/codesnippet/CSharp/ca1801-review-unused-parameters_1.cs)]
 
-## <a name="related-rules"></a>Powiązanych reguł
+## <a name="related-rules"></a>Powiązane reguły
  [CA1811: Unikaj niewywoływanego kodu prywatnego](../code-quality/ca1811-avoid-uncalled-private-code.md)
 
  [CA1812: Unikaj klas wewnętrznych bez wystąpień](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)

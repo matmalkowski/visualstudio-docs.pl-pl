@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b9a7188f3679e04164411472fd2d53948466a30d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e60a788d94a6c0d594ee45505b8f4ad9f64dbdff
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31900406"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547191"
 ---
 # <a name="ca1306-set-locale-for-data-types"></a>CA1306: Należy ustawić ustawienia regionalne dla typów danych
+
 |||
 |-|-|
 |TypeName|SetLocaleForDataTypes|
@@ -32,21 +33,26 @@ ms.locfileid: "31900406"
 |Zmiana kluczowa|Bez podziału|
 
 ## <a name="cause"></a>Przyczyna
- Metody lub konstruktora utworzony co najmniej jeden <xref:System.Data.DataTable?displayProperty=fullName> lub <xref:System.Data.DataSet?displayProperty=fullName> wystąpień i nie jawnie ustawiona właściwość locale (<xref:System.Data.DataTable.Locale%2A?displayProperty=fullName> lub <xref:System.Data.DataSet.Locale%2A?displayProperty=fullName>).
+ Metoda lub Konstruktor utworzony co najmniej jeden <xref:System.Data.DataTable?displayProperty=fullName> lub <xref:System.Data.DataSet?displayProperty=fullName> wystąpień i nie jawnie ustawiona właściwość locale (<xref:System.Data.DataTable.Locale%2A?displayProperty=fullName> lub <xref:System.Data.DataSet.Locale%2A?displayProperty=fullName>).
 
 ## <a name="rule-description"></a>Opis reguły
- Ustawienia regionalne określa elementy prezentacji specyficzne dla kultury dla danych, takich jak formatowania użytego dla wartości liczbowe, symbol waluty i kolejności sortowania. Po utworzeniu <xref:System.Data.DataTable> lub <xref:System.Data.DataSet>, należy jawnie ustawić ustawień regionalnych. Domyślnie ustawienia regionalne dla tych typów jest bieżącej kultury. Dane są przechowywane w bazie danych lub pliku oraz są udostępniane globalnie, ustawienia regionalne zwykle powinien być ustawiony na kulturą niezmienną (<xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>). Gdy dane są udostępniane między kultur, przy użyciu domyślnych ustawień regionalnych może spowodować zawartość <xref:System.Data.DataTable> lub <xref:System.Data.DataSet> przedstawione lub nieprawidłowo interpretowane.
+ Ustawienia regionalne określą elementy prezentacji charakterystyczne dla kultury dla danych, takich jak formatowanie używane dla wartości liczbowych, symbole walut i porządek sortowania. Po utworzeniu <xref:System.Data.DataTable> lub <xref:System.Data.DataSet>, należy jawnie ustawić ustawienia regionalne. Domyślnie ustawienia regionalne dla tych typów jest bieżącej kultury. Dla danych, które są przechowywane w bazie danych lub pliku i są udostępniane globalnie, ustawienia regionalne zazwyczaj powinna być ustawiona na niezmiennej kultury (<xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>). Gdy dane są dzielone między kultur, przy użyciu domyślnych ustawień regionalnych może spowodować zawartość <xref:System.Data.DataTable> lub <xref:System.Data.DataSet> mają być wyświetlone lub niepoprawnie interpretowane.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej reguły, jawnie ustaw ustawienia regionalne <xref:System.Data.DataTable> lub <xref:System.Data.DataSet>.
+ Aby naprawić naruszenie tej zasady, należy jawnie ustawić ustawienia regionalne <xref:System.Data.DataTable> lub <xref:System.Data.DataSet>.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Jest to bezpieczne Pomiń ostrzeżenie od tej reguły, gdy biblioteki lub aplikacji jest ograniczony odbiorców lokalnych, danych nie jest udostępniana lub domyślne ustawienie zapewni żądane zachowanie we wszystkich obsługiwanych scenariuszach.
+ Jest bezpieczne pominąć ostrzeżenie od tej reguły, biblioteka lub aplikacji jest ograniczona odbiorców lokalnych, danych nie jest udostępniony lub domyślne ustawienie daje żądane zachowanie we wszystkich obsługiwanych scenariuszach.
 
 ## <a name="example"></a>Przykład
- Poniższy przykład tworzy dwa <xref:System.Data.DataTable> wystąpień.
+ Poniższy przykład tworzy dwie <xref:System.Data.DataTable> wystąpień.
 
  [!code-csharp[FxCop.Globalization.DataTable#1](../code-quality/codesnippet/CSharp/ca1306-set-locale-for-data-types_1.cs)]
 
-## <a name="see-also"></a>Zobacz też
- <xref:System.Data.DataTable?displayProperty=fullName> <xref:System.Data.DataSet?displayProperty=fullName> <xref:System.Globalization.CultureInfo?displayProperty=fullName> <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=fullName> <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>
+## <a name="see-also"></a>Zobacz także
+
+- <xref:System.Data.DataTable?displayProperty=fullName>
+- <xref:System.Data.DataSet?displayProperty=fullName>
+- <xref:System.Globalization.CultureInfo?displayProperty=fullName>
+- <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=fullName>
+- <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>

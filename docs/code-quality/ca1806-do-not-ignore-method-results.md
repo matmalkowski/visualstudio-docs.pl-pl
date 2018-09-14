@@ -13,15 +13,20 @@ helpviewer_keywords:
 ms.assetid: fd805687-0817-481e-804e-b62cfb3b1076
 author: gewarren
 ms.author: gewarren
+dev_langs:
+- CPP
+- CSharp
+- VB
 manager: douge
-ms.openlocfilehash: 6b0d5870b29fea9d6ef99a3951ef12d938b0eab3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ebbad9eb48a448aa756f580ade794ba70eb25611
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31914669"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45546841"
 ---
 # <a name="ca1806-do-not-ignore-method-results"></a>CA1806: Nie ignoruj wyników metod
+
 |||
 |-|-|
 |TypeName|DoNotIgnoreMethodResults|
@@ -30,57 +35,58 @@ ms.locfileid: "31914669"
 |Zmiana kluczowa|Bez podziału|
 
 ## <a name="cause"></a>Przyczyna
- Istnieje kilka możliwych przyczyn tego ostrzeżenia:
 
--   Nowy obiekt utworzony, ale nigdy używane.
+Istnieje kilka możliwych przyczyn tego ostrzeżenia:
 
--   Wywoływana jest metoda, która tworzy i zwraca nowy ciąg i nowy ciąg nie jest nigdy używane.
+- Nowy obiekt jest utworzony, ale nigdy używane.
 
--   Metodę COM lub P/Invoke, która zwraca kod HRESULT lub błędu, który nie jest nigdy używane. Opis reguły
+- Wywoływana jest metoda, która tworzy i zwraca nowy ciąg, a nowy ciąg nigdy nie jest używany.
 
- Tworzenie obiektu niepotrzebnych i skojarzone wyrzucanie elementów bezużytecznych nieużywane obiektu obniżyć wydajność.
+- Metody COM lub P/Invoke, która zwraca wartość HRESULT lub kodu błędu, który nigdy nie jest używany. Opis reguły
 
- Ciągi są niezmienne i metod, takich jak String.ToUpper zwraca nowe wystąpienie ciągu zamiast modyfikowanie wystąpienie ciągu w przypadku wywołania metody.
+Tworzenie obiektów niepotrzebne i skojarzonych elementów bezużytecznych nieużywane obiektu obniżyć wydajność.
 
- Ignorowanie HRESULT lub kodu błędu może prowadzić do nieoczekiwanego zachowania w warunkach błędu lub warunków zasobów.
+Ciągów są niezmienne i metod, takich jak String.ToUpper zwraca nowe wystąpienie ciągu zamiast modyfikowania wystąpienie ciągu w przypadku wywołania metody.
+
+Ignorowanie HRESULT lub kod błędu może prowadzić do nieoczekiwanego zachowania w warunkach błędu lub warunki zasobów.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Jeśli metoda tworzy nowe wystąpienie obiektu B, który nie jest nigdy używana, przekaż wystąpienie jako argument do innej metody lub Przypisz wystąpienie do zmiennej. Jeśli nie jest konieczne tworzenie obiektów, usuń go.- lub -
+ Jeśli metoda tworzy nowe wystąpienie obiektu B, który nie jest nigdy używana, przekaż wystąpienie jako argument do innej metody lub Przypisz wystąpienie do zmiennej. Jeśli tworzenie obiektów nie jest konieczne, usuń go.- lub -
 
- Jeśli metoda wywołuje metodę B, ale nie używa nowego wystąpienia ciągu, która zwraca metodę B. Przekaż wystąpienie jako argument do innej metody, przypisz wystąpienie do zmiennej. Lub Usuń wywołanie, jeśli nie jest konieczne.
+ Jeśli metoda wywołuje metodę B, ale nie używa nowego wystąpienia ciągu, które zwraca metoda B. Przekaż wystąpienie jako argument do innej metody, przypisz wystąpienie do zmiennej. Lub Usuń wywołanie funkcji, jeśli jest niepotrzebna.
 
  —lub—
 
- Jeśli metoda wywołuje metodę B, ale nie używa HRESULT lub kodu błędu, który zwraca metodę. Użyj wyniku w instrukcji warunkowej, przypisz wynik do zmiennej lub przekaż go jako argument do innej metody.
+ Jeśli metoda wywołuje metodę B, ale nie używa HRESULT lub kod błędu:, metoda zwraca. Użyj wyniku w instrukcji warunkowej, przypisz wynik do zmiennej lub przekaż go jako argument do innej metody.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Nie pomijaj ostrzeżenie od tej reguły, chyba że utworzenie obiektu pełni niektóre funkcje.
+ Nie pomijaj ostrzeżeń dla tej reguły, chyba że pełni niektóre funkcje, akt tworzenia obiektu.
 
 ## <a name="example"></a>Przykład
- W poniższym przykładzie przedstawiono klasę, która ignoruje wynik wywołania String.Trim.
+ Poniższy przykład przedstawia klasę, która ignoruje wynik String.Trim wywoływania.
 
  [!code-csharp[FxCop.Usage.DoNotIgnoreMethodResults3#1](../code-quality/codesnippet/CSharp/ca1806-do-not-ignore-method-results_1.cs)]
  [!code-vb[FxCop.Usage.DoNotIgnoreMethodResults3#1](../code-quality/codesnippet/VisualBasic/ca1806-do-not-ignore-method-results_1.vb)]
  [!code-cpp[FxCop.Usage.DoNotIgnoreMethodResults3#1](../code-quality/codesnippet/CPP/ca1806-do-not-ignore-method-results_1.cpp)]
 
 ## <a name="example"></a>Przykład
- Poniższy przykład poprawki poprzedniej naruszenie przez przypisanie wynik String.Trim zmienną, która została wywołana w.
+ Poniższy przykład naprawia wcześniejszego naruszenia praw przez przypisywanie wynik String.Trim zmienną, która została wywołana na.
 
  [!code-csharp[FxCop.Usage.DoNotIgnoreMethodResults4#1](../code-quality/codesnippet/CSharp/ca1806-do-not-ignore-method-results_2.cs)]
  [!code-vb[FxCop.Usage.DoNotIgnoreMethodResults4#1](../code-quality/codesnippet/VisualBasic/ca1806-do-not-ignore-method-results_2.vb)]
  [!code-cpp[FxCop.Usage.DoNotIgnoreMethodResults4#1](../code-quality/codesnippet/CPP/ca1806-do-not-ignore-method-results_2.cpp)]
 
 ## <a name="example"></a>Przykład
- W poniższym przykładzie przedstawiono metodę, która nie używa obiektu, który tworzy.
+ Poniższy przykład przedstawia metodę, która nie korzysta z obiektu, który tworzy.
 
 > [!NOTE]
->  W języku Visual Basic nie można odtworzyć to naruszenie.
+> Nie można odtworzyć to naruszenie w języku Visual Basic.
 
  [!code-cpp[FxCop.Usage.DoNotIgnoreMethodResults5#1](../code-quality/codesnippet/CPP/ca1806-do-not-ignore-method-results_3.cpp)]
  [!code-csharp[FxCop.Usage.DoNotIgnoreMethodResults5#1](../code-quality/codesnippet/CSharp/ca1806-do-not-ignore-method-results_3.cs)]
 
 ## <a name="example"></a>Przykład
- Poniższy przykład poprawki poprzedniej naruszenie przez usunięcie niepotrzebnych utworzenia obiektu.
+ Poniższy przykład naprawia wcześniejszego naruszenia praw przez usunięcie niepotrzebnych tworzenia obiektu.
 
  [!code-csharp[FxCop.Usage.DoNotIgnoreMethodResults6#1](../code-quality/codesnippet/CSharp/ca1806-do-not-ignore-method-results_4.cs)]
  [!code-cpp[FxCop.Usage.DoNotIgnoreMethodResults6#1](../code-quality/codesnippet/CPP/ca1806-do-not-ignore-method-results_4.cpp)]

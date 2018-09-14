@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8072c19a5ee5bdf8e8fe28e94334faf0cf7fd44a
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 145640d63191b72d2bce880f9ecab637dcbf0246
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281731"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45552100"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger"></a>Określanie plików symboli (pdb) i plików źródłowych w debugerze programu Visual Studio
 Plik programu bazy danych (PDB), nazywany także plikiem symboli, mapuje identyfikatory, które tworzysz w kodzie źródłowym dla klas, metod i innego kodu, identyfikatory, które są używane w skompilowanych plikach wykonywalnych projektu. Plik .pdb mapuje również instrukcje zawarte w kodzie źródłowym na instrukcje wykonania w plikach wykonywalnych. Debuger używa tych informacji do określenia dwóch kluczowych informacji:
@@ -215,7 +215,7 @@ Aby zobaczyć, jakie symbole są dostępne w tabeli eksportu biblioteki dll, uż
 4.  Informacje źródłowe z .pdb modułu. Może to być lokalizacja pliku źródłowego, gdy moduł został skompilowany, lub może to być polecenie do serwera źródłowego.  
   
 ###  <a name="BKMK_Find_and_load_source_files_with_the_No_Source___No_Symbols_Loaded_pages"></a> Znajdowanie i ładowanie plików źródłowych na stronach Brak załadowanych symboli Source/No  
- Kiedy debuger przerywa wykonywanie w miejscu, gdzie plik źródłowy nie jest dostępny, wyświetli **Brak załadowanego źródła** lub **Brak załadowanych symboli** stron, które mogą pomóc w znalezieniu pliku źródłowego. **Brak załadowanych symboli** pojawia się, kiedy debuger nie może odnaleźć pliku symboli (.pdb) dla pliku wykonywalnego zakończyć wyszukiwanie. Strona Brak symboli zawiera opcje wyszukiwania pliku. Jeśli plik .pdb zostanie znaleziony po wykonaniu jednej z opcji i debuger może pobrać plik źródłowy przy użyciu informacji w pliku symboli, źródło jest wyświetlane. W przeciwnym razie **Brak załadowanego źródła** strona jest wyświetlana, która opisuje problem. Na stronie są wyświetlane łącza do opcji mogących wykonywać akcje, które mogą rozwiązać problem.  
+ Kiedy debuger przerywa wykonywanie w miejscu, gdzie plik źródłowy nie jest dostępny, wyświetli **Brak załadowanego źródła** lub **Brak załadowanych symboli** stron, które mogą pomóc w znalezieniu pliku źródłowego. **Brak załadowanych symboli** pojawia się, kiedy debuger nie może odnaleźć pliku symboli (.pdb) dla pliku wykonywalnego zakończyć wyszukiwanie. Strona Brak symboli zawiera opcje wyszukiwania pliku. Jeśli .pdb zostanie znaleziony po wykonaniu jednej z opcji i debuger może pobrać pliku źródłowego, korzystając z informacji w pliku symboli, źródło jest wyświetlane. W przeciwnym razie **Brak załadowanego źródła** strona jest wyświetlana, która opisuje problem. Na stronie są wyświetlane łącza do opcji mogących wykonywać akcje, które mogą rozwiązać problem.  
   
 ###  <a name="BKMK_Add_source_file_search_paths_to_a_solution"></a> Dodawanie ścieżki wyszukiwania pliku źródłowego do rozwiązania  
  Możesz określić sieć lub katalogi lokalne, aby w nich wyszukiwać pliki źródłowe.  

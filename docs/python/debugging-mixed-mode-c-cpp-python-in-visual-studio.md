@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 005ba501dff89ed26cd83bee04aa40e49e2f9dca
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: 4d5ec15e6fea377e8ffc23cc5215a88081d0f9bd
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008437"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45552087"
 ---
 # <a name="debug-python-and-c-together"></a>Debugowanie języka Python i C++ razem
 
@@ -104,7 +104,7 @@ Dwukrotne kliknięcie ramki żadnych wywołań sprawia, że aktywna i spowoduje 
 
 ### <a name="step-between-python-and-native-code"></a>Krok między języka Python i kodu natywnego
 
-Korzystając z **Step Into** (**F11**) lub **Step Out** (**Shift**+**F11**) polecenia Debuger trybu mieszanego poprawnie obsługuje zmiany między typów kodu. Na przykład gdy Python wywołuje metody typu, który jest implementowany w języku C, wykonywanie krokowe w w wywołaniu metody zatrzymuje się na początku funkcji natywnej implementacji metody. Podobnie, kiedy kod macierzysty wywołuje niektórych funkcji interfejsu API języka Python, który skutkuje wywoływanie kodu w języku Python. Na przykład, przechodzenie do `PyObject_CallObject` na wartość funkcja, która została pierwotnie zdefiniowana w języku Python zatrzymuje się na początku funkcji języka Python. Przechodzenie krok po kroku języku Python do native jest również obsługiwana dla funkcje natywne wywołane z języka Python za pomocą [ctypes](http://docs.python.org/3/library/ctypes.html).
+Korzystając z **Step Into** (**F11**) lub **Step Out** (**Shift**+**F11**) polecenia Debuger trybu mieszanego poprawnie obsługuje zmiany między typów kodu. Na przykład gdy Python wywołuje metody typu, który jest implementowany w języku C, wykonywanie krokowe w w wywołaniu metody zatrzymuje się na początku funkcji natywnej implementacji metody. Podobnie, kiedy kod macierzysty wywołuje niektórych funkcji interfejsu API języka Python, który skutkuje wywoływanie kodu w języku Python. Na przykład, przechodzenie do `PyObject_CallObject` na wartość funkcja, która została pierwotnie zdefiniowana w języku Python zatrzymuje się na początku funkcji języka Python. Przechodzenie krok po kroku języku Python do native jest również obsługiwana dla funkcje natywne wywołane z języka Python za pomocą [ctypes](https://docs.python.org/3/library/ctypes.html).
 
 ### <a name="pyobject-values-view-in-native-code"></a>Wyświetl wartości PyObject w kodzie natywnym
 
@@ -137,7 +137,7 @@ C typy przedstawiające **[widok Python]** węzłów (jeśli jest włączona):
 
 Dla języka Python 2.x, jednak zwykle deklaruje jej nagłówek jako zbiór pól wbudowanych w każdego typu obiektu i istnieje skojarzenie między typami niestandardowymi utworzone i `PyObject` na poziomie systemu typów w kodzie języka C/C++. Aby włączyć **[widok Python]** edytowanie węzłów dla tych typów niestandardowych *PythonDkm.natvis* w pliku [katalog_instalacji narzędzi Python tools](installing-python-support-in-visual-studio.md#install-locations)i Dodaj innego elementu w pliku XML Struktura C lub C++ klasy.
 
-Opcja alternatywny (i lepsze) jest wykonanie czynności opisanych [3123 program ten](http://www.python.org/dev/peps/pep-3123/) i użyć jawnego `PyObject ob_base;` pola zamiast `PyObject_HEAD`, ale która może nie zawsze jest możliwe ze względów zgodności z poprzednimi wersjami.
+Opcja alternatywny (i lepsze) jest wykonanie czynności opisanych [3123 program ten](https://www.python.org/dev/peps/pep-3123/) i użyć jawnego `PyObject ob_base;` pola zamiast `PyObject_HEAD`, ale która może nie zawsze jest możliwe ze względów zgodności z poprzednimi wersjami.
 
 ### <a name="native-values-view-in-python-code"></a>Wyświetl natywnej wartości w kodzie języka Python
 

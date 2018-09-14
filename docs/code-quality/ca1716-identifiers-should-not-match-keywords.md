@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 514a062429168592fe46112ad008d0d1f4e60a28
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2b5ee844da2c04a1dd6eac6a7ca458957dd22a71
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31914787"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45550612"
 ---
 # <a name="ca1716-identifiers-should-not-match-keywords"></a>CA1716: Identyfikatory nie powinny odpowiadać słowom kluczowym
 |||
@@ -32,23 +32,23 @@ ms.locfileid: "31914787"
 |Zmiana kluczowa|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
- Nazwa przestrzeni nazw, typu lub viritual lub interfejsu elementu członkowskiego odpowiada zastrzeżonym słowem kluczowym języka programowania.
+ Nazwa przestrzeni nazw, typu lub elementu członkowskiego viritual lub interfejs odpowiada zastrzeżonym słowem kluczowym w języku programowania.
 
 ## <a name="rule-description"></a>Opis reguły
- Identyfikatory dla przestrzeni nazw, typów, jak i wirtualnych i elementy członkowskie interfejsu nie powinny odpowiadać słów kluczowych, które są definiowane przez języków, których miejscem docelowym jest środowisko uruchomieniowe języka wspólnego. W zależności od języka, który jest używany i słowo kluczowe błędy kompilatora i niejednoznaczności może utrudnić bibliotekę do użycia.
+ Identyfikatory przestrzeni nazw, typów, jak i wirtualnych i składowe interfejsu nie powinny odpowiadać słowom, które są definiowane przez języki przeznaczone dla środowiska uruchomieniowego języka wspólnego. W zależności od języka, który jest używany i słowo kluczowe błędy kompilatora i niejednoznaczności może utrudnić bibliotekę do użycia.
 
- Ta reguła sprawdza przed słów kluczowych w następujących językach:
+ Ta reguła sprawdza, czy przed słów kluczowych w następujących językach:
 
--   Visual Basic
+- Visual Basic
 
--   C#
+- C#
 
--   C++/CLI
+- C++/CLI
 
- Porównania bez uwzględniania wielkości liter służy do [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] słów kluczowych i porównania z uwzględnieniem wielkości liter, jest używany dla innych języków.
+ Porównanie bez uwzględniania wielkości liter jest używana do [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] słów kluczowych i porównywanie uwzględniające wielkość liter jest używana w innych językach.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
  Wybierz nazwę, która nie ma na liście słów kluczowych.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Ostrzeżenie od tej reguły można pominąć, jeśli są przekonaniu, że identyfikator nie należy mylić użytkowników interfejsu API i że biblioteka jest można używać we wszystkich językach dostępne w [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
+ Ostrzeżenie od tej reguły można pominąć, jeśli są przekonane, że identyfikator nie należy mylić użytkowników interfejsu API i czy biblioteki można używać we wszystkich językach, które znajdują się w [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].

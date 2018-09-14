@@ -14,12 +14,12 @@ caps.latest.revision: 13
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: cbe35dbe14f89efdde1878a42fc1803254e9eb06
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 08e059955a6552323453e08882bc2bcebd0fc586
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42682528"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45552050"
 ---
 # <a name="getting-started-with-python"></a>Wprowadzenie do języka Python
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Język programowania Python jest jako:
 
 Aby dowiedzieć się więcej o języku, zacznij od [języka Python dla początkujących](https://www.python.org/about/gettingstarted/) w witrynie python.org.
 
-Do zainstalowania języka Python, samego, odwiedź stronę [ http://python.org/download/ ](http://python.org/download/).
+Do zainstalowania języka Python, samego, odwiedź stronę [ https://www.python.org/download/ ](https://www.python.org/download/).
  
   
 ## <a name="python-tools-for-visual-studio"></a>Narzędzia języka Python dla programu Visual Studio
@@ -83,26 +83,27 @@ Główne oferty tworzenia interfejsu użytkownika za pomocą języka Python jest
 Zestaw Azure SDK dla języka Python, który obsługuje Windows, Mac i Linux, ułatwia korzystanie i zarządzanie nimi usług platformy Microsoft Azure. Zapoznaj się z poniższymi zasobami, aby uzyskać szczegółowe informacje: 
 
 - Aby zainstalować zestaw SDK, użyj [indeksu pakietów języka Python](https://pypi.python.org/pypi/azure) lub wykonaj [zainstalowania języka Python i zestawu SDK](https://azure.microsoft.com/documentation/articles/python-how-to-install/) w dokumentacji platformy Azure. 
-- [Zestaw Azure SDK dla Centrum deweloperów języka Python](http://azure.microsoft.com/en-us/develop/python/) mnóstwo pomocy instalacji do dokumentacji z samouczków.  Należy wykonać niektóre z najważniejszych:  
+- [Zestaw Azure SDK dla Centrum deweloperów języka Python](https://azure.microsoft.com/develop/python/) mnóstwo pomocy instalacji do dokumentacji z samouczków.  Należy wykonać niektóre z najważniejszych:  
 - Przewodniki z instrukcjami:
-  - [Obiekt Blob magazynu](http://azure.microsoft.com/en-us/develop/python/how-to-guides/blob-service/)  
-  - [Kolejki magazynu](http://azure.microsoft.com/en-us/develop/python/how-to-guides/queue-service/)  
-  - [Tabela magazynu](http://azure.microsoft.com/en-us/develop/python/how-to-guides/table-service/)  
-  - [Kolejki usługi Service Bus](http://azure.microsoft.com/en-us/develop/python/how-to-guides/service-bus-queues/)   - [usługi Service Bus tematów/subskrypcji](http://azure.microsoft.com/en-us/develop/python/how-to-guides/service-bus-topics/) 
-  - [Zarządzanie usługami](http://azure.microsoft.com/en-us/develop/python/how-to-guides/service-management/)  
- 
-  
-  
-## <a name="scientific-computing"></a>Obliczeń naukowych  
+  - [Obiekt Blob magazynu](https://azure.microsoft.com/develop/python/how-to-guides/blob-service/)  
+  - [Kolejki magazynu](https://azure.microsoft.com/develop/python/how-to-guides/queue-service/)  
+  - [Tabela magazynu](https://azure.microsoft.com/develop/python/how-to-guides/table-service/)  
+  - [Kolejki usługi Service Bus](https://azure.microsoft.com/develop/python/how-to-guides/service-bus-queues/)
+  - [Usługa Service Bus tematów/subskrypcji](https://azure.microsoft.com/develop/python/how-to-guides/service-bus-topics/) 
+  - [Zarządzanie usługami](https://azure.microsoft.com/develop/python/how-to-guides/service-management/)  
+
+## <a name="scientific-computing"></a>Obliczeń naukowych
+
 Oprócz wszystkich Python analityk danych bibliotek narzędzi Python Tools for Visual Studio obsługuje IPython i Notesy programu IPython, które mogą być hostowane na platformie Azure.
 
 Firma Microsoft zaleca uzyskiwanie IPython i naukowych bibliotek obliczeń (matplotlib, scipy, numpy itp.) z [uniwersytet kalifornijski, Irvine](http://www.lfd.uci.edu/~gohlke/pythonlibs/#scipy-stack).  
   
 ## <a name="see-also"></a>Zobacz też  
- [Rozpoczęcie pracy z narzędziami PTVS: Konfigurowanie programu Visual Studio](../python/getting-started-with-ptvs-setting-up-visual-studio.md)   
- [Rozpoczęcie pracy z narzędziami PTVS: rozpoczęcie kodowania (projekty)](../python/getting-started-with-ptvs-start-coding-projects.md)   
- [Rozpoczęcie pracy z narzędziami PTVS: edytowanie kodu](../python/getting-started-with-ptvs-editing-code.md)   
- [Rozpoczęcie pracy z narzędziami PTVS: debugowanie](../python/getting-started-with-ptvs-debugging.md)   
- [Rozpoczęcie pracy z narzędziami PTVS: interaktywny język Python](../python/getting-started-with-ptvs-interactive-python.md)   
- [Rozpoczęcie pracy z narzędziami PTVS: tworzenie witryny sieci Web na platformie Azure](../python/getting-started-with-ptvs-building-a-website-in-azure.md)
+
+[Rozpoczęcie pracy z narzędziami PTVS: Konfigurowanie programu Visual Studio](../python/getting-started-with-ptvs-setting-up-visual-studio.md)
+[rozpoczęcie pracy z narzędziami PTVS: Start kodowania (projekty)](../python/getting-started-with-ptvs-start-coding-projects.md)
+[rozpoczęcie pracy z narzędziami PTVS: edytowanie kodu](../python/getting-started-with-ptvs-editing-code.md) 
+ [Rozpoczęcie pracy z narzędziami PTVS: debugowanie](../python/getting-started-with-ptvs-debugging.md)
+[rozpoczęcie pracy z narzędziami PTVS: interaktywny język Python](../python/getting-started-with-ptvs-interactive-python.md)
+[wprowadzenie Kroki z narzędziami PTVS: tworzenie witryny sieci Web na platformie Azure](../python/getting-started-with-ptvs-building-a-website-in-azure.md)
 

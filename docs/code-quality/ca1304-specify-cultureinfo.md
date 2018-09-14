@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bae12da61047e8e9bde6ee097ed84c1d6c95acbc
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: fe02dd66b523e6ee82c5e1a2051f3a68839957d4
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174143"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45546197"
 ---
 # <a name="ca1304-specify-cultureinfo"></a>CA1304: Określ CultureInfo
 
@@ -77,9 +77,10 @@ Poniższy przykład przedstawia efekt bieżącej kultury na domyślnym <xref:Sys
 
 Ten przykład generuje następujące wyniki:
 
-**6/4/1900 12:15:12 PM**
-
-**06/04/1900 12:15:12**
+```txt
+6/4/1900 12:15:12 PM
+06/04/1900 12:15:12
+```
 
 ## <a name="related-rules"></a>Powiązane reguły
 

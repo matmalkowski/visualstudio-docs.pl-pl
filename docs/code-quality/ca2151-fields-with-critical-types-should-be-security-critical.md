@@ -10,14 +10,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1fb3a7e1818013694633a5337e415a01baaae286
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 14df76b363f4df5d09b06436765b5f0c66ad2c5d
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31918707"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551902"
 ---
 # <a name="ca2151-fields-with-critical-types-should-be-security-critical"></a>CA2151: Pola typu krytycznego powinny być bezpieczne-krytyczne
+
 |||
 |-|-|
 |TypeName||
@@ -26,7 +27,8 @@ ms.locfileid: "31918707"
 |Zmiana kluczowa|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
- Pole przezroczyste zabezpieczeń lub bezpieczne-krytyczne jest zadeklarowane. Jego typ jest określony jako krytyczny pod względem zabezpieczeń. Na przykład:
+
+Pole przezroczyste zabezpieczeń lub bezpieczne-krytyczne jest zadeklarowane. Jego typ jest określony jako krytyczny pod względem zabezpieczeń. Na przykład:
 
 ```csharp
 [assembly: AllowPartiallyTrustedCallers]
@@ -38,16 +40,17 @@ ms.locfileid: "31918707"
    {
       Type1 m_field; // CA2151, transparent field of critical type
    }
-
 ```
 
- W tym przykładzie `m_field` to pole przezroczystego zabezpieczeń typu, który jest krytyczne dla zabezpieczeń.
+W tym przykładzie `m_field` jest polem przezroczystym zabezpieczeń typu, który jest krytyczny dla bezpieczeństwa.
 
 ## <a name="rule-description"></a>Opis reguły
- Aby używać typów krytycznych pod względem zabezpieczeń, kod odwołujący się do typu musi być albo krytyczny pod względem zabezpieczeń, albo bezpieczny-krytyczny pod względem zabezpieczeń. Ta zasada obowiązuje nawet w przypadku odwołania pośredniego. Na przykład w przypadku odwołania do pola przezroczystego, które ma typ krytyczny, kod musi być krytyczny pod względem zabezpieczeń lub bezpieczny pod względem zabezpieczeń. Dlatego pole mające zabezpieczenia przezroczyste lub pole bezpieczne-krytyczne pod względem zabezpieczeń jest mylące, ponieważ przezroczysty kod nadal nie będzie mógł uzyskać dostępu do pola.
+
+Aby używać typów krytycznych pod względem zabezpieczeń, kod odwołujący się do typu musi być albo krytyczny pod względem zabezpieczeń, albo bezpieczny-krytyczny pod względem zabezpieczeń. Ta zasada obowiązuje nawet w przypadku odwołania pośredniego. Na przykład w przypadku odwołania do pola przezroczystego, które ma typ krytyczny, kod musi być krytyczny pod względem zabezpieczeń lub bezpieczny pod względem zabezpieczeń. Dlatego pole mające zabezpieczenia przezroczyste lub pole bezpieczne-krytyczne pod względem zabezpieczeń jest mylące, ponieważ przezroczysty kod nadal nie będzie mógł uzyskać dostępu do pola.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej reguły, zaznaczone pole z <xref:System.Security.SecurityCriticalAttribute> atrybutu lub Ustaw typ, który odwołuje się do niego zabezpieczeń eith pole przezroczystego lub sejfie jako krytyczne.
+
+Aby naprawić naruszenie tej zasady, należy zaznaczyć pole z <xref:System.Security.SecurityCriticalAttribute> atrybut lub zmień typ, który jest przywoływany przez pole albo zabezpieczeń przezroczysty lub bezpieczny krytycznych.
 
 ```csharp
 // Fix 1: Make the referencing field security critical
@@ -72,13 +75,12 @@ ms.locfileid: "31918707"
       [SecurityCritical]
       Type1 m_field; // Fixed: critical type, critical field
    }
-
 ```
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Nie pomijaj ostrzeżeń dla tej reguły.
+
+Nie pomijaj ostrzeżeń dla tej reguły.
 
 ### <a name="code"></a>Kod
- [!code-csharp[FxCop.Security.CA2145.TransparentMethodsShouldNotUseSuppressUnmanagedCodeSecurity#1](../code-quality/codesnippet/CSharp/ca2151-fields-with-critical-types-should-be-security-critical_1.cs)]
 
-### <a name="comments"></a>Komentarze
+[!code-csharp[FxCop.Security.CA2145.TransparentMethodsShouldNotUseSuppressUnmanagedCodeSecurity#1](../code-quality/codesnippet/CSharp/ca2151-fields-with-critical-types-should-be-security-critical_1.cs)]

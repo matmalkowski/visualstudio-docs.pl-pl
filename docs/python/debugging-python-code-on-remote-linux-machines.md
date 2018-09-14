@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c17ca59959107d25b7752297ec209f647886362d
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 3462e3e46a551b9f9245dc2cb5bf25bbcde768a5
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774694"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549314"
 ---
 # <a name="remotely-debug-python-code-on-linux"></a>Zdalne debugowanie kodu w języku Python w systemie Linux
 
@@ -99,7 +99,7 @@ W tych krokach możemy ustawić prosty punkt przerwania, aby zatrzymać proces z
 1. W **adres docelowy połączenia** pola (**kwalifikator** w starszych wersjach), wprowadź `tcp://<secret>@<ip_address>:5678` gdzie `<secret>` jest przekazany ciąg `enable_attach` w kodzie języka Python `<ip_address>` jest komputera zdalnego (która może być jawne adresu lub nazwy, takie jak myvm.cloudapp.net) i `:5678` zdalnego debugowania numer portu to.
 
     > [!Warning]
-    > Jeśli wprowadzasz połączenie za pośrednictwem publicznej sieci internet, należy używać `tcps` zamiast tego, jak i zgodnie z instrukcjami poniżej, aby [bezpieczne połączenie debugera przy użyciu protokołu SSL](#securing-the-debugger-connection-with-ssl).
+    > Jeśli wprowadzasz połączenie za pośrednictwem publicznej sieci internet, należy używać `tcps` zamiast tego, jak i zgodnie z instrukcjami poniżej, aby [bezpieczne połączenie debugera przy użyciu protokołu SSL](#secure-the-debugger-connection-with-ssl).
 
 1. Naciśnij klawisz **Enter** do wypełnienia listy ptvsd dostępne procesy na tym komputerze:
 
@@ -148,7 +148,7 @@ Domyślnie połączenie z serwerem zdalnego debugowania ptvsd jest chroniony tyl
 
     Po wyświetleniu monitu użyj nazwę hosta lub adres IP (zależności możesz użyć do łączenia z), aby uzyskać **nazwa pospolita** po wyświetleniu monitu przez openssl.
 
-    (Zobacz [certyfikaty z podpisem własnym](http://docs.python.org/3/library/ssl.html#self-signed-certificates) w języku Python `ssl` docs modułu, aby uzyskać więcej informacji. Należy pamiętać, że polecenia w dokumentacji tych generuje tylko jednego połączonego pliku.)
+    (Zobacz [certyfikaty z podpisem własnym](https://docs.python.org/3/library/ssl.html#self-signed-certificates) w języku Python `ssl` docs modułu, aby uzyskać więcej informacji. Należy pamiętać, że polecenia w dokumentacji tych generuje tylko jednego połączonego pliku.)
 
 1. W kodzie, zmodyfikuj wywołanie `enable_attach` obejmujący `certfile` i `keyfile` argumentów za pomocą nazwy plików jako wartości (te argumenty mają takie samo znaczenie jak w przypadku standardowych `ssl.wrap_socket` funkce Pythonu):
 

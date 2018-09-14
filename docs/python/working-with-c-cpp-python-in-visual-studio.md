@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 60f4081f205b160ad74dca52dec68a10d36e43fd
-ms.sourcegitcommit: 9ea4b62163ad6be556e088da1e2a355f31366f39
+ms.openlocfilehash: bbc5d194552952ccce4a30a7c15b917e7a7a32ae
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43995979"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549472"
 ---
 # <a name="create-a-c-extension-for-python"></a>Tworzenie rozszerzenia C++ dla języka Python
 
@@ -100,6 +100,8 @@ Aby uzyskać więcej informacji, zobacz [Instalowanie obsługi języka Python dl
 ## <a name="create-the-core-c-projects"></a>Tworzenie podstawowych projektów C++
 
 Postępuj zgodnie z instrukcjami w tej sekcji, aby utworzyć dwa identyczne projekty języka C++ o nazwie "superfastcode" i "superfastcode2". Później użyjesz innego oznacza, że w każdym projekcie do udostępnienia kodu C++ do języka Python.
+
+1. Upewnij się, że `PYTHONHOME` zmienna środowiskowa jest ustawiona do interpretera języka Python chcesz użyć. Projekty języka C++ w programie Visual Studio zależą od tej zmiennej, aby zlokalizować pliki, takie jak *python.h*, które są używane podczas tworzenia rozszerzenie języka Python.
 
 1. Kliknij prawym przyciskiem myszy rozwiązanie w **Eksploratora rozwiązań** i wybierz **Dodaj** > **nowy projekt**. Rozwiązania programu Visual Studio może zawierać zarówno Python projektów języka C++ i razem (czyli jedną z zalet używania programu Visual Studio dla języka Python).
 
@@ -263,9 +265,9 @@ Jeśli wykonaniu kroków opisanych w poprzedniej sekcji, możesz bez obaw zauwa�
 
 Modułu języka C++ mogą kompilacja nie powiedzie się z następujących powodów:
 
-- Nie można zlokalizować *Python.h* (**E1696: nie można otworzyć pliku źródłowego "Python.h"** i/lub **C1083: nie może zawierać Otwórz plik: "Python.h": nie ma takiego pliku lub katalogu**): Upewnij się, że Ścieżka w **C/C++** > **ogólne** > **dodatkowe katalogi dołączenia** w punktach właściwości projektu do języka Python instalacji *obejmują* folderu. Zobacz krok 6 w sekcji [Tworzenie projektu core C++](#create-the-core-c-project).
+- Nie można zlokalizować *Python.h* (**E1696: nie można otworzyć pliku źródłowego "Python.h"** i/lub **C1083: nie może zawierać Otwórz plik: "Python.h": nie ma takiego pliku lub katalogu**): Upewnij się, że Ścieżka w **C/C++** > **ogólne** > **dodatkowe katalogi dołączenia** w punktach właściwości projektu do języka Python instalacji *obejmują* folderu. Zobacz krok 6 w sekcji [Tworzenie projektu core C++](#create-the-core-c-projects).
 
-- Nie można zlokalizować biblioteki języka Python: Upewnij się, że ścieżka w **konsolidatora** > **ogólne** > **dodatkowe katalogi bibliotek** w projekcie wskazuje właściwości z instalacją języka Python *libs* folderu. Zobacz krok 6 w sekcji [Tworzenie projektu core C++](#create-the-core-c-project).
+- Nie można zlokalizować biblioteki języka Python: Upewnij się, że ścieżka w **konsolidatora** > **ogólne** > **dodatkowe katalogi bibliotek** w projekcie wskazuje właściwości z instalacją języka Python *libs* folderu. Zobacz krok 6 w sekcji [Tworzenie projektu core C++](#create-the-core-c-projects).
 
 - Błędy konsolidatora dotyczące architektury docelowej: zmiana docelowej C++ projektu architektury, aby był zgodny z instalacją języka Python. Na przykład jeśli zostaną objęci x64 z projektu C++, ale z instalacją języka Python jest x86, należy zmienić projektu C++ pod kątem x86.
 
@@ -406,7 +408,7 @@ Istnieją różne oznacza, że do tworzenia rozszerzenia języka Python, zgodnie
 | [Boost.Python](https://www.boost.org/doc/libs/1_66_0/libs/python/doc/html/index.html) | 2002 | | Działa z niemal każdego kompilatora języka C++. | Pakiet biblioteki; dużych i złożonych zawiera wiele obejścia stare kompilatory. |
 | ctypes | 2003 | [oscrypto](https://github.com/wbond/oscrypto) | Nie kompilacja powszechną dostępność. | Uzyskiwanie dostępu do i mutacja struktur C skomplikowana względem i podatne. |
 | SWIG | 1996 | [crfsuite](http://www.chokkan.org/software/crfsuite/) | Generowanie jednocześnie powiązania dla wielu języków. | Nadmiernego obciążenia, jeśli Python jest jedynym miejscem docelowym. |
-| cffi | 2013 | [Kryptografia](https://cryptography.io/en/latest/), [pypy](http://pypy.org/) | Łatwość integracji, PyPy zgodności. | Nowsze, mniej dojrzałe. |
+| cffi | 2013 | [Kryptografia](https://cryptography.io/en/latest/), [pypy](https://pypy.org/) | Łatwość integracji, PyPy zgodności. | Nowsze, mniej dojrzałe. |
 
 ## <a name="see-also"></a>Zobacz także
 

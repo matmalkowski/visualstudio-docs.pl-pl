@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ebea0208beddebb82484297eb990baa9b22c58e8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 91953fd855576b6f40d02ebb3653fff07bfdef9c
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31899062"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45546434"
 ---
 # <a name="ca1309-use-ordinal-stringcomparison"></a>CA1309: Użyj porządkowego StringComparison
+
 |||
 |-|-|
 |TypeName|UseOrdinalStringComparison|
@@ -32,18 +33,21 @@ ms.locfileid: "31899062"
 |Zmiana kluczowa|Bez podziału|
 
 ## <a name="cause"></a>Przyczyna
- Operacja porównywania ciągów, która jest nonlinguistic nie ustawia <xref:System.StringComparison> albo parametr **numer** lub **OrdinalIgnoreCase**.
+
+Operacja porównania ciągu, która jest nielingwistyczna, nie ustawia <xref:System.StringComparison> albo parametr **numer** lub **OrdinalIgnoreCase**.
 
 ## <a name="rule-description"></a>Opis reguły
- Ciąg wielu operacji najważniejszych <xref:System.String.Compare%2A?displayProperty=fullName> i <xref:System.String.Equals%2A?displayProperty=fullName> metod, zapewnia teraz przeciążenia, które akceptuje <xref:System.StringComparison?displayProperty=fullName> wartość wyliczenia jako parametr.
+ Wiele ciągów operacje, co najważniejsze <xref:System.String.Compare%2A?displayProperty=fullName> i <xref:System.String.Equals%2A?displayProperty=fullName> metod, teraz dostarczać przeciążenia, które akceptuje <xref:System.StringComparison?displayProperty=fullName> wartość wyliczenia jako parametr.
 
- Po określeniu albo **wartości StringComparison.Ordinal** lub **StringComparison.OrdinalIgnoreCase**, porównania ciągów będzie nonlinguistic. Oznacza to funkcje, które są specyficzne dla języka naturalnego są ignorowane, podczas porównywania decyzji. Oznacza to decyzje są oparte na jednobajtowych porównania i Ignoruj wielkość liter lub równoważność tabel, które mają zdefiniowane przez kultury. W związku z tym przez jawne ustawienie dla parametru albo **wartości StringComparison.Ordinal** lub **StringComparison.OrdinalIgnoreCase**, kodzie często uzyskuje szybkości, zwiększa prawidłowości i staje się bardziej niezawodne.
+ Po określeniu jednej **StringComparison.Ordinal** lub **StringComparison.OrdinalIgnoreCase**, porównywania ciągów jest niejęzykowy. Oznacza to funkcje, które są specyficzne dla języka naturalnego są ignorowane, podczas porównywania decyzji. Ignorowanie funkcje języka naturalnego oznacza, że decyzje są oparte na porównania jednobajtowych a nie wielkością liter lub równoważności tabel, które są parametryzowane przez kulturę. W rezultacie przez jawne ustawienie parametru na wartość **StringComparison.Ordinal** lub **StringComparison.OrdinalIgnoreCase**, kod często uzyskuje szybkość, zwiększa poprawność i staje się bardziej niezawodna.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby rozwiązać naruszenie tej reguły, zmień metodę porównywania ciągów na przeciążenia, które akceptuje <xref:System.StringComparison?displayProperty=fullName> wyliczenie jako parametru i określ **numer** lub **OrdinalIgnoreCase**. Na przykład zmienić `String.Compare(str1, str2)` do `String.Compare(str1, str2, StringComparison.Ordinal)`.
+ Aby naprawić naruszenie tej zasady, zmień metodę porównywania ciągów na przeciążenie, które akceptuje <xref:System.StringComparison?displayProperty=fullName> wyliczenia jako parametr oraz określ **numer** lub **OrdinalIgnoreCase**. Na przykład zmienić `String.Compare(str1, str2)` do `String.Compare(str1, str2, StringComparison.Ordinal)`.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Jest to bezpieczne Pomiń ostrzeżenie od tej reguły, gdy biblioteki lub aplikacji ma ograniczone odbiorców lokalnym lub gdy semantykę bieżącej kultury powinny być używane.
+ Jest bezpieczne pominąć ostrzeżenie od tej reguły, gdy biblioteki lub aplikacja jest przeznaczona dla ograniczonej grupie osób lokalnych lub w przypadku, gdy semantykę bieżącej kultury, które powinny być używane.
 
-## <a name="see-also"></a>Zobacz też
- [Ostrzeżenia globalizacji](../code-quality/globalization-warnings.md) [CA1307: Określ StringComparison](../code-quality/ca1307-specify-stringcomparison.md)
+## <a name="see-also"></a>Zobacz także
+
+- [Ostrzeżenia dotyczące globalizacji](../code-quality/globalization-warnings.md)
+- [CA1307: Określ wyliczenie StringComparison](../code-quality/ca1307-specify-stringcomparison.md)

@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 67cdfd3799b0ba3e1af53cb9e95bb426fec02ddf
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5f31abd49b2d9ef8c00e7d308d66583d968691f8
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31920631"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549774"
 ---
 # <a name="ca2226-operators-should-have-symmetrical-overloads"></a>CA2226: Operatory powinny być przeciążane symetrycznie
 |||
@@ -35,17 +35,17 @@ ms.locfileid: "31920631"
  Typ implementuje operator równości lub nierówności, ale nie implementuje operatora przeciwnego.
 
 ## <a name="rule-description"></a>Opis reguły
- Nie ma w żadnym gdzie równości i nierówności jest stosowana do wystąpień typu i przeciwną operator jest niezdefiniowany. Typy zwykle implementować operator nierówności zwracając o zanegowaną wartość operatora równości.
+ Nie ma żadnych okoliczności gdzie równości i nierówności ma zastosowanie do wystąpień typu i operatora przeciwnego jest niezdefiniowana. Typy zwykle implementuje operator nierówności, zwracając zanegowaną wartość operatora równości.
 
- Kompilator języka C# generuje błąd dla naruszeń tej reguły.
+ Kompilator języka C# generuje błąd dla naruszenie tej zasady.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby rozwiązać naruszenie tej reguły, implementują równości i nierówności operatorów lub Usuń ten, który jest obecny.
+ Aby naprawić naruszenie tej zasady, implementują równości i nierówności operatorów lub Usuń ten, który jest obecny.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Nie pomijaj ostrzeżeń dla tej reguły. Danego typu nie będą działać w sposób zgodny z [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
+ Nie pomijaj ostrzeżeń dla tej reguły. Danego typu nie będą działać w taki sposób, który jest zgodny z [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
 
-## <a name="related-rules"></a>Powiązanych reguł
+## <a name="related-rules"></a>Powiązane reguły
  [CA1046: Nie przeciążaj operatora równości w typach referencyjnych](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)
 
  [CA2225: Przeciążenia operatora mają nazwane alternatywy](../code-quality/ca2225-operator-overloads-have-named-alternates.md)

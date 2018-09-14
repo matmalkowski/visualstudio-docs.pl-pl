@@ -1,5 +1,5 @@
 ---
-title: 'CA1700: Nie należy nadawać wartościom enum &#39;zastrzeżone&#39;'
+title: 'CA1700: Nie nadawać wartościom enum oznaczenia &#39;zastrzeżone&#39;'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -16,14 +16,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d2e7b501019ed2891a30d1f0359aee6405c4444
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 485a1e18f1c1047b84fa186cfcae1fde4bebe1df
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31918452"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549983"
 ---
-# <a name="ca1700-do-not-name-enum-values-39reserved39"></a>CA1700: Nie należy nadawać wartościom enum &#39;zastrzeżone&#39;
+# <a name="ca1700-do-not-name-enum-values-39reserved39"></a>CA1700: Nie nadawać wartościom enum oznaczenia &#39;zastrzeżone&#39;
 |||
 |-|-|
 |TypeName|DoNotNameEnumValuesReserved|
@@ -32,28 +32,28 @@ ms.locfileid: "31918452"
 |Zmiana kluczowa|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
- Nazwa elementu członkowskiego wyliczenia zawiera słowo "reserved".
+ Nazwa elementu członkowskiego wyliczenia zawierają wyraz "reserved".
 
 ## <a name="rule-description"></a>Opis reguły
- Ta reguła zakłada, że element członkowski wyliczenia o nazwie, która zawiera „reserved”, nie jest obecnie używany, ale jest symbolem zastępczym do zmiany nazwy lub usunięcia w przyszłej wersji. Zmiana nazwy lub usuwanie członka jest zmianą przerywającą. Nie należy oczekiwać użytkownikom Ignoruj członka tak, ponieważ jego nazwa zawiera "reserved", ani nie mogą polegać na użytkowników do odczytu lub przestrzegać dokumentacji. Ponadto ponieważ zastrzeżone elementy członkowskie są wyświetlane w przeglądarki obiektów i środowisk deweloperskich zintegrowane inteligentne, może spowodować pomyłek o tym, które elementy członkowskie są rzeczywiście używane.
+ Ta reguła zakłada, że element członkowski wyliczenia o nazwie, która zawiera „reserved”, nie jest obecnie używany, ale jest symbolem zastępczym do zmiany nazwy lub usunięcia w przyszłej wersji. Zmiana nazwy lub usuwanie członka jest zmianą przerywającą. Nie powinni oczekiwać od użytkowników, aby zignorować członka, po prostu, ponieważ jego nazwa zawiera "reserved", ani nie może polegać na użytkownikom odczytywanie lub stosować się do dokumentacji. Ponadto ponieważ zarezerwowanych elementów członkowskich są wyświetlane w przeglądarkach obiektu i inteligentne zintegrowanych środowisk projektowych, może spowodować, że pomyłek o tym, które elementy członkowskie są rzeczywiście używane.
 
- Zamiast korzystać z zastrzeżonym członkiem, Dodaj nowy element członkowski do wyliczenia w przyszłych wersjach. W większości przypadków dodanie nowego elementu członkowskiego nie jest na istotne zmiany, tak długo, jak dodanie nie powoduje, że wartości oryginalnej składników, aby zmienić.
+ Zamiast korzystać z zastrzeżoną składową, Dodaj nowy element członkowski do wyliczenia w przyszłej wersji. W większości przypadków dodanie nowego elementu członkowskiego nie jest istotnej zmiany, tak długo, jak dodanie nie powoduje, że wartości oryginalnego składowych, aby zmienić.
 
- Ograniczona liczba przypadków dodawania elementu członkowskiego jest istotne zmiany nawet wtedy, gdy oryginalne członkowie zachować oryginalnych wartości. Przede wszystkim nowy element członkowski nie może być zwracany z istniejących ścieżek kodu bez przerywania wywołań, które używają `switch` (`Select` w [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) instrukcji wartości zwracanej obejmujący cały element członkowski listy i który zgłosić wyjątek domyślne działanie case. Dodatkowej dotyczą jest, że kod klienta może nie obsługiwać zmiana w porównaniu z metody odbicia takich jak <xref:System.Enum.IsDefined%2A?displayProperty=fullName>. W związku z tym jeśli nowy element członkowski ma zostać zwrócone z istniejących metod lub występuje niezgodność aplikacji z powodu użycia niską odbicia, tylko nierozdzielający rozwiązanie to:
+ Ograniczona liczba przypadków dodawania członka jest zmianą przerywającą nawet wtedy, gdy oryginalny członkowie zachować oryginalne wartości. Przede wszystkim nowy element członkowski nie może być zwracany z istniejących ścieżek kodu bez przerywania obiektów wywołujących, które używają `switch` (`Select` w [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) instrukcji na wartość zwracaną obejmujący listę całego elementów członkowskich i który zgłosić wyjątek w przypadek domyślny. Pomocniczy kwestią jest, że kod klienta może nie obsługiwać zmiana w porównaniu z metody odbicia takich jak <xref:System.Enum.IsDefined%2A?displayProperty=fullName>. W związku z tym czy nowy element członkowski został zwrócony z istniejących metod niezgodności aplikacji występuje z powodu użycie odbicia niska, jedynym rozwiązaniem nierozdzielający jest:
 
-1.  Dodaj nowe wyliczanie zawierający oryginalne i nowe elementy członkowskie.
+1.  Dodaj nowe wyliczenie, które zawiera elementy członkowskie oryginalnego i nowe.
 
-2.  Oznacz wyliczenie oryginalnego z <xref:System.ObsoleteAttribute?displayProperty=fullName> atrybutu.
+2.  Oznacz oryginalnego wyliczenie atrybutem <xref:System.ObsoleteAttribute?displayProperty=fullName> atrybutu.
 
- Postępuj zgodnie z tym samym typy widoczne na zewnątrz lub elementów członkowskich, które udostępniają oryginalnego wyliczenia.
+ Wykonaj tę samą procedurę dla dowolnego typy widoczne na zewnątrz lub elementów członkowskich, które udostępnianie oryginalne wyliczenia.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej reguły, usuń lub zmień nazwę elementu członkowskiego.
+ Aby naprawić naruszenie tej zasady, usuń lub zmień nazwę elementu członkowskiego.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Jest bezpieczne pominąć ostrzeżenie od tej reguły dla elementu członkowskiego, który jest obecnie używany lub bibliotek, które wcześniej zostały dostarczone.
+ Jest to bezpieczne Pomijaj ostrzeżeń dla tej reguły dla elementu członkowskiego, który jest obecnie używany, lub dla bibliotek, które wcześniej zostały wprowadzone do użytku.
 
-## <a name="related-rules"></a>Powiązanych reguł
+## <a name="related-rules"></a>Powiązane reguły
  [CA2217: Nie oznaczaj wyliczeń za pomocą atrybutu FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
 
  [CA1712: Nie poprzedzaj wartości wyliczenia nazwą typu](../code-quality/ca1712-do-not-prefix-enum-values-with-type-name.md)

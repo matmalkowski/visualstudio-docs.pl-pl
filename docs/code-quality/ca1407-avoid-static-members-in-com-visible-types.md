@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4039e7f0d3c520a85d152329720d3253cab2140a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1ba8ef8cc0b75ed70ea6e98be2a4bac3e041e1d8
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31901594"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45552019"
 ---
 # <a name="ca1407-avoid-static-members-in-com-visible-types"></a>CA1407: Unikaj statycznych elementów członkowskich w typach widocznych dla modelu COM
 |||
@@ -32,16 +32,16 @@ ms.locfileid: "31901594"
 |Zmiana kluczowa|Bez podziału|
 
 ## <a name="cause"></a>Przyczyna
- Typ, w szczególności oznaczony jako widoczna do składnika modelu COM (Object) zawiera `public``static` metody.
+ Typ, który jest specjalnie oznaczony jako widoczny na Component Object Model (COM) zawiera `public``static` metody.
 
 ## <a name="rule-description"></a>Opis reguły
  Model COM nie obsługuje `static` metody.
 
- Ta zasada powoduje ignorowanie właściwości i metod dostępu zdarzeń, przeładowanie metody lub metody, które są oznaczone za pomocą operatora <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> atrybutu lub <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName> atrybutu.
+ Ta zasada powoduje ignorowanie właściwości i metod dostępu zdarzeń, przeciążenia metody lub metody, które są oznaczone za pomocą operatora <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> atrybutu lub <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName> atrybutu.
 
- Domyślnie widoczne dla modelu COM są następujące: zestawy, typy publiczne elementów członkowskich wystąpienia publicznego w publicznych typach i wszystkie elementy członkowskie typów publicznych wartości.
+ Domyślnie widoczny dla modelu COM są następujące: zestawy, typy publiczne, składowe publiczne wystąpienia w publicznych typach i wszystkich elementów członkowskich typów publicznych wartości.
 
- Dla tej reguły występuje na poziomie zestawu <xref:System.Runtime.InteropServices.ComVisibleAttribute> musi mieć ustawioną `false` i klasa - <xref:System.Runtime.InteropServices.ComVisibleAttribute> musi mieć ustawioną `true`, jak pokazano w następującym kodem.
+ Dla tej reguły występuje, poziomie zestawu <xref:System.Runtime.InteropServices.ComVisibleAttribute> musi być równa `false` i klasa - <xref:System.Runtime.InteropServices.ComVisibleAttribute> musi być równa `true`, jak pokazano w poniższym kodzie.
 
 ```csharp
 using System;
@@ -61,12 +61,12 @@ namespace Samples
 ```
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby usunąć naruszenie tej reguły, zmienić projektu przy użyciu metody wystąpienia, która zapewnia te same funkcje co `static` metody.
+ Aby naprawić naruszenie tej zasady, zmiany projektu przy użyciu metody wystąpienia, która zapewnia taką samą funkcjonalność jak `static` metody.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Można bezpiecznie pominąć ostrzeżenie od tej reguły, jeśli klient modelu COM nie wymagają dostępu do funkcjonalności zapewnianej przez `static` metody.
+ Bezpiecznie Pomijaj ostrzeżeń dla tej reguły, jeśli klient modelu COM nie wymaga dostępu do funkcji, w których jest świadczona przez `static` metody.
 
-## <a name="example-violation"></a>Przykład naruszenie
+## <a name="example-violation"></a>Przykład naruszenia
 
 ### <a name="description"></a>Opis
  W poniższym przykładzie przedstawiono `static` metodę, która narusza tę regułę.
@@ -77,22 +77,22 @@ namespace Samples
 ### <a name="comments"></a>Komentarze
  W tym przykładzie **Book.FromPages** nie można wywołać metody z modelu COM.
 
-## <a name="example-fix"></a>Przykład poprawki
+## <a name="example-fix"></a>Przykład poprawkę
 
 ### <a name="description"></a>Opis
- Aby naprawić naruszenie w poprzednim przykładzie, można zmienić metodę do metody wystąpienia, ale które nie mają sensu w tym wystąpieniu. Lepszym rozwiązaniem jest zastosowanie jawnie `ComVisible(false)` do metody, aby była Wyczyść, aby inni deweloperzy, że metoda mogą być niewidoczne z modelu COM.
+ Aby naprawić naruszenie w poprzednim przykładzie, można zmienić metodę z metodą wystąpienia, ale który nie ma sensu w tym wystąpieniu. Lepszym rozwiązaniem jest wyraźnie zastosujesz `ComVisible(false)` do metody, aby stał się Wyczyść, aby inni deweloperzy, że metody mogą być niewidoczne z modelu COM.
 
  Następujący przykład dotyczy <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute> do metody.
 
 ### <a name="code"></a>Kod
  [!code-csharp[FxCop.Interoperability.ComVisibleStaticMembersFixed#1](../code-quality/codesnippet/CSharp/ca1407-avoid-static-members-in-com-visible-types_2.cs)]
 
-## <a name="related-rules"></a>Powiązanych reguł
+## <a name="related-rules"></a>Powiązane reguły
  [CA1017: Oznacz zestawy atrybutem ComVisibleAttribute](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
 
  [CA1406: Unikaj argumentów typu Int64 w przypadku klientów programu Visual Basic 6](../code-quality/ca1406-avoid-int64-arguments-for-visual-basic-6-clients.md)
 
  [CA1413: Unikaj pól niepublicznych w typach wartości widocznych dla modelu COM](../code-quality/ca1413-avoid-non-public-fields-in-com-visible-value-types.md)
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
  [Współdziałanie z kodem niezarządzanym](/dotnet/framework/interop/index)

@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 302ecdfaf4c621f0a9a34b0a5cba79ff652990a9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8b13441c279254525c4ffd892e60ae2b018e39ae
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31898041"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547703"
 ---
 # <a name="ca1005-avoid-excessive-parameters-on-generic-types"></a>CA1005: Unikaj nadużywania parametrów na typach generycznych
 |||
@@ -32,18 +32,18 @@ ms.locfileid: "31898041"
 |Zmiana kluczowa|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
- Widoczne na zewnątrz typu ogólnego ma więcej niż dwóch parametrów typu.
+ Typ widoczny na zewnątrz ogólnego ma więcej niż dwa parametry typu.
 
 ## <a name="rule-description"></a>Opis reguły
- Im więcej parametrów typu zawiera typ ogólny, tym trudniej poznać i zapamiętać, co reprezentuje każdy z nich. Jest zwykle oczywiste z parametrem typu, jak w `List<T>`, a w niektórych przypadkach z dwoma parametrami typu, jak w `Dictionary<TKey, TValue>`. Jeśli istnieje więcej niż dwoma parametrami typu, trudności staje się zbyt duży dla większości użytkowników (na przykład `TooManyTypeParameters<T, K, V>` w języku C# lub `TooManyTypeParameters(Of T, K, V)` w [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]).
+ Im więcej parametrów typu zawiera typ ogólny, tym trudniej poznać i zapamiętać, co reprezentuje każdy z nich. Zwykle jest to za pomocą jednego parametru typu, jak `List<T>`, a w niektórych przypadkach, z dwoma parametrami typu, jak `Dictionary<TKey, TValue>`. Jeśli istnieje więcej niż dwa parametry typu, poziom trudności staje się zbyt wysoki dla większości użytkowników (na przykład `TooManyTypeParameters<T, K, V>` w języku C# lub `TooManyTypeParameters(Of T, K, V)` w [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]).
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby usunąć naruszenie tej reguły, zmienić projekt, aby używać nie więcej niż dwóch parametrów typu.
+ Aby naprawić naruszenie tej zasady, zmiany w projekcie ma używać nie więcej niż dwóch parametrów typu.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Nie pomijaj ostrzeżenie od tej reguły, chyba że projektu absolutnie wymaga więcej niż dwóch parametrów typu. Udostępnia typy ogólne w składni, które jest łatwe do zrozumienia i użycia zmniejsza czas, który jest wymagany, aby dowiedzieć się więcej i zwiększa szybkość przyjęcia nowych bibliotek.
+ Nie pomijaj ostrzeżeń dla tej reguły, chyba że projekt wymaga absolutnie więcej niż dwa parametry typu. Typy ogólne w składni, który jest łatwy do zrozumienia i użycia, zapewniając skraca czas, jest wymagana, aby dowiedzieć się, która zwiększa szybkość przyjęcia nowe biblioteki.
 
-## <a name="related-rules"></a>Powiązanych reguł
+## <a name="related-rules"></a>Powiązane reguły
  [CA1010: Kolekcje powinny implementować interfejs ogólny](../code-quality/ca1010-collections-should-implement-generic-interface.md)
 
  [CA1000: Nie deklaruj składowych statycznych w typach ogólnych](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)
@@ -58,5 +58,5 @@ ms.locfileid: "31898041"
 
  [CA1007: Używaj typów ogólnych wszędzie tam, gdzie jest to odpowiednie](../code-quality/ca1007-use-generics-where-appropriate.md)
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
  [Typy ogólne](/dotnet/csharp/programming-guide/generics/index)

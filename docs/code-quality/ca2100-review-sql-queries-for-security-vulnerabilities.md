@@ -15,16 +15,21 @@ ms.assetid: 79670604-c02a-448d-9c0e-7ea0120bc5fe
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CPP
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: be39489c30de235248b9e3f2770811fc190ac5a3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bbfafb78022e462c1f629019ddb40c711fcd581b
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31918116"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551470"
 ---
 # <a name="ca2100-review-sql-queries-for-security-vulnerabilities"></a>CA2100: Należy przejrzeć zapytania SQL w poszukiwaniu luk w zabezpieczeniach
+
 |||
 |-|-|
 |TypeName|ReviewSqlQueriesForSecurityVulnerabilities|
@@ -33,37 +38,38 @@ ms.locfileid: "31918116"
 |Zmiana kluczowa|Bez podziału|
 
 ## <a name="cause"></a>Przyczyna
- Ustawia metodę <xref:System.Data.IDbCommand.CommandText%2A?displayProperty=fullName> właściwości przy użyciu ciąg, który składa się z argumentem ciągu do metody.
+ Metoda ustawia <xref:System.Data.IDbCommand.CommandText%2A?displayProperty=fullName> właściwości przy użyciu ciągu, który jest zbudowany z argumentem ciągu do metody.
 
 ## <a name="rule-description"></a>Opis reguły
- Zasada ta zakłada, że argument ciągu zawiera dane wejściowe użytkownika. Ciąg polecenia SQL zbudowany z danych wejściowych użytkownika jest narażony na ataki przez wstrzyknięcie kodu SQL. W celu iniekcji kodu SQL złośliwy użytkownik udostępnia wprowadzania zmieniającą projektu zapytania w celu uszkodzić lub uzyskania nieautoryzowanego dostępu do bazy danych. Typowe techniki to m.in. iniekcji pojedynczy cudzysłów lub apostrof, który jest ogranicznik literału ciągu SQL; dwa łączniki, które oznacza, że komentarz SQL; i średnika, co oznacza, że postępuje nowe polecenie. Jeśli dane wejściowe użytkownika musi być częścią zapytania, użyj jednej z następujących wymienione w kolejności skuteczności, aby zmniejszyć ryzyko ataków.
 
--   Użyj procedury składowanej.
+Zasada ta zakłada, że argument ciągu zawiera dane wejściowe użytkownika. Ciąg polecenia SQL zbudowany z danych wejściowych użytkownika jest narażony na ataki przez wstrzyknięcie kodu SQL. W przypadku ataku polegającego na iniekcji SQL złośliwy użytkownik dostarcza dane wejściowe, które zmienia Projekt kwerendy w celu podjęcia próby uszkodzić lub uzyskania nieautoryzowanego dostępu do podstawowej bazy danych. Typowe techniki to m.in. wprowadzanie pojedynczy cudzysłów lub apostrof, czyli Ogranicznik ciągu literału SQL; dwa łączniki, które oznacza Komentarz SQL; i średnikiem, co oznacza, że następujące nowe polecenie. Jeśli dane wejściowe użytkownika musi należeć do zapytania, użyj jednej z następujących pozycji, wymienione w kolejności skuteczności, aby zmniejszyć ryzyko ataków.
 
--   Użyj ciągu sparametryzowanego polecenia.
+- Użyj procedury składowanej.
 
--   Sprawdzanie poprawności danych wejściowych użytkownika dla typu i zawartości, przed utworzeniem ciąg polecenia.
+- Przy użyciu parametrów poleceń sparametryzowanych.
 
- Następujące [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] typy implementować <xref:System.Data.IDbCommand.CommandText%2A> właściwość lub ustaw właściwość przy użyciu argument ciągu konstruktorów.
+- Weryfikowanie danych wejściowych użytkownika, zarówno dla typu i zawartości, przed utworzeniem ciągu polecenia.
 
--   <xref:System.Data.Odbc.OdbcCommand?displayProperty=fullName> I <xref:System.Data.Odbc.OdbcDataAdapter?displayProperty=fullName>
+Następujące [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] typy implementują <xref:System.Data.IDbCommand.CommandText%2A> właściwość lub ustaw właściwość przy użyciu argumentu ciągu konstruktorów.
 
--   <xref:System.Data.OleDb.OleDbCommand?displayProperty=fullName> I <xref:System.Data.OleDb.OleDbDataAdapter?displayProperty=fullName>
+- <xref:System.Data.Odbc.OdbcCommand?displayProperty=fullName> i <xref:System.Data.Odbc.OdbcDataAdapter?displayProperty=fullName>
 
--   <xref:System.Data.OracleClient.OracleCommand?displayProperty=fullName> I <xref:System.Data.OracleClient.OracleDataAdapter?displayProperty=fullName>
+- <xref:System.Data.OleDb.OleDbCommand?displayProperty=fullName> i <xref:System.Data.OleDb.OleDbDataAdapter?displayProperty=fullName>
 
--   <xref:System.Data.SqlClient.SqlCommand?displayProperty=fullName> I <xref:System.Data.SqlClient.SqlDataAdapter?displayProperty=fullName>
+- <xref:System.Data.OracleClient.OracleCommand?displayProperty=fullName> i <xref:System.Data.OracleClient.OracleDataAdapter?displayProperty=fullName>
 
- Zwróć uwagę, że stosowania metody ToString typu jawnie lub niejawnie naruszenia tej reguły do utworzenia ciągu zapytania. Poniżej przedstawiono przykład.
+- <xref:System.Data.SqlClient.SqlCommand?displayProperty=fullName> i <xref:System.Data.SqlClient.SqlDataAdapter?displayProperty=fullName>
+
+Należy zauważyć, że zasada ta jest naruszona stosowania metody ToString typu jest jawnie lub niejawnie do konstruowania ciągu zapytania. Oto przykład.
 
 ```
 int x = 10;
 string query = "SELECT TOP " + x.ToString() + " FROM Table";
 ```
 
- Reguła jest naruszone, ponieważ złośliwy użytkownik może zastąpić metodę ToString().
+ Zostanie naruszona zasada, ponieważ złośliwy użytkownik może zastąpić metodę ToString().
 
- Reguła jest również naruszone niejawnie stosowania ToString.
+ Również zostanie naruszona zasada niejawnie stosowania ToString.
 
 ```
 int x = 10;
@@ -71,17 +77,17 @@ string query = String.Format("SELECT TOP {0} FROM Table", x);
 ```
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby rozwiązać naruszenie tej reguły, użyj zapytania parametrycznego.
+ Aby naprawić naruszenie tej zasady, należy użyć sparametryzowanych zapytań.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Jest bezpieczne pominąć ostrzeżenie od tej reguły, jeśli tekst polecenia nie zawiera żadnych danych wejściowych użytkownika.
+ Jest bezpieczne pominąć ostrzeżenie od tej reguły, jeśli tekst polecenia nie zawiera danych podawanych przez użytkownika.
 
 ## <a name="example"></a>Przykład
- W poniższym przykładzie przedstawiono metodę, `UnsafeQuery`, który narusza regułę, a także metodę `SaferQuery`, odpowiadającej reguły za pomocą ciągu sparametryzowanego polecenia.
+ W poniższym przykładzie pokazano metodę `UnsafeQuery`, który narusza regułę i metody `SaferQuery`, odpowiadającej reguły za pomocą ciągu sparametryzowanego polecenia.
 
  [!code-vb[FxCop.Security.ReviewSqlQueries#1](../code-quality/codesnippet/VisualBasic/ca2100-review-sql-queries-for-security-vulnerabilities_1.vb)]
  [!code-csharp[FxCop.Security.ReviewSqlQueries#1](../code-quality/codesnippet/CSharp/ca2100-review-sql-queries-for-security-vulnerabilities_1.cs)]
  [!code-cpp[FxCop.Security.ReviewSqlQueries#1](../code-quality/codesnippet/CPP/ca2100-review-sql-queries-for-security-vulnerabilities_1.cpp)]
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
  [Przegląd zabezpieczeń](/dotnet/framework/data/adonet/security-overview)

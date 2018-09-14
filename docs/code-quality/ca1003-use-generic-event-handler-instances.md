@@ -14,16 +14,20 @@ ms.assetid: 402101b6-555d-4cf7-b223-1d9fdfaaf1cd
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e605cb0188ca72cb74905e34ee5196a07f748cd6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 29bd98677715a8772143ab448206f2a5ccddd763
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31899967"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551634"
 ---
 # <a name="ca1003-use-generic-event-handler-instances"></a>CA1003: Użyj wystąpień obsługi zdarzeń generycznych
+
 |||
 |-|-|
 |TypeName|UseGenericEventHandlerInstances|
@@ -32,29 +36,29 @@ ms.locfileid: "31899967"
 |Zmiana kluczowa|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
- Typ zawiera delegata zwracającego typ void, którego sygnatura zawiera dwa parametry (pierwszy obiekt i drugi typ, który można przypisać do EventArgs) i celów zestawu zawierającego [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)].
+ Typ zawiera delegata zwracającego wartość typu void, którego podpis zawiera dwa parametry (pierwszy typu obiekt i drugi typu, który można przypisać do EventArgs) i cele zestawu zawierającego [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)].
 
 ## <a name="rule-description"></a>Opis reguły
- Przed [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)], aby przekazać niestandardowe informacje do obsługi zdarzeń nowe delegowanie musiały zadeklarowana, który określa klasę, który został utworzony na podstawie <xref:System.EventArgs?displayProperty=fullName> klasy. Nie jest to już PRAWDA w [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)], który wprowadzono <xref:System.EventHandler%601?displayProperty=fullName> delegowanie. Ten delegat ogólny umożliwia każdej klasy, która jest pochodną <xref:System.EventArgs> do można używać razem z obsługi zdarzeń.
+ Przed [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)], aby można było przekazać niestandardowe informacje do narzędzia obsługi zdarzeń nowe delegowanie musiały być zadeklarowany, które określone klasy, który został utworzony na podstawie <xref:System.EventArgs?displayProperty=fullName> klasy. Nie jest to już wartość true w [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)], który wprowadzono <xref:System.EventHandler%601?displayProperty=fullName> delegować. Ten delegat ogólny umożliwia każdej klasy, która jest pochodną <xref:System.EventArgs> ma być używany razem z programu obsługi zdarzeń.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej reguły, Usuń delegata i zastąp jego użycie przy użyciu <xref:System.EventHandler%601?displayProperty=fullName> delegowanie. Jeśli delegat zostanie wygenerowana automatycznie przez [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] kompilatora, zmiany składni deklaracji zdarzenia do użycia <xref:System.EventHandler%601?displayProperty=fullName> delegowanie.
+ Aby naprawić naruszenie tej zasady, Usuń delegata i zastąp jego użycie za pomocą <xref:System.EventHandler%601?displayProperty=fullName> delegować. Jeśli delegat jest generowana automatycznie przez [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] kompilatora, zmień Składnia deklaracji zdarzeń, użyj <xref:System.EventHandler%601?displayProperty=fullName> delegować.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
  Nie pomijaj ostrzeżeń dla tej reguły.
 
 ## <a name="example"></a>Przykład
- W poniższym przykładzie przedstawiono delegata, który narusza zasady. W [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] przykład komentarze opisują sposób modyfikowania przykład spełniają reguły. Na przykład C# przykład następuje pokazujący modyfikacji kodu.
+ Delegat, który narusza regułę określającą, można znaleźć w poniższym przykładzie. W [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] przykład komentarze opisują sposób modyfikowania przykładu tak, aby spełniać reguły. Na przykład C# przykład poniżej pokazujący modyfikacji kodu.
 
  [!code-vb[FxCop.Design.CustomEventHandler#1](../code-quality/codesnippet/VisualBasic/ca1003-use-generic-event-handler-instances_1.vb)]
  [!code-csharp[FxCop.Design.CustomEventHandler#1](../code-quality/codesnippet/CSharp/ca1003-use-generic-event-handler-instances_1.cs)]
 
 ## <a name="example"></a>Przykład
- Poniższy przykład usuwa poprzedni przykład, który spełnia reguły i zastępuje jego użycia w deklaracji obiektu delegowanego `ClassThatRaisesEvent` i `ClassThatHandlesEvent` metody przy użyciu <xref:System.EventHandler%601?displayProperty=fullName> delegowanie.
+ Poniższy przykład usuwa deklaracja delegata z poprzedniego przykładu, spełnia regułę, która zastępuje jej użycia w `ClassThatRaisesEvent` i `ClassThatHandlesEvent` metody przy użyciu <xref:System.EventHandler%601?displayProperty=fullName> delegować.
 
  [!code-csharp[FxCop.Design.GenericEventHandler#1](../code-quality/codesnippet/CSharp/ca1003-use-generic-event-handler-instances_2.cs)]
 
-## <a name="related-rules"></a>Powiązanych reguł
+## <a name="related-rules"></a>Powiązane reguły
  [CA1005: Unikaj nadużywania parametrów w typach ogólnych](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)
 
  [CA1010: Kolekcje powinny implementować interfejs ogólny](../code-quality/ca1010-collections-should-implement-generic-interface.md)
@@ -69,5 +73,6 @@ ms.locfileid: "31899967"
 
  [CA1007: Używaj typów ogólnych wszędzie tam, gdzie jest to odpowiednie](../code-quality/ca1007-use-generics-where-appropriate.md)
 
-## <a name="see-also"></a>Zobacz też
- [Typy ogólne](/dotnet/csharp/programming-guide/generics/index)
+## <a name="see-also"></a>Zobacz także
+
+- [Typy ogólne](/dotnet/csharp/programming-guide/generics/index)

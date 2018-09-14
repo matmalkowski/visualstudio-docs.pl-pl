@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d90e56eee9c68ff94b18204928ecaeeeb55ae0a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e80409a1837da3e82e375561341f4fb4c3da9c28
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31919537"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548248"
 ---
 # <a name="ca2219-do-not-raise-exceptions-in-exception-clauses"></a>CA2219: Nie zgłaszaj wyjątków w klauzulach wyjątków
 |||
@@ -29,26 +29,26 @@ ms.locfileid: "31919537"
 |TypeName|DoNotRaiseExceptionsInExceptionClauses|
 |CheckId|CA2219|
 |Kategoria|Microsoft.Usage|
-|Zmiana kluczowa|Bez podziału, krytyczne|
+|Zmiana kluczowa|Bez podziału, istotne|
 
 ## <a name="cause"></a>Przyczyna
- Wyjątek `finally`, filtr lub klauzulę błędów.
+ Wyjątek jest generowany z `finally`, filtr lub klauzuli fault.
 
 ## <a name="rule-description"></a>Opis reguły
- W klauzuli wyjątek zgłoszony wyjątek, znacznie zwiększa trudności debugowania.
+ Gdy wyjątek jest zgłaszany w klauzuli wyjątek, zwiększa znacznie utrudnia debugowanie.
 
- Jeśli wyjątek jest zgłaszany w `finally` lub klauzuli błędów ukrywa aktywny wyjątek, jeśli istnieje. Dzięki temu można twardych wykrycie i zdebugowanie pierwotnego błędu.
+ Gdy wyjątek jest zgłaszany w `finally` lub klauzuli fault ukrywa aktywny wyjątek, jeśli jest obecny. Dzięki temu można trudno wykrycie i zdebugowanie pierwotnego błędu.
 
- Jeśli wyjątek jest zgłaszany w klauzuli filtru, środowiska uruchomieniowego dyskretnie przechwytuje wyjątek i powoduje, że dla filtru wartości FALSE. Nie istnieje sposób, aby odróżnić oceny filtr na wartość FAŁSZ i Trwa throw z filtrem wyjątku. Utrudnia wykrywanie i debugowanie błędów w logice filtru.
+ Gdy wyjątek jest zgłaszany w klauzuli filtru, środowisko uruchomieniowe dyskretnie przechwytuje wyjątek i powoduje, że filtr na wartość false. Nie istnieje żaden sposób odróżnić filtr oceny false, a wyjątek jest wyrzuca wyjątków z filtru. Utrudnia to wykrywanie i debugowanie błędów w logice filtru.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby rozwiązać to naruszenie tej reguły, nie jawnie wywołuj wyjątku z `finally`, filtr lub klauzulę błędów.
+ Aby rozwiązać problem to naruszenie tej zasady, nie jawnie zgłaszała wyjątku z `finally`, filtr lub klauzuli fault.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Nie pomijaj ostrzeżenia dla tej reguły. Nie istnieją żadne scenariusze, w których wystąpił wyjątek w klauzuli wyjątek zapewnia korzyści wykonywanie kodu.
+ Nie pomijaj ostrzeżeń dla tej reguły. Brak żadnych scenariuszy, w których wyjątek zgłaszany w klauzuli wyjątek zapewnia korzyści wykonywanie kodu.
 
-## <a name="related-rules"></a>Powiązanych reguł
+## <a name="related-rules"></a>Powiązane reguły
  [CA1065: Nie zgłaszaj wyjątków w nieoczekiwanych lokalizacjach](../code-quality/ca1065-do-not-raise-exceptions-in-unexpected-locations.md)
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
  [Ostrzeżenia dotyczące projektu](../code-quality/design-warnings.md)

@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d402bec5bf9c79b845f3bfa643c65fc07359a09
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f4dac6beddf43e88d47a54ddf2b0e0d56e387038
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31900122"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547206"
 ---
 # <a name="ca1301-avoid-duplicate-accelerators"></a>CA1301: Należy unikać duplikowania akceleratorów
+
 |||
 |-|-|
 |TypeName|AvoidDuplicateAccelerators|
@@ -32,23 +33,26 @@ ms.locfileid: "31900122"
 |Zmiana kluczowa|Bez podziału|
 
 ## <a name="cause"></a>Przyczyna
- Rozszerzenie typu <xref:System.Windows.Forms.Control?displayProperty=fullName> i zawiera co najmniej dwa formantami najwyższego poziomu, które mają identyczne dostępu do kluczy, które są przechowywane w pliku zasobów.
+ Rozszerza typ <xref:System.Windows.Forms.Control?displayProperty=fullName> i zawiera co najmniej dwóch najwyższego poziomu kontrolki, które mają identyczne klawiszy, które są przechowywane w pliku zasobów.
 
 ## <a name="rule-description"></a>Opis reguły
- Klucz dostępu, znany również jako akcelerator, umożliwia dostęp z klawiatury do formantu za pomocą klawisza ALT. Kiedy wiele formantów ma zduplikowany klucz dostępu, jego zachowanie nie jest dobrze zdefiniowane. Użytkownik może nie umożliwiać dostęp do danego formantu przy użyciu klucza dostępu i kontroli innego niż ten, który ma może być włączone.
 
- Bieżąca implementacja tej reguły ignoruje elementów menu. Jednak elementów menu na tym samym podmenu nie powinna mieć klucze dostępu identyczne.
+Klucz dostępu, znany również jako akcelerator, umożliwia dostęp z klawiatury do kontrolki za pomocą **Alt** klucza. Kiedy wiele formantów ma ten sam klucz dostępu, zachowanie klucza dostępu nie jest dobrze zdefiniowane. Użytkownik może być mogli korzystać z zamierzonym kontroli przy użyciu klucza dostępu, i może być włączona kontrola innym niż ten, który jest przeznaczony.
+
+Bieżąca implementacja parametru ta zasada powoduje ignorowanie elementów menu. Jednak elementy menu, w tym samym podmenu nie powinna mieć identyczny klawiszy.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej reguły, zdefiniuj dostępu unikatowy kluczy dla wszystkich kontrolek.
+ Aby naprawić naruszenie tej zasady, należy określić klucze dostępu unikatowe dla wszystkich kontrolek.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
  Nie pomijaj ostrzeżeń dla tej reguły.
 
 ## <a name="example"></a>Przykład
- Poniższy przykład przedstawia minimalny formularz, który zawiera dwa formantów, które mają klucze dostępu identyczne. Klucze są przechowywane w pliku zasobu nie jest wyświetlany; jednak ich wartości są wyświetlane w komentarze limit `checkBox.Text` wierszy. Zachowanie duplikowania akceleratorów można zbadać przez wymianę `checkBox.Text` wiersze z ich odpowiedniki komentarze wychodzących. Jednak w takim przypadku przykładzie nie wygeneruje ostrzeżenie z reguły.
+ Poniższy przykład pokazuje minimalny formularz, który zawiera dwa formanty, które mają identyczne klawiszy. Klucze są przechowywane w pliku zasobów, która nie jest wyświetlany. Jednak ich wartości są wyświetlane w skomentowanej się `checkBox.Text` wierszy. Zachowanie duplikowania akceleratorów można sprawdzić przez wymianę `checkBox.Text` wiersze z ich odpowiedniki skomentowanej out. Jednak w takim przypadku przykład nie wygeneruje ostrzeżenia z reguły.
 
  [!code-csharp[FxCop.Globalization.AvoidDuplicateAccels#1](../code-quality/codesnippet/CSharp/ca1301-avoid-duplicate-accelerators_1.cs)]
 
-## <a name="see-also"></a>Zobacz też
- <xref:System.Resources.ResourceManager?displayProperty=fullName> [Zasoby w aplikacjach klasycznych](/dotnet/framework/resources/index)
+## <a name="see-also"></a>Zobacz także
+
+- <xref:System.Resources.ResourceManager?displayProperty=fullName>
+- [Zasoby w aplikacjach klasycznych](/dotnet/framework/resources/index)

@@ -11,16 +11,16 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: de337856299d8aa164f120a6bff78495925e4ac1
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: 478cb56856a5177f74b92542afadb0c36ac946c2
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468248"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548794"
 ---
 # <a name="manage-required-packages-with-requirementstxt"></a>Zarządzanie wymagane pakiety przy użyciu pliku requirements.txt
 
-W przypadku udostępniania projektu z innymi osobami, za pomocą systemu kompilacji, czy planujesz [opublikowania go w usłudze Microsoft Azure](python-azure-cloud-service-project-template.md), należy określić zewnętrznych pakietów, których wymaga projekt. Zalecanym podejściem jest użycie [pliku requirements.txt](http://pip.readthedocs.org/en/latest/user_guide.html#requirements-files) (readthedocs.org) zawierający listę poleceń dla narzędzia pip, który instaluje wymagane wersje pakietów zależnych.
+W przypadku udostępniania projektu z innymi osobami, za pomocą systemu kompilacji, czy planujesz [opublikowania go w usłudze Microsoft Azure](python-azure-cloud-service-project-template.md), należy określić zewnętrznych pakietów, których wymaga projekt. Zalecanym podejściem jest użycie [pliku requirements.txt](https://pip.readthedocs.org/en/latest/user_guide.html#requirements-files) (readthedocs.org) zawierający listę poleceń dla narzędzia pip, który instaluje wymagane wersje pakietów zależnych.
 
 Technicznie rzecz biorąc, nazwy pliku może służyć do śledzenia wymagań (przy użyciu `-r <full path to file>` podczas instalowania pakietu), ale Visual Studio zapewnia obsługi *requirements.txt*:
 
@@ -38,7 +38,7 @@ Technicznie rzecz biorąc, nazwy pliku może służyć do śledzenia wymagań (p
 
 Ponieważ *requirements.txt* pliki mają na celu Zablokuj wymagania środowiska, wszystkie zainstalowane pakiety są zapisywane z użyciem wersje dokładny. Użycie wersje dokładny gwarantuje, że łatwo można odtworzyć środowiska na innym komputerze. Pakiety są dołączane, nawet jeśli były zainstalowane z zakresem wersji, jako zależność z innym pakietem lub z Instalatorem niż pip.
 
-Jeśli nie można zainstalować pakietu przez narzędzie pip i wyświetlone w *requirements.txt* pliku całej instalacji zakończy się niepowodzeniem. W takim przypadku ręcznie edytować plik, aby wykluczyć ten pakiet lub użyć [opcje firmy pip](http://pip.readthedocs.org/en/latest/reference/pip_install.html#requirements-file-format) do odwoływania się do instalowalną wersję pakietu. Na przykład użytkownik może chcieć użyć [ `pip wheel` ](http://pip.readthedocs.org/en/latest/reference/pip_wheel.html) skompilować zależności i dodać `--find-links <path>` opcję swoje *requirements.txt*:
+Jeśli nie można zainstalować pakietu przez narzędzie pip i wyświetlone w *requirements.txt* pliku całej instalacji zakończy się niepowodzeniem. W takim przypadku ręcznie edytować plik, aby wykluczyć ten pakiet lub użyć [opcje firmy pip](https://pip.readthedocs.org/en/latest/reference/pip_install.html#requirements-file-format) do odwoływania się do instalowalną wersję pakietu. Na przykład użytkownik może chcieć użyć [ `pip wheel` ](https://pip.readthedocs.org/en/latest/reference/pip_wheel.html) skompilować zależności i dodać `--find-links <path>` opcję swoje *requirements.txt*:
 
 ```output
 C:\Project>pip wheel azure

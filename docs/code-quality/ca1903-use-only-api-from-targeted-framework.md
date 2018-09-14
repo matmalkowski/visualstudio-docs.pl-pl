@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b4f49c8a4da3ad746e5221bb689285c89d48e6e1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 04d08cc9d20759796c35f0145e519a27fdb12fdf
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31918562"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547257"
 ---
 # <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903: Używaj tylko API z frameworku docelowego
 |||
@@ -29,19 +29,19 @@ ms.locfileid: "31918562"
 |TypeName|UseOnlyApiFromTargetedFramework|
 |CheckId|CA1903|
 |Kategoria|Microsoft.Portability|
-|Zmiana kluczowa|Przerywanie — po względem podpis widoczne na zewnątrz elementu członkowskiego lub typu.<br /><br /> Bez podziału — po w treści metody.|
+|Zmiana kluczowa|Przerywanie — gdy wywoływane przed podpis widocznego na zewnątrz elementu członkowskiego lub typu.<br /><br /> Bez podziału — gdy wywoływane w treści metody.|
 
 ## <a name="cause"></a>Przyczyna
- Element członkowski lub typ używa elementu członkowskiego lub typu, który został wprowadzony w dodatku service pack, który nie był dołączony do platformy docelowej projektu.
+ Element członkowski lub typ używa elementu członkowskiego lub typu, która została wprowadzona w dodatku service pack, który nie był dołączony do platformy docelowej projektu.
 
 ## <a name="rule-description"></a>Opis reguły
- Nowe elementy członkowskie i typy zostały uwzględnione w .NET Framework 2.0 z dodatkiem Service Pack 1 i 2, .NET Framework 3.0 z dodatkiem Service Pack 1 i 2 i .NET Framework 3.5 z dodatkiem Service Pack 1. Projektów przeznaczonych główne wersje programu .NET Framework przypadkowo możliwe jest zależne od tych nowych interfejsów API. Aby zapobiec tej zależności, ta zasada wyzwala na użycia nowe elementy członkowskie i typy, które nie zostały uwzględnione domyślnie z platformy docelowej projektu.
+ Nowi członkowie i typy zostały uwzględnione w .NET Framework 2.0 z dodatkiem Service Pack 1 i 2, .NET Framework 3.0 z dodatkiem Service Pack 1 i 2 i .NET Framework 3.5 Service Pack 1. Projekty przeznaczone dla wersji głównych programu .NET Framework przypadkowo może zależności na te nowe interfejsy API. Aby uniknąć tej zależności, ta reguła jest uruchamiana na użycia żadnych nowych elementów członkowskich i typy, które nie zostały uwzględnione domyślnie platforma docelowa projektu.
 
  **Platforma docelowa i zależności pakietu usługi**
 
 |||
 |-|-|
-|Gdy jest platformy docelowej|Uruchamiany na użycia elementów członkowskich wprowadzone w systemie|
+|Gdy jest platforma docelowa|Uruchamiany na użycia elementów członkowskich wprowadzone w systemie|
 |.NET Framework 2.0|.NET framework 2.0 z dodatkiem SP1, .NET Framework 2.0 z dodatkiem SP2|
 |.NET Framework 3.0|.NET framework 2.0 z dodatkiem SP1, .NET Framework 2.0 z dodatkiem SP2, .NET Framework 3.0 z dodatkiem SP1, .NET Framework 3.0 z dodatkiem SP2|
 |Program .NET Framework 3,5|.NET Framework 3.5 SP1|
@@ -50,20 +50,22 @@ ms.locfileid: "31918562"
  Aby zmienić platformę docelową projektu, zobacz [przeznaczonych dla określonej wersji programu .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md).
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby usunąć zależności z dodatkiem Service Pack, należy usunąć wszystkie użycia nowego elementu członkowskiego lub typu. Jeśli jest to zamierzone zależności, pominięcia ostrzeżenia lub wyłącz tę regułę.
+ Aby usunąć zależność od dodatku service pack, należy usunąć wszystkie użycia nowego elementu członkowskiego lub typu. Jeśli jest to zamierzone zależności, ostrzeżenia lub wyłącz tę regułę.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Nie pomijaj ostrzeżenia od tej reguły, jeśli to nie było zamierzone zależności określonego z dodatkiem Service Pack. W takiej sytuacji aplikacja może zakończyć się niepowodzeniem do uruchomienia w systemach bez tego dodatku service pack, zainstalowane. Pomijaj ostrzeżenia lub wyłącz tę regułę, jeśli to było zamierzone zależności.
+ Nie pomijaj ostrzeżeń dla tej reguły, jeśli nie jest to zamierzone zależności określonej z dodatkiem Service Pack. W takiej sytuacji aplikacja może zakończyć się niepowodzeniem działające w systemach bez tego dodatku service pack, zainstalowane. Pomijaj ostrzeżenia lub wyłącz tę regułę, jeśli jest to zamierzone zależności.
 
 ## <a name="example"></a>Przykład
- W poniższym przykładzie przedstawiono klasę, która używa typu DateTimeOffset, która jest dostępna tylko w .NET 2.0 z dodatkiem Service Pack 1. W tym przykładzie wymaga, aby na liście rozwijanej platformy docelowej we właściwościach projektu wybrano .NET Framework 2.0.
+ Poniższy przykład przedstawia klasę, która używa typu DateTimeOffset, która jest dostępna tylko w dodatku Service Pack 1 dla platformy .NET w wersji 2.0. W tym przykładzie wymaga, że na liście rozwijanej platformy docelowej we właściwościach projektu wybrano .NET Framework 2.0.
 
  [!code-csharp[FxCop.Portability.UseOnlyApiFromTargetedFramework#1](../code-quality/codesnippet/CSharp/ca1903-use-only-api-from-targeted-framework_1.cs)]
 
 ## <a name="example"></a>Przykład
- Poniższy przykład rozwiązuje opisany wcześniej naruszenie przez zamianę użycia typu DateTimeOffset typu Data/Godzina.
+ Poniższy przykład naprawia naruszenie opisany wcześniej, zastępując użycia typu DateTimeOffset typu DateTime.
 
  [!code-csharp[FxCop.Portability.UseOnlyApiFromTargetedFramework2#1](../code-quality/codesnippet/CSharp/ca1903-use-only-api-from-targeted-framework_2.cs)]
 
-## <a name="see-also"></a>Zobacz też
- [Ostrzeżenia przenośności](../code-quality/portability-warnings.md) [przeznaczonych dla określonej wersji platformy .NET](../ide/targeting-a-specific-dotnet-framework-version.md)
+## <a name="see-also"></a>Zobacz także
+
+- [Ostrzeżenia dotyczące przenośności](../code-quality/portability-warnings.md)
+- [Określanie konkretnej wersji programu .NET Framework jako docelowej](../ide/targeting-a-specific-dotnet-framework-version.md)

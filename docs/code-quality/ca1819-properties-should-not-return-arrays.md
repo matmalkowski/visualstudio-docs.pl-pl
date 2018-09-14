@@ -14,16 +14,20 @@ ms.assetid: 85fcf312-57f8-438a-8b10-34441fe0bdeb
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: d2aca450bba47b73c8fa2e5e8e1246e864a1293c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 68f64d37a7616f095a86452353edc498d2d27f28
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917734"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549420"
 ---
 # <a name="ca1819-properties-should-not-return-arrays"></a>CA1819: Właściwości nie powinny zwracać tablic
+
 |||
 |-|-|
 |TypeName|PropertiesShouldNotReturnArrays|
@@ -32,33 +36,33 @@ ms.locfileid: "31917734"
 |Zmiana kluczowa|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
- Właściwość typu publicznego public lub protected zwraca tablicę.
+ Właściwość publiczna lub chroniona w typie publicznym zwraca tablicę.
 
 ## <a name="rule-description"></a>Opis reguły
- Tablice zwrócony przez właściwości nie są zabezpieczony przed zapisem, nawet jeśli właściwość jest tylko do odczytu. Aby zachować tablicę odporną na manipulacje, właściwość musi zwracać kopię tablicy. Zwykle użytkownicy nie rozumieją, jakie niekorzystne następstwa dla wydajności ma wywołanie takiej właściwości. W szczególności mogą użyć właściwości jako właściwość indeksowana.
+ Tablice zwracane przez właściwości nie są zabezpieczony przed zapisem, nawet jeśli właściwość jest tylko do odczytu. Aby zachować tablicę odporną na manipulacje, właściwość musi zwracać kopię tablicy. Zwykle użytkownicy nie rozumieją, jakie niekorzystne następstwa dla wydajności ma wywołanie takiej właściwości. W szczególności mogą użyć właściwości jako indeksowana właściwość.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej reguły, ustalić właściwość metodę lub zmień wartość właściwości zwrócić kolekcję.
+ Aby naprawić naruszenie tej zasady, ustawić właściwość jako metodę lub zmień wartość właściwości do zwrócenia kolekcji.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Atrybuty może zawierać właściwości zwracające tablice, ale nie może zawierać właściwości, które zwracają kolekcje. Można pominąć, ostrzeżenie, że jest wywoływane dla właściwości atrybutu, która jest pochodną <xref:System.Attribute> klasy. W przeciwnym razie nie Pomijaj ostrzeżenia od tej reguły.
+ Atrybuty mogą zawierać właściwości, które zwracają tablice, ale nie może zawierać właściwości, które zwracają kolekcje. Można pominąć ostrzeżenia, które jest wywoływane dla właściwości atrybutu, która jest pochodną <xref:System.Attribute> klasy. W przeciwnym razie nie Pomijaj ostrzeżeń dla tej reguły.
 
-## <a name="example-violation"></a>Przykład naruszenie
+## <a name="example-violation"></a>Przykład naruszenia
 
 ### <a name="description"></a>Opis
- W poniższym przykładzie przedstawiono właściwości, która narusza tę regułę.
+ Poniższy przykład pokazuje właściwości, która narusza tę regułę.
 
 ### <a name="code"></a>Kod
  [!code-csharp[FxCop.Performance.PropertyArrayViolation#1](../code-quality/codesnippet/CSharp/ca1819-properties-should-not-return-arrays_1.cs)]
  [!code-vb[FxCop.Performance.PropertyArrayViolation#1](../code-quality/codesnippet/VisualBasic/ca1819-properties-should-not-return-arrays_1.vb)]
 
 ### <a name="comments"></a>Komentarze
- Aby naprawić naruszenie tej reguły, ustalić właściwość metodę lub zmień wartość właściwości zwrócić kolekcję zamiast tablicy.
+ Aby naprawić naruszenie tej zasady, ustawić właściwość jako metodę lub zmień wartość właściwości do zwrócenia kolekcji zamiast tablicy.
 
-## <a name="change-the-property-to-a-method-example"></a>Zmień wartość właściwości, na przykład — metoda
+## <a name="change-the-property-to-a-method-example"></a>Zmień właściwości, na przykład metody
 
 ### <a name="description"></a>Opis
- Poniższy przykład poprawia naruszenie, zmieniając właściwość do metody.
+ Poniższy przykład naprawia naruszenia, zmieniając właściwość do metody.
 
 ### <a name="code"></a>Kod
  [!code-vb[FxCop.Performance.PropertyArrayFixedMethod#1](../code-quality/codesnippet/VisualBasic/ca1819-properties-should-not-return-arrays_2.vb)]
@@ -67,7 +71,7 @@ ms.locfileid: "31917734"
 ## <a name="return-a-collection-example"></a>Zwraca przykład kolekcji
 
 ### <a name="description"></a>Opis
- Poniższy przykład poprawia naruszenie, zmieniając właściwość do zwrócenia
+ Poniższy przykład naprawia naruszenia, zmieniając właściwość do zwrócenia
 
  <xref:System.Collections.ObjectModel.ReadOnlyCollection%601?displayProperty=fullName>.
 
@@ -78,18 +82,18 @@ ms.locfileid: "31917734"
 ## <a name="allowing-users-to-modify-a-property"></a>Zezwalanie użytkownikom na modyfikowanie właściwości
 
 ### <a name="description"></a>Opis
- Możesz zezwolić konsumenta klasy zmodyfikować właściwości. W poniższym przykładzie przedstawiono właściwości odczytu/zapisu, która narusza tę regułę.
+ Możesz chcieć umożliwia konsumentowi klasy zmodyfikować właściwości. Poniższy przykład pokazuje właściwości odczytu/zapisu, która narusza tę regułę.
 
 ### <a name="code"></a>Kod
  [!code-csharp[FxCop.Performance.PropertyModifyViolation#1](../code-quality/codesnippet/CSharp/ca1819-properties-should-not-return-arrays_4.cs)]
  [!code-vb[FxCop.Performance.PropertyModifyViolation#1](../code-quality/codesnippet/VisualBasic/ca1819-properties-should-not-return-arrays_4.vb)]
 
 ### <a name="comments"></a>Komentarze
- Poniższy przykład poprawia naruszenie, zmieniając właściwość do zwrócenia <xref:System.Collections.ObjectModel.Collection%601?displayProperty=fullName>.
+ Poniższy przykład naprawia naruszenia, zmieniając właściwość do zwrócenia <xref:System.Collections.ObjectModel.Collection%601?displayProperty=fullName>.
 
 ### <a name="code"></a>Kod
  [!code-vb[FxCop.Performance.PropertyModifyFixed#1](../code-quality/codesnippet/VisualBasic/ca1819-properties-should-not-return-arrays_5.vb)]
  [!code-csharp[FxCop.Performance.PropertyModifyFixed#1](../code-quality/codesnippet/CSharp/ca1819-properties-should-not-return-arrays_5.cs)]
 
-## <a name="related-rules"></a>Powiązanych reguł
+## <a name="related-rules"></a>Powiązane reguły
  [CA1024: Używaj właściwości wszędzie tam, gdzie jest to odpowiednie](../code-quality/ca1024-use-properties-where-appropriate.md)

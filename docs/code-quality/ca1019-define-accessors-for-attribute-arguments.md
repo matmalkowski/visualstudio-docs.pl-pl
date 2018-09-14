@@ -14,16 +14,20 @@ ms.assetid: 197f2378-3c43-427e-80de-9ec25006c05c
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: fbe76788510ebb51c0f6bd609cf91d9791dad2dd
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2e095c862edc5d7b68e1a6c55ada90a425b7e64f
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31898918"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45550456"
 ---
 # <a name="ca1019-define-accessors-for-attribute-arguments"></a>CA1019: Zdefiniuj metody dostępu do argumentów atrybutu
+
 |||
 |-|-|
 |TypeName|DefineAccessorsForAttributeArguments|
@@ -32,48 +36,42 @@ ms.locfileid: "31898918"
 |Zmiana kluczowa|Bez podziału|
 
 ## <a name="cause"></a>Przyczyna
- W jego konstruktora atrybutu określa argumenty, które nie mają odpowiednich właściwości.
+ W jego konstruktorze atrybutu definiuje argumenty, które nie mają odpowiednich właściwości.
 
 ## <a name="rule-description"></a>Opis reguły
- Atrybuty mogą definiować obowiązkowe argumenty, które trzeba określić, aby móc zastosować atrybut do obiektu docelowego. Znane są również jako argumenty pozycyjne, ponieważ są one dostarczane do konstruktorów atrybutu jako parametry pozycyjne. Dla każdego obowiązkowego argumentu atrybut powinien również dostarczyć odpowiadającą właściwość tylko do odczytu, dzięki której można pobrać wartość argumentu w czasie wykonywania. Ta reguła sprawdza, czy dla każdego parametru konstruktora zdefiniowano odpowiadających im właściwości.
+ Atrybuty mogą definiować obowiązkowe argumenty, które trzeba określić, aby móc zastosować atrybut do obiektu docelowego. Znane są również jako argumenty pozycyjne, ponieważ są one dostarczane do konstruktorów atrybutu jako parametry pozycyjne. Dla każdego obowiązkowego argumentu atrybut powinien również dostarczyć odpowiadającą właściwość tylko do odczytu, dzięki której można pobrać wartość argumentu w czasie wykonywania. Ta reguła sprawdza, czy dla każdego parametru konstruktora zdefiniowano odpowiadającą właściwość.
 
  Atrybuty mogą też definiować argumenty opcjonalne, które są znane również jako argumenty nazwane. Argumenty te są dostarczane do konstruktorów atrybutu poprzez nazwę i powinny mieć odpowiadającą właściwość umożliwiającą odczyt i zapis.
 
- Należy użyć obowiązkowe i opcjonalne argumenty, właściwościami i parametrami konstruktora takie same nazwy ale o innej wielkości liter. Właściwości użyj Pascal wielkości liter i wielkości liter camel Użyj parametrów.
+ Dla obowiązkowych i opcjonalnych argumentach, odpowiadające właściwości i parametry konstruktora należy korzystać z taką samą nazwę ale o innej wielkości liter. Właściwości użyj Pascal wielkość liter w wyrazie i wielkość liter w wyrazie pisane Użyj parametrów.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej reguły, Dodaj dla każdego parametru konstruktora, który nie ma właściwości tylko do odczytu.
+ Aby naprawić naruszenie tej zasady, należy dodać właściwość tylko do odczytu dla każdego parametru konstruktora, który nie ma żadnej.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Pomiń ostrzeżenie od tej reguły, jeśli nie chcesz, aby wartość argument obowiązkowy za pobieranie.
+ Pomijaj ostrzeżeń dla tej reguły, jeśli nie chcesz, aby wartość obowiązkowego argumentu jako możliwe do pobierania.
 
-## <a name="custom-attributes-example"></a>Przykład atrybuty niestandardowe
+## <a name="custom-attributes-example"></a>Przykład atrybutów niestandardowych
 
-### <a name="description"></a>Opis
- Poniższy przykład przedstawia dwa atrybuty definiujące obowiązkowy parametr (pozycyjny). Implementacja pierwszego atrybutu nieprawidłowo jest zdefiniowany. Drugi implementacja jest prawidłowa.
+Poniższy przykład przedstawia dwa atrybuty, które definiują obowiązkowy parametr (pozycyjny). Pierwszy implementacji atrybutu jest nieprawidłowo zdefiniowana. Drugi implementacja jest poprawna.
 
-### <a name="code"></a>Kod
- [!code-csharp[FxCop.Design.AttributeAccessors#1](../code-quality/codesnippet/CSharp/ca1019-define-accessors-for-attribute-arguments_1.cs)]
- [!code-vb[FxCop.Design.AttributeAccessors#1](../code-quality/codesnippet/VisualBasic/ca1019-define-accessors-for-attribute-arguments_1.vb)]
+[!code-csharp[FxCop.Design.AttributeAccessors#1](../code-quality/codesnippet/CSharp/ca1019-define-accessors-for-attribute-arguments_1.cs)]
+[!code-vb[FxCop.Design.AttributeAccessors#1](../code-quality/codesnippet/VisualBasic/ca1019-define-accessors-for-attribute-arguments_1.vb)]
 
-## <a name="positional-and-named-arguments"></a>Argumenty nazwane i pozycyjnych
+## <a name="positional-and-named-arguments"></a>Argumenty pozycyjne i nazwane
 
-### <a name="description"></a>Opis
- Argumenty nazwane i pozycyjnych należy wyczyścić konsumentom biblioteki argumenty, które są obowiązkowe dla atrybutu i argumentów, które są opcjonalne.
+Argumenty pozycyjne i nazwane ułatwiają Wyczyść, aby konsumenci biblioteki argumenty, które są wymagane dla atrybutu i której argumenty są opcjonalne.
 
- Poniższy przykład przedstawia implementację atrybut, który ma argumenty nazwane i pozycyjnych.
+Poniższy przykład pokazuje implementację atrybut, który zawiera argumenty pozycyjne i nazwane:
 
-### <a name="code"></a>Kod
- [!code-csharp[FxCop.Design.AttributeAccessorsNamed#1](../code-quality/codesnippet/CSharp/ca1019-define-accessors-for-attribute-arguments_2.cs)]
+[!code-csharp[FxCop.Design.AttributeAccessorsNamed#1](../code-quality/codesnippet/CSharp/ca1019-define-accessors-for-attribute-arguments_2.cs)]
 
-### <a name="comments"></a>Komentarze
- Poniższy przykład pokazuje, jak do zastosowania atrybutu niestandardowego do dwie właściwości.
+Poniższy przykład pokazuje, jak zastosować atrybut niestandardowy do dwie właściwości:
 
-### <a name="code"></a>Kod
- [!code-csharp[FxCop.Design.AttributeAccessorsNamedApplied#1](../code-quality/codesnippet/CSharp/ca1019-define-accessors-for-attribute-arguments_3.cs)]
+[!code-csharp[FxCop.Design.AttributeAccessorsNamedApplied#1](../code-quality/codesnippet/CSharp/ca1019-define-accessors-for-attribute-arguments_3.cs)]
 
-## <a name="related-rules"></a>Powiązanych reguł
+## <a name="related-rules"></a>Powiązane reguły
  [CA1813: Unikaj niezapieczętowanych atrybutów](../code-quality/ca1813-avoid-unsealed-attributes.md)
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
  [Atrybuty](/dotnet/standard/design-guidelines/attributes)

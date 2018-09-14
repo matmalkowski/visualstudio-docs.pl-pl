@@ -15,16 +15,21 @@ ms.assetid: 904d284e-76d0-4b8f-a4df-0094de8d7aac
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CPP
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b9c20d0c11711f3736f29498f9519f07163e7cf
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0bd26eecb1fba0aea266daf26eb071b8c29165ec
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31898590"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45546762"
 ---
 # <a name="ca1303-do-not-pass-literals-as-localized-parameters"></a>CA1303: Nie należy przekazywać literałów jako parametrów zlokalizowanych
+
 |||
 |-|-|
 |TypeName|DoNotPassLiteralsAsLocalizedParameters|
@@ -33,33 +38,33 @@ ms.locfileid: "31898590"
 |Zmiana kluczowa|Bez podziału|
 
 ## <a name="cause"></a>Przyczyna
- Metoda przekazuje ciąg literału jako parametr do konstruktora lub metody [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] klasy biblioteki i czy powinien on być lokalizowalny.
+ Metoda przekazuje ciąg literału jako parametr do konstruktora lub metody w [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] klasy biblioteki i ciąg ten powinien być możliwych do zlokalizowania.
 
- To ostrzeżenie jest wywoływane, gdy ciąg literału jest przekazywany jako wartość parametru lub właściwości i co najmniej jeden z następujących przypadków jest prawdziwy:
+ To ostrzeżenie jest zgłaszane, gdy literał ciągu jest przekazywany jako wartość parametru lub właściwość dotyczy co najmniej jeden z następujących przypadkach:
 
--   <xref:System.ComponentModel.LocalizableAttribute> Atrybut parametru lub właściwość jest ustawiona na true.
+- <xref:System.ComponentModel.LocalizableAttribute> Atrybut parametru lub właściwość jest ustawiona na wartość true.
 
--   Nazwa parametru lub właściwości zawiera "Text", "Komunikat" lub "Podpis".
+- Nazwa parametru lub właściwości zawiera "Text", "Message" lub "Podpis".
 
--   Nazwa parametru ciągu, który jest przekazywany do metody Console.Write lub elementu Console.WriteLine jest "value" lub "format".
+- Nazwa parametru ciągu, który jest przekazywany do metody Console.Write — lub elementu Console.WriteLine jest "value" lub "format".
 
 ## <a name="rule-description"></a>Opis reguły
- Literały ciągu, które są osadzone w kodzie źródłowym są trudne do zlokalizowania.
+ Literały ciągów, które są osadzone w kodzie źródłowym są trudne do zlokalizowania.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej reguły, Zamień literału ciągu pobierane w drodze wystąpienia ciągu <xref:System.Resources.ResourceManager> klasy.
+ Aby naprawić naruszenie tej zasady, Zamień literał ciągu pobierane w drodze wystąpienie <xref:System.Resources.ResourceManager> klasy.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Jest bezpieczne pominąć ostrzeżenie od tej reguły, jeśli nie jest lokalizowany biblioteki kodu lub ciąg nie jest widoczne dla użytkownika końcowego lub deweloperem, za pomocą biblioteki kodu.
+ Jest bezpieczne pominąć ostrzeżenie od tej reguły, jeśli nie jest lokalizowany biblioteki kodu lub jeśli ciąg nie jest uwidaczniana, aby użytkownik końcowy lub deweloperem, za pomocą biblioteki kodu.
 
- Użytkownicy można wyeliminować szumu przed metod, które nie powinny być przekazywane zlokalizowanych ciągów albo zmiana nazwy parametru lub właściwości o nazwie lub oznaczenie tych elementów jako warunkowego.
+ Użytkownikom można wyeliminować szumu względem metody, które nie powinny być przekazywane zlokalizowanych ciągów, albo zmieniając nazwę parametru lub właściwość o nazwie lub oznaczając te elementy jako warunkowe.
 
 ## <a name="example"></a>Przykład
- W poniższym przykładzie przedstawiono metodę, która zgłasza wyjątek, gdy jeden z jego dwóch argumentów są poza zakresem. Dla pierwszego argumentu konstruktora do wyjątku jest przekazywany literału ciągu, który narusza tę regułę. Drugi argument konstruktora poprawnie jest przekazany ciąg pobierane w drodze <xref:System.Resources.ResourceManager>.
+ Poniższy przykład przedstawia metodę, która zgłasza wyjątek, gdy jeden z dwóch argumentów są poza zakresem. Dla pierwszego argumentu konstruktora wyjątków jest przekazywany ciąg literału, który narusza tę regułę. Drugi argument Konstruktor poprawnie jest przekazywany ciąg, który został pobrany <xref:System.Resources.ResourceManager>.
 
  [!code-cpp[FxCop.Globalization.DoNotPassLiterals#1](../code-quality/codesnippet/CPP/ca1303-do-not-pass-literals-as-localized-parameters_1.cpp)]
  [!code-vb[FxCop.Globalization.DoNotPassLiterals#1](../code-quality/codesnippet/VisualBasic/ca1303-do-not-pass-literals-as-localized-parameters_1.vb)]
  [!code-csharp[FxCop.Globalization.DoNotPassLiterals#1](../code-quality/codesnippet/CSharp/ca1303-do-not-pass-literals-as-localized-parameters_1.cs)]
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
  [Zasoby w aplikacjach klasycznych](/dotnet/framework/resources/index)
