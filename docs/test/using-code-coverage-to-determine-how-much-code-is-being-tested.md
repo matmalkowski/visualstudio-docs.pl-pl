@@ -1,6 +1,6 @@
 ---
-title: Pokrycie kodu w programie Visual Studio
-ms.date: 11/04/2016
+title: Kod pokrycie testowania
+ms.date: 09/18/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
@@ -10,17 +10,17 @@ dev_langs:
 - CSharp
 - VB
 - CPP
+author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 8dc6ff1e2813f1457e8a41328f759e8e27d9aa65
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: dc8b08b68bb6c48fa22abaa90ba8b0b9daa25e89
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279950"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370942"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Korzystanie z pokrycia kodu do określania, jaka część kodu jest poddawana testom
 
@@ -32,26 +32,26 @@ Pokrycie kodu jest opcją w przypadku uruchamiania metod testowych przy użyciu 
 
 ![Wyniki pokrycia kodu za pomocą kolorowania](../test/media/codecoverage1.png)
 
- **Wymagania**
+## <a name="requirements"></a>Wymagania
 
--   Visual Studio Enterprise
+Funkcja pokrycia kodu jest dostępna tylko w programie Visual Studio Enterprise.
 
 ## <a name="to-analyze-code-coverage-on-unit-tests-in-test-explorer"></a>Analizowanie pokrycia kodu w ramach testów jednostkowych w Eksploratorze testów
 
-1.  Na **testu** menu, wybierz **Analizuj pokrycie kodu**.
+1. Na **testu** menu, wybierz **Analizuj pokrycie kodu**.
 
-2.  Aby zobaczyć, które wiersze zostały uruchomione, wybierz ![Pokaż ikona kolorowanie pokrycia kodu](../test/media/codecoverage-showcoloringicon.png)**Pokaż kolorowanie pokrycia kodu**.
+2. Aby zobaczyć, które wiersze zostały uruchomione, wybierz ![Pokaż ikona kolorowanie pokrycia kodu](../test/media/codecoverage-showcoloringicon.png) **Pokaż kolorowanie pokrycia kodu**.
 
-     Aby zmienić kolory lub użyć pogrubionej czcionki, wybierz opcję **narzędzia** > **opcje** > **środowiska** > **czcionek i Kolory** > **Pokaż ustawienia dla: Edytor tekstu**. W obszarze **Wyświetle elementy**, Dopasuj pokrycie.
+   Aby zmienić kolory lub użyć pogrubionej czcionki, wybierz opcję **narzędzia** > **opcje** > **środowiska** > **czcionek i Kolory** > **Pokaż ustawienia dla: Edytor tekstu**. W obszarze **Wyświetle elementy**, Dopasuj pokrycie.
 
-3.  Jeśli wyniki wykażą niewielkie pokrycie, zbadaj części kodu, które nie są wykonywane, i napisz więcej testów, aby je pokryć. Zespoły deweloperów zazwyczaj dążą do około 80% pokrycia kodu. W niektórych sytuacjach dopuszczalne jest niższe zapotrzebowanie. Niższe zapotrzebowanie jest dopuszczalne np. tam, gdzie dany kod jest generowany na podstawie standardowego szablonu.
+3. Jeśli wyniki wykażą niewielkie pokrycie, zbadaj części kodu, które nie są wykonywane, i napisz więcej testów, aby je pokryć. Zespoły deweloperów zazwyczaj dążą do około 80% pokrycia kodu. W niektórych sytuacjach dopuszczalne jest niższe zapotrzebowanie. Niższe zapotrzebowanie jest dopuszczalne np. tam, gdzie dany kod jest generowany na podstawie standardowego szablonu.
 
 > [!TIP]
 > - Upewnij się, że Optymalizacja kompilatora jest wyłączona.
 > - Jeśli pracujesz z kodem niezarządzanym (natywna), należy użyć kompilacji debugowania
 > - Upewnij się, że są generuje pliki .pdb (symbol) dla każdego zestawu.
 
-Jeśli nie otrzymujesz oczekiwanych wyników, zobacz [pokrycie kodu](../test/troubleshooting-code-coverage.md). Należy pamiętać uruchomić pokrycie kodu ponownie po jego aktualizacji. Wyniki pokrycia i kolorowanie kodu nie są automatycznie aktualizowane po zmodyfikowaniu kodu ani po uruchomieniu testów.
+Jeśli nie otrzymujesz oczekiwanych wyników, zobacz [Rozwiązywanie problemów z pokryciem kodu](../test/troubleshooting-code-coverage.md). Należy pamiętać uruchomić pokrycie kodu ponownie po jego aktualizacji. Wyniki pokrycia i kolorowanie kodu nie są automatycznie aktualizowane po zmodyfikowaniu kodu ani po uruchomieniu testów.
 
 ## <a name="report-in-blocks-or-lines"></a>Raport w blokach i wierszach
 
@@ -69,42 +69,44 @@ Okno pokrycia kodu może służyć również do wyświetlania poprzednich wynik�
 
 Można scalać wyniki kilku uruchomień, na przykład tych, które używają różnych danych testowych.
 
--   **Aby wyświetlić poprzedni zestaw wyników**, wybierz go z menu rozwijanego. W menu pojawia się tymczasowa lista, która jest czyszczona po otwarciu nowego rozwiązania.
+- **Aby wyświetlić poprzedni zestaw wyników**, wybierz go z menu rozwijanego. W menu pojawia się tymczasowa lista, która jest czyszczona po otwarciu nowego rozwiązania.
 
--   **Aby wyświetlić wyniki z poprzedniej sesji**, wybierz **Importuj wyniki pokrycia kodu**, przejdź do **TestResults** folder w rozwiązaniu i zaimportuj *.coverage* pliku.
+- **Aby wyświetlić wyniki z poprzedniej sesji**, wybierz **Importuj wyniki pokrycia kodu**, przejdź do **TestResults** folder w rozwiązaniu i zaimportuj *.coverage* pliku.
 
-    Kolorowanie pokrycia może być nieprawidłowy, jeśli kod źródłowy zmienił się od *.coverage* został wygenerowany plik.
+   Kolorowanie pokrycia może być nieprawidłowy, jeśli kod źródłowy zmienił się od *.coverage* został wygenerowany plik.
 
--   **Aby wyniki były czytelne jak tekst**, wybierz **Eksportuj wyniki pokrycia kodu**. Spowoduje to wygenerowanie czytelny *.coveragexml* pliku, który może przetwarzać z innymi narzędziami lub łatwo wysłać pocztą.
+- **Aby wyniki były czytelne jak tekst**, wybierz **Eksportuj wyniki pokrycia kodu**. Spowoduje to wygenerowanie czytelny *.coveragexml* pliku, który może przetwarzać z innymi narzędziami lub łatwo wysłać pocztą.
 
--   **Aby wysłać wyniki do kogoś innego**, albo wysłać *.coverage* pliku lub wyeksportowany *.coveragexml* pliku. Następnie można zaimportować plik. Jeśli mają one tę samą wersję kodu źródłowego, mogą odczytać kolorowanie pokrycia.
+- **Aby wysłać wyniki do kogoś innego**, albo wysłać *.coverage* pliku lub wyeksportowany *.coveragexml* pliku. Następnie można zaimportować plik. Jeśli mają one tę samą wersję kodu źródłowego, mogą odczytać kolorowanie pokrycia.
 
 ## <a name="merge-results-from-different-runs"></a>Scalanie wyników z różnych tras
 
 W niektórych sytuacjach, w zależności od danych testowych, używane będą różne bloki w kodzie. W związku z tym można wykorzystać wyniki z różnych przebiegów testów.
 
- Można na przykład założyć, że po uruchomieniu testu z wpisem „2” okaże się, że pokryto 50% określonej funkcji. Po uruchomieniu testu po raz drugi z wpisem „-2” widoczne kolorowanie pokrycia obejmie pozostałe 50% funkcji. Teraz należy scalić wyniki z dwóch przebiegów testów, a raport i widok kolorowania pokrycia pokaże 100% pokrycia funkcji.
+Można na przykład założyć, że po uruchomieniu testu z wpisem „2” okaże się, że pokryto 50% określonej funkcji. Po uruchomieniu testu po raz drugi z wpisem "-2", zostanie wyświetlony w widoku, że pozostałe 50% funkcji jest objęty kolorowanie pokrycia. Teraz należy scalić wyniki z dwóch przebiegów testów, a raport i widok kolorowania pokrycia pokaże 100% pokrycia funkcji.
 
- Użyj ![ikony dla przycisku scalania w oknie pokrycie kodu](../test/media/codecoverage-mergeicon.png)**Scal wyniki pokrycia kodu** w tym celu. Można wybrać dowolną kombinację ostatnich uruchomień lub zaimportowanych wyników. Aby połączyć wyeksportowane wyniki, należy je najpierw zaimportować.
+Użyj ![ikony dla przycisku scalania w oknie pokrycie kodu](../test/media/codecoverage-mergeicon.png) **Scal wyniki pokrycia kodu** w tym celu. Można wybrać dowolną kombinację ostatnich uruchomień lub zaimportowanych wyników. Aby połączyć wyeksportowane wyniki, należy je najpierw zaimportować.
 
- Użyj **Eksportuj wyniki pokrycia kodu** zapisać wyniki operacji scalania.
+Użyj **Eksportuj wyniki pokrycia kodu** zapisać wyniki operacji scalania.
 
 ### <a name="limitations-in-merging"></a>Ograniczenia w scalaniu
 
--   W przypadku scalania danych pokrycia z różnych wersji kodu wyniki są wyświetlane oddzielnie i nie są połączone. Aby uzyskać w pełni połączone wyniki, należy zastosować tę samą kompilację kodu, zmieniając tylko dane testowe.
+- W przypadku scalania danych pokrycia z różnych wersji kodu wyniki są wyświetlane oddzielnie i nie są połączone. Aby uzyskać w pełni połączone wyniki, należy zastosować tę samą kompilację kodu, zmieniając tylko dane testowe.
 
--   W przypadku scalania pliku wyników, które zostały wyeksportowane, a następnie zaimportowane, wyniki można przeglądać tylko według wierszy, a nie bloków. Użyj **Dodaj/Usuń kolumny** polecenie, aby wyświetlić dane wiersza.
+- W przypadku scalania pliku wyników, które zostały wyeksportowane, a następnie zaimportowane, wyniki można przeglądać tylko według wierszy, a nie bloków. Użyj **Dodaj/Usuń kolumny** polecenie, aby wyświetlić dane wiersza.
 
--   W przypadku scalania wyników z testów programu ASP.NET wyniki dla oddzielnych testów są wyświetlane, ale nie są połączone. Dotyczy to tylko samych artefaktów ASP.NET: wyniki dla innych zestawów zostaną połączone.
+- W przypadku scalania wyników z testów programu ASP.NET wyniki dla oddzielnych testów są wyświetlane, ale nie są połączone. Dotyczy to tylko samych artefaktów ASP.NET: wyniki dla innych zestawów zostaną połączone.
 
 ## <a name="exclude-elements-from-the-code-coverage-results"></a>Wykluczanie elementów z wyników pokrycia kodu
 
-Można chcieć wykluczyć określone elementy w kodzie z oceny pokrycia, jeśli np. kod jest generowany na podstawie szablonu tekstu. Dodaj atrybut `System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage` do dowolnego z następujących elementów kodu: klasy, struktury, metoda, właściwość, metoda ustawiająca właściwości lub metody pobierającej, zdarzenia. Należy zauważyć, że wykluczenie klasy nie wyklucza jej klas pochodnych.
+Można chcieć wykluczyć określone elementy w kodzie z oceny pokrycia, jeśli np. kod jest generowany na podstawie szablonu tekstu. Dodaj <xref:System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverageAttribute?displayProperty=fullName> atrybutu do żadnego z następujących elementów kodu: klasy, struktury, metoda, właściwość, metoda ustawiająca właściwości lub metody pobierającej, zdarzenia.
 
- Na przykład:
+> [!TIP]
+> Wykluczenie klasy nie wyklucza jej klas pochodnych.
+
+Na przykład:
 
 ```csharp
-
 using System.Diagnostics.CodeAnalysis;
 ...
 public class ExampleClass1
@@ -132,7 +134,6 @@ public class ExampleClass1
 }
 [ExcludeFromCodeCoverage]
 class ExampleClass2 { ... }
-
 ```
 
 ```vb
@@ -222,23 +223,23 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 
 Użyj następujących makr:
 
- `ExcludeFromCodeCoverage(` *ExclusionName* `, L"` *FunctionName* `");`
+`ExcludeFromCodeCoverage(` *ExclusionName* `, L"` *FunctionName* `");`
 
- `ExcludeSourceFromCodeCoverage(` *ExclusionName* `, L"` *SourceFilePath* `");`
+`ExcludeSourceFromCodeCoverage(` *ExclusionName* `, L"` *SourceFilePath* `");`
 
--   *ExclusionName* jest dowolną unikatową nazwą.
+- *ExclusionName* jest dowolną unikatową nazwą.
 
--   *FunctionName* jest w pełni kwalifikowana nazwa funkcji. Może ona zawierać symbole wieloznaczne. Na przykład aby wykluczyć wszystkie funkcje klasy, należy napisać `MyNamespace::MyClass::*`
+- *FunctionName* jest w pełni kwalifikowana nazwa funkcji. Może ona zawierać symbole wieloznaczne. Na przykład aby wykluczyć wszystkie funkcje klasy, należy napisać `MyNamespace::MyClass::*`
 
--   *SourceFilePath* jest ścieżką lokalną lub UNC pliku .cpp. Może ona zawierać symbole wieloznaczne. Poniższy przykład wyłącza wszystkie pliki w określonym katalogu: `\\MyComputer\Source\UnitTests\*.cpp`
+- *SourceFilePath* jest ścieżką lokalną lub UNC pliku .cpp. Może ona zawierać symbole wieloznaczne. Poniższy przykład wyłącza wszystkie pliki w określonym katalogu: `\\MyComputer\Source\UnitTests\*.cpp`
 
--   `#include <CodeCoverage\CodeCoverage.h>`
+- `#include <CodeCoverage\CodeCoverage.h>`
 
--   Miejsce wywołuje wyłączenie makr w globalnej przestrzeni nazw, nie w dowolnym obszarze nazw lub klasie.
+- Miejsce wywołuje wyłączenie makr w globalnej przestrzeni nazw, nie w dowolnym obszarze nazw lub klasie.
 
--   Można umieścić wyłączenia w pliku kodu testu jednostkowego lub w pliku kodu aplikacji.
+- Można umieścić wyłączenia w pliku kodu testu jednostkowego lub w pliku kodu aplikacji.
 
--   Wykluczenia muszą być skompilowane jako kod niezarządzany (natywny), przez ustawienie opcji kompilatora albo za pomocą `#pragma managed(off)`.
+- Wykluczenia muszą być skompilowane jako kod niezarządzany (natywny), przez ustawienie opcji kompilatora albo za pomocą `#pragma managed(off)`.
 
 > [!NOTE]
 > Aby wyłączyć funkcje w języku C + +/ CLI kodu, zastosuj atrybut `[System::Diagnostics::CodeAnalysis::ExcludeFromCodeCoverage]` do funkcji. To jest tak samo jak w języku C#.
@@ -251,41 +252,30 @@ Możesz skorzystać z większą kontrolę nad tym, którzy zespoły i elementy s
 
 ## <a name="analyze-code-coverage-in-azure-pipelines"></a>Analiza pokrycia kodu w potokach platformy Azure
 
-Podczas sprawdzania kodu testy będą uruchamiane na serwerze kompilacji, razem z innymi testami pozostałych członków zespołu. (Jeśli jeszcze nie skonfigurowano już to, zobacz [Uruchom testy w procesie kompilacji](http://msdn.microsoft.com/Library/d05743a1-c5cf-447e-bed9-bed3cb595e38).) Warto analiza pokrycia kodu w potokach platformy Azure, ponieważ zapewnia najbardziej aktualny i wszechstronny obraz pokrycia całego projektu. Zawiera także automatyczne testy systemu i inne zakodowane testy, których zwykle nie uruchamia na komputerach deweloperskich.
-
-1. W **Team Explorer**, otwórz **kompilacje**, a następnie dodaj lub Edytuj definicję kompilacji.
-
-2. Na **procesu** rozwiń **testy automatyczne**, **źródła testów**, **parametrów uruchomieniowych**. Ustaw **typu pliku parametrów uruchomieniowych** do **włączonym pokryciem kodu**.
-
-   Jeśli masz więcej niż jedną definicję źródła testów, powtórz ten krok dla każdej z nich.
-
-   ![Ustawienia definicji kompilacji, pokrycia kodu](../test/media/codecoverage-plaincc.png)
-
-> [!TIP]
-> Jeśli nie ma pola o nazwie **typ pliku ustawień uruchomienia**, zmień **Test Runner** właściwości. W obszarze **testy automatyczne**, wybierz opcję **zestawu testowego** i wybierz przycisk wielokropka **[...]**  na końcu wiersza. W **Dodaj/Edytuj przebieg testowy** dialogowego **Test Runner**, wybierz **Visual Studio Test Runner**.
-
-Po uruchomieniu kompilacji wyniki pokrycia kodu są dołączane do przebiegu testowego i pojawiają się w podsumowaniu kompilacji.
+Podczas sprawdzania kodu testy uruchamiane na serwerze kompilacji oraz testy z innymi członkami zespołu. Jest to przydatne do analizy pokrycia kodu w potokach platformy Azure, aby uzyskać najbardziej aktualny i wszechstronny obraz pokrycia całego projektu. Zawiera także automatyczne testy systemu i inne zakodowane testy, których zwykle nie uruchamia na komputerach deweloperskich. Aby uzyskać więcej informacji, zobacz [Uruchamianie testów jednostkowych z kompilacjami](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts).
 
 ## <a name="analyze-code-coverage-from-the-command-line"></a>Analiza pokrycia kodu z poziomu wiersza polecenia
 
 Aby uruchomić testy z wiersza polecenia, użyj *vstest.console.exe*. Pokrycie kodu jest opcją *vstest.console.exe* narzędzia.
 
-1.  Uruchom wiersz polecenia programisty dla programu Visual Studio:
+1. Uruchom wiersz polecenia programisty dla programu Visual Studio:
 
-    Na Windows **Start** menu, wybierz **programu Visual Studio 2017** > **wiersz polecenia programisty dla programu VS 2017**.
+   W Windows **Start** menu, wybierz **programu Visual Studio 2017** > **wiersz polecenia programisty dla programu VS 2017**.
 
-2.  Uruchom następujące polecenie:
+2. W wierszu polecenia wpisz następujące polecenie:
 
-    `vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage`
+   ```shell
+   vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage
+   ```
 
 Aby uzyskać więcej informacji, zobacz [opcje wiersza poleceń VSTest.Console.exe](vstest-console-options.md).
 
 ## <a name="troubleshoot"></a>Rozwiązywanie problemów
 
-Jeśli nie widać wyników pokrycia kodu, [Rozwiązywanie problemów z pokryciem kodu](../test/troubleshooting-code-coverage.md) temacie mogą pomóc.
+Jeśli nie widać wyników pokrycia kodu, [Rozwiązywanie problemów z pokryciem kodu](../test/troubleshooting-code-coverage.md) artykuł może pomóc.
 
 ## <a name="see-also"></a>Zobacz także
 
 - [Dostosowywanie analizy pokrycia kodu](../test/customizing-code-coverage-analysis.md)
-- [Pokrycie kodu](../test/troubleshooting-code-coverage.md)
+- [Rozwiązywanie problemów z pokryciem kodu](../test/troubleshooting-code-coverage.md)
 - [Kod testu jednostkowego](../test/unit-test-your-code.md)

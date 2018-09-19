@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 491a70cd8ef35a1401bfe0cd8b6118709751d183
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: ec65f2a35f0e28a8e9424497bcdfb11b1a02c84f
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321206"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46371085"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Używanie automatyzacji interfejsu użytkownika do testowania kodu
 
@@ -437,7 +437,7 @@ Możesz analizować kodowanych testów interfejsu użytkownika za pomocą zakodo
 
 ## <a name="whats-next"></a>Jaka jest przyszłość?
 
-**Dodatkowe opcje do uruchomienia kodowanych testów interfejsu użytkownika:** można uruchomić kodowane testy interfejsu użytkownika bezpośrednio z programu Visual Studio, zgodnie z opisem we wcześniejszej części tego tematu. Ponadto można uruchomić zautomatyzowane testy interfejsu użytkownika programu Microsoft Test Manager lub z Team Foundation Build. Kodowane testy interfejsu użytkownika są automatyzowane, mają wchodzić w interakcje z pulpitem po uruchomieniu, w przeciwieństwie do innych testów automatycznych.
+**Dodatkowe opcje do uruchomienia kodowanych testów interfejsu użytkownika:** można uruchomić kodowane testy interfejsu użytkownika bezpośrednio z programu Visual Studio, zgodnie z opisem we wcześniejszej części tego tematu. Ponadto można uruchomić zautomatyzowane testy interfejsu użytkownika z programu Microsoft Test Manager lub za pomocą potoków usługi Azure. Kodowane testy interfejsu użytkownika są automatyzowane, mają wchodzić w interakcje z pulpitem po uruchomieniu, w przeciwieństwie do innych testów automatycznych.
 
 - [Przeprowadzanie testów jednostkowych za pomocą narzędzia Eksplorator testów](../test/run-unit-tests-with-test-explorer.md)
 

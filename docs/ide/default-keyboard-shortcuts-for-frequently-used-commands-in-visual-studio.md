@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d2f53ae425f4942a9a14289e84798756c9fec969
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 50e9a56d6682c32d4f02f5d45899867ce21768ec
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512551"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370981"
 ---
 # <a name="default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio"></a>Domyślne skróty klawiaturowe dla często używanych poleceń w programie Visual Studio
 
@@ -150,7 +150,7 @@ Wybierając te domyślne skróty klawiaturowe, możesz uzyskać dostęp do częs
 |View.ObjectBrowser|**Ctrl + Alt + J** [globalny]|
 |View.Output|**Ctrl + Alt + O** [globalny]|
 |View.PropertiesWindow|**F4**|
-|View.Refresh|**F5** [Edytor szczegółów kompilacji Team Explorer, Team Foundation]|
+|View.Refresh|**F5** [Team Explorer]|
 |View.ServerExplorer|**Ctrl + Alt + S** [globalny]|
 |View.ShowSmartTag|**Ctrl+.** [Globalny]<br /><br /> lub **Shift + Alt + F10** [globalny, HTML Editor Design View]|
 |View.SolutionExplorer|**Ctrl + Alt + L** [globalny]|

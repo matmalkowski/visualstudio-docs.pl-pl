@@ -13,19 +13,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 59f8d57c0ba0e84107cd0d0290b950b335e5f2b0
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 6a1575093ee78fec887c9fbedcfc29339f86f2e7
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639474"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370487"
 ---
 # <a name="how-to-clear-the-undo-stack"></a>Porady: wyczyścić stosu cofania
 Następujące Poniższa procedura wyjaśnia, jak wyczyścić stosu cofania.  
   
 ## <a name="to-clear-the-undo-stack"></a>Aby wyczyścić stosu cofania  
   
-1.  Aby wyczyścić wykorzystanie stosu cofania [IOleUndoManager::DiscardFrom](http://msdn.microsoft.com/library/windows/desktop/ms693799) metody. Oto przykład:  
+1.  Aby wyczyścić wykorzystanie stosu cofania [IOleUndoManager::DiscardFrom](/windows/desktop/api/ocidl/nf-ocidl-ioleundomanager-discardfrom) metody. Oto przykład:  
   
     ```  
     HRESULT CCmdWindow::ClearUndoStack()  

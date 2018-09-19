@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 718642c65920072da20a7e2193755d0e24ed32cb
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 03e95dce70b38a6c2b51e0b610cb8e8bd6379239
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512268"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370994"
 ---
 # <a name="context-parameters"></a>Parametry kontekstu
 W [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zintegrowanym środowisku programistycznym (IDE), możesz dodać kreatorów, aby **nowy projekt**, **Dodaj nowy element**, lub **Dodaj projekt Sub** okien dialogowych. Dodano kreatorów są dostępne na **pliku** menu lub klikając prawym przyciskiem myszy projekt w **Eksploratora rozwiązań**. IDE przekazuje parametry kontekstu wykonania kreatora. Parametry kontekstu Definiowanie stanu projektu, gdy IDE wywołuje kreatora.  
@@ -67,4 +67,4 @@ W [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zintegrowanym śr
  [Parametry niestandardowe](../../extensibility/internals/custom-parameters.md)   
  [Kreatorzy](../../extensibility/internals/wizards.md)   
  [Plik kreatora (vsz)](../../extensibility/internals/wizard-dot-vsz-file.md)   
- [Parametry kontekstu uruchomiania kreatorów](http://msdn.microsoft.com/Library/051a10f4-9e45-4604-b344-123044f33a24)
+ [Parametry kontekstu uruchomiania kreatorów](https://msdn.microsoft.com/Library/051a10f4-9e45-4604-b344-123044f33a24)

@@ -9,12 +9,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 12c1bba1d07ab695f265425d6aeae6806589dcd4
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 41db830fbf7dcbe97f44d64ffa9b9701ec658c1e
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497852"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370591"
 ---
 # <a name="get-started-with-roslyn-analyzers"></a>Wprowadzenie do analizatorów Roslyn
 
@@ -26,13 +26,13 @@ Za pomocą analizatorów kodu na żywo, na podstawie projektu w programie Visual
 
 [Dodaj kod naprawia wskazówki: Podaj użytkowników poprawki analizator problemów](https://msdn.microsoft.com/magazine/dn904670.aspx)
 
-[Wprowadzenie i wskazówki dotyczące rzeczywistych analizatora](http://channel9.msdn.com/events/Build/2015/3-725)
+[Wprowadzenie i wskazówki dotyczące rzeczywistych analizatora](https://channel9.msdn.com/events/Build/2015/3-725)
 
-[Analizator Roslyn rzeczywistych](../extensibility/roslyn-analyzers-and-code-aware-library-for-immutablearrays.md) , możesz też obejrzeć jako [mówić](http://channel9.msdn.com/events/Build/2015/3-725)
+[Analizator Roslyn rzeczywistych](../extensibility/roslyn-analyzers-and-code-aware-library-for-immutablearrays.md) , możesz też obejrzeć jako [mówić](https://channel9.msdn.com/events/Build/2015/3-725)
 
 [Kilka przykładów w witrynie github, pogrupowane według trzy rodzaje analizatorów](https://github.com/dotnet/roslyn/blob/master/docs/analyzers/Analyzer%20Samples.md)
 
-[Wprowadzenie i przewodnik po kilku analizatorów](http://channel9.msdn.com/Events/dotnetConf/2015/NET-Compiler-Platform-Roslyn-Analyzers-and-the-Rise-of-Code-Aware-Libraries)
+[Wprowadzenie i przewodnik po kilku analizatorów](https://channel9.msdn.com/Events/dotnetConf/2015/NET-Compiler-Platform-Roslyn-Analyzers-and-the-Rise-of-Code-Aware-Libraries)
 
 ## <a name="see-also"></a>Zobacz także
 

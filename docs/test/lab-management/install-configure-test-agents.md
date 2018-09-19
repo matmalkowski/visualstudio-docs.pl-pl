@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 83a5716d5a548980b85108b6bbc15329a755bc2b
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: bcdc556366a84deffa37d7e0234b1c543882022c
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320634"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370968"
 ---
 # <a name="install-test-agents-and-test-controllers"></a>Instalowanie agentów testowych i kontrolerów testów
 
@@ -36,7 +36,7 @@ W poniższej tabeli przedstawiono wymagania systemowe dotyczące instalowania ko
 
 ## <a name="install-the-test-controller-and-test-agents"></a>Zainstaluj agentów testowych i kontrolera testów
 
-Możesz pobrać agents for Visual Studio 2017 z [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?q=agents). Przewiń do dołu strony i poszukaj *Agents for Visual Studio 2017*. Wybierz opcję *agenta* lub *kontrolera*, a następnie wybierz *Pobierz*. Uruchom pobrany plik wykonywalny, aby zainstalować agenta testowego lub kontrolera.
+Możesz pobrać agents for Visual Studio 2017 z [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?q=agents). Wyszukaj *Agents for Visual Studio 2017*, wybierz opcję *agenta* lub *kontrolera*, a następnie wybierz *Pobierz*. Uruchom pobrany plik wykonywalny, aby zainstalować agenta testowego lub kontrolera.
 
 Możesz pobrać agenci dla programu Visual Studio 2015 i Visual Studio 2013 ze [starsze pliki do pobrania](https://visualstudio.microsoft.com/vs/older-downloads/) strony.
 
@@ -63,7 +63,7 @@ Firma Microsoft zaleca użycie agentów programu Visual Studio, we wszystkich no
 W poniższej tabeli przedstawiono scenariusze obsługiwane przez agentów dla programu Visual Studio 2013 i alternatyw dla Team Foundation Server (TFS) 2015 i planów testowych platformy Azure:
 
 | Scenariusze obsługiwane przez agentów programu Visual Studio 2013 | Alternatywnie TFS i planów testowych platformy Azure |
-| --- | --- |
+| - | - |
 | Przepływ pracy kompilacja-wdrożenie-Test, w programie Visual Studio | Użytkownicy mogą używać [tworzenie potoku](/azure/devops/pipelines/index?view=vsts) (nie kompilacja XAML) dla kompilacji, wdrażania oraz testowania scenariuszy w programie TFS. |
 | Obciążenia testowania (testowanie wydajności) za pomocą polecenia zdalnego maszyn lokalnych | Użyj kontrolera testów i Test Agents 2013 Update 5 do uruchomienia obciążenia testy w środowisku lokalnym. |
 | Zdalne wykonywanie zautomatyzowanych testów z Microsoft Test Manager za pomocą środowiska laboratoryjnego | Obecnie nie ma żadnej alternatywy dla tego scenariusza. Firma Microsoft zaleca używanie zadanie Uruchom testy funkcjonalne w kompilacji i definicje wersji (nie w usłudze kompilacji XAML) do wykonywania testów zdalnie. |

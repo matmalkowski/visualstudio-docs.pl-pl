@@ -21,12 +21,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 22d51fff3dcfea81676e18c7b13d91bb5567dde8
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 8046e5fe494839c051662bf313a17c49eea8746b
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321128"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46371065"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Weryfikacja kodu przy użyciu diagramów zależności
 
@@ -52,16 +52,14 @@ Aby upewnić się, że kod jest zgodny z projektem, Przeprowadź walidację kodu
 
 -   Visual Studio
 
--   Visual Studio na serwerze Team Foundation Build, aby walidować kod automatycznie w programie Team Foundation Build
-
 -   Rozwiązanie, które ma projekt modelowania z diagramem zależności. Ten diagram zależności muszą zostać połączone z artefaktami w projektach C# lub Visual Basic, które chcesz zweryfikować. Zobacz [tworzenie diagramów zależności z kodu](../modeling/create-layer-diagrams-from-your-code.md).
 
- Aby zobaczyć, które wersje programu Visual Studio obsługuje tę funkcję, zobacz [obsługiwana wersja dla narzędzia architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+Aby zobaczyć, które wersje programu Visual Studio obsługuje tę funkcję, zobacz [obsługiwana wersja dla narzędzia architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
- Możesz walidować kod ręcznie z diagramu Otwórz zależności w programie Visual Studio lub z wiersza polecenia. Kod możesz również walidować automatycznie podczas uruchamiania lokalnych kompilacji lub programu Team Foundation Build. Zobacz [wideo Channel 9: projektowanie i Walidacja architektury za pomocą diagramów zależności](http://go.microsoft.com/fwlink/?LinkID=252073).
+Możesz walidować kod ręcznie z diagramu Otwórz zależności w programie Visual Studio lub z wiersza polecenia. Możesz również walidować kod automatycznie podczas uruchamiania lokalnych kompilacji lub Azure potoki kompilacji. Zobacz [wideo Channel 9: projektowanie i Walidacja architektury za pomocą diagramów zależności](http://go.microsoft.com/fwlink/?LinkID=252073).
 
 > [!IMPORTANT]
->  Jeśli chcesz uruchomić walidację warstwy za pomocą programu Team Foundation Build, należy również zainstalować tę samą wersję programu Visual Studio na serwerze kompilacji.
+> Jeśli chcesz uruchomić walidację warstwy za pomocą programu Team Foundation Server, należy również zainstalować tę samą wersję programu Visual Studio na serwerze kompilacji.
 
 -   [Zobacz, czy element obsługuje walidację](#SupportsValidation)
 
@@ -182,51 +180,32 @@ W tej wersji programu Visual Studio Weryfikacja odbywa się w czasie rzeczywisty
 |Ukrywanie wszystkich pominiętych błędów w **lista błędów** okna|Kliknij prawym przyciskiem myszy w dowolnym miejscu w **lista błędów** okna, wskaż **zarządzanie błędami walidacji**, a następnie kliknij przycisk **Pokaż wszystkie pominięte błędy**.|
 
 ##  <a name="ValidateAuto"></a> Automatycznie Walidacja kodu
- Walidację warstwy możesz wykonać przy każdym uruchomieniu lokalnej kompilacji. Jeśli Twój zespół używa programu Team Foundation Build, możesz wykonać walidację warstwy z bramkowanymi ewidencjonowaniami, którą można określić, tworząc niestandardowe zadanie MSBuild, a następnie używając raportów kompilacji do zbierania błędów walidacji. Aby utworzyć kompilacje z bramkowanym ewidencjonowaniem, zobacz [używać procesu kompilacji ewidencjonowanej warunkowo w celu sprawdzenia poprawności zmian](http://msdn.microsoft.com/Library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec).
+
+Walidację warstwy możesz wykonać przy każdym uruchomieniu lokalnej kompilacji. Jeśli Twój zespół używa DevOps platformy Azure, możesz wykonać walidację warstwy z bramkowanymi ewidencjonowaniami, którą można określić, tworząc niestandardowe zadanie MSBuild, a następnie używając raportów kompilacji do zbierania błędów sprawdzania poprawności. Aby utworzyć kompilacje z bramkowanym ewidencjonowaniem, zobacz [używać procesu kompilacji ewidencjonowanej warunkowo w celu sprawdzenia poprawności zmian](http://msdn.microsoft.com/Library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec).
 
 #### <a name="to-validate-code-automatically-during-a-local-build"></a>Aby walidować kod automatycznie podczas lokalnej kompilacji
 
--   Użyj edytora tekstów, aby otworzyć plik projektu modelowania (.modelproj), a następnie dołącz następującą właściwość:
+Użyj edytora tekstów, aby otworzyć plik projektu modelowania (.modelproj), a następnie dołącz następującą właściwość:
 
 ```xml
 <ValidateArchitecture>true</ValidateArchitecture>
 ```
 
- \- lub —
+\- lub —
 
 1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy projekt modelowania, który zawiera diagram zależności lub diagramów, a następnie kliknij **właściwości**.
 
 2.  W **właściwości** okna, Ustaw projekt modelowania **sprawdzanie poprawności architektury** właściwości **True**.
 
-     Dotyczy to projektów modelowania w trakcie procesu walidacji.
+    Dotyczy to projektów modelowania w trakcie procesu walidacji.
 
 3.  W **Eksploratora rozwiązań**, kliknij plik diagramu (.layerdiagram) zależności, którego chcesz używać do sprawdzania poprawności.
 
 4.  W **właściwości** okna, upewnij się, że diagram **Build Action** właściwość jest ustawiona na **weryfikacji**.
 
-     Obejmuje to diagram zależności w trakcie procesu walidacji.
+    Obejmuje to diagram zależności w trakcie procesu walidacji.
 
- Aby zarządzać błędami w oknie Lista błędów, zobacz [zarządzanie błędami walidacji](#ManageErrors).
-
-#### <a name="to-validate-code-automatically-during-a-team-foundation-build"></a>Aby walidować kod automatycznie podczas działania programu Team Foundation Build
-
-1.  W **Team Explorer**, kliknij dwukrotnie definicję kompilacji, a następnie kliknij przycisk **procesu**.
-
-2.  W obszarze **parametrów procesu kompilacji**, rozwiń węzeł **kompilacji**i wpisz następujące polecenie w **argumenty MSBuild** parametru:
-
-     `/p:ValidateArchitecture=true`
-
- Aby uzyskać więcej informacji na temat błędów sprawdzania poprawności, zobacz [omówienie i rozwiązywanie błędów walidacji warstwy](#UnderstandingValidationErrors). Aby uzyskać więcej informacji na temat [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)], zobacz:
-
--   [Potoki usługi Azure](/azure/devops/pipelines/index?view=vsts)
-
--   [Użyj domyślnego szablonu procesu kompilacji](http://msdn.microsoft.com/Library/43930b12-c21b-4599-a980-2995e3d16e31)
-
--   [Modyfikowanie starszej kompilacji oparty na UpgradeTemplate.xaml](http://msdn.microsoft.com/Library/ee1a8259-1dd1-4a10-9563-66c5446ef41c)
-
--   [Dostosowywanie szablonu procesu kompilacji](http://msdn.microsoft.com/Library/b94c58f2-ae6f-4245-bedb-82cd114f6039)
-
--   [Monitoruj postęp kompilacji uruchomiony](http://msdn.microsoft.com/Library/e51e3bad-2d1d-4b7b-bfcc-c43439c6c8ef)
+Aby zarządzać błędami w oknie Lista błędów, zobacz [zarządzanie błędami walidacji](#ManageErrors).
 
 ##  <a name="TroubleshootingValidation"></a> Rozwiązywanie problemów z problemy ze sprawdzaniem poprawności warstwy
  W poniższej tabeli opisano problemy związane z walidacją warstwy i ich rozwiązania. Problemy te różnią się od błędów, które wynikają z konfliktów między kodem i projektem. Aby uzyskać więcej informacji na temat tych błędów, zobacz [omówienie i rozwiązywanie błędów walidacji warstwy](#UnderstandingValidationErrors).

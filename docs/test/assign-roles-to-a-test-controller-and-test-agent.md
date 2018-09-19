@@ -1,5 +1,5 @@
 ---
-title: Przypisywanie ról kontrolerowi testu i agentowi testowemu w celu automatycznego testowania w programie Visual Studio
+title: Przypisz role do kontrolera testów i agenta testowego, potrzeby testowania automatycznego
 ms.date: 10/20/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,103 +14,103 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: f939947c4b96584439d85c33c234dc769531888d
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 4f47fdad1b2f04a69b2a4bc1c3f6d1e6b60fa881
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36280614"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370734"
 ---
-# <a name="assign-roles-to-a-test-controller-and-test-agent"></a>Przypisz role do kontrolera i testowania agenta testowego
+# <a name="assign-roles-to-a-test-controller-and-test-agent"></a>Przypisywanie ról do testów kontrolera i agenta testowego
 
-W tym przewodniku pokazano, jak utworzyć i skonfigurować ustawienie testu używa kontrolera testów i agent testowy do dystrybucji testowania na kilku komputerach przy użyciu programu Visual Studio. Ponadto w tym przewodniku przedstawiono sposób dodawania dane diagnostyczne i dane karty Ustawienia testu.
+W tym instruktażu pokazano, jak utworzyć i skonfigurować ustawienie testu, która używa kontrolera testów i agenta testowego do dystrybucji testu na kilku komputerach przy użyciu programu Visual Studio. Ponadto w tym instruktażu przedstawiono sposób dodawania adapterów diagnostycznych i danych w ustawieniach testu.
 
-W tym przewodniku będzie wykonać następujące zadania:
+W tym instruktażu wykonasz następujące zadania:
 
--   Tworzenie ustawień testu.
+-   Utwórz ustawienie testu.
 
--   Przypisywanie ról do kontrolera i testowania agentów testowych.
+-   Przypisywanie ról do agentów testowych i kontrolera testów.
 
--   Przypisanie dane diagnostyczne i dane karty Ustawienia testu.
+-   Przypisz kartę danych diagnostycznych do ustawień testu.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
--   Utwórz testy jednostkowe ani kodowane testy interfejsu użytkownika, aby uruchomić z ustawieniami testu.
+-   Utwórz testy jednostkowe lub kodowane testy interfejsu użytkownika do uruchamiania z ustawieniami testów.
 
--   Zainstaluj agentów testowych kontrolera i testowania. Aby uzyskać informacje o sposobie instalowania kontrolera testów i agenci testowi, zobacz [Instalowanie i konfigurowanie agentów testowych](../test/lab-management/install-configure-test-agents.md).
+-   Zainstaluj agentów testowych i kontrolera testów. Aby uzyskać informacje o sposobie instalowania kontrolera testów i agentów testowych, zobacz [Instalowanie i konfigurowanie agentów testowych](../test/lab-management/install-configure-test-agents.md).
 
 ## <a name="to-create-and-configure-a-test-setting"></a>Aby utworzyć i skonfigurować ustawienia testu
 
-1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **elementy rozwiązania** wskaż **Dodaj**, a następnie wybierz pozycję **nowy element**.
+1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **elementy rozwiązania** wskaż **Dodaj**, a następnie wybierz **nowy element**.
 
-     **Dodaj nowy element** zostanie wyświetlone okno dialogowe.
+     **Dodaj nowy element** pojawi się okno dialogowe.
 
-2.  W **zainstalowane szablony** okienku wybierz **ustawień testu**.
+2.  W **zainstalowane szablony** okienku wybierz **ustawienia testu**.
 
 3.  W **nazwa** wpisz **TestSettingDistributedTestWalkthrough**.
 
-4.  Wybierz **dodać**.
+4.  Wybierz **Dodaj**.
 
-     Nowy test *TestSettingDistributedTestWalkthrough.testsettings* plik zostanie wyświetlony w **Eksploratora rozwiązań**w obszarze **elementy rozwiązania** folderu.
+     Nowy test *TestSettingDistributedTestWalkthrough.testsettings* plik pojawia się w **Eksploratora rozwiązań**w obszarze **elementy rozwiązania** folderu.
 
-     **Ustawień testu** zostanie wyświetlone okno dialogowe. **Ogólne** strony jest zaznaczone.
+     **Ustawienia testu** zostanie wyświetlone okno dialogowe. **Ogólne** została zaznaczona strona.
 
-     Teraz możesz edytować i zapisać wartości ustawień testu.
+     Można teraz edytować i zapisać wartości ustawień testu.
 
     > [!NOTE]
-    > Każdego ustawienia testu, tworzonych jest wymienione jako rozwiązaniem dla **wybierz aktywne ustawienia testu** i **edytowanie ustawień testu** opcje na **Test** menu.
+    > Wszystkich ustawień testu, tworzonych jest wymieniony jako wyborem dla **zaznacz aktywne ustawienia testu** i **Edytuj ustawienia testu** opcji na **Test** menu.
 
-5.  W obszarze **nazwa**, wpisz nazwę dla ustawienia testu.
+5.  W obszarze **nazwa**, wpisz nazwę ustawień testu.
 
-6.  W obszarze **opis**, typ **ustawień testów rozproszonych**.
+6.  W obszarze **opis**, typ **ustawienia testu rozłożonego**.
 
 7.  Pozostaw **domyślny schemat nazewnictwa** wybrane.
 
-## <a name="to-assign-roles-to-a-test-controller-and-test-agents"></a>Aby przypisać role do testu kontrolera i agenci testowi
+## <a name="to-assign-roles-to-a-test-controller-and-test-agents"></a>Aby przypisać role do kontrolera i testu agentów testowych
 
-1.  Wybierz **ról**.
+1.  Wybierz **role**.
 
-     **Ról** zostanie wyświetlona strona.
+     **Role** zostanie wyświetlona strona.
 
-2.  Aby uruchomić zdalnie test, należy użyć **wykonywania metoda testowa** listy rozwijanej i wybierz **zdalne wykonywanie kodu**.
+2.  Aby zdalnie uruchomić test, należy użyć **metoda wykonania testu** listy rozwijanej i wybierz pozycję **zdalne wykonywanie kodu**.
 
-3.  W **kontrolera** listy rozwijanej liście, wpisz nazwę komputera [kontroler testu](../test/lab-management/install-configure-test-agents.md).
+3.  W **kontrolera** listy rozwijanej liście, wpisz nazwę komputera [kontroler testów](../test/lab-management/install-configure-test-agents.md).
 
     > [!NOTE]
-    > Jeśli po raz pierwszy, dodawania kontrolera, nie ma żadnych kontrolerów wymienione na liście rozwijanej. Lista zostanie wypełniona przez poprzednie kontrolery, określonych w innych ustawień testu.
+    > Jest to po raz pierwszy dodajesz kontrolera, czy nie ma kontrolerów wymienionych na liście rozwijanej. Lista jest wypełniana przez wcześniejsze kontrolery, które określono w innych ustawieniach testowych.
 
-4.  W obszarze **ról**, wybierz **Dodaj**.
+4.  W obszarze **role**, wybierz **Dodaj**.
 
-5.  W wyróżnionych wierszu w obszarze **nazwa** wpisz **rozproszonego testu**.
+5.  W wierszu wyróżnionym poniżej **nazwa** wpisz **test rozłożony**.
 
-## <a name="to-assign-a-diagnostic-and-data-adapter-to-your-test-setting"></a>Aby przypisać adaptera danych diagnostycznych i danych do ustawienia testu
+## <a name="to-assign-a-diagnostic-and-data-adapter-to-your-test-setting"></a>Aby przypisać kartę danych diagnostycznych do ustawień testu
 
-1.  Wybierz **danych i informacji diagnostycznych**.
+1.  Wybierz **dane i Diagnostyka**.
 
-     **Danych i informacji diagnostycznych** zostanie wyświetlona strona.
+     **Dane i Diagnostyka** zostanie wyświetlona strona.
 
-2.  W obszarze **roli**, upewnij się, że **rozproszonego testu** wybrać rolę.
+2.  W obszarze **roli**, upewnij się, że **test rozłożony** zaznaczona została rola.
 
-3.  W obszarze **dane i Diagnostyka w przypadku roli wybierz**, wybierz pozycję **IntelliTrace** i **informacje o systemie** kart.
+3.  W obszarze **dane i Diagnostyka dla wybierz rolę**, wybierz opcję **IntelliTrace** i **informacje o systemie** kart.
 
-     Aby uzyskać informacji o tych kart i innych kart, które można używać w środowisku testowym, zobacz [Konfigurowanie testów jednostkowych](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md).
+     Aby uzyskać informacje o tych adapterach i innych adapterach, których można użyć w ustawieniach testów, zobacz [Konfigurowanie testów jednostkowych](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md).
 
-4.  Wybierz **hostów**.
+4.  Wybierz **hosty**.
 
-5.  (Opcjonalnie) Jeśli komputer działa w 64-bitowej wersji systemu Microsoft Windows i kompilowane, za pomocą testu **Any CPU** konfiguracji, użyj **Uruchamianie testu w procesie 32-bitowy lub 64-bitowym** listy rozwijanej i wybierz pozycję **Uruchom testy w procesie 64-bitowym na 64-bitowym komputerze**.
+5.  (Opcjonalnie) Jeśli komputer działa w 64-bitowej wersji systemu Microsoft Windows i skompilowano test przy użyciu **dowolny Procesor** konfiguracji, użyj **Uruchom test w procesie 32-bitowym lub 64-bitowym** listy rozwijanej i wybierz pozycję **Uruchom testy w procesie 64-bitowym na komputerze 64-bitowym**.
 
     > [!TIP]
-    > Maksymalna elastyczność należy skompilować projektów testów z **Any CPU** konfiguracji. Następnie możesz uruchomić na zarówno 32-bitowe i 64-bitowych agentów. Nie ma żadnych dodatkowych zalet kompilowanie projektów testów z **64-bitowych** konfiguracji.
+    > Aby zapewnić maksymalną elastyczność, należy skompilować testowane projekty z **dowolny Procesor** konfiguracji. Następnie można uruchomić zarówno 32-bitowych i 64-bitowych agentów. Nie posiada zalet kompilowanie projektów testowych mających **64-bitowych** konfiguracji.
 
 6.  Aby zapisać nowe ustawienia testu, wybierz **Zastosuj**.
 
 7.  Wybierz **Zamknij**.
 
-8.  W Test menu wybierz **wybierz aktywne ustawienia testu** , a następnie wybierz **TestSettingDistributedTestWalkthrough.testsettings**.
+8.  W Test menu wybierz **wybierz aktywne ustawienia testów** , a następnie wybierz **TestSettingDistributedTestWalkthrough.testsettings**.
 
-9. Uruchomienie testu w zwykły sposób.
+9. Uruchom test w zwykły sposób.
 
-     Gdy kontroler testów przetwarza testy jednostkowe i kodowane testy interfejsu użytkownika, kontrolera testu testy są podzielone na grupy 100 i wysyła je na maszynie agenta testowego. Na przykład jeśli masz 250 testów jednostkowych i trzy agenci testowi, testy jednostkowe pierwszych 100 zostaną wysłane do agent1, testy jednostkowe następne 100 zostaną wysłane do agent2 i pozostałe testy jednostkowe 50 zostaną wysłane do agent3.
+     Gdy kontroler testów przetwarza testy jednostkowe i kodowane testy interfejsu użytkownika, kontroler testu dzieli testy na grupy po 100 i wysyła je na komputer agenta testowego. Na przykład jeśli masz 250 jednostek testów i trzech dostępnych agentów testowych, 100 pierwszych jednostek testów, zostanie wysłanych do agenta 1, następne 100 testów, które będą wysyłane do agenta 2, a pozostałe 50 testów, które będą wysyłane do agenta 3.
 
 ## <a name="see-also"></a>Zobacz także
 

@@ -1,6 +1,6 @@
 ---
 title: Zarządzaj kontrolerami testów i agentów testowych w programie Visual Studio
-ms.date: 11/04/2016
+ms.date: 09/18/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4107f06658c081bc249e9e1b3a26d2a3480584dc
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 5cd391cd922d32dc466a30e5ff1bf037cbd22a33
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279978"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46371033"
 ---
 # <a name="manage-test-controllers-and-test-agents"></a>Zarządzanie kontrolerami testów i agentami testowymi
 
@@ -41,17 +41,15 @@ Możesz chcieć dodać agenta testowego do innego kontrolera testów lub może b
     > [!NOTE]
     > Konieczne jest posiadanie agenta testowego już zainstalowane, aby dodać go do kontrolera testów. Aby uzyskać więcej informacji na temat instalowania agenta testowego, zobacz [Instalowanie i konfigurowanie agentów testowych](../test/lab-management/install-configure-test-agents.md).
 
-2. Jeśli chcesz zmienić sposób uruchomienia agenta testowego, wybierz polecenie **opcje uruchamiania**.
+2. Pojawi się informacja o jak uruchomić agenta testowego na dwa sposoby:
 
-     Dostępne są dwie opcje jak przechodzi do agenta testowego do uruchomienia:
+   - **Usługa**: Jeśli jest konieczne Uruchamianie testów automatycznych, które współdziałają z pulpitem, takich jak kodowane testy interfejsu użytkownika czy tworzenie nagrania podczas wykonywania testu, w obszarze wideo **Uruchom agenta testowego jako**, wybierz opcję **usługi**. Agent testowy zostanie uruchomiony jako usługa. Wybierz **dalej**.
 
-     **Usługa**: Jeśli jest konieczne Uruchamianie testów automatycznych, które współdziałają z pulpitem, takich jak kodowane testy interfejsu użytkownika czy tworzenie nagrania podczas wykonywania testu, w obszarze wideo **Uruchom agenta testowego jako**, wybierz opcję **usługi**. Agent testowy zostanie uruchomiony jako usługa. Wybierz **dalej**.
+      Można teraz wprowadzić szczegóły na temat użytkownika, kiedy czynnik testowy startuje jako usługa.
 
-     Można teraz wprowadzić szczegóły na temat użytkownika, kiedy czynnik testowy startuje jako usługa.
+      1. Wprowadź nazwę w **nazwa_użytkownika**.
 
-    1. Wprowadź nazwę w **nazwa_użytkownika**.
-
-    2. Wprowadź hasło w **hasło**.
+      2. Wprowadź hasło w **hasło**.
 
         |**Informacje o koncie użytkownika ważne**|
         |--------------------------------------------|
@@ -60,27 +58,20 @@ Możesz chcieć dodać agenta testowego do innego kontrolera testów lub może b
         |— Jeśli nazwa użytkownika agenta nie jest w usłudze agenta spróbuje ją dodać, co wymaga uprawnień na kontrolerze testów.|
         |-Użytkownik próbujący użyć kontrolera testu musi znajdować na koncie użytkownika kontrolera testów lub będzie mógł uruchamiać testów dla kontrolera.|
 
-     **Proces interaktywny**: Jeśli chcesz uruchomić testy automatyczne, które muszą współdziałać z pulpitem, takich jak kodowane testy interfejsu użytkownika czy tworzenie nagrania wideo podczas wykonywania testu, wybierz **procesu interaktywnego**. Agent testowy zostanie uruchomiony jako proces interaktywny, a nie jako usługa.
+   - **Proces interaktywny**: Jeśli chcesz uruchomić testy automatyczne, które muszą współdziałać z pulpitem, takich jak kodowane testy interfejsu użytkownika czy tworzenie nagrania wideo podczas wykonywania testu, wybierz **procesu interaktywnego**. Agent testowy zostanie uruchomiony jako proces interaktywny, a nie jako usługa.
 
-     Na następnej stronie wprowadź szczegółowe informacje o użytkowniku, gdy czynnik testowy startuje jako proces albo inne opcje.
+      Na następnej stronie wprowadź szczegółowe informacje o użytkowniku, gdy czynnik testowy startuje jako proces albo inne opcje.
 
-    1. Wprowadź nazwę w **nazwa_użytkownika**.
+      1. Wprowadź nazwę w **nazwa_użytkownika**.
 
-    2. Wprowadź hasło w **hasło**.
+      2. Wprowadź hasło w **hasło**.
 
         > [!NOTE]
         > Jeśli skonfigurujesz agenta testowego do uruchamiania jako interaktywnego procesu z innym użytkownikiem, który nie jest aktualnie aktywnych użytkowników, należy ponownie uruchomić komputer i zalogować się jako ten inny użytkownik, aby można było uruchomić agenta. Ponadto hasła puste nie są obsługiwane dla kont użytkowników. Jeśli chcesz użyć narzędzia zbierającego IntelliTrace lub emulacji sieci, konto użytkownika musi być członkiem grupy Administratorzy.
 
-        |**Informacje o koncie użytkownika ważne**|
-        |--------------------------------------------|
-        |-O wartości null hasła nie są obsługiwane dla kont użytkowników.|
-        |— Jeśli chcesz użyć IntelliTrace lub danych emulacji sieci i adaptera diagnostycznego, konto użytkownika musi być członkiem grupy Administratorzy. Jeśli komputer, na którym jest uruchomiony agent testowy ma systemu operacyjnego zawierającego najmniej uprzywilejowane konto użytkownika, należy również uruchomić jako administrator (podniesione uprawnienia).|
-        |— Jeśli nazwa użytkownika agenta nie jest w usłudze agenta spróbuje ją dodać, co wymaga uprawnień na kontrolerze testów.|
-        |-Użytkownik próbujący użyć kontrolera testu musi znajdować na koncie użytkownika kontrolera testów lub będzie mógł uruchamiać testów dla kontrolera.|
+      3. Aby upewnić się, że komputerze z agentem testowym można uruchomić testy po ponownym uruchomieniu, należy skonfigurować komputer do automatycznego logowania jako Użyj agenta testowego. Wybierz **automatycznego logowania**. Spowoduje to przechowywanie nazwy użytkownika i hasła w postaci zaszyfrowanej w rejestrze.
 
-    3. Aby upewnić się, że komputerze z agentem testowym można uruchomić testy po ponownym uruchomieniu, należy skonfigurować komputer do automatycznego logowania jako Użyj agenta testowego. Wybierz **automatycznego logowania**. Spowoduje to przechowywanie nazwy użytkownika i hasła w postaci zaszyfrowanej w rejestrze.
-
-    4. Aby upewnić się, że wygaszacz ekranu jest wyłączony, ponieważ może to kolidować ze zautomatyzowanymi testami, które muszą współdziałać z pulpitem, wybierz **upewnij się, że wygaszacz ekranu jest wyłączony**.
+      4. Aby upewnić się, że wygaszacz ekranu jest wyłączony, ponieważ może to kolidować ze zautomatyzowanymi testami, które muszą współdziałać z pulpitem, wybierz **upewnij się, że wygaszacz ekranu jest wyłączony**.
 
         > [!WARNING]
         > Istnieją zagrożenia bezpieczeństwa, jeśli logujesz się automatycznie lub wyłączysz wygaszacz ekranu. Po włączeniu automatycznego logowania na, umożliwiasz innym użytkownikom, aby uruchomić ten komputer, a aby można było korzystać z konta, które loguje się automatycznie. Po wyłączeniu wygaszacza ekranu komputer może nie monitować użytkownika do logowania się do odblokowania komputera. Dzięki temu każdy dostęp do komputera, jeśli mają fizyczny dostęp do komputera. Po włączeniu tych funkcji na komputerze, należy pamiętać, że te komputery są zabezpieczony fizycznie. Na przykład komputery te znajdują się w fizycznie bezpiecznych laboratorium. (Po wyczyszczeniu **upewnij się, że wygaszacz ekranu jest wyłączony**, wygaszacz ekranu nie zostanie włączony.)
@@ -160,7 +151,7 @@ Przetestuj agenta wagę test agent atrybutów i zmiany zaczną obowiązywać nat
 (Opcjonalnie) Aby zmienić stan agenta testowego, wybierz agenta na liście, a następnie wybierz akcję z listy dostępnych opcji na podstawie bieżącego stanu agenta.
 
 > [!NOTE]
-> Jeśli agenta testowego jest uruchomiona jako proces, można zarządzać stanem agenta testowego z to ikonę obszaru powiadomień uruchomione na komputerze, w którym zainstalowano agenta testowego. Pokazuje stan agenta testowego. Można uruchomić, zatrzymać lub ponownie uruchomić agenta, jeśli jest uruchomiony jako proces, za pomocą tego narzędzia. Aby uruchomić agenta testowego jako proces, jeśli nie jest uruchomiony, wybierz opcję **Start** > **wszystkie programy** > **programu Microsoft Visual Studio**  >  **Programu Microsoft Visual Studio Test Agent**. Spowoduje to dodanie ikony obszaru powiadomień.
+> Jeśli agenta testowego jest uruchomiona jako proces, można zarządzać stanem agenta testowego z to ikonę obszaru powiadomień uruchomione na komputerze, w którym zainstalowano agenta testowego. Pokazuje stan agenta testowego. Można uruchomić, zatrzymać lub ponownie uruchomić agenta, jeśli jest uruchomiony jako proces, za pomocą tego narzędzia.
 
 ## <a name="configure-a-test-controller"></a>Skonfiguruj kontroler testu
 
@@ -173,7 +164,7 @@ Jeśli chcesz zarejestrować kontroler testów z kolekcji projektów Team Founda
 
 ### <a name="to-configure-a-test-controller"></a>Aby skonfigurować kontroler testu
 
-1. Aby uruchomić narzędzie, aby ponownie skonfigurować kontroler testów w dowolnym momencie, wybierz **Start** > **wszystkie programy** >  **programu Microsoft Visual Studio**  >  **Programu Microsoft Visual Studio Test Controller Configuration Tool**.
+1. Aby uruchomić narzędzie, aby ponownie skonfigurować kontroler testów w dowolnym momencie, wybierz **Start** > **Test Controller Configuration Tool**.
 
      **Konfigurowanie kontrolera testowego** zostanie wyświetlone okno dialogowe.
 
@@ -182,9 +173,9 @@ Jeśli chcesz zarejestrować kontroler testów z kolekcji projektów Team Founda
     > [!NOTE]
     > Hasła puste nie są obsługiwane dla kont użytkowników.
 
-4. (Opcjonalnie) Jeśli nie chcesz użyć kontrolera testu w środowisku laboratoryjnym, ale tylko do uruchomienia testów z programu Visual Studio, usuń zaznaczenie **zarejestrować z kolekcją projektu**.
+4. (Opcjonalnie) Jeśli nie chcesz użyć kontrolera testu w środowisku laboratoryjnym, ale tylko do uruchomienia testów z programu Visual Studio, usuń zaznaczenie **Zarejestruj kontroler testów z kolekcji projektów zespołowych**.
 
-5. (Opcjonalnie) Aby skonfigurować kontroler testu do testowania obciążenia, wybierz **konfigurowanie do testowania obciążenia**. Następnie wpisz wystąpienia programu SQL Server w **wyniki testu obciążeniowego tworzenie bazy danych w następującym wystąpieniu programu SQL Server**.
+5. (Opcjonalnie) Aby skonfigurować kontroler testu do testowania obciążenia, wybierz **Konfiguruj kontroler testów do testowania obciążenia**. Wprowadź wystąpienie programu SQL Server w ramach **wyniki testu obciążeniowego tworzenie bazy danych w następującym wystąpieniu programu SQL Server**.
 
 > [!NOTE]
 > Aby uzyskać więcej informacji o kontrolerów testów rozwiązywaniu problemów, zobacz [Instalowanie i konfigurowanie agentów testowych](../test/lab-management/install-configure-test-agents.md).

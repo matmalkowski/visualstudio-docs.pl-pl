@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 06f362987a8a52692aa0b38bf921b6763dbc8a2c
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 96012a8f498fdab6dfd508906e9abf13591b9dbb
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637058"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370552"
 ---
 # <a name="designer-initialization-and-metadata-configuration"></a>Projektanta konfiguracji inicjowania i metadane
 Manipulowanie atrybutów metadanych i filtrów skojarzonych z projektanta lub składnika projektanta udostępnia mechanizm dla aplikacji w celu zdefiniowania, jakie narzędzia są używane przez konkretnego projektanta do obsługi różnych <xref:System.Type> obiektów (takich jak struktury danych klasy lub graficznego podmioty), gdy projektant jest dostępna i jak Visual Studio IDE jest skonfigurowany do obsługi projektanta (dla wystąpienia, które **przybornika** kategorii lub karta jest dostępna).  
@@ -100,4 +100,4 @@ Manipulowanie atrybutów metadanych i filtrów skojarzonych z projektanta lub sk
  <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension>   
  <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtensionAttribute>   
  <xref:System.ComponentModel.ToolboxItemFilterType>   
- [Rozszerzenie obsługi w czasie dDesign](http://msdn.microsoft.com/Library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2)
+ [Rozszerzenie obsługi w czasie projektowania](https://msdn.microsoft.com/Library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2)

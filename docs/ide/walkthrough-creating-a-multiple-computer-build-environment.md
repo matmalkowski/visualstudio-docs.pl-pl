@@ -1,5 +1,5 @@
 ---
-title: 'Wskazówki: Tworzenie środowiska kompilacji na wielu komputerach'
+title: 'Przewodnik: Tworzenie środowiska kompilacji na wielu komputerach'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -12,82 +12,66 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 392b2b5a129afe9504f306378103862d631d456e
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 2e77f5bbcdc09e44018e1a10c861e9875c569f65
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32425715"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46371072"
 ---
-# <a name="walkthrough-create-a-multiple-computer-build-environment"></a>Wskazówki: Tworzenie środowiska kompilacji na wielu komputerach
+# <a name="walkthrough-create-a-multiple-computer-build-environment"></a>Przewodnik: Tworzenie środowiska kompilacji na wielu komputerach
 
-Można utworzyć środowisko kompilacji w obrębie organizacji przez zainstalowanie programu Visual Studio na komputerze hosta, a następnie skopiować różne pliki i ustawienia na inny komputer, aby mógł działać w kompiluje. Nie trzeba zainstalować program Visual Studio na innym komputerze.
+Można utworzyć środowisko budowania w obrębie organizacji przez zainstalowanie programu Visual Studio na komputerze-hoście, a następnie kopiowanie różnych plików i ustawień na inny komputer, aby uczestniczyć w kompilacji. Nie trzeba zainstalować program Visual Studio na innym komputerze.
 
-Ten dokument nie przyznaje praw do ponownej dystrybucji oprogramowania zewnętrznie lub w celu zapewnienia środowiska kompilacji do udzielania podmiotom trzecim.
+Ten dokument nie przyznaje praw do rozpowszechniania oprogramowania zewnętrznie lub dostarcza kompilacji środowiska stronom trzecim.
 
-> Zrzeczenie odpowiedzialności<br /><br /> Niniejszy dokument jest udostępniany na "jako — jest" podstawy. Gdy przetestowano czynności podane nie możemy do testowania wyczerpujący każdej konfiguracji. Firma Microsoft podejmie próbę aktualność dokumentu wszelkie informacje dodatkowe, które zostały rozpoznane. Informacje i poglądy wyrażone w tym dokumencie, w tym adresy URL i innymi odwołaniami do witryn internetowych, mogą ulec zmianie bez uprzedzenia. Microsoft nie udziela żadnych gwarancji, express lub domniemanych, w odniesieniu do informacji dostępnych w tym miejscu. Użytkownik ponosi ryzyko związane z użyciem jej.<br /><br /> Ten dokument nie daje użytkownikowi żadnych praw do jakiejkolwiek własności intelektualnej związanej z jakimkolwiek produktem firmy Microsoft. Można kopiować i używać tego dokumentu do wewnętrznych celów referencyjnych.<br /><br /> Użytkownik nie ma obowiązku nadaniu firmie Microsoft w dowolnym sugestie, komentarzy ani innych opinii ("opinie"), odnoszące się do tego dokumentu. Jednak opinię, dobrowolnie mogą być używane w Microsoft Products i związanych z nimi specyfikacjach lub innych dokumentacji (zbiorczo "Offerings Microsoft"), który z kolei może być stosowane przez osoby trzecie do opracowywania własnych produktów. W związku z tym jeśli Microsoft Feedback dać w dowolnej wersji tego dokumentu lub Offerings firmy Microsoft do których mają zastosowanie, akceptujesz: () firmy Microsoft może korzystać za darmo, odtworzyć licencji, rozpowszechniania i inaczej komercjalizacji tych opinii w udostępnianych przez firmę Microsoft Oferty; (b) można również przyznać stron trzecich, bez dodatkowych opłat, tylko te patentowe prawa niezbędne do obsługi innych produktów lub interfejsu z określonych części Product firmy Microsoft, wykorzystujących opinię użytkownika; i (c) użytkownik nie będzie przekazywać Microsoft opinię (i), czy masz podejrzeń podlega wszelkie oświadczenia patentowe, autorskie lub inne prawa własności intelektualnej lub prawa osobom trzecim; lub (ii) z zastrzeżeniem postanowień licencyjnych, które się wymagają żadnych Offering firmy Microsoft zawierająca lub pochodzące z takich opinii lub innych własności intelektualnej Microsoft licencji lub w inny sposób udostępniać podmiotom trzecim.
+> Zrzeczenie odpowiedzialności<br /><br /> W tym dokumencie znajduje się na "jako — jest" podstawy. Podczas gdy przetestowaliśmy opisane kroki, nie możemy wyczerpująco przetestować każdej konfiguracji. Firma Microsoft będzie podejmować próby aktualność dokumentu o wszelkie dodatkowo uzyskane informacje. Informacje i poglądy wyrażone w tym dokumencie, w tym adresy URL i inne odnośniki do witryn internetowych, mogą ulec zmianie bez powiadomienia. Microsoft nie udziela żadnych gwarancji, wyraźnych ani dorozumianych, w związku z informacjami przedstawionymi tutaj. Użytkownik jest odpowiedzialny za jej pomocą.<br /><br /> W tym dokumencie nie umożliwiają żadnych praw do własności intelektualnej w jakimkolwiek produkcie firmy Microsoft. Można kopiować i używać tego dokumentu do wewnętrznych celów referencyjnych.<br /><br /> Użytkownik nie ma obowiązku przekazywania firmie Microsoft, masz jakieś sugestie, komentarze lub inne opinie ("opinia") odnoszących się do tego dokumentu. Jednakże wszystkie opinie dobrowolnie może służyć w Products firmy Microsoft i związanych z nimi specyfikacjach lub innej dokumentacji (zbiorczo "Offerings Microsoft"), który z kolei mogą opierać przez innych stronach trzecich do opracowywania własnych produktów. W związku z tym Jeśli nadasz Microsoft Feedback w dowolnej wersji systemu w tym dokumencie lub Offerings firmy Microsoft do których mają zastosowanie, wyrażasz zgodę: () firmy Microsoft mogą bez ograniczeń wykorzystywać, odtworzenie, licencji, dystrybucja i w przeciwnym razie komercjalizowania opinii użytkownika w dowolnym programie Microsoft Oferta; (b) należy również przyznać stron trzecich, bez opłaty, tylko tych praw patentowych niezbędne do obsługi innych produktów lub korzystać z określonymi częściami Product firmy Microsoft, które zawierają swoje opinie; i (c) użytkownik nie będzie przesyłał firmy Microsoft opinię (i), czy masz podejrzewać, podlega postanowieniom oświadczenia o prawach autorskich, patentów lub inne prawa własności intelektualnej ani po prawej stronie żadnym podmiotom trzecim; lub (ii) z zastrzeżeniem postanowień licencyjnych, które starają się wymagają żadnych Offering firmy Microsoft zawierająca lub pochodzące z takich opinii lub innych własności intelektualnej Microsoft licencji lub w inny sposób udostępniane osób trzecich.
 
-W tym przewodniku została zweryfikowana względem następujących systemów operacyjnych, wykonując MSBuild w wierszu polecenia i za pomocą Team Foundation Build.
+Ten instruktaż został zweryfikowany w kontekście następujących systemów operacyjnych:
 
 - Windows 8 (x86 i x64)
 - Windows 7 Ultimate
 - Windows Server 2008 R2 Standard
 
- Po wykonaniu kroków w tym przewodniku służy środowisko wiele komputerów do kompilacji tego rodzaju aplikacji:
+Po wykonaniu kroków w tym instruktażu, można użyć środowiska wielu komputerów do kompilowania tych rodzajów aplikacji:
 
-- C++ aplikacji klasycznych, które używają systemu Windows 8 SDK
-- Visual Basic lub C# aplikacji klasycznych, które odnoszą się do programu .NET Framework 4.5
+- Aplikacje pulpitu C++, które używają Windows 8 SDK
+- Visual Basic lub C# aplikacji komputerowych, których platformą docelową .NET Framework 4.5
 
- W środowisku wielu komputerach nie może służyć do tworzenia tego rodzaju aplikacji:
+Nie można użyć środowiska wielu komputerów do kompilowania tych rodzajów aplikacji:
 
-- Aplikacje platformy uniwersalnej systemu Windows. Aby tworzenie aplikacji platformy uniwersalnej systemu Windows, należy zainstalować program Visual Studio na komputerze kompilacji.
-- Aplikacji klasycznych, które odnoszą się do programu .NET Framework 4 lub starszym. Aby utworzyć tego rodzaju aplikacji, należy zainstalować na komputerze kompilacji Visual Studio lub zestawów odwołań .NET i narzędzia (zestaw Windows 7.1 SDK).
-
- Ten przewodnik jest podzielona na te części:
-
-- [Instalowanie oprogramowania na komputerach](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#InstallingSoftware)
-
-- [Skopiuj pliki z komputera hosta na komputerze kompilacji](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#CopyingFiles)
-
-- [Tworzenie ustawień rejestru](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#CreatingRegistry)
-
-- [Ustawianie zmiennych środowiskowych na komputerze kompilacji](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#SettingEnvVariables)
-
-- [Zainstaluj program MSBuild zestawów do globalnej pamięci podręcznej zestawów (GAC) na komputerze kompilacji](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#InstallingMSBuildToGAC)
-
-- [Tworzenie projektów](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#BuildingProjects)
-
-- [Utwórz środowisko budowania środowiska, dzięki czemu może być wyewidencjonowany do kontroli źródła](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#CreatingForSourceControl)
+- Aplikacje platformy uniwersalnej systemu Windows. Aby kompilować aplikacje platformy uniwersalnej systemu Windows, należy zainstalować program Visual Studio na komputerze kompilacji.
+- Aplikacje klasyczne, przeznaczonych dla programu .NET Framework 4 lub wersji wcześniejszych. Do kompilowania tych rodzajów aplikacji, należy zainstalować na komputerze kompilacji programu Visual Studio lub zestawy referencyjne platformy .NET i narzędzi (z Windows 7.1 SDK).
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-- Program Visual Studio z obciążeniem tworzenia klasycznych aplikacji .NET, które są zainstalowane.
+- Program Visual Studio z **programowanie aplikacji klasycznych dla platformy .NET** zainstalowanym obciążeniem.
 
-## <a name="InstallingSoftware"></a> Instalowanie oprogramowania na komputerach
+## <a name="install-software-on-the-computers"></a>Instalowanie oprogramowania na komputerach
 
-Najpierw należy skonfigurować komputer hosta, a następnie ponowne skonfigurowanie komputera kompilacji.
+Najpierw skonfigurować komputer hosta, a następnie skonfigurować komputer kompilacji.
 
-Instalując program Visual Studio na komputerze-hoście, tworzenia plików i ustawień, które zostanie skopiowany na komputer kompilacji później. Visual Studio można zainstalować na x86 lub x64 komputer, ale z architekturą komputera kompilacji musi być zgodna z architekturą komputera hosta.
+Po zainstalowaniu programu Visual Studio na komputerze-hoście, Utwórz pliki i ustawienia, które będzie kopiować do komputera kompilacji później. Można zainstalować program Visual Studio na x86 lub x64 komputera, ale architektura komputera kompilacji musi odpowiadać architekturze komputera-hosta.
 
-1. Zainstaluj program Visual Studio na komputerze hosta.
+1. Na komputerze-hoście Zainstaluj program Visual Studio.
 
-2. Na komputerze kompilacji należy zainstalować program .NET Framework 4.5. Aby sprawdzić, czy jest zainstalowany, upewnij się, że wartość klucza rejestru **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full@Version**  rozpoczyna się od "4.5".
+2. Na komputerze kompilacji należy zainstalować program .NET Framework 4.5. Aby zweryfikować, że jest ona zainstalowana, upewnij się, że wartość klucza rejestru **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full@Version**  rozpoczyna się od "4.5".
 
-## <a name="CopyingFiles"></a> Skopiuj pliki z komputera hosta na komputerze kompilacji
+## <a name="copy-files-from-the-host-computer-to-the-build-computer"></a>Kopiuj pliki z komputera hosta do komputera kompilacji
 
-Ta sekcja obejmuje kopiowanie określonych plików, kompilatory narzędzia kompilacji, zasoby MSBuild i ustawień rejestru z komputera hosta na komputerze kompilacji. W poniższych instrukcjach przyjęto, że po zainstalowaniu programu Visual Studio w domyślnej lokalizacji na komputerze hosta; Jeśli zainstalowano w innej lokalizacji, w związku z tym odpowiedniego dostosowania kroków.
+W tej sekcji omówiono kopiowania określonych plików, kompilatorów, narzędzi do kompilacji, aktywów programu MSBuild i ustawień rejestru z komputera hosta do komputera kompilacji. W poniższych instrukcjach przyjęto, że po zainstalowaniu programu Visual Studio w lokalizacji domyślnej na komputerze-hoście; Jeśli został zainstalowany w innej lokalizacji, należy odpowiednio dostosować czynności.
 
 - Na x86 komputera, domyślna lokalizacja to *C:\Program Files\Microsoft Visual Studio 11.0*
 - Na x64 komputera, domyślna lokalizacja to *C:\Program Files (x86) \Microsoft Visual Studio 11.0*
 
-Zwróć uwagę, że nazwa *Program Files* folderu zależy od systemu operacyjnego, który jest zainstalowany. Na x86 jest nazwa komputera, *Program Files*; na x64 jest nazwa komputera, *Program Files (x86)*. Niezależnie od architektury systemu, w tym przewodniku odnosi się do *Program Files* folder jako *% ProgramFiles %*.
+Należy zauważyć, że nazwa *Program Files* folderu jest zależna od systemu operacyjnego, który jest zainstalowany. Na x86 komputera, nazwa jest *Program Files*; x64 komputera, nazwa jest *Program Files (x86)*. Niezależnie od architektury systemu, ten instruktażu odwołuje się do *Program Files* folder jako *% ProgramFiles %*.
 
 > [!NOTE]
-> Na komputerze kompilacji wszystkie odpowiednie pliki muszą być na tym samym dysku; jednak litera dysku może być inny niż literę dysku, na którym jest zainstalowany program Visual Studio na komputerze hosta. W każdym przypadku należy uwzględnić lokalizację plików po utworzeniu wpisy rejestru zgodnie z opisem w dalszej części tego dokumentu.
+> Na komputerze kompilacji wszystkie odpowiednie pliki muszą być na tym samym dysku; litera dysku może być jednak różni się od litery dysku dla dysku, na którym zainstalowano program Visual Studio na komputerze-hoście. W każdym przypadku konieczne jest uwzględnienie lokalizacji plików podczas tworzenia wpisów rejestru zgodnie z opisem w dalszej części tego dokumentu.
 
-#### <a name="copy-the-windows-sdk-files-to-the-build-computer"></a>Skopiuj pliki zestawu SDK systemu Windows na komputerze kompilacji
+### <a name="copy-the-windows-sdk-files-to-the-build-computer"></a>Skopiuj pliki Windows SDK do komputera kompilacji
 
-1. Jeśli masz tylko systemu Windows SDK dla systemu Windows 8 zainstalowane, skopiuj rekursywnie tych folderów z komputera hosta na komputerze kompilacji:
+1. Jeśli masz tylko Windows SDK dla systemu Windows 8 zainstalowane, skopiuj te foldery rekurencyjnie z komputera hosta do komputera kompilacji:
 
     - %ProgramFiles%\Windows Kits\8.0\bin\
 
@@ -103,17 +87,17 @@ Zwróć uwagę, że nazwa *Program Files* folderu zależy od systemu operacyjneg
 
     - %ProgramFiles%\Windows Kits\8.0\References\
 
-     Jeśli masz także te inne zestawy Windows 8...
+    Jeśli posiadasz również inne zestawy Windows 8...
 
-    - Microsoft Windows Assessment and Deployment Kit
+    - Program Microsoft Windows Assessment and Deployment Kit
 
-    - Zestaw sterowników systemu Windows firmy Microsoft
+    - Zestaw Microsoft Windows Driver Kit
 
-    - Zestawu certyfikacji sprzętu systemu Microsoft Windows
+    - Zestaw certyfikacji sprzętu Microsoft Windows
 
-     .. one mógł zainstalować pliki do *%ProgramFiles%\Windows Kits\8.0* foldery, które są wymienione w poprzednim kroku, a ich postanowień licencyjnych może nie pozwalać na serwer kompilacji prawa do tych plików. Sprawdź umowy licencyjnej dla każdego zainstalowanego zestawu systemu Windows sprawdzić, czy pliki mogą być kopiowane na komputerze kompilacji. Jeśli postanowienia licencyjne nie zezwalaj na serwer kompilacji praw, Usuń pliki z komputera kompilacji.
+    .. .mogli zainstalować pliki do *%ProgramFiles%\Windows Kits\8.0* folderów, które są wymienione w poprzednim kroku, a ich postanowień licencyjnych może nie pozwalać na praw serwera kompilacji dla tych plików. Sprawdź warunki licencji dla każdego zainstalowanego zestawu Windows sprawdzić, czy pliki mogą być kopiowane do komputera kompilacji. Jeśli postanowienia licencyjne nie dopuszczają praw serwera kompilacji, Usuń pliki z komputera kompilacji.
 
-2. Skopiuj następujące rekursywnie folderów z komputera hosta na komputerze kompilacji:
+2. Kopiuj następujące foldery rekurencyjnie z komputera hosta do komputera kompilacji:
 
     - %ProgramFiles%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools\
 
@@ -129,7 +113,7 @@ Zwróć uwagę, że nazwa *Program Files* folderu zależy od systemu operacyjneg
 
     - %ProgramFiles%\Reference Assemblies\Microsoft\Framework\\. NETFramework\v4.5\
 
-3. Skopiuj następujące pliki z komputera hosta na komputerze kompilacji:
+3. Skopiuj następujące pliki z komputera hosta do komputera kompilacji:
 
     - %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\msobj110.dll
 
@@ -147,7 +131,7 @@ Zwróć uwagę, że nazwa *Program Files* folderu zależy od systemu operacyjneg
 
     - %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\Tools\vsvars32.bat
 
-4. Następujące biblioteki środowiska uruchomieniowego Visual C++ są wymagane tylko w przypadku uruchomienia na komputerze kompilacji, dane wyjściowe kompilacji — na przykład w ramach testów automatycznych. Pliki są zazwyczaj znajduje się w podfolderach *%ProgramFiles%\Microsoft Visual Studio 11.0\VC\redist\x86* lub *%ProgramFiles%\Microsoft Visual Studio 11.0\VC\redist\x64* folderu w zależności od architektury systemu. Na x86 systemów plików binarnych kopiowania x86 *Windows\System32* folderu. Na x64 systemów plików binarnych kopiowania x86 *Windows\SysWOW64* folder i x64 dane binarne do *Windows\System32* folderu.
+4. Następujące biblioteki środowiska uruchomieniowego Visual C++ są wymagane tylko wtedy, gdy uruchomienia kompilacji wyjść na komputerze kompilacji — na przykład w ramach automatycznego testowania. Pliki zwykle znajdują się w podfolderach *%ProgramFiles%\Microsoft Visual Studio 11.0\VC\redist\x86* lub *%ProgramFiles%\Microsoft Visual Studio 11.0\VC\redist\x64* folderu w zależności od architektury systemu. Na x86 systemów, skopiuj x86 pliki binarne do *Windows\System32* folderu. Na x64 systemów, skopiuj x86 pliki binarne do *Windows\SysWOW64* folder i x64 dane binarne do *Windows\System32* folderu.
 
     - \Microsoft.VC110.ATL\atl110.dll
 
@@ -187,7 +171,7 @@ Zwróć uwagę, że nazwa *Program Files* folderu zależy od systemu operacyjneg
 
     - \Microsoft.VC110.OPENMP\vcomp110.dll
 
-5. Skopiuj tylko następujące pliki z *Debug_NonRedist\x86* lub *Debug_NonRedist\x64* folderu na komputerze kompilacji, zgodnie z opisem w [przygotowanie maszyny testowej do uruchomienia pliku wykonywalnego debugowania](/cpp/ide/preparing-a-test-machine-to-run-a-debug-executable). Żadne inne pliki można skopiować.
+5. Skopiuj następujące pliki z *Debug_NonRedist\x86* lub *Debug_NonRedist\x64* folderu na komputerze kompilacji, zgodnie z opisem w [przygotowanie maszyny testowej do uruchomienia debugowania pliku wykonywalnego](/cpp/ide/preparing-a-test-machine-to-run-a-debug-executable). Żadne inne pliki nie mogą być kopiowane.
 
     - \Microsoft.VC110.DebugCRT\msvcp110d.dll
 
@@ -205,19 +189,20 @@ Zwróć uwagę, że nazwa *Program Files* folderu zależy od systemu operacyjneg
 
     - \Microsoft.VC110.DebugOpenMP\vcomp110d.dll
 
-##  <a name="CreatingRegistry"></a> Tworzenie ustawień rejestru
- Należy utworzyć wpisy rejestru, aby skonfigurować ustawienia dla programu MSBuild.
+## <a name="create-registry-settings"></a>Tworzenie ustawień rejestru
 
-1. Określ folder nadrzędny dla wpisów rejestru. Wszystkie wpisy rejestru są tworzone w tym samym kluczu nadrzędnej. Na x86 komputera, klucz nadrzędny jest **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft**. Na x64 komputer klucza nadrzędnego jest **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft**. Niezależnie od architektury systemu w tym przewodniku odnosi się do klucza nadrzędnego jako RegistryRoot %.
+Musisz utworzyć wpisy rejestru, aby skonfigurować ustawienia dla programu MSBuild.
+
+1. Określ folder nadrzędny do wpisów rejestru. Wszystkie wpisy rejestru są tworzone w ramach tego samego klucza nadrzędnego. Na x86 komputera, klucz nadrzędny to **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft**. Na x64 komputer klucza nadrzędnego jest **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft**. Niezależnie od architektury systemu ten instruktażu odwołuje się do klucza nadrzędnego jako % RegistryRoot %.
 
     > [!NOTE]
-    > Jeśli architektura komputera-hosta różni się od komputera kompilacji, upewnij się użyć klucza elementu nadrzędnego na każdym komputerze. Jest to szczególnie ważne, jeśli w przypadku automatyzacji procesu eksportowania.
+    > Jeśli architektura komputera hosta różni się od architektury komputera kompilacji, upewnij się, że używasz właściwego klucza nadrzędnego na każdym komputerze. Jest to szczególnie ważne, jeśli automatyzujesz proces eksportowania.
     >
-    > Ponadto jeśli używasz innej litery dysku na komputerze kompilacji niż konto, którego używasz na komputerze-hoście, upewnij się, że zmiany wartości do dopasowania wpisów rejestru.
+    > Jeśli używasz innej litery dysku na komputerze kompilacji niż ten, którego używasz na komputerze-hoście, upewnij się również zmienić wartości wpisów rejestru w celu dopasowania.
 
-2. Utwórz następujące wpisy rejestru na komputerze kompilacji. Wszystkie te wpisy są ciągami (typ == "REG_SZ" w rejestrze). Ustaw wartości te wpisy tak samo jak wartości porównywalne wpisów na komputerze hosta.
+2. Utwórz następujące wpisy rejestru na komputerze kompilacji. Wszystkie te pozycje są ciągami (typ == "REG_SZ" w rejestrze). Ustaw wartości tych wpisów tak samo jako wartości porównywalnych wpisów na komputerze-hoście.
 
-    - **% RegistryRoot %\\. NETFramework\v4.0.30319\AssemblyFoldersEx\VCMSBuild Assemblies@(Default) publiczny**
+    - **% RegistryRoot %\\. NETFramework\v4.0.30319\AssemblyFoldersEx\VCMSBuild Assemblies@(Default) publiczne**
 
     - **%RegistryRoot%\Microsoft SDKs\Windows\v8.0@InstallationFolder**
 
@@ -251,11 +236,11 @@ Zwróć uwagę, że nazwa *Program Files* folderu zależy od systemu operacyjneg
 
     - **% RegistryRoot %\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath11**
 
-     Na x64 Tworzenie komputera, tworzyć następujący wpis rejestru i odwoływać się do komputera hosta, aby określić, jak ustawić go.
+    X64 komputer kompilacji, również Utwórz następujący wpis rejestru i odnoszą się do komputera hosta, aby określić sposób ustawienia go.
 
     - **%RegistryRoot%\Microsoft SDKs\Windows\v8.0A\WinSDK-NetFx40Tools-x64@InstallationFolder**
 
-     Jeśli komputer kompilacji jest x64 i chcesz używać 64-bitowej wersji programu MSBuild lub jeśli używasz usługi kompilacji Team Foundation Server na x64 komputera, należy utworzyć następujące wpisy rejestru w natywnych 64-bitowego rejestru. Odwołuje się do komputera hosta, aby określić, jak ustawić te wpisy.
+    Jeśli komputer kompilacji posiada x64 i chcesz użyć 64-bitowej wersji programu MSBuild lub jeśli używasz usługi kompilacji Team Foundation Server na x64 komputera, należy utworzyć następujące wpisy rejestru w natywnych 64-bitowego rejestru. Zapoznaj się z komputera hosta, aby uzyskać informacje o ustawianiu tych wpisów.
 
     - **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\11.0\Setup\VS@ProductDir**
 
@@ -265,49 +250,49 @@ Zwróć uwagę, że nazwa *Program Files* folderu zależy od systemu operacyjneg
 
     - **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath11**
 
-## <a name="SettingEnvVariables"></a> Ustawianie zmiennych środowiskowych na komputerze kompilacji
+## <a name="set-environment-variables-on-the-build-computer"></a>Ustawianie zmiennych środowiskowych na komputerze kompilacji
 
-Aby użyć MSBuild na komputerze kompilacji, należy ustawić zmienne środowiskowe ścieżki. Można użyć *vcvarsall.bat* można ustawić zmienne, lub można ręcznie skonfigurować je.
+Aby użyć programu MSBuild na komputerze kompilacji, należy ustawić zmienne środowiskowe ścieżki. Możesz użyć *vcvarsall.bat* do ustawiania zmiennych, lub ręcznie skonfigurować je.
 
-### <a name="use-vcvarsallbat-to-set-environment-variables"></a>Użyj vcvarsall.bat, aby ustawić zmienne środowiskowe
+### <a name="use-vcvarsallbat-to-set-environment-variables"></a>Vcvarsall.bat umożliwia ustawianie zmiennych środowiskowych
 
-- Otwórz **wiersza polecenia** okno na komputerze kompilacji i uruchom *% Program Files%\Microsoft Visual Studio 11.0\VC\vcvarsall.bat*. Argument wiersza polecenia można użyć do określenia zestawu narzędzi, którego chcesz użyć — x86, natywnego x64 lub x64 między kompilatora. Jeśli nie zostanie określony argument wiersza polecenia x86 używanego zestawu narzędzi.
+Otwórz **polecenia** okno na komputerze kompilacji i uruchomienia *% Program Files%\Microsoft Visual Studio 11.0\VC\vcvarsall.bat*. Argument wiersza polecenia można użyć do określenia zestawu narzędzi, której chcesz użyć — x86, natywne x64 lub x64 kompilator krzyżowy. Jeśli nie zostanie określony argument wiersza polecenia x86 używany jest zestaw narzędzi.
 
-     W tej tabeli opisano obsługiwane argumenty *vcvarsall.bat*:
+W tej tabeli opisano obsługiwane argumenty dla *vcvarsall.bat*:
 
-    |Vcvarsall.bat argument|Kompilatora|Tworzenie architektury komputera|Architektura danych wyjściowych kompilacji|
-    |----------------------------|--------------|---------------------------------|-------------------------------|
-    |x86 (ustawienie domyślne)|natywny 32-bitowych|x86, x64|x86|
-    |x86_amd64|x64 między|x86, x64|X64|
-    |amd64|x64 macierzystego|X64|X64|
+|Vcvarsall.bat argument|Kompilator|Architektura komputera kompilacji.|Architektura obiektów wyjściowych kompilacji|
+|----------------------------|--------------|---------------------------------|-------------------------------|
+|x86 (ustawienie domyślne)|Natywne 32-bitowe|x86, x64|x86|
+|x86_amd64|x64 cross|x86, x64|X64|
+|amd64|x64 natywne|X64|X64|
 
-     Jeśli *vcvarsall.bat* pomyślnym uruchomieniu — to znaczy, że jest wyświetlany żaden komunikat o błędzie — można pominąć następny krok i Kontynuuj w [MSBuild instalowanie zestawów do globalnej pamięci podręcznej zestawów (GAC) na komputerze kompilacji](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#InstallingMSBuildToGAC)sekcji tego dokumentu.
+Jeśli *vcvarsall.bat* zostanie uruchomiony pomyślnie — to znaczy bez komunikatu o błędzie jest wyświetlany — można pominąć następny krok i kontynuować [instalowanie zestawów programu MSBuild do globalnej pamięci podręcznej zestawów (GAC) na komputerze kompilacji](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#InstallingMSBuildToGAC)części tego dokumentu.
 
-### <a name="manually-set-environment-variables"></a>Ręcznie Ustaw zmienne środowiskowe
+### <a name="manually-set-environment-variables"></a>Ręczne ustawianie zmiennych środowiskowych
 
-1. Aby ręcznie skonfigurować środowiska wiersza polecenia, Dodaj tę ścieżkę do zmiennej środowiskowej PATH:
+1. Aby ręcznie skonfigurować środowisko wiersza polecenia, Dodaj tę ścieżkę do zmiennej środowiskowej PATH:
 
     - %Program Files%\Microsoft Visual Studio 11.0\Common7\IDE
 
-2. Opcjonalnie można również Dodaj następujące ścieżki do zmiennej PATH, aby ułatwić Użyj programu MSBuild do tworzenia rozwiązań.
+2. Opcjonalnie można również dodać następujące ścieżki do zmiennej PATH, aby ułatwić tworzenie rozwiązania za pomocą programu MSBuild.
 
-     Jeśli chcesz użyć natywnego MSBuild 32-bitowy, Dodaj te ścieżki do zmiennej PATH:
+    Za pomocą natywnego programu 32-bitowy MSBuild, należy dodać te ścieżki do zmiennej PATH:
 
     - %Program Files%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools
 
     - %windir%\Microsoft.NET\Framework\v4.0.30319
 
-     Jeśli chcesz użyć natywnego MSBuild 64-bitowych, Dodaj te ścieżki do zmiennej PATH:
+    Jeśli chcesz użyć natywnych 64-bitowy MSBuild, należy dodać te ścieżki do zmiennej PATH:
 
     - %Program Files%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools\x64
 
     - %windir%\Microsoft.NET\Framework64\v4.0.30319
 
-## <a name="InstallingMSBuildToGAC"></a> Zainstaluj program MSBuild zestawów do globalnej pamięci podręcznej zestawów (GAC) na komputerze kompilacji
+## <a name="install-msbuild-assemblies-to-the-global-assembly-cache-gac-on-the-build-computer"></a>Instalowanie zestawów programu MSBuild do globalnej pamięci podręcznej zestawów (GAC) na komputerze kompilacji
 
-MSBuild wymaga niektóre dodatkowe zestawy GAC na komputerze kompilacji, należy zainstalować.
+Program MSBuild wymaga kilku dodatkowych zestawów do zainstalowania GAC na komputerze kompilacji.
 
-1. Skopiuj następujące zestawy z komputera hosta na komputerze kompilacji. Ponieważ zostaną zainstalowane w GAC, nie ma znaczenia, gdzie umieścić je na komputerze kompilacji.
+1. Kopiuj następujące zestawy z komputera hosta do komputera kompilacji. Ponieważ zostaną one zainstalowane w GAC, nie ma znaczenia, gdzie umieścić na komputerze kompilacji.
 
     - %ProgramFiles%\MSBuild\Microsoft.Cpp\v4.0\v110\Microsoft.Build.CPPTasks.Common.v110.dll
 
@@ -315,58 +300,43 @@ MSBuild wymaga niektóre dodatkowe zestawy GAC na komputerze kompilacji, należy
 
     - %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\PublicAssemblies\Microsoft.VisualStudio.VCProjectEngine.dll
 
-2. Aby zainstalować zestawy GAC, zlokalizuj *gacutil.exe* na komputerze kompilacji — zazwyczaj jest w folderze %ProgramFiles%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 narzędzia\\. Jeśli nie możesz znaleźć tego folderu, powtórz kroki [skopiuj pliki z komputera hosta na komputerze kompilacji](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#CopyingFiles) sekcji tego przewodnika.
+2. Aby zainstalować zestawy GAC, zlokalizuj *gacutil.exe* na komputerze kompilacji — zwykle jest w %ProgramFiles%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 narzędzia\\. Jeśli nie możesz znaleźć tego folderu, powtórz kroki opisane w [skopiuj pliki z komputera hosta do komputera kompilacji](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#CopyingFiles) sekcji tego przewodnika.
 
-     Otwórz **wiersza polecenia** okna, które ma prawa administracyjne i uruchom to polecenie dla każdego pliku:
+     Otwórz **polecenia** okno, które ma prawa administracyjne i uruchom następujące polecenie dla każdego pliku:
 
      **gacutil -i \<pliku >**
 
     > [!NOTE]
-    > Ponowne uruchomienie komputera może być wymagane dla zestawu do w pełni zainstalowane w pamięci GAC.
+    > Ponowne uruchomienie komputera może być wymagane dla zestawu w pełni zainstalować w GAC.
 
-## <a name="BuildingProjects"></a> Tworzenie projektów
+## <a name="build-projects"></a>Kompilowanie projektów
 
-Team Foundation Build można użyć do tworzenia [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] projektów i rozwiązań lub można je kompilować w wierszu polecenia. Korzystając z Team Foundation Build do kompilacji projektów, wywołuje MSBuild pliku wykonywalnego, umożliwiająca architektura systemu. W wierszu polecenia można użyć MSBuild 32-bitowy lub 64-bitowego programu MSBuild, a przez ustawienie zmiennej środowiskowej PATH lub bezpośrednio wywoływania MSBuild architektury pliku wykonywalnego, można wybrać architektura programu MSBuild.
+Potoki usługi Azure można użyć do tworzenia projektów programu Visual Studio i rozwiązania lub tworzyć je w wierszu polecenia. Korzystając z potoków usługi Azure do tworzenia projektów, wywołuje MSBuild pliku wykonywalnego, który odpowiada architekturze systemu. W wierszu polecenia można użyć 32-bitowej platformy MSBuild lub 64-bitowej platformy MSBuild i można wybrać architekturę programu MSBuild przez ustawienie zmiennej środowiskowej PATH lub bezpośrednie wywołanie pliku wykonywalnego architektury programu MSBuild.
 
-Aby użyć *msbuild.exe* w wierszu polecenia Uruchom następujące polecenie, w którym *solution.sln* jest symbolem zastępczym dla nazwy rozwiązania.
+Aby użyć *msbuild.exe* w wierszu polecenia Uruchom następujące polecenie, w którym *przy* jest symbolem zastępczym dla nazwy rozwiązania.
 
 **msbuild** *solution.sln*
 
-Aby uzyskać więcej informacji o sposobie używania programu MSBuild w wierszu polecenia, zobacz [wiersza polecenia](../msbuild/msbuild-command-line-reference.md).
+Aby uzyskać więcej informacji na temat sposobu użycia MSBuild w wierszu polecenia, zobacz [wiersza polecenia](../msbuild/msbuild-command-line-reference.md).
+
+## <a name="create-the-build-environment-so-that-it-can-be-checked-into-source-control"></a>Tworzenie środowiska kompilacji, dzięki czemu mogą być sprawdzone w formancie źródła
+
+Można utworzyć środowisko budowania, które mogą być rozmieszczone na różnych komputerach i nie wymaga "GAC"-ing plików lub modyfikowania ustawień rejestru. Następujące kroki są tylko jeden ze sposobów osiągnięcia tego. Dostosuj te procedury do unikalnych cech środowiska kompilacji.
 
 > [!NOTE]
-> Aby utworzyć [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] projektów, należy użyć zestawu narzędzi platformy "v110". Jeśli nie chcesz edytować [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] pliki projektu, należy określić zestaw narzędzi platformy przy użyciu tego argumentu wiersza polecenia:
->
-> **msbuild** *solution.sln* **/p:PlatformToolset=v110**
-
-## <a name="CreatingForSourceControl"></a> Utwórz środowisko budowania środowiska, dzięki czemu może być wyewidencjonowany do kontroli źródła
-
-Można utworzyć środowiska kompilacji, które mogą być wdrażane na różnych komputerach i nie wymaga GAC'ing plików lub modyfikowania ustawień rejestru. Poniższe kroki są tylko jeden sposób, w tym celu. Dostosować te kroki, aby unikatowych parametrów, środowiska kompilacji.
-
-> [!NOTE]
-> Należy wyłączyć kompilowanie przyrostowej, aby *tracker.exe* nie zgłosi błąd podczas kompilacji. Aby wyłączyć kompilowanie przyrostowej, ustaw ten parametr kompilacji:
+> Należy wyłączyć przyrostowe kompilowanie, aby *tracker.exe* nie będzie sygnalizować błąd, podczas kompilacji. Aby wyłączyć przyrostowe kompilowanie, ustaw ten parametr kompilacji:
 >
 > **msbuild** *solution.sln* **/p:TrackFileAccess=false**
 
-1. Utwórz *magazynu* katalogu na komputerze hosta.
+1. Tworzenie *Depot* katalogu na komputerze-hoście.
 
-     Te kroki można znaleźć w katalogu jako magazynu %.
+     Te kroki odnoszą się do katalogu jako Depot %.
 
-2. Skopiuj pliki i katalogi, zgodnie z opisem w [skopiuj pliki z komputera hosta na komputerze kompilacji](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#CopyingFiles) sekcji tego przewodnika, z wyjątkiem wklej je w obszarze *magazynu %* katalogu, który został właśnie utworzony. Na przykład, skopiować z *%ProgramFiles%\Windows Kits\8.0\bin* do *%Depot%\Windows Kits\8.0\bin*.
+2. Skopiuj pliki i katalogi zgodnie z opisem w [skopiuj pliki z komputera hosta do komputera kompilacji](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#CopyingFiles) sekcji tego przewodnika, z wyjątkiem wklej je w obszarze *% Depot %* katalogu, który został właśnie utworzony. Na przykład skopiuj z *%ProgramFiles%\Windows Kits\8.0\bin* do *%Depot%\Windows Kits\8.0\bin*.
 
-3. Jeśli pliki są wklejane w *magazynu %*, wprowadź następujące zmiany:
+3. Kiedy pliki są wklejane w *% Depot %*, wprowadź następujące zmiany:
 
-    - W lokalizacji % Depot%\MSBuild\Microsoft.Cpp\v4.0\v110\Microsoft.CPP.Targets \Microsoft.Cpp.InvalidPlatforms.targets\\, \Microsoft.cppbuild.targets\\i \Microsoft.CppCommon.targets\\, zmienić każde wystąpienie z
-
-         AssemblyName="Microsoft.Build.CppTasks.Common.v110, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
-
-         na
-
-         AssemblyFile="$(VCTargetsPath11)Microsoft.Build.CppTasks.Common.v110.dll".
-
-         Wcześniejsze nazewnictwa zależy od zestawu jest GAC'ed.
-
-    - W % \MSBuild\Microsoft.Cpp\v4.0\v110\Microsoft.CPPClean.Targets % magazynu należy zmienić każde wystąpienie
+    - W % Depot%\MSBuild\Microsoft.Cpp\v4.0\v110\Microsoft.CPP.Targets \Microsoft.Cpp.InvalidPlatforms.targets\\, \Microsoft.cppbuild.targets\\i \Microsoft.CppCommon.targets\\, zmienić każde wystąpienie z
 
          AssemblyName="Microsoft.Build.CppTasks.Common.v110, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
 
@@ -374,7 +344,17 @@ Można utworzyć środowiska kompilacji, które mogą być wdrażane na różnyc
 
          AssemblyFile="$(VCTargetsPath11)Microsoft.Build.CppTasks.Common.v110.dll".
 
-4. Utwórz *.props* pliku — na przykład *Partner.AutoImports.props*— i umieszcza je w katalogu głównym folderu, który zawiera projekty. Ten plik jest używany do ustawienia zmiennych, które są używane przez program MSBuild można znaleźć różnych zasobów. Jeśli zmienne nie są skonfigurowane przez ten plik, są ustawiane przez inne *.props* plików i *.targets* pliki, które opierają się na wartości rejestru. Ponieważ firma Microsoft nie jest ustawienie wartości rejestru, tych zmiennych może być pusta i kompilacji nie powiedzie się. Zamiast tego, dodaj ją do *Partner.AutoImports.props*:
+         Nazewnictwo opiera się na opierało.
+
+    - W % Depot % \MSBuild\Microsoft.Cpp\v4.0\v110\Microsoft.CPPClean.Targets należy zmienić każde wystąpienie
+
+         AssemblyName="Microsoft.Build.CppTasks.Common.v110, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+
+         na
+
+         AssemblyFile="$(VCTargetsPath11)Microsoft.Build.CppTasks.Common.v110.dll".
+
+4. Tworzenie *.props* pliku — na przykład *Partner.AutoImports.props*— i umieść go w katalogu głównym folderu, który zawiera projekty. Ten plik jest używany do ustawiania zmiennych, które są używane przez program MSBuild do znajdowania poszczególnych zasobów. Jeśli zmienne nie są ustawiane przez ten plik, są one ustalane przez inne *.props* plików i *.targets* pliki, które opierają się na wartości rejestru. Ponieważ nie ustawiamy żadnych wartości rejestru, te zmienne będą puste, a kompilacja zakończy się niepowodzeniem. Zamiast tego dodać ten element, aby *Partner.AutoImports.props*:
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -397,19 +377,19 @@ Można utworzyć środowiska kompilacji, które mogą być wdrażane na różnyc
     </Project>
     ```
 
-5. W każdym z plików projektu, Dodaj następujący wiersz na początku, po `<Project Default Targets...>` wiersza.
+5. W każdym z plików projektu, Dodaj następujący wiersz u góry, po `<Project Default Targets...>` wiersza.
 
     ```xml
     <Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), Partner.AutoImports.props))\Partner.AutoImports.props"/>
     ```
 
-6. Zmień środowiska wiersza polecenia w następujący sposób:
+6. Zmień środowisko wiersza polecenia w następujący sposób:
 
-    - Ustaw magazynu =*lokalizację katalogu magazynu, który został utworzony w kroku 1*
+    - Ustaw magazyn =*lokalizację katalogu magazynu, który został utworzony w kroku 1*
 
-    - Ustaw ścieżkę = % path %; *lokalizacji MSBuild na komputerze*; %D epot%\Windows\System32;%D epot%\Windows\SysWOW64;%D epot%\Microsoft 11.0\Common7\IDE\ programu Visual Studio
+    - Ustaw ścieżkę = % path %; *lokalizacji programu MSBuild na komputerze*; %D epot%\Windows\System32;%D epot%\Windows\SysWOW64;%D 15.0\Common7\IDE\ programu Visual Studio epot%\Microsoft
 
-         Dla natywnych 64-bitowych tworzenia, wskaż MSBuild 64-bitowych.
+       Dla natywnej kompilacji 64-bitowej, wskaż 64-bitowy MSBuild.
 
 ## <a name="see-also"></a>Zobacz także
 

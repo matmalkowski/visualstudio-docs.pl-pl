@@ -12,65 +12,65 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 0ec537ec070188c967c2db02548cf487180c0bae
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: dace2a3de8e61a92672442adbf77199232c76e12
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31949439"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370916"
 ---
 # <a name="deploy-a-layer-model-extension"></a>Wdrażanie rozszerzenia modelu warstwy
-Innych użytkowników programu Visual Studio można zainstalować warstwę modelowania rozszerzeń, które można utworzyć za pomocą programu Visual Studio.
 
-## <a name="installing-your-extension"></a>Instalowanie rozszerzenia
- Rozszerzenie jest kompilowana w pliku VSIX, które można zainstalować na innych komputerach. Można także zainstalować na komputerze deweloperskim, aby udostępnić rozszerzenia w głównym wystąpienie programu Visual Studio.
+Innym użytkownikom programu Visual Studio można zainstalować warstwę modelowania rozszerzeń, które tworzysz przy użyciu programu Visual Studio.
 
-#### <a name="to-install-the-extension"></a>Aby zainstalować to rozszerzenie
+## <a name="install-your-extension"></a>Instalowanie rozszerzenia
+
+Rozszerzenie jest skompilowane do pliku VSIX, który można zainstalować na innych komputerach. Można także zainstalować na komputerze dewelopera, aby udostępnić rozszerzenie w głównym wystąpieniu programu Visual Studio.
+
+### <a name="to-install-the-extension"></a>Aby zainstalować rozszerzenie
 
 1.  W projekcie, który zawiera **source.vsix.manifest**, otwórz **bin\\ \***  w Eksploratorze plików.
 
-2.  Kopiuj  **\*.vsix** plik na komputerze, na którym chcesz zainstalować rozszerzenia.
+2.  Kopiuj  **\*.vsix** pliku na komputerze, na którym chcesz zainstalować rozszerzenie.
 
 3.  Na komputerze docelowym kliknij dwukrotnie plik *.vsix w Eksploratorze Windows.
 
      Otwiera Instalatora VSIX.
 
-#### <a name="to-uninstall-the-extension"></a>Aby odinstalować rozszerzenia
+### <a name="to-uninstall-the-extension"></a>Aby odinstalować rozszerzenie
 
 1.  W programie Visual Studio na **narzędzia** menu, kliknij przycisk **rozszerzenia i aktualizacje**.
 
 2.  Kliknij nazwę rozszerzenia, a następnie kliknij przycisk **Odinstaluj**.
 
-## <a name="installing-an-extension-on-a-team-foundation-build-server"></a>Instalowanie rozszerzenia na serwerze Team Foundation Build
- [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)] serwery nie mają zwykle zainstalowanego programu Visual Studio, a więc nie można zainstalować pliku VSIX, kliknij go dwukrotnie. Instalacja [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)] zawiera niektóre składniki umożliwiające rozszerzenie VSIX uruchomić, ale należy ręcznie zainstalować rozszerzenie.
+## <a name="install-an-extension-on-team-foundation-server"></a>Zainstaluj rozszerzenie na serwerze Team Foundation Server
 
-#### <a name="to-install-your-layer-extension-on-a-includeesprbuildmiscincludesesprbuildmdmd-server"></a>Aby zainstalować rozszerzenie warstwy na [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)] serwera
+Team Foundation Server serwery zazwyczaj nie mają zainstalowanego programu Visual Studio, a więc nie można zainstalować VSIX, klikając go dwukrotnie. Trzeba ręcznie zainstalować rozszerzenie.
 
-1.  Kopiuj **.vsix** pliki na komputerze projektowym do [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)] komputera.
+### <a name="to-install-your-layer-extension-on-a-team-foundation-server-server"></a>Aby zainstalować rozszerzenie warstwy na serwerze Team Foundation Server
 
-     Umieść plik VSIX w jednym z następujących lokalizacji:
+1.  Kopiuj **.vsix** pliki z komputera dewelopera na komputer Team Foundation Server (TFS).
+
+     Umieść plik VSIX w jednej z następujących lokalizacji:
 
     -   Aby zainstalować dla wszystkich użytkowników i usług:
 
          %ProgramFiles%\Microsoft visual Studio [wersja] \Common7\IDE\Extensions\Microsoft
 
-    -   Aby zainstalować tylko w przypadku usługi sieciowej, która uruchamia [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)]:
+    -   Aby zainstalować tylko w przypadku usługi sieciowej, która uruchamia kompilację:
 
          %WinDir%\ServiceProfiles\NetworkService\AppData\Local\Microsoft\VisualStudio\\[version]\Extensions\Microsoft
 
-    -   Jeśli skonfigurowano [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)] do uruchamiania w trybie interakcyjnym jako określony użytkownik, można zainstalować tylko dla tego użytkownika:
+    -   Jeśli skonfigurowano kompilacji do uruchamiania w trybie interakcyjnym jako określony użytkownik, można zainstalować tylko dla tego użytkownika:
 
          %LocalAppData%\Microsoft\VisualStudio\\[version]\Extensions\Microsoft
 
-        > [!NOTE]
-        >  % LocalAppData % jest zwykle *DriveName*: Użytkownicy*UserName*AppDataLocal.
+2.  Rozwiń każdy pliku VSIX do folderu w tej samej lokalizacji:
 
-2.  Rozwiń każdego pliku VSIX do folderu w tej samej lokalizacji:
+    1.  Zmień rozszerzenie nazwy pliku z **.vsix** do **zip**.
 
-    1.  Zmień rozszerzenie nazwy pliku z **.vsix** do **.zip**.
+    2.  Wyodrębnij zawartość pliku .zip do folderu.
 
-    2.  Wyodrębnij zawartość pliku zip do folderu.
+    3.  Usuń plik .zip.
 
-    3.  Usuń plik zip
-
-3.  Uruchom ponownie [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)].
+3.  Ponowne uruchomienie serwera TFS.

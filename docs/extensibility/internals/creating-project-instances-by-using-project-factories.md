@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e25fd72601618fc02c27f3f01e6673229e526d52
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 920f81c432dfed2761bf2d0438b02ad76ce36e4d
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498918"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370721"
 ---
 # <a name="create-project-instances-by-using-project-factories"></a>Tworzenie wystąpień projektów przy użyciu fabryk projektów
 Typów projektów w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] użyj *fabryka projektu* do tworzenia wystąpień obiektów projektu. Fabryka projektu jest podobna do fabryki klas standard dla obiektów COM, cocreatable. Obiekty projektu nie są jednak cocreatable; mogą one można tworzyć tylko za pomocą fabryki projektu.  
@@ -28,7 +28,7 @@ Typów projektów w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]
   
  Możesz zaimplementować <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory> interfejsu w klasie w projekcie. Zazwyczaj znajduje się w module swój własny.  
   
- Na przykład implementacja `IVsProjectFactory` interfejsu, zobacz *PrjFac.cpp*, który znajduje się w [podstawowego projektu](http://msdn.microsoft.com/en-us/385fd2a3-d9f1-4808-87c2-a3f05a91fc36) katalog przykładu.  
+ Na przykład implementacja `IVsProjectFactory` interfejsu, zobacz *PrjFac.cpp*, który znajduje się w [podstawowego projektu](https://www.microsoft.com/download/details.aspx?id=55984) katalog przykładu.  
   
  Projekty, które obsługuje Agregacja przez właściciela, muszą zostać zachowane klawiszem właściciela w pliku projektu. Gdy <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A> metoda jest wywoływana w projekcie przy użyciu klucza właściciela, należących do projektu konwertuje jego właściciela klucza fabryką projektu, następnie wywołuje GUID `CreateProject` metody w tej fabryce projektu w celu utworzenia rzeczywistych.  
   
