@@ -11,16 +11,16 @@ ms.author: corob
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: acef2728a79b8706b0af3dad4e272ed34b222a42
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 76adb5df7fec7663f5c9bc1a4c84c378f0e14a82
+ms.sourcegitcommit: b9a32c3d94b19e7344f4872bc026efd3157cf220
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45552524"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46135662"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio projektu C++ rozszerzania i zestawu narzędzi integracji systemów
 
-*Systemu projektów Visual C++* jest używanych przez pliki.vcxproj. Jest on oparty na [Visual Studio Common Project System (CPS)](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/Index.md) i zapewnia dodatkowe, rozszerzalność specyficzna dla języka C++ wskazuje łatwą integrację nowe zestawy narzędzi, architektury kompilacji i platform docelowych. 
+*Systemu projektów Visual C++* jest używana w przypadku plików vcxproj. Jest on oparty na [Visual Studio Common Project System (CPS)](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/Index.md) i zapewnia dodatkowe, rozszerzalność specyficzna dla języka C++ wskazuje łatwą integrację nowe zestawy narzędzi, architektury kompilacji i platform docelowych. 
 
 ## <a name="c-msbuild-targets-structure"></a>Struktura elementów docelowych C++ MSBuild
 
@@ -227,13 +227,13 @@ Jeśli przyjrzymy się obiekty docelowe, takie jak `_ClCompile`, zostanie wyświ
 </Target>
 ```
 
-`ClCompile` i innych elementów docelowych określonym dla narzędzia kompilacji są definiowane jako puste elementy docelowe w Microsoft.CppBuild.targets:
+`ClCompile` i obiekty docelowe określonym dla narzędzia są zdefiniowane jako puste elementy docelowe w kompilacji *Microsoft.CppBuild.targets*:
 
 ```xml
 <Target Name="ClCompile"/>
 ```
 
-Ponieważ `ClCompile` docelowej jest definiowana jako obiekt docelowy pusty w *Microsoft.CppBuild.targets*, chyba że zostanie on przesłonięty przez zestaw narzędzi, jest wykonywana żadna akcja kompilacji rzeczywistych. Obiekty docelowe zestawu narzędzi można zastąpić `ClCompile` obiekt docelowy, oznacza to, że mogą one zawierać inny `ClCompile` definicji po zaimportowaniu *Microsoft.CppBuild.targets*: 
+Ponieważ `ClCompile` docelowych jest pusta, chyba że zostanie on przesłonięty przez zestaw narzędzi, jest wykonywana żadna akcja kompilacji rzeczywistych. Obiekty docelowe zestawu narzędzi można zastąpić `ClCompile` obiekt docelowy, oznacza to, że mogą one zawierać inny `ClCompile` definicji po zaimportowaniu *Microsoft.CppBuild.targets*: 
 
 ```xml
 <Target Name="ClCompile"
@@ -243,7 +243,7 @@ Ponieważ `ClCompile` docelowej jest definiowana jako obiekt docelowy pusty w *M
 </Target>
 ```
 
-Niezależnie od nazwy `ClCompile`, która została utworzona przed Visual Studio Obsługa wielu platform `ClCompile` docelowy nie muszą wywoływać metody CL.exe. Jego można również wywołać Clang, gcc lub innych kompilatorów przy użyciu odpowiednich zadań programu MSBuild.
+Niezależnie od jego nazwę, która została utworzona przed Visual Studio Obsługa wielu platform, `ClCompile` docelowy nie muszą wywoływać metody CL.exe. Jego można również wywołać Clang, gcc lub innych kompilatorów przy użyciu odpowiednich zadań programu MSBuild.
 
 `ClCompile` Docelowy nie powinien mieć jakieś zależności, z wyjątkiem `SelectClCompile` obiektu docelowego, który jest wymagany dla polecenia kompilacji pojedynczy plik, aby pracować w środowisku IDE.
 
@@ -289,7 +289,7 @@ Jeśli potrzebujesz utworzyć nowe zadanie dla narzędzia kompilacji, można wyb
 
 1. Jeśli mają lepszą wydajność zadań lub bardziej złożone funkcje, wystarczy użyć regularnych programu MSBuild [zadań zapisywanie](../msbuild/task-writing.md) procesu.
 
-   Jeśli nie wszystkie dane wejściowe i wyjściowe narzędzia nie są wyświetlane w wierszu polecenia narzędzia, podobnie jak w `CL`, `MIDL`, i `RC` przypadków i chcącym automatyczne dane wejściowe i dane wyjściowe pliku śledzenia i tworzenia pliku .tlog pochodzić zadanie z `TrackedVCToolTask`.
+   Jeśli nie wszystkie dane wejściowe i wyjściowe narzędzia nie są wyświetlane w wierszu polecenia narzędzia, podobnie jak w `CL`, `MIDL`, i `RC` przypadków, a jeśli chcesz automatyczne dane wejściowe i dane wyjściowe pliku śledzenia i tworzenia pliku .tlog dziedziczyć zadanie `Microsoft.Build.CPPTasks.TrackedVCToolTask`klasy. Obecnie, w trakcie dokumentacji dla podstawy [ToolTask](/dotnet/api/microsoft.build.utilities.tooltask) klasy, nie ma żadnych przykładów lub dokumentacji, aby uzyskać szczegółowe informacje o `TrackedVCToolTask` klasy. Jeśli jest to szczególnie interesujące, dodać swój głos do żądania na [developercommunity.visualstudio.com](https://developercommunity.visualstudio.com/spaces/62/index.html).
 
 ## <a name="incremental-builds-and-up-to-date-checks"></a>Kompilacje przyrostowe i Sprawdzanie aktualności
 
@@ -428,7 +428,7 @@ Aby użyć `Task.HostObject` Aby pobrać zawartość niezapisanych plików źró
 @="{83046B3F-8984-444B-A5D2-8029DEE2DB70}"
 ```
 
-## <a name="project-extensibility-in-the-visual-studio-ide"></a>Rozszerzalność projektu w środowisku IDE programu Visual Studio
+## <a name="visual-c-project-extensibility-in-the-visual-studio-ide"></a>Visual C++ rozszerzalności projektów w środowisku IDE programu Visual Studio
 
 System projektów języka Visual C++ opiera się na [systemu projektu programu VS](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/Index.md)i używa jej punkty rozszerzalności. Jednak implementacja hierarchii projektu jest specyficzne dla języka Visual C++ i nie są oparte na systemie CPS, więc rozszerzania hierarchii jest ograniczony do elementów projektu.
 
@@ -656,6 +656,6 @@ Aby uzyskać informacje na temat tworzenia plików VSIX, zobacz [wysyłania rozs
 
 System kompilacji firmy Microsoft ([MSBuild](../msbuild/msbuild.md)) zapewnia aparat kompilacji i rozszerzonego formatu oparty na składni XML dla plików projektu. Należy się zapoznać z basic [pojęcia dotyczące programu MSBuild](../msbuild/msbuild-concepts.md) i jak [MSBuild w języku Visual C++](/cpp/build/msbuild-visual-cpp-overview) systemu projektu działa w celu rozszerzenia języka Visual C++.
 
-Managed Extensibility Framework ([MEF](/dotnet/framework/mef/)) udostępnia rozszerzenie interfejsów API, które są używane przez CPS i system projektów języka Visual C++. Omówienie sposobu używania MEF przez CPS, zobacz [MEF](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/overview/mef.md).
+Managed Extensibility Framework ([MEF](/dotnet/framework/mef/)) udostępnia rozszerzenie interfejsów API, które są używane przez CPS i system projektów języka Visual C++. Omówienie sposobu używania MEF przez CPS, zobacz [CPS i MEF](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/overview/mef.md#cps-and-mef) w [VSProjectSystem omówienie MEF](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/overview/mef.md).
 
 Można dostosować istniejący system kompilacji do dodawania kroków kompilacji lub nowych typów plików. Aby uzyskać więcej informacji, zobacz [Przegląd MSBuild (Visual C++)](/cpp/build/msbuild-visual-cpp-overview) i [Praca z właściwościami projektu](/cpp/ide/working-with-project-properties).
