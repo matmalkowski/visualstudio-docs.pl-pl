@@ -1,5 +1,5 @@
 ---
-title: Tworzenie testu jednostkowego klas zastępczych metody przy użyciu polecenia Utwórz testy jednostkowe
+title: Wprowadzenie do funkcji IntelliTest
 ms.date: 05/02/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -11,28 +11,28 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 72bba467bae5528333b520bdb40f5f4593982df2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 37246d3dc612a44057c21f41145414f60bac0860
+ms.sourcegitcommit: b9a32c3d94b19e7344f4872bc026efd3157cf220
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31966503"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46135476"
 ---
-# <a name="get-started-with-microsoft-intellitest"></a>Rozpoczynanie pracy z Microsoft IntelliTest
+# <a name="get-started-with-microsoft-intellitest"></a>Rozpoczynanie pracy z usługą Microsoft IntelliTest
 
-* Jeśli jest to pierwsza z IntelliTest:
-  * Obejrzyj [wideo z witryny Channel 9](https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Intellitest)
-  * Przeczytaj [zapoznać się z MSDN Magazine](https://msdn.microsoft.com/magazine/dn904672.aspx)
+* Jeśli jest to pierwsza z funkcją IntelliTest:
+  * Obejrzyj [wideo Channel 9](https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Intellitest)
+  * Przeczytaj ten artykuł [omówienie magazynu MSDN Magazine](https://msdn.microsoft.com/magazine/dn904672.aspx)
   * Przeczytaj nasze [dokumentacji](../../test/generate-unit-tests-for-your-code-with-intellitest.md)
-* Pytania na [przepełnienie stosu](http://stackoverflow.com/questions/tagged/intellitest)
-* Czytać dalszej części tego podręcznika
-* Wydrukowanie tej strony, aby zapewnić szybkie odwołanie
+* Zadaj pytania na [Stack Overflow](http://stackoverflow.com/questions/tagged/intellitest)
+* Czytania dalszej części tego podręcznika
+* Wydrukowanie tej strony jako podręczna karta informacyjna
 
 ## <a name="important-attributes"></a>Ważnych atrybutów
 
-* [PexClass](attribute-glossary.md#pexclass) oznacza zawierający typ **PUT**
+* [PexClass](attribute-glossary.md#pexclass) oznacza typ zawierający **PUT**
 * [PexMethod](attribute-glossary.md#pexmethod) znaczniki **PUT**
-* [PexAssumeNotNull](attribute-glossary.md#pexassumenotnull) oznacza parametr inną niż null
+* [PexAssumeNotNull](attribute-glossary.md#pexassumenotnull) oznacza parametrów innych niż null
 
 ```csharp
 using Microsoft.Pex.Framework;
@@ -46,20 +46,20 @@ public partial class FooTest {
 }
 ```
 
-* [PexAssemblyUnderTest](attribute-glossary.md#pexassemblyundertest) wiąże projekt testowy do projektu
-* [PexInstrumentAssembly](attribute-glossary.md#pexinstrumentassemblyattribute) określa zestaw do dokumentu
+* [PexAssemblyUnderTest](attribute-glossary.md#pexassemblyundertest) projektu testowego jest powiązana z projektem
+* [PexInstrumentAssembly](attribute-glossary.md#pexinstrumentassemblyattribute) określa zestaw do Instrumentacji
 
 ```csharp
 [assembly: PexAssemblyUnderTest("MyAssembly")] // also instruments "MyAssembly"
 [assembly: PexInstrumentAssembly("Lib")]
 ```
 
-## <a name="helper-classes"></a> Ważne pomocnika statycznych klas
+## <a name="helper-classes"></a> Ważne statyczne klasy pomocy
 
 * [PexAssume](static-helper-classes.md#pexassume) ocenia założenia (filtrowanie wejściowych)
-* [PexAssert](static-helper-classes.md#pexassert) ocenia potwierdzeń
+* [PexAssert](static-helper-classes.md#pexassert) ocenia potwierdzenia
 * [PexChoose](static-helper-classes.md#pexchoose) generuje nowe opcje (dodatkowe dane wejściowe)
-* [PexObserve](static-helper-classes.md#pexobserve) zaloguje się na żywo wartości wygenerowane testy
+* [PexObserve](static-helper-classes.md#pexobserve) zaloguje się na żywo wartości wygenerowanych testów
 
 ```csharp
 [PexMethod]
@@ -74,6 +74,6 @@ void StaticHelpers(Foo target) {
 }
 ```
 
-## <a name="got-feedback"></a>Masz opinię?
+## <a name="got-feedback"></a>Czy chcesz przesłać opinię?
 
-Publikowania własnych pomysłów i funkcji żądań na [UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-2015/category/157869-test-tools?query=IntelliTest).
+Opublikuj swoje pomysły i funkcji żądania na [UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-2015/category/157869-test-tools?query=IntelliTest).

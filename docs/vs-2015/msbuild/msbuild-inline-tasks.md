@@ -16,12 +16,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2dc821967031a3370373145c53133270d05b379d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7030a83203acaae71366f2a196cd3599c25b6072
+ms.sourcegitcommit: b9a32c3d94b19e7344f4872bc026efd3157cf220
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42682941"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46135638"
 ---
 # <a name="msbuild-inline-tasks"></a>Zadania wbudowane programu MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -109,7 +109,7 @@ Zadania programu MSBuild są zwykle tworzone przez skompilowanie klasy, która i
     AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.v4.0.dll" >  
     <ParameterGroup />  
     <Task>  
-      <Reference Include="System.Xml.dll"/>  
+      <Reference Include="System.Xml"/>  
       <Using Namespace="System"/>  
       <Using Namespace="System.IO"/>  
       <Code Type="Fragment" Language="cs">  
