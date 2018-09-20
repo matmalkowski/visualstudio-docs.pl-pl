@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 574f6bb6a48df9df600c4c8be3bd97ffbb9d0382
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 9dc5de54ee4c983fd422437af170c065ac72413c
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283343"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46496067"
 ---
 # <a name="use-visual-studio-tools-for-unity"></a>Korzystanie z narzędzi Visual Studio Tools for Unity
 
@@ -94,14 +94,6 @@ Aby utworzyć pusty definicje metod MonoBehavior za pomocą Kreatora MonoBehavio
 - W menu głównym programu Visual Studio wybierz **Widok > Eksploratora projektów aparatu Unity**. Skrót klawiaturowy: **Alt**+**Shift**+**E**
 
      ![Wyświetl okno Eksploratora projektów aparatu Unity. ](../cross-platform/media/vstu_view_unity_project_explorer.png "vstu_view_unity_project_explorer")
-
-## <a name="unity-error-list"></a>Listę błędów aparatu Unity
-
- Można wyświetlić komunikaty z konsoli Unity w programie Visual Studio, gdy jest połączony z wystąpieniem Unity. Obejmuje to błędy i ostrzeżenia z poziomu aparatu Unity. Komunikaty są wyświetlane w programie Visual Studio **lista błędów** okna; błąd komunikaty z aparatu Unity są wyświetlane na **błędy** karcie, komunikaty ostrzegawcze **ostrzeżenia** karty i inne komunikaty — na przykład wiadomości wysyłane przy użyciu interfejsu API aparatu Unity czy — są wyświetlane na **wiadomości** kartę.
-
- Aby można było wyświetlić komunikaty, swoim projekcie aparatu Unity muszą być podłączone do programu Visual Studio, zgodnie z opisem w [debugowania Unity](#unity-debugging) sekcji.
-
- Jeśli nie chcesz wyświetlić błędy, ostrzeżenia i komunikaty z aparatu Unity w programie Visual Studio **lista błędów** okna, można je wyłączyć w menu konfiguracji.
 
 ## <a name="unity-debugging"></a>Profilowanie aparatu Unity
 

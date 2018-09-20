@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a51c83a6048102ed3b314c3c862023004cb18bc4
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 6a14079c4d936dcc6cd632e28d7b8628983cb990
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586811"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495690"
 ---
 # <a name="visual-studio-sdk-reference"></a>Odwołanie w Visual Studio SDK
 Ta sekcja zawiera informacje o przestrzeni nazw programu Visual Studio, pokrewne obszary nazw i innych obszarach zainteresowań dla deweloperów, którzy korzystają z zestawu SDK programu Visual Studio.  
@@ -223,7 +223,7 @@ Ta sekcja zawiera informacje o przestrzeni nazw programu Visual Studio, pokrewne
  <xref:Microsoft.VisualStudio.Threading>  
  Używane dla wątków programu Visual Studio.  
   
- [Namespace Microsoft.VisualStudio.ConnectedServices](https://msdn.microsoft.com/library/microsoft.visualstudio.connectedservices.aspx) używanych na potrzeby usług połączonych programu Visual Studio.  
+ [Namespace Microsoft.VisualStudio.ConnectedServices](/dotnet/api/microsoft.visualstudio.connectedservices) używanych na potrzeby usług połączonych programu Visual Studio.  
   
  [IntelliSenseHostFlags](../extensibility/intellisensehostflags.md) wyliczenia  
  Określa flagi hosta funkcji IntelliSense.  

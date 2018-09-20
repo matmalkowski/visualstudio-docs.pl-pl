@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 99bcb83ad085d67d219cea7a7860994fba3e9bd7
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: b1c5044479ca08933f5088101cc088ea3011b4c4
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513429"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495547"
 ---
 # <a name="windows-installer-basics"></a>Podstawowe informacje dotyczące Instalatora Windows
 Instalator Windows instaluje i odinstalowuje aplikacje lub produkty oprogramowania na komputerze użytkownika wykonywania tych zadań w jednostce o nazwie składniki Instalatora Windows (czasami nazywany WICs lub po prostu składników). Identyfikator GUID identyfikuje każdy składnik WIC to podstawowa jednostka instalacji i zliczanie dla konfiguracji za pomocą Instalatora Windows.  
@@ -75,4 +75,4 @@ Instalator Windows instaluje i odinstalowuje aplikacje lub produkty oprogramowan
 -   Brak określonej wersji zasobu nigdy nie powinien wysłać w więcej niż jeden WIC.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Co się stanie, jeśli reguły składników są przerwane?](http://msdn.microsoft.com/library/aa372795\(VS.85\).aspx)
+ [Co się stanie, jeśli reguły składników są przerwane?](/windows/desktop/Msi/what-happens-if-the-component-rules-are-broken)

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2919559a748769c3b30e09023ad4f10965d62ce6
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 3b5f9c7b297d98836ca3e5c017d2a0d440a30470
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639493"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495482"
 ---
 # <a name="ngen-support-in-vsix-v3"></a>Obsługa Ngen w rozszerzeniu VSIX v3
 
@@ -26,7 +26,7 @@ Poniżej przedstawiono fragment MSDN, który objaśnia, jakie "ngen" jest:
 
 >Generator obrazu natywnego (*Ngen.exe*) jest narzędziem, które poprawia wydajność zarządzanych aplikacji. *Ngen.exe* tworzy obrazy natywne, które są plikami zawierającymi skompilowany kod maszynowy dla danego procesora i instaluje je w pamięci podręcznej obrazów natywnych na komputerze lokalnym. Środowisko uruchomieniowe może używać obrazów natywnych z tej pamięci podręcznej, zamiast używać kompilatora JIT (Just-In-Time) w celu skompilowania oryginalnego zestawu.
 >
->z [Ngen.exe (Generator obrazu natywnego)](https://msdn.microsoft.com/en-us/library/6t9t5wcf(v=vs.110).aspx)
+>z [Ngen.exe (Generator obrazu natywnego)](/dotnet/framework/tools/ngen-exe-native-image-generator)
 
 Z kolei "ngen" na zestawie VSIX muszą być zainstalowane "dla wystąpienia na komputerze". Tę można włączyć, zaznaczając pole wyboru "wszystkich użytkowników" `extension.vsixmanifest` projektanta:
 
@@ -41,7 +41,7 @@ Istnieją 4 właściwości, które można ustawić:
 1. **Ngen** (wartość logiczna) — w przypadku opcji true Instalatora programu Visual Studio będzie "ngen" zestawu.
 2. **Aplikacja ngen** (ciąg) — Ngen daje szansę na korzystanie z aplikacji *app.config* pliku, aby można było rozpoznać zależności zestawu. Ta wartość powinna być równa aplikacji którego *app.config* chcesz użyć (względem katalogu instalacyjnego programu Visual Studio).
 3. **Architektura ngen** (enum) — architektura natywnie skompilować zestawu. Opcje to:. B wartości NotSpecified. X86 c. X64 d. Wszystkie
-4. **Priorytet ngen** (całkowitą z zakresu od 1 do 3) — poziom priorytetu programu Ngen jest udokumentowany na [poziomy priorytetów Ngen.exe](https://msdn.microsoft.com/en-us/library/6t9t5wcf(v=vs.110).aspx#Anchor_3).
+4. **Priorytet ngen** (całkowitą z zakresu od 1 do 3) — poziom priorytetu programu Ngen jest udokumentowany na [poziomy priorytetów Ngen.exe](/dotnet/framework/tools/ngen-exe-native-image-generator#priority-levels).
 
 W tym miejscu przedstawiono **właściwości** okna w akcji:
 

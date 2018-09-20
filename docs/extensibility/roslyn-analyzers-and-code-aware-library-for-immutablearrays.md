@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad8f58e1d576a738c17095b6306261964e448651
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 82f96af18400aa6a9f659144fb874c32feaf08ed
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637724"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495924"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Analizatory Roslyn i Biblioteka obsługująca kod dla tablic Immutablearray
 
@@ -307,13 +307,13 @@ Teraz można nacisnąć klawisz **F5** do wykonania swojej analizator w drugim w
 
 ## <a name="talk-video-and-finish-code-project"></a>Rozmowy wideo i Zakończ projektu kodu
 
-Widać, w tym przykładzie rozwinięte i omówione w dalszych [tej dyskusji](http://channel9.msdn.com/events/Build/2015/3-725).  Rozmowa pokazuje analizatora pracy i przeprowadzi Cię przez tworzenie go.
+Widać, w tym przykładzie rozwinięte i omówione w dalszych [tej dyskusji](https://channel9.msdn.com/events/Build/2015/3-725).  Rozmowa pokazuje analizatora pracy i przeprowadzi Cię przez tworzenie go.
 
 Gotowy kod jest widoczne [tutaj](https://github.com/DustinCampbell/CoreFxAnalyzers/tree/master/Source/CoreFxAnalyzers).  Podfoldery *DoNotUseImmutableArrayCollectionInitializer* i *DoNotUseImmutableArrayCtor* o plik języka C# służące do znajdowania problemów, a plik języka C#, która implementuje kodu przedstawiające rozwiązuje w Visual Studio żarówki interfejsu użytkownika.  Uwaga: kod zakończenia ma nieco więcej abstrakcji, aby uniknąć pobierania element ImmutableArray\<T > wpisz obiektów wiele razy.  Używa zagnieżdżonych zarejestrowane akcje można zapisać obiektu typu w kontekście, który jest dostępny zawsze, gdy akcji podrzędnej (analizowanie tworzenia obiektów i analizowanie inicjowania kolekcji) wykonywania.
 
 ## <a name="see-also"></a>Zobacz także
 
-* [\\Rozmowa \Build 2015](http://channel9.msdn.com/events/Build/2015/3-725)
+* [\\Rozmowa \Build 2015](https://channel9.msdn.com/events/Build/2015/3-725)
 * [Kompletny kod w serwisie GitHub](https://github.com/DustinCampbell/CoreFxAnalyzers/tree/master/Source/CoreFxAnalyzers)
 * [Kilka przykładów w witrynie GitHub, pogrupowane według trzy rodzaje analizatorów](https://github.com/dotnet/roslyn/blob/master/docs/analyzers/Analyzer%20Samples.md)
 * [Inne dokumenty w witrynie GitHub OSS](https://github.com/dotnet/roslyn/tree/master/docs/analyzers)

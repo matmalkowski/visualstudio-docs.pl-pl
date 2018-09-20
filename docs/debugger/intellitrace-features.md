@@ -1,7 +1,7 @@
 ---
 title: Funkcje IntelliTrace | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/19/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 608b183333d3561f9db586955142f94a8371c055
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 7ba3225d793baed9325612ad5b88bd55d629c44f
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279535"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495729"
 ---
 # <a name="intellitrace-features"></a>Funkcje IntelliTrace
 
@@ -42,21 +42,21 @@ Aby upewnić się, że IntelliTrace jest włączony, należy otworzyć **Narzęd
 > [!NOTE]
 > Zakres wszystkie ustawienia na **IntelliTrace** strona opcje to program Visual Studio jako całości, nie do poszczególnych projektów lub rozwiązań. Zmiany w tych ustawieniach mają zastosowanie do wszystkich wystąpień programu Visual Studio, wszystkie debugowania sesji i wszystkich projektów i rozwiązań.
 
-## <a name="ChooseEvents"></a> Wybierz zdarzenia przez IntelliTrace
+## <a name="ChooseEvents"></a> Wybierz zdarzenia przez IntelliTrace (tylko kod zarządzany)
 
 Można włączyć lub wyłączyć rejestrowanie dla określonych zdarzeń IntelliTrace.
 
 Jeśli debugujesz, Zatrzymaj debugowanie. Przejdź do **Narzędzia > Opcje > IntelliTrace > zdarzenia IntelliTrace**. Wybierz zdarzenia funkcji IntelliTrace do rejestrowania.
 
-## <a name="Snapshots"></a> Zbieraj zdarzenia i migawki
+## <a name="Snapshots"></a> Zbieraj migawki
 
-To nie jest włączona domyślnie, ale IntelliTrace można przechwycić migawek aplikacji na każde zdarzenie punktu przerwania i debuger kroku, a migawki te można wyświetlić w historyczna sesja debugowania. Migawki zapewnia wgląd w swoje pełnym stanem aplikacji. Aby włączyć przechwytywania migawek, przejdź do **Narzędzia > Opcje > IntelliTrace > Ogólne**i wybierz **IntelliTrace zdarzenia i migawki**. Aby uzyskać więcej informacji, zobacz [wyświetlanie migawki za pomocą funkcji IntelliTrace krok do tyłu](../debugger/how-to-use-intellitrace-step-back.md)
+To nie jest domyślnie włączone, ale IntelliTrace można przechwycić migawek aplikacji na każde zdarzenie punktu przerwania i debuger krok, a migawek można wyświetlić w historyczna sesja debugowania. Migawki zapewnia wgląd w swoje pełnym stanem aplikacji. Aby włączyć przechwytywania migawek, przejdź do **Narzędzia > Opcje > IntelliTrace > Ogólne**i wybierz **migawki IntelliTrace (zarządzany i natywny)**. Aby uzyskać więcej informacji, zobacz [wyświetlanie migawki za pomocą funkcji IntelliTrace krok do tyłu](../debugger/how-to-use-intellitrace-step-back.md)
 
-Migawki są dostępne w usłudze Visual Studio Enterprise 2017, wersja 15.5 lub nowszej i wymaga Rocznicowej aktualizacji systemu Windows 10 lub nowszej.  W przypadku aplikacji .NET Core i ASP.NET Core Visual Studio Enterprise 2017 wersji 15.7 w wersji zapoznawczej 1 jest wymagany.
+Migawki są dostępne w usłudze Visual Studio Enterprise 2017, wersja 15.5 lub nowszej i wymaga Rocznicowej aktualizacji systemu Windows 10 lub nowszej.  W przypadku aplikacji .NET Core i ASP.NET Core Visual Studio Enterprise 2017 wersji 15.7 jest wymagana. W przypadku aplikacji natywnych dla Windows, Visual Studio Enterprise 2017 w wersji 15.9 2 (wersja zapoznawcza) jest wymagana.
 
-## <a name="GoingFurther"></a> Zbierz zdarzenia IntelliTrace i wywołania informacji
+## <a name="GoingFurther"></a> Zbierz zdarzenia IntelliTrace i wywołania informacji (tylko kod zarządzany)
 
-To nie jest domyślnie włączona, ale IntelliTrace może rejestrować wywołania metody wraz z wydarzeniami. Aby włączyć zbieranie wywołań, przejdź do metody **Narzędzia > Opcje > IntelliTrace > Ogólne**i wybierz **zdarzenia IntelliTrace i wywołania informacji**.
+To nie jest domyślnie włączona, ale IntelliTrace może rejestrować wywołania metody wraz z wydarzeniami. Aby włączyć zbieranie wywołań, przejdź do metody **Narzędzia > Opcje > IntelliTrace > Ogólne**i wybierz **zdarzenia IntelliTrace i wywołania informacji (tylko zarządzany)**.
 
 Informacje na temat wywołań nie jest obecnie dostępna dla aplikacji platformy .NET Core i ASP.NET Core. 
 

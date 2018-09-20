@@ -1,5 +1,5 @@
 ---
-title: Tabela polecenia programu Visual Studio (. Pliki Vsct) | Dokumentacja firmy Microsoft
+title: Tabeli poleceń programu Visual Studio (. Pliki Vsct) | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,37 +14,37 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3407c21f242cf45337ddad2ff19993d9e0130fbf
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: eb1cf61f1c1120e27ffcb5a93eff35817f1ed0b3
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31140472"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495872"
 ---
-# <a name="visual-studio-command-table-vsct-files"></a>Tabela polecenia programu Visual Studio (. Pliki Vsct)
-Plik konfiguracji tabeli polecenia to plik tekstowy, który opisuje zestaw poleceń, które zawiera pakiet VSPackage. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Polecenia kompilatora tabeli (VSCT) kompiluje konfiguracji w formacie XML plików (vsct) do plików wyjściowych (.cto) tabeli polecenie binary. Pliki wynikowe .cto są takie same jak te, które są tworzone za pomocą polecenia kompilatora tabeli (CTC) do kompilowania plików konfiguracyjnych .ctc. Pliki vsct opartych na języku XML ma jednak pewne korzyści, takich jak edytor XML i XML IntelliSense.  
+# <a name="visual-studio-command-table-vsct-files"></a>Tabela poleceń programu Visual Studio (pliki Vsct)
+Plik konfiguracji tabeli polecenia to plik tekstowy, który opisuje zestaw poleceń, które zawierają pakietu VSPackage. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Polecenia kompilatora tabeli (VSCT) kompiluje pliki konfiguracji w formacie XML (pliki vsct) na pliki wyjściowe (.cto) tabeli polecenie binary. Pliki wynikowe .cto są takie same jak te, które są tworzone za pomocą polecenia kompilatora tabeli (CTC) do kompilowania plików konfiguracyjnych .ctc. Jednak plików oparty na składni XML vsct ma kilka zalet, takie jak XML IntelliSense i edytora XML.  
   
- Aby dowiedzieć się więcej na temat składni i semantyki vsct plików, zobacz [projektowania tabeli polecenia XML (. Pliki Vsct)](../../extensibility/internals/designing-xml-command-table-dot-vsct-files.md)  
+ Aby dowiedzieć się więcej na temat składnia i semantyka .vsct — pliki, zobacz [projektowanie tabeli poleceń XML (. Pliki Vsct)](../../extensibility/internals/designing-xml-command-table-dot-vsct-files.md)  
   
 ## <a name="in-this-section"></a>W tej sekcji  
  [Projektowanie tabeli poleceń XML (pliki Vsct)](../../extensibility/internals/designing-xml-command-table-dot-vsct-files.md)  
- Opisuje sposób projektowania vsct plików.  
+ Opisuje sposób projektowania .vsct — pliki.  
   
  [Instrukcje: tworzenie pliku Vsct](../../extensibility/internals/how-to-create-a-dot-vsct-file.md)  
- Porównanie metod tworzenia pliku vsct. W tym artykule opisano proces ręcznego tworzenia nowego pliku vsct.  
+ Porównanie metod tworzenia pliku vsct. W tym artykule opisano proces ręcznego tworzenia nowego pliku vsct  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
  [Odwołanie do schematu XML VSCT](../../extensibility/vsct-xml-schema-reference.md)  
- Szczegółowe informacje na temat każdej sekcji pliku konfiguracji XML tabeli poleceń.  
+ Szczegółowe informacje na temat każdej sekcji w pliku konfiguracji XML tabeli poleceń.  
   
- [Polecenie konfiguracją tabeli (. Pliki CTC)](http://msdn.microsoft.com/en-us/3413dda1-f372-4669-bcf0-c64d3463842c)  
- Zawiera omówienie formatu pliku .ctc przestarzałe.  
+ [Polecenie konfiguracją tabeli (. Pliki CTC)](https://msdn.microsoft.com/library/3413dda1-f372-4669-bcf0-c64d3463842c)  
+ Przedstawia omówienie .ctc przestarzały format pliku.  
   
  [Dodawanie elementów interfejsu użytkownika przy użyciu pakietów VSPackage](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)  
- W tym artykule opisano specyfikacji formatu tabeli polecenia.  
+ W tym artykule opisano specyfikacji formatu tabeli poleceń.  
   
  [Zasoby w pakietach VSPackage](../../extensibility/internals/resources-in-vspackages.md)  
- Opis sposobu użycia zasobów zarządzanych i niezarządzanych w zarządzanych VSPackages.  
+ Opisuje sposób używania zarządzane i niezarządzane zasoby w pakietach VSPackage zarządzanych.  
   
  [Polecenia, menu i paski narzędzi](../../extensibility/internals/commands-menus-and-toolbars.md)  
- Wyjaśnia sposób tworzenia interfejsu użytkownika, który zawiera menu, paski narzędzi i polecenia pola kombi.
+ Wyjaśnia, jak utworzyć interfejs użytkownika, który zawiera menu, paski narzędzi i pola kombi polecenia.

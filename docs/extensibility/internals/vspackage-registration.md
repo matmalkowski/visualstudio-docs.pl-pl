@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 29592f7956177a4894967d7f393605a54f7ec07b
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 73a2dd2288ae54c184405793323cd3084b90e35a
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513164"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495287"
 ---
 # <a name="vspackage-registration"></a>Rejestracja pakietu VSPackage
 Poinformowanie pakietów VSPackage [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] są zainstalowane i powinny zostać załadowany. Ten proces odbywa się przez zapisywania informacji w rejestrze. To typowe zadanie Instalatora.  
@@ -60,4 +60,4 @@ Poinformowanie pakietów VSPackage [!INCLUDE[vsprvs](../../code-quality/includes
   
 ## <a name="see-also"></a>Zobacz też  
  [Instalator Windows](/windows/desktop/Msi/windows-installer-portal)   
- [Rejestracja pakietu zarządzanego](http://msdn.microsoft.com/en-us/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)
+ [Rejestracja pakietu zarządzanego](https://msdn.microsoft.com/library/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)

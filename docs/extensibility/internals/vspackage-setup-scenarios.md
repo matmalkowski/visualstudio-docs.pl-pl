@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a3dfe3f3c135cb3ed16c7550fc62d334cc548cd1
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: c194588de8dfa8746bb79a8d86bff005d90e7550
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510669"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495937"
 ---
 # <a name="vspackage-setup-scenarios"></a>Scenariusze instalacji pakietu VSPackage
 
@@ -31,7 +31,7 @@ Scenariusze omówione w tym temacie nie są tylko wybrane opcje, ale są przedst
 
 ### <a name="make-your-components-independent"></a>Uniezależnić składników
 
-Po identyfikować i wypełnić składnika, przypisać `GUID`i wdrożyć składnik, nie można zmienić jego skład. Jeśli zmienisz kompozycji składnika, wynikowy składnika musi być nowego składnika z nową `GUID`. Biorąc pod uwagę następujące fakty, największą elastyczność versioning jest udzielone, wprowadzając jednostki niezależne, samodzielnego każdego składnika. Aby uzyskać więcej informacji na temat zasad regulujących składniki zobacz [zmiany kodu składnika](/windows/desktop/Msi/changing-the-component-code) i [co się stanie, jeśli składnik reguły są uszkodzone?](http://msdn.microsoft.com/library/aa372795\(VS.85\).aspx).
+Po identyfikować i wypełnić składnika, przypisać `GUID`i wdrożyć składnik, nie można zmienić jego skład. Jeśli zmienisz kompozycji składnika, wynikowy składnika musi być nowego składnika z nową `GUID`. Biorąc pod uwagę następujące fakty, największą elastyczność versioning jest udzielone, wprowadzając jednostki niezależne, samodzielnego każdego składnika. Aby uzyskać więcej informacji na temat zasad regulujących składniki zobacz [zmiany kodu składnika](/windows/desktop/Msi/changing-the-component-code) i [co się stanie, jeśli składnik reguły są uszkodzone?](/windows/desktop/Msi/what-happens-if-the-component-rules-are-broken).
 
 ### <a name="do-not-mix-shared-and-private-resources-in-a-component"></a>Nie należy mieszać prywatnych i udostępnionych zasobów w składniku
 
@@ -77,7 +77,7 @@ W tym przypadku pakietu VSPackage jest zarządzanych pakietu VSPackage, zainstal
 
 ![Instalator Side-by-Side VS pakiet aktualizacji programu VS](../../extensibility/internals/media/vs_sbys_packageupdate.gif "VS_SbyS_PackageUpdate")
 
-Aby uzyskać więcej informacji na temat wdrażania zestawów side-by-side, zobacz [upraszczanie wdrażania i rozwiązywania piekłem bibliotek DLL, przy użyciu programu .NET Framework](http://msdn.microsoft.com/library/ms973843.aspx).
+Aby uzyskać więcej informacji na temat wdrażania zestawów side-by-side, zobacz [upraszczanie wdrażania i rozwiązywania piekłem bibliotek DLL, przy użyciu programu .NET Framework](https://msdn.microsoft.com/library/ms973843.aspx).
 
 ## <a name="see-also"></a>Zobacz też
 

@@ -18,12 +18,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 94294078ccb1dd2620127fa85acf0ae4564080dd
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 782cec69f5129aaa4bbea66d0adb52d2bd172032
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638033"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495456"
 ---
 # <a name="localize-menu-commands"></a>Lokalizowanie poleceń menu
 Możesz podać zlokalizowanego tekstu polecenia menu i paski narzędzi, tworząc zlokalizowane *vsct* pliki i zlokalizowane *resx* plików dla Twojego pakietu VSPackage, a następnie zaktualizować plików projektu dołączyć zmiany.  
@@ -37,7 +37,7 @@ Możesz podać zlokalizowanego tekstu polecenia menu i paski narzędzi, tworząc
   
 2.  Utwórz kopię *filename.en US.vsct* dla każdego zlokalizowanego języka.  
   
-     Nazwy poszczególnych kopii *filename. { Vsct Locale}*, gdzie *{ustawienia regionalne}* jest nazwą określonej kultury. Aby uzyskać listę wartości nazwy kultury, zobacz [identyfikatory ustawień regionalnych przypisane przez firmę Microsoft](https://msdn.microsoft.com/en-us/library/windows/apps/jj657969.aspx).  
+     Nazwy poszczególnych kopii *filename. { Vsct Locale}*, gdzie *{ustawienia regionalne}* jest nazwą określonej kultury. Aby uzyskać listę wartości nazwy kultury, zobacz [identyfikatory ustawień regionalnych przypisane przez firmę Microsoft](/windows/uwp/publish/supported-languages).  
   
      Te *nazwy pliku. Locale.vsct* pliki zawierają tekst menu zlokalizowanego pakietu.  
   

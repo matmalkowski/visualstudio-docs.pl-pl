@@ -11,15 +11,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77bc0df07520fd2ffab11054e4720bb50ee01903
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: dc86619ae769aa9e947d308eca61004e130c0b2a
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637753"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495846"
 ---
 # <a name="manage-universal-windows-projects"></a>Zarządzaj projektami Universal Windows
-Universal Windows apps to aplikacje, przeznaczonych dla Windows 8.1 i Windows Phone 8.1 dzięki czemu deweloperzy mogą używać kodu i inne zasoby w obu platform. Wspólny kod i zasoby są przechowywane w udostępnionego projektu, gdy kod specyficzny dla platform i zasobów, które są przechowywane w oddzielnych projektów: jeden dla Windows, a drugi dla Windows Phone. Aby uzyskać więcej informacji na temat uniwersalnych aplikacji dla Windows, zobacz [Universal Windows apps](http://msdn.microsoft.com/library/windows/apps/dn609832.aspx). Rozszerzenia programu Visual Studio, zarządzanie projektami, które należy pamiętać, że uniwersalne projekty aplikacji Windows mają strukturę, która różni się od aplikacji pojedynczej platformy. W tym instruktażu dowiesz się, jak nawigować udostępnionego projektu i zarządzanie elementami udostępnionymi.  
+Universal Windows apps to aplikacje, przeznaczonych dla Windows 8.1 i Windows Phone 8.1 dzięki czemu deweloperzy mogą używać kodu i inne zasoby w obu platform. Wspólny kod i zasoby są przechowywane w udostępnionego projektu, gdy kod specyficzny dla platform i zasobów, które są przechowywane w oddzielnych projektów: jeden dla Windows, a drugi dla Windows Phone. Aby uzyskać więcej informacji na temat uniwersalnych aplikacji dla Windows, zobacz [Universal Windows apps](https://msdn.microsoft.com/library/windows/apps/dn609832.aspx). Rozszerzenia programu Visual Studio, zarządzanie projektami, które należy pamiętać, że uniwersalne projekty aplikacji Windows mają strukturę, która różni się od aplikacji pojedynczej platformy. W tym instruktażu dowiesz się, jak nawigować udostępnionego projektu i zarządzanie elementami udostępnionymi.  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
  Począwszy od programu Visual Studio 2015, możesz nie należy instalować programu Visual Studio SDK z Centrum pobierania. Jest dołączony jako opcjonalna funkcja w Instalatorze programu Visual Studio. Możesz także zainstalować zestaw SDK programu VS później. Aby uzyskać więcej informacji, zobacz [instalacji programu Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  

@@ -17,55 +17,55 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3a4fdd1831736861c0de1e6ac1d156ae085e7faf
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0fe2d5bbc2e06bcfa7bc7f47d6aaebbbdc9b1261
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31141691"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495521"
 ---
-# <a name="support-for-the-visual-studio-sdk"></a>Obsługa programu Visual Studio SDK
-Kilka opcji pomocy technicznej są dostępne dla klientów, którzy pytań na temat rozszerzania programu Visual Studio zintegrowane środowisko programistyczne (IDE).  
+# <a name="support-for-the-visual-studio-sdk"></a>Obsługa zestawu Visual Studio SDK
+Kilka opcji pomocy technicznej są dostępne dla klientów, którzy pytań na temat sposobu rozszerzenia programu Visual Studio zintegrowane środowisko programistyczne (IDE).  
   
 ## <a name="free-support"></a>Bezpłatna pomoc techniczna  
   
-### <a name="msdn-development-center"></a>Centrum rozwoju MSDN  
- [Centrum deweloperów rozszerzalności programu Visual Studio](http://go.microsoft.com/fwlink/?LinkID=84381) w witrynie MSDN zawiera zasoby, które pomagają odpowiedzieć na pytania dotyczące sposobu rozszerzania programu Visual Studio. Na przykład istnieje kilka łączy do blogów dewelopera VSIP.  
+### <a name="msdn-development-center"></a>Centrum deweloperów sieci MSDN  
+ [Centrum deweloperów programu Visual Studio Extensibility](http://go.microsoft.com/fwlink/?LinkID=84381) w witrynie MSDN zawiera zasoby, które pomagają Odpowiedz na pytania o sposobie rozszerzania programu Visual Studio. Na przykład istnieją linki do blogów dewelopera VSIP.  
   
 ### <a name="microsoft-newsgroups"></a>Grupy dyskusyjne firmy Microsoft  
- Członkowie zespołu deweloperów programu Visual Studio i innych deweloperów, którzy często Rozszerzanie programu Visual Studio uczestniczyć w grupie dyskusyjnej microsoft.public.vstudio.extensibility. Ta grupa dyskusyjna jest zarządzanych grup dyskusyjnych. Jeśli jesteś subskrybentem MSDN Universal, upewnij się, zarejestrowanie alias spamu nie, aby umożliwić firmy Microsoft, aby odpowiadać.  
+ Członkowie zespołu programistycznego programu Visual Studio i innych deweloperów, którzy często Rozszerz program Visual Studio uczestniczyć w grupie dyskusyjnej microsoft.public.vstudio.extensibility. Ta grupa dyskusyjna jest zarządzane grupy dyskusyjnej. Jeśli Universal subskrybentem MSDN, upewnij się, rejestrowania alias chroniący przed spamem, aby umożliwić firmy Microsoft, aby odpowiadać.  
   
 ### <a name="msdn-forums"></a>Fora MSDN  
- [Fora MSDN](http://go.microsoft.com/fwlink/?LinkID=76632) Podaj inny sposób, aby rozmawiać z elementów równorzędnych i ekspertów. Graficzny interfejs użytkownika (UI) z forum zaprojektowano w celu ułatwienia niż grupy dyskusyjne korzystanie z. [Programu Visual Studio Extensibility Forum](http://go.microsoft.com/fwlink/?LinkID=121964) jest dobrym miejscem do Uruchom, aby wyszukać odpowiedzi na pytania rozszerzalności. Zawsze wyszukiwania, aby zadać pytanie, ponieważ ktoś inny może już zażądano mają tego samego zapytania.  
+ [Fora MSDN](http://go.microsoft.com/fwlink/?LinkID=76632) zapewniają Porozmawiaj z elementami równorzędnymi oraz ekspertami w inny sposób. Graficzny interfejs użytkownika (UI) z forów zaprojektowaną do podejmowania ich łatwiejszy w obsłudze niż grup dyskusyjnych. [Forum poświęcone programowi Visual Studio Extensibility](http://go.microsoft.com/fwlink/?LinkID=121964) jest dobrym miejscem do rozpoczęcia wyszukiwania odpowiedzi na pytania dotyczące rozszerzalności. Wyszukaj zawsze przed Zadaj pytanie, ponieważ ktoś inny może już mieć o to samo.  
   
-### <a name="visual-studio-gallery"></a>Galerii programu Visual Studio  
- [Galerii programu Visual Studio](http://visualstudiogallery.msdn.microsoft.com/) jest używana dla rozszerzeń i przykładowego kodu. Można znaleźć narzędzia, które poprawy wydajności i użytkownika wystąpić z programem Visual Studio i przykładowe aplikacje, które pokazują, jak użyć VSPackages i zarządzane Extensibility Framework (MEF) oraz inne rodzaje próbek.  
+### <a name="visual-studio-gallery"></a>Galeria Visual Studio  
+ [Galerii Visual Studio](https://marketplace.visualstudio.com/) to miejsce rozszerzeń oraz przykładowy kod. Narzędzia, które zwiększają produktywność i użytkownika środowisko z programem Visual Studio, przykładowych aplikacji, które pokazują, jak użyć pakietów VSPackage i Managed Extensibility Framework (MEF) oraz inne rodzaje przykłady można znaleźć.  
   
-### <a name="visual-studio-sdk-samples"></a>Przykłady programu Visual Studio SDK
+### <a name="visual-studio-sdk-samples"></a>Przykłady zestawu SDK programu Visual Studio
 
-Typu open source przykładami zestawu SDK rozszerzenia można znaleźć w witrynie GitHub pod [przykłady dotyczące programu Visual Studio](https://github.com/Microsoft/VSSDK-Extensibility-Samples). To repozytorium GitHub zawiera przykłady ilustrujące różnych extensible funkcji w programie Visual Studio.
+Przykłady "open source" z zestawu SDK rozszerzeń można znaleźć w witrynie GitHub pod [Visual Studio Samples](https://github.com/Microsoft/VSSDK-Extensibility-Samples). To repozytorium serwisu GitHub zawiera przykłady ilustrujące różne funkcje rozszerzonego w programie Visual Studio.
 
-## <a name="included-support"></a>Obsługa dołączone  
+## <a name="included-support"></a>Uwzględnione pomocy technicznej  
   
 ### <a name="visual-studio-product-support"></a>Pomoc techniczna programu Visual Studio  
- Niektóre pomocy technicznej jest dołączana do zakupu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] produktów. Aby uzyskać więcej informacji, zobacz [techniczną usługi Visual Studio](http://msdn.microsoft.com/vstudio/cc136615.aspx). Firma Microsoft udostępnia dedykowanych obsługą odpowiedzi na pytania dotyczące [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozszerzalności.  
+ Niektóre pomoc techniczna jest dołączone do zakupu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] produktów. Aby uzyskać więcej informacji, zobacz [pomoc techniczna dla programu Visual Studio](http://msdn.microsoft.com/vstudio/cc136615.aspx). Firma Microsoft udostępnia zespół pomocy technicznej dedykowanych odpowiedzi na pytania dotyczące [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozszerzalności.  
   
-### <a name="msdn-subscription-support"></a>Obsługa subskrypcji MSDN  
- Pakiety subskrypcji MSDN mogą również obejmować niektórych pomocy technicznej. Aby uzyskać więcej informacji, zobacz [Obsługa subskrybenta MSDN](https://msdn.microsoft.com/subscriptions/aa718661.aspx).  
+### <a name="msdn-subscription-support"></a>Pomoc techniczna dla subskrypcji MSDN  
+ Pakiety subskrypcji MSDN mogą również obejmować niektórych pomocy technicznej. Aby uzyskać więcej informacji, zobacz [pomocy technicznej subskrybenta MSDN](https://msdn.microsoft.com/subscriptions/aa718661.aspx).  
   
 ## <a name="paid-support"></a>Płatnej pomocy technicznej  
   
-### <a name="developer-tools-support"></a>Pomoc techniczna Developer Tools  
- Można również kupić pomocy technicznej. Obsługa wielu są dostępne w kategorii narzędzi dla deweloperów w [Microsoft Help i centrach obsługi technicznej](http://go.microsoft.com/fwlink/?LinkID=82383).  
+### <a name="developer-tools-support"></a>Obsługa narzędzi dla deweloperów  
+ Można także nabyć w pomocy technicznej. Różnych ofert pomocy technicznej są dostępne w obszarze narzędzi dla deweloperów w [Microsoft Help i centrach obsługi technicznej](http://go.microsoft.com/fwlink/?LinkID=82383).  
   
- Klienci, którzy mają być używane [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] umożliwiające tworzenie złożonych pakietów można wziąć pod uwagę zakup kontrakt umów pomocy technicznej firmy Microsoft. Aby uzyskać więcej informacji, zobacz [pomocy technicznej Microsoft Premier](http://go.microsoft.com/fwlink/?LinkID=76660). Dla małych firm [partnera zalety obsługi](http://www.microsoft.com/services/microsoftservices/srv_mspa.mspx) może być atrakcyjną alternatywą dla tradycyjnych pomocy technicznej Premium oferty.  
+ Klienci, którzy chcą korzystać [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] do tworzenia złożonych pakietów można rozważyć zakup planu pomocy technicznej Premier umowy z firmą Microsoft. Aby uzyskać więcej informacji, zobacz [pomocy technicznej Microsoft Premier](http://go.microsoft.com/fwlink/?LinkID=76660). Dla małych firm [pomoc techniczna dla partnerów korzyści](http://www.microsoft.com/services/microsoftservices/srv_mspa.mspx) może być atrakcyjną alternatywą do tradycyjnych pomocy technicznej Premier.  
   
 > [!NOTE]
->  Pomoc techniczna standard nie może służyć do konsultacji lub uzyskać porady.  
+>  Nie można użyć pomocy technicznej Standard, konsultacji lub uzyskać porady.  
   
- Pytania dotyczące pomocy technicznej Premium oferty w połączeniu z programem VSIP mogą być wysyłane do [ vsipsvs@microsoft.com ](mailto:vsipsvs@microsoft.com). Pytania dotyczące nowego programu korzyści partnerskich można wysłać do [ advantg@microsoft.com ](mailto:advantg@microsoft.com).  
+ Pytania na temat ofert pomocy technicznej Premier, w połączeniu z programem VSIP mogą być wysyłane do [ vsipsvs@microsoft.com ](mailto:vsipsvs@microsoft.com). Pytania dotyczące nowego programu korzyści partnera mogą być wysyłane do [ advantg@microsoft.com ](mailto:advantg@microsoft.com).  
   
- Informacje dotyczące obsługi poszczególnych żądań można znaleźć w folderze [poszczególnych żądań obsługi](http://go.microsoft.com/fwlink/?LinkID=82385).  
+ Informacje dotyczące obsługi poszczególnych żądań znajduje się w temacie [poszczególnych żądań pomocy technicznej](http://go.microsoft.com/fwlink/?LinkID=82385).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Porozmawiaj z nami](../ide/talk-to-us.md)
