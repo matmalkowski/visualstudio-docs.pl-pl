@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ca90a78643b8abc1f73ca61da3d1627261fff59c
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 23b84b1ad2b29a842389fb2852abdcfb8e76ea92
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321167"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46371098"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Scenariusz: Zmiana projektu z wykorzystaniem wizualizacji i modelowania
 
@@ -182,7 +182,7 @@ Dinner Now musi oszacować koszty realizacji nowego wymagania. Zależy to częś
 
  **Diagram zależności**
 
-Aby upewnić się, że nie występują konflikty z projektem podczas programowania kodu, zespoły sprawdzają weryfikacji zależności w kompilacjach, które są uruchamiane na Team Foundation Build. Tworzą one równie niestandardowe zadanie platformy MSBuild, aby wymagać weryfikacji zależności w swoich operacjach ewidencjonowania. Używają raportów z kompilacji do zbierania błędów sprawdzania poprawności.
+Aby upewnić się, że nie występują konflikty z projektem podczas programowania kodu, zespoły sprawdzają weryfikacji zależności w kompilacjach, które są uruchamiane na DevOps platformy Azure. Tworzą one równie niestandardowe zadanie platformy MSBuild, aby wymagać weryfikacji zależności w swoich operacjach ewidencjonowania. Używają raportów z kompilacji do zbierania błędów sprawdzania poprawności.
 
 Zobacz:
 
@@ -234,7 +234,7 @@ Jak wykonania poszczególne zadania zespoły ewidencjonują kod do kontroli wers
 
 Dinner Now ma duży zbiór zautomatyzowanych testów, których może korzystać Lucerne, ponieważ prawie wszystkie nadal obowiązują. Lucerna można tworzyć na tych testach i dodać nowe na pokrycie nowej funkcje. Obie używają Visual Studio do uruchomienia testów ręcznych.
 
-Aby upewnić się, że kod odpowiada wymaganiom projektu, zespoły konfigurują swoje kompilacje w Team Foundation Build, uwzględniając weryfikacji zależności. Jeśli wystąpią konflikty, raport jest generowany ze szczegółami.
+Aby upewnić się, że kod odpowiada wymaganiom projektu, zespoły konfigurują swoje kompilacje w DevOps platformy Azure, aby uwzględnić weryfikacji zależności. Jeśli wystąpią konflikty, raport jest generowany ze szczegółami.
 
 Zobacz:
 

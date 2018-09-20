@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e1bc542665e69a3997b8633ca5e351875f06848
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: cd9f04b616ee7551f04a8c0b260eb69995943a8b
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513177"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46371163"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Domyślne skróty klawiaturowe w programie Visual Studio
 
@@ -161,7 +161,7 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |Edit.Copy|**CTRL + C**<br /><br /> lub<br /><br /> **CTRL + dodatki**|
 |Edit.Cut|**CTRL + X**<br /><br /> lub<br /><br /> **Shift + Delete**|
 |Edit.CycleClipboardRing|**Ctrl + Shift + V**<br /><br /> lub<br /><br /> **Ctrl + Shift + dodatki**|
-|Edit.Delete|**Usuwanie**|
+|Edit.Delete|**Delete**|
 |Edit.Find|**CTRL + F**|
 |Edit.FindAllReferences|**Shift+F12**|
 |Edit.FindinFiles|**Ctrl + Shift + F**|
@@ -460,7 +460,7 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |Edit.Delete|**Ctrl + Del**|
 |Edit.ExpandCollapseBaseTypeList|**Shift + Alt + B**|
 |Edit.NavigateToLollipop|**Shift + Alt + L**|
-|Edit.RemovefromDiagram|**Usuwanie**|
+|Edit.RemovefromDiagram|**Delete**|
 |View.ViewCode|**Wprowadź**|
 
 ##  <a name="coded-ui-test-editor"></a>Edytor kodowanego testu interfejsu użytkownika
@@ -520,7 +520,7 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Select.IncomingDependencies|**I**|
 |ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Select.OutgoingDependencies|**O**|
 |ArchitectureContextMenus.DirectedGraphContextMenu.NewComment|**Ctrl + Shift + K**<br /><br /> lub<br /><br /> **CTRL + E, C**|
-|ArchitectureContextMenus.DirectedGraphContextMenu.Remove|**Usuwanie**|
+|ArchitectureContextMenus.DirectedGraphContextMenu.Remove|**Delete**|
 |ArchitectureContextMenus.DirectedGraphContextMenu.Rename|**F2**|
 
 ##  <a name="graphics-diagnostics"></a>Diagnostyka grafiki
@@ -587,7 +587,7 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |Polecenia|Skróty klawiaturowe|
 |--------------|------------------------|
 |Edit.EditCell|**F2**|
-|Edit.Remove|**Usuwanie**|
+|Edit.Remove|**Delete**|
 |Edit.RemoveRow|**CTRL + Delete**|
 |Edit.SelectionCancel|**Znak ucieczki**|
 |Resources.Audio|**CTRL + 4**|
@@ -742,7 +742,7 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 
 |Polecenie|Skrót klawiaturowy|
 |-------------|-----------------------|
-|Edit.Delete|**Usuwanie**|
+|Edit.Delete|**Delete**|
 |File.Rename|**F2**|
 |TeamFoundationContextMenus.Commands.GoToTeamExplorerNavigation|**Alt + Home**|
 |TeamFoundationContextMenus.Commands.GoToTeamExplorerNextSectionContent|**Alt + Strzałka w dół**|
@@ -761,12 +761,6 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |TeamFoundationContextMenus.Commands.TeamExplorerNavigateForward|**Alt + Strzałka w prawo**|
 |TeamFoundationContextMenus.MyWorkPageInProgress.TfsContextMyWorkPageCreateCopyWI|**Shift + Alt + C**|
 |TeamFoundationContextMenus.MyWorkPageInProgress.TfsContextMyWorkPageNewLinkedWI|**Shift + Alt + L**|
-|View.Refresh|**F5**|
-
-##  <a name="team-foundation-build-detail-editor"></a>Edytor szczegółów kompilacji Team Foundation
-
-|Polecenie|Skrót klawiaturowy|
-|-------------|-----------------------|
 |View.Refresh|**F5**|
 
 ##  <a name="test-explorer"></a>Eksplorator testów
@@ -978,7 +972,7 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |Image.OutlinedRoundedRectangleTool|**Shift + Alt + W**|
 |Image.PencilTool|**CTRL + I**|
 |Image.PreviousColor|**Ctrl+[**<br /><br /> lub<br /><br /> **CTRL + Strzałka w lewo**|
-|Image.PreviousRightColor|**Ctrl + Shift +**<br /><br /> lub<br /><br /> **Strzałka Ctrl + Shift + Strzałka w lewo**|
+|Image.PreviousRightColor|**Ctrl+Shift+[**<br /><br /> lub<br /><br /> **Strzałka Ctrl + Shift + Strzałka w lewo**|
 |Image.RectangleSelectionTool|**Shift + Alt + S**|
 |Image.RectangleTool|**ALT + R**|
 |Image.Rotate90Degrees|**Ctrl + Shift + H**|
@@ -1143,7 +1137,7 @@ Sekcje w poniższej tabeli zawierają polecenia, które są globalne w tym sensi
 |GraphView.LefttoRight|**Alt + Strzałka w prawo**|
 |GraphView.RighttoLeft|**Alt + Strzałka w lewo**|
 |GraphView.ToptoBottom|**Alt + Strzałka w dół**|
-|OtherContextMenus.GraphView.RemovefromWorkspace|**Usuwanie**|
+|OtherContextMenus.GraphView.RemovefromWorkspace|**Delete**|
 |XsdDesigner.ShowContentModelView|**CTRL + 2**|
 |XsdDesigner.ShowGraphView|**CTRL + 3**|
 |XsdDesigner.ShowStartView|**CTRL + 1**|
