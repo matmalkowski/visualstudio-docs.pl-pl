@@ -10,12 +10,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c3f6bed7cc010f0aeaff22cd46eb7bcaaa4caf6
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: d0f77fb6bb22c82fb8f3bb0b3bf2a7a32a9be559
+ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280626"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46542380"
 ---
 # <a name="how-to-unlock-visual-studio"></a>Porady: odblokować program Visual Studio
 
@@ -27,14 +27,14 @@ Możesz ocenić programu Visual Studio bezpłatnie do 30 dni. Logując się do I
 
 ## <a name="to-unlock-visual-studio-using-an-online-subscription"></a>Aby odblokować program Visual Studio przy użyciu subskrypcją w trybie online
 
-Aby odblokować programu Visual Studio przy użyciu subskrypcji programu Visual Studio lub organizacji usługom DevOps platformy Azure skojarzone z kontem Microsoft lub konta służbowego:
+Odblokować program Visual Studio przy użyciu subskrypcji programu Visual Studio lub organizacja DevOps platformy Azure skojarzone z kontem Microsoft lub konta służbowego lub szkolnego:
 
 1. Kliknij **Zaloguj** przycisk w prawym górnym rogu środowiska IDE (lub przejdź do **pliku** > **ustawienia konta** otworzyć **ustawienia konta**  okno dialogowe i kliknij pozycję **Zaloguj** przycisk).
 
-1. Wprowadź poświadczenia dla konta Microsoft lub konta służbowego lub szkolnego. Program Visual Studio znajdzie subskrypcji programu Visual Studio lub organizację usługom DevOps platformy Azure skojarzony z Twoim kontem.
+1. Wprowadź poświadczenia dla konta Microsoft lub konta służbowego lub szkolnego. Program Visual Studio znajdzie subskrypcji programu Visual Studio lub organizację DevOps platformy Azure skojarzony z Twoim kontem.
 
 > [!IMPORTANT]
-> Program Visual Studio automatycznie wyszuka skojarzone subskrypcje w trybie online podczas łączenia z organizacji usługom DevOps platformy Azure z **Team Explorer** okna narzędzi. Po nawiązaniu połączenia z organizacją usługi DevOps platformy Azure, możesz zalogować się przy użyciu Microsoft i jej pracy lub kont służbowych. Jeśli istnieje subskrypcją w trybie online dla tego konta użytkownika, Visual Studio automatycznie odblokować środowisko IDE dla Ciebie.
+> Program Visual Studio automatycznie wyszuka skojarzone subskrypcje w trybie online podczas łączenia z organizacji DevOps platformy Azure z **Team Explorer** okna narzędzi. Po nawiązaniu połączenia z organizacją DevOps platformy Azure, możesz zalogować się przy użyciu Microsoft i jej pracy lub kont służbowych. Jeśli istnieje subskrypcją w trybie online dla tego konta użytkownika, Visual Studio automatycznie odblokować środowisko IDE dla Ciebie.
 
 ## <a name="to-unlock-visual-studio-with-a-product-key"></a>Aby odblokować program Visual Studio za pomocą klucza produktu
 

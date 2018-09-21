@@ -10,28 +10,28 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a75dfc04bd5ce3b1e61cc2c8e8fe293c13560cf9
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 0a622fcb91ad40e7d0777f37ce87e9a2cb950695
+ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31479679"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46542406"
 ---
 # <a name="historical-debugging"></a>Debugowanie historyczne
-Debugowanie historyczne jest tryb debugowania, która zależy od informacji zbieranych przez IntelliTrace. Umożliwia przechodzenie do tyłu i do przodu do wykonywania aplikacji i sprawdź jej stan.  
+Debugowanie historyczne jest tryb debugowania, która jest zależna od informacji zbieranych przez IntelliTrace. Umożliwia on przenoszenie do tyłu i do przodu przez wykonanie aplikacji i sprawdzić jego stan.  
   
- Można użyć funkcji IntelliTrace w Visual Studio Enterprise edition (ale nie wersji Professional lub społeczności).  
+ Za pomocą funkcji IntelliTrace w programie Visual Studio Enterprise (ale nie w wersjach Professional lub Community).  
   
 ## <a name="why-use-historical-debugging"></a>Dlaczego warto używać debugowania historycznego?  
- Ustawianie punktów przerwania, aby znaleźć błędy może być raczej hit-or-miss affair. Ustaw punkt przerwania zbliża się miejsce w kodzie gdzie podejrzewasz usterki by można następnie uruchom aplikację w debugera i nadzieję, który punkt przerwania pobiera trafień i że miejsce, w którym przerywa wykonywanie może ujawnić źródło błędu. W przeciwnym razie trzeba będzie spróbuj ustawić punkt przerwania gdzieś w kodzie i ponownie uruchom debuger samodzielnego wykonywania kroków testu do momentu znalezienia problemu.  
+ Ustawianie punktów przerwania, aby znaleźć błędy mogą być raczej hit-or-miss affair. Możesz ustawić punkt przerwania w pobliżu miejsca w kodzie gdzie podejrzenie błędu można, a następnie uruchom aplikację w debugera i mamy nadzieję, że odsyłania punkt przerwania, naciśnij klawisz i że to miejsce, gdzie przerywa wykonywanie może ujawnić źródła błędu. W przeciwnym razie trzeba będzie spróbować ustawić punkt przerwania w innym miejscu w kodzie i ponownie uruchom debuger, wykonywanie do kroków testu wiele razy, aż znajdziesz problem.  
   
- ![ustawienia punktu przerwania](../debugger/media/breakpointprocesa.png "BreakpointProcesa")  
+ ![ustawienie punktu przerwania](../debugger/media/breakpointprocesa.png "BreakpointProcesa")  
   
- Można użyć funkcji IntelliTrace i debugowanie historyczne są przekazywane wokół w aplikacji i sprawdź jej stan (stosu wywołań i zmiennych lokalnych) bez konieczności Ustaw punkty przerwania, uruchom ponownie debugowanie i powtórz kroki testu. To może zaoszczędzić dużo czasu, szczególnie gdy usterki znajduje się w scenariuszu testu, który zajmuje dużo czasu na wykonanie.  
+ Możesz użyć IntelliTrace i debugowanie historyczne są przenoszone wokół w aplikacji i sprawdzić jego stan (stos wywołań i zmienne lokalne) bez konieczności ustawiania punktów przerwania, uruchom ponownie debugowanie i powtórz kroki testu. To może zaoszczędzić dużo czasu, szczególnie gdy usterka znajduje się w scenariuszu testu, który zajmuje dużo czasu, aby wykonać.  
   
-## <a name="how-do-i-start-using-historical-debugging"></a>Jak rozpocząć debugowania historycznego?  
- Funkcja IntelliTrace jest domyślnie włączone. Wystarczy, że będzie zdecydować, które zdarzenia i wywołania funkcji są przydatne, i określa, czy chcesz wyświetlić migawki z pełnym stanem aplikacji. Aby uzyskać więcej informacji na temat definiowania mają być wyszukiwane, zobacz [funkcji IntelliTrace](../debugger/intellitrace-features.md).  
+## <a name="how-do-i-start-using-historical-debugging"></a>Jak uruchomić debugowania historycznego  
+ Funkcja IntelliTrace jest domyślnie włączone. To wszystko, co należy zrobić, zdecyduj, które zdarzenia i wywołania funkcji są przydatne, czy chcesz wyświetlić migawki z pełnym stanem aplikacji. Aby uzyskać więcej informacji na temat definiowania mają być wyszukiwane, zobacz [funkcji IntelliTrace](../debugger/intellitrace-features.md).  
 
- - Aby wyświetlić migawki z debugowania historycznego, zobacz [wyświetlić migawki za pomocą kroku zwrotnego IntelliTrace](../debugger/how-to-use-intellitrace-step-back.md)
- - Aby dowiedzieć się, jak sprawdzić zmienne i przejdź do kodu, zobacz [kontroli aplikacji za pomocą debugowania historycznego](../debugger/historical-debugging-inspect-app.md)
- - Aby dowiedzieć się więcej na temat debugowania za pomocą zdarzeń funkcji IntelliTrace, zobacz [wskazówki: przy użyciu funkcji IntelliTrace](../debugger/walkthrough-using-intellitrace.md).
+ - Aby wyświetlić migawki za pomocą debugowania historycznego, zobacz [Sprawdź poprzednie Stany aplikacji za pomocą funkcji IntelliTrace](../debugger/view-historical-application-state.md)
+ - Aby dowiedzieć się, jak sprawdzanie zmiennych i przechodzenie do kodu, zobacz [sprawdzanie aplikacji za pomocą debugowania historycznego](../debugger/historical-debugging-inspect-app.md)
+ - Aby dowiedzieć się więcej na temat debugowania z uwzględnieniem zdarzeń IntelliTrace, zobacz [Instruktaż: przy użyciu funkcji IntelliTrace](../debugger/walkthrough-using-intellitrace.md).

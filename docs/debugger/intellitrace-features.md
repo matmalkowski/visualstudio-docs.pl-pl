@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ba3225d793baed9325612ad5b88bd55d629c44f
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 59ff5fa898aa808c99dd5f52df1605336edd1694
+ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495729"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46542471"
 ---
 # <a name="intellitrace-features"></a>Funkcje IntelliTrace
 
@@ -50,7 +50,7 @@ Jeśli debugujesz, Zatrzymaj debugowanie. Przejdź do **Narzędzia > Opcje > Int
 
 ## <a name="Snapshots"></a> Zbieraj migawki
 
-To nie jest domyślnie włączone, ale IntelliTrace można przechwycić migawek aplikacji na każde zdarzenie punktu przerwania i debuger krok, a migawek można wyświetlić w historyczna sesja debugowania. Migawki zapewnia wgląd w swoje pełnym stanem aplikacji. Aby włączyć przechwytywania migawek, przejdź do **Narzędzia > Opcje > IntelliTrace > Ogólne**i wybierz **migawki IntelliTrace (zarządzany i natywny)**. Aby uzyskać więcej informacji, zobacz [wyświetlanie migawki za pomocą funkcji IntelliTrace krok do tyłu](../debugger/how-to-use-intellitrace-step-back.md)
+To nie jest domyślnie włączone, ale IntelliTrace można przechwycić migawek aplikacji na każde zdarzenie punktu przerwania i debuger krok, a migawek można wyświetlić w historyczna sesja debugowania. Migawki zapewnia wgląd w swoje pełnym stanem aplikacji. Aby włączyć przechwytywania migawek, przejdź do **Narzędzia > Opcje > IntelliTrace > Ogólne**i wybierz **migawki IntelliTrace (zarządzany i natywny)**. Aby uzyskać więcej informacji, zobacz [Sprawdź poprzednie Stany aplikacji za pomocą funkcji IntelliTrace](../debugger/view-historical-application-state.md)
 
 Migawki są dostępne w usłudze Visual Studio Enterprise 2017, wersja 15.5 lub nowszej i wymaga Rocznicowej aktualizacji systemu Windows 10 lub nowszej.  W przypadku aplikacji .NET Core i ASP.NET Core Visual Studio Enterprise 2017 wersji 15.7 jest wymagana. W przypadku aplikacji natywnych dla Windows, Visual Studio Enterprise 2017 w wersji 15.9 2 (wersja zapoznawcza) jest wymagana.
 

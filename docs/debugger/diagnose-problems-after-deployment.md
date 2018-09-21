@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 886ad4b022f69034bae0e6188274676522488d8b
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: cd3313957ae1cccbd3f56b1fafacfed58570531f
+ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320738"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46542510"
 ---
-# <a name="diagnose-problems-after-deployment"></a>Diagnozowanie problemów po wdrożeniu
+# <a name="diagnose-problems-after-deployment-using-intellitrace"></a>Diagnozowanie problemów po wdrożeniu za pomocą funkcji IntelliTrace
 
 Aby zdiagnozować problemy w aplikacji internetowej ASP.NET po wdrożeniu przy użyciu funkcji IntelliTrace, obejmują informacje o kompilacji za pomocą swojej wersji, aby umożliwić programowi Visual Studio automatycznie znaleźć poprawnych plików źródłowych i plików symboli, które są wymagane do debugowania w dzienniku IntelliTrace.
 
@@ -27,48 +27,27 @@ Aby zdiagnozować problemy w aplikacji internetowej ASP.NET po wdrożeniu przy u
 
  **Będą potrzebne:**
 
--   Visual Studio 2017, Visual Studio 2015 lub Team Foundation Server 2017, 2015, 2013, 2012 lub 2010 do konfigurowania kompilacji
+-   Visual Studio, DevOps platformy Azure lub serwera Team Foundation Server 2017, 2015, 2013, 2012 lub 2010 do konfigurowania kompilacji
 
 -   Program Microsoft Monitoring Agent monitorowania aplikacji i rejestrowanie danych diagnostycznych
 
 -   Programu Visual Studio Enterprise (ale nie w wersji Professional lub Community), aby przejrzeć dane diagnostyczne i Debuguj kod przy użyciu funkcji IntelliTrace
 
 ##  <a name="SetUpBuild"></a> Krok 1: Obejmują informacji o Twojej wersji z kompilacji
- Konfigurowanie procesu kompilacji, aby utworzyć manifest kompilacji (plik BuildInfo.config) dla projektu sieci web i obejmują tę manifestu z danej wersji. Ten manifest zawiera informacje dotyczące projektu kontroli źródła i systemu kompilacji, które zostały użyte do utworzenia konkretnej kompilacji. Informacje te pomagają znaleźć pasującego źródła i symboli, po otwarciu dziennika IntelliTrace, aby przejrzeć zarejestrowane zdarzenia z programu Visual Studio.
+ Skonfiguruj proces kompilacji, aby utworzyć manifest kompilacji (*BuildInfo.config* pliku) dla sieci web projektu i obejmują tę manifestu z danej wersji. Ten manifest zawiera informacje dotyczące projektu kontroli źródła i systemu kompilacji, które zostały użyte do utworzenia konkretnej kompilacji. Informacje te pomagają znaleźć pasującego źródła i symboli, po otwarciu dziennika IntelliTrace, aby przejrzeć zarejestrowane zdarzenia z programu Visual Studio.
 
 ###  <a name="AutomatedBuild"></a> Tworzenie manifestu kompilacji dla zautomatyzowanych kompilacji przy użyciu serwera Team Foundation Server
 
  Wykonaj następujące kroki, czy używać kontroli wersji serwera Team Foundation lub Git.
 
- ####  <a name="TFS2017"></a> Team Foundation Server 2017
+####  <a name="TFS2017"></a> Usługa Azure DevOps i Team Foundation Server 2017
 
- Skonfiguruj potok kompilacji, aby dodać lokalizacje źródła, kompilacji i symboli do manifestu kompilacji (BuildInfo.config pliku). Team Foundation Build automatycznie tworzy ten plik i umieszcza go w folderze danych wyjściowych projektu.
+Program Visual Studio 2017 nie obejmuje *BuildInfo.config* pliku, która została zastąpiona, a następnie usuwane. Aby debugować aplikacje sieci web ASP.NET po wdrożeniu, należy użyć jednej z następujących metod:
 
-1.  Jeśli masz już potoku kompilacji przy użyciu szablonu platformy ASP.NET Core (.NET Framework), można kliknąć przycisk [edytować swój potok kompilacji lub utworzyć nowy potok kompilacji.](/azure/devops/pipelines/get-started-designer?view=vsts)
+* W przypadku wdrożenia na platformie Azure, użyj [usługi Application Insights](https://docs.microsoft.com/en-us/azure/application-insights/).
 
-     ![Wyświetl tworzenie potoku w serwerze TFS 2017](../debugger/media/ffr_tfs2017viewbuilddefinition.png "FFR_TFS2013ViewBuildDefinition")
+* Jeśli musisz używać IntelliTrace, otwórz projekt w programie Visual Studio i ładowanie plików symboli z pasujących kompilacji. Możesz załadować pliki symboli z **modułów** okna lub przez skonfigurowanie symboli w **narzędzia** > **opcje** > **debugowania**   >  **Symbole**.
 
-2.  Jeśli utworzysz nowy szablon, wybierz szablon platformy ASP.NET Core (.NET Framework).
-
-     ![Wybierz szablon procesu kompilacji &#45; serwera TFS 2017](../debugger/media/ffr_tfs2017buildprocesstemplate.png "FFR_TFS2013BuildProcessTemplate")
-
-3.  Określ miejsce zapisania pliku symboli (PDB), tak, aby Twoje źródło było indeksowane automatycznie.
-
-     Jeśli używasz szablonu niestandardowego, upewnij się, że szablon ma działanie do indeksowania źródła. Należy później dodać argument programu MSBuild, aby określić, gdzie chcesz zapisać pliki symboli.
-
-     ![Ustawianie ścieżki symboli w potoku kompilacji serwera TFS 2017](../debugger/media/ffr_tfs2017builddefsymbolspath.png "FFR_TFS2013BuildDefSymbolsPath")
-
-     Aby uzyskać więcej informacji o symbolach, zobacz [opublikować dane symboliczne](/azure/devops/pipelines/tasks/build/index-sources-publish-symbols?view=vsts).
-
-4.  Dodaj ten argument MSBuild, aby uwzględnić swoje lokalizacje TFS i symboli w pliku manifestu kompilacji:
-
-     **/p:IncludeServerNameInBuildInfo = true**
-
-     Każdy, kto może uzyskiwać dostęp do serwera sieci web może zobaczyć te lokalizacje w manifeście kompilacji. Upewnij się, że serwer źródłowy jest bezpieczny.
-
-6.  Uruchom nową kompilację.
-
-    Przejdź do [krok 2: Tworzenie wersji aplikacji](#DeployRelease)
 
 ####  <a name="TFS2013"></a> Team Foundation Server 2013
  Skonfiguruj potok kompilacji, aby dodać lokalizacje źródła, kompilacji i symboli do manifestu kompilacji (BuildInfo.config pliku). Team Foundation Build automatycznie tworzy ten plik i umieszcza go w folderze danych wyjściowych projektu.

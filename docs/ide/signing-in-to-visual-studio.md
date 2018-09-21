@@ -11,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 681d687432cdfc6c3e5cf4d4d549b2148c2eeff3
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 67207d653d7300ecc5d0a7ae7a85ddea1bc0d7e9
+ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44284188"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46542497"
 ---
 # <a name="sign-in-to-visual-studio"></a>Logowanie do programu Visual Studio
 
@@ -36,7 +36,7 @@ Poniżej przedstawiono pełną listę można oczekiwać, i co można zrobić, po
 
 - **Przedłużenie okresu próbnego programu Visual Studio** — można użyć programu Visual Studio Professional lub Visual Studio Enterprise, które znajdują się dodatkowe 90 dni, a nie być ograniczonym do okresu próbnego 30 dni.
 
-- **Odblokować program Visual Studio, jeśli używasz konta, która jest skojarzona z subskrypcji programu Visual Studio lub organizację usługom DevOps platformy Azure**. Zobacz [jak odblokować program Visual Studio](../ide/how-to-unlock-visual-studio.md).
+- **Odblokować program Visual Studio, jeśli używasz konta, która jest skojarzona z subskrypcji programu Visual Studio lub organizację DevOps platformy Azure**. Zobacz [jak odblokować program Visual Studio](../ide/how-to-unlock-visual-studio.md).
 
 - **Automatyczne łączenie się z usługami takimi jak Azure i usługom DevOps platformy Azure** w środowisku IDE bez monitowania użytkownika o podanie poświadczeń dla tego samego konta ponownie.
 

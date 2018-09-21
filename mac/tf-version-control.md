@@ -7,14 +7,14 @@ ms.date: 09/05/2018
 ms.topic: article
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
-ms.openlocfilehash: b8d5f8f39b524bbde9e6988a924cf3b938fedb23
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 5a1d7fb7519e9402e2fa780e978fc1176702b26d
+ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279845"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46542443"
 ---
-# <a name="connecting-to-team-foundation-version-control"></a>Nawiązywanie połączenia z Team Foundation Version Control 
+# <a name="connecting-to-team-foundation-version-control"></a>Nawiązywanie połączenia z Team Foundation Version Control
 
 > [!NOTE]
 > **Uwaga**: Obsługa kontroli wersji serwera Team Foundation jest obecnie w wersji zapoznawczej, a niektóre funkcje nie jeszcze w pełni działa. Chętnie poznamy opinii od Ciebie na wszelkie problemy w [społeczności deweloperów](https://developercommunity.visualstudio.com/spaces/41/index.html). Zmiany są nadal pochodzić!
@@ -31,7 +31,7 @@ Repozytoriów platformy Azure oferuje dwa modele kontroli wersji: Git, która je
 
 W programie Visual Studio dla komputerów Mac, wybierz **programu Visual Studio > rozszerzenia...**  z menu. W **galerii** zaznacz **kontroli wersji > kontroli wersji Team Foundation dla TFS i usługą VSTS** i kliknij przycisk **instalacji...** :
 
-  ![Menedżer rozszerzeń](media/tfvc-install.png) 
+  ![Menedżer rozszerzeń](media/tfvc-install.png)
 
 Postępuj zgodnie z monitami, aby zainstalować rozszerzenie. Po zainstalowaniu, należy ponownie uruchomić środowisko IDE.
 
@@ -39,7 +39,7 @@ Postępuj zgodnie z monitami, aby zainstalować rozszerzenie. Po zainstalowaniu,
 
 Okresowo są wprowadzone aktualizacje z rozszerzeniem TFVC. Dostęp do aktualizacji, wybierz **programu Visual Studio > rozszerzenia...**  z menu i wybierzesz **aktualizacje** kartę. Zaznacz rozszerzenie na liście i naciśnij klawisz **aktualizacji** przycisku:
 
-  ![Aktualizacja przedstawiający Menedżer rozszerzenia](media/tfvc-update.png) 
+  ![Aktualizacja przedstawiający Menedżer rozszerzenia](media/tfvc-update.png)
 
 Naciśnij klawisz **zainstalować** w następnym oknie dialogowym odinstalowanie starego pakietu i instalacja nowego.
 
@@ -63,7 +63,7 @@ Po wybraniu projektu, który znajduje się na repozytoriów platformy Azure, mon
 
 ### <a name="tfs-authentication"></a>Uwierzytelnianie serwera TFS
 
-Aby połączyć z TFS, wprowadź szczegóły serwera i poświadczenia konta. Wprowadź domenę do użycia uwierzytelniania NTLM, w przeciwnym razie pozostaw puste, aby użyć uwierzytelniania podstawowego. Wybierz **Dodaj serwer**: 
+Aby połączyć z TFS, wprowadź szczegóły serwera i poświadczenia konta. Wprowadź domenę do użycia uwierzytelniania NTLM, w przeciwnym razie pozostaw puste, aby użyć uwierzytelniania podstawowego. Wybierz **Dodaj serwer**:
 
 ![Zaloguj się do serwera TFS](media/tfvc-login.png)
 
@@ -75,7 +75,7 @@ Po użytkownik został pomyślnie uwierzytelniony, można wyświetlić listę re
 
 To okno dialogowe jest zorganizowana przy użyciu następujących węzłów:
 
-- Usługa Azure DevOps usług organizacji lub kolekcji — zostaną wyświetlone wszystkie organizacje podłączone do konta Microsoft, którego zalogowano się przy użyciu.
+- Usługa Azure DevOps organizacji lub kolekcji — zostaną wyświetlone wszystkie organizacje podłączone do konta Microsoft, którego zalogowano się przy użyciu.
 - Projekty — w każdej organizacji lub kolekcji, może mieć wiele projektów. Projekt jest, gdzie hostowana kod źródłowy, elementy robocze i automatyczne kompilacje.
 
 W tym momencie wyszukiwanie i filtrowanie według nazwy projektu lub organizacji.
@@ -124,24 +124,24 @@ Wiele z tych działań są dostępne za pośrednictwem kontekst akcji dla projek
 
 Jeśli nie utworzono jeszcze obszaru roboczego, zgodnie z opisem w [tworzenia obszaru roboczego](#creating-a-new-workspace) sekcji, można zauważyć, że Eksplorator kodu źródłowego jest puste:
 
-![Źródło pusty Eksplorator kodu](media/tfvc-setup-empty-sce.png) 
+![Źródło pusty Eksplorator kodu](media/tfvc-setup-empty-sce.png)
 
 Aby skonfigurować zdalne projektu za pomocą lokalnego obszaru roboczego, użyj następujących kroków:
 
 1. Wybierz **serwera** z pola kombi.
 1. Należy pamiętać, że nie ma "żadnych obszarów roboczych" i że ścieżka lokalna jest "Niezamapowany". Wybierz **niezamapowane** łącze, aby wyświetlić **Utwórz nowy obszar roboczy** okna dialogowego.
 1. Podaj nazwę obszaru roboczego, a następnie kliknij przycisk **Dodaj Folder pracy** do mapowania projektu do folderu lokalnego na komputerze:
-    
-    ![Utwórz nowe okno dialogowe obszaru roboczego przedstawiający opcje domyślne](media/tfvc-workspace1.png) 
+
+    ![Utwórz nowe okno dialogowe obszaru roboczego przedstawiający opcje domyślne](media/tfvc-workspace1.png)
 
 1. Wybierz folder "$", aby mapować wszystkie projekty na serwerze do tego samego obszaru roboczego, lub wybierz pojedynczego projektu, a następnie kliknij przycisk **OK**:
-    
-    ![Przeglądaj w poszukiwaniu folderu okno dialogowe wyświetloną wszystkie projekty](media/tfvc-workspace2.png) 
+
+    ![Przeglądaj w poszukiwaniu folderu okno dialogowe wyświetloną wszystkie projekty](media/tfvc-workspace2.png)
 
 1. Wybierz lokalizację na lokalnym komputerze, którą chcesz zamapować te projekty do, a następnie kliknij przycisk **wybierz Folder**.
 1. Potwierdź szczegóły nowego obszaru roboczego, naciskając klawisz **OK**
-    
-    ![Tworzenie okna dialogowego Nowy obszar roboczy za pomocą folderu roboczego dodano](media/tfvc-workspace3.png) 
+
+    ![Tworzenie okna dialogowego Nowy obszar roboczy za pomocą folderu roboczego dodano](media/tfvc-workspace3.png)
 
 Po skonfigurowaniu obszaru roboczego może można zmienić ani usunąć, klikając **zarządzanie obszarami roboczymi** przycisku w Eksploratorze kodu źródłowego.
 
@@ -159,14 +159,15 @@ Następujące opcje może służyć do uwierzytelniania z serwerem:
 
 Do korzystania z uwierzytelniania podstawowego jest niezbędne do włączenia **uwierzytelniania alternatywnych poświadczeń** w usługom DevOps platformy Azure, wykonując poniższe kroki:
 
-1. Zaloguj się do Twojej organizacji usługom DevOps platformy Azure jako właściciel (https://dev.azure.com/{organization}/{project}).
+1. Zaloguj się do Twojej organizacji DevOps platformy Azure jako właściciel (https://dev.azure.com/{organization}/{project}).
+
 2. Z organizacji paska narzędzi, wybierz ikonę koła zębatego, a następnie wybierz pozycję **zasad**:
-    
-    ![Wybrana opcja ustawień zasad](media/tfvc-auth2.png) 
+
+    ![Wybrana opcja ustawień zasad](media/tfvc-auth2.png)
 
 3. Sprawdź ustawienia połączenia aplikacji. Zmień te ustawienia, w oparciu o zasady zabezpieczeń:
-    
-    ![Wybrana opcja ustawień zasad](media/tfvc-auth.png)  
+
+    ![Wybrana opcja ustawień zasad](media/tfvc-auth.png)
 
 ### <a name="i-do-not-see-anything-in-tfvc"></a>Nie znajdziesz już niczego w TFVC
 

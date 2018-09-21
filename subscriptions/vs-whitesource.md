@@ -9,12 +9,12 @@ description: Dowiedz się, jak aktywować subskrypcję WhiteSource Bolt zawartyc
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 765b96955b27b83acd0c0674eed6a40f8d153ee1
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: a7c384a8bc4b84aea4982bd195b0d92820c68ecb
+ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279170"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46542354"
 ---
 #  <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>Użyj narzędzia WhiteSource Bolt w subskrypcji programu Visual Studio
 
@@ -45,7 +45,7 @@ Znajdowanie i eliminowanie luk w zabezpieczeniach typu open source oraz generowa
     > [!div class="mx-imgBorder"]
     > ![WhiteSource korzyści instalowanie rozszerzeń](_img\vs-whitesource\vs-whitesource-download-install.png)
 
-    - Następnie wybierz organizację usługom DevOps platformy Azure, które chcesz użyć, a następnie kliknij przycisk **Potwierdź**.  (Jeśli usługom DevOps platformy Azure nie mają jeszcze skonfigurowany, odwiedź stronę [korzyści](https://my.visualstudio.com/benefits) strony i aktywować swoje korzyści usługom DevOps platformy Azure.)
+    - Następnie wybierz organizację DevOps platformy Azure, które chcesz użyć, a następnie kliknij przycisk **Potwierdź**.  (Jeśli usługom DevOps platformy Azure nie mają jeszcze skonfigurowany, odwiedź stronę [korzyści](https://my.visualstudio.com/benefits) strony i aktywować swoje korzyści usługom DevOps platformy Azure.)
 
     > [!div class="mx-imgBorder"]
     > ![WhiteSource korzyści Potwierdź konto](_img\vs-whitesource\vs-whitesource-confirm-account.png)
@@ -54,7 +54,7 @@ Znajdowanie i eliminowanie luk w zabezpieczeniach typu open source oraz generowa
     > [!div class="mx-imgBorder"]
     > ![Ukończono instalację WhiteSource korzyści](_img\vs-whitesource\vs-whitesource-install-complete.png)
 
-5.  Otwórz pulpit nawigacyjny projektu usługom DevOps platformy Azure, kliknij pozycję **potoki Azure** menu i wybierz polecenie **WhiteSource Bolt**.
+5.  Otwórz pulpit nawigacyjny projektu DevOps platformy Azure, kliknij pozycję **potoki Azure** menu i wybierz polecenie **WhiteSource Bolt**.
     > [!div class="mx-imgBorder"]
     > ![WhiteSource korzyści Dodaj rozszerzenie](_img\vs-whitesource\vs-whitesource-installed-cropped.png)
 
