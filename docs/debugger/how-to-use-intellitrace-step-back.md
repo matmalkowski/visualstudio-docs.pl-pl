@@ -1,8 +1,8 @@
 ---
-title: Wyświetl migawkę przy użyciu zwrotnego krok IntelliTrace
+title: Wyświetlanie migawki za pomocą funkcji IntelliTrace krok do tyłu
 ms.description: Learn how to take snapshots, and view snapshots with IntelliTrace step-back
 ms.custom: mvc
-ms.date: 05/01/2018
+ms.date: 09/19/2018
 ms.technology: vs-ide-debug
 ms.topic: tutorial
 ms.assetid: 7c60d929-d993-49dc-9db3-43b30be9912b
@@ -11,121 +11,123 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 68fec4e10d172f79908e57828c542a444d081b50
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: a0422237855a4332761eb50761e88df26ba639b2
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33881227"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495764"
 ---
-# <a name="view-snapshots-using-intellitrace-step-back-in-visual-studio"></a>Zwroty kroku migawki widoku przy użyciu funkcji IntelliTrace w programie Visual Studio
+# <a name="view-snapshots-using-intellitrace-step-back-in-visual-studio"></a>Wyświetlanie migawki za pomocą funkcji IntelliTrace krok do tyłu w programie Visual Studio
 
-Krok zwrotnego IntelliTrace automatycznie tworzy migawkę aplikacji na każdym punkcie przerwania i debuger krok zdarzenia. Zarejestrowane migawki umożliwiają wróć na poprzednich punktów przerwania lub kroków i wyświetlić stan aplikacji, ponieważ był w przeszłości. IntelliTrace krok wstecz może zaoszczędzić czas podczas chcesz zobacz poprzedni stan aplikacji, ale nie chcesz uruchomić ponownie debugowania lub Utwórz ponownie stan żądanej aplikacji.
+Krok do tyłu IntelliTrace umożliwia automatyczne utworzenie migawki aplikacji na każdym punkcie przerwania i debuger krok zdarzenia. Zarejestrowane migawek umożliwiają wrócić do poprzednich punktów przerwania lub kroków i wyświetlić stan aplikacji, tak jak w przeszłości. IntelliTrace krok do tyłu pozwalają zaoszczędzić czas podczas mają być wyświetlane poprzedni stan aplikacji, ale nie chcesz ponownie uruchomić debugowanie lub Utwórz ponownie stan żądaną aplikację.
 
-Krok IntelliTrace zwrotnego jest dostępna, począwszy od programu Visual Studio Enterprise 2017 wersji 15.5 lub nowszej, a wymaga systemu Windows 10 Anniversary aktualizacji lub nowszej. Funkcja jest obecnie obsługiwane dla debugowania ASP.NET, WinForms WPF, konsoli zarządzanych aplikacji i bibliotek klas zarządzanych. Począwszy od programu Visual Studio Enterprise 2017 wersji 15.7 preview 1, funkcja również jest obsługiwana dla platformy .NET Core i ASP.NET Core. Debugowanie aplikacji platformy uniwersalnej systemu Windows nie jest obecnie obsługiwane.
+Krok do tyłu IntelliTrace jest dostępna, począwszy od programu Visual Studio Enterprise 2017 w wersji 15.5 lub nowszej i wymaga Rocznicowej aktualizacji systemu Windows 10 lub nowszej. Ta funkcja jest obecnie obsługiwane dla debugowania ASP.NET, WinForms, WPF, aplikacji w zarządzanej konsoli i bibliotek klas zarządzanych. Począwszy od programu Visual Studio Enterprise 2017 wersji 15.7, funkcja również jest obsługiwana dla platformy ASP.NET Core i .NET Core. Począwszy od Visual Studio Enterprise 2017 w wersji 15.9 2 (wersja zapoznawcza), ta funkcja jest również obsługiwana dla natywnych aplikacji przeznaczonych dla Windows. Debugowanie aplikacji platformy uniwersalnej systemu Windows nie jest obecnie obsługiwane.
 
-W tym samouczku obejmują:
+W tym samouczku wykonasz następujące czynności:
 
 > [!div class="checklist"]
 > * Włącz migawki i zdarzenia funkcji Intellitrace
-> * Przejdź zdarzenia przy użyciu polecenia krok wstecz i następny krok
+> * Przejdź do zdarzenia przy użyciu poleceń krok do tyłu i do przodu kroku
 > * Wyświetl zdarzenia migawki
   
-## <a name="enable-intellitrace-events-and-snapshots-mode"></a>Włącz tryb migawki i zdarzenia funkcji IntelliTrace 
+## <a name="enable-intellitrace-events-and-snapshots-mode"></a>Włącz tryb zdarzenia i migawki funkcji IntelliTrace 
 
-1. Otwórz projekt w programie Visual Studio Enterprise.
+1. Otwórz swój projekt w programie Visual Studio Enterprise.
 
-1. Otwórz **narzędzia** > **opcje** > **IntelliTrace** ustawienia, a następnie wybierz opcję **IntelliTrace zdarzeń i migawki** . 
+1. Otwórz **narzędzia** > **opcje** > **IntelliTrace** ustawienia i wybierz opcję **IntelliTrace zdarzenia i migawki** . 
 
-    ![Włącz tryb zdarzeń funkcji IntelliTrace i migawki](../debugger/media/intellitrace-enable-snapshots.png "tryb migawki i włączyć zdarzeń funkcji IntelliTrace")
+    Począwszy od Visual Studio Enterprise 2017 w wersji 15.9 2 (wersja zapoznawcza), ta opcja jest **migawki IntelliTrace (zarządzany i natywny)**. 
 
-1. Jeśli chcesz skonfigurować opcje wyświetlania migawek na wyjątki, wybierz **IntelliTrace** > **zaawansowane** z **opcje** okno dialogowe.
+    ![Włącz tryb migawki i zdarzenia IntelliTrace](../debugger/media/intellitrace-enable-snapshots.png "migawki i zdarzenia IntelliTrace włączyć tryb")
 
-    Te opcje są dostępne w programie Visual Studio Enterprise 2017 wersji 15.7.
+1. Aby skonfigurować opcje przeglądania migawek przy wyjątkach, należy wybrać **IntelliTrace** > **zaawansowane** z **opcje** okno dialogowe.
 
-    ![Skonfiguruj zachowanie dla migawki na wyjątki](../debugger/media/intellitrace-enable-snapshots-on-exceptions.png)
+    Te opcje są dostępne, począwszy od programu Visual Studio Enterprise 2017 wersji 15.7.
 
-    Po włączeniu zdarzeń i migawki, tworzenie migawek na wyjątki jest również domyślnie włączone. Możesz wyłączyć migawek na wyjątki przez wyłączenie **zbierane migawki na zdarzeń wyjątków**. Gdy ta funkcja jest włączona, migawek są wykonywane dla nieobsługiwanych wyjątków. Dla wyjątków obsłużonych migawki są wykonywane tylko wtedy, gdy wyjątku i jeśli nie jest ponownie zgłosić wyjątek zgłoszony wcześniej. Maksymalna liczba migawek na wyjątki można ustawić, wybierając wartość z listy rozwijanej. Maksymalna stosuje za każdym razem przez aplikację przejdzie w tryb przerwania (na przykład jeśli aplikacja trafienia punktu przerwania).
+    ![Skonfiguruj zachowanie dla migawek przy wyjątkach](../debugger/media/intellitrace-enable-snapshots-on-exceptions.png)
+
+    Po włączeniu zdarzenia i migawki, tworzenie migawek przy wyjątkach są również domyślnie włączone. Możesz wyłączyć migawki dla wyjątków, anulując **Zbieraj migawki dotyczące zdarzeń wyjątków**. Gdy ta funkcja jest włączona, tworzeniu migawek woluminów dla nieobsłużonych wyjątków. Obsługiwane wyjątki migawki są pobierane tylko wtedy, gdy wyjątek jest zgłaszany, a jeśli nie jest ponownie wygenerować wcześniej zgłoszony wyjątek. Maksymalna liczba migawek przy wyjątkach można ustawić, wybierając wartość z listy rozwijanej. Wartość maksymalna ma zastosowanie za każdym razem, że Twoja aplikacja przejdzie do trybu przerwania (np. gdy aplikacja trafienia punktu przerwania).
 
     > [!NOTE]
-    > Migawki są wykonywane tylko dla zdarzeń dotyczących wyjątków tego rekordów funkcji IntelliTrace. Jakie zdarzenia funkcji IntelliTrace rekordy można określić, wybierając **narzędzia** > **opcje** > **zdarzeń funkcji IntelliTrace**.
+    > Migawki są pobierane tylko dla zdarzeń dotyczących wyjątków przez IntelliTrace. Dla kodu zarządzanego, jakie zdarzenia funkcja IntelliTrace ma rejestrować można określić, wybierając **narzędzia** > **opcje** > **zdarzenia IntelliTrace**.
 
-1. W projekcie, ustawić co najmniej jednego punktu przerwania i Rozpocznij debugowanie (naciśnij klawisz **F5**), lub uruchomić debugowanie przy przechodzeniu przez kod (**F10** lub **F11**).
+1. W projekcie, ustaw co najmniej jednego punktu przerwania i Rozpocznij debugowanie (naciśnij klawisz **F5**), lub Rozpocznij debugowanie poprzez krokowe wykonywanie kodu (**F10** lub **F11**).
 
-    IntelliTrace tworzy migawkę proces aplikacji na każdym kroku debugera, zdarzenie punktu przerwania i zdarzeń nieobsługiwany wyjątek. Te zdarzenia są rejestrowane w **zdarzenia** karcie **narzędzia diagnostyczne** okna, oraz inne zdarzenia funkcji IntelliTrace. Aby otworzyć to okno, wybierz polecenie **debugowania** > **Windows** > **Pokaż narzędzia diagnostyczne**.
+    IntelliTrace tworzy migawkę proces aplikacji o każdym kroku debugera, zdarzenie punktu przerwania i zdarzeń nieobsługiwany wyjątek. Te zdarzenia są rejestrowane w **zdarzenia** karcie **narzędzia diagnostyczne** okna oraz inne zdarzenia IntelliTrace. Aby otworzyć to okno, wybierz **debugowania** > **Windows** > **Pokaż narzędzia diagnostyczne**.
 
-    Ikona aparatu obok zdarzeń, dla których są dostępne migawki. 
+    Ikona aparatu fotograficznego pojawia się obok zdarzenia, dla których są dostępne migawki. 
 
-    ![Karta zdarzeń z migawkami](../debugger/media/intellitrace-events-tab-with-snapshots.png "kartę zdarzenia z migawkami punktów przerwania i kroki")
+    ![Zdarzenia kartę z migawkami](../debugger/media/intellitrace-events-tab-with-snapshots.png "kartę zdarzenia przy użyciu migawek w punktach przerwania i kroki")
 
-    Ze względu na wydajność migawki nie są brane podczas wykonywania kroków bardzo szybko. Jeśli brak aparatu ikony obok kroku, spróbuj krokowe wykonywanie wolniej.
+    Ze względu na wydajność migawki nie są wykonywane, kiedy wkraczasz bardzo szybko. Jeśli nie ikonę kamery pojawi się obok kroku, spróbuj wolniej przechodzenie krok po kroku.
 
-## <a name="navigate-and-view-snapshots"></a>Nawigacja i wyświetlanie migawek
+## <a name="navigate-and-view-snapshots"></a>Nawigowanie i Wyświetl migawki
 
-1. Przechodzenie między zdarzeniami przy użyciu **krok z poprzednimi wersjami (Alt + [)** i **krok do przodu (Alt +])** przycisków na pasku narzędzi debugowania.
+1. Przejdź między zdarzeniami przy użyciu **krok do tyłu (Alt + [)** i **krok do przodu (Alt +])** przycisków na pasku narzędzi debugowania.
 
-    Tych przycisków nawigacji zdarzenia, które są widoczne w **zdarzenia** karcie **okno narzędzia diagnostyczne**. Wykonywanie krok po kroku do przodu lub do tyłu na zdarzenie automatycznie aktywuje [debugowania historycznego](../debugger/historical-debugging.md) na wybranego zdarzenia.
+    Te przyciski nawigacji zdarzenia, które pojawiają się w **zdarzenia** karcie **okno narzędzia diagnostyczne**. Przechodzenie krok po kroku do tyłu lub do przodu do zdarzenia automatycznie aktywuje [debugowania historycznego](../debugger/historical-debugging.md) na wybrane zdarzenie.
 
-    ![Krok wstecz i przekazywać je przycisków](../debugger/media/intellitrace-step-back-icons-description.png "krok do tyłu i do przodu krok przycisków")
+    ![Krok do tyłu przyciski i dalej](../debugger/media/intellitrace-step-back-icons-description.png "przyciski krok do tyłu i krok do przodu")
 
-    Gdy krok wstecz lub krok do przodu, Visual Studio wprowadza tryb debugowania historycznego. W tym trybie kontekstu debugera przełączników do momentu, gdy zarejestrowano wybranego zdarzenia. Visual Studio również przesunie wskaźnik do odpowiedniego wiersza kodu w oknie źródła. 
+    Gdy cofnijmy lub krok do przodu, Visual Studio przechodzi w tryb debugowania historycznego. W tym trybie kontekst debugera przełącza się do chwili, gdy wybrane zdarzenie została zarejestrowana. Program Visual Studio również przesuwa wskaźnik myszy do odpowiedniego wiersza kodu w oknie źródła. 
 
-    W tym widoku możesz sprawdzić wartości w **stos wywołań**, **zmiennych lokalnych**, **automatycznych**, i **czujki** systemu windows. Można również ustawić kursor nad zmienne do wyświetlania etykietek danych i wykonywania wyrażenia w **Immediate** okna. Dane, które pojawi się z migawki procesu aplikacji, w tym punkcie w czasie.
+    W tym widoku można sprawdzić wartości w **stos wywołań**, **lokalne**, **Autos**, i **Obejrzyj** systemu windows. Możesz również umieścić kursor zmienne, aby wyświetlać etykietek danych i wykonywać obliczenia wyrażenia w **bezpośrednie** okna. Dane, które zostanie wyświetlony jest z migawki proces aplikacji podjęte w danym momencie.
 
-    Tak, na przykład, jeżeli został trafiony punkt przerwania i podjąć krok (**F10**), **krok do tyłu** przycisk umieszcza Visual Studio w trybie historycznych w wierszu kodu odpowiadający punktu przerwania. 
+    Tak, na przykład, jeśli został trafiony punkt przerwania i podjęte krok (**F10**), **krok do tyłu** przycisk umieszcza programu Visual Studio w trybie historyczne, w wierszu kodu odpowiadający punkt przerwania. 
 
-    ![Tryb historycznych uaktywnianie na zdarzenie z migawki](../debugger/media/intellitrace-historical-mode-with-snapshot.png "tryb historycznych uaktywnianie na zdarzenie z migawki")
+    ![Uaktywnianie trybu historycznych na zdarzenia za pomocą migawki](../debugger/media/intellitrace-historical-mode-with-snapshot.png "uaktywnianie trybu historycznych na zdarzenia za pomocą migawki")
 
-2. Aby powrócić do wykonania na żywo, wybierz **Kontynuuj (F5)** lub kliknij przycisk **wrócić do debugowania na żywo** łącze w pasku informacyjnym. 
+2. Aby powrócić do wykonania na żywo, wybierz **Kontynuuj (F5)** lub kliknij przycisk **wrócić do debugowania na żywo** łączy na pasku informacyjnym. 
 
 3. Można również wyświetlić migawka **zdarzenia** kartę. Aby to zrobić, wybierz zdarzenie z migawki, a następnie kliknij przycisk **Uaktywnij debugowanie historyczne**.
 
-    ![Aktywuj debugowania historycznego na zdarzenie](../debugger/media/intellitrace-activate-historical-debugging.png "Uaktywnij debugowanie historyczne na zdarzenia")
+    ![Uaktywnij debugowanie historyczne na zdarzenie](../debugger/media/intellitrace-activate-historical-debugging.png "Uaktywnij debugowanie historyczne na zdarzenie")
 
-    W odróżnieniu od **ustawienia następnej instrukcji** polecenia Wyświetlanie migawki nie ponownie kodu; daje widok statyczny stan aplikacji w punkcie w czasie, który wystąpił w przeszłości.
+    W odróżnieniu od **Ustaw następną instrukcję** polecenia, wyświetlając migawki nie ponownie uruchomić kod; daje statyczne widok stanu aplikacji w punkcie w czasie, które miały miejsce w przeszłości.
 
-    ![Omówienie zwrotnego krok IntelliTrace](../debugger/media/intellitrace-step-back-overview.png "Omówienie programu IntelliTrace krok zwrotnego")
+    ![Omówienie funkcji IntelliTrace krok do tyłu](../debugger/media/intellitrace-step-back-overview.png "Omówienie programu IntelliTrace krok do tyłu")
 
-    Aby dowiedzieć się więcej na temat inspekcji zmienne w Visual Studio, zobacz [debugera samouczek funkcji](../debugger/debugger-feature-tour.md)  
+    Aby dowiedzieć się więcej o tym, jak można sprawdzić zmiennych w programie Visual Studio, zobacz [Przewodnik po funkcjach debugera](../debugger/debugger-feature-tour.md)  
 
 ## <a name="frequently-asked-questions"></a>Często zadawane pytania
 
-#### <a name="how-is-intellitrace-step-back-different-from-intellitrace-events-only-mode"></a>Jak krok zwrotnego IntelliTrace jest inny niż tryb tylko zdarzenia funkcji IntelliTrace?
+#### <a name="how-is-intellitrace-step-back-different-from-intellitrace-events-only-mode"></a>Czym różni się IntelliTrace krok do tyłu w trybie tylko zdarzenia funkcji IntelliTrace?
 
-IntelliTrace w trybie tylko do zdarzeń umożliwiają aktywowania debugowania historycznego kroki debugera i punktów przerwania. Jednak IntelliTrace przechwytuje tylko dane w **zmiennych lokalnych** i **automatycznych** systemu windows, jeśli systemu windows są otwarte, a następnie przechwytuje tylko dane, które jest rozwinięty i w widoku. W trybie tylko do zdarzeń często nie masz pełny widok zmiennych i obiektów złożonych. Ponadto wyrażenia obliczania i wyświetlania danych w **czujki** okno nie jest obsługiwane. 
+Funkcja IntelliTrace w trybie tylko do zdarzeń umożliwiają Uaktywnij debugowanie historyczne na debuger nie wchodzi i punktów przerwania. Jednak IntelliTrace przechwytuje tylko dane w **lokalne** i **Autos** systemu windows, jeśli okna są otwarte i przechwytuje tylko dane, które jest rozwinięty i w widoku. W trybie tylko do zdarzeń często nie masz pełny przegląd zmiennych i złożonych obiektów. Ponadto wyrażenie oceny i wyświetlanie danych w **Obejrzyj** okno nie jest obsługiwane. 
 
-W trybie zdarzeń i migawek IntelliTrace przechwytuje migawkę całego procesu aplikacji, w tym złożone obiekty. W wierszu kodu można zobaczyć te same informacje tak, jakby były zatrzymany w punkcie przerwania (i nie ma znaczenia, czy wcześniej powiększone informacje). Szacowanie wyrażeń jest również obsługiwany w przypadku wyświetlania migawki.  
+W trybie zdarzenia i migawki funkcji IntelliTrace przechwytuje migawkę całego procesu aplikacji, włącznie z obiektami złożonymi. W wierszu kodu można zobaczyć te same informacje, tak, jakby zostały zatrzymane w punkcie przerwania (i nie ma znaczenia, czy wcześniej powiększone informacje). Obliczanie wyrażeń jest również obsługiwany, wyświetlając migawki.  
 
-#### <a name="what-is-the-performance-impact-of-this-feature"></a>Co to jest jego wpływ na wydajność tej funkcji? 
+#### <a name="what-is-the-performance-impact-of-this-feature"></a>Co to jest wpływ na wydajność tej funkcji? 
 
-Wpływ na ogólną wydajność wykonywania krokowego zależy od aplikacji. Obciążenie związane z migawki jest około 30 ms. Gdy migawki, proces aplikacji jest rozwidlone i rozwidlonych kopiowania jest wstrzymana. Po wyświetleniu migawkę programu Visual Studio jest dołączenie do rozwidlonych kopię procesu. Dla każdej migawki Visual Studio kopiuje tabeli strony i ustawia stron kopii przy zapisie. Zmiana obiektów na stercie między krokami debugera z skojarzone migawki tabeli odpowiednich strony jest następnie skopiowana, co pamięci minimalne kosztów. Jeśli program Visual Studio wykryje, że nie ma wystarczającej ilości pamięci do tworzenia migawki, go nie przyjmuje jeden.
+Wpływ na ogólną wydajność wykonywania krokowego zależy od aplikacji. Koszty związane z migawki jest około 30 ms. Migawka zostanie utworzona, proces aplikacji jest forked i rozwidlone kopiowania jest wstrzymana. Po wyświetleniu migawki programu Visual Studio jest dołączenie do rozwidlonego kopię procesu. Dla każdego migawki programu Visual Studio kopiuje tabeli strony i ustawia stron kopii przy zapisie. W przypadku obiektów na stosie zmiany między krokami debugera za pomocą skojarzone migawki, tabeli odpowiednich stron jest następnie kopiowana, wynikowa kosztu minimalnej pamięci. Jeśli program Visual Studio wykryje, że nie ma wystarczającej ilości pamięci, aby utworzyć migawkę, go nie przyjmuje jeden.
  
 ## <a name="known-issues"></a>Znane problemy  
-* Jeśli używasz trybu migawki i zdarzenia funkcji IntelliTrace w wersjach systemu Windows starszych niż Windows 10 spadek twórców aktualizacji (RS3) i platforma cel debugowania aplikacji ma ustawioną wartość x86, IntelliTrace nie migawek.
+* Jeśli używasz trybu zdarzenia i migawki funkcji IntelliTrace w wersjach systemu Windows starszych niż Windows 10 Fall Creators Update (RS3) i docelowa platforma debugowania aplikacji jest równa x86, IntelliTrace nie przyjmuje migawki.
 
     Obejście problemu:
-    * Instalacji lub uaktualnienia do systemu Windows 10 spadek twórców aktualizacji (RS3). 
-    * Można również: 
+    * Zainstaluj lub Uaktualnij do Windows 10 Fall Creators Update (RS3). 
+    * Alternatywnie: 
         1. Zainstaluj zestaw narzędzi VC++ 2015.3 v140 dla składnika komputera stacjonarnego (x86, x64) przy użyciu Instalatora programu Visual Studio.
         2. Skompiluj aplikację docelową.
-        3. Z poziomu wiersza polecenia, użyj narzędzia polecenia editbin, aby ustawić `Largeaddressaware` flagi dla elementu docelowego pliku wykonywalnego. Na przykład można użyć tego polecenia (po zaktualizowaniu ścieżki): "C:\Program Files (x86) \Microsoft Visual Studio\Preview\Enterprise\VC\Tools\MSVC\14.12.25718\bin\Hostx86\x86\editbin.exe" / largeaddressaware "C:\Path\To\Application\app.exe".
-        4. Aby rozpocząć debugowanie, naciśnij klawisz **F5**. Teraz migawki są wykonywane na kroki debugera i punkty przerwania.
+        3. W wierszu polecenia użyj narzędzia polecenia editbin można ustawić `Largeaddressaware` flagi dla elementu docelowego pliku wykonywalnego. Na przykład, można użyć tego polecenia (po zaktualizowaniu ścieżka): "C:\Program Files (x86) \Microsoft Visual Studio\Preview\Enterprise\VC\Tools\MSVC\14.12.25718\bin\Hostx86\x86\editbin.exe" / largeaddressaware "C:\Path\To\Application\app.exe".
+        4. Aby rozpocząć debugowanie, naciśnij klawisz **F5**. Teraz migawki są wykonywane na debuger nie wchodzi i punktów przerwania.
 
         > [!Note]
-        > `Largeaddressaware` Musi zostać ustawiona flaga za każdym razem pliku wykonywalnego, który zostanie skompilowany ponownie za zmiany.
+        > `Largeaddressaware` Musi zostać ustawiona flaga za każdym razem, plik wykonywalny zostanie odtworzony ze zmianami.
 
-* Podczas procesu aplikacji migawki w aplikacji korzystającej z utrwalonego pliku mapowane w pamięci, proces z migawką utrzymuje wyłącznej blokady plików mapowanych na pamięć (nawet po proces nadrzędny wydała jego blokady). Inne procesy mogą nadal odczytywać, ale nie zapisywać do pliku mapowanych na pamięć.
+* Podczas procesu aplikacji migawki w aplikacji korzystającej z utrwalonego pliku mapowane w pamięci, proces z migawką utrzymuje blokady na wyłączność plików zamapowanych w pamięci (nawet po procesie nadrzędnym został wydany blokady). Inne procesy mogą nadal odczytywać, ale nie zapisywać do pliku mapowanych na pamięć.
 
     Obejście problemu:
-    * Usuń wszystkie migawki poprzez zakończenie sesji debugowania. 
+    * Wyczyść wszystkie migawki poprzez zakończenie sesji debugowania. 
 
-* Podczas debugowania aplikacji, których proces ma dużą liczbę regiony pamięci unikatowy, takie jak aplikacja, która ładuje wiele bibliotek DLL, wzmocnienie wydajności z migawkami włączone może mieć wpływ na. Ten problem zostanie rozwiązany w przyszłej wersji systemu Windows. Jeśli występuje ten problem, dotrzeć do nas na stepback@microsoft.com. 
+* Podczas debugowania aplikacji, na których proces składa się z dużą liczbą regionów unikatowy pamięci, takie jak aplikacja, która ładuje dużej liczby bibliotek DLL, może mieć wpływ przechodzenie krok po kroku wydajności przy użyciu migawek włączone. Ten problem zostanie rozwiązany w przyszłej wersji systemu Windows. Jeśli występuje ten problem, skontaktowanie się z nami pod adresem stepback@microsoft.com. 
 
-* Podczas zapisywania pliku z **Debuguj > IntelliTrace > Zapisz IntelliTrace sesji** w trybie zdarzeń i migawki, dodatkowe dane przechwycone z migawek nie jest dostępny w pliku .itrace. Punkt przerwania i krok zdarzeń Zobacz tych samych informacji tak, jakby plik zapisaną w trybie tylko do zdarzeń funkcji IntelliTrace. 
+* Podczas zapisywania pliku z **Debuguj > IntelliTrace > sesji zapisywania funkcji IntelliTrace** w trybie zdarzenia i migawki, dodatkowe dane przechwycone z migawek nie jest dostępna w pliku .itrace. Punkt przerwania i kroku zdarzeń Zobacz te same informacje tak, jakby było zapisany plik w trybie tylko zdarzenia funkcji IntelliTrace. 
 
 ## <a name="next-steps"></a>Następne kroki
 
-W tym samouczku kiedy znasz już sposób użycia zwrotnego krok IntelliTrace. Możesz dowiedzieć się więcej na temat innych funkcji IntelliTrace.
+W tym samouczku wyjaśniono sposób użycia funkcji IntelliTrace krok do tyłu. Można dowiedzieć się więcej na temat innych funkcji IntelliTrace.
 
 > [!div class="nextstepaction"]
 > [Funkcje IntelliTrace](../debugger/intellitrace-features.md)
