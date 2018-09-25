@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 75f7a7d5a30fd3fb84bfd038c55b0731ae017ef1
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 0db1d84c09c44cc39fe3fd614379c2381b915014
+ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638716"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47029030"
 ---
 # <a name="python-web-application-project-templates"></a>Szablony projektów aplikacji sieci web języka Python
 
@@ -44,7 +44,7 @@ Wszystkie **puste \<framework > Projekt sieci Web** szablony tworzenia projektu 
 | --- | --- |
 | **Projekt sieci Web Bottle puste** | Generuje minimalną aplikację w *app.py* ze stroną główną dla `/` i `/hello/<name>` strona, która zwraca `<name>` przy użyciu szablonu stronę wbudowanych bardzo krótki. |
 | **Projekt puste Django sieci Web** | Generuje projekt Django przy użyciu struktury lokacji Django core, ale nie ma aplikacji Django. Aby uzyskać więcej informacji, zobacz [szablony Django](python-django-web-application-project-template.md) i [Dowiedz się, Django, krok 1](learn-django-in-visual-studio-step-01-project-and-solution.md). |
-| **Projekt sieci Web Flask puste** | Generuje minimalną aplikację za pomocą pojedynczego "Hello World!" stronie `/`. Ta aplikacja jest podobne do wyniku następującego szczegółowy opis kroków [Szybki Start: używanie programu Visual Studio do utworzenia pierwszej aplikacji sieci web Python](../ide/quickstart-python.md?context=visualstudio/python/default). Zobacz też [Dowiedz się, Flask kroku 1](learn-flask-visual-studio-step-01-project-solution.md).
+| **Projekt sieci Web Flask puste** | Generuje minimalną aplikację za pomocą pojedynczego "Hello World!" stronie `/`. Ta aplikacja jest podobne do wyniku następującego szczegółowy opis kroków [Szybki Start: używanie programu Visual Studio do utworzenia pierwszej aplikacji sieci web Python](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json). Zobacz też [Dowiedz się, Flask kroku 1](learn-flask-visual-studio-step-01-project-solution.md).
 
 ### <a name="web-group"></a>Grupa aplikacji sieci Web
 

@@ -2,7 +2,7 @@
 title: Tworzenie aplikacji internetowej platformy ASP.NET Core w języku C# przy użyciu programu Visual Studio
 description: Dowiedz się, jak utworzyć prostą aplikację sieci web Hello World w programie Visual Studio w języku C# i ASP.NET Core, który krok po kroku.
 ms.custom: mvc
-ms.date: 07/30/2018
+ms.date: 09/23/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: quickstart
@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: ae4dc5f14db66bee10c8b2e95ea687f71ced2abb
-ms.sourcegitcommit: b9a32c3d94b19e7344f4872bc026efd3157cf220
+ms.openlocfilehash: 53bed90ea686897c2a668ddbc64c60a95c8edfe8
+ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46135616"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47028939"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Szybki Start: Używanie programu Visual Studio do utworzenia pierwszej aplikacji sieci web platformy ASP.NET Core
 
@@ -39,9 +39,9 @@ Najpierw utworzysz projekt aplikacji sieci web platformy ASP.NET Core. Poniżej 
 
 1. W **Nowa aplikacja internetowa ASP.NET Core** okna dialogowego Sprawdź, czy **ASP.NET Core 2.0** pojawia się w menu u góry listy rozwijanej. Następnie wybierz **aplikacji sieci Web** i wybierz polecenie **OK**.
 
-  ![Wyświetl plik animowany obraz GIF, który pokazuje, jak utworzyć projekt C# ASP.NET Core w programie Visual Studio](../ide/media/csharp-aspnet-animated-create-project.gif)
+   ![Wyświetl plik animowany obraz GIF, który pokazuje, jak utworzyć projekt C# ASP.NET Core w programie Visual Studio](../ide/media/csharp-aspnet-animated-create-project.gif)
 
-  Wkrótce potem Visual Studio otwiera plik projektu.
+   Wkrótce potem Visual Studio otwiera plik projektu.
 
    > [!NOTE]
    > Jeśli nie widzisz **platformy .NET Core** projektu kategorii szablonu, wybierz **Otwórz Instalator programu Visual Studio** łącze w okienku po lewej stronie.
@@ -58,13 +58,15 @@ Najpierw utworzysz projekt aplikacji sieci web platformy ASP.NET Core. Poniżej 
 
 Następnie będzie tworzenie i uruchamianie aplikacji sieci web "Hello World". Poniżej przedstawiono sposób.
 
-1. W **Eksploratora rozwiązań**, rozwiń węzeł **stron** folder, a następnie wybierz **About.cshtml**.
+1. W programie Visual Studio w **Eksploratora rozwiązań**, rozwiń węzeł **stron** folderu. Następnie wybierz **About.cshtml**.
 
-   Ten plik odnosi się do strony, który nosi nazwę **o** w aplikacji sieci web.
+   ![Wybierz plik About.cshtml z poziomu Eksploratora rozwiązań](../ide/media/csharp-aspnet-about-page-html-file.png)
+
+   Ten plik odnosi się do strony, który nosi nazwę **o** w aplikacji sieci web, które są uruchamiane w przeglądarce sieci web.
 
    ![Na stronie informacje w aplikacji sieci web](../ide/media/csharp-aspnet-about-page.png)
 
-1. Zmień tekst "informacje dodatkowe" do odczytu "**Hello World!**".
+1. W edytorze kodu programu Visual Studio, zmienić tekst "informacje dodatkowe" do odczytu "**Hello World!**".
 
 1. W **Eksploratora rozwiązań**, rozwiń węzeł **About.cshtml**, a następnie wybierz **About.cshtml.cs**.
 
@@ -72,12 +74,12 @@ Następnie będzie tworzenie i uruchamianie aplikacji sieci web "Hello World". P
 
 1. Wybierz **usług IIS Express** lub naciśnij **Ctrl**+**F5** Uruchom aplikację i otworzyć go w przeglądarce sieci web.
 
-  ![Wyświetl animowany obraz GIF pliku, który pokazuje, jak utworzyć i uruchomić aplikację sieci web platformy ASP.NET Core C# w programie Visual Studio](../ide/media/csharp-aspnet-animated-hello-world.gif)
+   ![Wyświetl animowany obraz GIF pliku, który pokazuje, jak utworzyć i uruchomić aplikację sieci web platformy ASP.NET Core C# w programie Visual Studio](../ide/media/csharp-aspnet-animated-hello-world.gif)
 
    > [!NOTE]
    > Jeśli otrzymasz komunikat o błędzie informujący, że, **nie można połączyć się z serwerem sieci web usług IIS Express**, zamknij program Visual Studio, a następnie otwórz go za pomocą **Uruchom jako administrator** opcję z menu kliknij prawym przyciskiem myszy lub kontekstu. Następnie uruchom ponownie aplikację.
 
-1. Upewnij się, że **o** strona zawiera zaktualizowane tekstu.
+1. W przeglądarce sieci web, upewnij się, że **o** strona zawiera zaktualizowane tekstu.
 
 1. Zamknij przeglądarkę sieci web.
 

@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e010dd429c0ef182d9e6dc5ed205e04624c1f367
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 9865e8e6faaac7b0c3af28532223ea2d5c9f7c01
+ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283421"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47029069"
 ---
 # <a name="tutorial-get-started-with-the-flask-web-framework-in-visual-studio"></a>Samouczek: Rozpoczynanie pracy z usługą Flask struktury sieci web w programie Visual Studio
 
@@ -36,7 +36,7 @@ W tym samouczku dowiesz się, jak:
 W miarę upływu następujące kroki, utworzysz jedno rozwiązanie Visual Studio, który zawiera trzy osobne projekty. Utwórz projekt za pomocą różnych szablonów projektu Flask, które są dołączone do programu Visual Studio. Przechowując projektów w tym samym rozwiązaniu, można łatwo przełączać i z powrotem między różnych plików do porównania.
 
 > [!Note]
-> W tym samouczku różni się od [Szybki Start Flask](../ide/quickstart-python.md?context=visualstudio/python/default) , możesz dowiedzieć się więcej o Flask oraz jak używać różnych Flask szablonów projektu, które zapewnia bardziej rozległe począwszy od punktu we własnych projektach. Na przykład szablony projektu automatycznie zainstalować pakiet Flask podczas tworzenia projektu, nie trzeba już ręcznie, jak pokazano w opcji szybkiego startu instalacji pakietu.
+> W tym samouczku różni się od [Szybki Start Flask](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json) , możesz dowiedzieć się więcej o Flask oraz jak używać różnych Flask szablonów projektu, które zapewnia bardziej rozległe począwszy od punktu we własnych projektach. Na przykład szablony projektu automatycznie zainstalować pakiet Flask podczas tworzenia projektu, nie trzeba już ręcznie, jak pokazano w opcji szybkiego startu instalacji pakietu.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 

@@ -13,22 +13,22 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dd700d822ca50f67060400578bca8e0757e84a89
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: 0702d1f47b8924e97cd3a6df1bba2af2503d5b29
+ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42624096"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47029137"
 ---
 # <a name="model-editor"></a>Edytor modelu
 
-W tym dokumencie opisano sposób pracy z edytorem modelu programu Visual Studio do wyświetlania, tworzenia i modyfikowania modeli 3D.
+W tym dokumencie opisano sposób pracy z programem Visual Studio **edytora modelu** do wyświetlania, tworzenia i modyfikowania modeli 3D.
 
-Edytor modelu na potrzeby tworzenia podstawowych modeli 3D od podstaw, lub do przeglądania i modyfikowania bardziej złożonych modeli 3W, które zostały utworzone przy użyciu w pełni funkcjonalne 3D, narzędzia do modelowania. Edytor modelu obsługuje kilka formatów modeli 3W, które są używane w rozwoju aplikacji DirectX.
+Możesz użyć **edytora modelu** na potrzeby tworzenia podstawowych modeli 3D od podstaw, lub do przeglądania i modyfikowania bardziej złożonych modeli 3W, które zostały utworzone przy użyciu w pełni funkcjonalne 3D, narzędzia do modelowania.
 
 ## <a name="supported-formats"></a>Obsługiwane formaty
 
-Edytor modelu obsługuje następujące formaty modeli:
+**Edytora modelu** obsługuje kilka formatów modeli 3D, które są używane w rozwoju aplikacji DirectX:
 
 |Nazwa formatu|Rozszerzenie pliku|Obsługiwane operacje (Wyświetl, Edytuj, Utwórz)|
 |-----------------|--------------------|-------------------------------------------------|
@@ -38,24 +38,31 @@ Edytor modelu obsługuje następujące formaty modeli:
 
 ## <a name="get-started"></a>Wprowadzenie
 
-Ta sekcja zawiera opis sposobu dodawania modelu 3D do projektu programu Visual Studio i zawiera podstawowe informacje, że chcesz rozpocząć pracę.
+Ta sekcja zawiera opis sposobu dodawania modelu 3D do projektu Visual Studio C++ i inne podstawowe informacje, które pomogą Ci rozpocząć pracę.
+
+> [!NOTE]
+> Integracji kompilacji automatyczne graficzne elementy, takie jak scen 3D (.fbx plików) jest obsługiwana tylko dla projektów C++.
 
 ### <a name="to-add-a-3d-model-to-your-project"></a>Aby dodać 3D model do projektu
 
-1. W **Eksploratora rozwiązań**, otwórz menu skrótów dla projektu, do którego chcesz dodać obraz, a następnie wybierz **Dodaj** > **nowy element**.
+1. Upewnij się, że masz wymagany program Visual Studio zainstalowany składnik trzeba pracować z grafiki. Składnik ten jest wywoływany **obrazów i modeli 3W edytory**.
 
-2. W **Dodaj nowy element** dialogowego **grafiki** kategorii, wybierz opcję **Scena 3D (.fbx)**.
+   Aby go zainstalować, otwórz Instalator programu Visual Studio, wybierając pozycję **narzędzia** > **Pobierz narzędzia i funkcje** menu paska, a następnie wybierz pozycję **poszczególne składniki**kartę. Wybierz **obrazów i modeli 3W edytory** składnika w obszarze **gier i aplikacji graficznych** kategorii, a następnie wybierz **Modyfikuj**.
+
+   ![Obrazów i modeli 3W składnika edytorów](media/image-3d-model-editors-component.png)
+
+   Składnik uruchamia instalowanie.
+
+2. W **Eksploratora rozwiązań**, otwórz menu skrótów dla projektu C++, aby dodać obraz do, a następnie wybierz **Dodaj** > **nowy element**.
+
+3. W **Dodaj nowy element** dialogowego **grafiki** kategorii, wybierz opcję **Scena 3D (.fbx)**.
 
    ![Dodaj nowy element w oknie dialogowym z wybrane sceny 3D](media/add-new-3d-scene.png)
 
    > [!NOTE]
-   > Jeśli nie widzisz **grafiki** kategorii **Dodaj nowy element** okno dialogowe, użytkownik może być konieczne zainstalowanie **obrazów i modeli 3W edytory** składnika. Zamknij okno dialogowe, a następnie wybierz pozycję **narzędzia** > **Pobierz narzędzia i funkcje** na pasku menu, aby otworzyć **Instalatora programu Visual Studio**. Wybierz **poszczególne składniki** , a następnie wybierz pozycję **obrazów i modeli 3W edytory** składnika w obszarze **gier i aplikacji graficznych** kategorii. Wybierz **zmodyfikować**.
-   >
-   > ![Obrazów i modeli 3W składnika edytorów](media/image-3d-model-editors-component.png)
-   >
-   > Jeśli masz **obrazów i modeli 3W edytory** składników, zainstalowanych i nadal nie widzisz **grafiki** kategorii szablonu, należy pamiętać, że ta kategoria jest wyświetlany tylko w przypadku niektórych typów projektów, na przykład konsoli. aplikacje.
+   > Jeśli nie widzisz **grafiki** kategorii **Dodaj nowy element** okna dialogowego, a **obrazów i modeli 3W edytory** zainstalowany składnik, graficzne elementy nie są obsługiwane. dla danego typu projektu.
 
-3. Wprowadź **nazwa** z plikiem modelu, a następnie wybierz **Dodaj**.
+4. Wprowadź **nazwa** z plikiem modelu, a następnie wybierz **Dodaj**.
 
 ### <a name="axis-orientation"></a>Orientacja osi
 
@@ -159,7 +166,7 @@ Możesz *Przekształcanie* obiektu przez zmianę jego **obrotu**, **skalowania**
 
 Można przekształcić obiekt za pomocą narzędzi do modelowania lub przez ustawienie właściwości.
 
-#### <a name="to-transform-an-object-by-using-modeling-tools"></a>Aby przekształcić obiekt za pomocą narzędzi do modelowania
+#### <a name="transform-an-object-by-using-modeling-tools"></a>Przekształcić obiekt za pomocą narzędzi do modelowania
 
 1. W **wybierz** tryb, wybierz obiekt, który chcesz przekształcić. Nakładka szkieletowa wskazuje, że obiekt jest wybrany.
 
@@ -167,7 +174,7 @@ Można przekształcić obiekt za pomocą narzędzi do modelowania lub przez usta
 
 3. Użyj manipulatora do wykonania przekształcenia. Dla przekształceń przesunięcia i skalowania manipulator jest wskaźnikiem osi. Jednocześnie można zmienić jedną oś lub można zmienić wszystkie osie jednocześnie przy użyciu białego sześcianu w środku wskaźnika. Dla obrotu manipulator to sfera wykonana z kolorowych okręgów, które odpowiadają osi x (czerwony), osi y (zielony) i osi z (niebieski). Należy zmienić każdą z osi osobno, aby utworzyć żądany obrót.
 
-#### <a name="to-transform-an-object-by-setting-its-properties"></a>Aby przekształcić obiekt przez ustawienie jego właściwości
+#### <a name="transform-an-object-by-setting-its-properties"></a>Przekształcanie obiektu przez ustawienie jego właściwości
 
 1. W **wybierz** tryb, wybierz obiekt, który chcesz przekształcić. Nakładka szkieletowa wskazuje, że obiekt jest wybrany.
 
@@ -196,7 +203,7 @@ Przesunięcie i obrót mogą występować albo w lokalnym układzie współrzęd
 
 Możesz zmienić kształt obiektu 3D, przenosząc lub usuwając jego wierzchołki, krawędzie i powierzchnie. Domyślnie Edytor modelu jest w *trybie obiektu*, dzięki czemu można wybierać i przekształcać całe obiekty. Aby wybrać punkty, krawędzie lub powierzchnie, wybierz odpowiedni tryb wyboru. Na **tryb edytora modelu** narzędzi, wybierz **tryby wyboru**, a następnie wybierz żądany tryb.
 
- Dodatkowe wierzchołki można utworzyć za pomocą wyciągnięcia lub podpodziału. Wyciągnięcie duplikuje wierzchołki powierzchni (zestaw współpłaszczyznowych wierzchołków), które pozostają połączone przez zduplikowane wierzchołki. Podpodział dodaje wierzchołki, aby utworzyć wiele płaszczyzn tam, gdzie do tej pory była jedna. Aby utworzyć nowe powierzchnie, dodawane są nowe wierzchołki — jeden w środku oryginalnej powierzchni i jeden w połowie każdej krawędzi — które następnie są łączone z oryginalnymi wierzchołkami. Liczba dodanych powierzchni jest równa liczbie krawędzi oryginalnej powierzchni. W obu przypadkach można przesuwać, obracać i skalować nowe wierzchołki, aby zmienić geometrię obiektu.
+Dodatkowe wierzchołki można utworzyć za pomocą wyciągnięcia lub podpodziału. Wyciągnięcie duplikuje wierzchołki powierzchni (zestaw współpłaszczyznowych wierzchołków), które pozostają połączone przez zduplikowane wierzchołki. Podpodział dodaje wierzchołki, aby utworzyć wiele płaszczyzn tam, gdzie do tej pory była jedna. Aby utworzyć nowe powierzchnie, dodawane są nowe wierzchołki — jeden w środku oryginalnej powierzchni i jeden w połowie każdej krawędzi — które następnie są łączone z oryginalnymi wierzchołkami. Liczba dodanych powierzchni jest równa liczbie krawędzi oryginalnej powierzchni. W obu przypadkach można przesuwać, obracać i skalować nowe wierzchołki, aby zmienić geometrię obiektu.
 
 #### <a name="to-extrude-a-face-from-an-object"></a>Aby wyciągnąć powierzchnię z obiektu
 
@@ -210,21 +217,21 @@ Możesz zmienić kształt obiektu 3D, przenosząc lub usuwając jego wierzchołk
 
 2. Na **edytora modelu** narzędzi, wybierz **skrypty** > **narzędzia** > **Podziel na mniejsze**.
 
- Można również przeprowadzać triangulację powierzchni, scalać obiekty i konwertować wielokątne zaznaczenia na nowe obiekty. Triangulacja tworzy dodatkowe krawędzie, w taki sposób, że powierzchnia nietrójkątna jest konwertowana na optymalną liczbę trójkątów; jednak nie zapewnia to dodatkowych szczegółów geometrycznych. Scalanie łączy zaznaczone obiekty w jeden obiekt. Nowe obiekty można tworzyć z zaznaczenia wielokątnego.
+Można również przeprowadzać triangulację powierzchni, scalać obiekty i konwertować wielokątne zaznaczenia na nowe obiekty. Triangulacja tworzy dodatkowe krawędzie, w taki sposób, że powierzchnia nietrójkątna jest konwertowana na optymalną liczbę trójkątów; jednak nie zapewnia to dodatkowych szczegółów geometrycznych. Scalanie łączy zaznaczone obiekty w jeden obiekt. Nowe obiekty można tworzyć z zaznaczenia wielokątnego.
 
-#### <a name="to-triangulate-a-face"></a>Aby przeprowadzić triangulację powierzchni
+#### <a name="triangulate-a-face"></a>Przeprowadzić triangulację powierzchni
 
 1. W trybie zaznaczania powierzchni zaznacz powierzchnię, dla której chcesz dokonać triangulacji.
 
 2. Na **edytora modelu** narzędzi, wybierz **skrypty** > **narzędzia** > **triangulacja**.
 
-#### <a name="to-merge-objects"></a>Aby scalić obiekty
+#### <a name="merge-objects"></a>Scal obiekty
 
 1. W trybie zaznaczania obiektów zaznacz obiekty, które chcesz scalić.
 
 2. Na **edytora modelu** narzędzi, wybierz **skrypty** > **narzędzia** > **Scal obiekty**.
 
-#### <a name="to-create-an-object-from-a-polygon-selection"></a>Aby utworzyć obiekt z zaznaczenia wielokątnego
+#### <a name="create-an-object-from-a-polygon-selection"></a>Utwórz obiekt z zaznaczenia wielokątnego
 
 1. W trybie zaznaczania powierzchni zaznacz powierzchnie, z których chcesz utworzyć nowy obiekt.
 
@@ -268,13 +275,13 @@ Możesz użyć **konspekt dokumentu** okna, aby wyświetlić hierarchię sceny i
 
 Hierarchię obiektów można utworzyć albo poprzez określenie jednego z nich jako element nadrzędny wobec innych, albo grupując je jako elementy równorzędne w obszarze węzła zastępczego działającego jako nadrzędny.
 
-#### <a name="to-create-a-hierarchy-that-has-a-parent-object"></a>Aby utworzyć hierarchię zawierającą obiekt nadrzędny
+#### <a name="create-a-hierarchy-that-has-a-parent-object"></a>Tworzenie hierarchii, która ma obiekt nadrzędny
 
 1. W **wybierz** tryb, wybierz dwa lub więcej obiektów. Pierwszy wybrany będzie obiektem nadrzędnym.
 
 2. Na **edytora modelu** narzędzi, wybierz **skrypty** > **Zarządzanie sceną** > **Dołącz do nadrzędnego**.
 
-#### <a name="to-create-a-hierarchy-of-sibling-objects"></a>Aby utworzyć obiekty hierarchii elementów równorzędnych
+#### <a name="create-a-hierarchy-of-sibling-objects"></a>Utworzyć obiekty hierarchii elementów równorzędnych
 
 1. W **wybierz** tryb, wybierz dwa lub więcej obiektów. Obiekt zastępczy jest tworzony i staje się ich obiektem nadrzędnym.
 
@@ -292,7 +299,7 @@ Aby usunąć skojarzenie nadrzędny podrzędny między dwoma obiektami, zaznacz 
 |Przełącz się do **powiększenia** tryb|**CTRL**+**G**, **Ctrl**+**Z**<br /><br /> **Z**|
 |Przełącz się do **Pan** tryb|**CTRL**+**G**, **Ctrl**+**P**<br /><br /> **K**|
 |Zaznacz wszystkie|**CTRL**+**A**|
-|Usuń bieżące zaznaczenie|**Usuwanie**|
+|Usuń bieżące zaznaczenie|**Delete**|
 |Anuluj bieżące zaznaczenie|**Znak ucieczki** (**Esc**)|
 |Powiększanie|**Obrót kółkiem myszy do przodu**<br /><br /> **CTRL**+**kółkiem myszy do przodu**<br /><br /> **SHIFT**+**kółkiem myszy do przodu**<br /><br /> **CTRL**+**PageUp**<br /><br /> Znak plus (**+**)|
 |Pomniejszanie|**Obrót kółkiem myszy do tyłu**<br /><br /> **CTRL**+**obrót kółkiem myszy do tyłu**<br /><br /> **SHIFT**+**obrót kółkiem myszy do tyłu**<br /><br /> **CTRL**+**PageDown**<br /><br /> Znak minus (**-**)|

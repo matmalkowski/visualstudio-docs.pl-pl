@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1c9897d27dfc8857deaf67ddff2d31167dce586d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5994c17ff4e7e6071a22d235ab6888727b9ed026
+ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42685600"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47029074"
 ---
 # <a name="walkthrough-my-first-wpf-desktop-application"></a>Wskazówki: Mój pierwszy klasycznych aplikacji WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -180,7 +180,7 @@ name = "wprowadzenie" ></a> ten przewodnik zawiera wprowadzenie do programowania
      Lub tak jak poniżej w języku Visual Basic:  
   
     ```xaml  
-    NavigationWindow x:Class="MainWindow"  
+    <NavigationWindow x:Class="MainWindow"  
             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"  
             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"  
             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"  
@@ -209,7 +209,7 @@ name = "wprowadzenie" ></a> ten przewodnik zawiera wprowadzenie do programowania
      Plik ExpenseReportPage.xaml powinien teraz wyglądać następująco w języku C#:  
   
     ```xaml  
-    Page x:Class="ExpenseIt.ExpenseReportPage"  
+    <Page x:Class="ExpenseIt.ExpenseReportPage"  
           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"  
           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"  
           xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"   

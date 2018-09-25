@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bc8582981fc75dd0ce9c0bcb09cc7f865b0e9d43
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: 4ed7c1ec10b6cc6b2eac450ea33beceaaf58bc06
+ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42623971"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47029124"
 ---
 # <a name="image-editor"></a>Edytor obrazów
 
@@ -53,8 +53,6 @@ W tej sekcji opisano, jak dodać obraz do projektu programu Visual Studio i skon
    > Jeśli nie widzisz **grafiki** kategorii **Dodaj nowy element** okno dialogowe, użytkownik może być konieczne zainstalowanie **obrazów i modeli 3W edytory** składnika. Zamknij okno dialogowe, a następnie wybierz pozycję **narzędzia** > **Pobierz narzędzia i funkcje** na pasku menu, aby otworzyć **Instalatora programu Visual Studio**. Wybierz **poszczególne składniki** , a następnie wybierz pozycję **obrazów i modeli 3W edytory** składnika w obszarze **gier i aplikacji graficznych** kategorii. Wybierz **zmodyfikować**.
    >
    > ![Obrazów i modeli 3W składnika edytorów](media/image-3d-model-editors-component.png)
-   >
-   > Jeśli masz **obrazów i modeli 3W edytory** składników, zainstalowanych i nadal nie widzisz **grafiki** kategorii szablonu, należy pamiętać, że ta kategoria jest wyświetlany tylko w przypadku niektórych typów projektów, na przykład konsoli. aplikacje.
 
    Aby dowiedzieć się, jak wybrać format pliku, w zależności od wymagań, zobacz [wybierz format obrazu](#choose-the-image-format).
 
@@ -252,7 +250,7 @@ W poniższej tabeli opisano właściwości narzędzia:
 |Przełącz się do **powiększenia** tryb|**Z**|
 |Przełącz się do **Pan** tryb|**K**|
 |Zaznacz wszystkie|**CTRL**+**A**|
-|Usuń bieżące zaznaczenie|**Usuwanie**|
+|Usuń bieżące zaznaczenie|**Delete**|
 |Anuluj bieżące zaznaczenie|**ESC** (ucieczki)|
 |Powiększanie|**CTRL**+**kółkiem myszy do przodu**<br /><br /> **CTRL**+**PageUp**<br /><br /> Znak plus (**+**)|
 |Pomniejszanie|**CTRL**-**obrót kółkiem myszy do tyłu**<br /><br /> **CTRL**-**PageDown**<br /><br /> Znak minus (**-**)|
