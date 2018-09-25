@@ -2,7 +2,7 @@
 title: Pisanie kodu JavaScript w programie Visual Studio bez rozwiązania lub projektu
 description: Program Visual Studio zapewnia obsługę tworzenia kodu bez zależności w pliku projektu lub pliku rozwiązania
 ms.custom: ''
-ms.date: 06/06/2018
+ms.date: 09/24/2018
 ms.technology: vs-nodejs
 ms.topic: conceptual
 ms.devlang: javascript
@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 7f4c98c9279fe4153fb69e371f51833be382090d
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: db0685851113a5b85c506e250f6335e7ae83dcf4
+ms.sourcegitcommit: 000cdd1e95dd02e99a7c7c1a34c2f8fba6a632af
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774607"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47168334"
 ---
 # <a name="develop-javascript-and-typescript-code-in-visual-studio-without-solutions-or-projects"></a>Tworzenie kodu JavaScript i TypeScript w programie Visual Studio bez rozwiązań lub projektów
 
@@ -28,7 +28,7 @@ Poza tymi funkcjami Node.js Tools for Visual Studio dodaje obsługę tworzenia p
 Aby rozpocząć, wybierz **Otwórz Folder** z poziomu strony startowej, która pojawia się, gdy otwarciu programu Visual Studio, lub wybrać **pliku** > **Otwórz**  >  **Folderu** na pasku narzędzi. Eksplorator rozwiązań zawiera wszystkie pliki w folderze, a następnie można otworzyć dowolne pliki, aby rozpocząć edycję. W tle programu Visual Studio indeksuje pliki, aby włączyć npm, kompilacji i funkcji debugowania.
 
 > [!IMPORTANT]
-> Wiele funkcji opisanych w tym artykule, w tym Integracja z menedżerem npm wymaga programu Visual Studio 2017 w wersji 15.8 3 (wersja zapoznawcza).
+> Wiele funkcji opisanych w tym artykule, w tym Integracja z menedżerem npm wymaga programu Visual Studio 2017 w wersji 15.8.
 
 ## <a name="npm-integration"></a>Integracja z menedżerem npm
 

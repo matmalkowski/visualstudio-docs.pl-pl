@@ -17,16 +17,16 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fbc6cde1c897500190137ff48397a8c9cb3af059
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: d60603ae9a94e843920f00dc8c8fc2ebb40c8861
+ms.sourcegitcommit: 000cdd1e95dd02e99a7c7c1a34c2f8fba6a632af
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43138768"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47168386"
 ---
 # <a name="modify-visual-studio-2017-by-adding-or-removing-workloads-and-components"></a>Modyfikowanie programu Visual Studio 2017, dodając lub usuwając obciążenia i składniki
 
-Nie tylko mieć wprowadziliśmy jest łatwiejsze umożliwia personalizowanie programu Visual Studio, aby dopasować zadań, należy wykonać, została również ułatwiliśmy zbyt dostosować Visual Studio. Aby to zrobić, uruchom nowy Instalator programu Visual Studio i wprowadzić zmiany, które chcesz.
+Nie tylko mieć ułatwiliśmy umożliwia personalizowanie programu Visual Studio, aby dopasować zadań, należy wykonać, została również ułatwiliśmy zbyt dostosować Visual Studio. Aby to zrobić, uruchom nowy Instalator programu Visual Studio i wprowadzić zmiany, które chcesz.
 
 Poniżej przedstawiono sposób.
 

@@ -2,7 +2,7 @@
 title: Tworzenie środowiska Node.js i aplikacji Express
 description: W tym samouczku utworzysz aplikację przy użyciu narzędzia Node.js dla programu Visual Studio
 ms.custom: ''
-ms.date: 06/27/2018
+ms.date: 09/24/2018
 ms.technology: vs-nodejs
 ms.topic: tutorial
 ms.devlang: javascript
@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 619ea075394305d81d2ffddb8ea1047d2a306ccc
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 8e7a1d04b83ffef2f7ec6efc786af6f5bc6e992e
+ms.sourcegitcommit: 000cdd1e95dd02e99a7c7c1a34c2f8fba6a632af
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45548221"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47168347"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Samouczek: Tworzenie środowiska Node.js i Express aplikacji w programie Visual Studio
 Tego samouczka do tworzenia aplikacji programu Visual Studio przy użyciu środowiska Node.js i Express służy do tworzenia prostą aplikację sieci web środowiska Node.js, Dodaj kod, zapoznaj się z niektórymi funkcjami środowiska IDE i uruchamiania aplikacji. Jeśli jeszcze nie zainstalowano programu Visual Studio, zainstaluj go bezpłatnie [tutaj](http://visualstudio.microsoft.com).
@@ -192,11 +192,11 @@ Następnie zamierzasz uruchomić aplikację w debugerze programu Visual Studio. 
 
 ## <a name="run-the-application"></a>Uruchamianie aplikacji
 
-1. Wybierz cel debugowania na pasku narzędzi debugowania.
+1. Wybierz cel debugowania na pasku narzędzi debugowania, takie jak przeglądarki Edge lub Chrome.
 
     ![Wybierz element docelowy debugowania](../javascript/media/tutorial-nodejs-deploy-target.png)
 
-    Aby dodać element docelowy innej przeglądarki, takich jak dla programu Chrome, zaznacz **przeglądanie za pomocą**.
+    Jeśli dla programu Chrome jest dostępne na danym komputerze, ale nie są wyświetlane jako opcja, wybierz opcję **przeglądanie za pomocą** z listy rozwijanej docelowego debugowania i wybierz opcję dla programu Chrome jako domyślny element docelowy przeglądarki (wybierz **Ustaw jako domyślny**).
 
 1. Naciśnij klawisz **F5** (**debugowania** > **Rozpocznij debugowanie**) do uruchamiania aplikacji.
 
