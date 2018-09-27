@@ -12,17 +12,17 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: c42e87d6dcf4767621cafdb246294b8a45d0e4a7
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: a1824b9ce04b8a45c011561b73654ac3ccd49f03
+ms.sourcegitcommit: 95aedf723c6be5272c3c5a2911cb2bdec50e2148
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468673"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47228919"
 ---
 # <a name="publish-to-azure-app-service"></a>Publikowanie w usłudze Azure App Service
 
 > [!Important]
-> Wdrażanie aplikacji w języku Python w usłudze Azure App Service dla systemu Linux nie jest obecnie obsługiwane w programie Visual Studio. Firma Microsoft planuje wycofana języka Python w usłudze App Service na Windows. Aktualizacje zostaną opublikowane w tym artykule, jeśli jest dostępna. W międzyczasie można wdrożyć do usługi App Service w systemie Linux przy użyciu kontenerów. Aby uzyskać więcej informacji, zobacz [wdrażanie aplikacji sieci web języka Python w funkcji Web App for Containers](/azure/app-service/containers/quickstart-python).
+> Wdrażanie aplikacji w języku Python w usłudze Azure App Service dla systemu Linux nie jest obecnie obsługiwane w programie Visual Studio. Firma Microsoft planuje wycofana języka Python w usłudze App Service na Windows. Aktualizacje zostaną opublikowane w tym artykule, jeśli jest dostępna. W międzyczasie można wdrożyć do usługi App Service w systemie Linux przy użyciu kontenerów. Aby uzyskać więcej informacji, zobacz [tworzenie aplikacji sieci web w języku Python w usłudze Azure App Service w systemie Linux](/azure/app-service/containers/quickstart-python).
 
 Program Visual Studio oferuje możliwość publikowania aplikacji sieci web w języku Python bezpośrednio w usłudze Azure App Service. Publikowanie w usłudze Azure App Service oznacza kopiowanie wymaganych plików do serwera i konfigurowania odpowiednich *web.config* pliku, który powoduje, że serwer sieci web jak uruchomić aplikację.
 

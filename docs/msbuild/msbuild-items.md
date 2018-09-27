@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f7215817907e729b1e6cfcdfa07a0eaa307a7eb
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 0d08a3fda756a1800b943cf02183187a2c180c20
+ms.sourcegitcommit: 95aedf723c6be5272c3c5a2911cb2bdec50e2148
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39204131"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47228880"
 ---
 # <a name="msbuild-items"></a>Elementy programu MSBuild
 Elementy programu MSBuild to wejścia do systemu kompilacji i zazwyczaj reprezentują pliki (pliki zostały określone w `Include` atrybutu). Elementy są grupowane w typy elementów na podstawie ich nazw elementu. Typy elementów są nazywane listy elementów, które mogą być używane jako parametry dla zadań. Zadania umożliwiają wartości elementu wykonaj kroki procesu kompilacji.  
@@ -35,7 +35,7 @@ Elementy programu MSBuild to wejścia do systemu kompilacji i zazwyczaj reprezen
 </ItemGroup>  
 ```  
   
- Element *file2.cs* nie zastępuje element *file1.cs*; zamiast tego, nazwa pliku jest dołączany do listy wartości dla `Compile` typ elementu. Nie można usunąć elementu z typu elementu, w fazie obliczania kompilacji.  
+ Element *file2.cs* nie zastępuje element *file1.cs*; zamiast tego, nazwa pliku jest dołączany do listy wartości dla `Compile` typ elementu.
   
  Następujący kod XML tworzy tego samego typu elementu przez zadeklarowanie oba pliki w jednym `Include` atrybutu. Należy zauważyć, że nazwy plików są oddzielone średnikami.  
   
@@ -180,7 +180,7 @@ Aby uzyskać więcej informacji na temat symboli wieloznacznych, zobacz [porady:
  Począwszy od programu .NET Framework 3.5 `Target` elementy mogą zawierać [ItemGroup](../msbuild/itemgroup-element-msbuild.md) elementy, które mogą zawierać elementu elementów. Atrybuty w tej sekcji są prawidłowe w przypadku, gdy są one określone dla elementu w `ItemGroup` w `Target`.  
   
 ###  <a name="BKMK_RemoveAttribute"></a> Usuń atrybut  
- Elementy w `ItemGroup` obiektu docelowego może zawierać `Remove` atrybut, który usuwa określone elementy (pliki) z tego typu elementu. Ten atrybut został wprowadzony w programie .NET Framework 3.5.  
+ `Remove` Atrybut usuwa określone elementy (pliki) z tego typu elementu. Ten atrybut wprowadzono w programie .NET Framework 3.5, ale została obsługiwane tylko w obrębie elementów docelowych do MSBuild 15.0.
   
  Poniższy przykład usuwa co *.config* plik z kompilacji typu elementu.  
   

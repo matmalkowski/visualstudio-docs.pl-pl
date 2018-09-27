@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 433ec0e4df5108dfcf0bae1c8c62af5b0536bc5e
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 3e3f170e93a4df6a5cc3dd0e918279f902952b1d
+ms.sourcegitcommit: 95aedf723c6be5272c3c5a2911cb2bdec50e2148
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45548234"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47228932"
 ---
 # <a name="step-6-use-the-polls-django-web-project-template"></a>Krok 6: Należy użyć szablonu projektu sieci Web Django sond
 
@@ -379,5 +379,4 @@ Uruchamianie aplikacji sieci web na komputerze deweloperskim jest tylko jeden kr
 - Skonfiguruj potok ciągłej integracji/ciągłego wdrażania usługi, takie jak potoki usługi Azure. Oprócz Praca z kontrolą źródła (na repozytoriów platformy Azure, GitHub lub w innym miejscu), może mieć plany testów Azure automatycznie uruchomić testy jednostkowe jako warunek wstępny dla wersji, a także skonfigurować potok do wdrażania na serwerze tymczasowym dla dodatkowych testów przed do wdrożenia produkcyjnego. Usług platformy Azure DevOps, ponadto integruje się z usługą monitorowania rozwiązań, takich jak usługi App Insights i zamknięcie całego cyklu za pomocą narzędzi planowania agile. Aby uzyskać więcej informacji, zobacz:
 
   - [Tworzenie potoku ciągłej integracji/ciągłego Dostarczania dla języka Python za pomocą usługi Azure DevOps Projects](/azure/devops-project/azure-devops-project-python?view=vsts)
-  - [Programowanie w języku Python na platformie Azure przy użyciu programu Visual Studio Team Services (wideo, 11m 21s)](https://azure.microsoft.com/resources/videos/connect-2017-python-development-in-azure-with-visual-studio-team-services/).
-
+  - [Programowanie w języku Python na platformie Azure przy użyciu infrastruktury DevOps platformy Azure (wideo, 11m 21s)](https://azure.microsoft.com/resources/videos/connect-2017-python-development-in-azure-with-visual-studio-team-services/).

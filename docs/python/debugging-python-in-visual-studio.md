@@ -1,7 +1,7 @@
 ---
 title: Debugowanie kodu języka Python
 description: Przewodnik po funkcji debugowania w programie Visual Studio dla kodu Python, w tym ustawiania punktów przerwania, przechodzenie krok po kroku, sprawdzania wartości, patrząc wyjątków i debugowania w oknie interaktywnym.
-ms.date: 08/14/2018
+ms.date: 09/25/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6766e5e498b631ea4e95a535d65ebf09ff973b59
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: fa331093e6085179a20638b1314200f65deb6a61
+ms.sourcegitcommit: 95aedf723c6be5272c3c5a2911cb2bdec50e2148
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42624078"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47228945"
 ---
 # <a name="debug-your-python-code"></a>Debugowanie kodu w języku Python
 
@@ -227,9 +227,45 @@ Aby zarządzać ptvsd instalacji:
 
 1. Jeśli wersja jest niższa niż 4.1.1a9 (wersja powiązane z programem Visual Studio), wybierz opcję **X** po prawej stronie pakietu można odinstalować starszej wersji. Visual Studio używa następnie jego wersji. (Można także odinstalować z przy użyciu programu PowerShell `pip uninstall ptvsd`.)
 
-1. Alternatywnie można zaktualizować pakiet ptvsd do jego najnowszej wersji. Wprowadź `ptvsd --upgrade -pre` w polu wyszukiwania, a następnie zaznacz **Uruchom polecenie: polecenia pip install ptvsd — uaktualnienia - pre**. (Możesz również użyć tego samego polecenia, za pomocą programu PowerShell).
+1. Alternatywnie można zaktualizować pakiet ptvsd do jego najnowszej wersji, postępując zgodnie z instrukcjami w [Rozwiązywanie problemów](#troubleshooting) sekcji.
 
-    ![Zapewniając uaktualnienia polecenie w oknie środowiska Python](media/debugging-experimental-upgrade-ptvsd.png)
+## <a name="troubleshooting"></a>Rozwiązywanie problemów
+
+Jeśli masz problemy z debugerem najpierw uaktualnić wersję ptvsd w następujący sposób:
+
+1. Przejdź do **pakietów** karcie **środowiska Python** okna.
+
+1. Wprowadź `ptvsd --upgrade` w polu wyszukiwania, a następnie zaznacz **Uruchom polecenie: ptvsd — uaktualnienia instalacji pakietu pip**. (Możesz również użyć tego samego polecenia, za pomocą programu PowerShell).
+
+    ![Zapewniając polecenie upgrade ptvsd w oknie środowiska Python](media/debugging-experimental-upgrade-ptvsd.png)
+
+Jeśli problemy będą się powtarzać, zgłoś problem na [repozytorium PTVS GitHub](https://github.com/Microsoft/ptvs/issues).
+
+### <a name="enable-debugger-logging"></a>Włącz rejestrowanie debugera
+
+Badając problem debugera, Microsoft może poprosić o Włącz i zbieranie dzienników debugera, które pomagają w procesie diagnozowania.
+
+Następujące kroki umożliwiają debugowanie w bieżącej sesji programu Visual Studio:
+
+1. Otwórz okno poleceń programu Visual Studio przy użyciu **widoku** > **Windows inne** > **okna polecenia** polecenia menu.
+
+1. Wprowadź następujące polecenie:
+
+    ```ps
+    DebugAdapterHost.Logging /On
+    ```
+
+1. Rozpocznij debugowanie i przechodzą przez dowolne kroki są niezbędne do odtworzenia problemu. W tym czasie, dzienniki debugowania są wyświetlane w **dane wyjściowe** okna w obszarze **dziennik hosta adaptera debugowania**. Następnie można skopiować dzienników z tego okna i wkleić do problemu w usłudze GitHub, poczty e-mail itd.
+
+    ![Rejestrowanie danych wyjściowych, w oknie danych wyjściowych debugera](media/debugger-logging-output.png)
+
+1. Jeśli program Visual Studio zawiesza się lub których w przeciwnym razie nie można uzyskać dostęp do **dane wyjściowe** okien, uruchom ponownie program Visual Studio, Otwórz okno polecenia i wprowadź następujące polecenie:
+
+    ```ps
+    DebugAdapterHost.Logging /On /OutputWindow
+    ```
+
+1. Uruchamianie debugowania i ponownie odtworzenie problemu. Następnie można znaleźć w dziennikach debugera w `%temp%\DebugAdapterHostLog.txt`.
 
 ## <a name="see-also"></a>Zobacz także
 

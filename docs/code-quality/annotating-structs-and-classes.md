@@ -19,45 +19,48 @@ f1_keywords:
 - _Field_size_bytes_full_
 - _Field_size_full_
 - _Field_size_full_opt_
+- _Field_z_
 ms.assetid: b8278a4a-c86e-4845-aa2a-70da21a1dd52
 author: mikeblome
 ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 076631860035e41451741d49843d9282ec4c15f7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e4294284ff2911fd05cc771bf4deaad368e3c28b
+ms.sourcegitcommit: 95aedf723c6be5272c3c5a2911cb2bdec50e2148
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31894351"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47228828"
 ---
 # <a name="annotating-structs-and-classes"></a>Dodawanie adnotacji struktur i klas
-Elementy członkowskie struktury i klasy może dodawać adnotacje, za pomocą adnotacji przypominają invariants — są one domniemania PRAWDA dowolnego wywołanie funkcji i funkcji wejścia/wyjścia, który obejmuje otaczającej strukturę jako parametr lub wartość wyniku.
+Elementy członkowskie struktury i klasy może dodawać adnotacje, za pomocą funkcji adnotacje, przypominają invariants — jest uznawana za tę prawdziwe dowolnego wywołania funkcji i funkcji wejścia/wyjścia, która obejmuje otaczającej strukturze jako parametr lub wartość wyniku.
 
 ## <a name="struct-and-class-annotations"></a>Struktury i klasy adnotacji
 
 -   `_Field_range_(low, high)`
 
-     Pole znajduje się w zakresie (włącznie) z `low` do `high`.  Odpowiednikiem `_Satisfies_(_Curr_ >= low && _Curr_ <= high)` zastosowane do obiektu adnotacjami przy użyciu odpowiednich warunków pre lub post.
+     To pole jest z zakresu (włącznie) z `low` do `high`.  Odpowiednikiem `_Satisfies_(_Curr_ >= low && _Curr_ <= high)` zastosowany do obiektu adnotacjami przy użyciu odpowiednich warunków pre lub post.
 
 -   `_Field_size_(size)`, `_Field_size_opt_(size)`, `_Field_size_bytes_(size)`, `_Field_size_bytes_opt_(size)`
 
-     Pola, którego rozmiar zapisu w elementy (lub bajtów) jako określony przez `size`.
+     Pola, które ma rozmiar obszaru do zapisu w elementy (lub w bajtach) jako określony przez `size`.
 
 -   `_Field_size_part_(size, count)`, `_Field_size_part_opt_(size, count)`,         `_Field_size_bytes_part_(size, count)`, `_Field_size_bytes_part_opt_(size, count)`
 
-     Pola, którego rozmiar zapisu w elementy (lub bajtów) jako określony przez `size`i `count` tych elementów (w bajtach), które są do odczytu.
+     Pola, które ma rozmiar obszaru do zapisu w elementy (lub w bajtach) jako określony przez `size`i `count` tych elementów (w bajtach), które są do odczytu.
 
 -   `_Field_size_full_(size)`, `_Field_size_full_opt_(size)`, `_Field_size_bytes_full_(size)`, `_Field_size_bytes_full_opt_(size)`
 
-     Pola, które ma rozmiar elementy readable i writable elementy (lub bajtów) jako określony przez `size`.
+     Pola, które ma elementy readable i writable rozmiar elementów (lub w bajtach) jako określony przez `size`.
+
+-   `_Field_z_`
+
+     Pole, które zawiera ciąg zakończony znakiem null.
 
 -   `_Struct_size_bytes_(size)`
 
-     Pola, które ma rozmiar elementy readable i writable elementy (lub bajtów) jako określony przez `size`.
-
-     Ma zastosowanie do deklaracji struktury lub klasy.  Wskazuje, że prawidłowy obiekt tego typu może być większa niż deklarowany typ, liczbę bajtów jest określona przez `size`.  Na przykład:
+     Ma zastosowanie do deklaracji struktury lub klasy.  Wskazuje, że prawidłowy obiekt tego typu mogą być większe niż zadeklarowanym typem z liczbą bajtów jest określona przez `size`.  Na przykład:
 
     ```cpp
 
@@ -69,11 +72,11 @@ Elementy członkowskie struktury i klasy może dodawać adnotacje, za pomocą ad
 
     ```
 
-     Rozmiar buforu w bajtach parametru `pM` typu `MyStruct *` następnie przyjmuje się:
+     Rozmiar buforu w bajtach parametr `pM` typu `MyStruct *` zostaje następnie przeniesiony za:
 
     ```cpp
     min(pM->nSize, sizeof(MyStruct))
     ```
 
 ## <a name="see-also"></a>Zobacz też
- [Korzystanie z adnotacji SAL w celu redukowanie defektów kodu C/C++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md) [opis SAL](../code-quality/understanding-sal.md) [Dodawanie adnotacji do parametrów funkcji i zwracanych wartości](../code-quality/annotating-function-parameters-and-return-values.md) [.zachowaniefunkcjidodawaniaadnotacji](../code-quality/annotating-function-behavior.md) [Dodawanie adnotacji do zachowania blokującego](../code-quality/annotating-locking-behavior.md) [określenie, kiedy i gdzie dotyczy adnotacji](../code-quality/specifying-when-and-where-an-annotation-applies.md) [funkcje wewnętrzne](../code-quality/intrinsic-functions.md) [najlepsze rozwiązania i Przykłady](../code-quality/best-practices-and-examples-sal.md)
+ [Korzystanie z adnotacji SAL w celu zmniejszenia liczby błędów kodu C/C++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md) [zrozumienie SAL](../code-quality/understanding-sal.md) [Dodawanie adnotacji do parametrów funkcji i zwracanych wartości](../code-quality/annotating-function-parameters-and-return-values.md) [.zachowaniefunkcjidodawaniaadnotacji](../code-quality/annotating-function-behavior.md) [Dodawanie adnotacji do zachowania blokującego](../code-quality/annotating-locking-behavior.md) [Określanie miejsca i warunków stosowania adnotacji](../code-quality/specifying-when-and-where-an-annotation-applies.md) [funkcje wewnętrzne](../code-quality/intrinsic-functions.md) [najlepszych rozwiązań i Przykłady](../code-quality/best-practices-and-examples-sal.md)

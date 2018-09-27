@@ -1,7 +1,7 @@
 ---
 title: Writelinestofile — zadanie | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/20/2018
 ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e8fa6ff5dbfcbbeb158f22256e18f6fb90bab348
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: 909c35ca889295385cae98d51a81b22b4f7eb5d8
+ms.sourcegitcommit: 95aedf723c6be5272c3c5a2911cb2bdec50e2148
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341813"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47228841"
 ---
 # <a name="writelinestofile-task"></a>WriteLinesToFile — zadanie
 Zapisuje ścieżek określonych elementów do określonego pliku.  
@@ -39,7 +39,8 @@ Zapisuje ścieżek określonych elementów do określonego pliku.
 |`Lines`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru.<br /><br /> Określa elementy do zapisu w pliku.|  
 |`Overwrite`|Opcjonalnie `Boolean` parametru.<br /><br /> Jeśli `true`, zadanie zastępuje istniejącą zawartość w pliku.|  
 |`Encoding`|Opcjonalnie `String` parametru.<br /><br /> Wybiera kodowanie, na przykład "Unicode" znaków.  Zobacz też <xref:System.Text.Encoding>.|  
-  
+|`WriteOnlyWhenDifferent`|Opcjonalnie `Boolean` parametru.<br /><br /> Jeśli `true`, plik docelowy określony, jeśli istnieje, zostanie odczytany najpierw, aby porównać co zadania, musieli napisać. Jeśli taka sama, plik nie jest zapisywany na dysku i sygnaturę czasową zostaną zachowane.|  
+
 ## <a name="remarks"></a>Uwagi  
  Jeśli `Overwrite` jest `true`, tworzy nowy plik, zapisywania zawartości pliku, a następnie zamyka plik. Jeśli plik docelowy już istnieje, zostanie zastąpiony. Jeśli `Overwrite` jest `false`, dołącza zawartość do pliku, tworzenia pliku docelowego, jeśli jeszcze nie istnieje.  
   

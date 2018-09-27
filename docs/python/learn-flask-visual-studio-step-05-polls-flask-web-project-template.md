@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 418ea3661f236866bbadcf278f288632c5e49435
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 7f154afe78d01fb7f139308c09f669528b645859
+ms.sourcegitcommit: 95aedf723c6be5272c3c5a2911cb2bdec50e2148
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280097"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47228893"
 ---
 # <a name="step-5-use-the-polls-flask-web-project-template"></a>Krok 5: Należy użyć szablonu projektu sieci Web Flask sond
 
@@ -359,4 +359,4 @@ Uruchamianie aplikacji sieci web na komputerze deweloperskim jest tylko jeden kr
 - Skonfiguruj potok ciągłej integracji/ciągłego wdrażania usługi, takie jak potoki usługi Azure. Oprócz Praca z kontrolą źródła (na repozytoriów platformy Azure, GitHub lub w innym miejscu), może mieć plany testów Azure automatycznie uruchomić testy jednostkowe jako warunek wstępny dla wersji, a także skonfigurować potok do wdrażania na serwerze tymczasowym dla dodatkowych testów przed do wdrożenia produkcyjnego. Usług platformy Azure DevOps, ponadto integruje się z usługą monitorowania rozwiązań, takich jak usługi App Insights i zamknięcie całego cyklu za pomocą narzędzi planowania agile. Aby uzyskać więcej informacji, zobacz:
 
   - [Tworzenie potoku ciągłej integracji/ciągłego Dostarczania dla języka Python za pomocą usługi Azure DevOps Projects](/azure/devops-project/azure-devops-project-python?view=vsts)
-  - [Programowanie w języku Python na platformie Azure przy użyciu programu Visual Studio Team Services (wideo, 11m 21s)](https://azure.microsoft.com/resources/videos/connect-2017-python-development-in-azure-with-visual-studio-team-services/).
+  - [Programowanie w języku Python na platformie Azure przy użyciu infrastruktury DevOps platformy Azure (wideo, 11m 21s)](https://azure.microsoft.com/resources/videos/connect-2017-python-development-in-azure-with-visual-studio-team-services/).
