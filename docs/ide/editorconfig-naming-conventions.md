@@ -12,12 +12,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 3630eee4a58571277cf6a0c2c265fee95f2e37e1
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: df74252361e330ac992f8f3e852d9c33006d18e7
+ms.sourcegitcommit: 6672a1e9d135d7e5cca3cceea07c6fe5a0871475
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42624280"
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47443587"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>Konwencje nazewnictwa platformy .NET dla wtyczki EditorConfig
 
@@ -88,11 +88,14 @@ Aby opisać modyfikatorów symbole ma być stosowana reguła nazewnictwa, należ
 
 Na poniższej liście przedstawiono dopuszczalne wartości i można określić wiele wartości, rozdzielając je przecinkami.
 
-- abstrakcyjny ani must_inherit
-- async
-- const
-- readonly
-- statyczne lub udostępnione
+- `abstract` lub `must_inherit`
+- `async`
+- `const`
+- `readonly`
+- `static` lub `shared`
+
+   > [!NOTE]
+   > Jeśli masz regułę nazewnictwa dla `static` lub `shared` symboli, zostanie ono również zastosowane do `const` symboli, ponieważ są one niejawnie statyczne. Jeśli nie chcesz `static` nazewnictwa reguła była stosowana do `const` symbole, Utwórz oddzielne regułę nazewnictwa `const` symboli.
 
 `required_modifiers` jest opcjonalną właściwością. Jeśli pominiesz tę właściwość, reguły nazewnictwa będą dotyczyć wszystkich modyfikatorów.
 

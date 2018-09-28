@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 04b492f0dca9df9e5ef78cb261df325599e9e895
-ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
+ms.openlocfilehash: 022eef30e7e067ca622650a2f5e702cd9a8168b9
+ms.sourcegitcommit: 6672a1e9d135d7e5cca3cceea07c6fe5a0871475
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44125057"
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47443496"
 ---
 # <a name="common-quick-actions"></a>Typowe szybkie akcje
 
@@ -31,7 +31,7 @@ Szybkie akcje w tej sekcji naprawić błędy w kodzie, które mogłyby spowodowa
 
 ### <a name="correct-misspelled-symbol-or-keyword"></a>Popraw błędnie symboli lub słowo kluczowe
 
-W przypadku błędnego wpisania przypadkowo typu lub słowa kluczowego w programie Visual Studio, tej szybkiej akcji automatycznie skoryguje go dla Ciebie. Zostaną wyświetlone te elementy w menu żarówka w postaci **"Zmień"*błędnie napisane słowa*"to"*poprawić wyraz*"**.  Na przykład:
+W przypadku błędnego wpisania przypadkowo typu lub słowa kluczowego w programie Visual Studio, tej szybkiej akcji automatycznie skoryguje go dla Ciebie. Zostaną wyświetlone te elementy w menu żarówka w postaci **"Zmień"*błędnie napisane słowa*"to"*poprawić wyraz*"**. Na przykład:
 
 ```csharp
 // Before
@@ -100,49 +100,11 @@ private void MyMethod()
 | ------- | -------------------- | ----------------  |
 | CS8300, BC37284  | C# i Visual Basic | Visual Studio 2017 w wersji 15.3 |
 
-### <a name="make-method-asynchronous"></a>Wprowadź metody asynchroniczne
-
-Korzystając z `await` lub `Await` — słowo kluczowe w metodzie, oczekuje się, że sama metoda jest oznaczona za pomocą `async` lub `Async` — słowo kluczowe.  Jednak jeśli nie jest to przypadek, szybka akcja zostanie wyświetlone sprawia, że metody asynchronicznej. Użyj **Ustaw metody/funkcję asynchroniczną** opcję z menu Szybkie akcje.
-
-```csharp
-// Before
-int MyAsyncMethod()
-{
-    return await Task.Run(...);
-}
-
-// Make method asynchronous
-
-// After
-async Task<int> MyAsyncMethod()
-{
-    return await Task.Run(...);
-}
-```
-
-```vb
-' Before
-Function MyAsyncMethod() as Integer
-    Return  Await Task.Run(...)
-End Function
-
-' Make method asynchronous
-
-' After
-Async Function MyAsyncMethod() As Task(Of Integer)
-    Return Await Task.Run(...)
-End Function
-```
-
-|  Identyfikator błędu | Właściwe języki |  Obsługiwana wersja |
-| ------- | -------------------- | ----------------  |
-| CS4032, BC37057 | C# i Visual Basic | Visual Studio 2017 |
-
 ## <a name="actions-that-remove-unnecessary-code"></a>Akcje, które usuń zbędny kod
 
 ### <a name="remove-unnecessary-usingsimports"></a>Usuń niepotrzebne użycia/Importy
 
-**Usuń zbędne deklaracje Using/Importy** szybka akcja usuwa wszelkie niewykorzystane `using` i `Import` instrukcji dla bieżącego pliku.  Po zaznaczeniu tego elementu są usuwane importowanej nieużywanych przestrzeni nazw.
+**Usuń zbędne deklaracje Using/Importy** szybka akcja usuwa wszelkie niewykorzystane `using` i `Import` instrukcji dla bieżącego pliku. Po zaznaczeniu tego elementu są usuwane importowanej nieużywanych przestrzeni nazw.
 
 |  Właściwe języki |  Obsługiwana wersja |
 |  -------------------- | ----------------  |
@@ -496,7 +458,7 @@ End Select
 
 ### <a name="convert-to-interpolated-string"></a>Konwertuj na ciąg interpolowany
 
-[Ciągi interpolowane](/dotnet/csharp/language-reference/keywords/interpolated-strings) to łatwy sposób express ciągi zawierające osadzone zmienne, podobnie jak **[String.Format](https://msdn.microsoft.com/library/system.string.format.aspx)** metody.  Rozpoznaje, przypadki, gdzie ciągi są połączone lub przy użyciu tej szybkiej akcji **String.Format**oraz zmian użycie w ciągu interpolowanym.
+[Ciągi interpolowane](/dotnet/csharp/language-reference/keywords/interpolated-strings) to łatwy sposób express ciągi zawierające osadzone zmienne, podobnie jak **[String.Format](https://msdn.microsoft.com/library/system.string.format.aspx)** metody. Rozpoznaje, przypadki, gdzie ciągi są połączone lub przy użyciu tej szybkiej akcji **String.Format**oraz zmian użycie w ciągu interpolowanym.
 
 ```csharp
 // Before
@@ -528,7 +490,7 @@ Dim s As String = $"My string with {num} in the middle"
 
 ### <a name="use-object-initializers"></a>Użyj inicjatorów obiektów
 
-To szybka akcja umożliwia użycie [inicjatorach obiektów](/dotnet/csharp/programming-guide/classes-and-structs/object-and-collection-initializers) zamiast wywoływania tne Konstruktor i masz dodatkowe wiersze instrukcji przypisania.
+To szybka akcja umożliwia użycie [inicjatorach obiektów](/dotnet/csharp/programming-guide/classes-and-structs/object-and-collection-initializers) zamiast wywoływania konstruktora i masz dodatkowe wiersze instrukcji przypisania.
 
 ```csharp
 // Before
@@ -923,7 +885,7 @@ Console.WriteLine($"{x} {y}");
 
 ### <a name="make-method-synchronous"></a>Oznaczanie metody synchroniczne
 
-Korzystając z `async` lub `Async` — słowo kluczowe dla metody, można oczekiwać, że wewnątrz tej metody `await` lub `Await` — słowo kluczowe jest również używany.  Jeśli jednak nie jest to przypadek, szybka akcja pojawia się, dzięki której metoda synchroniczna, usuwając `async` lub `Async` — słowo kluczowe i zmiany zwracanego typu. Użyj **oznaczanie synchroniczne metody** opcję z menu Szybkie akcje.
+Korzystając z `async` lub `Async` — słowo kluczowe dla metody, można oczekiwać, że wewnątrz tej metody `await` lub `Await` — słowo kluczowe jest również używany. Jeśli jednak nie jest to przypadek, szybka akcja pojawia się, dzięki której metoda synchroniczna, usuwając `async` lub `Async` — słowo kluczowe i zmiany zwracanego typu. Użyj **oznaczanie synchroniczne metody** opcję z menu Szybkie akcje.
 
 ```csharp
 // Before
@@ -958,6 +920,44 @@ End Function
 |  Identyfikator błędu | Właściwe języki |  Obsługiwana wersja |
 | ------- | -------------------- | ----------------  |
 | CS1998, BC42356 | C# i Visual Basic | Visual Studio 2015 Update 2 |
+
+### <a name="make-method-asynchronous"></a>Wprowadź metody asynchroniczne
+
+Korzystając z `await` lub `Await` — słowo kluczowe w metodzie, oczekuje się, że metoda jest oznaczona atrybutem `async` lub `Async` — słowo kluczowe. Jednak jeśli nie jest to przypadek, szybka akcja wyświetlany jest sprawia, że metody asynchronicznej. Użyj **Ustaw metody/funkcję asynchroniczną** opcję z menu Szybkie akcje.
+
+```csharp
+// Before
+int MyAsyncMethod()
+{
+    return await Task.Run(...);
+}
+
+// Make method asynchronous
+
+// After
+async Task<int> MyAsyncMethod()
+{
+    return await Task.Run(...);
+}
+```
+
+```vb
+' Before
+Function MyAsyncMethod() as Integer
+    Return  Await Task.Run(...)
+End Function
+
+' Make method asynchronous
+
+' After
+Async Function MyAsyncMethod() As Task(Of Integer)
+    Return Await Task.Run(...)
+End Function
+```
+
+|  Identyfikator błędu | Właściwe języki |  Obsługiwana wersja |
+| ------- | -------------------- | ----------------  |
+| CS4032, BC37057 | C# i Visual Basic | Visual Studio 2017 |
 
 ## <a name="see-also"></a>Zobacz także
 

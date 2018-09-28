@@ -14,12 +14,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 2766af365625890a0769f298d1801179da9c7e07
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: ee40aadd3287018e52910ad6b4a4000db6bcce8a
+ms.sourcegitcommit: 6672a1e9d135d7e5cca3cceea07c6fe5a0871475
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47029251"
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47443418"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-c-console-app"></a>Szybki Start: Za pomocą Visual Studio Utwórz swoją pierwszą aplikację konsoli C#
 
@@ -39,9 +39,9 @@ Najpierw utworzysz projekt aplikacji C#. Typ projektu jest dostarczany z wszystk
 
    ![Szablon projektu aplikacji (.NET Core) w oknie dialogowym Nowy projekt w programie Visual Studio IDE konsoli](../ide/media/new-project-csharp-dotnetcore-helloworld-console-app.png)
 
-     Jeśli nie widzisz **Aplikacja konsoli (.NET Core)** szablonu projektu, kliknij przycisk **Otwórz Instalator programu Visual Studio** łącze w okienku po lewej stronie **nowy projekt** okno dialogowe.
+     Jeśli nie widzisz **Aplikacja konsoli (.NET Core)** projektu szablonu, wybierz **Otwórz Instalator programu Visual Studio** łącze w okienku po lewej stronie **nowy projekt** okno dialogowe.
 
-   ![Kliknij link Otwórz Instalator programu Visual Studio z okna dialogowego Nowy projekt](../ide/media/csharp-open-visual-studio-installer-hello-world.png)
+   ![Wybierz łącze Otwórz Instalator programu Visual Studio z okna dialogowego Nowy projekt](../ide/media/csharp-open-visual-studio-installer-hello-world.png)
 
      Uruchamia Instalatora programu Visual Studio. Wybierz **programowanie dla wielu platform .NET Core** obciążenia, a następnie wybierz **Modyfikuj**.
 
@@ -75,9 +75,9 @@ Dodajmy trochę kodu, aby zatrzymać aplikację, tak aby nie zamyka okna konsoli
 
 ## <a name="run-the-application"></a>Uruchamianie aplikacji
 
-1. Kliknij przycisk **HelloWorld** przycisk na pasku narzędzi, aby uruchomić aplikację w trybie debugowania. (Lub, możesz nacisnąć przycisk **F5**.)
+1. Wybierz **HelloWorld** przycisk na pasku narzędzi, aby uruchomić aplikację w trybie debugowania. (Lub, możesz nacisnąć przycisk **F5**.)
 
-   ![Kliknij przycisk Witaj, świecie, aby uruchomić program z paska narzędzi](../ide/media/csharp-console-hello-world-button.png)
+   ![Wybierz przycisk Witaj, świecie, aby uruchomić aplikację z paska narzędzi](../ide/media/csharp-console-hello-world-button.png)
 
 1. Wyświetlanie aplikacji w oknie konsoli.
 
@@ -98,4 +98,4 @@ Dodajmy trochę kodu, aby zatrzymać aplikację, tak aby nie zamyka okna konsoli
 Gratulujemy ukończenie tego przewodnika Szybki Start! Mamy nadzieję, że wiesz już nieco C# i środowisku IDE programu Visual Studio. Aby dowiedzieć się więcej, przejdź do następujących samouczków.
 
 > [!div class="nextstepaction"]
-> [Samouczki języka C#](/dotnet/csharp/tutorials/)
+> [Wprowadzenie do aplikacji konsolowej C# w programie Visual Studio](tutorial-csharp-console.md)

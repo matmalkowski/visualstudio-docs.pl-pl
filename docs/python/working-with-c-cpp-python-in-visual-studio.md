@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: bbc5d194552952ccce4a30a7c15b917e7a7a32ae
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 62c7b202f9cbdbd8610c2a94c1dccbef59b85481
+ms.sourcegitcommit: 6672a1e9d135d7e5cca3cceea07c6fe5a0871475
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45549472"
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47443652"
 ---
 # <a name="create-a-c-extension-for-python"></a>Tworzenie rozszerzenia C++ dla języka Python
 
@@ -409,6 +409,7 @@ Istnieją różne oznacza, że do tworzenia rozszerzenia języka Python, zgodnie
 | ctypes | 2003 | [oscrypto](https://github.com/wbond/oscrypto) | Nie kompilacja powszechną dostępność. | Uzyskiwanie dostępu do i mutacja struktur C skomplikowana względem i podatne. |
 | SWIG | 1996 | [crfsuite](http://www.chokkan.org/software/crfsuite/) | Generowanie jednocześnie powiązania dla wielu języków. | Nadmiernego obciążenia, jeśli Python jest jedynym miejscem docelowym. |
 | cffi | 2013 | [Kryptografia](https://cryptography.io/en/latest/), [pypy](https://pypy.org/) | Łatwość integracji, PyPy zgodności. | Nowsze, mniej dojrzałe. |
+| [cppyy](https://cppyy.readthedocs.io/en/latest/) | 2017 | | Podobnie jak cffi przy użyciu języka C++. | Nowsze, może mieć problemy z programu VS 2017. |  
 
 ## <a name="see-also"></a>Zobacz także
 

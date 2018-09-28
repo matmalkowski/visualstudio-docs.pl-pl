@@ -1,5 +1,5 @@
 ---
-title: Generowanie konstruktora w programie Visual Studio
+title: Generuj Konstruktor szybka akcja
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6c063d8abc3b00ce15726ebfe0e8733254718428
-ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
+ms.openlocfilehash: 039e9a43e3ab6af5db399aa32722c698014256c9
+ms.sourcegitcommit: 6672a1e9d135d7e5cca3cceea07c6fe5a0871475
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44124986"
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47443561"
 ---
 # <a name="generate-a-constructor-in-visual-studio"></a>Generowanie konstruktora w programie Visual Studio
 
@@ -153,6 +153,8 @@ Dotyczy to generowanie kodu:
    Parametr zostanie dodany do konstruktora z typem wywnioskować na podstawie jej użycie.
 
    ![Generuj Konstruktor wynik](media/constructor4-result-cs.png)
+
+Można również dodać parametr do istniejącej metody. Aby uzyskać więcej informacji, zobacz [Dodaj parametr do metody](add-parameter.md).
 
 ## <a id="create"></a> Utwórz i zainicjuj pole lub właściwość z parametru konstruktora (tylko język C#)
 

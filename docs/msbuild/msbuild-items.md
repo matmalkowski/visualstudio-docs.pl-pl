@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d08a3fda756a1800b943cf02183187a2c180c20
-ms.sourcegitcommit: 95aedf723c6be5272c3c5a2911cb2bdec50e2148
+ms.openlocfilehash: 28d98b7c74ebc57bd5b7b529303f2f5a17277ff5
+ms.sourcegitcommit: 6672a1e9d135d7e5cca3cceea07c6fe5a0871475
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47228880"
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47443600"
 ---
 # <a name="msbuild-items"></a>Elementy programu MSBuild
 Elementy programu MSBuild to wejścia do systemu kompilacji i zazwyczaj reprezentują pliki (pliki zostały określone w `Include` atrybutu). Elementy są grupowane w typy elementów na podstawie ich nazw elementu. Typy elementów są nazywane listy elementów, które mogą być używane jako parametry dla zadań. Zadania umożliwiają wartości elementu wykonaj kroki procesu kompilacji.  
@@ -60,25 +60,26 @@ Elementy programu MSBuild to wejścia do systemu kompilacji i zazwyczaj reprezen
  Domyślnie elementów typu elementu są oddzielone średnikami (;), gdy jest on rozwinięty. Można używać składni @(\<ItemType >, "\<separator >") do określenia separator inną niż domyślna. Aby uzyskać więcej informacji, zobacz [porady: wyświetlanie listy elementów rozdzielanych przecinkami](../msbuild/how-to-display-an-item-list-separated-with-commas.md).  
   
 ##  <a name="use-wildcards-to-specify-items"></a>Użyj symboli wieloznacznych, aby określić elementy  
- Możesz użyć **, \*, a? znaki symboli wieloznacznych, aby określić grupy plików jako dane wejściowe dla kompilacji, zamiast wymieniać każdy plik oddzielnie.  
-  
--   ? wieloznaczny pasuje do pojedynczego znaku.  
-  
--   * Wieloznacznego dopasowuje zero lub więcej znaków.  
-  
--   ** Ścieżka częściowa pasuje do sekwencji znaków symboli wieloznacznych.  
 
-Na przykład można określić wszystkie *.cs* plików w katalogu, który zawiera projekt plik za pomocą następującego elementu w pliku projektu.  
+Możesz użyć `**`, `*`, i `?` symboli wieloznacznych, aby określić grupy plików jako dane wejściowe dla kompilacji, zamiast wymieniać każdy plik oddzielnie.
+  
+- `?` Wieloznaczny pasuje do pojedynczego znaku.
+- `*` Wieloznacznego dopasowuje zero lub więcej znaków.
+- `**` Ścieżka częściowa pasuje do sekwencji znaków symboli wieloznacznych.
+
+Na przykład można określić wszystkie `.cs` plików w katalogu, który zawiera projekt plik za pomocą następującego elementu w pliku projektu.
 
 ```xml  
 <CSFile Include="*.cs"/>  
 ```  
 
-Następujący element zaznaczenie wszystkich *.vb* pliki na *D:* dysku:  
+Następujący element zaznaczenie wszystkich `.vb` pliki na `D:` dysku:
 
 ```xml  
 <VBFile Include="D:/**/*.vb"/>  
 ```  
+
+Jeśli chcesz dołączyć literał `*` lub `?` znaków w elemencie bez rozszerzenia symboli wieloznacznych, należy najpierw [ucieczki symboli wieloznacznych](../msbuild/how-to-escape-special-characters-in-msbuild.md).
 
 Aby uzyskać więcej informacji na temat symboli wieloznacznych, zobacz [porady: Wybieranie plików do kompilacji](../msbuild/how-to-select-the-files-to-build.md).  
 
