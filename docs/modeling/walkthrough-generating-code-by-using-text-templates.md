@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: bc9d9e65cc893780c6b64dfd281d8db51fb5cce9
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 09bfb2e1a17a4832f4afa4f432e4232ce6845323
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566586"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859799"
 ---
 # <a name="walkthrough-generate-code-by-using-text-templates"></a>Przewodnik: generowanie kodu przy użyciu szablonów tekstowych
 
@@ -30,7 +30,7 @@ Przestrzeń nazw System.Xml zawiera wszechstronne narzędzia dla ładowania doku
 W tym przykładowym projekcie szablon odczytuje przykładowy plik XML i generuje klasy, które odpowiadają każdy typ węzła. W kodzie odręcznej można użyć w ramach tych zajęć, przejdź do pliku XML. Aplikację można również uruchomić na innych plików, które korzystają z tych samych typów węzła. Celem przykładowy plik XML ma zawierają przykłady wszystkie typy węzłów, które mają do czynienia z aplikacji.
 
 > [!NOTE]
-> Aplikacja [xsd.exe](http://go.microsoft.com/fwlink/?LinkId=178765), który jest dołączony do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], można wygenerować silnie typizowanych klas z plików XML. Szablon pokazany w tym miejscu jest dostarczany jako przykład.
+> Aplikacja [xsd.exe](http://go.microsoft.com/fwlink/?LinkId=178765), który jest dołączony do programu Visual Studio można wygenerować silnie typizowanych klas z plików XML. Szablon pokazany w tym miejscu jest dostarczany jako przykład.
 
 Poniżej przedstawiono przykładowy plik:
 
@@ -142,7 +142,7 @@ Dodaj plik szablonu tekstu i Ustaw rozszerzenie danych wyjściowych *.cs*.
 
 3.  W pliku, w dyrektywie szablonu, należy zmienić `hostspecific` atrybutu `true`.
 
-     Ta zmiana spowoduje włączenie kod szablonu w celu uzyskania dostępu do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] usług.
+     Ta zmiana spowoduje włączenie kod szablonu w celu uzyskania dostępu do usług Visual Studio.
 
 4.  W dyrektywie wyjścia Zmień rozszerzenie atrybut "CS", tak, aby szablon generuje plik języka C#. W projekcie języka Visual Basic może go zmienić na ".vb".
 
@@ -272,7 +272,7 @@ Przy użyciu tej samej metody można dodać więcej szczegółów, takich jak w�
 
 ### <a name="access-the-visual-studio-api"></a>Dostęp do interfejsu API programu Visual Studio
 
-Ustawienie `hostspecific` atrybutu `<#@template#>` dyrektywy umożliwia szablonu w celu uzyskania dostępu do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] interfejsu API. Ten szablon umożliwia to uzyskanie dostępu lokalizację plików projektu, aby unikać bezwzględną ścieżkę do pliku w kodzie szablonu.
+Ustawienie `hostspecific` atrybutu `<#@template#>` dyrektywy umożliwia szablonu w celu uzyskania dostępu do interfejsu API programu Visual Studio. Ten szablon umożliwia to uzyskanie dostępu lokalizację plików projektu, aby unikać bezwzględną ścieżkę do pliku w kodzie szablonu.
 
 ```
 <#@ template debug="false" hostspecific="true" language="C#" #>

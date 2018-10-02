@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5562ed74de4dd1c7068fabef4f67fdc421ee03d6
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 22290b9a65e512ba897641b076d74927aee712c0
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381862"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860137"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>Sprawdzanie poprawności w języku specyficznym dla domeny
 Autor języka specyficznego dla domeny (DSL) można zdefiniować ograniczenia sprawdzania poprawności, aby sprawdzić, czy model utworzony przez użytkownika jest znaczący. Na przykład modem DSL umożliwia użytkownikom rysowanie drzewa rodziny osób oraz ich elementów nadrzędnych, można zapisać ograniczenie, które gwarantuje, że elementy podrzędne daty urodzenia po ich elementy nadrzędne.
@@ -239,7 +239,7 @@ if (!validator.Validate(store, ValidationCategories.Save))
 ## <a name="running-validation-when-a-change-occurs"></a>Uruchamianie sprawdzania poprawności, po wprowadzeniu zmiany
  Jeśli chcesz upewnić się, że użytkownik jest wyświetlane ostrzeżenie natychmiast Jeśli model staje się nieprawidłowy, można zdefiniować zdarzenia magazynu, które uruchamia sprawdzania poprawności. Aby uzyskać więcej informacji o zdarzeniach magazynu, zobacz [obsługi propagowanie zmian poza Model zdarzeń](../modeling/event-handlers-propagate-changes-outside-the-model.md).
 
- Oprócz kod sprawdzania poprawności, należy dodać plik kodu niestandardowego do usługi **DslPackage** projektu z zawartością podobny do poniższego przykładu. Ten kod używa `ValidationController` dołączony do dokumentu. Ten kontroler wyświetla błędy sprawdzania poprawności w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] listy błędów.
+ Oprócz kod sprawdzania poprawności, należy dodać plik kodu niestandardowego do usługi **DslPackage** projektu z zawartością podobny do poniższego przykładu. Ten kod używa `ValidationController` dołączony do dokumentu. Ten kontroler wyświetla błędy sprawdzania poprawności na liście błędów Visual Studio.
 
 ```csharp
 using System;
@@ -302,7 +302,7 @@ namespace Company.FamilyTree
 
  Programy obsługi są również nazywane po cofnąć ani ponownego wykonywania operacji, które mają wpływ na łącza lub elementów.
 
-##  <a name="custom"></a> Kategorie niestandardowego sprawdzania poprawności
+## <a name="custom"></a> Kategorie niestandardowego sprawdzania poprawności
  Oprócz standardowego sprawdzania poprawności kategorii, takich jak Menu i otwórz można zdefiniować własne kategorie. Możesz wywołać tych kategorii z kodu programu. Użytkownik nie może wywołać je bezpośrednio.
 
  Typowym zastosowaniem niestandardowych kategorii jest definiowanie kategorii, który umożliwia sprawdzenie, czy model spełnia warunki wstępne określonego narzędzia.
@@ -330,7 +330,7 @@ validationController.ValidateCustom
    "PreconditionsForGeneratePartsList");
 ```
 
-##  <a name="alternatives"></a> Alternatywy dla sprawdzania poprawności
+## <a name="alternatives"></a> Alternatywy dla sprawdzania poprawności
  Ograniczenia sprawdzania poprawności raportowania błędów, ale nie należy zmieniać modelu. Jeśli zamiast tego chcesz uniemożliwić modelu staje się nieprawidłowy, można użyć innych technik.
 
  Techniki te nie są jednak zalecane. Jest to zazwyczaj lepiej zezwolić użytkownikom na podjęcie decyzji o sposobie Popraw nieprawidłowy model.

@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: da03087ae5f4b1e2e8044229ece5b8a6177c11ef
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 6a2388619dea31696fe4416032cc12cd1fe5b372
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176079"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860371"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>Porady: rozszerzanie projektanta języka specyficznego dla domeny
 
@@ -68,19 +68,19 @@ Skonfiguruj projekt, który zawiera kod rozszerzenia, a projekt VSIX, które eks
 
 ## <a name="test-and-deployment"></a>Testowanie i wdrażanie
 
-Aby przetestować jakiegokolwiek rozszerzenia, w tym temacie, tworzenie i uruchamianie rozwiązania. Eksperymentalne wystąpienie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zostanie otwarty. W tym wypadku otwórz rozwiązanie DSL. Edytowanie diagramu DslDefinition. Zachowania rozszerzeń będą widoczne.
+Aby przetestować jakiegokolwiek rozszerzenia, w tym temacie, tworzenie i uruchamianie rozwiązania. Otwiera doświadczalne wystąpienie programu Visual Studio. W tym wypadku otwórz rozwiązanie DSL. Edytowanie diagramu DslDefinition. Zachowania rozszerzeń będą widoczne.
 
-Do wdrożenia rozszerzenia do głównego [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]i na innych komputerach, wykonaj następujące czynności:
+Aby wdrożyć rozszerzeń do głównego programu Visual Studio, a także na innych komputerach, wykonaj następujące kroki:
 
 1.  Znajdź plik VSIX instalacji w projekcie VSIX bin\\*\*\\\*.vsix
 
 2.  Skopiuj ten plik do komputera docelowego, a następnie w Eksploratorze Windows (lub Eksploratora plików), kliknij go dwukrotnie.
 
-     [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Otwiera Menedżera rozszerzenia, aby upewnić się, że rozszerzenie zostało zainstalowane.
+     Otwiera Menedżera rozszerzeń programu Visual Studio, aby upewnić się, że rozszerzenie zostało zainstalowane.
 
 Aby odinstalować rozszerzenie, wykonaj następujące kroki:
 
-1.  w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]na **narzędzia** menu, kliknij przycisk **Menedżera rozszerzeń**.
+1.  W programie Visual Studio na **narzędzia** menu, kliknij przycisk **Menedżera rozszerzeń**.
 
 2.  Zaznacz rozszerzenie, a następnie usuń go.
 

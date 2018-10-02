@@ -22,33 +22,34 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: c6f192f476b6b3adb1f8d7e664e769314bad9a46
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 19278cc1fd08a0dd4d4d18e11c7cb7a3e09ae7e0
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31952718"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859773"
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>Dostosowanie map kodu przez edycję plików DGML
-Aby dostosować mapę kodu, można edytować plik skierowane Graph Markup Language (.dgml) mapy. Na przykład można edytować elementy, aby określić niestandardowe style, przypisać właściwości i kategorii elementy kodu i linki, lub Podłącz dokumenty lub adresy URL do elementów kodu lub do łącza. Aby uzyskać więcej informacji o elementach DGML, zobacz [skierowane do Graph Markup Language) dokumentacja języka (DGML](../modeling/directed-graph-markup-language-dgml-reference.md).
 
- Edytuj plik .dgml mapy kodu w edytorze tekstu lub edytora XML. Jeśli tablica jest częścią rozwiązania Visual Studio, wybierz go w **Eksploratora rozwiązań**, otwórz menu skrótów i wybierz **Otwórz za pomocą**, **edytora XML (tekst)**.
+Aby dostosować mapę kodu, możesz edytować jego plik Directed Graph Markup Language (.dgml). Na przykład można edytować elementy, aby określić niestandardowe style, przypisać właściwości i kategorie elementów kodu i linki, lub Połącz dokumenty lub adresy URL, aby elementy kodu lub łącza. Aby uzyskać więcej informacji dotyczących elementów DGML, zobacz [odwołania kierowane Graph Markup Language (DGML)](../modeling/directed-graph-markup-language-dgml-reference.md).
+
+Edytuj plik .dgml mapy kodu w edytorze tekstu lub edytorze XML. Jeśli mapa jest częścią rozwiązania programu Visual Studio, wybierz ją w **Eksploratora rozwiązań**, otwórz menu skrótów i wybierz **Otwórz za pomocą**, **Edytor (tekstu) XML**.
 
 > [!NOTE]
->  Aby utworzyć mapy kodu, musi mieć Visual Studio Enterprise. Podczas edytowania mapy kodu w programie Visual Studio go czyści wszystkie nieużywane DGML elementów i atrybutów, usuwając je podczas zapisywania pliku .dgml. Tworzy również elementy kodu automatycznie po dodaniu ręcznie nowe łącza. Podczas zapisywania pliku .dgml wszelkie atrybuty, które są dodawane do elementu, mogą się ponownie rozmieszczać w kolejności alfabetycznej.
+> Aby utworzyć map kodu, musi mieć programu Visual Studio Enterprise edition. Podczas edytowania mapy kodu w programie Visual Studio go czyści wszelkie atrybuty i nieużywane elementy DGML, usuwając je podczas zapisywania pliku .dgml. Tworzy również elementy kodu automatycznie podczas ręcznego dodawania nowych łączy. Podczas zapisywania pliku .dgml wszelkie atrybuty, które są dodawane do elementu, mogą się ponownie rozmieszczać w kolejności alfabetycznej.
 
-##  <a name="OrganizeNodes"></a> Elementy kodu grupy
- Można dodawać nowych grup lub przekonwertować istniejące węzły w grupie.
+## <a name="OrganizeNodes"></a> Grupować elementy kodu
+ Można dodać nowe grupy lub przekonwertować istniejące węzły w grupie.
 
-1.  Otwórz plik .dgml w edytorze tekstu lub edytora XML.
+1.  Otwórz plik .dgml w edytorze tekstu lub edytorze XML.
 
-2.  Aby dokonać konwersji elementu kodu do grupy, należy znaleźć `<Node/>` element dla tego elementu kodu.
+2.  Aby przekonwertować element kodu z grupą, Znajdź `<Node/>` element dla tego elementu kodu.
 
-     \- lub -
+     \- lub —
 
      Aby dodać nową grupę, Znajdź `<Nodes>` sekcji. Dodaj nową `<Node/>` elementu.
 
-3.  W `<Node/>` elementu, Dodaj `Group` atrybutu, aby określić, czy grupa zostanie wyświetlona rozwinięte lub zwinięte. Na przykład:
+3.  W `<Node/>` elementu Dodawanie `Group` atrybutu, aby określić, czy grupa pojawia się rozwinięta czy zwinięta. Na przykład:
 
     ```xml
     <Nodes>
@@ -57,13 +58,13 @@ Aby dostosować mapę kodu, można edytować plik skierowane Graph Markup Langua
     </Nodes>
     ```
 
-4.  W `<Links>` sekcji, upewnij się, że `<Link/>` element, który ma następujące atrybuty istnieje dla każdej relacji między element kodu grupy i jego elementy potomne kodu:
+4.  W `<Links>` sekcji, upewnij się, że `<Link/>` element, który ma następujące atrybuty, istnieje dla każdej relacji między elementem grupy kodu i jego elementy podrzędne w kodzie:
 
     -   A `Source` atrybut, który określa element kodu grupy
 
     -   A `Target` atrybut, który określa element podrzędny kodu
 
-    -   A `Category` atrybut, który określa `Contains` relacji między elementem kodu grupy i jej podrzędne elementu kodu
+    -   A `Category` atrybut, który określa `Contains` relacji między elementem kodu grupy i jego podrzędny element kodu
 
      Na przykład:
 
@@ -76,12 +77,12 @@ Aby dostosować mapę kodu, można edytować plik skierowane Graph Markup Langua
     </Links>
     ```
 
-     Aby uzyskać więcej informacji na temat `Category` atrybutów, zobacz [przypisać kategorie elementy kodu i linki](#AssignCategories).
+     Aby uzyskać więcej informacji na temat `Category` atrybutów, zobacz [przypisywać kategorie elementów kodu i linków](#AssignCategories).
 
-##  <a name="ChangeGraphStyle"></a> Zmień styl mapy
- Kolor tła i kolor obramowania mapy można zmienić, edytując plik .dgml mapy. Aby zmienić styl elementy kodu i łączy, zobacz [Zmień styl elementy kodu i linki](#Highlight).
+## <a name="ChangeGraphStyle"></a> Zmień styl mapy
+ Możesz zmienić kolor tła i koloru obramowania mapy, edytując plik .dgml mapy. Aby zmienić styl elementów kodu i linków, zobacz [Zmienianie stylu elementów kodu i linków](#Highlight).
 
-1.  Otwórz plik .dgml w edytorze tekstu lub edytora XML.
+1.  Otwórz plik .dgml w edytorze tekstu lub edytorze XML.
 
 2.  W `<DirectedGraph>` elementu, Dodaj dowolny z następujących atrybutów, aby zmienić jego styl:
 
@@ -106,25 +107,25 @@ Aby dostosować mapę kodu, można edytować plik skierowane Graph Markup Langua
     </DirectedGraph>
     ```
 
-##  <a name="Highlight"></a> Zmień styl elementy kodu i łączy
+## <a name="Highlight"></a> Zmienianie stylu elementów kodu i linków
 
-###  <a name="CreateCustomStyles"></a>
- Niestandardowe style można stosować do następujących elementów kodu:
+### <a name="CreateCustomStyles"></a>
+ Style niestandardowe można stosować do następujących elementów kodu:
 
 -   Elementy jednego kodu i linki
 
 -   Grupy elementów kodu i linki
 
--   Grupy elementów kodu i linki na podstawie określonych warunków
+-   Grupy elementów kodu i linków na podstawie określonych warunków
 
 > [!TIP]
->  Jeśli masz powtarzające się style przez wiele elementów kodu lub łącza, można rozważyć zastosowanie kategorii te elementy kodu lub łącza, a następnie zastosować styl do tej kategorii. Aby uzyskać więcej informacji, zobacz [Przypisz kategorie, aby elementy kodu i linki](#AssignCategories) i [przypisać właściwości elementy kodu i linki](#AssignProperties).
+>  Jeśli masz powtarzające się style w wielu elementów kodu lub łączy, można rozważyć zastosowanie kategorii do tych elementów kodu lub łącza, a następnie zastosowanie stylu do tej kategorii. Aby uzyskać więcej informacji, zobacz [Przypisz kategorie do elementów kodu i linków](#AssignCategories) i [przypisz właściwości do elementów kodu i linków](#AssignProperties).
 
-##### <a name="to-apply-a-custom-style-to-a-single-code-element"></a>Aby zastosować styl niestandardowy element pojedynczy kod
+##### <a name="to-apply-a-custom-style-to-a-single-code-element"></a>Aby zastosować styl niestandardowy do pojedynczego elementu kodu
 
-1.  Otwórz plik .dgml w edytorze tekstu lub edytora XML.
+1.  Otwórz plik .dgml w edytorze tekstu lub edytorze XML.
 
-2.  Znajdź element kodu `<Node/>` elementu. Dodaj te atrybuty, aby dostosować styl jego:
+2.  Znajdź element kodu `<Node/>` elementu. Dodaj dowolny z tych atrybutów, aby dostosować jego styl:
 
      Kolor tła
 
@@ -188,7 +189,7 @@ Aby dostosować mapę kodu, można edytować plik skierowane Graph Markup Langua
     Style="Glass"
     ```
 
-     - lub -
+     - lub —
 
     ```xml
     Style="Plain"
@@ -196,7 +197,7 @@ Aby dostosować mapę kodu, można edytować plik skierowane Graph Markup Langua
 
      Kształt
 
-     Aby zastąpić kształt ikony, ustaw `Shape` właściwości `None` i ustaw `Icon` właściwości do ścieżki pliku ikony.
+     Aby zamienić kształt ikony, należy ustawić `Shape` właściwości `None` i ustaw `Icon` właściwość ścieżkę z plikiem ikony.
 
     ```xml
     Shape="ShapeFilePathLocation"
@@ -213,11 +214,11 @@ Aby dostosować mapę kodu, można edytować plik skierowane Graph Markup Langua
 
 ##### <a name="to-apply-a-custom-style-to-a-single-link"></a>Aby zastosować styl niestandardowy do pojedynczego łącza
 
-1.  Otwórz plik .dgml w edytorze tekstu lub edytora XML.
+1.  Otwórz plik .dgml w edytorze tekstu lub edytorze XML.
 
 2.  Znajdź `<Link/>` element, który zawiera nazwy elementu kodu źródłowego i docelowego elementu kodu.
 
-3.  W `<Link/>` elementu, Dodaj dowolny z następujących atrybutów, aby dostosować styl jego:
+3.  W `<Link/>` elementu, Dodaj dowolny z następujących atrybutów, aby dostosować jego styl:
 
      Kolor konturu i grotu strzałki
 
@@ -245,13 +246,13 @@ Aby dostosować mapę kodu, można edytować plik skierowane Graph Markup Langua
     </Links>
     ```
 
-##### <a name="to-apply-custom-styles-to-a-group-of-code-elements-or-links"></a>Aby zastosować style niestandardowe do grupy elementy kodu lub łącza
+##### <a name="to-apply-custom-styles-to-a-group-of-code-elements-or-links"></a>Aby zastosować niestandardowe style do grupy elementów kodu lub łączy
 
-1.  Otwórz plik .dgml w edytorze tekstu lub edytora XML.
+1.  Otwórz plik .dgml w edytorze tekstu lub edytorze XML.
 
-2.  Jeśli `<Styles></Styles>` element nie istnieje, dodaj je w obszarze `<DirectedGraph></DirectedGraph>` elementu po `<Links></Links>` elementu.
+2.  Jeśli `<Styles></Styles>` element nie istnieje, należy dodać go pod `<DirectedGraph></DirectedGraph>` elementu po `<Links></Links>` elementu.
 
-3.  W `<Styles></Styles>` elementu w obszarze `<Style/>` element i określ następujące atrybuty:
+3.  W `<Styles></Styles>` elementu w obszarze `<Style/>` elementu i określić następujące atrybuty:
 
     -   `TargetType="Node` &#124; `Link | Graph"`
 
@@ -261,11 +262,11 @@ Aby dostosować mapę kodu, można edytować plik skierowane Graph Markup Langua
 
      Aby zastosować niestandardowy styl do wszystkich typów docelowych, nie należy używać warunku.
 
-##### <a name="to-apply-a-conditional-style-to-groups-of-code-elements-or-links"></a>Aby zastosować styl warunkowy do grup elementów kodu lub łącza
+##### <a name="to-apply-a-conditional-style-to-groups-of-code-elements-or-links"></a>Aby zastosować styl warunkowy do grupy elementów kodu lub łączy
 
-1.  Otwórz plik .dgml w edytorze tekstu lub edytora XML.
+1.  Otwórz plik .dgml w edytorze tekstu lub edytorze XML.
 
-2.  W `<Style/>` elementu, Dodaj `<Condition/>` element, który zawiera `Expression` atrybutu, aby określić wyrażenie zwracające wartość logiczną.
+2.  W `<Style/>` elementu Dodawanie `<Condition/>` element, który zawiera `Expression` atrybutu, aby określić wyrażenie zwracające wartość logiczną.
 
      Na przykład:
 
@@ -273,13 +274,13 @@ Aby dostosować mapę kodu, można edytować plik skierowane Graph Markup Langua
     <Condition Expression="MyCategory"/>
     ```
 
-     - lub -
+     - lub —
 
     ```xml
     <Condition Expression="MyCategory > 100"/>
     ```
 
-     - lub -
+     - lub —
 
     ```xml
     <Condition Expression="HasCategory('MyCategory')"/>
@@ -293,7 +294,7 @@ Aby dostosować mapę kodu, można edytować plik skierowane Graph Markup Langua
 
      <UnaryExpression> ::= "!" <Expression> &#124; "+" <Expression> &#124; "-" <Expression>
 
-     <Operator> :: = "<" &#124; "\<=" &#124; "=" &#124; "> =" &#124; ">" &#124; "! =" &#124; "lub" &#124; "i" &#124; "+" &#124; "*" &#124; "/" &#124; "-"
+     <Operator> :: = "<" &#124; "\<=" &#124; "=" &#124; "> =" &#124; ">" &#124; "! =" &#124; "or" &#124; "i" &#124; "+" &#124; "*" &#124; "/" &#124; "-"
 
      <MemberBindings> ::= <MemberBindings> &#124; <MemberBinding> "." <MemberBinding>
 
@@ -307,13 +308,13 @@ Aby dostosować mapę kodu, można edytować plik skierowane Graph Markup Langua
 
      <Identifier> ::= [^. ]*
 
-     <Literal> :: = pojedynczych lub podwójnych cudzysłowach literału ciągu znaków
+     <Literal> :: = literał ciągu pojedynczym lub podwójnym cudzysłowem
 
-     <Number> :: = ciąg cyfr z opcjonalnym separatorem dziesiętnym
+     <Number> :: = ciąg cyfr z opcjonalnym przecinkiem dziesiętnym
 
-     Można określić wiele `<Condition/>` elementów, które muszą być spełnione, aby zastosować styl wszystkie.
+     Można określić wiele `<Condition/>` elementy, które muszą być spełnione, aby zastosować styl.
 
-3.  W następnym wierszu po `<Condition/>` elementu, Dodaj jeden lub wiele `<Setter/>` elementy, aby określić `Property` atrybut i stałym `Value` atrybutu lub obliczanej `Expression` atrybut do zastosowania do mapy, elementy kodu lub linki, które spełniają warunek.
+3.  W następnym wierszu po `<Condition/>` elementu, Dodaj jeden lub wiele `<Setter/>` elementy, aby określić `Property` atrybut i stałym `Value` atrybutu lub obliczanej `Expression` atrybutu, aby zastosować do mapy, elementy kodu lub łączy, które spełniają warunek.
 
      Na przykład:
 
@@ -321,7 +322,7 @@ Aby dostosować mapę kodu, można edytować plik skierowane Graph Markup Langua
     <Setter Property="BackGround" Value="Green"/>
     ```
 
- Jako proste pełny przykład, następujący warunek określa, że element kodu zostanie wyświetlony zielony lub czerwony na podstawie jego `Passed` kategoria jest ustawiona na `True` lub `False`:
+ Jako prosty, kompletny przykład, następujący warunek określa, że element kodu pojawi się jako zielony lub czerwony, w zależności od tego, czy jego `Passed` kategoria jest ustawiona na `True` lub `False`:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -347,7 +348,7 @@ Aby dostosować mapę kodu, można edytować plik skierowane Graph Markup Langua
 
  Poniższa tabela zawiera niektóre przykładowe warunki, których można użyć:
 
- Ustaw rozmiar czcionki w zależności od liczby wierszy kodu, który również zmienia rozmiar elementu kodu. W tym przykładzie używane pojedyncze wyrażenie warunkowe do ustawiania wielu właściwości `FontSize` i `FontFamily`.
+ Ustaw rozmiar czcionki jako funkcję liczby linii kodu, która zmienia także rozmiar elementu kodu. W tym przykładzie używa pojedynczego wyrażenia warunkowego do ustawiania wielu właściwości `FontSize` i `FontFamily`.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -370,15 +371,15 @@ Aby dostosować mapę kodu, można edytować plik skierowane Graph Markup Langua
 </DirectedGraph>
 ```
 
- Kolor tła elementu kodu na podstawie `Coverage` właściwości. Style są oceniane w kolejności, podobnie jak `if-else` instrukcje.
+ Ustaw kolor tła elementu kodu, na podstawie `Coverage` właściwości. Style są obliczane w kolejności, w jakiej się pojawiają, podobnie jak `if-else` instrukcji.
 
  W tym przykładzie:
 
-1.  Jeśli `Coverage` jest > 80, a następnie ustaw `Background` właściwości zielony.
+1.  Jeśli `Coverage` wynosi > 80, a następnie ustaw `Background` właściwości na zielony.
 
-2.  Else if `Coverage` > 50, a następnie ustaw `Background` właściwości odcień pomarańczowy na podstawie wartości z `Coverage` właściwości.
+2.  Jeśli nie `Coverage` wynosi > 50, a następnie ustaw `Background` właściwości na odcień koloru pomarańczowego na podstawie wartości z `Coverage` właściwości.
 
-3.  Ustaw w przeciwnym razie `Background` właściwości odcień czerwony na podstawie wartości z `Coverage` właściwości.
+3.  Ustaw inne `Background` właściwości na odcień czerwieni na podstawie wartości z `Coverage` właściwości.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -407,7 +408,7 @@ Aby dostosować mapę kodu, można edytować plik skierowane Graph Markup Langua
 </DirectedGraph>
 ```
 
- Ustaw `Shape` właściwości `None` tak, aby ikony zastępuje kształtu. Użyj `Icon` właściwości w celu określenia lokalizacji ikony.
+ Ustaw `Shape` właściwość `None` tak, aby ikona została zamieniona na kształt. Użyj `Icon` właściwość, aby określić lokalizację ikony.
 
 ```xml
 <DirectedGraph xmlns="http://schemas.microsoft.com/vs/2009/dgml">
@@ -436,14 +437,14 @@ Aby dostosować mapę kodu, można edytować plik skierowane Graph Markup Langua
 </DirectedGraph>
 ```
 
-##  <a name="AssignProperties"></a> Przypisz właściwości elementy kodu i linki
- Przez przypisanie właściwości można organizować elementy kodu i linki. Na przykład można wybrać elementy kodu, które mają określone właściwości, aby grupować, zmień ich styl lub je ukryć.
+## <a name="AssignProperties"></a> Przypisywanie właściwości do elementów kodu i łączy
+ Elementy kodu i łącza można organizować przez przypisywanie im właściwości. Na przykład można wybrać elementy kodu, które mają szczególne właściwości, tak aby można je pogrupować, zmienić ich styl lub je ukryć.
 
-#### <a name="to-assign-a-property-to-a-code-element"></a>Aby przypisać właściwości do elementu kodu
+#### <a name="to-assign-a-property-to-a-code-element"></a>Aby przypisać właściwość do elementu kodu
 
-1.  Otwórz plik .dgml w edytorze tekstu lub edytora XML.
+1.  Otwórz plik .dgml w edytorze tekstu lub edytorze XML.
 
-2.  Znajdź `<Node/>` element dla tego elementu kodu. Określ nazwę właściwości i jej wartość. Na przykład:
+2.  Znajdź `<Node/>` element dla tego elementu kodu. Określ nazwę właściwości i jego wartość. Na przykład:
 
     ```xml
     <Nodes>
@@ -451,7 +452,7 @@ Aby dostosować mapę kodu, można edytować plik skierowane Graph Markup Langua
     </Nodes>
     ```
 
-3.  Dodaj `<Property/>` elementu `<Properties>` sekcji, aby określić atrybuty, takie jak jego widoczne nazwę i typ danych:
+3.  Dodaj `<Property/>` elementu `<Properties>` sekcji, aby określić atrybuty, takie jak jego widoczna nazwa i typ danych:
 
     ```xml
     <Properties>
@@ -461,11 +462,11 @@ Aby dostosować mapę kodu, można edytować plik skierowane Graph Markup Langua
 
 #### <a name="to-assign-a-property-to-a-link"></a>Aby przypisać właściwość do łącza
 
-1.  Otwórz plik .dgml w edytorze tekstu lub edytora XML.
+1.  Otwórz plik .dgml w edytorze tekstu lub edytorze XML.
 
 2.  Znajdź `<Link/>` element, który zawiera nazwy elementu kodu źródłowego i docelowego elementu kodu.
 
-3.  W `<Node/>` elementu, określ nazwę właściwości i jej wartość. Na przykład:
+3.  W `<Node/>` elementu, określ nazwę właściwości i jego wartość. Na przykład:
 
     ```xml
     <Links>
@@ -473,7 +474,7 @@ Aby dostosować mapę kodu, można edytować plik skierowane Graph Markup Langua
     </Links>
     ```
 
-4.  Dodaj `<Property/>` elementu `<Properties>` sekcji, aby określić atrybuty, takie jak jego widoczne nazwę i typ danych:
+4.  Dodaj `<Property/>` elementu `<Properties>` sekcji, aby określić atrybuty, takie jak jego widoczna nazwa i typ danych:
 
     ```xml
     <Properties>
@@ -481,16 +482,16 @@ Aby dostosować mapę kodu, można edytować plik skierowane Graph Markup Langua
     </Properties>
     ```
 
-##  <a name="AssignCategories"></a> Przypisz kategorie, aby elementy kodu i linki
- Poniższe sekcje pokazują, jak można organizować elementy kodu przez przypisanie kategorii i w jaki sposób można utworzyć hierarchiczne kategorie, które ułatwiają organizowanie elementów kodu i dodać atrybuty do kategorii podrzędnych za pomocą dziedziczenia.
+## <a name="AssignCategories"></a> Przypisywanie kategorii do elementów kodu i łączy
+ W poniższych sekcjach przedstawiono, jak można organizować elementy kodu przez przypisywanie kategorii do nich i w jaki sposób można utworzyć hierarchiczne kategorie, które pomagają organizować elementy kodu i dodawanie atrybutów do kategorii podrzędnych za pomocą dziedziczenia.
 
-#### <a name="to-assign-a-category-to-a-code-element"></a>Przypisywanie kategorii do elementu kodu
+#### <a name="to-assign-a-category-to-a-code-element"></a>Aby przypisać kategorię do elementu kodu
 
--   Otwórz plik .dgml w edytorze tekstu lub edytora XML.
+-   Otwórz plik .dgml w edytorze tekstu lub edytorze XML.
 
 -   Znajdź `<Node/>` elementu dla elementu kodu, który ma.
 
--   W `<Node/>` elementu, Dodaj `Category` atrybutu, aby określić nazwę kategorii. Na przykład:
+-   W `<Node/>` elementu Dodawanie `Category` atrybutu, aby określić nazwę kategorii. Na przykład:
 
     ```xml
     <Nodes>
@@ -498,7 +499,7 @@ Aby dostosować mapę kodu, można edytować plik skierowane Graph Markup Langua
     </Nodes>
     ```
 
-     Dodaj `<Category/>` elementu `<Categories>` sekcji, aby mogli używać `Label` atrybutu określ tekst wyświetlany w tej kategorii:
+     Dodaj `<Category/>` elementu `<Categories>` sekcji tak, aby można było używać `Label` atrybutu, aby określić tekst wyświetlany dla tej kategorii:
 
     ```xml
     <Categories>
@@ -508,11 +509,11 @@ Aby dostosować mapę kodu, można edytować plik skierowane Graph Markup Langua
 
 #### <a name="to-assign-a-category-to-a-link"></a>Przypisywanie kategorii do łącza
 
-1.  Otwórz plik .dgml w edytorze tekstu lub edytora XML.
+1.  Otwórz plik .dgml w edytorze tekstu lub edytorze XML.
 
 2.  Znajdź `<Link/>` element, który zawiera nazwy elementu kodu źródłowego i docelowego elementu kodu.
 
-3.  W `<Link/>` elementu, Dodaj `Category` atrybutu, aby określić nazwę kategorii. Na przykład:
+3.  W `<Link/>` elementu Dodawanie `Category` atrybutu, aby określić nazwę kategorii. Na przykład:
 
     ```xml
     <Links>
@@ -520,7 +521,7 @@ Aby dostosować mapę kodu, można edytować plik skierowane Graph Markup Langua
     </Links>
     ```
 
-4.  Dodaj `<Category/>` elementu `<Categories>` sekcji, aby mogli używać `Label` atrybutu określ tekst wyświetlany w tej kategorii:
+4.  Dodaj `<Category/>` elementu `<Categories>` sekcji tak, aby można było używać `Label` atrybutu, aby określić tekst wyświetlany dla tej kategorii:
 
     ```xml
     <Categories>
@@ -530,9 +531,9 @@ Aby dostosować mapę kodu, można edytować plik skierowane Graph Markup Langua
 
 #### <a name="to-create-hierarchical-categories"></a>Tworzenie kategorii hierarchicznych
 
-1.  Otwórz plik .dgml w edytorze tekstu lub edytora XML.
+1.  Otwórz plik .dgml w edytorze tekstu lub edytorze XML.
 
-2.  Dodaj `<Category/>` elementu dla kategorii nadrzędnej, a następnie dodaj `BasedOn` atrybutu kategorii podrzędnych `<Category/>` elementu.
+2.  Dodaj `<Category/>` element dla kategorii nadrzędnej, a następnie dodaj `BasedOn` atrybutów do kategorii podrzędnych `<Category/>` elementu.
 
      Na przykład:
 
@@ -550,35 +551,35 @@ Aby dostosować mapę kodu, można edytować plik skierowane Graph Markup Langua
     </Categories>
     ```
 
-     W tym przykładzie tła `MyFirstNode` jest zielony ponieważ jego `Category` dziedziczy atrybut `Background` atrybutu `MyParentCategory`.
+     W tym przykładzie tło `MyFirstNode` zielony ponieważ jej `Category` dziedziczy atrybut `Background` atrybutu `MyParentCategory`.
 
-##  <a name="AddReferences"></a> Połącz dokumenty lub adresy URL do elementów kodu i linki
- Możesz połączyć dokumentów lub adresy URL elementy kodu lub łącza edycji pliku .dgml mapy i dodając `Reference` atrybutu `<Node/>` elementu element kodu lub `<Link/>` elementu dla łącza. Można otworzyć i wyświetlić tej zawartości z elementu kodu lub łącza. `Reference` Atrybut określa ścieżkę do tej zawartości. Może to być ścieżka względem lokalizacji pliku .dgml lub ścieżka bezwzględna.
+## <a name="AddReferences"></a> Połączyć dokumenty lub adresy URL elementów kodu i linków
+ Możesz połączyć dokumenty lub adresy URL do elementów kodu lub łącza, edytując plik .dgml mapy i dodawanie `Reference` atrybutu `<Node/>` elementu dla elementu kodu lub `<Link/>` dla łącza. Następnie można otworzyć i wyświetlić tę zawartość z elementu kodu lub łącza. `Reference` Atrybut określa ścieżkę tej zawartości. Może to być ścieżka względem lokalizacji pliku .dgml lub ścieżka bezwzględna.
 
 > [!CAUTION]
 >  Jeśli używane są ścieżki względne, a plik .dgml zostanie przeniesiony do innej lokalizacji, ścieżki te nie zostaną rozpoznane. Podczas próby otwarcia i wyświetlenia połączonej zawartości pojawi się komunikat o błędzie z informacją, że nie można wyświetlić zawartości.
 
  Na przykład można połączyć następujące elementy kodu:
 
--   Do opisania zmian do klasy, można połączyć adresu URL elementu kodu pracy, dokumentu lub innego pliku .dgml do elementu kodu dla klasy.
+-   Aby opisać zmiany w klasie, można połączyć element roboczy kodu, dokument lub inny plik .dgml adres URL do elementu kodu dla klasy.
 
--   Diagram zależności można połączyć elementu kodu grupy, który reprezentuje warstwę architektura logiczna oprogramowania.
+-   Można połączyć diagram zależności grupy element kodu, który reprezentuje warstwę w logicznej architekturze oprogramowania.
 
--   Aby wyświetlić więcej informacji na temat składników, która uwidacznia interfejs, można połączyć diagram składnika do elementu kodu dla tego interfejsu.
+-   Aby wyświetlić więcej informacji na temat składnika, który udostępnia interfejs, można połączyć diagram składników do elementu kodu dla tego interfejsu.
 
--   Element kodu połączyć elementu roboczego Team Foundation Server lub usterki lub inne informacje dotyczące elementu kodu.
+-   Połącz element kodu do elementu pracy Team Foundation Server lub usterki lub inne informacje dotyczące elementu kodu.
 
-#### <a name="to-link-a-document-or-url-to-a-code-element"></a>Aby utworzyć łącze dokumentu lub adresu URL do elementu kodu
+#### <a name="to-link-a-document-or-url-to-a-code-element"></a>Aby połączyć element kodu dokumentu lub adresu URL
 
-1.  Otwórz plik .dgml w edytorze tekstu lub edytora XML.
+1.  Otwórz plik .dgml w edytorze tekstu lub edytorze XML.
 
 2.  Znajdź `<Node/>` elementu dla elementu kodu, który ma.
 
 3.  Wykonaj jedno z zadań z tabeli poniżej:
 
-     Element jednego kodu
+     Pojedynczego elementu kodu
 
-    -   W `<Node/>` lub `<Link/>` elementu, Dodaj `Reference` atrybutu, aby określić lokalizację elementu kodu.
+    -   W `<Node/>` lub `<Link/>` elementu Dodawanie `Reference` atrybutu, aby określić lokalizację elementu kodu.
 
         > [!NOTE]
         >  Może mieć tylko jeden `Reference` atrybutu dla każdego elementu.
@@ -596,7 +597,7 @@ Aby dostosować mapę kodu, można edytować plik skierowane Graph Markup Langua
 
      Wiele elementów kodu
 
-    1.  W `<Node/>` lub `<Link/>` elementu, Dodaj nowy atrybut do określenia lokalizacji każdego odwołania.
+    1.  W `<Node/>` lub `<Link/>` elementu, Dodaj nowy atrybut, aby określić lokalizację każdego odwołania.
 
     2.  W `<Properties>` sekcji:
 
@@ -604,9 +605,9 @@ Aby dostosować mapę kodu, można edytować plik skierowane Graph Markup Langua
 
         2.  Ustaw `Id` atrybutu na nazwę nowego atrybutu odwołania.
 
-        3.  Dodaj `IsReference` atrybutu i ustaw ją na `True` do utworzenia odwołania są wyświetlane na element kodu **przejdź do odwołania** menu skrótów.
+        3.  Dodaj `IsReference` atrybutu i ustaw ją na `True` aby odwołanie pojawiało się w elemencie kod **przejdź do odwołania** menu skrótów.
 
-        4.  Użyj `Label` Określ tekst wyświetlany w elemencie kod dla atrybutu **przejdź do odwołania** menu skrótów.
+        4.  Użyj `Label` atrybutu, aby określić tekst wyświetlany w elemencie kod **przejdź do odwołania** menu skrótów.
 
      Na przykład:
 
@@ -620,11 +621,11 @@ Aby dostosować mapę kodu, można edytować plik skierowane Graph Markup Langua
     </Properties>
     ```
 
-     Na mapie nazwa elementu kodu pojawi się podkreślony. Po otwarciu menu skrótów dla elementu kodu lub link, zostanie wyświetlony **przejdź do odwołania** menu skrótów, które zawiera elementy połączone kodu do wyboru.
+     Na mapie nazwa elementu kodu jest podkreślana. Po otwarciu menu skrótów dla elementu kodu lub link, zostanie wyświetlony **przejdź do odwołania** menu skrótów, które zawierają elementy kodu połączone, można wybrać.
 
-4.  Użyj `ReferenceTemplate` atrybutu na określenie ciągu wspólne, takie jak adres URL, który jest używany przez wiele odwołań zamiast powtarzające się tego ciągu w adresie.
+4.  Użyj `ReferenceTemplate` atrybutu, aby określić wspólny ciąg, takie jak adres URL, który jest używany przez wiele odwołań zamiast powtarzania tego ciągu w odwołaniu.
 
-     `ReferenceTemplate` Atrybut Określa symbol zastępczy wartości odwołania. W poniższym przykładzie `{0}` symbol zastępczy w `ReferenceTemplate` atrybutu zostaną zastąpione wartościami `MyFirstReference` i `MySecondReference` atrybutów w `<Node/>` elementem Pełna ścieżka:
+     `ReferenceTemplate` Atrybut Określa symbol zastępczy dla wartości odwołania. W poniższym przykładzie `{0}` symbol zastępczy w `ReferenceTemplate` atrybut zostanie zastąpiona przez wartości `MyFirstReference` i `MySecondReference` atrybutów w `<Node/>` elementu, aby utworzyć pełną ścieżkę:
 
     ```xml
     <Nodes>
@@ -637,7 +638,7 @@ Aby dostosować mapę kodu, można edytować plik skierowane Graph Markup Langua
     </Properties>
     ```
 
-5.  Aby wyświetlić kod przywoływany element lub elementy kodu z mapy, otwórz menu skrótów dla elementu kodu lub łącze. Wybierz **przejdź do odwołania** , a następnie elementu kodu.
+5.  Aby wyświetlić kod przywoływanego elementu lub elementów kodu z mapy, otwórz menu skrótów dla elementu kodu lub łącza. Wybierz **przejdź do odwołania** i następnie elementu kodu.
 
 ## <a name="see-also"></a>Zobacz też
 

@@ -17,22 +17,22 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 4bc2b55e0e287caea0db0c5fcdabccf454be0154
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: abb606712365108c869ee0cfe705359ad6064228
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567236"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860410"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Generowanie kodu czasu projektowania przy użyciu szablonów tekstowych T4
-Szablony tekstowe T4 projektowania umożliwiają generowanie kodu programu i innych plików w Twojej [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projektu. Zazwyczaj piszesz szablony, dzięki czemu mogą się różnić kodu, które generują zgodnie z danymi z *modelu*. Model jest pliku lub bazy danych, który zawiera najważniejsze informacje o wymaganiach dotyczących aplikacji.
+Szablony tekstowe T4 projektowania umożliwiają generowanie kodu programu i inne pliki w projekcie programu Visual Studio. Zazwyczaj piszesz szablony, dzięki czemu mogą się różnić kodu, które generują zgodnie z danymi z *modelu*. Model jest pliku lub bazy danych, który zawiera najważniejsze informacje o wymaganiach dotyczących aplikacji.
 
  Na przykład można mieć modelu, który definiuje przepływ pracy, jako tabelę lub diagram. Z modelu można wygenerować oprogramowania, który wykonuje przepływ pracy. Gdy zmienią się wymagania użytkowników, jest łatwa w celu omówienia nowy przepływ pracy z użytkownikami. Ponowne generowanie kodu z przepływu pracy jest bardziej niezawodną metodą od ręcznego aktualizowania kodu.
 
 > [!NOTE]
 >  A *modelu* jest źródłem danych, który opisuje danego aspekt aplikacji. Może być każdym formularzu, dowolny rodzaj pliku lub bazy danych. Nie musi znajdować się w dowolnym danego formularza, takie jak modelu UML lub model języka specyficznego dla domeny. Typowe są modele w formie tabel lub plików XML.
 
- Prawdopodobnie znasz generowania kodu. Podczas definiowania zasobów w **resx** plików w Twojej [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozwiązania, zestaw klas i metod jest generowana automatycznie. Plik zasobów umożliwia łatwiejsze i bardziej niezawodny, aby edytować zasoby niż byłaby, jeśli trzeba było edytować klasy i metody. Przy użyciu szablonów tekstowych może wygenerować kod w taki sam sposób, ze źródła własnego projektu.
+ Prawdopodobnie znasz generowania kodu. Podczas definiowania zasobów w **resx** plików w rozwiązaniu programu Visual Studio, zestaw klas i metod jest generowana automatycznie. Plik zasobów umożliwia łatwiejsze i bardziej niezawodny, aby edytować zasoby niż byłaby, jeśli trzeba było edytować klasy i metody. Przy użyciu szablonów tekstowych może wygenerować kod w taki sam sposób, ze źródła własnego projektu.
 
  Szablon tekstu zawiera tekst, który ma zostać wygenerowany i kod programu, który generuje zmiennej fragmenty tekstu. Kod programu i umożliwia Powtórz lub warunkowo pominięcie części wygenerowanego tekstu. Wygenerowany tekst może sam się kod programu, który będzie stanowić część aplikacji.
 
@@ -40,7 +40,7 @@ Szablony tekstowe T4 projektowania umożliwiają generowanie kodu programu i inn
 
 #### <a name="to-create-a-design-time-t4-template-in-visual-studio"></a>Aby utworzyć szablon T4 czasu projektowania w programie Visual Studio
 
-1.  Utwórz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projektu lub Otwórz istniejący.
+1.  Tworzenie projektu programu Visual Studio lub Otwórz istniejący.
 
      Na przykład na **pliku** menu, wybierz **New** > **projektu**.
 
@@ -77,15 +77,15 @@ Szablony tekstowe T4 projektowania umożliwiają generowanie kodu programu i inn
 ### <a name="regenerating-the-code"></a>Trwa ponowne generowanie kodu
  Szablon zostanie wykonana, generowanie plików pomocniczych, w dowolnym z następujących przypadkach:
 
--   Edytowanie szablonu, a następnie zmień fokus na inne [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] okna.
+-   Edytowanie szablonu, a następnie zmień fokus do innego okna programu Visual Studio.
 
 -   Zapisz szablon.
 
--   Kliknij przycisk **Przekształć wszystkie szablony** w **kompilacji** menu. To spowoduje przekształcenie wszystkie szablony w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozwiązania.
+-   Kliknij przycisk **Przekształć wszystkie szablony** w **kompilacji** menu. Spowoduje to Przekształć wszystkie szablony w rozwiązaniu Visual Studio.
 
 -   W **Eksploratora rozwiązań**menu skrótów w dowolnych plików, wybierz **Uruchom narzędzie niestandardowe**. Ta metoda umożliwia przekształcanie podzbiór wybranych szablonów.
 
- Możesz również skonfigurować [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projektu, dzięki czemu szablony są wykonywane, gdy zostały zmienione pliki danych, które będzie ją odczytać. Aby uzyskać więcej informacji, zobacz [ponowne generowanie kodu automatycznie](#Regenerating).
+ Możesz też skonfigurować projektu programu Visual Studio, tak aby szablony są wykonywane, gdy zostały zmienione pliki danych, które są odczytywane. Aby uzyskać więcej informacji, zobacz [ponowne generowanie kodu automatycznie](#Regenerating).
 
 ## <a name="generating-variable-text"></a>Generowanie tekstu o zmiennym
  Szablony tekstowe umożliwiają używanie kodu programu do zmiany zawartości w wygenerowanym pliku.
@@ -220,7 +220,7 @@ Szablony tekstowe T4 projektowania umożliwiają generowanie kodu programu i inn
 <#@ import namespace="System.IO" #>
 ```
 
- `assembly` Dyrektywy udostępnia określony zestaw kod szablonu w taki sam sposób jak sekcję odwołania [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projektu. Nie musisz dołączyć odwołanie do System.dll, który odwołuje się automatycznie. `import` Dyrektywy pozwala na używanie typów bez używania ich w pełni kwalifikowane nazwy w taki sam sposób jak `using` dyrektywy w pliku zwykłego programu.
+ `assembly` Dyrektywy udostępnia określony zestaw kod szablonu w taki sam sposób jak w sekcji odwołań do projektu programu Visual Studio. Nie musisz dołączyć odwołanie do System.dll, który odwołuje się automatycznie. `import` Dyrektywy pozwala na używanie typów bez używania ich w pełni kwalifikowane nazwy w taki sam sposób jak `using` dyrektywy w pliku zwykłego programu.
 
  Na przykład po zaimportowaniu **System.IO**, można napisać:
 
@@ -274,8 +274,8 @@ Szablony tekstowe T4 projektowania umożliwiają generowanie kodu programu i inn
 
  Typ `this.Host` (w języku Visual Basic, `Me.Host`) jest `Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost`.
 
-### <a name="getting-data-from-includevsprvscode-qualityincludesvsprvsmdmd"></a>Pobieranie danych z [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]
- Do korzystania z usług w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]ustaw `hostSpecific` atrybut i obciążenia `EnvDTE` zestawu. Można następnie użyć IServiceProvider.GetCOMService() dostęp do obiektu DTE i innych usług. Na przykład:
+### <a name="getting-data-from-visual-studio"></a>Pobieranie danych z programu Visual Studio
+ Aby korzystać z usług udostępnianych w programie Visual Studio, należy ustawić `hostSpecific` atrybut i obciążenia `EnvDTE` zestawu. Można następnie użyć IServiceProvider.GetCOMService() dostęp do obiektu DTE i innych usług. Na przykład:
 
 ```scr
 <#@ template hostspecific="true" language="C#" #>
@@ -293,8 +293,8 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 > [!TIP]
 >  Szablon tekstowy, który jest uruchamiany w domenie aplikacji i usług używanych przez kierowanie. W takiej sytuacji GetCOMService() jest bardziej niezawodną metodą od GetService().
 
-##  <a name="Regenerating"></a> Automatyczne ponowne generowanie kodu
- Zazwyczaj kilka plików w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozwiązania są generowane przy użyciu jednego modelu danych wejściowych. Każdy plik jest generowany na podstawie własnego szablonu, ale szablony, które wszystkie odnoszą się do tego samego modelu.
+## <a name="Regenerating"></a> Automatyczne ponowne generowanie kodu
+ Zwykle kilka plików w rozwiązaniu Visual Studio są generowane przy użyciu jednego modelu danych wejściowych. Każdy plik jest generowany na podstawie własnego szablonu, ale szablony, które wszystkie odnoszą się do tego samego modelu.
 
  Jeśli zmieni się w modelu źródłowym, należy ponownie uruchom wszystkie szablony w rozwiązaniu. Aby to zrobić ręcznie, wybierz opcję **Przekształć wszystkie szablony** na **kompilacji** menu.
 
@@ -314,19 +314,19 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
  Aby uzyskać więcej informacji, zobacz [generowanie kodu w procesie kompilacji](../modeling/code-generation-in-a-build-process.md).
 
 ## <a name="error-reporting"></a>Raportowanie błędów
- Aby umieścić błędów i komunikaty ostrzegawcze w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] oknie błędów, można użyć następujących metod:
+ Aby umieścić błędach i komunikaty ostrzegawcze w oknie błędów programu Visual Studio, można użyć następujących metod:
 
 ```
 Error("An error message");
 Warning("A warning message");
 ```
 
-##  <a name="Converting"></a> Konwertowanie istniejącego pliku do szablonu
+## <a name="Converting"></a> Konwertowanie istniejącego pliku do szablonu
  Przydatną cechą szablony to, że wyglądają bardzo podobnie pliki, które generują, wraz z kodu programu wstawiono. Sugeruje to przydatny sposób tworzenia szablonu. Należy najpierw utworzyć zwykły plik jako prototyp, takich jak [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] pliku i stopniowo wprowadzenie kodu generowania, który jest różny wynikowy plik.
 
 #### <a name="to-convert-an-existing-file-to-a-design-time-template"></a>Aby przekonwertować szablon czasu projektowania istniejącego pliku
 
-1.  Do Twojej [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projektu, Dodaj plik typu, który chcesz wygenerować, takich jak `.cs`, `.vb`, lub `.resx` pliku.
+1.  Do projektu programu Visual Studio, należy dodać plik typu, który chcesz wygenerować, takich jak `.cs`, `.vb`, lub `.resx` pliku.
 
 2.  Przetestuj nowy plik, aby upewnić się, że działa.
 
@@ -367,7 +367,7 @@ Warning("A warning message");
 |---------------|-----------|
 |Twórz i Debuguj bardziej zaawansowanych szablonu tekstu, z kodem, który korzysta z funkcji pomocniczych, dołączone pliki i dane zewnętrzne.|[Pisanie szablonu tekstowego T4](../modeling/writing-a-t4-text-template.md)|
 |Generowanie dokumentów przy użyciu szablonów w czasie wykonywania.|[Generowanie tekstu czasu wykonywania przy użyciu szablonów tekstowych T4](../modeling/run-time-text-generation-with-t4-text-templates.md)|
-|Generowanie tekstu poza Uruchom [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|[Generowanie plików za pomocą narzędzia TextTransform](../modeling/generating-files-with-the-texttransform-utility.md)|
+|Uruchom generowanie tekstu poza programem Visual Studio.|[Generowanie plików za pomocą narzędzia TextTransform](../modeling/generating-files-with-the-texttransform-utility.md)|
 |Przekształć dane w postaci języka specyficznego dla domeny.|[Generowanie kodu z języka specyficznego dla domeny](../modeling/generating-code-from-a-domain-specific-language.md)|
 |Napisz dyrektywy procesorów, którą należy przekształcić źródła danych.|[Dopasowanie przekształcenia tekstu T4](../modeling/customizing-t4-text-transformation.md)|
 

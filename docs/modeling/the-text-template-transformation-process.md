@@ -11,55 +11,55 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: b9c65762bbc1fe068889c0420f0dec3d28000130
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1455c8dad80e4f9bc9d051663c2c224d7058028b
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31951183"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860228"
 ---
 # <a name="the-text-template-transformation-process"></a>Proces przekształcania szablonu tekstowego
-Proces transformacji szablonu tekstowego przyjmuje jako dane wejściowe pliku szablonu tekstowego i generuje nowy plik tekstowy jako dane wyjściowe. Na przykład szablony tekstowe służy do generowania kodu języka Visual Basic lub C# lub można wygenerować raport HTML.
+Proces przekształcania szablonu tekstowego przyjmuje plik szablonu tekstu jako dane wejściowe i generuje nowy plik tekstowy jako dane wyjściowe. Na przykład można użyć szablonów tekstowych do generowania kodu Visual Basic lub C# lub możesz wygenerować raport HTML.
 
- Trzy składniki brać udział w tym procesie: aparat, hosta i procesory dyrektywy. Aparat kontroluje proces; interakcji z hosta i procesora dyrektywy do tworzenia pliku wyjściowego. Host udostępnia interakcji ze środowiskiem, takich jak lokalizowanie plików i zestawów. Procesor dyrektywy dodaje funkcje, takie jak odczytywania danych z pliku XML lub bazy danych.
+ Trzy składniki wzięcia udziału w ramach tego procesu: silnik, hosta i procesorów dyrektyw. Aparat kontroluje proces; współpracuje z usługą hosta oraz procesor dyrektywy, aby wygenerować plik wyjściowy. Host zawiera wszystkie interakcje ze środowiskiem, takich jak lokalizowanie plików i zestawów. Procesor dyrektywy dodaje funkcje, takie jak odczytywanie danych z pliku XML lub bazy danych.
 
- Proces transformacji szablonu tekstowego odbywa się w dwóch krokach. Najpierw aparat tworzy tymczasowej klasy nosi nazwę klasy wygenerowanego transformacji. Ta klasa zawiera kod, który jest generowany przez dyrektywy i bloków sterowania. Po wykonaniu tej aparat kompiluje i wykonuje klasy wygenerowanego transformacji do tworzenia pliku wyjściowego.
+ Proces przekształcania szablonu tekstowego odbywa się w dwóch krokach. Po pierwsze aparat tworzy tymczasowej klasy, który jest znany jako wygenerowanej klasy przekształcenia. Ta klasa zawiera kod, który jest generowany przez dyrektywy i bloków sterujących. Po tym aparat kompiluje i wykonuje wygenerowanej klasy przekształcenia do tworzenia pliku wyjściowego.
 
 ## <a name="components"></a>Składniki
 
-|Składnik|Opis|Można dostosowywać (tak/nie)|
+|Składnik|Opis|Można dostosować (tak/nie)|
 |---------------|-----------------|------------------------------|
-|Aparat|Składnik aparat kontroluje proces transformacji szablonu tekstowego|Nie.|
-|Host|Host jest interfejs między aparatem i środowiska użytkownika. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] jest hostem proces przekształcania tekstu.|Tak. Można napisać hosta niestandardowego.|
-|Procesory dyrektywy|Procesory dyrektywy są klasy obsługujące dyrektywy w szablonach tekstowych. Dyrektywy można użyć do udostępnienia danych firmie szablonu tekstowego ze źródła danych wejściowych.|Tak. Można napisać niestandardowego procesory dyrektywy|
+|Aparat|Składnik aparatu kontroluje proces przekształcania szablonu tekstowego|Nie.|
+|Host|Host jest interfejs między aparatem programu i środowisko użytkownika. Program Visual Studio jest hostem proces przekształcania tekstu.|Tak. Możesz napisać niestandardowego hosta.|
+|Procesory dyrektywy|Procesory dyrektywy są klasach, które obsługują dyrektywy w szablonach tekstowych. Dyrektywy służy do przekazywania danych do szablonu tekstu ze źródła danych wejściowych.|Tak. Możesz napisać niestandardowego procesory dyrektywy|
 
 ## <a name="the-engine"></a>Aparat
- Aparat odbiera szablonu jako ciąg z hosta, która obsługuje wszystkie pliki, które są używane w procesie transformacji. Aparat następnie prosi hostów można znaleźć żadnych niestandardowych procesorów dyrektywy i inne aspekty środowiska. Aparat następnie kompiluje i uruchamia przekształcania wygenerowane klasy. Aparat zwraca wygenerowanego tekstu do hosta, który zwykle zapisuje tekst w pliku.
+ Aparat odbiera szablon jako ciąg znaków z hosta, która obsługuje wszystkie pliki, które są używane w procesie transformacji. Aparat są następnie prosi hosta, aby zlokalizować wszystkie niestandardowe procesory dyrektyw i innych aspektów środowiska. Aparat następnie kompiluje i uruchamia wygenerowanej klasy przekształcenia. Aparat powraca wygenerowanego tekstu do hosta, który normalnie zapisuje tekst w pliku.
 
 ## <a name="the-host"></a>Host
  Host jest odpowiedzialny za nic, które odnoszą się do środowiska poza procesem przekształcania, takie jak następujące:
 
--   Wyszukiwanie tekstu i plików binarnych wymaganych przez aparat lub procesora dyrektywy. Host może przeszukiwać katalogi i Globalna pamięć podręczna zestawów do lokalizowania zestawów. Hosta można znaleźć kodu niestandardowego procesora dyrektywy dla aparatu. Hosta można zlokalizować i odczytywać pliki tekstowe i zwróć ich zawartość jako ciągi.
+-   Wyszukiwanie tekstowe i pliki binarne, żądane przez aparat lub procesor dyrektywy. Host może przeszukiwać katalogi i globalnej pamięci podręcznej do lokalizowania zestawów. Hosta można zlokalizować kod niestandardowy procesor dyrektywy dla aparatu. Hosta można zlokalizować i odczytywać pliki tekstowe i zwróć ich zawartość jako ciągi.
 
--   Udostępnianie list standardowe zestawy i przestrzenie nazw, które są używane przez aparat do utworzenia transformacji wygenerowane klasy.
+-   Dostarczanie listy standardowe zestawy i przestrzenie nazw, które są używane przez aparat do tworzenia wygenerowanej klasy przekształcenia.
 
--   Udostępnianie domeny aplikacji, która jest używana, gdy aparat kompiluje i wykonuje przekształcenie wygenerowane klasy. Oddzielna domena aplikacji jest używany do ochrony aplikacji hosta z błędów w kodzie szablonu.
+-   Zapewnianie domenie aplikacji, która jest używana, gdy aparat zostanie skompilowany i wykonany wygenerowanej klasy przekształcenia. Oddzielna domena aplikacji jest używana w celu ochrony aplikacji hosta z błędów w kodzie szablonu.
 
 -   Zapisywanie pliku wygenerowanych danych wyjściowych.
 
 -   Ustawienie domyślne rozszerzenie pliku wygenerowanych danych wyjściowych.
 
--   Obsługa błędów transformacji szablonu tekstowego. Na przykład hosta można wyświetlić błędy w interfejsie użytkownika lub zapisywania ich w pliku. (W [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], błędy są wyświetlane w oknie komunikatu błędów.)
+-   Obsługa błędów przekształcania szablonu tekstu. Na przykład host może wyświetlić błędy w interfejsie użytkownika lub zostaną zapisane do pliku. (W programie Visual Studio, błędy są wyświetlane w oknie komunikat o błędzie.)
 
--   Zapewnienie wymaganej wartości parametru, jeśli użytkownik ma dyrektywy o nazwie bez podawania wartości. Procesor dyrektywy można określić nazwy dyrektywy i parametr i poproś hosta, aby podać wartość domyślną, jeśli ma ona.
+-   Podanie wartości wymaganego parametru, jeśli użytkownik wywołał dyrektywy bez podawania wartości. Procesor dyrektywy można określić nazwy dyrektywy i parametru i poproś hosta, aby podać wartość domyślną, jeśli taki istnieje.
 
-## <a name="directives-and-directive-processors"></a>Dyrektywy i procesory dyrektywy
- Dyrektywa jest w szablonie tekstu polecenia. Zawiera parametry, aby proces generowania. Zwykle dyrektywy zdefiniuj źródło i typu modelu i innych danych wejściowych i rozszerzenie nazwy pliku wyjściowego pliku.
+## <a name="directives-and-directive-processors"></a>Dyrektywy i procesorów dyrektyw
+ Dyrektywy to polecenie w szablonie tekstowym. Zawiera parametry procesu tworzenia. Zwykle dyrektywy określają źródło i typu modelu i inne dane wejściowe i rozszerzenie nazwy pliku wyjściowego pliku.
 
- Procesor dyrektywy może przetworzyć co najmniej jeden dyrektywy. Przekształcenie szablon, należy zainstalować procesora dyrektywy, które mogą dotyczyć dyrektywy w szablonie.
+ Procesor dyrektywy może przetwarzać jeden lub więcej dyrektywy. Kiedy przekształcasz szablon, musisz zainstalować procesor dyrektywy, którego poradzenie sobie z dyrektywy w szablonie.
 
- Dyrektywy pracy, dodając kod w klasie wygenerowanego transformacji. Wywołujesz dyrektywy z szablonu tekstowego i procesy wyszukiwarek dyrektywy wywołań podczas tworzenia klasy wygenerowanego transformacji. Po wywołaniu metody dyrektywy pomyślnie, pozostałe kod napisany w szablonie tekst może polegać na funkcje, które zapewnia dyrektywy. Na przykład można wykonać następujące wywołanie do `import` dyrektywy w szablonie:
+ Dyrektywy działają przez dodanie kodu w wygenerowanej klasy przekształcenia. Możesz wywołać dyrektyw szablonu tekstu i procesy aparatu dyrektywy wywołania, podczas tworzenia wygenerowanej klasy przekształcenia. Po wywołaniu metody dyrektywy pomyślnie, reszta kodu napisanego w szablonie tekstowym może polegać na funkcjonalności, jaką zapewnia dyrektywa. Na przykład, można wykonać następujące wywołanie do `import` dyrektywy w szablonie:
 
  `<#@ import namespace="System.Text" #>`
 
- Standardowa procesora dyrektywy konwertuje wartość na `using` instrukcji w klasie wygenerowanego transformacji. Następnie można użyć `StringBuilder` klasy w pozostałej części szablonu kodu bez kwalifikujące go jako `System.Text.StringBuilder`.
+ Standardowa procesor dyrektywy konwertuje ten element, aby `using` instrukcji w wygenerowanej klasy przekształcenia. Następnie można użyć `StringBuilder` klasy w pozostałej części kodu szablonu bez kwalifikowania go jako `System.Text.StringBuilder`.

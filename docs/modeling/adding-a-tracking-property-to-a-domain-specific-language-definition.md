@@ -13,155 +13,155 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: aec41a7ad2c93d9ad5762f8e4c7e67ea93704f1f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7b9641ccc9064f576f471c7e75d59c3d5b8f0db6
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31953864"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859929"
 ---
-# <a name="add-a-tracking-property-to-a-domain-specific-language-definition"></a>Dodaj właściwość śledzenia do definicji języka specyficznego dla domeny
+# <a name="add-a-tracking-property-to-a-domain-specific-language-definition"></a>Dodawanie właściwości śledzenia do definicji języka specyficznego dla domeny
 
-W tym przewodniku przedstawiono sposób dodawania właściwości śledzenia do modelu domeny.
+W tym instruktażu przedstawiono sposób dodawania właściwości śledzenia do modelu domeny.
 
-A *śledzenia domeny* właściwość jest właściwością, która może być aktualizowany przez użytkownika, ale który ma wartość domyślną, która jest obliczana przy użyciu wartości innych właściwości domeny lub elementów.
+A *śledzenia domeny* właściwość jest właściwością, która może być aktualizowana przez użytkownika, ale która ma wartość domyślną, która jest obliczana na podstawie wartości innych właściwości domeny lub elementów.
 
-W narzędzia języka specyficznego dla domeny (narzędzia DSL), wyświetlana nazwa właściwości klasy domeny ma wartość domyślną, która jest obliczana przy użyciu nazwy klasy domeny, ale użytkownik może na przykład zmień wartość w czasie projektowania lub zresetować go do obliczonej wartości.
+W narzędzia języka specyficznego dla domeny (narzędzia DSL), nazwy wyświetlanej właściwości klasy domeny ma wartość domyślną, która jest obliczana przy użyciu nazwy klasy domeny, ale użytkownik może na przykład zmień wartość w czasie projektowania lub zresetować je do obliczonej wartości.
 
-W tym przewodniku możesz utworzyć języka specyficznego dla domeny (DSL), którego Namespace, śledzenie właściwość, która ma wartość domyślną, na podstawie właściwości Namespace domyślny modelu. Aby uzyskać więcej informacji na temat śledzenia właściwości, zobacz [Definiowanie właściwości śledzenia](http://msdn.microsoft.com/0538b0e4-6221-4e7d-911a-b92cd622f0be).
+W tym instruktażu utworzysz języka specyficznego dla domeny (DSL), który ma Namespace, właściwość, która ma wartość domyślną, w oparciu o właściwość Namespace domyślny model śledzenia. Aby uzyskać więcej informacji na temat śledzenia właściwości, zobacz [Definiowanie właściwości śledzenia](http://msdn.microsoft.com/0538b0e4-6221-4e7d-911a-b92cd622f0be).
 
--   Obsługa narzędzia DSL, śledzenie deskryptorów właściwości. Jednak DSL projektanta nie można dodać właściwość śledzenia na język. W związku z tym należy dodać kodu niestandardowego do definiowania i implementować właściwość śledzenia.
+-   Obsługa narzędzia DSL, śledzenie deskryptorów właściwości. Jednak projektanta DSL nie można dodać właściwości śledzenia do języka. W związku z tym należy dodać niestandardowy kod definiować ani implementować właściwości śledzenia.
 
- Właściwość śledzenia ma dwa stany: śledzenie i zaktualizowane przez użytkownika. Śledzenie właściwości mają następujące funkcje:
+ Właściwości śledzenia ma dwa stany: śledzenie i zaktualizowane przez użytkownika. Śledzenie właściwości oferują następujące funkcje:
 
--   W przypadku stanu śledzenia jest obliczana wartość właściwości śledzenia, a wartość jest aktualizowana jako innych właściwości w przypadku zmiany modelu.
+-   W stanie śledzenia, obliczana jest wartość właściwości śledzenia, a wartość jest aktualizowana co inne właściwości, zmiana modelu.
 
--   Kiedy w zaktualizowanego według stanu użytkownika, wartość właściwości śledzenia zachowuje wartość, do którego użytkownik ostatnim ustawieniu właściwości.
+-   Gdy na zaktualizowanej według stanu użytkownika, wartość właściwości śledzenia zachowuje wartość, do którego użytkownik ostatnim ustawieniu właściwości.
 
--   W **właściwości** okna, **zresetować** polecenia dla właściwości śledzenia jest włączona tylko, gdy właściwość jest zaktualizowane według stanu użytkownika. **Zresetować** polecenie ustawia właściwość śledzenia stanu do śledzenia.
+-   W **właściwości** oknie **resetowania** polecenia właściwości śledzenia jest włączone tylko, gdy właściwość jest na zaktualizowanej według stanu użytkownika. **Resetowania** polecenie ustawia parametry logowania właściwości śledzenia do śledzenia stanu.
 
--   W **właściwości** okna, gdy właściwość śledzenia jest w stanie śledzenia, jego wartość jest wyświetlana w regularnych czcionki.
+-   W **właściwości** okna, gdy właściwość śledzenia jest w stanie śledzenia, a jego wartość jest wyświetlana w regularnych czcionki.
 
--   W **właściwości** okna, gdy właściwość śledzenia jest zaktualizowane przez użytkownika stanu, jego wartość jest wyświetlana pogrubioną czcionką.
+-   W **właściwości** okna, gdy właściwość śledzenia na zaktualizowanej według stanu użytkownika, jego wartość jest wyświetlany czcionką pogrubioną.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-Przed skorzystaniem z tego przewodnika, należy najpierw zainstalować te składniki:
+Przed rozpoczęciem tego instruktażu, należy najpierw zainstalować te składniki:
 
 |||
 |-|-|
-|[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185579](http://go.microsoft.com/fwlink/?LinkID=185579)|
+|Visual Studio|[http://go.microsoft.com/fwlink/?LinkID=185579](http://go.microsoft.com/fwlink/?LinkID=185579)|
 |[!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185580](http://go.microsoft.com/fwlink/?LinkID=185580)|
 |[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185581](http://go.microsoft.com/fwlink/?LinkID=185581)|
 
 ## <a name="create-the-project"></a>Utwórz projekt
 
-1.  Tworzenie projektu Projektanta języka specyficznego dla domeny. Nadaj mu nazwę `TrackingPropertyDSL`.
+1.  Utwórz projekt projektanta języka specyficznego dla domeny. Nadaj mu nazwę `TrackingPropertyDSL`.
 
-2.  W **kreatora Designer języka specyficznego dla domeny**, ustaw następujące opcje:
+2.  W **Kreator projektanta języka specyficznego dla domeny**, ustaw następujące opcje:
 
     1.  Wybierz **MinimalLanguage** szablonu.
 
-    2.  Użyj nazwy domyślnej dla języka specyficznego dla domeny `TrackingPropertyDSL`.
+    2.  Użyj domyślnej nazwy dla języka specyficznego dla domeny `TrackingPropertyDSL`.
 
-    3.  Ustawienia rozszerzenia plików modelu do `trackingPropertyDsl`.
+    3.  Ustaw rozszerzenie dla plików modelu do `trackingPropertyDsl`.
 
-    4.  Użyj ikony szablonu domyślnego dla plików modelu.
+    4.  Ikona szablon domyślny na użytek plików modelu.
 
-    5.  Ustaw nazwę produktu `Product Name`.
+    5.  Ustaw nazwę produktu, który ma `Product Name`.
 
-    6.  Ustaw nazwę firmy, aby `Company Name`.
+    6.  Ustaw nazwę firmy w celu `Company Name`.
 
-    7.  Użyj wartości domyślnej dla głównej przestrzeni nazw dla projektów w rozwiązaniu, `CompanyName.ProductName.TrackingPropertyDSL`.
+    7.  Użyj wartości domyślnej głównej przestrzeni nazw dla projektów w rozwiązaniu `CompanyName.ProductName.TrackingPropertyDSL`.
 
-    8.  Zezwalaj na kreatora, aby utworzyć plik klucza o silnej nazwie z zestawów.
+    8.  Zezwalaj na kreatora, aby utworzyć plik klucza o silnej nazwie do zestawów.
 
-    9. Przejrzyj szczegóły rozwiązania, a następnie kliknij przycisk **Zakończ** do tworzenia projektu definicji DSL.
+    9. Przejrzyj szczegóły rozwiązania, a następnie kliknij przycisk **Zakończ** Aby utworzyć projekt definicji DSL.
 
-## <a name="customize-the-default-dsl-definition"></a>Dostosowywanie definicji domyślnej DSL
- W tej sekcji można dostosować definicję DSL zawiera następujące elementy:
+## <a name="customize-the-default-dsl-definition"></a>Dostosowywanie domyślnego definicji DSL
+ W tej sekcji można dostosować definicji DSL, który zawiera następujące elementy:
 
 -   Namespace, śledzenie właściwości dla każdego elementu modelu.
 
 -   Właściwość logiczna IsNamespaceTracking dla każdego elementu modelu. Ta właściwość będzie wskazywać, czy właściwość śledzenia jest w stanie śledzenia lub zaktualizowane według stanu użytkownika.
 
--   Właściwość Namespace domyślne dla modelu. Ta właściwość będzie używana do obliczania wartości domyślne Namespace śledzenia właściwości.
+-   Właściwość Namespace domyślne dla modelu. Ta właściwość będzie służyć do obliczania wartości domyślnej Namespace śledzenia właściwości.
 
--   Właściwość CustomElements obliczona dla modelu. Ta właściwość wskazuje część elementów, które mają niestandardowej przestrzeni nazw.
+-   Właściwość CustomElements obliczana dla modelu. Ta właściwość wskazuje część elementy, które mają niestandardowej przestrzeni nazw.
 
 ### <a name="to-add-the-domain-properties"></a>Aby dodać właściwości domeny
 
-1.  W Projektancie DSL, kliknij prawym przyciskiem myszy **ExampleModel** klasy domeny, wskaż **Dodaj**, a następnie kliknij przycisk **DomainProperty**.
+1.  W oknie projektanta DSL, kliknij prawym przyciskiem myszy **ExampleModel** klasy domeny, wskaż **Dodaj**, a następnie kliknij przycisk **elementu DomainProperty**.
 
     1.  Nazwa nowej właściwości `DefaultNamespace`.
 
-    2.  W **właściwości** ustawiony w oknie nową właściwość **wartość domyślną** do `DefaultNamespace`i ustaw **typu** do **ciąg**.
+    2.  W **właściwości** okno nowej właściwości ustawione **wartości domyślnej** do `DefaultNamespace`i ustaw **typu** do **ciąg**.
 
-2.  Aby **ExampleModel** domeny Dodaj właściwość domeny o nazwie `CustomElements`.
+2.  Aby **ExampleModel** domeny klasy, Dodaj właściwość domeny o nazwie `CustomElements`.
 
-     W **właściwości** ustawiony w oknie nową właściwość **rodzaj** do **obliczona**.
+     W **właściwości** okno nowej właściwości ustawione **rodzaj** do **obliczona**.
 
-3.  Aby **ExampleElement** domeny Dodaj właściwość domeny o nazwie `Namespace`.
+3.  Aby **ExampleElement** domeny klasy, Dodaj właściwość domeny o nazwie `Namespace`.
 
-     W **właściwości** ustawiony w oknie nową właściwość **jest można przeglądać** do **False**i ustaw **rodzaj** do **wartości CustomStorage** .
+     W **właściwości** okno nowej właściwości ustawione **jest możliwa do przeglądania** do **False**i ustaw **rodzaj** do **wartości CustomStorage** .
 
-4.  Aby **ExampleElement** domeny Dodaj właściwość domeny o nazwie `IsNamespaceTracking`.
+4.  Aby **ExampleElement** domeny klasy, Dodaj właściwość domeny o nazwie `IsNamespaceTracking`.
 
-     W **właściwości** ustawiony w oknie nową właściwość **jest można przeglądać** do **False**ustaw **wartość domyślną** do `true`i ustaw **Typu** do **logiczna**.
+     W **właściwości** okno nowej właściwości ustawione **jest możliwa do przeglądania** do **False**ustaw **wartości domyślnej** do `true`i ustaw **Typu** do **logiczna**.
 
-### <a name="to-update-the-diagram-elements-and-dsl-details"></a>Aby zaktualizować diagram elementów i szczegóły DSL
+### <a name="to-update-the-diagram-elements-and-dsl-details"></a>Aktualizowanie elementów diagramu i szczegóły języka DSL
 
-1.  W Projektancie DSL, kliknij prawym przyciskiem myszy **ExampleShape** geometrii kształtu, wskaż **Dodaj**, a następnie kliknij przycisk **Dekoratora tekstu**.
+1.  W oknie projektanta DSL, kliknij prawym przyciskiem myszy **ExampleShape** kształt geometryczny, wskaż **Dodaj**, a następnie kliknij przycisk **Dekoratora tekstu**.
 
-    1.  Nazwa nowej dekoratora tekstu `NamespaceDecorator`.
+    1.  Nazwa nowego elementu decorator tekstu `NamespaceDecorator`.
 
-    2.  W **właściwości** dekoratora tekst w oknie Ustaw **pozycji** do **InnerBottomLeft**.
+    2.  W **właściwości** ustawić okno dla dekoratora tekstu **pozycji** do **InnerBottomLeft**.
 
-2.  W Projektancie DSL wybierz linii łączącej **ExampleElement** klasy do **ExampleShape** kształtu.
+2.  W oknie Projektant DSL wybierz linii łączącej **ExampleElement** klasy **ExampleShape** kształtu.
 
-    1.  W **szczegóły DSL** wybierz **mapy Dekoratora** kartę.
+    1.  W **szczegóły języka DSL** wybierz **mapy Dekoratora** kartę.
 
-    2.  W **Dekoratory** listy, wybierz **NamespaceDecorator**, zaznacz jej pole wyboru, a następnie na **Właściwość wyświetlania** listy, wybierz **Namespace**.
+    2.  W **Dekoratory** listy wybierz **NamespaceDecorator**, zaznacz jej pole wyboru, a następnie na **Właściwość wyświetlania** listy wybierz pozycję **Namespace**.
 
-3.  W **DSL Explorer**, rozwiń węzeł **klasy domeny** folderu, kliknij prawym przyciskiem myszy **ExampleElement** węzeł, a następnie kliknij przycisk **Dodawanie nowej domeny deskryptor typu**.
+3.  W **Eksplorator DSL**, rozwiń węzeł **klasami domeny** folderu, kliknij prawym przyciskiem myszy **ExampleElement** węzłem, a następnie kliknij przycisk **Dodaj nowy deskryptor typu domeny**.
 
-    1.  Rozwiń węzeł **ExampleElement** , a następnie wybierz węzeł **deskryptora typu niestandardowego (deskryptor typu domeny)** węzła.
+    1.  Rozwiń **ExampleElement** , a następnie wybierz węzeł **deskryptorze typu niestandardowego (deskryptor typu domeny)** węzła.
 
-    2.  W **właściwości** ustawiony w oknie deskryptor typu domeny **kodowanego niestandardowe** do **True**.
+    2.  W **właściwości** okno deskryptor typu domeny, ustaw **kodowanego niestandardowe** do **True**.
 
-4.  W **DSL Explorer**, wybierz pozycję **zachowanie serializacji Xml** węzła.
+4.  W **Eksplorator DSL**, wybierz opcję **zachowanie serializacji kodu Xml** węzła.
 
-    1.  W **właściwości** ustaw **obciążenia Post niestandardowe** do **True**.
+    1.  W **właściwości** oknie **niestandardowe, ładowanie publikacji** do **True**.
 
-## <a name="transform-templates"></a>Przekształć szablony
+## <a name="transform-templates"></a>Przekształcanie szablonów
 
-Teraz, gdy zdefiniowano klasy i właściwości dla użytkownika DSL, możesz sprawdzić, czy definicja DSL można je przekształcać poprawnie można ponownie wygenerować kodu dla projektu.
+Skoro zdefiniowano klasy domeny i właściwości dla DSL, można sprawdzić, czy w definicji DSL mogą zostać przekształcone poprawnie ponownego generowania kodu dla projektu.
 
 1.  Na **Eksploratora rozwiązań** narzędzi, kliknij przycisk **Przekształć wszystkie szablony**.
 
-2.  System generuje kod dla rozwiązania i zapisuje DslDefinition.dsl. Aby uzyskać informacje na temat formatu XML plików definicji, zobacz [plik DslDefinition.dsl](../modeling/the-dsldefinition-dsl-file.md).
+2.  System generuje kod dla rozwiązania, a następnie zapisuje DslDefinition.dsl. Aby uzyskać informacje na temat formatu XML plików definicji, zobacz [plik DslDefinition.dsl](../modeling/the-dsldefinition-dsl-file.md).
 
-## <a name="create-files-for-custom-code"></a>Tworzenie plików niestandardowego kodu
+## <a name="create-files-for-custom-code"></a>Twórz pliki dla niestandardowego kodu
 
-Gdy Przekształć wszystkie szablony, system generuje kod źródłowy, który definiuje język specyficznego dla domeny w projektach Dsl i DslPackage. Tak, aby uniknąć konfliktu z wygenerowanego tekstu, należy zapisać niestandardowy kod w plikach, które różnią się od plików wygenerowanego kodu.
+Kiedy przekształcasz wszystkie szablony, system generuje kod źródłowy, który definiuje języka specyficznego dla domeny w projektach języka Dsl i DslPackage. Tak, aby uniknąć konfliktu z wygenerowanego tekstu, należy napisać niestandardowy kod w plikach, które różnią się od plików wygenerowanego kodu.
 
-Musisz podać kod do przechowywania wartości i stanu Twojej właściwości śledzenia. Aby ułatwić rozróżnienie niestandardowy kod w wygenerowanym kodzie i uniknąć konfliktów nazw plików, należy umieścić pliki kodu niestandardowego w oddzielnym podfolderze.
+Należy podać kod do przechowywania wartości i stanu właściwości śledzenia. Aby ułatwić rozróżnienie niestandardowy kod z wygenerowanego kodu i uniknąć konfliktów nazw plików, należy umieścić pliki niestandardowy kod w oddzielnym podfolderze.
 
-1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **DSL** projektu, wskaż pozycję **Dodaj**, a następnie kliknij przycisk **nowy Folder**. Nazwa nowego folderu `CustomCode`.
+1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **DSL** projekt, wskaż opcję **Dodaj**, a następnie kliknij przycisk **nowy Folder**. Nadaj nazwę nowego folderu `CustomCode`.
 
-2.  Kliknij prawym przyciskiem myszy nowy **CustomCode** folderu, wskaż **Dodaj**, a następnie kliknij przycisk **nowy element**.
+2.  Kliknij prawym przyciskiem myszy nowy **atrybut CustomCode** folderu, wskaż **Dodaj**, a następnie kliknij przycisk **nowy element**.
 
-3.  Wybierz **pliku kodu** szablonu, ustaw **nazwa** do `NamespaceTrackingProperty.cs`, a następnie kliknij przycisk **OK**.
+3.  Wybierz **pliku z kodem** szablonu, ustaw **nazwa** do `NamespaceTrackingProperty.cs`, a następnie kliknij przycisk **OK**.
 
-     Plik NamespaceTrackingProperty.cs jest utworzony i otwarty do edycji.
+     Plik NamespaceTrackingProperty.cs zostanie utworzony i otwarty do edycji.
 
-4.  W folderze, należy utworzyć następujące pliki kodu: `ExampleModel.cs,``HelperClasses.cs`, `Serialization.cs`, i `TypeDescriptor.cs`.
+4.  W tym folderze utwórz następujące pliki kodu: `ExampleModel.cs,``HelperClasses.cs`, `Serialization.cs`, i `TypeDescriptor.cs`.
 
-5.  W **DslPackage** projektu, należy także utworzyć `CustomCode` folderu i Dodaj do niej `Package.cs` pliku kodu.
+5.  W **DslPackage** projektu, należy także utworzyć `CustomCode` folderze i Dodaj do niej `Package.cs` pliku kodu.
 
-## <a name="add-helper-classes-to-support-tracking-properties"></a>Dodawanie klasy pomocy w celu obsługi śledzenia właściwości
+## <a name="add-helper-classes-to-support-tracking-properties"></a>Dodawanie klas pomocniczych na potrzeby obsługi śledzenia właściwości
 
-Do pliku HelperClasses.cs dodać `TrackingHelper` i `CriticalException` klas w następujący sposób. Będzie odwoływać się te klasy w dalszej części tego przewodnika.
+Do pliku HelperClasses.cs Dodaj `TrackingHelper` i `CriticalException` klas w następujący sposób. Będziesz odwoływać się te klasy w dalszej części tego przewodnika.
 
 1.  Dodaj następujący kod do pliku HelperClasses.cs.
 
@@ -238,14 +238,14 @@ Do pliku HelperClasses.cs dodać `TrackingHelper` i `CriticalException` klas w n
     }
     ```
 
-## <a name="add-custom-code-for-the-custom-type-descriptor"></a>Dodaj niestandardowy kod dla deskryptora typu niestandardowego
+## <a name="add-custom-code-for-the-custom-type-descriptor"></a>Dodawanie kodu niestandardowego dla niestandardowego deskryptora typu
 
-Implementowanie `GetCustomProperties` deskryptor typu dla metody `ExampleModel` klasy domeny.
+Implementowanie `GetCustomProperties` metodę dla deskryptora typu dla `ExampleModel` klasy domeny.
 
 > [!NOTE]
-> Kod generowany dla deskryptora typu niestandardowego narzędzia DSL `ExampleModel` wywołania `GetCustomProperties`; jednak narzędzia DSL nie generują kod, który implementuje metody.
+> Kod generowany przez narzędzia języka Specyficznego dla niestandardowego deskryptora typu dla `ExampleModel` wywołania `GetCustomProperties`; jednak narzędzia DSL nie generują kodu, która implementuje metodę.
 
-Definiowanie ta metoda tworzy śledzenia deskryptora właściwości Namespace śledzenia właściwości. Ponadto umożliwia zapewnienie atrybuty dla właściwości śledzenia **właściwości** okno, aby prawidłowo wyświetlić właściwości.
+Definiowanie ta metoda tworzy śledzenia deskryptor właściwość Namespace śledzenia właściwości. Ponadto umożliwia zapewnienie atrybuty dla właściwości śledzenia **właściwości** okno, aby poprawnie wyświetlić właściwości.
 
 ### <a name="to-modify-the-type-descriptor-for-the-examplemodel-domain-class"></a>Aby zmodyfikować deskryptora typu dla klasy domeny ExampleModel
 
@@ -307,9 +307,9 @@ Definiowanie ta metoda tworzy śledzenia deskryptora właściwości Namespace ś
     }
     ```
 
-## <a name="adding-custom-code-for-the-package"></a>Dodawanie niestandardowego kodu pakietu
+## <a name="adding-custom-code-for-the-package"></a>Dodawanie kodu niestandardowego pakietu
 
-Wygenerowany kod definiuje dostawcy opisu typu dla klasy domeny ExampleElement; jednak należy dodać kodu nakazać DSL do używania dostawcy opisu tego typu.
+Wygenerowany kod definiuje dostawcy opisu typu dla klasy domeny ExampleElement; Jednakże należy dodać kod, aby nakazać DSL, aby użyć tego dostawcy opisu typu.
 
 1.  Dodaj następujący kod do pliku Package.cs.
 
@@ -334,20 +334,20 @@ Wygenerowany kod definiuje dostawcy opisu typu dla klasy domeny ExampleElement; 
     }
     ```
 
-## <a name="add-custom-code-for-the-model"></a>Dodaj niestandardowy kod dla modelu
+## <a name="add-custom-code-for-the-model"></a>Dodawanie kodu niestandardowego modelu
 
 Implementowanie `GetCustomElementsValue` metodę `ExampleModel` klasy domeny.
 
 > [!NOTE]
-> Kod generowany dla narzędzia DSL `ExampleModel` wywołania `GetCustomElementsValue`; jednak narzędzia DSL nie generują kod, który implementuje metody.
+> Kod generowany przez narzędzia języka Specyficznego dla `ExampleModel` wywołania `GetCustomElementsValue`; jednak narzędzia DSL nie generują kodu, która implementuje metodę.
 
-Definiowanie `GetCustomElementsValue` metoda zapewnia logikę właściwości CustomElements obliczana `ExampleModel`. Ta metoda zlicza `ExampleElement` klasy domeny, które mają Namespace, śledzenie właściwość, która ma wartość użytkownik zaktualizował i zwraca wartość typu ciąg, który reprezentuje ta liczba jako część całkowita liczba elementów w modelu.
+Definiowanie `GetCustomElementsValue` metoda zapewnia logiki dla właściwości CustomElements obliczane `ExampleModel`. Ta metoda zlicza `ExampleElement` klas domeny, które mają Namespace, śledzenie właściwość, która ma wartość użytkownik zaktualizował i zwraca ciąg, który reprezentuje ta liczba jako część łączna liczba elementów w modelu.
 
-Ponadto Dodaj `OnDefaultNamespaceChanged` metodę `ExampleModel`i Zastąp `OnValueChanged` metody `DefaultNamespacePropertyHandler` zagnieżdżona klasa `ExampleModel` do wywołania `OnDefaultNamespaceChanged`.
+Ponadto Dodaj `OnDefaultNamespaceChanged` metody `ExampleModel`i zastępowania `OnValueChanged` metody `DefaultNamespacePropertyHandler` zagnieżdżona klasa `ExampleModel` do wywołania `OnDefaultNamespaceChanged`.
 
-Ponieważ właściwości DefaultNamespace służy do obliczania Namespace śledzenia właściwość `ExampleModel` należy powiadomić wszystkich `ExampleElement` klasy domeny, które wartość właściwości DefaultNamespace została zmieniona.
+Ponieważ właściwości DefaultNamespace jest używane do obliczania Namespace śledzenia właściwości `ExampleModel` musi powiadomić wszystkich `ExampleElement` klas domeny, których wartość właściwości DefaultNamespace została zmieniona.
 
-### <a name="to-modify-the-property-handler-for-the-tracked-property"></a>Aby zmodyfikować właściwości obsługę śledzonych właściwości
+### <a name="to-modify-the-property-handler-for-the-tracked-property"></a>Aby zmodyfikować właściwości Obsługa śledzona właściwość
 
 1.  Dodaj następujący kod do pliku ExampleModel.cs.
 
@@ -412,16 +412,16 @@ Ponieważ właściwości DefaultNamespace służy do obliczania Namespace śledz
     }
     ```
 
-## <a name="add-custom-code-for-the-tracking-property"></a>Dodaj niestandardowy kod dla właściwości śledzenia
+## <a name="add-custom-code-for-the-tracking-property"></a>Dodawanie kodu niestandardowego dla właściwości śledzenia
 
 Dodaj `CalculateNamespace` metody `ExampleElement` klasy domeny.
 
-Definiowanie tej metody zawiera logikę właściwości CustomElements obliczana `ExampleModel`. Ta metoda zlicza `ExampleElement` klasy domeny, które mają Namespace, śledzenie właściwość, która jest zaktualizowane według stanu użytkownika i zwraca wartość typu ciąg, który reprezentuje ta liczba jako część całkowita liczba elementów w modelu.
+Definiowanie tej metody zawiera logikę dla właściwości CustomElements obliczane `ExampleModel`. Ta metoda zlicza `ExampleElement` klas domeny, które mają Namespace, śledzenie właściwość, która znajduje się w zaktualizowane według stanu użytkownika i zwraca ciąg, który reprezentuje ta liczba jako część łączna liczba elementów w modelu.
 
-Ponadto Dodaj magazyn dla i metody get i set-Namespace właściwości magazynu niestandardowego `ExampleElement` klasy domeny.
+Ponadto Dodaj magazyn i metody get i set dla właściwości magazynu niestandardowego Namespace `ExampleElement` klasy domeny.
 
 > [!NOTE]
-> Kod generowany dla narzędzia DSL `ExampleModel` wywołuje get i metod; Ustaw jednak narzędzia DSL nie generują kod, który implementuje metody.
+> Kod, który Generowanie narzędzia DSL `ExampleModel` wywołuje get i ustawianie metody; jednak narzędzia DSL nie generują kod, który implementuje metody.
 
 ### <a name="to-add-the-method-for-the-custom-type-descriptor"></a>Aby dodać metodę dla deskryptora typu niestandardowego
 
@@ -583,14 +583,14 @@ Ponadto Dodaj magazyn dla i metody get i set-Namespace właściwości magazynu n
     }
     ```
 
-## <a name="add-custom-code-to-support-serialization"></a>Dodaj niestandardowy kod do obsługi serializacji
+## <a name="add-custom-code-to-support-serialization"></a>Dodawanie kodu niestandardowego, aby obsługiwać serializacji
 
-Dodaj kod, aby obsługiwać niestandardowe zachowanie po załadowaniu do serializacji XML.
+Dodaj kod do obsługi niestandardowe zachowanie po załadowaniu do serializacji XML.
 
 > [!NOTE]
-> Kod, że narzędzia DSL generować wywołania `OnPostLoadModel` i `OnPostLoadModelAndDiagram` metod; jednak narzędzia DSL nie generują kod, który implementuje tych metod.
+> Kod, że narzędzia DSL generować wywołania `OnPostLoadModel` i `OnPostLoadModelAndDiagram` metod; jednak narzędzia DSL nie generują kod, który implementuje te metody.
 
-### <a name="to-add-code-to-support-the-custom-post-load-behavior"></a>Aby dodać kod, aby obsługiwać niestandardowe zachowanie po załadowaniu
+### <a name="to-add-code-to-support-the-custom-post-load-behavior"></a>Aby dodać kod do obsługi niestandardowe zachowanie po załadowaniu
 
 1.  Dodaj następujący kod do pliku Serialization.cs.
 
@@ -714,47 +714,47 @@ Dodaj kod, aby obsługiwać niestandardowe zachowanie po załadowaniu do seriali
     }
     ```
 
-## <a name="test-the-language"></a>Testowanie język
+## <a name="test-the-language"></a>Testowanie języka
 
-Następnym krokiem jest, aby skompilować i uruchomić projektanta DSL w nowe wystąpienie klasy [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] tak, aby sprawdzić, czy właściwość śledzenia działa poprawnie.
+Następnym krokiem jest, aby skompilować i uruchomić projektanta DSL w nowe wystąpienie klasy [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] tak, aby sprawdzić, czy właściwości śledzenia działa poprawnie.
 
-1.  Na **kompilacji** menu, kliknij przycisk **Kompiluj ponownie rozwiązanie**.
+1.  Na **kompilacji** menu, kliknij przycisk **Kompiluj rozwiązanie**.
 
 2.  Na **debugowania** menu, kliknij przycisk **Rozpocznij debugowanie**.
 
-     Kompilacja eksperymentalne [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] otwiera **debugowanie** rozwiązania, które zawiera plik testowy puste.
+     Eksperymentalne kompilacji [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] otwiera **debugowanie** rozwiązania, które zawiera plik pusty test.
 
-3.  W **Eksploratora rozwiązań**, kliknij dwukrotnie plik Test.trackingPropertyDsl, aby otworzyć go w projektancie, a następnie kliknij przycisk powierzchnię projektu.
+3.  W **Eksploratora rozwiązań**, kliknij dwukrotnie plik Test.trackingPropertyDsl, aby otworzyć go w projektancie, a następnie kliknij na powierzchnię projektową.
 
-     Zwróć uwagę, że w **właściwości** w oknie diagram, **domyślne Namespace** właściwość jest **DefaultNamespace**i **elementy niestandardowe** właściwość jest **0/0**.
+     Należy zauważyć, że w **właściwości** okna diagramu, **domyślne Namespace** właściwość jest **DefaultNamespace**i **elementy niestandardowe** właściwość **0/0**.
 
-4.  Przeciągnij **ExampleElement** element z **przybornika** powierzchnię diagramu.
+4.  Przeciągnij **ExampleElement** elementu z **przybornika** na powierzchni diagramu.
 
-5.  W **właściwości** okna dla elementu, wybierz opcję **Namespace elementu** właściwości i zmień wartość **DefaultNamespace** do  **OtherNamespace**.
+5.  W **właściwości** okna dla elementu, wybierz opcję **Element Namespace** właściwości i zmień wartość z **DefaultNamespace** do  **OtherNamespace**.
 
-     Zwróć uwagę, że wartość **Namespace elementu** jest teraz pogrubione.
+     Należy zauważyć, że wartość **Element Namespace** są teraz wyświetlane pogrubioną czcionką.
 
-6.  W **właściwości** okna, kliknij prawym przyciskiem myszy **Namespace elementu**, a następnie kliknij przycisk **zresetować**.
+6.  W **właściwości** okna, kliknij prawym przyciskiem myszy **Element Namespace**, a następnie kliknij przycisk **resetowania**.
 
-     Wartość właściwości jest zmieniana na **DefaultNamespace**, i wartość jest wyświetlany w regularnych czcionki.
+     Wartość właściwości jest zmieniana na **DefaultNamespace**, a wartość jest przedstawiana w regularnych czcionki.
 
-     Kliknij prawym przyciskiem myszy **Namespace elementu** ponownie. **Zresetować** polecenia jest obecnie wyłączony, ponieważ właściwość jest obecnie w stanie śledzenia.
+     Kliknij prawym przyciskiem myszy **Element Namespace** ponownie. **Resetowania** polecenie teraz jest wyłączone, ponieważ właściwość jest obecnie w stanie śledzenia.
 
-7.  Przeciągnij kolejny **ExampleElement** z **przybornika** powierzchnię i zmień jego **Namespace elementu** do **OtherNamespace**.
+7.  Przeciągnij kolejny **ExampleElement** z **przybornika** na powierzchni diagramu, a następnie zmień jego **Element Namespace** do **OtherNamespace**.
 
-8.  Kliknij przycisk powierzchnię projektu.
+8.  Kliknij przycisk powierzchni projektowej.
 
-     W **właściwości** okna diagramu wartość **elementy niestandardowe** jest teraz **1/2**.
+     W **właściwości** okna dla diagramu, a wartość **elementy niestandardowe** jest teraz **1/2**.
 
-9. Zmień **domyślne Namespace** diagramu z **DefaultNamespace** do **właściwości, NewNamespace**.
+9. Zmiana **domyślne Namespace** dla diagramu z **DefaultNamespace** do **NewNamespace**.
 
-     **Namespace** pierwszy ścieżki elementu **domyślne Namespace** właściwości, podczas gdy **Namespace** drugiego elementu zachowuje wartość użytkownik zaktualizował  **OtherNamespace**.
+     **Namespace** pierwszy ścieżki elementu **domyślne Namespace** właściwości, natomiast **Namespace** drugiego elementu zachowuje swoją wartość użytkownikzaktualizował **OtherNamespace**.
 
-10. Zapisz rozwiązanie, a następnie zamknij eksperymentalne kompilacji.
+10. Zapisywanie rozwiązania, a następnie zamknij eksperymentalne kompilacji.
 
 ## <a name="next-steps"></a>Następne kroki
 
-Jeśli planujesz użyć śledzenia więcej niż jedną właściwość lub zaimplementowane właściwości śledzenia w więcej niż jeden DSL, można utworzyć szablonu tekstowego do generowania typowy kod obsługi każdej właściwości śledzenia. Aby uzyskać więcej informacji na temat szablonów tekstowych, patrz [generowanie kodu i szablony tekstowe T4](../modeling/code-generation-and-t4-text-templates.md).
+Jeśli planujesz użyć właściwości więcej niż jeden śledzenia lub zaimplementować właściwości śledzenia w więcej niż jednym języku DSL, można utworzyć szablon tekstowy w celu wygenerowania wspólny kod do obsługi poszczególnych właściwości śledzenia. Aby uzyskać więcej informacji na temat szablonów tekstowych, zobacz [generowanie kodu i szablony tekstowe T4](../modeling/code-generation-and-t4-text-templates.md).
 
 ## <a name="see-also"></a>Zobacz także
 
