@@ -9,16 +9,16 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 74e4f806c6f2faeeddfc2cc13917a6b5275b1b48
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 260a1fdb78f1a9acf72a9789f12d7024cafe0c93
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566632"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859201"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>Porady: dodawanie obsługi przeciągania i upuszczania
 
-Możesz dodać procedury obsługi zdarzeń przeciągania i upuszczania do DSL, tak, aby użytkownicy elementy można przeciągać do diagramu z innymi diagramami lub z innymi częściami [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Można również dodać procedury obsługi dla zdarzenia takie jak kliknie dwukrotnie. Razem obsługi przeciągania i upuszczania i kliknij dwukrotnie plik, są znane jako *procedury obsługi gestów*.
+Tak, aby użytkownicy można przeciągnąć elementy na diagramie z innymi diagramami lub z innych części programu Visual Studio, można dodać do DSL, obsługi przeciągania i upuszczania. Można również dodać procedury obsługi dla zdarzenia takie jak kliknie dwukrotnie. Razem obsługi przeciągania i upuszczania i kliknij dwukrotnie plik, są znane jako *procedury obsługi gestów*.
 
 W tym temacie omówiono gestów przeciągania i upuszczania, które pochodzą na inne diagramy. Przenoszenie i kopiowanie zdarzenia w obrębie jednego diagramu, należy wziąć pod uwagę alternatywne Definiowanie podklasą `ElementOperations`. Aby uzyskać więcej informacji, zobacz [Dostosowywanie zachowania dotyczącego kopiowania](../modeling/customizing-copy-behavior.md). Można również dostosować definicji DSL.
 

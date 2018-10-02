@@ -11,26 +11,26 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 54bd5c4989f23b1de64a17bdf8d88ccebeb65a38
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6c05befbfa59063956d0df37a7aa57d955503ec5
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31952329"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860345"
 ---
 # <a name="accessing-models-from-text-templates"></a>Uzyskiwanie dostępu do modeli z poziomu szablonów tekstu
-Przy użyciu szablonów tekstowych, można utworzyć plików raportów, pliki kodu źródłowego i inne pliki tekstowe, które są oparte na modeli języka specyficznego dla domeny. Aby uzyskać podstawowe informacje na temat szablonów tekstowych, zobacz [generowanie kodu i szablony tekstowe T4](../modeling/code-generation-and-t4-text-templates.md). Szablony tekstowe będzie działać w trybie eksperymentalne podczas debugowania programu DSL, a także będzie działać na komputerze, na którym wdrożono DSL.
+Przy użyciu szablonów tekstowych, można utworzyć raport plików, pliki kodu źródłowego i inne pliki tekstowe, które są oparte na modelach języka specyficznego dla domeny. Aby uzyskać podstawowe informacje na temat szablonów tekstu, zobacz [generowanie kodu i szablony tekstowe T4](../modeling/code-generation-and-t4-text-templates.md). Szablonów tekstowych będzie działać w trybie doświadczalnym podczas debugowania DSL, a także będą działać na komputerze, na którym wdrożono język DSL.
 
 > [!NOTE]
->  Po utworzeniu rozwiązania DSL, przykładowy tekst szablon  **\*.TT —** pliki są generowane w debugowania projektu. Zmiana nazw klas, domeny, te szablony nie będą już działać. Niemniej jednak zawierają one podstawowe dyrektywy, które należy i podaj przykłady, których można zaktualizować do dopasowania sieci DSL.
+>  Po utworzeniu rozwiązania DSL, przykładowy szablon tekstu  **\*.tt** pliki są generowane w projekcie debugowania. Po zmianie nazwy klas domeny, te szablony nie będą już działać. Niemniej jednak zawierają one podstawowe dyrektyw, które są potrzebne i zawierają przykłady, które można zaktualizować, aby dopasować DSL.
 
- Dostęp do modelu z szablonu tekstowego:
+ Dostęp do modelu z szablonu tekstu:
 
--   Ustaw właściwość Dziedzicz dyrektywy szablonu <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation>. Zapewnia to dostęp do sklepu.
+-   Ustaw właściwość Dziedzicz — dyrektywa szablonu do <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation>. To zapewnia dostęp do Store.
 
--   Określ procesory dyrektywy DSL, który chcesz uzyskać dostęp. Ładuje zestawy dla Twojego DSL, dzięki czemu można użyć jej domeny klas, właściwości i relacji w kodzie szablonu tekstowego. Ładuje plik modelu, który określisz.
+-   Określ procesory dyrektyw dla języka DSL, który chcesz uzyskać dostęp. Ładuje zestawy dla DSL, tak, aby można było używać jej klas domeny, właściwości i relacje w kodzie szablon tekstowy. Powoduje ono również pobieranie pliku modelu, który określisz.
 
- A `.tt` podobny do poniższego przykładu w pliku jest tworzony w projekcie debugowanie podczas tworzenia nowego [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozwiązania z szablonu DSL minimalnego języka.
+ A `.tt` podobny do poniższego przykładu utworzony zostanie plik w projekcie debugowania podczas tworzenia nowego rozwiązania programu Visual Studio z szablonu minimalnego języka DSL.
 
 ```
 <#@ template inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation" #>
@@ -53,57 +53,57 @@ Here is a list of elements in the model:
 
 ```
 
- Zwróć uwagę następujące kwestie dotyczące tego szablonu:
+ Zwróć uwagę na następujące kwestie dotyczące tego szablonu:
 
--   Szablon można użyć klasy, właściwości i relacje zdefiniowane w definicji DSL.
+-   Szablon można użyć klas domeny, właściwości i relacje, które są zdefiniowane w definicji DSL.
 
--   Szablon ładuje określoną w pliku modelu `requires` właściwości.
+-   Szablon ładuje plik modelu, który określisz w `requires` właściwości.
 
--   Właściwość `this` zawiera element główny. Z tego miejsca kodu można przechodzić do innych elementów modelu. Nazwa właściwości jest zwykle taka sama jak klasa domeny katalogu głównego użytkownika DSL. W tym przykładzie jest `this.ExampleModel`.
+-   Właściwość `this` zawiera element główny. W efekcie kodu można przejść do innych elementów modelu. Nazwa właściwości jest zwykle taka sama jak klasa domeny katalogu głównego DSL. W tym przykładzie jest `this.ExampleModel`.
 
--   Mimo że język, w którym są zapisywane fragmenty kodu C#, można wygenerować tekst dowolnego rodzaju. Można również napisać kod w [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] przez dodanie właściwości `language="VB"` do `template` dyrektywy.
+-   Mimo że język, w którym zapisywane są fragmenty kodu C#, można wygenerować tekstu dowolnego rodzaju. Można także napisać kod w [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] przez dodanie właściwości `language="VB"` do `template` dyrektywy.
 
--   Aby debugować szablonu, Dodaj `debug="true"` do `template` dyrektywy. Szablon zostanie otwarty w innym wystąpieniu programu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] przypadku wystąpienia wyjątku. Jeśli chcesz przerwać w debugerze w określonym w kodzie, Wstaw instrukcję `System.Diagnostics.Debugger.Break();`
+-   Aby debugować szablonu, należy dodać `debug="true"` do `template` dyrektywy. Szablon zostanie otwarty w innym wystąpieniu programu Visual Studio, jeśli wystąpi wyjątek. Jeśli chcesz przerwać działanie debugera w określonym miejscu w kodzie, instrukcji insert `System.Diagnostics.Debugger.Break();`
 
      Aby uzyskać więcej informacji, zobacz [debugowanie szablonu tekstowego T4](../modeling/debugging-a-t4-text-template.md).
 
-## <a name="about-the-dsl-directive-processor"></a>Temat procesora dyrektywy DSL
- Szablon można użyć klasy domeny, które zdefiniowano w definicji DSL. To jest spowodowanych dyrektywy zwykle wyświetlany w pobliżu początku szablonu. W poprzednim przykładzie jest poniżej.
+## <a name="about-the-dsl-directive-processor"></a>Procesor dyrektywy języka DSL — informacje
+ Szablon można użyć klas domeny, które są zdefiniowane w definicji DSL. To jest spowodowanym ulepszonym dyrektywy, który zwykle pojawia się bliżej początku tego szablonu. W poprzednim przykładzie jest następująca.
 
 ```
 <#@ MyLanguage processor="MyLanguageDirectiveProcessor" requires="fileName='Sample.myDsl1'" #>
 ```
 
- Nazwy dyrektywy ( `MyLanguage`, w tym przykładzie) jest określana na podstawie nazwy użytkownika DSL. Wywołuje *procesora dyrektywy* wygenerowanych w ramach Twojej DSL. Można znaleźć jego kod źródłowy w **Dsl\GeneratedCode\DirectiveProcessor.cs**.
+ Nazwa dyrektywy ( `MyLanguage`, w tym przykładzie) jest tworzony na podstawie nazwy DSL. Wywołuje *procesora dyrektywy* , zostanie wygenerowany jako część DSL. Można znaleźć jego kod źródłowy w **Dsl\GeneratedCode\DirectiveProcessor.cs**.
 
- Procesor dyrektywy DSL wykonuje dwa podstawowe zadania:
+ Procesor dyrektywy DSL wykonuje dwa główne zadania:
 
--   Wstawia skutecznie zestawu, a następnie zaimportuj dyrektywy do szablonu, który odwołuje się do Twojego DSL. Dzięki temu można używać klas Twojej domeny w kodzie szablonu.
+-   Wstawia skutecznie dyrektywach zestawu i importowania do szablonu, który odwołuje się do DSL. Dzięki temu można użyć klasy usługi domeny w kod szablonu.
 
--   Ładuje określony w pliku `requires` parametru i ustawia właściwość `this` odwołujący się do elementu głównego załadować modelu.
+-   Ładuje plik który określisz w `requires` parametru i ustawia właściwość `this` odwołujący się do elementu głównego załadować modelu.
 
-## <a name="validating-the-model-before-running-the-template"></a>Sprawdzanie poprawności modelu przed uruchomieniem szablonu
- Może spowodować model do weryfikacji przed wykonaniem tego szablonu.
+## <a name="validating-the-model-before-running-the-template"></a>Sprawdzanie poprawności modelu przed uruchomieniem tego szablonu
+ Może spowodować modelu zostanie wykonane sprawdzanie poprawności, zanim zostanie wykonany szablonu.
 
 ```
 <#@ MyLanguage processor="MyLanguageDirectiveProcessor" requires="fileName='Sample.myDsl1';validation='open|load|save|menu'" #>
 
 ```
 
- Zwróć uwagę, że:
+ Należy zauważyć, że:
 
-1.  `filename` i `validation` parametry są oddzielone znakiem ";" oraz nie może być nie separatorów ani spacji.
+1.  `filename` i `validation` parametry są rozdzielane ";" oraz nie może być nie separatorów ani spacji.
 
-2.  Lista kategorii weryfikacji Określa, które metody sprawdzania poprawności zostanie wykonane. Wiele kategorii powinny być oddzielone z "&#124;" oraz nie może być nie separatorów ani spacji.
+2.  Lista kategorii weryfikacji określa metody sprawdzania poprawności, które zostaną wykonane. Wiele kategorii powinny być rozdzielone za pomocą "&#124;" oraz nie może być nie separatorów ani spacji.
 
- Jeśli zostanie znaleziony błąd, będzie zgłaszane w oknie błędy, a plik wyników będzie zawierać komunikat o błędzie.
+ Jeśli zostanie znaleziony błąd, będą raportowane w oknie błędów, a plik wynik będzie zawierać komunikat o błędzie.
 
-##  <a name="Multiple"></a> Uzyskiwanie dostępu do wielu modeli z szablonu tekstowego
+## <a name="Multiple"></a> Uzyskiwanie dostępu do wielu modeli z szablonu tekstowego
 
 > [!NOTE]
->  Ta metoda umożliwia wyświetlenie wielu modeli w tym samym szablonie, ale nie obsługuje odwołań ModelBus. Modele, które są powiązane przez odwołania ModelBus zamieszczono [przy użyciu programu Visual Studio ModelBus w szablonu tekstowego](../modeling/using-visual-studio-modelbus-in-a-text-template.md).
+>  Ta metoda umożliwia odczyt wiele modeli, w tym samym szablonie, ale nie obsługuje odwołań ModelBus. Modele, które są powiązane przez odwołania ModelBus zamieszczono [przy użyciu programu Visual Studio ModelBus w szablonie tekstowym](../modeling/using-visual-studio-modelbus-in-a-text-template.md).
 
- Chcesz uzyskiwać dostęp do więcej niż jednego modelu z tym samym szablonie tekstu, należy wywołać wygenerowanego procesora dyrektywy jeden raz dla każdego modelu. Należy określić nazwę pliku każdego modelu w `requires` parametru. Należy określić nazwy, które ma być używany dla klasy głównym domeny w `provides` parametru. Należy określić różne wartości `provides` parametrów każdego wywołania dyrektywy. Załóżmy na przykład, że masz trzy pliki modelu o nazwie Library.xyz, School.xyz i Work.xyz. Dostęp do nich z tego samego szablonu tekstu, należy napisać trzy wywołania dyrektywy, które przypominają te następujące.
+ Jeśli chcesz uzyskać dostęp do więcej niż jednego modelu z tego samego szablonu tekstu, należy wywołać generowanym procesorem dyrektywy jeden raz dla każdego modelu. Należy określić nazwę pliku każdego modelu w `requires` parametru. Należy określić nazwy, które chcesz użyć dla klasy domeny katalogu głównego w `provides` parametru. Należy określić różne wartości `provides` parametrom poszczególnych wywołań dyrektywy. Na przykład załóżmy, że masz trzy pliki modelu o nazwie Library.xyz School.xyz i Work.xyz. Aby uzyskiwać do nich dostęp z tego samego szablonu tekstu, należy napisać trzech wywołań dyrektywy, podobne do poniższych.
 
 ```
 <#@ ExampleModel processor="<YourLanguageName>DirectiveProcessor" requires="fileName='Library.xyz'" provides="ExampleModel=LibraryModel" #>
@@ -112,9 +112,9 @@ Here is a list of elements in the model:
 ```
 
 > [!NOTE]
->  Ten przykładowy kod jest dla języka, który jest oparty na szablonie rozwiązania minimalnego języka.
+>  Ten przykładowy kod jest dla języka, który jest oparty na szablonie rozwiązania minimalny języka.
 
- Aby uzyskać dostęp do modeli w szablonie tekstu, można teraz napisać kod podobny do kodu w poniższym przykładzie.
+ Aby uzyskać dostęp do modeli w szablonie tekstowym, można teraz napisać kod podobny do kodu, w poniższym przykładzie.
 
 ```csharp
 <#
@@ -139,21 +139,21 @@ For Each element As ExampleElement In Me.WorkModel.Elements
 ```
 
 ## <a name="loading-models-dynamically"></a>Dynamiczne ładowanie modeli
- Jeśli chcesz określić w czasie wykonywania modeli można załadować pliku modelu można załadować dynamicznie w kodzie programu zamiast dyrektywy specyficzne dla DSL.
+ Jeśli chcesz określić, w czasie wykonywania, modeli, które można załadować pliku modelu można załadować dynamicznie w kodzie programu, a nie za pomocą dyrektywy specyficzne dla języka DSL.
 
- Jednak jednej z funkcji specyficznych dla DSL dyrektywy jest importowane DSL przestrzeni nazw, dzięki czemu kod szablonu może używać domeny klas zdefiniowanych w tym DSL. Ponieważ dyrektywy nie jest używana, należy dodać  **\<zestawu >** i  **\<zaimportować >** dyrektywy dla wszystkich modeli, które mogą być ładowane. Jest to łatwe, jeśli różne modele, które mogą być ładowane są wszystkie wystąpienia tej samej DSL.
+ Jednak jedna z funkcji specyficznych dla języka DSL — dyrektywa jest zaimportowanie przestrzeń nazw DSL, tak aby kod szablonu mógł używać klas domeny zdefiniowane w tym DSL. Ponieważ nie jest używany dyrektywy, należy dodać  **\<zestawu >** i  **\<importowanie >** dyrektywy dla wszystkich modeli, które mogą być ładowane. Jest to łatwe w przypadku różnych modeli, które może ładować wszystkich wystąpień tego samego języka DSL.
 
- Aby załadować plik, najbardziej skutecznych metodą jest użycie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus. W typowy scenariusz szablon tekstu używa dyrektywy DSL specyficzne załadować pierwszego modelu w zwykły sposób. Ten model zawiera ModelBus odwołania do innego modelu. Można użyć ModelBus Otwórz przywoływanym modelem i dostępu do określonego elementu. Aby uzyskać więcej informacji, zobacz [przy użyciu programu Visual Studio ModelBus w szablonu tekstowego](../modeling/using-visual-studio-modelbus-in-a-text-template.md).
+ Aby załadować plik, najbardziej efektywną metodę jest za pomocą programu Visual Studio ModelBus. W typowym scenariuszu szablon tekstowy użyje dyrektywy specyficzne dla języka DSL załadować pierwszy model w zwykły sposób. Ten model zawiera ModelBus odwołania do innego modelu. ModelBus służy do otwierania przywoływanym modelem i dostęp do konkretnego elementu. Aby uzyskać więcej informacji, zobacz [przy użyciu programu Visual Studio ModelBus w szablonie tekstowym](../modeling/using-visual-studio-modelbus-in-a-text-template.md).
 
- W scenariuszu z mniej zwykle można otworzyć pliku modelu, dla którego masz tylko nazwę pliku, który może nie być w bieżącym [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projektu. W takim przypadku można otworzyć pliku przy użyciu techniki opisane w [porady: Otwieranie modelu z pliku w kodzie programu](../modeling/how-to-open-a-model-from-file-in-program-code.md).
+ W przypadku mniej zwykle możesz chcieć Otwórz plik modelu, do której masz tylko nazwę pliku, który może nie być w bieżącym projekcie programu Visual Studio. W takim przypadku można otworzyć pliku przy użyciu techniki opisanej w [porady: Otwieranie modelu z pliku w kodzie programu](../modeling/how-to-open-a-model-from-file-in-program-code.md).
 
-## <a name="generating-multiple-files-from-a-template"></a>Generowanie wielu plikach na podstawie szablonu
- Jeśli chcesz wygenerować kilka plików — na przykład można wygenerować pliku dla każdego elementu w modelu, istnieje kilka możliwych rozwiązań. Domyślnie tylko jeden plik jest tworzony dla każdego pliku szablonu.
+## <a name="generating-multiple-files-from-a-template"></a>Generowanie wielu plików na podstawie szablonu
+ Jeśli chcesz wygenerować kilka plików — na przykład, aby wygenerować osobny plik dla każdego elementu w modelu, istnieje kilka możliwych rozwiązań. Domyślnie tylko jeden plik jest generowany dla każdego pliku szablonu.
 
-### <a name="splitting-a-long-file"></a>Podział pliku długa
- W przypadku tej metody Użyj szablonu do generowania pojedynczy plik, oddzielonych ogranicznikiem. Następnie plik zostanie podzielony na części. Istnieją dwa szablony, jedna, aby wygenerować plik jednego i drugiego podziału.
+### <a name="splitting-a-long-file"></a>Podział pliku długi
+ W przypadku tej metody używasz szablonu do wygenerowania pojedynczego pliku, oddzielonych ogranicznikiem. Następnie plik zostanie podzielony na części. Istnieją dwa szablony, jeden można wygenerować pojedynczy plik, a druga podziału.
 
- **LoopTemplate.t4** generuje długi jednoplikowe. Zauważ, że rozszerzenie pliku jest ".t4", ponieważ nie powinny być przetworzone bezpośrednio po kliknięciu **Przekształć wszystkie szablony**. Ten szablon przyjmuje parametr, który określa ciąg ogranicznik, który rozdziela segmentami:
+ **LoopTemplate.t4** generuje długie pojedynczy plik. Zauważ, że rozszerzenie pliku ".t4", ponieważ mają być przetwarzane nie, bezpośrednio po kliknięciu **Przekształć wszystkie szablony**. Ten szablon przyjmuje parametr, który określa ciąg ogranicznik, który oddziela segmenty:
 
 ```
 <#@ template ninherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation" #>
@@ -176,7 +176,7 @@ For Each element As ExampleElement In Me.WorkModel.Elements
 
 ```
 
- `LoopSplitter.tt` wywołuje `LoopTemplate.t4`, a następnie dzieli wynikowy plik na jego segmentów. Zwróć uwagę, że ten szablon nie trzeba być modelowania szablonu, ponieważ nie odczytu modelu.
+ `LoopSplitter.tt` wywołuje `LoopTemplate.t4`, a następnie dzieli wynikowy plik na jego segmentów. Należy zauważyć, że ten szablon nie ma być szablonem modelowania, ponieważ nie odczytuje model.
 
 ```
 <#@ template hostspecific="true" language="C#" #>

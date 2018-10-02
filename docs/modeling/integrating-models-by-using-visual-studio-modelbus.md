@@ -9,20 +9,20 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 6357fbe512b9120872fc033dd93406a7ff8eb1d1
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 64400b8844481f8b34d82c430322d240c8930cd0
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567184"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859955"
 ---
 # <a name="integrating-models-by-using-visual-studio-modelbus"></a>Integrowanie modeli za pomocą Visual Studio Modelbus
-[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus udostępnia metodę tworzenia łącza między modelami i z innych narzędzi modeli. Na przykład możesz połączyć modeli języka specyficznego dla domeny (DSL) i modeli UML. Możesz utworzyć zintegrowany zestaw językami DSL.
+Visual Studio ModelBus udostępnia metodę tworzenia łącza między modelami i z innych narzędzi modeli. Na przykład możesz połączyć modeli języka specyficznego dla domeny (DSL) i modeli UML. Możesz utworzyć zintegrowany zestaw językami DSL.
 
  ModelBus umożliwia utworzenie unikatowych odwołania do modelu lub do określonego elementu w modelu. To odwołanie mogą być przechowywane poza modelem, na przykład w elemencie w innym modelem. Gdy przy późniejszej okazji, narzędzie chce, aby uzyskać dostęp do elementu, infrastruktury Model Bus odpowiedni model obciążenia i zwraca element. Jeśli chcesz, możesz wyświetlić modelu do użytkownika. Jeśli plik nie jest dostępny w poprzedniej lokalizacji, ModelBus będzie monitować użytkownika o znalezienie go. Jeśli użytkownik znajduje się plik, ModelBus naprawi wszystkie odwołania do tego pliku.
 
 > [!NOTE]
->  W bieżącym [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] implementacji ModelBus, połączone modele musi być elementów w tym samym [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozwiązania.
+>  W bieżącej implementacji programu Visual Studio ModelBus połączone modele musi być elementów w tym samym rozwiązaniu Visual Studio.
 
  Aby uzyskać dodatkowe informacje i przykładowy kod zobacz:
 
@@ -32,10 +32,10 @@ ms.locfileid: "39567184"
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-##  <a name="provide"></a> Zapewnianie dostępu do języka DSL
- Przed utworzeniem ModelBus odwołania do modelu lub jego elementy, należy zdefiniować element ModelBusAdapter dla języka DSL. W tym celu najłatwiej używać [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozszerzenia magistrali modelu, który dodaje polecenia do projektanta DSL.
+## <a name="provide"></a> Zapewnianie dostępu do języka DSL
+ Przed utworzeniem ModelBus odwołania do modelu lub jego elementy, należy zdefiniować element ModelBusAdapter dla języka DSL. W tym celu najłatwiej można użyć rozszerzenia programu Visual Studio modelu magistrali, który dodaje polecenia do projektanta DSL.
 
-###  <a name="expose"></a> Aby uwidocznić definicję DSL magistrali modelu
+### <a name="expose"></a> Aby uwidocznić definicję DSL magistrali modelu
 
 1.  Pobierz i zainstaluj rozszerzenie programu Visual Studio Model Bus, chyba że użytkownik jest już zainstalowany. Aby uzyskać więcej informacji, zobacz [wizualizacji i modelowania SDK](http://go.microsoft.com/fwlink/?LinkID=185579).
 
@@ -66,7 +66,7 @@ ms.locfileid: "39567184"
  Folder `ModelBusAdapters\bin\*` zawiera zestawów zbudowanych według `Dsl` projektu i `ModelBusAdapters` projektu. Aby odwoływać się do tego języka DSL z innego języka DSL, należy zaimportować te zestawy.
 
 ### <a name="making-sure-that-elements-can-be-referenced"></a>Upewnij się, że elementy mogą być przywoływane
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Karty ModelBus umożliwia identyfikację, domyślnie identyfikator guid elementu. Tych identyfikatorów w związku z tym musi być utrwalone w pliku modelu.
+ Visual Studio ModelBus kart sieciowych umożliwia identyfikację, domyślnie identyfikator guid elementu. Tych identyfikatorów w związku z tym musi być utrwalone w pliku modelu.
 
 ##### <a name="to-ensure-that-element-ids-are-persisted"></a>Aby upewnić się, że element identyfikatory są zachowywane
 
@@ -84,7 +84,7 @@ ms.locfileid: "39567184"
 
 -   Zastąp `ResolveElementReference` zlokalizować poprawny element z odwołaniem Model Bus.
 
-##  <a name="editRef"></a> Uzyskiwanie dostępu do języka DSL z innego języka DSL
+## <a name="editRef"></a> Uzyskiwanie dostępu do języka DSL z innego języka DSL
  Odwołania do modelu magistrali można przechowywać we właściwości domeny w DSL i można napisać kod niestandardowy, który korzysta z nich. Można także pozwolić użytkownikom na tworzenie odwołanie magistrali modelu, pobierania pliku modelu i elemencie.
 
  Aby włączyć DSL można używać odwołań do innego DSL, najpierw należy go *konsumenta* model bus odwołań.
@@ -140,10 +140,10 @@ ms.locfileid: "39567184"
 
 2.  Uruchom jedno z języków DSL w trybie doświadczalnym, naciskając klawisz F5 lub CTRL + F5.
 
-3.  W projekcie debugowanie w doświadczalnym wystąpieniu programu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], dodać pliki, które są wystąpieniami każdego DSL.
+3.  W projekcie debugowanie w doświadczalnym wystąpieniu programu Visual Studio należy dodać pliki, które są wystąpieniami każdego DSL.
 
     > [!NOTE]
-    > [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus tylko może rozpoznać odwołania do modeli, które są elementy w tym samym [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozwiązania. Na przykład nie można utworzyć odwołania do pliku modelu w innej części systemu plików.
+    > Visual Studio ModelBus tylko może rozpoznać odwołania do modeli, które są elementy w tym samym rozwiązaniu Visual Studio. Na przykład nie można utworzyć odwołania do pliku modelu w innej części systemu plików.
 
 4.  Utwórz niektóre elementy i łącza w wystąpieniu narażonych DSL i zapisz go.
 
@@ -158,12 +158,12 @@ ms.locfileid: "39567184"
 ## <a name="creating-references-in-program-code"></a>Tworzenie odwołań w kodzie programu
  Do przechowywania odwołania do modelu lub element wewnątrz modelu, należy utworzyć `ModelBusReference`. Istnieją dwa rodzaje z `ModelBusReference`: odwołania i odwołania do elementu modelu.
 
- Można utworzyć odwołania do modelu, potrzebujesz element AdapterManager elementu DSL, w którym model jest wystąpienia i nazwa pliku lub [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] elementu projektu modelu.
+ Można utworzyć odwołania do modelu, potrzebny jest element AdapterManager elementu DSL, w którym model jest wystąpienia i nazwa pliku lub elementu projektu programu Visual Studio w modelu.
 
  Aby utworzyć odwołanie do elementu, potrzebna jest karta pliku modelu i element, którego ma dotyczyć.
 
 > [!NOTE]
->  Za pomocą [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus, można utworzyć odwołania tylko do elementów w tym samym [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozwiązania.
+>  Visual Studio ModelBus umożliwia tworzenie odwołań tylko do elementów w rozwiązaniu programu Visual Studio.
 
 ### <a name="import-the-exposed-dsl-assemblies"></a>Importowanie narażonych zestawów języka DSL
  W projekcie odbierająca komunikaty należy dodać odwołania projektu do zestawów DSL i elementu ModelBusAdapter narażonych DSL.
@@ -349,7 +349,7 @@ ModelBusReference elementReferenceRestored =
     modelBus.DeserializeReference(serialized, null);
 ```
 
- MBR, który jest serializowany w ten sposób nie zależy od kontekstu. Jeśli używasz proste karty magistrali opartych na plikach modelu główny rekord rozruchowy zawiera bezwzględną ścieżkę do pliku. Jest to wystarczające, jeśli pliki modelu wystąpienia nigdy nie jest przenoszony. Jednak pliki modelu będzie zazwyczaj elementy w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projektu. Użytkownicy będą należy oczekiwać, że może być konieczne przeniesienie całego projektu do różnych części systemu plików. Zostanie również oczekuje, że można zachować projektu objętego kontrolą źródła, a następnie otwórz go na różnych komputerach. Nazwy ścieżek w związku z tym powinien zostać Zserializowany względem lokalizacji pliku projektu, który zawiera pliki.
+ MBR, który jest serializowany w ten sposób nie zależy od kontekstu. Jeśli używasz proste karty magistrali opartych na plikach modelu główny rekord rozruchowy zawiera bezwzględną ścieżkę do pliku. Jest to wystarczające, jeśli pliki modelu wystąpienia nigdy nie jest przenoszony. Jednak pliki modelu będą zazwyczaj elementy w projekcie programu Visual Studio. Użytkownicy będą należy oczekiwać, że może być konieczne przeniesienie całego projektu do różnych części systemu plików. Zostanie również oczekuje, że można zachować projektu objętego kontrolą źródła, a następnie otwórz go na różnych komputerach. Nazwy ścieżek w związku z tym powinien zostać Zserializowany względem lokalizacji pliku projektu, który zawiera pliki.
 
 ### <a name="serializing-relative-to-a-specified-file-path"></a>Serializacja względem określonej ścieżki pliku
  A `ModelBusReference` zawiera `ReferenceContext`, czyli słownika, w którym można przechowywać informacje takie jak ścieżka pliku, względem którego powinien zostać Zserializowany.

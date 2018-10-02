@@ -20,12 +20,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: bc264b9e47fe9169c0b1ad9d3257323c437620f7
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 2c5d22db6a973947faf228e2e3844d63a916e24e
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45550430"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859500"
 ---
 # <a name="ca1052-static-holder-types-should-be-sealed"></a>CA1052: Typy obsługi statycznej powinny być zapieczętowane
 
@@ -43,7 +43,7 @@ ms.locfileid: "45550430"
  Reguła ta zakłada, że typ, który zawiera tylko statyczne elementy członkowskie nie służy do dziedziczone, ponieważ typ nie zapewnia żadnej funkcji, która może zostać zastąpiona w typie pochodnym. Typ, który nie jest przeznaczona do dziedziczone powinien być oznaczony przez `sealed` modyfikator, aby uniemożliwić jego użycie jako typu podstawowego.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej zasady, oznacz typ jako `sealed`. Jeśli [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 2.0 lub nowszej, lepszym rozwiązaniem jest Oznacz typ jako `static`. W ten sposób można uniknąć konieczności zadeklarować Konstruktor prywatny, aby uniemożliwić tworzonych przez klasy.
+ Aby naprawić naruszenie tej zasady, oznacz typ jako `sealed`. Jeśli są przeznaczone dla .NET Framework 2.0 lub nowszej, lepszym rozwiązaniem jest Oznacz typ jako `static`. W ten sposób można uniknąć konieczności zadeklarować Konstruktor prywatny, aby uniemożliwić tworzonych przez klasy.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
  Pomijaj ostrzeżeń dla tej reguły, tylko wtedy, gdy typ jest przeznaczony do być dziedziczona. Brak `sealed` modyfikator sugeruje, że typ jest przydatne jako typu podstawowego.

@@ -9,24 +9,24 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 08e18d654023dbf92f5c9e52fcd82f0c2ac3471c
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 45bc88be425acf8532debc47a28ee3ea20c18c71
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178465"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859630"
 ---
 # <a name="guidelines-for-writing-t4-text-templates"></a>Zalecenia dotyczące pisania szablonów tekstowych T4
-Te ogólne wytyczne mogą być przydatne w przypadku generowania kodu programu lub innych zasobów aplikacji w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Zasady nie zostały ustalone.
+Te ogólne wytyczne mogą być przydatne w przypadku generowania kodu programu lub innych zasobów aplikacji w programie Visual Studio. Zasady nie zostały ustalone.
 
 ## <a name="guidelines-for-design-time-t4-templates"></a>Wytyczne dotyczące szablonów T4 w czasie projektowania
- Szablony T4 czasu projektowania są szablony, które generują kod w swojej [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projektu w czasie projektowania. Aby uzyskać więcej informacji, zobacz [generowanie kodu czasu projektowania przy użyciu szablonów tekstowych T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md).
+ Szablony T4 czasu projektowania są szablony, które generują kod w projekcie programu Visual Studio w czasie projektowania. Aby uzyskać więcej informacji, zobacz [generowanie kodu czasu projektowania przy użyciu szablonów tekstowych T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md).
 
  Generuj zmienną aspektów aplikacji.
 Generowanie kodu jest najbardziej użyteczne dla tych aspektów aplikacji, które mogą ulec zmianie w trakcie realizacji projektu lub zmieni się między różnymi wersjami aplikacji. Oddzielne te aspekty zmiennej z aspektów bardziej niezmiennej, tak, aby łatwiej określić, co ma zostać wygenerowane. Na przykład jeśli aplikacja zawiera witrynę sieci Web, należy oddzielić standardowej strony obsługująca funkcje z logikę, która definiuje ścieżki nawigacji z jednej strony do innego.
 
  Kodowanie zmiennej aspekty w co najmniej jednego modelu źródłowego.
-Model jest pliku lub bazy danych, która odczytuje każdy szablon, można uzyskać określone wartości dla zmiennej części kodu, który ma zostać wygenerowane. Modele mogą być baz danych i plików XML, własny projekt, diagramy lub języków specyficznych dla domeny. Zazwyczaj jeden model jest używany do generowania wielu plików w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projektu. Każdy plik jest generowany na podstawie szablonu oddzielne.
+Model jest pliku lub bazy danych, która odczytuje każdy szablon, można uzyskać określone wartości dla zmiennej części kodu, który ma zostać wygenerowane. Modele mogą być baz danych i plików XML, własny projekt, diagramy lub języków specyficznych dla domeny. Zazwyczaj jeden model jest używany do generowania wielu plików w projekcie programu Visual Studio. Każdy plik jest generowany na podstawie szablonu oddzielne.
 
  Można użyć więcej niż jednego modelu w projekcie. Na przykład można zdefiniować model nawigacji między stronami sieci web i osobnymi plikami modelu dla układu strony.
 
@@ -122,7 +122,7 @@ class FabrikamTemplate : MyStandardRunTimeTemplate
 ## <a name="guidelines-for-all-t4-templates"></a>Wytyczne dotyczące wszystkie szablony T4
  Oddzielne zbieranie danych z Generowanie tekstu spróbuj się unikać mieszania obliczeń i bloków tekstu. W każdym szablonie tekstu należy użyć pierwszego \<kod # block #> do ustawiania zmiennych i wykonywania złożonych obliczeń. Z pierwszego bloku tekstu w dół do końca szablonu lub pierwszy \<cechę klasy #+ block #> Unikaj długich wyrażeń i uniknąć pętli i warunkowych, chyba że zawierają bloki tekstu. Praktyka ta sprawia, że szablon jest łatwiej odczytywać i obsługa.
 
- Nie używaj `.tt` dołączanych plików użytku innym rozszerzeniem nazwy pliku takich jak `.ttinclude` dołączonych plików. Użyj `.tt` tylko dla plików, które mają być przetwarzane w czasie wykonywania lub czasu projektowania szablonów tekstowych. W niektórych przypadkach [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozpoznaje `.tt` pliki i automatycznie ustawia jego właściwości dla przetwarzania.
+ Nie używaj `.tt` dołączanych plików użytku innym rozszerzeniem nazwy pliku takich jak `.ttinclude` dołączonych plików. Użyj `.tt` tylko dla plików, które mają być przetwarzane w czasie wykonywania lub czasu projektowania szablonów tekstowych. W niektórych przypadkach program Visual Studio rozpoznaje `.tt` pliki i automatycznie ustawia jego właściwości dla przetwarzania.
 
  Rozpoczęcie każdego szablonu jako stały prototypu.
 Napisz przykładem kodu lub tekstu, który chcesz wygenerować i upewnij się, że jest on poprawny. Następnie zmień jego rozszerzenie na .tt po czym stopniowo wstawiać kod, który modyfikuje zawartość, czytając modelu.

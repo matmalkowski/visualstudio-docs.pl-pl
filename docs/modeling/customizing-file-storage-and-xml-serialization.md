@@ -13,16 +13,16 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 2009e4c186682157eab6803ad3055fd5818fd02d
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: dbac1e67e5b23f277d2698c0cb1a959918c32372
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511814"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860501"
 ---
 # <a name="customize-file-storage-and-xml-serialization"></a>Dostosowywanie przechowywania plików i serializacji XML
 
-Gdy użytkownik zapisuje wystąpienia lub *modelu*, języka specyficznego dla domeny (DSL), w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], plik XML jest tworzony lub aktualizowany. Plik można wykorzystać w celu ponownego utworzenia modelu w Store.
+Gdy użytkownik zapisuje wystąpienia lub *modelu*, języka specyficznego dla domeny (DSL) w programie Visual Studio, plik XML jest tworzony lub aktualizowany. Plik można wykorzystać w celu ponownego utworzenia modelu w Store.
 
 Schemat serializacji można dostosować, zmieniając ustawienia w obszarze **zachowanie serializacji kodu Xml** w Eksplorator DSL. Istnieje węzeł w węźle **zachowanie serializacji kodu Xml** dla każdej klasy domeny, właściwości i relacji. Relacje znajdują się w ramach ich klas źródłowych. Dostępne są także węzłów odpowiadający kształt, łącznik i diagramu klas.
 

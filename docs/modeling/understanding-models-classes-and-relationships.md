@@ -11,145 +11,145 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 394b21d396bf92b794060ff27ed940e25a77aa26
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 12363adb78c4fca7d5ef3416a2642a68a7c3eab7
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748491"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860527"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Opis modeli, klas i relacji
-Język specyficznego dla domeny (DSL) jest zdefiniowany przez jego plik definicji DSL, wraz z dowolny kod niestandardowy program, który może zapisać. Większość kodu programu w rozwiązaniu DSL są generowane na podstawie tego pliku.
+Języka specyficznego dla domeny (DSL) jest definiowany przez jego pliku definicji DSL, wraz z wszelki kod niestandardowy program, który może zapisać. Większość kodu programu w rozwiązaniu DSL jest generowany na podstawie tego pliku.
 
  W tym temacie omówiono funkcje centralnej definicji DSL.
 
-## <a name="the-dsl-definition"></a>Definicja DSL
- Po otwarciu `Dsl\DslDefinition.dsl`, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] okna podobny poniższej ilustracji.
+## <a name="the-dsl-definition"></a>W definicji DSL
+ Po otwarciu `Dsl\DslDefinition.dsl`, okna programu Visual Studio przypomina poniższej ilustracji.
 
  ![Projektant DSL](../modeling/media/dsl_designer.png)
 
- Najważniejsze informacje w definicji DSL jest wyświetlane na diagramie definicji DSL. Dodatkowe informacje, które jest również częścią DslDefinition.dsl, jest wyświetlana w Eksploratorze DSL, który zazwyczaj znajduje się na stronie diagramu. Możesz pracować z diagramem najczęściej wykonywanych zadań i Explorer DSL bardziej zaawansowane dostosowania.
+ Najważniejsze informacje w definicji DSL jest wyświetlany w diagramem definicji DSL. Dodatkowe informacje, które wchodzi w skład DslDefinition.dsl, jest wyświetlany w Eksplorator DSL, który zazwyczaj znajduje się na stronie diagramu. Możesz pracować z diagramem najczęstsze zadania i Eksplorator DSL dla bardziej zaawansowanych dostosowań.
 
- Diagram definicji DSL przedstawia klasy domeny, które definiują elementy modelu i relacje definiujące łącza między elementami modelu. Przedstawiono również kształty i łączniki, które są używane do wyświetlania elementów modelu dla użytkownika.
+ Na diagramie w definicji DSL przedstawiono klasy domeny, które definiują elementy modelu i relacji, które definiują łącza między elementami modelu. Pokazuje także kształtów i łączników, które są używane do wyświetlania elementów modelu do użytkownika.
 
- ![Projektant DSL z tor](../modeling/media/dsl_desinger.png)
+ ![Projektant DSL za pomocą toru](../modeling/media/dsl_desinger.png)
 
- Po wybraniu elementu w definicji DSL, na diagramie lub w Eksploratorze DSL, informacje o tym są wyświetlane w oknie właściwości. Dodatkowe informacje mogą być wyświetlane w okienku szczegółów DSL.
+ Po wybraniu elementu w definicji DSL, na diagramie lub w Eksploratorze DSL informacje o nim są wyświetlane w oknie dialogowym właściwości. Dodatkowe informacje mogą być wyświetlane w oknie Szczegóły języka DSL.
 
-### <a name="models-are-instances-of-dsls"></a>Modele są wystąpieniami klasy DSLs
- A *modelu* jest wystąpieniem programu DSL utworzone przez użytkownika. Model zawiera elementy modelu, które są wystąpieniami klasy domeny, które należy zdefiniować i łącza między elementami, które są wystąpieniami klasy relacje domeny, które zostały zdefiniowane. Model może być również kształtów i łączników, które są wyświetlane na diagramie elementy modelu i łącza. Definicja DSL zawiera klasy kształtu, łącznik klas i klasa diagramu.
+### <a name="models-are-instances-of-dsls"></a>Modele są wystąpieniami językami DSL
+ A *modelu* jest wystąpieniem DSL utworzone przez użytkownika. Model zawiera elementy modelu, które są wystąpieniami klasy domeny, które należy zdefiniować i łączy między elementami, które są wystąpieniami klasy relacji domeny, które definiujesz. Model może również mieć kształtów i łączników, które zawierają elementy modelu i łącza na diagramie. W definicji DSL zawiera klasy kształtów, klas łącznika i klasy dla diagramu.
 
- Definicja DSL jest także znana jako *modelu domeny*. Modelu DSL definicji lub domeny jest reprezentacja czasu projektowania języka specyficznego dla domeny modelu jest utworzenie wystąpienia środowiska wykonawczego języka specyficznego dla domeny.
+ Definicję DSL jest także znana jako *modelu domeny*. Model definicji DSL lub domena jest projektowania reprezentacja języka specyficznego dla domeny, model jest wystąpienia środowiska wykonawczego języka specyficznego dla domeny.
 
 ## <a name="domain-classes-define-model-elements"></a>Klasy domeny definiują elementy modelu
- Klasy domeny są używane do tworzenia poszczególnych elementów w domenie i relacje domeny są łącza między elementami. Są one reprezentacja czasu projektowania elementów i linki, które zostaną utworzone przez użytkowników języka specyficznego dla projektu, podczas tworzenia ich modeli.
+ Klasy domeny są używane do tworzenia różnych elementów w domenie i relacje domeny są łącza między elementami. Są one projektowania reprezentacja elementów i łącza, które będą tworzone przez użytkowników języka specyficznego dla projektu podczas tworzenia swoich modeli.
 
- Na ilustracji przedstawiono model, który został utworzony przez użytkownika bibliotece utworów muzycznych DSL. Albumów muzycznych są reprezentowane przez pola, które zawierają listy utworów. Artystów są reprezentowane przez zaokrąglonych pola i są podłączone do albumów, na które przyczyniły się.
+ Na ilustracji przedstawiono model, który został utworzony przez użytkownika Biblioteka utworów muzycznych DSL. Utworów muzycznych albumy są reprezentowane przez pola zawierające listy utworów. Artystów są reprezentowane przez zaokrąglonych pól i są podłączone do albumów, do których one opracowali.
 
  ![Wystąpienie modelu DSL wygenerowany](../modeling/media/music_instance.png)
 
- Definicja DSL oddziela dwa aspekty. Wygląd elementów modelu diagramu modelu jest definiowana za pomocą klasy kształt i klasy łącznika. Informacje w modelu jest zdefiniowana za pomocą klasy i relacje domeny.
+ W definicji DSL oddziela dwa aspekty. Wygląd elementów modelu w diagramie model jest zdefiniowana za pomocą klasy kształtów i łączników klasy. Informacje w modelu jest zdefiniowana za pomocą klasy domeny i relacje domeny.
 
- Na poniższej ilustracji przedstawiono klasy i relacje w bibliotece utworów muzycznych definicji DSL.
+ Poniższa ilustracja przedstawia klasy domeny i relacje w definicji DSL Biblioteka utworów muzycznych.
 
- ![Dokumentacja i osadzanie relacji](../modeling/media/music_classes.png)
+ ![Relacji osadzania i dokumentacja](../modeling/media/music_classes.png)
 
- Na ilustracji przedstawiono cztery klasy domeny: Muzyka, albumy, wykonawcy i utworu. Klasy domeny definiują właściwości domeny, takie jak nazwa, tytuł i tak dalej. W modelu wystąpienia wartości niektóre z tych właściwości są wyświetlane na diagramie.
+ Na ilustracji przedstawiono cztery klasy domeny: utworów muzycznych, fotograficzne, wykonawcy i utworu. Klasy domeny definiują właściwości domeny, takie jak nazwy, tytułu i tak dalej. W modelu wystąpień wartości niektóre z tych właściwości są wyświetlane na diagramie.
 
- Między klasami są relacje domeny: MusicHasAlbums, MusicHasArtists AlbumbHasSongs i ArtistAppearedOnAlbums. Relacje zostały liczebnościami powodującymi, takich jak 1..1, 0.. *. Na przykład musi być powiązany co utworu dokładnie jeden Album za pośrednictwem relacji AlbumHasSongs. Każdego albumu może mieć dowolną liczbę utworów.
+ Między klasami są relacje domeny: MusicHasAlbums, MusicHasArtists, AlbumbHasSongs i ArtistAppearedOnAlbums. Relacje zostały Liczebność punktów, takich jak 1..1, 0.. *. Na przykład każdy utwór musi być powiązany do dokładnie jednego albumu relacji AlbumHasSongs. Każdego albumu może mieć dowolną liczbę utworów.
 
-### <a name="rearranging-the-dsl-definition-diagram"></a>Zmienianie rozmieszczenia Diagram definicji DSL
- Należy zauważyć, że klasą domeny może się pojawić kilka razy na diagramie definicji DSL jak Album na tym rysunku. Zawsze jest jeden widok główny i może być niektóre *odwołania* widoków.
+### <a name="rearranging-the-dsl-definition-diagram"></a>Ponowne rozmieszczanie diagramem definicji DSL
+ Zauważ, że klasy domeny mogą być wyświetlane kilka razy na diagramem definicji DSL, podobnie jak albumu na tym rysunku. Zawsze istnieje jeden widok główny, i może być niektóre *odwołania* widoków.
 
- Aby zmienić kolejność na diagramie definicji DSL, można:
+ Aby zmienić kolejność diagramem definicji DSL, możesz wykonywać następujące czynności:
 
--   Zamiana głównego i odwoływania widoków przy użyciu **Przełącz drzewa tutaj** i **podziału drzewa** poleceń. Kliknij prawym przyciskiem myszy klasy pojedynczej domeny, aby wyświetlić te polecenia.
+-   Zamienić głównego i widoki się odwoływać za pomocą **przenieść drzewa w tym miejscu** i **Podziel drzewo** poleceń. Kliknij prawym przyciskiem myszy klasę jednej domeny, aby wyświetlić te polecenia.
 
--   Zmień kolejność klasy domeny i klasy kształtu, naciskając klawisze Ctrl + Strzałka w górę i Ctrl + Strzałka w dół.
+-   Kolejność kształt klasy i klas domeny, naciskając klawisze Ctrl + Strzałka w górę i Ctrl + Strzałka w dół.
 
--   Zwiń lub rozszerzyć klasy przy użyciu ikony w prawym górnym rogu każdej kształtu.
+-   Zwinąć lub rozwinąć klas przy użyciu ikony w prawym górnym rogu każdego z kształtów.
 
--   Zwiń części drzewa, klikając znak minus (-) u dołu klasą domeny.
+-   Zwiń części drzewa, klikając znak minus (-) w dolnej części klasy domeny.
 
 ## <a name="inheritance"></a>Dziedziczenie
- Można zdefiniować klasy domeny przy użyciu dziedziczenia. Aby utworzyć pochodnym dziedziczenia, kliknij narzędzie dziedziczenia, kliknij klasy pochodnej, a następnie kliknij klasy podstawowej. Element modelu ma wszystkie właściwości, które są zdefiniowane w klasie własnej domeny, wraz z właściwościami dziedziczona z klasy podstawowej. Dziedziczy jego role w relacji.
+ Klasy domeny mogą być definiowane za pomocą dziedziczenia. Aby utworzyć pochodnym dziedziczenia, kliknij narzędzie dziedziczenia, kliknij w klasie pochodnej, a następnie kliknij klasy bazowej. Element modelu ma wszystkie właściwości, które są zdefiniowane na własnej klasy domeny wraz z wszystkich właściwości, które są dziedziczone z klasy podstawowej. Dziedziczy jej ról w relacji.
 
- Można także dziedziczenia między relacje, kształty i łączniki. Dziedziczenie musi przechowywać w tej samej grupie. Kształt nie może dziedziczyć po klasie domeny.
+ Można także dziedziczenia między relacje, kształty i łączniki. Dziedziczenie musi przechowywać w ramach tej samej grupy. Kształt nie może dziedziczyć z klasy domeny.
 
 ## <a name="domain-relationships"></a>Relacje domeny
- Elementy modelu można połączyć relacjami. Łącza są zawsze binary; połączone dokładnie dwa elementy. Jednak każdy element może mieć wiele łączy do innych obiektów, a może nawet istnieć więcej niż jednego łącza między tej samej pary elementów.
+ Elementy modelu mogą być połączone przez zastosowanie relacji. Łącza są zawsze binary; łączą się dokładnie z dwóch elementów. Jednak każdy element może mieć wiele łączy do innych obiektów, a nawet może być więcej niż jednego połączenia między tej samej pary elementów.
 
- Tak samo, jak można określić różnych klas elementów, można określić różnych klas łącza. Klasa łącza jest nazywana *relacji domeny*. Relacji domeny określa, jakie klasy elementu mogą łączyć z jego wystąpienia. Nosi nazwę każdego końca relacji *roli*, a relacja domeny definiuje nazwy dla dwóch ról, a także dla samego relacji.
+ Tak, jak można zdefiniować różne rodzaje elementów, można zdefiniować różne rodzaje łączy. Klasa łącza jest nazywana *relacji domeny*. Relacja domeny określa, które klasy elementu można połączyć z jego wystąpienia. Każdy koniec relacji jest nazywany *roli*, a relacja domeny definiuje nazwy dwóch ról, a także samą relację.
 
- Istnieją dwa rodzaje relacje domeny: osadzanie relacje i relacji odwołania. Na diagramie definicji DSL osadzania relacje w każdej roli jest linia ciągła, a relacji odwołania zostały oznaczone kreskowaną wierszy.
+ Istnieją dwa rodzaje relacji domeny: osadzanie relacje i relacje odniesienia. Na diagramem definicji DSL relacji osadzania mieć linia ciągła w każdej roli, a relacje odniesienia mają Kreskowanie wierszy.
 
 ### <a name="embedding-relationships"></a>Osadzanie relacji
- Każdy element w modelu, z wyjątkiem elementem głównym jest elementem docelowym jedno łącze osadzania. W związku z tym całego modelu stanowi jedno drzewo osadzenia łącza. Relacja osadzania reprezentuje zawierania lub własność. Dwa elementy modelu, które są powiązane w ten sposób są także nazywane nadrzędnych i podrzędnych. Obiekt podrzędny, jest określany osadzone w obiekcie nadrzędnym.
+ Każdy element w modelu, z wyjątkiem jego główny jest celem jeden link osadzania. W związku z tym cały model stanowi jedno drzewo osadzania łącza. Relacja osadzania reprezentuje zawierania lub własności. Dwa elementy modelu, które są powiązane w ten sposób są nazywane także nadrzędnymi i podrzędnymi. Element podrzędny jest nazywany można osadzić w obiekcie nadrzędnym.
 
- Osadzanie łącza nie są zwykle wyświetlane jawnie łączników na diagramie. Zwykle są one jednak reprezentowane przez zawierania. Katalogu głównego modelu jest reprezentowana przez diagramu, a elementy osadzone w nim są wyświetlane jako kształtów na diagramie.
+ Osadzanie łącza nie są zwykle wyświetlane jawnie jako łączniki, na diagramie. Zazwyczaj są one jednak reprezentowane przez zawierania. Korzeń modelu reprezentowanego przez diagram i osadzone w nim elementy są wyświetlane jako kształtów na diagramie.
 
- W tym przykładzie klasy głównym utworów muzycznych ma relacja osadzania MusicHasAlbums do albumów, którego osadzania AlbumHasSongs do utworu. Utworów są wyświetlane jako elementy na liście wewnątrz każdego albumu. Muzyka ma również osadzania MusicHasArtists do klasy wykonawcy, których wystąpienia są również wyświetlane jako kształtów na diagramie.
+ W tym przykładzie Klasa główna utworów muzycznych ma relację osadzania MusicHasAlbums do albumów, mającej AlbumHasSongs osadzania do utworu. Utwory są wyświetlane jako elementy na liście wewnątrz każdego albumu. Muzyka ma również MusicHasArtists osadzania do klasy wykonawcy, w których wystąpienia są również wyświetlane jako kształtów na diagramie.
 
- Domyślnie osadzone elementy są automatycznie usuwane podczas ich elementów nadrzędnych.
+ Domyślnie osadzone elementy są automatycznie usuwane po usunięciu nadrzędnych.
 
- Jeśli model jest zapisywany do pliku w postaci XML, osadzone elementy są zagnieżdżone wewnątrz ich elementów nadrzędnych, chyba że dostosowano serializacji.
+ Po zapisaniu modelu do pliku w postaci XML, osadzone elementy są zagnieżdżone wewnątrz nadrzędnych, chyba że dostosowano serializacji.
 
 > [!NOTE]
->  Osadzanie nie jest taka sama jak dziedziczenia. Elementy podrzędne w relacja osadzania dziedziczy właściwości elementu nadrzędnego. Osadzanie jest to typ łącza między elementami modelu. Dziedziczenie jest relacja między klasami i nie powoduje utworzenia łącza między elementami modelu.
+>  Osadzanie nie jest taka sama jak dziedziczenie. Elementy podrzędne w relacji osadzania dziedziczy właściwości elementu nadrzędnego. Osadzanie jest typu łącza między elementami modelu. Dziedziczenie jest relacja między klasami i nie tworzyć łącza między elementami modelu.
 
 ### <a name="embedding-rules"></a>Osadzanie reguły
- Wartość każdego elementu w modelu wystąpienie musi być elementem docelowym dokładnie jedno łącze osadzania, z wyjątkiem katalogu głównego modelu.
+ Każdy element w modelu wystąpień musi być elementem docelowym dokładnie jeden link osadzania, z wyjątkiem korzeń modelu.
 
- Oznacza to co Klasa nieabstrakcyjna domeny, z wyjątkiem klasy głównym musi być elementem docelowym co najmniej jedna relacja osadzania i musi dziedziczyć z osadzanie z klasy podstawowej. Klasa może być celem osadzeń dwóch lub więcej, ale jego wystąpienia modelu elementów naraz może mieć tylko jednego zdarzenia nadrzędnego. Liczebność z docelowym źródłem musi być od 0 do 1 lub 1.. 1.
+ W związku z tym każda klasa nieabstrakcyjna domeny, z wyjątkiem Klasa główna musi być elementem docelowym co najmniej jedna relacja osadzania lub ten typ musi dziedziczyć z klasy bazowej osadzania. Klasa może być elementem docelowym co najmniej dwóch osadzenia, ale jego wystąpienia elementów modelu w danym momencie może mieć tylko jedną jednostkę nadrzędną. Liczebność z docelowym źródłem musi być od 0 do 1 lub 1.. 1.
 
-### <a name="the-explorer-displays-the-embedding-tree"></a>Explorer wyświetla osadzania drzewa
- Definicja DSL tworzy również Eksploratora, które użytkownicy widzą obok ich diagramu modelu.
+### <a name="the-explorer-displays-the-embedding-tree"></a>Eksplorator Wyświetla drzewo osadzania
+ Definicji DSL tworzy również Eksploratora, który użytkownicy widzą wraz z ich diagramu modelu.
 
- ![Eksploratorze generowane DSL](../modeling/media/music_explorer.png)
+ ![Wygenerowany Eksploratorze DSL](../modeling/media/music_explorer.png)
 
- Eksplorator zawiera wszystkie elementy w modelu, nawet te, dla których nie zdefiniowano kształtów. Zawiera elementy i osadzania relacji, ale odwołuje się do relacji.
+ Eksplorator pokazuje wszystkie elementy w modelu, nawet te, dla których nie zdefiniowano kształtów. Pokazuje elementów i relacji osadzania, ale odwołuje się do relacji.
 
- Aby wyświetlić wartości właściwości domeny elementu, użytkownik wybiera element diagramu modelu lub w Eksploratorze modelu i powoduje otwarcie okna właściwości. Wyświetla wszystkie właściwości domeny, łącznie z tymi, które nie są wyświetlane na diagramie. W tym przykładzie każdy utworu zarówno tytuł i określonego rodzaju, ale tylko wartość tytułu jest wyświetlany na diagramie.
+ Aby wyświetlić wartości właściwości domeny elementu, użytkownik wybierze element diagramu modelu lub w Eksploratorze modelu i spowoduje otwarcie okna właściwości. Wyświetla wszystkie właściwości domeny, łącznie z tymi, które nie są wyświetlane na diagramie. W tym przykładzie każdy utwór ma tytuł i określonego rodzaju, ale tylko wartość tytuł jest wyświetlany na diagramie.
 
-## <a name="reference-relationships"></a>Relacje odwołania
- Relacja odwołania reprezentuje dowolny rodzaj relacji, która nie jest osadzanie.
+## <a name="reference-relationships"></a>Relacje odniesienia
+ Relacja odwołania reprezentuje dowolny rodzaj relacji, który nie jest osadzania.
 
- Relacje odwołania zazwyczaj są wyświetlane jako łączniki kształtów na diagramie.
+ Relacje odniesienia zazwyczaj są wyświetlane na diagramie jako łączniki między kształtów.
 
- W modelu reprezentację XML łącza między dwoma elementami jest reprezentowana za pomocą *monikerów.* Oznacza to monikerów są nazwami, które jednoznacznie identyfikują każdego elementu w modelu. Węzeł XML dla każdego elementu modelu zawiera węzeł, który określa nazwę relacji i monikera innego elementu.
+ W modelu reprezentację XML łącza między dwoma elementami jest reprezentowane za pomocą *monikerów.* Oznacza to monikerów są nazwami, które jednoznacznie identyfikują każdego elementu w modelu. Węzeł XML dla każdego elementu modelu, zawiera węzeł, który określa nazwę relacji i moniker innego elementu.
 
 ## <a name="roles"></a>Role
- Każdy relacji domeny ma dwie role, rola źródła i rola Serwer obiektów docelowych.
+ Każda relacja domeny ma dwie role, do roli źródłowej i roli docelowej.
 
- Na poniższej ilustracji, liniach między **wydawcy** klasy domeny i **PublisherCatalog** relacji domeny jest roli źródłowej. Wiersz między relacji domeny i **albumu** klasy domeny jest rola Serwer obiektów docelowych.
+ Na poniższej ilustracji, wiersz między **wydawcy** klasy domeny i **PublisherCatalog** relacji domeny jest roli źródłowej. Wiersz między relacji domeny i **albumu** klasy domeny jest roli docelowej.
 
  ![Role i właściwości.](../modeling/media/propertycode.png)
 
- Nazw skojarzonych z relacji są szczególnie istotne podczas pisania kodu programu, który przechodzi przez model. Na przykład podczas kompilowania rozwiązania DSL wygenerowana klasa wydawcy ma właściwość katalogu, który jest kolekcją albumów. Klasa albumu ma właściwość wydawcy, który jest pojedynczym wystąpieniem klasy wydawcy.
+ Nazwy skojarzone z relacji są szczególnie ważne podczas pisania kodu programu, który przechodzi przez model. Na przykład podczas kompilowania rozwiązania DSL wygenerowanej klasy Publisher ma właściwość katalogu, który jest kolekcją albumów. Klasa albumu ma właściwość wydawcy, który jest pojedynczym wystąpieniem klasy wydawcy.
 
- Po utworzeniu relacji w definicji DSL nazwy właściwości i relacji są podane wartości domyślne. Jednak można je zmienić.
+ Po utworzeniu relacji w definicji DSL nazwy właściwości i relacji są podane wartości domyślne. Można jednak zmienić je.
 
 ## <a name="multiplicities"></a>Liczebność punktów
- Liczebność punktów Określ, ile elementów może mieć tego samego elementu role w relacji domeny. W przykładzie zero do wielu (0..\*) liczebność ustawienie na **katalogu** roli Określa, że wszystkie wystąpienia **wydawcy** klasa domeny może mieć tyle  **PublisherCatalog** relacji łączy, które chcesz nadać mu.
+ Liczebność punktów Określ, ile elementów może mieć tę samą rolę w relacji domeny. W tym przykładzie zero do wielu (0..\*) ustawienia liczebności na **katalogu** roli Określa, że dowolne wystąpienie **wydawcy** klasa domeny może mieć tyle  **PublisherCatalog** relacji łączy, jaką chcesz nadać mu.
 
- Skonfiguruj Liczebność roli, wpisując na diagramie lub modyfikując `Multiplicity` właściwości w **właściwości** okna. W poniższej tabeli opisano ustawienia dla tej właściwości.
+ Konfigurowanie Liczebność roli, wpisując na diagramie lub modyfikując `Multiplicity` właściwość **właściwości** okna. W poniższej tabeli opisano ustawienia dla tej właściwości.
 
-|Liczebność typu|Opis|
+|Typ liczebność|Opis|
 |-----------------------|-----------------|
-|0.. * (zero do wielu)|Każde wystąpienie klasy domeny może mieć wiele wystąpień relacji lub żadnych wystąpień relacji.|
-|Od 0 do 1 (zero do jeden)|Każde wystąpienie klasy domeny może mieć nie więcej niż jedno wystąpienie relacji lub żadnych wystąpień relacji.|
-|1..1 (jeden)|Każde wystąpienie klasy domeny może mieć jedno wystąpienie relacji. Nie można utworzyć więcej niż jedno wystąpienie tej relacji w każdym wystąpieniu klasy roli. Jeśli włączono weryfikację błąd sprawdzania poprawności będą wyświetlane, gdy wszystkie wystąpienia klasy roli ma żadne wystąpienie relacji.|
-|1.. * (jeden do wielu)|Każde wystąpienie klasy na roli, która ma liczebność to może mieć wiele wystąpień relacji, a każde wystąpienie musi mieć co najmniej jedno wystąpienie relacji. Jeśli włączono weryfikację błąd sprawdzania poprawności będą wyświetlane, gdy wszystkie wystąpienia klasy roli ma żadne wystąpienie relacji.|
+|0.. * (zero do wielu)|Każde wystąpienie klasy domeny może mieć wiele wystąpień tej relacji lub nie wystąpienia relacji.|
+|Od 0 do 1 (zero do jednego)|Każde wystąpienie klasy domeny może mieć nie więcej niż jedno wystąpienie relacji lub nie wystąpienia relacji.|
+|1..1 (po jednym)|Każde wystąpienie klasy domeny może mieć jedno wystąpienie relacji. Nie można utworzyć więcej niż jedno wystąpienie tej relacji z dowolnej instancji klasy roli. Jeśli włączono weryfikację błąd sprawdzania poprawności pojawi się, gdy dowolne wystąpienie klasy roli ma żadne wystąpienie relacji.|
+|1.. * (jeden do wielu)|Każde wystąpienie klasy na roli, która ma liczebność to może mieć wiele wystąpień tej relacji, a każde wystąpienie musi mieć co najmniej jedno wystąpienie relacji. Jeśli włączono weryfikację błąd sprawdzania poprawności pojawi się, gdy dowolne wystąpienie klasy roli ma żadne wystąpienie relacji.|
 
 ## <a name="domain-relationships-as-classes"></a>Relacje domeny jako klasy
- Łącze jest reprezentowana w magazynie jako wystąpienie LinkElement, czyli w klasie pochodnej ModelElement. Te właściwości można zdefiniować diagramu modelu domeny na relacje domeny.
+ Łącze jest reprezentowana w Store jako wystąpienie LinkElement, czyli klasę pochodną ModelElement. Te właściwości można zdefiniować diagramu modelu domeny na relacji domeny.
 
- Należy również wybrać relacji źródłową lub docelową relacje. Na diagramie modelu domeny, kliknij prawym przyciskiem myszy relacji domeny, a następnie kliknij przycisk **Pokaż jako klasa**. Zostanie wyświetlone okno dodatkowe klasy. Relacje można połączyć do niego.
+ Można również ustawić relację źródłowych lub docelowych relacje. Na diagramie modelu domeny, kliknij prawym przyciskiem myszy relacji domeny, a następnie kliknij przycisk **Pokaż jako klasę**. Zostanie wyświetlone okno dodatkowe klasy. Można następnie nawiązywanie relacji.
 
- Można zdefiniować relację częściowo poprzez dziedziczenie, podobnie jak w przypadku klas domeny. Wybierz relację pochodnej i ustaw **relacji podstawowej** w oknie właściwości.
+ Podobnie jak w przypadku klas domeny, częściowo poprzez dziedziczenie, można zdefiniować relację. Wybierz pochodnej relacji i ustaw **relacji podstawowej** w oknie dialogowym właściwości.
 
- Pochodne relacji specjalizuje się jego relacji podstawowych. Domena klas ten, który łączy powinien pochodzić z lub taka sama jak klasy, połączone relacji podstawowych. Gdy tworzone jest połączenie pochodny relacji w modelu, jest wystąpieniem pochodnej i relacji podstawowych. W kodzie programu można przejść do przeciwnego końca łącza, za pomocą właściwości generowane przez podstawowym lub klasy pochodnej.
+ Pochodnej relacji specjalizuje się jej relacją podstawową. Domeny klas, które dział it, który łączy powinny pochodzić z lub taka sama jak klasy połączone relacji bazowej. Po utworzeniu łącza pochodnej relacji w modelu jest wystąpieniem pochodnej i relacji podstawowych. W kodzie programu możesz przejść do przeciwległym końcu łącza za pomocą właściwości generowane przez podstawę lub w klasie pochodnej.
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Słownik narzędzia języka specyficznego dla domeny](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Słownik narzędzi języka specyficznego dla domeny](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
