@@ -11,62 +11,62 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 49a3c24116e6cc78084d0830a662ad7a3522d32c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0216fab44ddc52c2d01c27365449377fb899e1a6
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31950595"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859656"
 ---
 # <a name="creating-custom-t4-text-template-directive-processors"></a>Tworzenie niestandardowych procesorów dyrektywy T4 dotyczącej szablonu tekstowego
 
-*Proces transformacji szablonu tekstowego* przyjmuje *szablonu tekstowego* pliku jako dane wejściowe i tworzy plik tekstowy jako dane wyjściowe. *Aparat przekształcania szablonu tekstowego* formanty proces i aparat współdziała z hosta transformacji szablonu tekstowego i co najmniej jeden szablon tekstu *procesory dyrektywy* do ukończenia proces. Aby uzyskać więcej informacji, zobacz [proces transformacji szablonu tekstowego](../modeling/the-text-template-transformation-process.md).
+*Proces przekształcania szablonu tekstowego* przyjmuje *szablon tekstowy* pliku jako dane wejściowe i tworzy plik tekstowy jako dane wyjściowe. *Aparatu przekształceń szablonu tekstu* kontroli procesu i aparat współdziała z hosta przekształcania szablonu tekstu i co najmniej jeden szablon tekstowy *procesorów dyrektyw* do ukończenia proces. Aby uzyskać więcej informacji, zobacz [proces przekształcania szablonu tekstowego](../modeling/the-text-template-transformation-process.md).
 
-Aby utworzyć niestandardowego procesora dyrektywy, należy utworzyć klasę, która dziedziczy albo <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> lub <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor>.
+Aby utworzyć niestandardowy procesor dyrektywy, należy utworzyć klasę, która dziedziczy z <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> lub <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor>.
 
-Jest to różnica między nimi <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> implementuje interfejs minimalnej, które są niezbędne, można pobrać parametrów od użytkownika oraz do generowania kodu, który spowoduje utworzenie pliku danych wyjściowych szablonu. <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> implementuje wzorzec projektowy wymaga/udostępnia. <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> obsługuje dwa parametry specjalne, `requires` i `provides`.  Na przykład niestandardowego procesora dyrektywy może Zaakceptuj nazwy pliku od użytkownika, Otwórz i odczytać pliku, a następnie zapisać tekst pliku w zmiennej o nazwie `fileText`. Podklasa <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> klasy może potrwać nazwy pliku od użytkownika jako wartość `requires` parametr i nazwę zmiennej do przechowywania tekstu jako wartość `provides` parametru. Tego procesora może otworzyć i odczytać pliku i następnie umieść tekst pliku w określonej zmiennej.
+Różnica między tymi dwoma dotyczy <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> implementuje interfejs minimalne, które są niezbędne, można pobrać parametrów od użytkownika, a także o generowaniu kodu, który tworzy plik wyjściowy szablonu. <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> implementuje wzorzec projektowy wymaga/udostępnia. <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> obsługuje dwa parametry specjalne, `requires` i `provides`.  Na przykład niestandardowy procesor dyrektywy może Zaakceptuj nazwy pliku od użytkownika, Otwórz i odczytać pliku, a następnie zapisać go w pliku w zmiennej o nazwie `fileText`. Podklasa klasy <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> klasy może potrwać nazwy pliku od użytkownika jako wartość `requires` parametr i nazwę zmiennej do przechowywania tekstu jako wartość `provides` parametru. Tego procesora będzie otworzyć i odczytać plik i następnie zapisać go w pliku w określonej zmiennej.
 
-Przed wywołaniem niestandardowego procesora dyrektywy z szablonu tekstowego w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], należy go zarejestrować.
+Przed wywołaniem niestandardowy procesor dyrektywy z szablonu tekstu w programie Visual Studio, należy zarejestrować.
 
-Aby uzyskać więcej informacji na temat dodawania klucza rejestru, zobacz [wdrażanie niestandardowego procesora dyrektywy](../modeling/deploying-a-custom-directive-processor.md).
+Aby uzyskać więcej informacji o tym, jak dodać klucz rejestru, zobacz [wdrażanie niestandardowego procesora dyrektywy](../modeling/deploying-a-custom-directive-processor.md).
 
-## <a name="custom-directives"></a>Dyrektywy niestandardowych
+## <a name="custom-directives"></a>Dyrektywy niestandardowej
 
-Niestandardowe dyrektywy wygląda następująco:
+Niestandardowej dyrektywy wygląda następująco:
 
 `<#@ MyDirective Processor="MyDirectiveProcessor" parameter1="value1" ... #>`
 
-Jeśli chcesz uzyskać dostęp do danych zewnętrznych lub zasobów z szablonu tekstowego, można użyć niestandardowego procesora dyrektywy.
+Jeśli chcesz uzyskać dostęp do danych zewnętrznych lub zasobów z szablonu tekstu, można użyć niestandardowego procesora dyrektywy.
 
-Szablony tekstowe różnych można udostępniać funkcje, które udostępnia pojedynczy procesor dyrektywy, więc procesory dyrektywy umożliwiają współczynnik kodu do ponownego użycia. Wbudowane `include` dyrektywa jest podobne, ponieważ służy do współczynnika kodu i udostępniać je między szablony inny tekst. Różnica jest to, że żadnej funkcji, który `include` dyrektywa zawiera jest stała i nie akceptuje parametrów. Aby zapewnić często używane funkcje do szablonu tekstowego i pozwala szablonu do przekazania parametrów, należy utworzyć niestandardowego procesora dyrektywy.
+Szablony tekstowe różnych udostępnić funkcje, które zapewnia pojedynczy procesor dyrektywy, więc procesorów dyrektyw umożliwiają współczynnik kodu do ponownego wykorzystania. Wbudowane `include` dyrektywa jest podobny, ponieważ służy do wziąć pod uwagę kod i udostępnij go wśród szablonów inny tekst. Różnica jest to, że żadnej funkcji, która `include` zapewnia dyrektywa jest stała i nie akceptuje parametrów. Jeśli chcesz zapewnić typowe funkcje szablonu tekstu i umożliwić szablonu w celu przekazania parametrów, należy utworzyć niestandardowy procesor dyrektywy.
 
-Przykłady niestandardowego procesory dyrektywy może być:
+Przykładowe niestandardowe procesory dyrektyw może być:
 
 -   Procesor dyrektywy, aby zwrócić dane z bazy danych, która przyjmuje jako parametry nazwę użytkownika i hasło.
 
--   Procesor dyrektywy otwieranie i Odczyt pliku, który przyjmuje nazwę pliku jako parametr.
+-   Procesor dyrektywy, aby otworzyć i przeczytać plik, który przyjmuje nazwę pliku jako parametr.
 
 ### <a name="principal-parts-of-a-custom-directive-processor"></a>Podmiot zabezpieczeń części niestandardowego procesora dyrektywy
 
-Aby opracować procesora dyrektywy, należy utworzyć klasę, która dziedziczy albo <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> lub <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor>.
+Aby opracować procesor dyrektywy, należy utworzyć klasę, która dziedziczy z <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> lub <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor>.
 
 Najważniejsze `DirectiveProcessor` dostępne są następujące metody, które należy zaimplementować.
 
--   `bool IsDirectiveSupported(string directiveName)` -Return `true` Jeśli procesora dyrektywy mogą dotyczyć dyrektywy o nazwie.
+-   `bool IsDirectiveSupported(string directiveName)` -Return `true` Jeśli procesor dyrektywy poradzenie sobie z dyrektywy o nazwie.
 
--   `void ProcessDirective (string directiveName, IDictionary<string, string> arguments)` -Aparat szablonu wywołuje tę metodę dla każdego wystąpienia dyrektywy w szablonie. Procesor należy zapisać wyniki.
+-   `void ProcessDirective (string directiveName, IDictionary<string, string> arguments)` Aparatu szablonów wywołuje tę metodę dla każdego wystąpienia dyrektywy w szablonie. Procesor należy zapisać wyniki.
 
-Po wszystkie wywołania ProcessDirective() aparatu tworzenia szablonów wywoła tych metod:
+Po wszystkie wywołania element ProcessDirective() aparatu tworzenia szablonów będzie wywoływać tych metod:
 
--   `string[] GetReferencesForProcessingRun()` -Zwraca nazwy zestawów, które wymaga kod szablonu.
+-   `string[] GetReferencesForProcessingRun()` -Zwraca nazwy zestawów, których wymaga kod szablonu.
 
--   `string[] GetImportsForProcessingRun()` -Zwróć przestrzenie nazw, które mogą być używane w kodzie szablonu.
+-   `string[] GetImportsForProcessingRun()` -Przywrócić przestrzenie nazw, który może służyć kod szablonu.
 
--   `string GetClassCodeForProcessingRun()` -Zwracają kod metody, właściwości i innych deklaracji używających kod szablonu. Najprostszym sposobem, w tym celu jest kompilacji ciąg zawierający języka C# lub kod Visual Basic. Aby procesora dyrektywy stanie wywoływana z szablonu, który korzysta z dowolnego języka CLR, można utworzyć instrukcje jako drzewo CodeDom i następnie zwrócenia wyniku serializacji drzewa języka używanego w szablonie.
+-   `string GetClassCodeForProcessingRun()` -Zwrócić kod metody, właściwości i innych deklaracji, używających kod szablonu. W tym celu najłatwiej do tworzenia ciąg zawierający w języku C# lub kod języka Visual Basic. Aby procesor dyrektywy może być wywoływana z szablonu, który korzysta z dowolnego języka środowiska CLR, można skonstruować oświadczeń jako drzewo CodeDom, a następnie powróć wynik serializacji drzewa w język używany przez szablon.
 
 -   Aby uzyskać więcej informacji, zobacz [wskazówki: Tworzenie niestandardowego procesora dyrektywy](../modeling/walkthrough-creating-a-custom-directive-processor.md).
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Wdrażanie niestandardowego procesora dyrektywy](../modeling/deploying-a-custom-directive-processor.md) wyjaśniono, jak zarejestrować niestandardowego procesora dyrektywy.
-- [Wskazówki: Tworzenie niestandardowego procesora dyrektywy](../modeling/walkthrough-creating-a-custom-directive-processor.md) opisuje sposób tworzenia niestandardowego procesora dyrektywy, jak zarejestrować i przetestować procesora dyrektywy oraz format pliku wyjściowego w formacie HTML.
+- [Wdrażanie niestandardowego procesora dyrektywy](../modeling/deploying-a-custom-directive-processor.md) wyjaśnia, jak zarejestrować niestandardowy procesor dyrektywy.
+- [Przewodnik: Tworzenie niestandardowego procesora dyrektywy](../modeling/walkthrough-creating-a-custom-directive-processor.md) opisano, jak utworzyć niestandardowy procesor dyrektywy, jak się zarejestrować i przetestować procesor dyrektywy i jak sformatować plik wyjściowy w formacie HTML.

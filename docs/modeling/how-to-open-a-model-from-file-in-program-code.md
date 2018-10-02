@@ -9,24 +9,24 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 03d6d4550442c81325a8e67f8d96e52e7655dc09
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 0bd6c2c2ebad1526a06cccdffef38936d201fc0b
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566554"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860423"
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>Porady: otwieranie modelu z pliku w kodzie programu
 W dowolnej aplikacji, możesz otworzyć modeli języka DSL.
 
- Z [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozszerzenia, w tym celu można użyć ModelBus. ModelBus zapewnia standardowego mechanizmu do odwoływania się do modelu lub elementy w modelu, a także do znajdowania modelu, jeśli została przeniesiona. Aby uzyskać więcej informacji, zobacz [integrowanie modeli za pomocą programu Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md).
+ Z rozszerzenia programu Visual Studio ModelBus służy do tego celu. ModelBus zapewnia standardowego mechanizmu do odwoływania się do modelu lub elementy w modelu, a także do znajdowania modelu, jeśli została przeniesiona. Aby uzyskać więcej informacji, zobacz [integrowanie modeli za pomocą programu Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md).
 
 ## <a name="target-framework"></a>Platforma docelowa
  Ustaw **platformę docelową** projektu aplikacji do **.NET Framework 4**.
 
 #### <a name="to-set-the-target-framework"></a>Aby ustawić platformę docelową
 
-1.  Otwórz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projekt dla aplikacji, w którym chcesz odczytać modelu DSL.
+1.  Otwórz projekt programu Visual Studio dla aplikacji, w którym chcesz odczytać modelu DSL.
 
 2.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy projekt, a następnie kliknij przycisk **właściwości**.
 
@@ -36,7 +36,7 @@ W dowolnej aplikacji, możesz otworzyć modeli języka DSL.
 >  Konieczne może być nawet wtedy, gdy wybrano **.NET Framework 4** w oknie dialogowym tworzenia projektu. Platforma docelowa nie powinny być **.NET Framework 4 Client Profile**.
 
 ## <a name="references"></a>Odwołania
- Należy dodać te odwołania do usługi [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projekt aplikacji:
+ Należy dodać te odwołania do projektu aplikacji Visual Studio:
 
 -   `Microsoft.VisualStudio.Modeling.Sdk.11.0`
 

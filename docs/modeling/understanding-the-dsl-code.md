@@ -11,15 +11,15 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 2e5e2ee79d72d398ac72d3d087156c296aa9e7b2
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 05339a2bdc176fd44c93c744162a299809762a2e
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567223"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860294"
 ---
 # <a name="understanding-the-dsl-code"></a>Znajomość kodu DSL
-Rozwiązania języka specyficznego dla domeny (DSL) generuje interfejs API, który umożliwia odczytywanie i aktualizowanie wystąpienia elementu DSL w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Ten interfejs API jest zdefiniowana w kodzie, który jest generowany na podstawie definicji DSL. W tym temacie opisano generowanego interfejsu API.
+Rozwiązania języka specyficznego dla domeny (DSL) generuje interfejs API, który umożliwia odczytywanie i aktualizowanie wystąpienia elementu DSL w programie Visual Studio. Ten interfejs API jest zdefiniowana w kodzie, który jest generowany na podstawie definicji DSL. W tym temacie opisano generowanego interfejsu API.
 
 ## <a name="the-example-solution-component-diagrams"></a>W rozwiązaniu przykładowym: diagramy składników
  Aby utworzyć rozwiązanie, który jest źródłem Większość przykładów w tym temacie, należy utworzyć DSL z **modeli składnika** szablonu rozwiązania. Jest to jeden z szablonów standardowych, które pojawia się podczas tworzenia nowego rozwiązania języka DSL.
@@ -32,7 +32,7 @@ Rozwiązania języka specyficznego dla domeny (DSL) generuje interfejs API, któ
  ![Składniki i wzajemnie połączonych portów](../modeling/media/componentsample.png)
 
 ## <a name="the-structure-of-the-dsl-solution"></a>Struktury rozwiązania DSL
- **Dsl** projektu definiuje interfejs API dla DSL. **DslPackage** projektu definiuje, jak zintegrować go z [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Można również dodać własne projektów, które również mogą zawierać kod generowany z modelu.
+ **Dsl** projektu definiuje interfejs API dla DSL. **DslPackage** projektu definiuje sposób integracji z programem Visual Studio. Można również dodać własne projektów, które również mogą zawierać kod generowany z modelu.
 
 ### <a name="the-code-directories"></a>Katalogi kodu
  Większość kodu w każdym z tych projektów jest generowany na podstawie **Dsl\DslDefinition.dsl**. Wygenerowany kod znajduje się w **wygenerowany kod** folderu. Aby wyświetlić wygenerowany plik, kliknij **[+]** obok Generowanie **.tt** pliku.
@@ -53,7 +53,7 @@ Rozwiązania języka specyficznego dla domeny (DSL) generuje interfejs API, któ
 
      Na przykład jeśli ustawisz **ma Konstruktor niestandardowy** opcji klasę domeny i następnie Skompiluj rozwiązanie, zostanie wyświetlony komunikaty o błędach. Po dwukrotnym kliknięciu jednego z tych komunikatów o błędach, będą widzieć żadnych komentarzy w wygenerowanym kodzie, objaśniające, co powinno zapewniać kod niestandardowy.
 
--   Napisać własne szablony tekstu, aby wygenerować kod specyficzne dla aplikacji. Można Użyj pliki można dołączać do udostępniania części szablonów, które są wspólne dla wielu projektów i tworzenia [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] następujące szablony projektów, które są inicjowane z strukturę pliku projektu.
+-   Napisać własne szablony tekstu, aby wygenerować kod specyficzne dla aplikacji. Można Użyj pliki można dołączać do udostępniania części szablonów, które są wspólne dla wielu projektów i utworzyć szablony projektu Visual Studio do skonfigurowania projektów, które są inicjowane z strukturę pliku.
 
 ## <a name="generated-files-in-dsl"></a>Wygenerowane pliki w Dsl
  Następujące wygenerowanych plików są wyświetlane w **Dsl** projektu.
@@ -185,10 +185,10 @@ Rozwiązania języka specyficznego dla domeny (DSL) generuje interfejs API, któ
 
  Konfiguruje, instalując element grupy prototypów do narzędzi elementów przybornika. Kopie tych prototypów są scalane z elementów docelowych, gdy użytkownik uruchomi narzędzie.
 
- Można zastąpić `CreateElementPrototype()` zdefiniować element przybornika, który tworzy grupę kilka obiektów. Na przykład można zdefiniować elementu do reprezentowania obiektów, które składniki podrzędne. Po zmianie kodu, zresetuj wystąpienie eksperymentalne [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] aby wyczyścić pamięć podręczną przybornika.
+ Można zastąpić `CreateElementPrototype()` zdefiniować element przybornika, który tworzy grupę kilka obiektów. Na przykład można zdefiniować elementu do reprezentowania obiektów, które składniki podrzędne. Po zmianie kodu, zresetuj wystąpienie eksperymentalne programu Visual Studio, aby wyczyścić pamięć podręczną przybornika.
 
 ## <a name="generated-files-in-the-dslpackage-project"></a>Wygenerowane pliki w projekcie DslPackage
- DslPackage couples modelu DSL, który ma [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] powłoki, zarządzanie okno przybornika i menu poleceń. Większość klas są double derived, dzięki czemu można przesłonić z ich metod.
+ DslPackage couples modelu DSL powłoki programu Visual Studio, zarządzanie okno przybornika i menu poleceń. Większość klas są double derived, dzięki czemu można przesłonić z ich metod.
 
  `CommandSet.cs`
 
@@ -279,7 +279,7 @@ namespace Company.EmbedInForm
 
  `EditorFactory.cs`
 
- Tworzy wystąpienie `DocData` i `DocView`. Spełnia ona standard interfejs, który [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] używa, aby otworzyć Edytor, po uruchomieniu pakietu języka DSL. Odwołuje się do niego `ProvideEditorFactory` atrybutu w Package.cs
+ Tworzy wystąpienie `DocData` i `DocView`. Spełnia ona standardowy interfejs, który korzysta z programu Visual Studio można otworzyć edytora, po uruchomieniu pakietu języka DSL. Odwołuje się do niego `ProvideEditorFactory` atrybutu w Package.cs
 
  `GeneratedVSCT.vsct`
 
@@ -335,7 +335,7 @@ explorerWindow.TreeContainer.ObjectModelBrowser.SelectedNode = treeNode;
 
  `Package.cs`
 
- Ten plik definiuje, jak język DSL integruje się z [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Atrybuty w klasie pakietu zarejestrować język DSL jako program obsługi dla plików, które mają rozszerzenia pliku, zdefiniuj jego przybornika i określić sposób otworzyć nowe okno. Metoda Initialize() jest wywoływana jeden raz, gdy pierwszy DSL jest ładowany do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] wystąpienia.
+ Ten plik definiuje, jak język DSL integruje się z programu Visual Studio. Atrybuty w klasie pakietu zarejestrować język DSL jako program obsługi dla plików, które mają rozszerzenia pliku, zdefiniuj jego przybornika i określić sposób otworzyć nowe okno. Metoda Initialize() jest wywoływana jeden raz, gdy pierwszy DSL jest ładowany do wystąpienia programu Visual Studio.
 
  `Source.extension.vsixmanifest`
 

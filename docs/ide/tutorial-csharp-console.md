@@ -2,7 +2,7 @@
 title: Wprowadzenie do aplikacji konsoli języka C# w programie Visual Studio
 description: Dowiedz się, jak w programie Visual Studio krok po kroku dotyczące tworzenia aplikacji konsolowej C#.
 ms.custom: ''
-ms.date: 09/27/2018
+ms.date: 09/28/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: tutorial
@@ -14,12 +14,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 3261eb5f2d08a7dd1df16d6d3ff755fcebbe239d
-ms.sourcegitcommit: 6672a1e9d135d7e5cca3cceea07c6fe5a0871475
+ms.openlocfilehash: ad1ee95cb9cc754261502e7377cde6c91e5befce
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47446790"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859513"
 ---
 # <a name="tutorial-get-started-with-a-c-console-app-in-visual-studio"></a>Samouczek: Rozpoczynanie pracy przy użyciu aplikacji konsolowej C# w programie Visual Studio
 
@@ -65,64 +65,75 @@ Jeśli nie widzisz **Aplikacja konsoli (.NET Core)** szablon projektu, możesz j
 
 1. W **nowy projekt** okno dialogowe w okienku po lewej stronie rozwiń **C#**, a następnie wybierz **platformy .NET Core**. W środkowym okienku wybierz **Aplikacja konsoli (.NET Core)**. Następnie Nazwij plik *Kalkulator*.
 
-1. Wpisz lub wklej następujący kod po klamrowym, który pojawia się poniżej `static void Main(string[] args)` wiersza:
+1. Wprowadź lub wklej następujący kod do edytora kodu:
 
-   ```C#
-   // Declare variables and then instantiate to zero
-   double num1 = 0; double num2 = 0;
+    ```csharp
+    using System;
 
-   // Display title as the C# console calculator app
-   Console.WriteLine("Console Calculator in C#\r");
-   Console.WriteLine("------------------------\n");
+    namespace Calculator
+    {
+        class Program
+        {
+            static void Main(string[] args)
+            {
+                // Declare variables and then instantiate to zero
+                double num1 = 0; double num2 = 0;
 
-   // Ask the user to type the first number
-   Console.WriteLine("Type a number, and then press Enter");
-   num1 = Convert.ToDouble(Console.ReadLine());
+                // Display title as the C# console calculator app
+                Console.WriteLine("Console Calculator in C#\r");
+                Console.WriteLine("------------------------\n");
 
-   // Ask the user to type the second number
-   Console.WriteLine("Type another number, and then press Enter");
-   num2 = Convert.ToDouble(Console.ReadLine());
+                // Ask the user to type the first number
+                Console.WriteLine("Type a number, and then press Enter");
+                num1 = Convert.ToDouble(Console.ReadLine());
 
-   // Ask the user to choose an option
-   Console.WriteLine("Choose an option from the following list:");
-   Console.WriteLine("\ta - Add");
-   Console.WriteLine("\ts - Subtract");
-   Console.WriteLine("\tm - Multiply");
-   Console.WriteLine("\td - Divide");
-   Console.Write("Your option? ");
+                // Ask the user to type the second number
+                Console.WriteLine("Type another number, and then press Enter");
+                num2 = Convert.ToDouble(Console.ReadLine());
 
-   // Use a switch statement to do the math
-   switch (Console.ReadLine())
-   {
-      case "a":
-         Console.WriteLine($"Your result: {num1} + {num2} = " + (num1 + num2));
-         break;
-      case "s":
-         Console.WriteLine($"Your result: {num1} - {num2} = " + (num1 - num2));
-         break;
-      case "m":
-         Console.WriteLine($"Your result: {num1} * {num2} = " + (num1 * num2));
-         break;
-      case "d":
-         // Ask the user to enter a non-zero divisor until they do so
-         while (num2 == 0)
-         {
-             Console.WriteLine("Enter a non-zero divisor: ");
-             num2 = Convert.ToDouble(Console.ReadLine());
-         }
-         Console.WriteLine($"Your result: {num1} / {num2} = " + (num1 / num2));
-         break;
-      // Return text for an incorrect option entry
-      default:
-         Console.WriteLine("That is an incorrect option entry, please try again.");
-         break;
-   }
-   // Wait for the user to respond before closing
-   Console.Write("Press any key to close the Calculator console app...");
-   Console.ReadKey();
-   ```
+                // Ask the user to choose an option
+                Console.WriteLine("Choose an option from the following list:");
+                Console.WriteLine("\ta - Add");
+                Console.WriteLine("\ts - Subtract");
+                Console.WriteLine("\tm - Multiply");
+                Console.WriteLine("\td - Divide");
+                Console.Write("Your option? ");
 
-   Z oknem edytora kodu powinien wyglądać podobnie jak na poniższym zrzucie ekranu:
+                // Use a switch statement to do the math
+                switch (Console.ReadLine())
+                {
+                    case "a":
+                        Console.WriteLine($"Your result: {num1} + {num2} = " + (num1 + num2));
+                        break;
+                    case "s":
+                        Console.WriteLine($"Your result: {num1} - {num2} = " + (num1 - num2));
+                        break;
+                    case "m":
+                        Console.WriteLine($"Your result: {num1} * {num2} = " + (num1 * num2));
+                        break;
+                    case "d":
+                        // Ask the user to enter a non-zero divisor until they do so
+                        while (num2 == 0)
+                        {
+                            Console.WriteLine("Enter a non-zero divisor: ");
+                            num2 = Convert.ToDouble(Console.ReadLine());
+                        }
+                        Console.WriteLine($"Your result: {num1} / {num2} = " + (num1 / num2));
+                        break;
+                    // Return text for an incorrect option entry
+                    default:
+                        Console.WriteLine("That is an incorrect option entry, please try again.");
+                        break;
+                }
+                // Wait for the user to respond before closing
+                Console.Write("Press any key to close the Calculator console app...");
+                Console.ReadKey();
+            }
+        }
+    }
+    ```
+
+   Kod, który pojawia się po `static void Main(string[] args)` powinien wyglądać jak poniższy zrzut ekranu:
 
    ![Edytor kodu, przedstawiający Kalkulator konsoli C#](../ide/media/csharp-console-calculator-code.png)
 

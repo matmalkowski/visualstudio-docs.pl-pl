@@ -12,16 +12,16 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: eb9fb268ec98d60dcea46a8802592261493e4b56
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: ab42f0a8b3dafebaf73c116e8ce3295d99ce6fdd
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43776174"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859280"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>Programy obsługi zdarzeń propagujące zmiany poza modelem
 
-W wizualizacji i modelowania SDK, można zdefiniować programy obsługi zdarzeń sklepu propagowanie zmian do zasobów spoza sklepu, takie jak zmienne-store, plików i modeli w innych magazynach lub inne [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozszerzenia. Programy obsługi zdarzeń Store są wykonywane po zakończeniu transakcji, w którym wystąpiło zdarzenie wyzwalania. Są one również wykonywane w operacji cofania i ponawiania. W związku z tym w przeciwieństwie do reguł magazynu zdarzenia magazynu są najbardziej przydatne w przypadku aktualizowania wartości spoza sklepu. W przeciwieństwie do zdarzenia platformy .NET, procedury obsługi zdarzeń w magazynie są zarejestrowane do nasłuchiwania na klasę: nie trzeba zarejestrować oddzielne obsługi dla każdego wystąpienia. Aby uzyskać więcej informacji o tym, jak dokonać wyboru między różne sposoby obsługi zmian, zobacz [reagowania na zagrożenia i propagowanie zmian](../modeling/responding-to-and-propagating-changes.md).
+W wizualizacji i modelowania SDK można zdefiniować programy obsługi zdarzeń sklepu propagowanie zmian do zasobów spoza sklepu, takie jak zmienne-store, plików i modeli w innych magazynach lub inne rozszerzenia programu Visual Studio. Programy obsługi zdarzeń Store są wykonywane po zakończeniu transakcji, w którym wystąpiło zdarzenie wyzwalania. Są one również wykonywane w operacji cofania i ponawiania. W związku z tym w przeciwieństwie do reguł magazynu zdarzenia magazynu są najbardziej przydatne w przypadku aktualizowania wartości spoza sklepu. W przeciwieństwie do zdarzenia platformy .NET, procedury obsługi zdarzeń w magazynie są zarejestrowane do nasłuchiwania na klasę: nie trzeba zarejestrować oddzielne obsługi dla każdego wystąpienia. Aby uzyskać więcej informacji o tym, jak dokonać wyboru między różne sposoby obsługi zmian, zobacz [reagowania na zagrożenia i propagowanie zmian](../modeling/responding-to-and-propagating-changes.md).
 
 Powierzchnia graficznego i innych kontrolek interfejsu użytkownika są przykładami zasobów zewnętrznych, które są obsługiwane przez zdarzenia magazynu.
 

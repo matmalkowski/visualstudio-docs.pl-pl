@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 68597c0748fbc235178da6b6e583c48b9f1b422f
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: b82f18f4cc6ff5bb2666a51c4e8f37e22fd7d32b
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45551772"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859006"
 ---
 # <a name="ca1812-avoid-uninstantiated-internal-classes"></a>CA1812: Unikaj wewnętrznych klas bez wystąpień
 |||
@@ -58,7 +58,7 @@ ms.locfileid: "45551772"
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
  Aby naprawić naruszenie tej zasady, Usuń typ lub Dodaj kod, który korzysta z niego. Jeśli typ zawiera tylko metody statyczne, Dodaj jedną z następujących do typu, aby uniemożliwić kompilatorowi emitowania publiczne wystąpienia domyślnego konstruktora:
 
-- Konstruktor prywatny dla typów, których platformą docelową [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] w wersjach 1.0 i 1.1.
+- Konstruktor prywatny dla typów, których platformą docelową .NET Framework w wersji 1.0 i 1.1.
 
 - `static` (`Shared` w języku Visual Basic) modyfikator dla typów, których platformą docelową [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)].
 

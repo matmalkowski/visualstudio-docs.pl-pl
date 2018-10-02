@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c1d780f8ab293a9503f3c2c8675e4de1e3584b28
-ms.sourcegitcommit: d7209d61e812b34d06c2aa267bdf50fbc714d0e0
+ms.openlocfilehash: 5e2d973d1ec992002b2239383f9dbed228a0d59b
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/20/2018
-ms.locfileid: "42624119"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859396"
 ---
 # <a name="use-models-in-your-development-process"></a>Używanie modeli w procesie tworzenia aplikacji
 
@@ -48,7 +48,7 @@ W obu przypadkach tworzenie modelu prawie zawsze powoduje znaczny spadek niespó
 
 ## <a name="use-models-with-other-artifacts"></a>Używanie modeli za pomocą innych artefaktów
 
-Model nie jest samodzielnie specyfikacji wymagania lub architektury. Jest to narzędzie dla wyraźniej wyrażania niektóre aspekty te rzeczy, ale nie wszystkie pojęcia, które są wymagane podczas projektowania oprogramowania, które mogą być wyrażone. Modele powinna być używana razem z innych środków komunikacji, takimi jak strony programu OneNote lub akapitów, dokumentów, Microsoft Office, elementy robocze w [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)], lub notatki na ścianie pokoju projektu. Niezależnie od ostatniego elementu wszystkie te typy obiektów mogą być połączone części elementów modelu.
+Model nie jest samodzielnie specyfikacji wymagania lub architektury. Jest to narzędzie dla wyraźniej wyrażania niektóre aspekty te rzeczy, ale nie wszystkie pojęcia, które są wymagane podczas projektowania oprogramowania, które mogą być wyrażone. Te modele w związku z tym powinien być używany razem z innych środków komunikacji, takimi jak program OneNote stron lub akapitów, dokumenty Microsoft Office, elementów roboczych w Team Foundation lub notatki na ścianie pokoju projektu. Niezależnie od ostatniego elementu wszystkie te typy obiektów mogą być połączone części elementów modelu.
 
 Inne aspekty specyfikacji, które zazwyczaj są używane wraz z modeli, m.in. W zależności od skali i styl projektu mogą korzystać z kilku z tych aspektów lub używaj żadnego na wszystkich:
 
@@ -88,7 +88,7 @@ Gdy zbliża się iteracja, aby uprościć określenie, co ma zostać dostarczona
 
 - Pod koniec każdej iteracji naciśnij i przytrzymaj workshop wymagania, aby zdefiniować szczegółowo, wymaganiami lub historią użytkowników, które będą rozwijane w następnej iteracji. Zaproś użytkowników i zainteresowane strony biznesowe, które można określić priorytety, a także deweloperom i testerom systemu. Zezwala na określenie wymagań dla iteracji 2-tygodniowych trzy godziny.
 
-- Celem warsztatów jest wszystkim użytkownikom zgodę na to, co można zrobić przed zakończeniem następnej iteracji. Użyj modeli jako jedno z narzędzi, aby pomóc w wyjaśnianiu wymagania. Dane wyjściowe warsztatów to lista prac iteracji: oznacza to, że lista rozwoju zadania w programie [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)] i zestawów testów w [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)].
+- Celem warsztatów jest wszystkim użytkownikom zgodę na to, co można zrobić przed zakończeniem następnej iteracji. Użyj modeli jako jedno z narzędzi, aby pomóc w wyjaśnianiu wymagania. Dane wyjściowe warsztatów to lista prac iteracji: oznacza to, listę zadań programistycznych w zestawach Team Foundation i testowania w [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)].
 
 - W warsztacie wymagania omówiono w nim projekt pod warunkiem, że należy określić szacunki dla zadania programistyczne. W przeciwnym razie Zachowaj dyskusji zachowania systemu, który użytkownicy będą mogli doświadczyć bezpośrednio. Zachowaj modelu wymagań niezależnie od architektury model.
 
@@ -96,7 +96,7 @@ Gdy zbliża się iteracja, aby uprościć określenie, co ma zostać dostarczona
 
 ### <a name="link-model-to-work-items"></a>Model łączy do elementów roboczych
 
-Po warsztaty wymagania opracowania szczegółowe informacje o modelu wymagań, a następnie połącz modelu zadań programistycznych. Można to zrobić, łącząc elementy robocze w [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)] do elementów w modelu.
+Po warsztaty wymagania opracowania szczegółowe informacje o modelu wymagań, a następnie połącz modelu zadań programistycznych. Można to zrobić, łącząc elementy robocze w Team Foundation do elementów w modelu.
 
 Można połączyć dowolny element do elementów roboczych, ale najbardziej przydatne elementy są następujące:
 

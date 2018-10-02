@@ -9,16 +9,16 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 1f12363af0d0b26aa72c5478df5da82c6d4fd02a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5425dc16b40495d1a9ab9010ac90fe6b552d02e9
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31950351"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47858005"
 ---
 # <a name="t4-parameter-directive"></a>Dyrektywa T4 dotycząca parametru
 
-W [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] szablonu tekstowego `parameter` dyrektywy deklaruje właściwości w kodzie szablonu, które są inicjowane z wartości przekazane z zewnętrznego kontekstu. Te wartości można ustawić podczas pisania kodu, który wywołuje transformacji tekstu.
+W szablonie tekstu Visual Studio `parameter` dyrektywy deklaruje właściwości w kodzie szablonu, które są inicjowane od wartości przekazanej w kontekście zewnętrznych. Te wartości można ustawić, jeśli piszesz kod, który wywołuje przekształcenia tekstu.
 
 ## <a name="using-the-parameter-directive"></a>Użycie dyrektywy parametru
 
@@ -26,11 +26,11 @@ W [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] szablonu tekstowego 
 <#@ parameter type="Full.TypeName" name="ParameterName" #>
 ```
 
- `parameter` Dyrektywy deklaruje właściwości w kodzie szablonu, które są inicjowane z wartości przekazane z zewnętrznego kontekstu. Te wartości można ustawić podczas pisania kodu, który wywołuje transformacji tekstu. Wartości mogą być przekazywane w `Session` słownika, lub w <xref:System.Runtime.Remoting.Messaging.CallContext>.
+ `parameter` Dyrektywy deklaruje właściwości w kodzie szablonu, które są inicjowane od wartości przekazanej w kontekście zewnętrznych. Te wartości można ustawić, jeśli piszesz kod, który wywołuje przekształcenia tekstu. Wartości mogą być przekazywane w `Session` słownika, lub <xref:System.Runtime.Remoting.Messaging.CallContext>.
 
- Można zadeklarować parametrów dowolnego typu może być zastosowana zdalnie. Oznacza to, typ musi być zadeklarowany ze <xref:System.SerializableAttribute>, lub musi pochodzić od <xref:System.MarshalByRefObject>. Dzięki temu wartości parametrów do przekazania do elementu AppDomain, w którym szablon jest przetwarzany.
+ Możesz deklarować parametrów dowolnego typu może być zastosowana zdalnie. Oznacza to, że typ musi być zadeklarowany z <xref:System.SerializableAttribute>, lub musi pochodzić od <xref:System.MarshalByRefObject>. Dzięki temu wartości parametrów do przekazania do elementu AppDomain, w którym szablon jest przetwarzany.
 
- Na przykład można zapisać szablonu tekstowego o następującej treści:
+ Na przykład można napisać szablon tekstowy o następującej zawartości:
 
 ```
 <#@ template language="C#" #>
@@ -43,8 +43,8 @@ Line <#= i #>
 
 ```
 
-## <a name="passing-parameter-values-to-a-template"></a>Przekazywanie wartości parametrów szablonu
- Jeśli piszesz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozszerzenia takich jak polecenie menu, program obsługi zdarzeń, może przetwarzać szablonu za pomocą usługi tworzenia szablonów tekstowych:
+## <a name="passing-parameter-values-to-a-template"></a>Przekazywanie wartości parametrów do szablonu
+ Jeśli piszesz rozszerzenia programu Visual Studio, takie jak polecenie menu lub program obsługi zdarzeń może przetwarzać szablonu przy użyciu usługi szablonów tekstowych:
 
 ```csharp
 // Get a service provider - how you do this depends on the context:
@@ -62,10 +62,10 @@ string result = t4.ProcessTemplate("MyTemplateFile.t4",
 
 ```
 
-## <a name="passing-values-in-the-call-context"></a>Przekazywanie wartości w kontekście wywołania
- Można również dane można przekazać wartości logicznych w <xref:System.Runtime.Remoting.Messaging.CallContext>.
+## <a name="passing-values-in-the-call-context"></a>Mechanizm przekazywania wartości w kontekście wywołań
+ Można również przekazać wartości danych logicznych w <xref:System.Runtime.Remoting.Messaging.CallContext>.
 
- Poniższy przykład przekazuje wartości za pomocą obu metod:
+ Poniższy przykład przekazuje wartości przy użyciu obu metod:
 
 ```csharp
 ITextTemplating t4 = this.Store.GetService(typeof(STextTemplating)) as ITextTemplating;
@@ -87,10 +87,10 @@ string result = t4.ProcessTemplate("",
 
 ```
 
-## <a name="passing-values-to-a-run-time-preprocessed-text-template"></a>Przekazanie wartości do szablonu tekstowego Run-Time (preprocesora)
- Nie jest to zazwyczaj koniecznych do używania `<#@parameter#>` dyrektywy z szablonów tekstowych (wstępnie przetworzonych) środowiska wykonawczego. Zamiast tego można zdefiniować dodatkowe konstruktora lub ustawialnej właściwości dla wygenerowanego kodu za pomocą którego można podać wartości parametrów. Aby uzyskać więcej informacji, zobacz [Generowanie tekstu czasu wykonywania z szablonów tekstowych T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
+## <a name="passing-values-to-a-run-time-preprocessed-text-template"></a>Przekazanie wartości do szablonu tekstu czasu wykonywania (preprocesora)
+ Nie jest zazwyczaj konieczne jest użycie `<#@parameter#>` dyrektywy przy użyciu szablonów tekstowych (wstępnie przetworzony) czasu wykonywania. Zamiast tego można zdefiniować dodatkowe Konstruktor lub właściwości do ustawienia dla wygenerowanego kodu, za pomocą których możesz podać wartości parametrów. Aby uzyskać więcej informacji, zobacz [Generowanie tekstu czasu wykonywania przy użyciu szablonów tekstowych T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
- Jednak jeśli chcesz użyć `<#@parameter>` w szablonie środowiska wykonawczego, można przekazać wartości do niej przy użyciu słownika sesji. Na przykład załóżmy, że plik został utworzony jako szablon wstępnie przetworzonych o nazwie `PreTextTemplate1`. Szablon w programie można wywołać przy użyciu następującego kodu.
+ Jednakże jeśli chcesz używać `<#@parameter>` w szablonie czasu wykonywania, można przekazać wartości do niego za pomocą słownika sesji. Na przykład załóżmy, że plik został utworzony jako wstępnie przetworzony szablon o nazwie `PreTextTemplate1`. Szablon można wywołać w swoim programie przy użyciu następującego kodu.
 
 ```csharp
 PreTextTemplate1 t = new PreTextTemplate1();
@@ -102,7 +102,7 @@ string resultText = t.TransformText();
 
 ```
 
-## <a name="obtaining-arguments-from-texttemplateexe"></a>Uzyskiwanie argumenty w TextTemplate.exe
+## <a name="obtaining-arguments-from-texttemplateexe"></a>Uzyskiwanie argumenty z TextTemplate.exe
 
 > [!IMPORTANT]
->  `parameter` Dyrektywy nie pobiera wartości `-a` parametr `TextTransform.exe` narzędzia. Aby uzyskać te wartości, należy ustawić `hostSpecific="true"` w `template` dyrektywy i użyj `this.Host.ResolveParameterValue("","","argName")`.
+>  `parameter` Dyrektywy nie pobrać wartości ustawione w `-a` parametru `TextTransform.exe` narzędzia. Aby uzyskać te wartości, należy ustawić `hostSpecific="true"` w `template` dyrektywy i użyj `this.Host.ResolveParameterValue("","","argName")`.

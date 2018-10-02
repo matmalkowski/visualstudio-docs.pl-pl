@@ -9,17 +9,17 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: d826787a028aba4f5397ce5577acf60f67120973
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: b69015a58b4772a13c387f67f0dc9d6a2571e1b7
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567344"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859227"
 ---
 # <a name="how-to-use-transactions-to-update-the-model"></a>Porady: użycie transakcji do aktualizacji modelu
 Transakcje upewnij się, że zmiany wprowadzone do magazynu są traktowane jako grupa. Zmiany, które są grupowane może być przekazana lub wycofana jako pojedyncza jednostka.
 
- Zawsze, gdy kod programu modyfikuje, dodaje lub usuwa dowolnego elementu w Store w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] wizualizacji i modelowania SDK, należy wykonać czynności wewnątrz transakcji. Musi być aktywne wystąpienie <xref:Microsoft.VisualStudio.Modeling.Transaction> skojarzone z Store, w przypadku zmiany. Dotyczy to wszystkich elementów modelu, relacje, kształty, diagramy i ich właściwości.
+ Zawsze, gdy kod programu modyfikuje, dodaje lub usuwa dowolnego elementu w Store w Visual Studio Visualization i Modeling SDK, jego musi zrobić wewnątrz transakcji. Musi być aktywne wystąpienie <xref:Microsoft.VisualStudio.Modeling.Transaction> skojarzone z Store, w przypadku zmiany. Dotyczy to wszystkich elementów modelu, relacje, kształty, diagramy i ich właściwości.
 
  Mechanizm transakcji pomaga uniknąć niespójne stanów. Jeśli wystąpi błąd podczas wykonywania transakcji, wszystkie zmiany zostaną wycofane. Gdy użytkownik wykonuje polecenie Cofnij, każda transakcja ostatnie jest traktowany jako pojedynczy krok. Użytkownik nie można cofnąć części ostatnią zmianę, chyba że jawnie je umieścić w oddzielnych transakcji.
 

@@ -9,21 +9,21 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: ea0b136659b57b8430a355b4e231423c5e55b2b9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8af5f4496356b3fa349b514a4158149d6a96d684
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31946104"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47858989"
 ---
 # <a name="api-reference-for-t4-text-templates"></a>Wykaz interfejsów API dla szablonów tekstowych T4
 
-Interfejsu API tworzenia szablonów tekstowych umożliwia wywołanie i dostosować przekształcenie [szablony tekstowe](../modeling/code-generation-and-t4-text-templates.md).
+API szablonów tekstu pozwala wywołać i dostosować transformację [szablonów tekstowych](../modeling/code-generation-and-t4-text-templates.md).
 
 ## <a name="namespaces"></a>Namespaces
 
 |Przestrzeń nazw|Cel|
 |---------------|-------------|
-|<xref:Microsoft.VisualStudio.TextTemplating>|Zawiera klasy dla funkcji transformacji szablonu tekstowego. Aparat przekształcania szablonu tekstowego jest zintegrowany z programu Visual Studio i przekształca pliki szablonów tekstu do plików wyjściowych wygenerowanego tekstu.|
-|<xref:Microsoft.VisualStudio.TextTemplating.Modeling>|Zapewnia tekst ułatwienia przekształcania związanych z modeli UML i języki specyficzne dla domeny, takich jak dostęp do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus.|
-|<xref:Microsoft.VisualStudio.TextTemplating.VSHost>|Zapewnia dostęp do usługi tworzenia szablonów tekstowych w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|
+|<xref:Microsoft.VisualStudio.TextTemplating>|Zawiera klasy dla funkcji przekształcania szablonu tekstu. Mechanizm przekształcenie tekstu szablonu jest zintegrowany z Visual Studio i przekształca tekst, pliki szablonów w pliki wyjściowe wygenerowanego tekstu.|
+|<xref:Microsoft.VisualStudio.TextTemplating.Modeling>|Zawiera tekst transformacji udogodnień związanych z modelami UML i języków specyficznych dla domeny, takich jak dostęp do Visual Studio ModelBus.|
+|<xref:Microsoft.VisualStudio.TextTemplating.VSHost>|Zapewnia dostęp do usługi tekstowej szablonów w programie Visual Studio.|

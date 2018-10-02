@@ -1,7 +1,7 @@
 ---
 title: Analizowanie użycia pamięci bez debugera programu Visual Studio | Dokumentacja firmy Microsoft
 ms.custom: H1Hack27Feb2017
-ms.date: 11/04/2016
+ms.date: 09/28/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e6647fb758d6895db98aa6bad47295a6a4aae86
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 1b19b0c8371cc4f3b496255e37f06f7b1cbc1fa9
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677296"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859877"
 ---
 # <a name="analyze-memory-usage-without-the-visual-studio-debugger"></a>Analizowanie użycia pamięci bez debugera programu Visual Studio
 Możesz użyć **użycie pamięci** narzędzia bez debugowania, aby wykonać następujące czynności  
@@ -30,7 +30,7 @@ Możesz użyć **użycie pamięci** narzędzia bez debugowania, aby wykonać nas
   
 -   Porównywanie migawek do znalezienia głównej przyczyny problemów z pamięcią.  
   
- W tym temacie opisano sposób analizowania aplikacji w języku XAML platformy uniwersalnej systemu Windows za pomocą narzędzia użycie pamięci. Jeśli chcesz analizować wykorzystanie pamięci w aplikacji platformy uniwersalnej systemu Windows, który używa języka JavaScript i HTML, zobacz [Analizowanie użycia pamięci (JavaScript)](../profiling/javascript-memory.md).  
+ Obecnie do mierzenia użycia pamięci dla aplikacji platformy .NET Core, należy użyć narzędzia w debugerze. W przypadku innych aplikacji zarządzanych i natywnych można użyć narzędzia, z lub bez w debugerze. Zrzuty ekranu, w tym temacie pokazują aplikacji w języku XAML platformy uniwersalnej systemu Windows. Jeśli chcesz analizować wykorzystanie pamięci w aplikacji platformy uniwersalnej systemu Windows, który używa języka JavaScript i HTML, zobacz [Analizowanie użycia pamięci (JavaScript)](../profiling/javascript-memory.md).
   
 ## <a name="start-a-memory-usage-diagnostic-session"></a>Uruchamianie sesji diagnostyki użycia pamięci  
   
