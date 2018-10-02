@@ -9,16 +9,16 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: d9278d85349ede7ea5f44dce589d6737b64bc83e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a5e2bb260f8ef44936485203689bf7cf3e34e6c1
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31952932"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47857831"
 ---
 # <a name="t4-include-directive"></a>Dyrektywa T4 Include
 
-W szablonie tekstu w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], mogą zawierać tekst z innego pliku przy użyciu `<#@include#>` dyrektywy. Możesz umieścić `include` dyrektywy w dowolnym miejscu szablonu tekstowego przed pierwszym bloku funkcji klasy `<#+ ... #>`. Pliki załączone może również zawierać `include` dyrektywy i innych dyrektyw. To pozwala na udostępnianie kodu szablonu i standardowych wzorców tekstu szablonu między szablonami.
+W szablonie tekstowym w programie Visual Studio, można dołączyć tekst z innego pliku za pomocą `<#@include#>` dyrektywy. Możesz umieścić `include` dyrektywy w dowolnym miejscu w szablonie tekstu przed blokiem funkcji pierwszej klasy `<#+ ... #>`. Dołączone pliki mogą również zawierać `include` dyrektywy oraz inne dyrektywy. To pozwala na udostępnianie kodu szablonu i standardowych wzorców tekstu szablonu między szablonami.
 
 ## <a name="using-include-directives"></a>Używanie dyrektyw Include
 
@@ -26,29 +26,29 @@ W szablonie tekstu w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], 
 <#@ include file="filePath" [once="true"] #>
 ```
 
--   `filePath` może być ścieżką bezwzględną, lub względem bieżącego pliku szablonu.
+-   `filePath` może być ścieżką bezwzględną, lub względną do bieżącego pliku szablonu.
 
-     Ponadto określonych [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozszerzeń można określić ich własnych katalogów do wyszukiwania plików dołączanych. Na przykład po zainstalowaniu wizualizacji i modelowania SDK (narzędzia DSL) następujący folder zostanie dodany do listy include: `Program Files\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Microsoft\DSL SDK\DSL Designer\11.0\TextTemplates`.
+     Dodatkowo określone rozszerzenia programu Visual Studio można określić własne katalogi do wyszukiwania plików dołączanych. Na przykład jeśli zainstalowano wizualizacji i modelowania SDK (narzędzia DSL), następujący folder zostanie dodany do listy dołączania: `Program Files\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Microsoft\DSL SDK\DSL Designer\11.0\TextTemplates`.
 
-     Te dodatkowe foldery dołączania mogą zależeć od rozszerzenia dołączanego pliku. Na przykład narzędzia DSL zawierają folder jest dostępna wyłącznie dla w tym pliki mające rozszerzenie pliku `.tt`
+     Te dodatkowe foldery dołączania mogą zależeć od rozszerzenia dołączanego pliku. Na przykład narzędzia DSL zawierają folder jest dostępna wyłącznie dla plików, które mają rozszerzenie pliku `.tt`
 
--   `filePath` może zawierać zmienne środowiskowe rozdzielany z "%". Na przykład:
+-   `filePath` może zawierać zmienne środowiskowe oddzielane znaku z "%". Na przykład:
 
     ```
     <#@ include file="%HOMEPATH%\MyIncludeFile.t4" #>
     ```
 
--   Nazwa pliku dołączanego musi użyć rozszerzenia `".tt"`.
+-   Nazwa dołączanego pliku nie ma używać rozszerzenia `".tt"`.
 
-     Możesz chcieć użyć innego rozszerzenia, takiego jak `".t4"` dołączone pliki. Wynika to z faktu, po dodaniu `.tt` plik do projektu, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] automatycznie ustawia jego **narzędzie niestandardowe** właściwości `TextTemplatingFileGenerator`. Zwykle nie chcesz, żeby dołączone pliki były przekształcane indywidualnie.
+     Warto użyć innego rozszerzenia, takie jak `".t4"` dla dołączonych plików. Jest to spowodowane dodając `.tt` plik do projektu programu Visual Studio automatycznie ustawia jego **narzędzie niestandardowe** właściwość `TextTemplatingFileGenerator`. Zwykle nie chcesz, żeby dołączone pliki były przekształcane indywidualnie.
 
      Z drugiej strony należy pamiętać, że w niektórych przypadkach rozszerzenie pliku wpływa na to, w których dodatkowych folderach będą wyszukiwane dołączane pliki. Może to być ważne, gdy masz dołączony plik, który zawiera inne pliki.
 
--   Dołączona zawartość jest przetwarzana prawie tak, jakby była częścią dołączającego szablonu tekstu. Jednak można dołączyć plik zawierający bloku funkcji klasy `<#+...#>` nawet wtedy, gdy `include` dyrektywy następuje zwykły tekst i bloki formantu standardowego.
+-   Dołączona zawartość jest przetwarzana prawie tak, jakby była częścią dołączającego szablonu tekstu. Jednakże można dołączyć plik, który zawiera blok funkcji klasy `<#+...#>` nawet wtedy, gdy `include` dyrektywy następuje zwykły tekst i standardowe bloki sterujące.
 
--   Użyj `once="true"` aby upewnić się, czy szablon znajduje się tylko raz, nawet wtedy, gdy jest wywoływana z więcej niż jeden plik include.
+-   Użyj `once="true"` zapewnienie, że szablon jest uwzględniany tylko raz, nawet wtedy, gdy jest wywoływany z więcej niż jednego pliku dołączonego.
 
-     Umożliwia wykonanie tej funkcji ułatwiają tworzenie biblioteki wstawki T4 wielokrotnego użytku, obejmujących na zostanie nie martwiąc się, że niektóre fragment kodu ma już one dołączone.  Na przykład załóżmy, że biblioteka bardzo szczegółowych fragmentów, które zajmują się przetwarzania szablonu i C# generacji.  Z kolei są one używane przez niektóre narzędzia bardziej specyficzne dla zadania, takie jak generowanie wyjątków, które można następnie użyć z dowolnego szablonu bardziej specyficzne dla aplikacji. Jeśli narysujesz wykres zależności, zobaczysz, że niektóre wstawki kodu programu byłyby dołączone kilka razy. Ale `once` parametr zapobiega kolejnych dołączenia.
+     Ułatwia to funkcja łatwy do utworzenia biblioteki wielokrotnego użytku wstawek T4, zawierających w będą bez konieczności martwienia się, że niektóre fragment kodu ma już one dołączone.  Na przykład załóżmy, że istnieje biblioteka bardzo szczegółowych fragmentów, które zajmują się języka C# generowania i przetwarzania szablonu.  Z kolei są one używane przez niektóre narzędzia bardziej specyficzne dla zadania, takie jak generowanie wyjątków, które następnie można użyć z dowolnego szablonu bardziej specyficzne dla aplikacji. Jeśli narysujesz wykres zależności, zobaczysz, że niektóre wstawki kodu programu byłyby dołączone kilka razy. Ale `once` parametru uniemożliwia późniejsze.
 
  **MyTextTemplate.tt:**
 
@@ -96,7 +96,7 @@ void AnotherGenerateMessage(int n)
 
 ```
 
- **Powstałe w ten sposób wygenerowany plik, MyTextTemplate.txt:**
+ **Wynikowy wygenerowany plik MyTextTemplate.txt:**
 
 ```
 Output message 1 (from top template).
@@ -111,10 +111,10 @@ Output message 5 (from top template).
 
 ```
 
-##  <a name="msbuild"></a> Za pomocą właściwości projektu MSBuild i Visual Studio
- Mimo że można użyć makra programu Visual Studio podobnego do $(SolutionDir) w dyrektywy include, nie działają one w programie MSBuild. Aby przekształcić szablony w komputerze kompilacji, musisz użyć właściwości projektu.
+## <a name="msbuild"></a> Korzystanie z właściwości projektu w MSBuild i Visual Studio
+ Chociaż można używać makr Visual Studio, takich jak $ (solutiondir), w dyrektywie include, nie działają one w MSBuild. Aby przekształcić szablony w komputerze kompilacji, musisz użyć właściwości projektu.
 
- Wyedytuj plik .csproj lub .vbproj, aby zdefiniować właściwość projektu. W tym przykładzie definiuje właściwość o nazwie `myIncludeFolder`:
+ Wyedytuj plik .csproj lub .vbproj, aby zdefiniować właściwość projektu. Ten przykład definiuje właściwość o nazwie `myIncludeFolder`:
 
 ```xml
 <!-- Define a project property, myIncludeFolder: -->

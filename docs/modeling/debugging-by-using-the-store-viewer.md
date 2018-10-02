@@ -12,18 +12,18 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: fd0930445ef409f27f87658a249f9c89aac22e91
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: d26c66b6bcbab2eafe2ae8b01597ef09985dcfa8
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567067"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47858655"
 ---
 # <a name="debugging-by-using-the-store-viewer"></a>Debugowanie za pomocą przeglądarki sklepu
 Z podglądem Store można sprawdzić stan *przechowywania* posługują się [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]. Podgląd Store Wyświetla listę wszystkich elementów modelu domeny, które znajdują się w określonym magazynie, wraz z właściwości elementu i łączy między elementami.
 
 ## <a name="opening-store-viewer"></a>Otwieranie Store podglądu
- Podczas pracy w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] eksperymentalne kompilacji, Zatrzymaj kodu w punkcie przerwania, w których wystąpienie magazynu zawiera informacje o modelu. Następnie otwórz Podgląd Store, wpisując następujące polecenie w **bezpośrednie** okna:
+ Jeśli jesteś w kompilacji eksperymentalne programu Visual Studio, Zatrzymaj kodu w punkcie przerwania, w których wystąpienie magazynu zawiera informacje o modelu. Następnie otwórz Podgląd Store, wpisując następujące polecenie w **bezpośrednie** okna:
 
 ```csharp
 Microsoft.VisualStudio.Modeling.Diagnostics.StoreViewer.Show(mystore);

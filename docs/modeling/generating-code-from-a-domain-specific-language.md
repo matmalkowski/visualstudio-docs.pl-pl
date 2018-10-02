@@ -9,17 +9,17 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 63599452347ce08140d4c530aa87f2deb938104d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 77d26595bd97a98ef9a4cd1f72c14739695bb755
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31948096"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859851"
 ---
 # <a name="generating-code-from-a-domain-specific-language"></a>Generowanie kodu z języka specyficznego dla domeny
-Microsoft [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] udostępnia zaawansowane metody do generowania kodu, dokumentów, plików konfiguracji i pozostałych artefaktów z dane reprezentowane w modelach. Przy użyciu [!INCLUDE[dsl](../modeling/includes/dsl_md.md)], można utworzyć zestaw klas, które reprezentują dane, można napisać szablony tekstu w klasach których nazwy i właściwości odzwierciedlenia tych danych.
+Microsoft [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] oferują zaawansowane możliwości do generowania kodu, dokumenty, pliki konfiguracji i innych artefaktów z danych reprezentowanych w modelach. Za pomocą [!INCLUDE[dsl](../modeling/includes/dsl_md.md)], można utworzyć zestaw klas, które reprezentują dane, można napisać szablony tekstowe w klasach których nazwy i właściwości odzwierciedlenia tych danych.
 
- Na przykład firma Fabrikam ma pliku XML nazwy klientów i adresów e-mail. Deweloperów, tworzenie modelu, w którym klient jest klasę o nazwie właściwości i wiadomości e-mail. Zapisują kilka szablonów tekstowych do przetwarzania danych, w tym ten fragment tworzący spis wszystkich klientów jako część strony HTML:
+ Na przykład firma Fabrikam ma plik XML nazw klienta i adresy e-mail. Ich deweloperom tworzenie modelu, w którym klient jest klasę o nazwie właściwości i wiadomości e-mail. Napisz ich kilka szablonów tekstu do przetwarzania danych, w tym ten fragment, który tworzy spis wszystkich klientów jako część strony HTML:
 
 ```
 <table>
@@ -29,39 +29,39 @@ Microsoft [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] udostępnia zaawansowa
 <# } #>  </table>
 ```
 
- Podczas przetwarzania bazy danych klienta, plik XML jest do odczytu do magazynu modeli. A *procesora dyrektywy*, utworzony przy użyciu [!INCLUDE[dsl](../modeling/includes/dsl_md.md)], udostępnia klasy klienta do kodu w szablonie tekstu. Wiele szablonów tekstowych mogą być uruchamiane na tym samym magazynie.
+ Podczas przetwarzania bazy danych klientów w pliku XML jest do odczytu do magazynu modeli. A *procesora dyrektywy*utworzony za pomocą [!INCLUDE[dsl](../modeling/includes/dsl_md.md)], udostępnia klasy klienta do kodu w szablonie tekstowym. Wiele szablonów tekstowych mogą być uruchamiane na tym samym magazynie.
 
- Szablony tekstowe są istotne dla [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]. Są one używane do generowania kodu źródłowego dla elementów modelu domeny, jak również pakiet VSPackage i kontrolek, które są używane do integrowanie narzędzi z [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+ Szablony tekstowe są istotne dla [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]. Są one używane do generowania kodu źródłowego dla elementów modelu domeny, a także pakietu VSPackage i kontrolek, które są używane do Zintegruj odpowiednie narzędzia, za pomocą programu Visual Studio.
 
  W tej sekcji omówiono niektóre sposoby tworzenia, modyfikacji i szablony tekstowe używane w debugowania [!INCLUDE[dsl](../modeling/includes/dsl_md.md)].
 
 ## <a name="in-this-section"></a>W tej sekcji
  [Uzyskiwanie dostępu do modeli z poziomu szablonów tekstu](../modeling/accessing-models-from-text-templates.md)
 
- Zawiera podstawowe informacje o odwołujących się do języka specyficznego dla domeny w szablonach tekstowych.
+ Zawiera podstawowe informacje o odwoływaniu się do języka specyficznego dla domeny w szablonach tekstowych.
 
  [Przewodnik: Debugowanie szablonu tekstowego uzyskującego dostęp do modelu](../modeling/walkthrough-debugging-a-text-template-that-accesses-a-model.md)
 
- Opisuje sposób rozwiązywania problemów i debugowanie szablonu tekstowego, która odwołuje się do języka specyficznego dla domeny.
+ W tym artykule opisano, jak to zrobić, rozwiązywanie problemów i debugowanie szablonu tekstu, który odwołuje się do języka specyficznego dla domeny.
 
  [Przewodnik: Łączenie hosta z generowanym procesorem dyrektywy](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md)
 
- Opisano sposób podłączania hosta niestandardowego procesora dyrektywy wygenerowany.
+ W tym artykule opisano sposób łączenia niestandardowego hosta z generowanym procesorem dyrektywy.
 
  [Polecenie DslTextTransform](../modeling/the-dsltexttransform-command.md)
 
- W tym artykule opisano pliku polecenia, która wykonuje TextTransform plik wykonywalny w wierszu polecenia dla szablonów tekstowych, które odwołują się języki specyficzne dla domeny.
+ W tym artykule opisano pliku polecenia, który jest wykonywany TextTransform plik wykonywalny w wierszu polecenia dla szablonów tekstowych, które odwołują się języki specyficzne dla domeny.
 
 ## <a name="reference"></a>Tematy pomocy
  [Pisanie szablonu tekstowego T4](../modeling/writing-a-t4-text-template.md)
 
- Udostępnia składni dyrektywy szablonu tekstu i bloków sterowania.
+ Udostępnia składnia dyrektyw szablonu tekstu i bloki sterujące.
 
 ## <a name="related-sections"></a>Sekcje pokrewne
  [Generowanie kodu czasu projektowania przy użyciu szablonów tekstowych T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
 
- Opisano proces transformacji szablonu tekstowego.
+ Wyjaśniono proces przekształcania szablonu tekstu.
 
  [Generowanie kodu w procesie kompilacji](../modeling/code-generation-in-a-build-process.md)
 
- Przeczytaj ten temat, jeśli pliki są Generowanie na podstawie DSL na serwerze kompilacji.
+ Ten temat jest generowanie plików z DSL na serwerze kompilacji.

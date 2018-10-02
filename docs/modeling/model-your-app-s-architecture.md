@@ -11,17 +11,17 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 0d75627eac18fa20edad222d168c858b073cecae
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 8a13d617ec523a3215e28668bca179aeace656f7
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178907"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859123"
 ---
 # <a name="model-your-app39s-architecture"></a>Model aplikacji&#39;architektury s
 Aby mieć pewność, że z oprogramowania systemu lub aplikacji spełnia użytkowników potrzebuje, możesz tworzyć modele w programie Visual Studio, jako część opisie ogólną strukturę i zachowanie systemu oprogramowania lub aplikacji. Przy użyciu modeli, może również opisywać wzorców, które są używane w całym projekcie. Modele te ułatwiają zrozumienie istniejącej architektury, omówiono zmiany i wyraźnie komunikacji zamiaru.
 
- Aby zobaczyć, które wersje programu Visual Studio obsługuje tę funkcję, zobacz [obsługiwana wersja dla narzędzia architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+ Aby zobaczyć, jakie wersje programu Visual Studio obsługuje tę funkcję, zobacz [obsługę wersji narzędzia architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
  Cel modelu jest zmniejszenie niejasności, występujących w opisach języka naturalnego, ułatwienie Ty i Twoi współpracownicy wizualizacji projektu i w celu omówienia alternatywnych projektów. Model powinien być używany razem z innych dokumentów lub dyskusji. Przez siebie model nie reprezentuje pełną specyfikację architektury.
 
@@ -34,7 +34,7 @@ Aby mieć pewność, że z oprogramowania systemu lub aplikacji spełnia użytko
 
 -   [Wzorce projektowe](#Patterns) i Konwencji używanych w całym projekty składników. Wzorzec opisuje sposób postępowania w osiąganiu celu programowania. Za pomocą tych samych wzorców w całym projekcie, Twój zespół może zmniejszyć kosztów wprowadzania zmian i tworzenie nowego oprogramowania.
 
-##  <a name="Structure"></a> Projektowania wysokiego poziomu
+## <a name="Structure"></a> Projektowania wysokiego poziomu
  Projektowania wysokiego poziomu w tym artykule opisano główne składniki systemu i jak współdziałają ze sobą w celu osiągnięcia celów projektowania. Działania na poniższej liście są zaangażowane w opracowywaniu projektowania wysokiego poziomu, ale niekoniecznie w określonej kolejności.
 
  Jeśli aktualizujesz istniejący kod może zacząć poprzez opisanie główne składniki. Upewnij się, zrozumieć wszelkie zmiany wymagań użytkowników i następnie dodać lub zmodyfikować interakcje między składnikami. Jeśli tworzysz nowy system begin przez opis najważniejszych funkcji potrzeb użytkowników. Następnie zapoznaj się z sekwencji interakcji dla przypadków użycia głównego i następnie konsolidowanie sekwencji do projektu składnika.
@@ -47,7 +47,7 @@ Aby mieć pewność, że z oprogramowania systemu lub aplikacji spełnia użytko
 
 -   Model danych składników i interfejsy. Możesz narysować diagramy klas do opisania informacje, które jest przekazywane między składnikami, a następnie przechowywane wewnątrz składników.
 
-##  <a name="Requirements"></a> Omówienie wymagań
+## <a name="Requirements"></a> Omówienie wymagań
  Ogólny projekt kompletnej aplikacji jest najbardziej efektywne opracowany wraz z modelem wymagania lub innych opis potrzeb użytkowników. Aby uzyskać więcej informacji na temat modeli wymagania, zobacz [modelowanie wymagań użytkowników](../modeling/model-user-requirements.md).
 
  Jeśli system, który tworzysz składnik w systemie większe, część lub całość wymagań może zostać zawarte w interfejsów programistycznych.
@@ -66,7 +66,7 @@ Aby mieć pewność, że z oprogramowania systemu lub aplikacji spełnia użytko
 
  Ilość szczegółów, które należy umieścić w wymagania lub architektury model zależy od tego, skali projektu oraz wielkość i stopień rozproszenia zespołu. Małego zespołu nad projektem krótki mogą zostać przekazane żadne dodatkowe niż powstawać diagramu klas koncepcji biznesowych i niektórych wzorców projektowych; duży projekt rozproszone na więcej niż jeden region należałoby znacznie bardziej szczegółowo.
 
-##  <a name="BigDecisions"></a> Wzorce architektury
+## <a name="BigDecisions"></a> Wzorce architektury
  Na wczesnym etapie projektowania należy wybrać technologie główne i elementów, od których zależy od projektu. Obszary, w których należy te opcje są następujące:
 
 -   Podstawowa Wybór technologii, takich jak wybrać między bazą danych i systemu plików i wybór między aplikację sieciową i klienta sieci web i tak dalej.
@@ -79,7 +79,7 @@ Aby mieć pewność, że z oprogramowania systemu lub aplikacji spełnia użytko
 
  Wybrane opcje, które wpływają na sposób używania i interpretować architektury model. Na przykład w systemie, który korzysta z bazy danych, skojarzenia na diagramie klasy może reprezentować relacji lub klucze obce w bazie danych, natomiast w systemie, który jest oparty na plikach XML, skojarzenia może wskazywać odsyłaczy, które używają języka XPath. W rozproszonym systemie wiadomości w diagramie sekwencji może reprezentować komunikatów o komunikacji sieciowej; w przypadku aplikacji niezależna reprezentują wywołania funkcji.
 
-##  <a name="Patterns"></a> Wzorce projektowe
+## <a name="Patterns"></a> Wzorce projektowe
  Wzorzec projektowy jest konspektu sposobu projektowania danego aspekt tego oprogramowania, zwłaszcza taki, który występuje w różnych częściach systemu. Przyjmując jednolite podejście w projekcie, można zmniejszyć koszt projektu, zapewnienia spójności interfejsu użytkownika i zmniejszyć koszt zrozumienie i zmieniania kodu.
 
  Niektóre wzorce projektowe ogólnych, takich jak obserwatora są dobrze znane i powszechnie stosowane. Ponadto są wzorce, które mają zastosowanie tylko do projektu. Na przykład w sieci web system sprzedaży, nastąpi kilka operacji w kodzie gdzie zmian zamówienia klienta. W celu zapewnienia, że był wyświetlany stan zamówienia na każdym etapie, wszystkie czynności należy wykonać konkretnego protokołu aktualizacji bazy danych.

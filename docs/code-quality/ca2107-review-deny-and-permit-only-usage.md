@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ef4857b88c6e18b83cdc0e43bb1b8cf031221f4
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 153077e7231aba485b6f8e08efcf5e6d5752b89a
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45550115"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859331"
 ---
 # <a name="ca2107-review-deny-and-permit-only-usage"></a>CA2107: Przejrzyj użycie akcji Deny i Permit Only
 |||
@@ -35,7 +35,7 @@ ms.locfileid: "45550115"
  Metoda zawiera sprawdzanie zabezpieczeń, które określa akcji zabezpieczeń PermitOnly lub Odmów.
 
 ## <a name="rule-description"></a>Opis reguły
- <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName> Akcji zabezpieczeń powinny być używane tylko przez tych, którzy mają zaawansowaną wiedzę o [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] zabezpieczeń. Kod, który używa tych akcji zabezpieczeń, należy poddać przeglądowi zabezpieczeń.
+ <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName> Akcji zabezpieczeń powinny być używane tylko przez tych, którzy mają zaawansowaną wiedzę o zabezpieczeniach .NET Framework. Kod, który używa tych akcji zabezpieczeń, należy poddać przeglądowi zabezpieczeń.
 
  Odmów zmienia domyślne zachowanie przeszukiwania stosu, który występuje w odpowiedzi na żądania zabezpieczeń. Dzięki temu można określić uprawnienia, które nie muszą być przyznawane na czas trwania odmowy metody, niezależnie od rzeczywistego uprawnień obiektów wywołujących w stosie wywołań. Jeśli przejście przez stos wykrywa metody, która jest zabezpieczony przez Odmów, a Jeśli żądane uprawnienie jest zawarte w odmówionych uprawnień, przejście przez stos nie powiedzie się. PermitOnly również zmienia domyślne zachowanie przeszukiwania stosu. Umożliwia ona kod, aby określić te uprawnienia, które mogą być udzielane, niezależnie od uprawnień obiektom wywołującym. Jeśli przejście przez stos wykrywa metody, która jest zabezpieczony przez PermitOnly i żądane uprawnienie nie jest uwzględniony w uprawnieniach, które są określone przez PermitOnly, przejście przez stos nie powiedzie się.
 

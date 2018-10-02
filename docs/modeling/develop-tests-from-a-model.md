@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 3cdffcb5d71d5caac11cbbb0882b79526862bffa
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 4f741b8b47b4ddf5b07cec2a612173a52bf5fbd9
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279859"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859786"
 ---
 # <a name="develop-tests-from-a-model"></a>Opracowywanie testów na podstawie modelu
 Wymagania i modele architektury można użyć, aby ułatwić organizowanie testów systemu i jego składników. Praktyka ta pomaga zagwarantować, że testowania wymagań które są ważne dla użytkowników i innych zainteresowanych stron i pomaga szybko aktualizować testów, gdy zmienią się wymagania. Jeśli używasz [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)], można także utrzymać łącza między modele i testy.
@@ -61,7 +61,7 @@ Wymagania i modele architektury można użyć, aby ułatwić organizowanie test�
 
 1.  W [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)], Utwórz wymagania i podstawą zestaw testów.
 
-     Wymagania, którą tworzysz jest element roboczy w [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Może być elementem pracy scenariusza użycia, wymagania lub przypadek użycia, w zależności od szablonu procesu, który projekt korzysta z [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)]. Aby uzyskać więcej informacji, zobacz [o Zwinne narzędzia i Agile zarządzanie projektem](/azure/devops/boards/backlogs/overview?view=vsts).
+     Wymagania, którą tworzysz jest element roboczy w [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Może być elementem pracy scenariusza użycia, wymagania lub przypadek użycia, w zależności od szablonu procesu, który projekt korzysta z Team Foundation. Aby uzyskać więcej informacji, zobacz [o Zwinne narzędzia i Agile zarządzanie projektem](/azure/devops/boards/backlogs/overview?view=vsts).
 
 2.  Elementem roboczym należy połączyć jeden lub więcej przypadków użycia w modelu.
 
@@ -130,7 +130,7 @@ Assert (countAfter == countBefore = 1);
 
  Z testowania punktu widzenia modelu wymagań może być traktowany jako skrót do testów. W związku z tym jest ważne, aby zachować relacji między testy i modelu w całym projekcie.
 
-##  <a name="Attaching"></a> Dołączanie przypadki testowe do elementów modelu
+## <a name="Attaching"></a> Dołączanie przypadki testowe do elementów modelu
  Jeśli projekt używa [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)], testy można połączyć elementy w modelu. Umożliwia szybkie znajdowanie testów wpływ zmiany w wymaganiach i pomaga śledzić, do którego zostały zrealizowane wymagania w zakresie.
 
  Testy można połączyć wszelkiego rodzaju elementu. Oto kilka przykładów:
@@ -149,7 +149,7 @@ Assert (countAfter == countBefore = 1);
 
 1.  W [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)], Utwórz wymagania i podstawą zestaw testów.
 
-     Wymagania, którą tworzysz jest element roboczy w [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Może być elementem pracy scenariusza użycia, wymagania lub przypadek użycia, w zależności od szablonu procesu, który projekt korzysta z [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)]. Aby uzyskać więcej informacji, zobacz [o Zwinne narzędzia i Agile zarządzanie projektem](/azure/devops/boards/backlogs/overview?view=vsts).
+     Wymagania, którą tworzysz jest element roboczy w [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Może być elementem pracy scenariusza użycia, wymagania lub przypadek użycia, w zależności od szablonu procesu, który projekt korzysta z Team Foundation. Aby uzyskać więcej informacji, zobacz [o Zwinne narzędzia i Agile zarządzanie projektem](/azure/devops/boards/backlogs/overview?view=vsts).
 
 2.  Elementem roboczym należy połączyć jeden lub więcej elementów w modelu.
 

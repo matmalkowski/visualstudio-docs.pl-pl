@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 420a17dbac9e0a3bf10b4c92baa108067ad44949
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: cfd6188bc4d48f26e85ae8778d75d2fa99ef0f25
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775584"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859682"
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>Odczytywanie modeli i diagramów w innych wersjach programu Visual Studio
 Po otwarciu modelu w wersji programu Visual Studio, który nie obsługuje tworzenia modelu modelu zostanie otwarty w trybie tylko do odczytu. W tym trybie można zmienić układ diagramy, ale nie można zmienić modelu.
@@ -26,7 +26,7 @@ Po otwarciu modelu w wersji programu Visual Studio, który nie obsługuje tworze
 ## <a name="obtaining-access-to-a-model-and-diagrams"></a>Uzyskiwanie dostępu do modeli i diagramów
  Do odczytywania diagram zależności, należy najpierw przy użyciu programu Visual Studio Otwórz projekt modelowania, a następnie Otwórz diagram znajdujący się w nim.
 
- Z tego powodu jeśli chcesz odczytać diagram zależności, należy również masz dostęp do projektu modelowania, w której został utworzony. Możesz to zrobić, uzyskując dostęp do projektu z [!INCLUDE[esprscc](../code-quality/includes/esprscc_md.md)], lub przez uzyskanie kopii plików projektu.
+ Z tego powodu jeśli chcesz odczytać diagram zależności, należy również masz dostęp do projektu modelowania, w której został utworzony. Można to zrobisz, uzyskując dostęp do projektu z kontroli źródła lub przez uzyskanie kopii plików projektu.
 
 > [!NOTE]
 >  To nie ma zastosowania do kodu mapy i .NET klasy diagramy wygenerowane z kodu. Można wyświetlić tych diagramów, niezależnie od projektu modelowania.
@@ -53,7 +53,7 @@ Po otwarciu modelu w wersji programu Visual Studio, który nie obsługuje tworze
 
  Możesz zapisać te zmiany. Jeśli chcesz zmiany były widoczne dla innych użytkowników, co najmniej trzeba wysłać zaktualizowany **.layout** plików.
 
-##  <a name="RelatedTopics"></a> Tematy pokrewne
+## <a name="RelatedTopics"></a> Tematy pokrewne
 
 |Tytuł|Opis|
 |-----------|-----------------|

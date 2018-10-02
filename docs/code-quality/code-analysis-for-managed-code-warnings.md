@@ -17,46 +17,46 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: a8c092543dc24be8ac84f683196f73c8fb264f9a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 600b5c7822232581cd01bd9bbf7616f4d1e9bb7c
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31919898"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859071"
 ---
 # <a name="code-analysis-for-managed-code-warnings"></a>Analiza kodu dla zarządzanego kodu — Ostrzeżenia
-Narzędzie do analizy kodu zarządzanego zawiera ostrzeżenia, które wskazują naruszeń zasady w bibliotekach kodu zarządzanego. Ostrzeżenia są podzielone na reguły obszarów, takich jak projekt, lokalizacji, wydajności i zabezpieczeń. Każde ostrzeżenie oznacza naruszenia reguły analizy kodu zarządzanego. Ta sekcja zawiera szczegółowe omówienie i przykłady dotyczące każdego ostrzeżenia analizy kodu zarządzanego.
+Narzędzie do analizy kodu zarządzanego zawiera ostrzeżenia, które wskazują naruszeń reguł w bibliotekach kodu zarządzanego. Ostrzeżenia są zorganizowane w obszarach reguł, takich jak projektu, lokalizacji, wydajność i bezpieczeństwo. Każde ostrzeżenie oznacza naruszenie reguły analizy kodu zarządzanego. Ta sekcja zawiera szczegółowe omówienie i przykłady dla każdego ostrzeżenia analizy kodu zarządzanego.
 
- W poniższej tabeli przedstawiono typ informacji dostępnych dla każdego ostrzeżenia.
+ W poniższej tabeli przedstawiono typ danych, który jest udostępniany dla każde ostrzeżenie.
 
 |Element|Opis|
 |----------|-----------------|
-|Typ|Właściwość TypeName reguły.|
-|CheckId|Unikatowy identyfikator reguły. Pomijanie ostrzeżenie-source używane CheckId i kategorii.|
+|Typ|Element TypeName dla tej reguły.|
+|CheckId|Unikatowy identyfikator dla tej reguły. CheckId i kategoria są używane do pomijania-source ostrzeżenia.|
 |Kategoria|Kategoria ostrzeżenia.|
-|Zmiana kluczowa|Określa, czy poprawka dla naruszenia reguły jest istotne zmiany. Fundamentalne zmiany oznacza, że zestaw, który ma zależności w elemencie docelowym, który spowodował naruszenie nie zostanie ponownie skompilowana z nowym stałej wersji i może się nie powieść w czasie wykonywania z powodu zmiany. Gdy dostępnych jest wiele poprawek i co najmniej jedną poprawkę są istotne zmiany jednego nie będzie, została określona zarówno "Krytyczne" i "Krytyczne z systemem innym niż".|
-|Przyczyna|Określonego kodu zarządzanego, która powoduje wygenerowanie ostrzeżenia reguły.|
+|Zmiana kluczowa|Czy poprawkę dotyczącą naruszenie reguły jest zmianą przerywającą. Istotne zmiany oznacza, że zestaw, który ma zależność w miejscu docelowym, który spowodował naruszenia nie zostanie ponownie skompilowana przy użyciu nowego stałej wersji i może się nie powieść w czasie wykonywania ze względu na zmianę. Jeśli dostępnych jest wiele poprawek i co najmniej jedną poprawkę jest zmianą przerywającą, co poprawki nie jest określony "Złamanie" i "Istotne niż".|
+|Przyczyna|Określonego kodu zarządzanego, który powoduje, że reguła ostrzeżenie będzie generowane.|
 |Opis|W tym artykule omówiono problemy, które znajdują się za ostrzeżenia.|
-|Jak naprawić naruszenia|Wyjaśniono, jak zmienić kod źródłowy, które spełniają reguły i uniemożliwić zostanie wygenerowane ostrzeżenie.|
-|Kiedy pominąć ostrzeżenia|Opisuje, gdy jest bezpiecznie pominąć ostrzeżenie z reguły.|
-|Przykładowy kod|Przykłady, które naruszają zasady i poprawić przykłady, które spełniają reguły.|
-|Ostrzeżenia pokrewne|Powiązane ostrzeżenia.|
+|Jak naprawić naruszenia|Wyjaśnia, jak zmiany kodu źródłowego, które spełniają reguły i uniemożliwić zostanie wygenerowane ostrzeżenie.|
+|Kiedy pominąć ostrzeżenia|Opisuje, kiedy jest bezpieczne ostrzeżenia z reguły.|
+|Przykładowy kod|Przykłady, które naruszają reguły i poprawić przykładów, które spełniają reguły.|
+|Powiązane ostrzeżenia|Powiązane ostrzeżenia.|
 
 ## <a name="in-this-section"></a>W tej sekcji
 
 |||
 |-|-|
-|[Ostrzeżenia dzięki CheckId](../code-quality/code-analysis-warnings-for-managed-code-by-checkid.md)|Wyświetla wszystkie ostrzeżenia dzięki CheckId|
-|[Ostrzeżenia dotyczące kryptografii](../code-quality/cryptography-warnings.md)|Ostrzeżenia, które obsługują bezpieczniejszy bibliotek i aplikacji za pośrednictwem prawidłowe użycie kryptograficzne.|
-|[Ostrzeżenia dotyczące projektu](../code-quality/design-warnings.md)|Ostrzeżenia, które obsługują odpowiedniej biblioteki projektu określony przez [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] zaleceń dotyczących projektowania.|
-|[Ostrzeżenia dotyczące globalizacji](../code-quality/globalization-warnings.md)|Ostrzeżenia, które obsługują bibliotek gotowe i aplikacji.|
-|[Ostrzeżenia dotyczące współdziałania](../code-quality/interoperability-warnings.md)|Ostrzeżenia, które obsługują funkcję interakcji z klientami COM.|
+|[Ostrzeżenia według identyfikatora CheckId](../code-quality/code-analysis-warnings-for-managed-code-by-checkid.md)|Wyświetla wszystkie ostrzeżenia dzięki CheckId|
+|[Ostrzeżenia dotyczące kryptografii](../code-quality/cryptography-warnings.md)|Ostrzeżenia, które obsługują bezpieczniejsze biblioteki i aplikacje przy użyciu poprawnego użycia kryptografii.|
+|[Ostrzeżenia dotyczące projektu](../code-quality/design-warnings.md)|Ostrzeżenia, które obsługują odpowiedniej biblioteki projekt zgodnie z wytycznymi projektowania programu .NET Framework.|
+|[Ostrzeżenia dotyczące globalizacji](../code-quality/globalization-warnings.md)|Ostrzeżenia, które obsługują gotowych do biblioteki i aplikacje.|
+|[Ostrzeżenia dotyczące współdziałania](../code-quality/interoperability-warnings.md)|Ostrzeżenia, które obsługują interakcji z klientami COM.|
 |[Ostrzeżenia dotyczące konserwacji](../code-quality/maintainability-warnings.md)|Ostrzeżenia, które obsługują konserwacji biblioteki i aplikacji.|
 |[Ostrzeżenia dotyczące mobilności](../code-quality/mobility-warnings.md)|Ostrzeżenia, które obsługują efektywne zużycie energii.|
-|[Ostrzeżenia dotyczące nazewnictwa](../code-quality/naming-warnings.md)|Ostrzeżenia, które obsługują przestrzeganie konwencje nazewnictwa [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] zaleceń dotyczących projektowania.|
-|[Ostrzeżenia dotyczące wydajności](../code-quality/performance-warnings.md)|Ostrzeżenia, które obsługują bibliotek wysokiej wydajności i aplikacji.|
-|[Ostrzeżenia dotyczące przenośności](../code-quality/portability-warnings.md)|Ostrzeżenia, które obsługują przenośność na różnych platformach.|
-|[Ostrzeżenia dotyczące niezawodności](../code-quality/reliability-warnings.md)|Ostrzeżenia, które obsługują niezawodności biblioteki i aplikacji, takich jak odpowiednie użycie pamięci i wątku.|
-|[Ostrzeżenia dotyczące zabezpieczeń](../code-quality/security-warnings.md)|Ostrzeżenia, które obsługują bezpieczniejszy bibliotek i aplikacji.|
-|[Ostrzeżenia dotyczące użycia](../code-quality/usage-warnings.md)|Ostrzeżenia, które obsługują odpowiednie użycie [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].|
-|[Błędy zasad analizy kodu](../code-quality/code-analysis-policy-errors.md)|Błędy, które wystąpić, jeśli zasad analizy kodu nie jest spełniony na zaewidencjonowania.|
+|[Ostrzeżenia dotyczące nazewnictwa](../code-quality/naming-warnings.md)|Ostrzeżenia, które obsługują gotowość do konwencji nazewnictwa wytycznych projektowych programu .NET Framework.|
+|[Ostrzeżenia dotyczące wydajności](../code-quality/performance-warnings.md)|Ostrzeżenia, które obsługują bibliotek o wysokiej wydajności i aplikacji.|
+|[Ostrzeżenia dotyczące przenośności](../code-quality/portability-warnings.md)|Ostrzeżenia, które obsługują przenoszenia na różnych platformach.|
+|[Ostrzeżenia dotyczące niezawodności](../code-quality/reliability-warnings.md)|Ostrzeżenia, które obsługują niezawodność biblioteki i aplikacji, takich jak poprawne użycie pamięci i wątku.|
+|[Ostrzeżenia dotyczące zabezpieczeń](../code-quality/security-warnings.md)|Ostrzeżenia, które obsługują bezpieczniejsze biblioteki i aplikacje.|
+|[Ostrzeżenia dotyczące użycia](../code-quality/usage-warnings.md)|Ostrzeżenia, które obsługują odpowiedniego użycia programu .NET Framework.|
+|[Błędy zasad analizy kodu](../code-quality/code-analysis-policy-errors.md)|Błędy, które występują, jeśli zasady analizy kodu nie zostanie spełnione, podczas ewidencjonowania.|

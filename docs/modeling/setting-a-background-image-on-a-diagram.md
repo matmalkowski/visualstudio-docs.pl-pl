@@ -9,15 +9,15 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 3086f6f99497789eace3ff999a8fa0693b497324
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 82466360fd4f891d28e0218a540d27c803a39662
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567367"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47858877"
 ---
 # <a name="setting-a-background-image-on-a-diagram"></a>Ustawienie obrazu tła w diagramie
-W [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] wizualizacji i modelowania SDK obraz tła można ustawić dla wygenerowanego projektanta za pomocą kodu niestandardowego.
+W Visual Studio Visualization i Modeling SDK należy określić obraz tła dla wygenerowanego projektanta przy użyciu niestandardowego kodu.
 
 ## <a name="setting-the-background-image"></a>Ustawienie obrazu tła
 
@@ -45,7 +45,7 @@ W [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] wizualizacji i model
 
 11. Jeśli brakuje Resources.Designer.cs, kliknij plik Resources.resx w **Eksploratora rozwiązań**.
 
-12. W **właściwości** oknie `Custom Tool` właściwość `ResXFileCodeGenerator`.
+12. W oknie **Właściwości** ustaw właściwość `Custom Tool` na `ResXFileCodeGenerator`. 
 
 13. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy projekt Dsl, wskaż **Dodaj**i kliknij przycisk **nowy Folder**.
 

@@ -21,12 +21,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 0bd26eecb1fba0aea266daf26eb071b8c29165ec
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 8716a16ea3b141e7c5053e526d92531d0a77bc1e
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45546762"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859409"
 ---
 # <a name="ca1303-do-not-pass-literals-as-localized-parameters"></a>CA1303: Nie należy przekazywać literałów jako parametrów zlokalizowanych
 
@@ -38,7 +38,7 @@ ms.locfileid: "45546762"
 |Zmiana kluczowa|Bez podziału|
 
 ## <a name="cause"></a>Przyczyna
- Metoda przekazuje ciąg literału jako parametr do konstruktora lub metody w [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] klasy biblioteki i ciąg ten powinien być możliwych do zlokalizowania.
+ Metoda przekazuje ciąg literału jako parametr do konstruktora lub metody w bibliotece klas programu .NET Framework, a ciąg powinien być możliwy do zlokalizowania.
 
  To ostrzeżenie jest zgłaszane, gdy literał ciągu jest przekazywany jako wartość parametru lub właściwość dotyczy co najmniej jeden z następujących przypadkach:
 

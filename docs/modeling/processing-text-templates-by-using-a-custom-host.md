@@ -12,26 +12,26 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: e4546c75f424f5091a22e9acd6cceb72f5d8038c
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 87d9f5f489bffcc624ff758c89e5d3a230a68d01
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567093"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859344"
 ---
 # <a name="process-text-templates-by-using-a-custom-host"></a>Przetwarzanie szablonów tekstowych przy użyciu hosta niestandardowego
 
-*Przekształcenia szablonu tekstu* przetwarzanie trwa *szablon tekstowy* pliku jako dane wejściowe i tworzy plik tekstowy jako dane wyjściowe. Można wywołać aparat przekształcenia tekstu z [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozszerzenia, lub z samodzielnej aplikacji uruchomionej na komputerze, na którym [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] jest zainstalowany. Jednakże, należy podać *hosta szablonów tekstowych*. Ta klasa łączy szablon ze środowiskiem, znajdując zasoby, takie jak zestawy i dołączane pliki, oraz zajmując się obsługą danych wyjściowych i komunikatów o błędach.
+*Przekształcenia szablonu tekstu* przetwarzanie trwa *szablon tekstowy* pliku jako dane wejściowe i tworzy plik tekstowy jako dane wyjściowe. Możesz wywołać aparat przekształcenia tekstu z rozszerzenia programu Visual Studio lub z samodzielnej aplikacji uruchomionej na komputerze, na którym jest zainstalowany program Visual Studio. Jednakże, należy podać *hosta szablonów tekstowych*. Ta klasa łączy szablon ze środowiskiem, znajdując zasoby, takie jak zestawy i dołączane pliki, oraz zajmując się obsługą danych wyjściowych i komunikatów o błędach.
 
 > [!TIP]
-> Jeśli piszesz pakiet lub rozszerzenie, która jest uruchamiana w ramach [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], rozważ użycie usługi szablonów tekstowych zamiast pisania własnego hosta. Aby uzyskać więcej informacji, zobacz [wywoływanie transformacji tekstu w rozszerzeniu VS](../modeling/invoking-text-transformation-in-a-vs-extension.md).
+> Jeśli piszesz pakiet lub rozszerzenie, która jest uruchamiana w ramach programu Visual Studio, należy rozważyć użycie usługi szablonów tekstowych zamiast pisania własnego hosta. Aby uzyskać więcej informacji, zobacz [wywoływanie transformacji tekstu w rozszerzeniu VS](../modeling/invoking-text-transformation-in-a-vs-extension.md).
 
 > [!NOTE]
-> Nie zaleca się używania przekształceń szablonu tekstu w aplikacjach serwerowych. Zaleca się używanie przekształceń szablonu tekstu tylko w pojedynczych wątkach. Jest to spowodowane tym, że aparat szablonów tekstowych ponownie używa pojedynczego elementu AppDomain do tłumaczenia, skompilowania i wykonania szablonów. Przetłumaczony kod nie jest odporny na wielowątkowość. Aparat jest przeznaczony do przetwarzania plików pojedynczo, ponieważ są one [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projektu w czasie projektowania.
+> Nie zaleca się używania przekształceń szablonu tekstu w aplikacjach serwerowych. Zaleca się używanie przekształceń szablonu tekstu tylko w pojedynczych wątkach. Jest to spowodowane tym, że aparat szablonów tekstowych ponownie używa pojedynczego elementu AppDomain do tłumaczenia, skompilowania i wykonania szablonów. Przetłumaczony kod nie jest odporny na wielowątkowość. Aparat jest przeznaczony do przetwarzania plików pojedynczo, są one w projekcie programu Visual Studio w czasie projektowania.
 >
 > Dla aplikacji środowiska wykonawczego, należy wziąć pod uwagę przy użyciu szablonów tekstowych wstępnie przetworzony: zobacz [Generowanie tekstu czasu wykonywania przy użyciu szablonów tekstowych T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
-Jeśli aplikacja używa zestawu szablonów, które są ustalane w czasie kompilacji, łatwiej jest używać wstępnie przetworzonych szablonów tekstowych. Można również użyć tego podejścia, jeśli aplikacja jest uruchamiana na komputerze, na którym [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nie jest zainstalowany. Aby uzyskać więcej informacji, zobacz [Generowanie tekstu czasu wykonywania przy użyciu szablonów tekstowych T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
+Jeśli aplikacja używa zestawu szablonów, które są ustalane w czasie kompilacji, łatwiej jest używać wstępnie przetworzonych szablonów tekstowych. Takie podejście można skorzystać, jeśli aplikacja jest uruchamiana na komputerze, na którym nie zainstalowano programu Visual Studio. Aby uzyskać więcej informacji, zobacz [Generowanie tekstu czasu wykonywania przy użyciu szablonów tekstowych T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
 ## <a name="execute-a-text-template-in-your-application"></a>Wykonywanie szablonu tekstu w aplikacji
 
@@ -53,7 +53,7 @@ string output = engine.ProcessTemplate(templateString, host);
  <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName> jest zdefiniowany w **Microsoft.VisualStudio.TextTemplating.\*. 0 Biblioteka dll**, i <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost> jest zdefiniowany w **Microsoft.VisualStudio.TextTemplating.Interfaces.\*. 0 Biblioteka dll**.
 
 ## <a name="in-this-section"></a>W tej sekcji
- [Wskazówki: Tworzenie niestandardowego hosta szablonu tekstowego](../modeling/walkthrough-creating-a-custom-text-template-host.md) dowiesz się, jak utworzyć niestandardowego hosta szablonu tekstu, dzięki której poza dostępne funkcje szablonu tekstu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+ [Wskazówki: Tworzenie niestandardowego hosta szablonu tekstowego](../modeling/walkthrough-creating-a-custom-text-template-host.md) dowiesz się, jak utworzyć niestandardowego hosta szablonu tekstu, który udostępnia funkcje szablonu tekstu poza programem Visual Studio.
 
 ## <a name="reference"></a>Tematy pomocy
  <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>

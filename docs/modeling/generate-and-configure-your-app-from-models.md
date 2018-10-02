@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 1eb8492a1f4432eb54e7333eb59cd14eb06335b9
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: b4ab0a7cf012d2230437bceb96da80c78a4b493a
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176814"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47858506"
 ---
 # <a name="generate-and-configure-your-app-from-models"></a>Generowanie i konfigurowanie aplikacji na podstawie modeli
 Można wygenerować lub skonfigurować poszczególnych części aplikacji z modelu.
@@ -22,7 +22,7 @@ Można wygenerować lub skonfigurować poszczególnych części aplikacji z mode
  Model reprezentuje wymagania bezpośrednio niż kod. Wynikające zachowanie aplikacji bezpośrednio z modelu, można odpowiedzieć zmienionych wymagań znacznie szybciej i niezawodny niż przez aktualizowania kodu. Mimo że niektóre roboczego jest wymagane do skonfigurowania tworzenia elementów pochodnych, inwestycji jest zwracany, jeśli oczekujesz, zmiany w wymaganiach lub jeśli planujesz wprowadzić kilka wariantów produktu.
 
 ## <a name="generating-the-code-of-your-application-from-a-model"></a>Generowanie kodu aplikacji na podstawie modelu
- Najprostszym sposobem, aby wygenerować kod jest przy użyciu szablonów tekstowych. Istnieje możliwość wygenerowania kodu, w tym samym [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozwiązania, w którym są przechowywane modelu. Aby uzyskać więcej informacji, zobacz:
+ Najprostszym sposobem, aby wygenerować kod jest przy użyciu szablonów tekstowych. Istnieje możliwość wygenerowania kodu, w tym samym rozwiązaniu Visual Studio, w którym są przechowywane modelu. Aby uzyskać więcej informacji, zobacz:
 
 -   [Generowanie kodu czasu projektowania przy użyciu szablonów tekstowych T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
 
