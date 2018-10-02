@@ -198,9 +198,9 @@ Poniższe kroki wykonuje przepływ uwierzytelniania i opisano części projektu,
 
 1. Gdy wszystko będzie gotowe, zatrzymać serwer ponownie zmianami i zatwierdzanie ich do kontroli źródła.
 
-### <a name="question-what-is-the-purpose-of-the--crsftoken--tag-that-appears-in-the-form-elements"></a>Pytanie: Co to jest celem {% crsf_token %} tagów, które pojawia się w \<formularza\> elementy?
+### <a name="question-what-is-the-purpose-of-the--crsftoken--tag-that-appears-in-the-form-elements"></a><a name="question-what-is-the-purpose-of-the--csrftoken--tag-that-appears-in-the-form-elements"></a>Pytanie: Co to jest celem {% csrf_token %} tagów, które pojawia się w \<formularza\> elementy?
 
-Odpowiedź: `{% crsf_token %}` znacznik obejmuje wbudowane w Django [fałszerstwo żądania międzywitrynowego (crsf) ochrony](https://docs.djangoproject.com/en/2.0/ref/csrf/) (Django docs). Zazwyczaj Dodaj ten tag do dowolnego elementu, która obejmuje metody żądania POST, PUT lub DELETE, takie jak formularz. Funkcja renderowania szablonu (`render`) wstawia na potrzeby ochrony.
+Odpowiedź: `{% csrf_token %}` znacznik obejmuje wbudowane w Django [fałszerstwo żądania międzywitrynowego (csrf) ochrony](https://docs.djangoproject.com/en/2.0/ref/csrf/) (Django docs). Zazwyczaj Dodaj ten tag do dowolnego elementu, która obejmuje metody żądania POST, PUT lub DELETE, takie jak formularz. Funkcja renderowania szablonu (`render`) wstawia na potrzeby ochrony.
 
 ## <a name="next-steps"></a>Następne kroki
 
