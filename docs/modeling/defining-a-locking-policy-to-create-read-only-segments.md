@@ -9,15 +9,15 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: a0d17249ad15a8d5efd7717420a8b6a94115509f
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 6567be5a82d4b344b3850a1a66e0b5b23f1b8f9d
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566771"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859097"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Definiowanie zasad blokowania na potrzeby tworzenia segmentów tylko do odczytu
-Interfejs API niezmienności [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] wizualizacji i modelowania SDK umożliwia programowi blokady część lub całość model języka specyficznego dla domeny (DSL), aby można go odczytać ale niezmienione. Tej opcji tylko do odczytu może służyć, na przykład, aby poprosić współpracowników, aby dodać adnotacje i przejrzeć modelu DSL użytkownika, ale może zabronić im zmianę oryginału.
+Interfejs API niezmienności programu Visual Studio Visualization i Modeling SDK umożliwia programowi można zablokować część lub całość model języka specyficznego dla domeny (DSL), tak aby można go odczytać ale niezmienione. Tej opcji tylko do odczytu może służyć, na przykład, aby poprosić współpracowników, aby dodać adnotacje i przejrzeć modelu DSL użytkownika, ale może zabronić im zmianę oryginału.
 
  Ponadto, ponieważ autor DSL, można zdefiniować *zasad blokowania.* Zasad blokowania definiuje, które blokady są dozwolone, niedozwolone lub obowiązkowe. Na przykład podczas publikowania DSL może zachęcać deweloperom firm rozbudowuj je przy użyciu nowych poleceń. Ale zasad blokowania można również użyć, aby uniemożliwić zmianę stanu tylko do odczytu określonego części modelu.
 

@@ -9,12 +9,12 @@ description: Dowiedz się więcej o pełną gamę korzyści dostępne w portalu 
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: fe3bfed2c777f8c7a2bab38619696285e5c5b1f1
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 6bd5e0ac308a8644f6428deb7468e00007f7c70b
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279365"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859023"
 ---
 # <a name="using-the-subscriber-portal---myspanspanvisualstudiospanspancom"></a>Korzystanie z portalu dla subskrybentów — Moje. <span> </span>visualstudio<span></span>.com
 
@@ -22,13 +22,13 @@ Portal subskrypcji programu Visual Studio [ https://my.visualstudio.com ](https:
 
 Za pomocą portalu wymaga zalogowanie na tożsamość skojarzoną z Twoją subskrypcją.  Może to być Twoje konta Microsoft (MSA) lub adresu e-mail udostępnionego przez organizację, takich jak pracodawca lub szkoła.  Dowiedz się więcej o [logowania](signing-in.md).
 
-Portal jest zorganizowana w sześć stron.  Każda Strona zapewnia dostęp do różnych produktów lub usług zawartych w ramach subskrypcji.  Sześć stron są korzyści, pliki do pobrania, klucze produktów, subskrypcji, pomocy technicznej i portalu Marketplace.
+Portal jest zorganizowana w sześć stron.  Każda Strona zapewnia dostęp do różnych produktów lub usług zawartych w ramach subskrypcji.  Sześć stron są korzyści, pliki do pobrania, klucze produktów, subskrypcji, pomocy technicznej i portalu Marketplace. 
 
 ## <a name="benefitshttpsmyvisualstudiocombenefitswtmcidomsftdocs"></a>[Korzyści](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)
 Narzędzia i usługi dostarczane w ramach subskrypcji są wyświetlane jako "Kafelki" na stronie korzyści.  Nie wszystkie pakiety korzyści są uwzględniane w przypadku wszystkich subskrypcji. Kafelki są podzielone na trzy kategorie: narzędzia, Professional, programowania i pomocy technicznej.  Jeśli używasz programu Visual Studio Dev Essentials, widoczna będzie również zatytułowany kategorii polecane, obejmującą wybrane korzyści związane z trzech kategorii.
 
 ### <a name="tools"></a>Narzędzia
-Kategoria narzędzia jest, gdzie znajdują się podstawowe narzędzia programowania, takich jak Visual Studio IDE, usługom DevOps platformy Azure, jak również narzędzi dostarczanych przez naszych partnerów.  Zobaczysz również usług, takich jak platforma Azure i programu Visual Studio App Center.
+Kategoria narzędzia jest, gdzie znajdują się podstawowe narzędzia programowania, takich jak Visual Studio IDE, DevOps platformy Azure, jak również narzędzi dostarczanych przez naszych partnerów.  Zobaczysz również usług, takich jak platforma Azure i programu Visual Studio App Center.
 
 ### <a name="professional-development"></a>Profesjonalne programowanie
 Ta kategoria zawiera takie korzyści, takich jak szkolenia online firmy Microsoft i jej partnerów jak Subskrypcja magazynu MSDN Magazine, wszystkie, aby pomóc Ci rozwiń swoje umiejętności programowania i zaznajomieni z każdym aspektem kodu.
@@ -45,7 +45,7 @@ Aby ułatwić dla subskrybentów, którzy mają wiele subskrypcji skojarzonych z
 Odwiedź stronę klucze produktu, aby uzyskać klucze do instalowania i aktywowania produktów i aby zobaczyć, jakie klucze już wykorzystana.  Możesz nawet wyeksportować listę wszystkich kluczy dla bezpiecznego przechowywania.
 
 ## <a name="subscriptionshttpsmyvisualstudiocomsubscriptionswtmcidomsftdocs"></a>[Subskrypcje](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)
-Na stronie subskrypcje zapewnia możliwości, aby wyświetlić subskrypcje, których właścicielem, przełączyć się między subskrypcjami, odnawiać je i aktywowanie nowych subskrypcji. Można również skojarzyć subskrypcje, których dostęp, używając Account Microsoft z kontem alternatywnych, które jest już skojarzony z istniejącymi zasobami programu Visual Studio IDE, usługom DevOps platformy Azure lub usługi Azure.
+Na stronie subskrypcje zapewnia możliwości, aby wyświetlić subskrypcje, których właścicielem, przełączyć się między subskrypcjami, odnawiać je i aktywowanie nowych subskrypcji. Można również skojarzyć subskrypcje, których dostęp, używając Account Microsoft z kontem alternatywnych, które jest już skojarzony z istniejącymi zasobami programu Visual Studio IDE, DevOps platformy Azure lub na platformie Azure.
 
 ## <a name="support"></a>Obsługa
 
@@ -53,4 +53,4 @@ Oprócz korzyści indywidualnej znalezione w kategorii pomocy technicznej na str
 
 ## <a name="marketplacehttpsmarketplacevisualstudiocom"></a>[Portal Marketplace](https://marketplace.visualstudio.com/)
 
-Potrzebujesz odnowić subskrypcję chmury programu Visual Studio?  Czy chcesz pobrać najnowsze rozszerzenia dla produktów z rodziny Visual Studio?  Portal Marketplace ułatwiają użytkownikom odnalezienie rozszerzeń, narzędzi i usług, które ulepszyć usługom DevOps platformy Azure, Team Foundation Server i Visual Studio Code. Można nawet zostać wydawcą i opublikować swoje własne rozszerzenia w portalu Marketplace.
+Potrzebujesz odnowić subskrypcję chmury programu Visual Studio?  Czy chcesz pobrać najnowsze rozszerzenia dla produktów z rodziny Visual Studio?  Portal Marketplace ułatwiają użytkownikom odnalezienie rozszerzeń, narzędzi i usług, które ulepszyć DevOps platformy Azure, Team Foundation Server i Visual Studio Code. Można nawet zostać wydawcą i opublikować swoje własne rozszerzenia w portalu Marketplace.

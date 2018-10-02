@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b2dc7b322d6a1e812e88930f1586458ac892249b
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: ca9047866b5b8f030ee8e1f5a043683234edeb72
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45549802"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859539"
 ---
 # <a name="ca2147-transparent-methods-may-not-use-security-asserts"></a>CA2147: Jawne metody nie mogą używać potwierdzeń zabezpieczeń
 |||
@@ -40,7 +40,7 @@ ms.locfileid: "45549802"
 
  W czasie wszelkie wywołania do wykonywania <xref:System.Security.CodeAccessPermission.Assert%2A> z przezroczystego kodu spowoduje, że <xref:System.InvalidOperationException> zostanie wygenerowany. Taka sytuacja może wystąpić, oba zestawy przezroczyste 100%, a także na pulpicie zestawów mieszanych przezroczysto krytyczny, w którym jest zadeklarowana jako przezroczysty metody lub typu, ale zawiera Assert zaznacza deklaratywne lub imperatywne.
 
- [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 2.0 wprowadzono funkcję o nazwie *przezroczystości*. Poszczególne metody, pola, interfejsy, klas i typów może być przezroczysty lub krytyczny.
+ .NET Framework 2.0 wprowadzono funkcję o nazwie *przezroczystości*. Poszczególne metody, pola, interfejsy, klas i typów może być przezroczysty lub krytyczny.
 
  Przezroczysty kod nie jest dozwolony do podniesienia uprawnień zabezpieczeń. W związku z tym wszelkie uprawnienia udzielone lub żądać go automatycznie są przekazywane za pośrednictwem kodu domeny aplikacji obiektu wywołującego lub hosta. Wybierającym przykłady potwierdzenia, LinkDemands, SuppressUnmanagedCode, i `unsafe` kodu.
 

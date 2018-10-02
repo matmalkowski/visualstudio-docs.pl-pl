@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d700be4cec30bf27dc826b220a1e318cdcd14c99
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: 2b9378f64bce3c1da95120b6456767f12b34d379
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47028952"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859575"
 ---
 # <a name="create-an-offline-installation-of-visual-studio-2017"></a>Tworzenie instalacji offline programu Visual Studio 2017
 
@@ -60,6 +60,9 @@ Rozpocznij, pobierając program inicjujący Instalatora programu Visual Studio d
 ### <a name="step-2---create-a-local-install-cache"></a>Krok 2 — Tworzenie instalacji lokalnej pamięci podręcznej
 
 Musi mieć połączenie internetowe, aby ukończyć ten krok.
+
+> [!IMPORTANT]
+> Po zainstalowaniu programu Visual Studio Community 2017, musisz aktywować go w ciągu 30 dni od zainstalowania. Wymaga to dostępu do Internetu.
 
 Otwórz wiersz polecenia i użyj jednego z poleceń w poniższych przykładach. Przykłady, które są wymienione w tym miejscu przyjęto założenie, że korzystasz z wersji Community programu Visual Studio; Dostosuj polecenia odpowiednie dla posiadanej wersji.
 

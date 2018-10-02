@@ -9,33 +9,33 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: f5aa524fbaa9b01200728f4031887adce6050329
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e1d485e647f6bb32ea0685ee6098ff8bec19b2a2
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31965982"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47858606"
 ---
 # <a name="working-with-domain-specific-language-solutions"></a>Praca z rozwiązaniami dotyczącymi języka specyficznego dla domeny
-Języka specyficznego dla domeny (DSL) jest tworzony przy użyciu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozwiązania. Ta sekcja ma o tym, jak skonfigurować i dostosować rozwiązania.
+Języka specyficznego dla domeny (DSL) jest tworzony za pomocą rozwiązania Visual Studio. W tej sekcji znajdują się informacje dotyczące konfigurowania i dostosowywania rozwiązania.
 
 ## <a name="in-this-section"></a>W tej sekcji
- [O językach specyficznego dla domeny](../modeling/about-domain-specific-languages.md) omówiono sposób rozwijać DSLs i zastosować je.
+ [Języki specyficzne dla domeny — informacje](../modeling/about-domain-specific-languages.md) w tym artykule omówiono sposób tworzenia językami DSL oraz stosować je.
 
- [Omówienie narzędzia języka specyficznego dla domeny](../modeling/overview-of-domain-specific-language-tools.md) opisano najważniejsze zadania tworzenia i dystrybuowania DSL.
+ [Przegląd narzędzi języka specyficznego dla domeny](../modeling/overview-of-domain-specific-language-tools.md) wyjaśnia najważniejsze zadania związanym z opracowywaniem i dystrybucja języka DSL.
 
- [Przegląd interfejsu użytkownika narzędzia języka specyficznego dla domeny](../modeling/overview-of-the-domain-specific-language-tools-user-interface.md) opisuje systemu windows, które są skojarzone z DSLs.
+ [Omówienie interfejsu użytkownika narzędzi języka specyficznego dla domeny](../modeling/overview-of-the-domain-specific-language-tools-user-interface.md) opisuje systemu windows, które są skojarzone z językami DSL.
 
- [Wybieranie szablonów rozwiązania języka specyficznego dla domeny](../modeling/choosing-a-domain-specific-language-solution-template.md) wyjaśniono, jak wybrać szablon, aby uruchomić projekt DSL.
+ [Wybieranie szablonu rozwiązania dotyczącego języka specyficznego dla domeny](../modeling/choosing-a-domain-specific-language-solution-template.md) wyjaśnia, jak wybrać szablon, aby uruchomić projekt języka DSL.
 
- [Porady: tworzenie rozwiązania języka specyficznego dla domeny](../modeling/how-to-create-a-domain-specific-language-solution.md) opisano kroki, aby skonfigurować DSL.
+ [Porady: tworzenie rozwiązania języka dotyczącego określonej domeny](../modeling/how-to-create-a-domain-specific-language-solution.md) opisano kroki, aby skonfigurować języka DSL.
 
- [Praca z diagramu definicji DSL](../modeling/working-with-the-dsl-definition-diagram.md) opisano części diagramu.
+ [Praca z diagramem definicji DSL](../modeling/working-with-the-dsl-definition-diagram.md) opisano części diagramu.
 
- [Praca z Eksploratora języka specyficznego dla domeny](../modeling/working-with-the-domain-specific-language-explorer.md) wyjaśniono zawartości Eksploratora
+ [Praca z Eksploratorem języka specyficznego dla domeny](../modeling/working-with-the-domain-specific-language-explorer.md) wyjaśnia zawartość Eksploratora
 
- [Porady: Zmienianie Namespace języka specyficznego dla domeny](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md) kod można wygenerować na podstawie DSL ma przestrzeni nazw, która jest ustawiany podczas inicjowania rozwiązania, ale można ją zmienić później.
+ [Porady: Zmienianie Namespace języka specyficznego dla domeny](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md) kodu generowania za pomocą języka DSL ma przestrzeni nazw, która jest ustawiany podczas inicjowania rozwiązania, ale można go zmienić później.
 
- [Porady: rozszerzanie projektanta języka specyficznego dla domeny](../modeling/how-to-extend-the-domain-specific-language-designer.md) Projektant DSL z poleceń menu można dostosować.
+ [Porady: rozszerzanie projektanta języka specyficznego dla domeny](../modeling/how-to-extend-the-domain-specific-language-designer.md) można dostosować projektanta DSL za pomocą poleceń menu.
 
- [Jak zautomatyzować Przekształć wszystkie szablony](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a) w celu uniknięcia, klikając polecenie Przekształć wszystkie szablony, można tworzyć i automatyczne częścią kompilacji.
+ [Jak zautomatyzować Przekształć wszystkie szablony](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a) w celu uniknięcia, klikając przycisk Przekształć wszystkie szablony, można tworzyć i automatyczne część kompilacji.
