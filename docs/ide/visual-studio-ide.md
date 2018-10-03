@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4465eff996664dca2fe1b5dcb31b5d7af049db53
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 751bf673cd16e50c68aff1eb5d27247cdcd1ca01
+ms.sourcegitcommit: e7b3fc8c788fb49d6ba4215abf27139f2a08e1a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320790"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48120406"
 ---
 # <a name="welcome-to-the-visual-studio-ide"></a>Witamy w środowisku IDE programu Visual Studio
 
@@ -98,7 +98,7 @@ Oto niektóre z najpopularniejszych funkcji w programie Visual Studio, które u�
 
    ![Przejdź do definicji](../ide/media/go-to-definition-menu.png)
 
-- [Wgląd do definicji](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)
+- [Zobacz definicję](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)
 
    **Peek Definition** okno zawiera definicję metody lub typu, bez konieczności otwierania pliku.
 

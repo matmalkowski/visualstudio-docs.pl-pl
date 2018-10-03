@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aeda3752fdee6ce36094c68758d99c612c82fd76
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 907aa9eb69bbbbe23f147472995cc7a4accd3679
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320842"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860442"
 ---
 # <a name="quickstart-first-look-at-profiling-tools"></a>Szybki Start: Pierwsze spojrzenie na narzędziach profilowania
 
@@ -119,7 +119,7 @@ Po wybraniu przedziale czasu na wykresach i **wyświetlić szczegóły**, szczeg
 
 Wykresy umożliwia również ustalić, czy istnieją powiązane procesora CPU lub GPU powiązany wąskich gardeł wydajności.
 
-## <a name="analyze-performance-javascript"></a>Analizowanie wydajności (JavaScript)
+## <a name="analyze-performance-javascript-uwp"></a>Analizowanie wydajności (JavaScript dla platformy UWP)
 
 W przypadku aplikacji platformy uniwersalnej systemu Windows można użyć narzędzi pamięć języka JavaScript i HTML UI Responsiveness.
 
@@ -155,8 +155,8 @@ Poniżej przedstawiono listę różnych narzędzi oferowanych przez program Visu
   
 |Narzędzia wydajności|Windows desktop|Platforma UWP|ASP.NET/ASP.NET Core| 
 |----------------------|---------------------|-------------|-------------|  
-|[Użycie pamięci](../profiling/memory-usage.md)|Tak|Tak|Tak| 
 |[Użycie procesora CPU](../profiling/cpu-usage.md)|Tak|Tak|Tak|
+|[Użycie pamięci](../profiling/memory-usage.md)|Tak|Tak|Tak| 
 |[Użycie procesora GPU](../debugger/gpu-usage.md)|Tak|Tak|Brak| 
 |[Oś czasu aplikacji](../profiling/application-timeline.md)|Tak|Tak|Brak|
 |[Wskazówki dotyczące wydajności](../profiling/perftips.md)|Tak|tak, aby XAML nie dla kodu HTML|Tak|

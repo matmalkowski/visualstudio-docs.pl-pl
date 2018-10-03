@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 419c9f54d0c537d417034eb4375d6402951609bd
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: cc238b6a8ba1a190471d25952a4d7c976ca56b9f
+ms.sourcegitcommit: e7b3fc8c788fb49d6ba4215abf27139f2a08e1a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42624227"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48120358"
 ---
 # <a name="step-5-authenticate-users-in-django"></a>Krok 5: Uwierzytelnianie użytkowników w Django
 
@@ -198,7 +198,7 @@ Poniższe kroki wykonuje przepływ uwierzytelniania i opisano części projektu,
 
 1. Gdy wszystko będzie gotowe, zatrzymać serwer ponownie zmianami i zatwierdzanie ich do kontroli źródła.
 
-### <a name="question-what-is-the-purpose-of-the--crsftoken--tag-that-appears-in-the-form-elements"></a><a name="question-what-is-the-purpose-of-the--csrftoken--tag-that-appears-in-the-form-elements"></a>Pytanie: Co to jest celem {% csrf_token %} tagów, które pojawia się w \<formularza\> elementy?
+### <a name="question-what-is-the-purpose-of-the--csrftoken--tag-that-appears-in-the-form-elements"></a>Pytanie: Co to jest celem {% csrf_token %} tagów, które pojawia się w \<formularza\> elementy?
 
 Odpowiedź: `{% csrf_token %}` znacznik obejmuje wbudowane w Django [fałszerstwo żądania międzywitrynowego (csrf) ochrony](https://docs.djangoproject.com/en/2.0/ref/csrf/) (Django docs). Zazwyczaj Dodaj ten tag do dowolnego elementu, która obejmuje metody żądania POST, PUT lub DELETE, takie jak formularz. Funkcja renderowania szablonu (`render`) wstawia na potrzeby ochrony.
 

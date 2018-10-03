@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 80e76fd7677eab8c56827dcdbaeaf42ee72c5c28
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 9b2710b6efcc765f98977c2730c5f729e3a8b260
+ms.sourcegitcommit: e7b3fc8c788fb49d6ba4215abf27139f2a08e1a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081787"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48120386"
 ---
 # <a name="msbuild-reference"></a>Odwołanie do narzędzia MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] jest systemem kompilacji dla [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Poniższe linki prowadzą do tematów, które zawierają [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] informacje referencyjne.  
@@ -71,25 +71,24 @@ ms.locfileid: "39081787"
  Wyświetla listę znaków, które mogą mieć "dodać znak ucieczki" Aby były prawidłowo interpretowane. Sekwencja unikowa to ciąg znaków oznacza, że występuje alternatywnych interpretacji.  
   
 ## <a name="see-also"></a>Zobacz także  
- [Przegląd MSBuild ](../msbuild/msbuild.md) Introduces [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] i zawiera łącza do tematów, które wyjaśniają, jak z niej korzystać do tworzenia projektów.  
+ [Przegląd MSBuild](../msbuild/msbuild.md)     
+ Wprowadza [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] i zawiera łącza do tematów, które wyjaśniają, jak z niej korzystać do tworzenia projektów.  
   
- <xref:Microsoft.Build.Conversion>  
+ [Microsoft.Build.Conversion](https://docs.microsoft.com/dotnet/api/microsoft.build.conversion)  
  Zawiera odwołanie do przestrzeni nazw konwersji.  
   
- <xref:Microsoft.Build.Evaluation>  
+ [Microsoft.Build.Evaluation](https://docs.microsoft.com/dotnet/api/microsoft.build.evaluation)  
  Zawiera odwołanie do przestrzeni nazw oceny.  
   
- <xref:Microsoft.Build.Execution>  
+ [Microsoft.Build.Execution](https://docs.microsoft.com/dotnet/api/microsoft.build.execution)  
  Zawiera odwołanie do wykonywania w przestrzeni nazw.  
   
- <xref:Microsoft.Build.Framework>  
+ [Microsoft.Build.Framework](https://docs.microsoft.com/dotnet/api/microsoft.build.framework)  
  Zawiera odwołanie do przestrzeni nazw platformy.  
   
- <xref:Microsoft.Build.Logging>  
- Zawiera odwołanie do przestrzeni nazw logowania.  
+ [Microsoft.Build.Logging](https://docs.microsoft.com/dotnet/api/microsoft.build.logging) zawiera odwołanie do przestrzeni nazw logowania.  
   
- <xref:Microsoft.Build.Tasks>  
+ [Microsoft.Build.Tasks](https://docs.microsoft.com/dotnet/api/microsoft.build.tasks)  
  Zawiera odwołanie do przestrzeni nazw zadania.  
   
- <xref:Microsoft.Build.Utilities>  
- Zawiera odwołanie do przestrzeni nazw narzędzi.
+ [Microsoft.Build.Utilities](https://docs.microsoft.com/dotnet/api/microsoft.build.utilities) zawiera odwołanie do przestrzeni nazw narzędzi.
