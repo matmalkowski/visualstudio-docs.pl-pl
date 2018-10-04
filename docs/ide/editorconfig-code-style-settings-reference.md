@@ -1,5 +1,5 @@
 ---
-title: PROGRAMOWANIA.NET ustawienia Konwencji EditorConfig dla programu Visual Studio
+title: .NET coding convention ustawienia dla wtyczki EditorConfig
 ms.date: 06/14/2018
 ms.topic: reference
 dev_langs:
@@ -18,18 +18,20 @@ ms.technology: vs-ide-general
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: a9b1b03050081659cac08c1b2c92c49f2c72273d
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 1ce281a8abed11a2b7d64945d33f9a13136cad9f
+ms.sourcegitcommit: 1c675dae7c348defb32d9f7ccf7079a1062a1c4b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46496054"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48244033"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>.NET coding convention ustawienia dla wtyczki EditorConfig
 
 W programie Visual Studio 2017 można definiowanie i utrzymywanie styl kodu zgodne w Twojej bazy kodu z użyciem [EditorConfig](../ide/create-portable-custom-editor-options.md) pliku. Polecenia EditorConfig obejmuje kilka podstawowych właściwości formatowania, takie jak `indent_style` i `indent_size`. W programie Visual Studio ustawienia Konwencji kodowania .NET można również skonfigurować przy użyciu pliku EditorConfig. Plików EditorConfig pozwala włączyć lub wyłączyć poszczególne .NET konwencje kodowania oraz konfigurowanie stopień, w którym chcesz Konwencji wymuszane za pośrednictwem jej poziom ważności. Aby dowiedzieć się więcej o tym, jak można użyć polecenia EditorConfig w celu wymuszenia spójności w bazie kodu, przeczytaj [przenośne niestandardowy Edytor opcje tworzenia](../ide/create-portable-custom-editor-options.md).
 
-Znajdują się na końcu tego dokumentu, na przykład pliku .editorconfig.
+Znajdują się na końcu tego artykułu [przykładowy plik pliku .editorconfig](#example-editorconfig-file).
+
+## <a name="convention-categories"></a>Kategorie Konwencji
 
 Istnieją trzy obsługiwane .NET kodowania Konwencji kategorie:
 
@@ -130,7 +132,7 @@ Reguły stylów w tej sekcji dotyczą zarówno C# i Visual Basic. Aby wyświetli
 
 #### <a name="this_and_me"></a>"This." i "Me." Kwalifikatory
 
-Ta zasada stylu (reguła IDE0003 identyfikatorów i IDE0009) mogą być stosowane do pola, właściwości, metod i zdarzeń. Wartość **true** oznacza, że wolisz symbolu kodu, aby być poprzedzony znakami `this.` w języku C# lub `Me.` w języku Visual Basic. Wartość **false** oznacza, że Preferuj element kodu _nie_ do być poprzedzony znakami `this.` lub `Me.`.
+Ta zasada stylu (reguła IDE0003 identyfikatorów i IDE0009) mogą być stosowane do pola, właściwości, metody i zdarzenia. Wartość **true** oznacza, że wolisz symbolu kodu, aby być poprzedzony znakami `this.` w języku C# lub `Me.` w języku Visual Basic. Wartość **false** oznacza, że Preferuj element kodu _nie_ do być poprzedzony znakami `this.` lub `Me.`.
 
 W poniższej tabeli przedstawiono nazwy reguł, dotyczy języków programowania i wartości domyślne:
 
@@ -246,7 +248,7 @@ dotnet_style_qualification_for_event = false:suggestion
 
 #### <a name="language_keywords"></a>Słowa kluczowe języka zamiast framework wpisz nazwy odwołań do typu
 
-Ta zasada styl mogą być stosowane w przypadku, zmiennych lokalnych, parametrów metod i składowych klasy lub oddzielne zasady do typu wyrażenia dostępu do składowych. Wartość **true** oznacza, że wolisz słowo kluczowe języka (np. `int` lub `Integer`) zamiast nazwy typu (np. `Int32`) dla typów, które mają słowo kluczowe do ich reprezentacji. Wartość **false** oznacza, że Preferuj nazwę typu, zamiast słowa kluczowego języka.
+Ta zasada styl mogą być stosowane w przypadku, zmiennych lokalnych, parametrów metod i składowych klasy lub oddzielne zasady do typu wyrażenia dostępu do składowych. Wartość **true** oznacza, że wolisz słowo kluczowe języka (na przykład `int` lub `Integer`) zamiast nazwy typu (na przykład `Int32`) dla typów, które mają słowo kluczowe do ich reprezentacji. Wartość **false** oznacza, że Preferuj nazwę typu, zamiast słowa kluczowego języka.
 
 W poniższej tabeli przedstawiono nazwy reguł, identyfikatory reguł, dotyczy języków programowania i wartości domyślne:
 
@@ -683,8 +685,8 @@ Dim anon = New With {.name = name, .age = age}
 
 **polecenia DotNet\_styl\_Preferuj\_automatycznie\_właściwości**
 
-- Gdy ta reguła jest ustawiona na **true**, Preferuj właściwości automatyczne za pośrednictwem właściwości za pomocą pola prywatne zapasowy.
-- Gdy ta reguła jest ustawiona na **false**, preferowanie właściwości za pomocą pola prywatne zapasowy za pośrednictwem właściwości auto.
+- Gdy ta reguła jest ustawiona na **true**, preferowanie autoproperties za pośrednictwem właściwości za pomocą pola prywatne zapasowy.
+- Gdy ta reguła jest ustawiona na **false**, Preferuj właściwości za pomocą pola prywatne zapasowy przed autoproperties.
 
 Przykłady kodu:
 
@@ -1590,7 +1592,7 @@ try {
 
 **CSharp\_nowe\_wiersza\_przed\_członków\_w\_object_initializers**
 
-- Gdy ta reguła jest ustawiona na **true**, wymagają elementy członkowskie obiektu intiializers się w osobnych wierszach.
+- Gdy ta reguła jest ustawiona na **true**, wymagają członkowie inicjatorów obiektów w osobnych wierszach.
 - Gdy ta reguła jest ustawiona na **false**, wymagają członkowie inicjatorów obiektów na tym samym wierszu.
 
 Przykłady kodu:

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.openlocfilehash: 8e2118564cb6e0a3eb4811cb69283256cd48a489
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 78f1c071469026b9e0e7d503483b7ddacc6d3cf1
+ms.sourcegitcommit: 1c675dae7c348defb32d9f7ccf7079a1062a1c4b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42624243"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48243994"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Tworzenie przenośnych, niestandardowych ustawień edytora za pomocą wtyczki EditorConfig
 
@@ -22,8 +22,7 @@ W programie Visual Studio 2017, można dodać [EditorConfig](http://editorconfig
 
 Polecenie EditorConfig ustawienia są obsługiwane przez wiele kodu edytorami i środowiskami IDE, w tym Visual Studio. Jest przenośny składnikiem przybliżone ilości tych danych przy użyciu kodu i mogą zostać wymuszone kodowania stylów nawet poza programem Visual Studio.
 
-> [!NOTE]
-> Po dodaniu pliku EditorConfig do projektu w programie Visual Studio, formatowanie istniejącego kodu nie jest zmieniany, chyba że formatowania dokumentu (**Edytuj** > **zaawansowane**  >  **Formatowania dokumentu** lub **Ctrl**+**K**, **Ctrl**+**D**w profilu domyślnym). Jednak wszelkie nowe wiersze kodu są sformatowane zgodnie z ustawieniami EditorConfig. Można zdefiniować ustawienia EditorConfig, które chcesz **Formatuj dokument** można zastosować [ **formatowanie** Strona opcji](reference/options-text-editor-csharp-formatting.md#format-document-settings).
+Po dodaniu pliku EditorConfig do projektu w programie Visual Studio, formatowanie istniejącego kodu nie jest zmieniany, chyba że formatowania dokumentu (**Edytuj** > **zaawansowane**  >  **Formatowania dokumentu** lub **Ctrl**+**K**, **Ctrl**+**D**w profilu domyślnym). Jednak wszelkie nowe wiersze kodu są sformatowane zgodnie z ustawieniami EditorConfig. Można zdefiniować ustawienia EditorConfig, które chcesz **Formatuj dokument** można zastosować [ **formatowanie** Strona opcji](reference/options-text-editor-csharp-formatting.md#format-document-settings).
 
 ## <a name="coding-consistency"></a>Kodowanie spójności
 
@@ -32,6 +31,9 @@ Ustawienia w plikach EditorConfig umożliwiają utrzymania spójnego style pisan
 Konwencje używanej w osobistych projektach kodowania może się różnić od tych używanych w projektach zespołu. Na przykład można wybrać, gdy masz kodowania, wcięcia dodaje znak tabulacji. Jednak Twój zespół preferować, że wcięcia dodaje czterech znaków spacji zamiast znak tabulacji. Plików EditorConfig rozwiązać ten problem, umożliwiając konfigurację dla każdego scenariusza.
 
 Ponieważ ustawienia są przechowywane w pliku w bazie kodu, podróży wraz z tego kodu. Tak długo, jak możesz Otwórz plik kodu w edytorze EditorConfig zgodne, są implementowane ustawienia edytora tekstu. Aby uzyskać więcej informacji na temat plików EditorConfig zobacz [EditorConfig.org](http://editorconfig.org/) witryny sieci Web.
+
+> [!NOTE]
+> Konwencje, które są ustawione w pliku EditorConfig obecnie nie można wymusić w potoku ciągłej integracji/ciągłego wdrażania, jak tworzyć błędy lub ostrzeżenia. Wszelkie odchylenia style są wyświetlane tylko w edytorze programu Visual Studio i **lista błędów**.
 
 ## <a name="supported-settings"></a>Obsługiwane ustawienia
 
@@ -126,7 +128,7 @@ Poniższy przykład pokazuje stan wcięcie fragment kodu języka C#, przed i po 
 
 ![Edytor tekstu tabulatora](../ide/media/vside_editorconfig_tabsetting.png)
 
-Zgodnie z oczekiwaniami, naciskając klawisz **kartę** klucza w następnym wierszu wcięcia linii, dodając cztery znaki dodatkowe biały znak.
+Zgodnie z oczekiwaniami, naciskając klawisz **kartę** klucza w następnym wierszu wcięcia linii, dodając cztery dodatkowe znaki odstępu.
 
 ![Kod przed rozpoczęciem korzystania z wtyczki EditorConfig](../ide/media/vside_editorconfig_before.png)
 

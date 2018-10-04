@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e5b49e5659787420c90fb708f21b2810bb56fea1
-ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
+ms.openlocfilehash: 85b34fd85e8449949bb1e96efc1dd79aacbc1bd9
+ms.sourcegitcommit: 1c675dae7c348defb32d9f7ccf7079a1062a1c4b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46542629"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48243955"
 ---
 # <a name="inspect-previous-app-states-using-intellitrace-step-back-in-visual-studio"></a>Sprawdź poprzednie Stany aplikacji przy użyciu funkcji IntelliTrace krok do tyłu w programie Visual Studio
 
@@ -105,7 +105,9 @@ Wpływ na ogólną wydajność wykonywania krokowego zależy od aplikacji. Koszt
 ## <a name="known-issues"></a>Znane problemy  
 * Jeśli używasz trybu zdarzenia i migawki funkcji IntelliTrace w wersjach systemu Windows starszych niż Windows 10 Fall Creators Update (RS3) i docelowa platforma debugowania aplikacji jest równa x86, IntelliTrace nie przyjmuje migawki.
 
-    Obejście problemu:
+    Obejścia:
+    * Jeśli jesteś w usłudze Windows 10 Anniversary Update (RS1) i w wersji starszej niż 10.0.14393.2273, [zainstalować KB4103720](https://support.microsoft.com/help/4103720/windows-10-update-kb4103720). 
+    * Jeśli jesteś na Windows 10 Creators Update (RS2) i w wersji starszej niż 10.0.15063.1112, [zainstalować KB4103722](https://support.microsoft.com/help/4103722/windows-10-update-4103722).
     * Zainstaluj lub Uaktualnij do Windows 10 Fall Creators Update (RS3). 
     * Alternatywnie: 
         1. Zainstaluj zestaw narzędzi VC++ 2015.3 v140 dla składnika komputera stacjonarnego (x86, x64) przy użyciu Instalatora programu Visual Studio.
