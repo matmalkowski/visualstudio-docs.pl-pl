@@ -13,16 +13,16 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9757158f6711c33333959fe66ef881c6f69a67b0
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: 343d8c35433fe7d6fb454de5183bcc6a914d2a5e
+ms.sourcegitcommit: b2942b8aa93bf73747790a05b67908c0b0108afe
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008450"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48788022"
 ---
 # <a name="walkthrough-create-a-simple-application-with-c-or-visual-basic"></a>Wskazówki: Tworzenie prostej aplikacji w języku C# lub Visual Basic
 
-Przez ukończenie tego instruktażu, zapoznasz się z wieloma narzędziami, okna dialogowe i projektantach, które można użyć podczas tworzenia aplikacji za pomocą programu Visual Studio. Będzie utworzyć prostą aplikację "Hello, World", zaprojektujesz interfejs użytkownika, należy dodać kod i zdebugujesz błędy, podczas gdy Dowiedz się więcej o pracy w zintegrowanym środowisku programistycznym (IDE).
+Przez ukończenie tego instruktażu, zapoznasz się z wieloma narzędziami, okna dialogowe i projektantach, które można użyć podczas tworzenia aplikacji za pomocą programu Visual Studio. Będzie utworzyć aplikację "Hello, World", zaprojektujesz interfejs użytkownika, należy dodać kod i zdebugujesz błędy, podczas gdy Dowiedz się więcej o pracy w zintegrowanym środowisku programistycznym ([IDE](visual-studio-ide.md)).
 
 ## <a name="configure-the-ide"></a>Konfigurowanie IDE
 
@@ -48,9 +48,12 @@ Podczas tworzenia aplikacji w programie Visual Studio, należy najpierw utworzy�
 
 1. Wybierz **OK**.
 
-Program Visual Studio tworzy projekt i rozwiązanie HelloWPFApp, i **Eksploratora rozwiązań** pokazuje różne pliki. **WPF Designer** Pokazuje widok projektu i widok XAML *MainWindow.xaml* w widoku podzielonym. Przesuń, rozdzielacza, aby wyświetlić więcej lub mniej albo widoku. Można wyświetlić tylko visual widoku lub w widoku XAML. Następujące elementy są wyświetlane w **Eksploratora rozwiązań**:
+   Program Visual Studio tworzy projekt i rozwiązanie HelloWPFApp, i **Eksploratora rozwiązań** pokazuje różne pliki. **WPF Designer** Pokazuje widok projektu i widok XAML *MainWindow.xaml* w widoku podzielonym. Przesuń, rozdzielacza, aby wyświetlić więcej lub mniej albo widoku. Można wyświetlić tylko visual widoku lub w widoku XAML. Następujące elementy są wyświetlane w **Eksploratora rozwiązań**:
 
-![Eksplorator rozwiązań z plikami HelloWPFApp załadowany](../ide/media/exploreide-hellowpfappfiles.png)
+   ![Eksplorator rozwiązań z plikami HelloWPFApp załadowany](../ide/media/exploreide-hellowpfappfiles.png)
+
+   > [!NOTE]
+   > Aby uzyskać więcej informacji na temat XAML (eXtensible Application Markup Language), zobacz [Przegląd XAML dla WPF](/dotnet/framework/wpf/advanced/xaml-overview-wpf) strony.
 
 Po utworzeniu projektu, można go dostosować. Za pomocą **właściwości** okna (znalezione na **widoku** menu), można wyświetlić i zmienić opcje elementów projektu, formantów i innych elementów w aplikacji.
 
@@ -84,7 +87,7 @@ Okno powinno wyglądać podobnie, jak na poniższej ilustracji:
 
 ![TextBlock — formant w formularzu pozdrowienia](../ide/media/exploreide-greetingswithtextblockonly.png)
 
-Znacznik XAML powinien wyglądać mniej więcej tak:
+Kod znaczników XAML powinien wyglądać podobnie jak w poniższym przykładzie:
 
 ```xaml
 <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" RenderTransformOrigin="4.08,2.312" Margin="237,57,221,238"><Run Text="TextBlock"/><InlineUIContainer><TextBlock TextWrapping="Wrap" Text="TextBlock"/>
@@ -98,7 +101,7 @@ Znacznik XAML powinien wyglądać mniej więcej tak:
    Text="Select a message option and then choose the Display button."
    ```
 
-2. Ponownie Centrum TextBlock, jeśli to konieczne i Zapisz zmiany, naciskając klawisz **Ctrl**+**S** lub za pomocą **pliku** elementu menu.
+2. Wyśrodkuj TextBlock ponownie, jeśli to konieczne i Zapisz zmiany, naciskając klawisz **Ctrl**+**S** lub za pomocą **pliku** elementu menu.
 
 Następnie należy dodać dwie [RadioButton](/dotnet/framework/wpf/controls/radiobutton) formantów do formularza.
 

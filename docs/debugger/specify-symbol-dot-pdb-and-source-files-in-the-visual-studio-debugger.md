@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b9167970030919073bf5a58ccf7368cff69dc896
-ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
+ms.openlocfilehash: 1b50bdf48e80e5ed259ba61f0e104e411e76a490
+ms.sourcegitcommit: b2942b8aa93bf73747790a05b67908c0b0108afe
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45612743"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48788035"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger"></a>Określanie plików symboli (pdb) i plików źródłowych w debugerze programu Visual Studio
 Plik programu bazy danych (PDB), nazywany także plikiem symboli, mapuje identyfikatory, które tworzysz w kodzie źródłowym dla klas, metod i innego kodu, identyfikatory, które są używane w skompilowanych plikach wykonywalnych projektu. Plik .pdb mapuje również instrukcje zawarte w kodzie źródłowym na instrukcje wykonania w plikach wykonywalnych. Debuger używa tych informacji do określenia dwóch kluczowych informacji:
@@ -175,35 +175,35 @@ Aby zobaczyć, jakie symbole są dostępne w tabeli eksportu biblioteki dll, uż
 |**Zawsze ładuj automatycznie**|Dodaje plik symboli do listy plików, które są ładowane automatycznie przez debuger.|  
   
 ###  <a name="BKMK_Set_compiler_options_for_symbol_files"></a> Ustaw opcje kompilatora dla plików symboli  
- Podczas budowania projektu z VS IDE i stosowania standardowej **debugowania** konfigurację kompilacji, C++ i zarządzane kompilatory tworzyć pliki odpowiednich symboli dla kodu. Możesz również ustawić opcje kompilatora w wierszu polecenia, aby tworzyć pliki symboli.  
+Podczas budowania projektu z VS IDE i stosowania standardowej **debugowania** konfigurację kompilacji, C++ i zarządzane kompilatory tworzyć pliki odpowiednich symboli dla kodu. Możesz również ustawić opcje kompilatora w wierszu polecenia, aby tworzyć pliki symboli.  
   
- **Opcje języka C++**  
+**Opcje języka C++**  
   
- Plik bazy danych programu (.pdb) przechowuje informacje od debugowaniu i stanie projektu, co pozwala na łączenie przyrostowe konfiguracji debugowania programu. Tworzony jest plik .pdb podczas konstruowania z [/zi lub/zi](/cpp/build/reference/z7-zi-zi-debug-information-format) (dla C/C++).  
+Plik bazy danych programu (.pdb) przechowuje informacje od debugowaniu i stanie projektu, co pozwala na łączenie przyrostowe konfiguracji debugowania programu. Tworzony jest plik .pdb podczas konstruowania z [/zi lub/zi](/cpp/build/reference/z7-zi-zi-debug-information-format) (dla C/C++).  
   
- W [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)], [/Fd](/cpp/build/reference/fd-program-database-file-name) opcja nazywa plik .pdb utworzony przez kompilator. Podczas tworzenia projektu w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] przy użyciu kreatorów, **/Fd** opcja jest ustawiona na tworzenie pliku .pdb o nazwie *projektu*.pdb.  
+W [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)], [/Fd](/cpp/build/reference/fd-program-database-file-name) opcja nazywa plik .pdb utworzony przez kompilator. Podczas tworzenia projektu w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] przy użyciu kreatorów, **/Fd** opcja jest ustawiona na tworzenie pliku .pdb o nazwie *projektu*.pdb.  
   
- Jeśli kompilujesz aplikację C/C++ za pomocą pliku reguł programu make i określisz **/zi** lub **/zi** bez **/Fd**, znajdą się z dwoma plikami .pdb:  
+Jeśli kompilujesz aplikację C/C++ za pomocą pliku reguł programu make i określisz **/zi** lub **/zi** bez **/Fd**, znajdą się z dwoma plikami .pdb:  
   
--   VC*x*.pdb, gdzie *x* oznacza wersję Visual C++, na przykład VC11.pdb. Ten plik przechowuje wszystkie informacje o debugowaniu dla poszczególnych plików OBJ i znajduje się w tym samym katalogu, co plik makefile projektu.  
+* VC*x*.pdb, gdzie *x* oznacza wersję Visual C++, na przykład VC11.pdb. Ten plik przechowuje wszystkie informacje o debugowaniu dla poszczególnych plików OBJ i znajduje się w tym samym katalogu, co plik makefile projektu.  
   
--   Project.pdb ten plik przechowuje wszystkie informacje debugowania dla pliku the.exe. Dla języka C/C++ znajduje się w podkatalogu \debug.  
+* Project.pdb ten plik przechowuje wszystkie informacje debugowania dla pliku the.exe. Dla języka C/C++ znajduje się w podkatalogu \debug.  
   
- Zawsze tworzy plik OBJ, kompilator C/C++ scala informacje debugowania VC*x*.pdb. Informacje wstawione zawierają informacje o typie, ale nie zawierają informacji o symbolach, takich jak definicje funkcji. Tak, nawet jeśli każdy plik źródłowy zawiera wspólne pliki nagłówkowe \<windows.h >, definicje TypeDef z tych nagłówków są zapisywane tylko raz, a nie w każdym pliku OBJ.  
+Zawsze tworzy plik OBJ, kompilator C/C++ scala informacje debugowania VC*x*.pdb. Informacje wstawione zawierają informacje o typie, ale nie zawierają informacji o symbolach, takich jak definicje funkcji. Tak, nawet jeśli każdy plik źródłowy zawiera wspólne pliki nagłówkowe \<windows.h >, definicje TypeDef z tych nagłówków są zapisywane tylko raz, a nie w każdym pliku OBJ.  
   
- Konsolidator tworzy plik project.pdb, który zawiera informacje debugowania do pliku EXE projektu. Plik project.pdb zawiera pełne informacje o debugowaniu, w tym prototypy funkcji, nie tylko informacje o typie znalezione w VC*x*.pdb. Oba pliki .pdb zezwalają na aktualizacje przyrostowe. Konsolidator osadza także ścieżkę do pliku .pdb w pliku .exe lub .dll, który tworzy.  
+Konsolidator tworzy plik project.pdb, który zawiera informacje debugowania do pliku EXE projektu. Plik project.pdb zawiera pełne informacje o debugowaniu, w tym prototypy funkcji, nie tylko informacje o typie znalezione w VC*x*.pdb. Oba pliki .pdb zezwalają na aktualizacje przyrostowe. Konsolidator osadza także ścieżkę do pliku .pdb w pliku .exe lub .dll, który tworzy.  
   
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Debuger używa ścieżki do pliku .pdb w pliku EXE lub DLL do znajdowania pliku project.pdb. Jeśli debuger nie może odnaleźć pliku .pdb w tej lokalizacji lub jeśli ścieżka jest nieprawidłowa (na przykład, jeśli projekt został przeniesiony do innego komputera), debuger przeszukuje ścieżkę zawierającą plik EXE, następnie ścieżki symboli określone w **opcje** okno dialogowe (**debugowanie** folderze **symbole** węzła). Debuger nie załaduje pliku .pdb, który nie pasuje do debugowanego pliku wykonywalnego. Jeśli debuger nie może odnaleźć pliku .pdb, **Znajdź symbole** pojawi się okno dialogowe, które pozwala wyszukiwać symbole lub dodać dodatkowe lokalizacje do ścieżki wyszukiwania.  
+[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Debuger używa ścieżki do pliku .pdb w pliku EXE lub DLL do znajdowania pliku project.pdb. Jeśli debuger nie może odnaleźć pliku .pdb w tej lokalizacji lub jeśli ścieżka jest nieprawidłowa (na przykład, jeśli projekt został przeniesiony do innego komputera), debuger przeszukuje ścieżkę zawierającą plik EXE, następnie ścieżki symboli określone w **opcje** okno dialogowe (**debugowanie** folderze **symbole** węzła). Debuger nie załaduje pliku .pdb, który nie pasuje do debugowanego pliku wykonywalnego. Jeśli debuger nie może odnaleźć pliku .pdb, **Znajdź symbole** pojawi się okno dialogowe, które pozwala wyszukiwać symbole lub dodać dodatkowe lokalizacje do ścieżki wyszukiwania.  
   
- **Opcje .NET framework**  
+**Opcje .NET framework**  
   
- Plik bazy danych programu (.pdb) przechowuje informacje o debugowaniu i stanie projektu, co pozwala na łączenie przyrostowe konfiguracji debugowania programu. Tworzony jest plik .pdb podczas konstruowania z **/debug**. Możesz tworzyć aplikacje przy użyciu **/Debug: full** lub **/debug:pdbonly**. Kompilowanie z użyciem **/Debug: full** generuje kod do debugowania. Kompilowanie z użyciem **/debug:pdbonly** generuje pliki .pdb, ale nie generuje `DebuggableAttribute` który informuje kompilator JIT, dostępne są informacje debugowania. Użyj **/debug:pdbonly** Jeśli chcesz wygenerować pliki .pdb dla kompilacji wydania, które nie chcesz debugować. Aby uzyskać więcej informacji, zobacz [/Debug (opcje kompilatora C#)](/dotnet/csharp/language-reference/compiler-options/debug-compiler-option) lub [/Debug (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/debug).  
+Plik bazy danych programu (.pdb) przechowuje informacje o debugowaniu i stanie projektu, co pozwala na łączenie przyrostowe konfiguracji debugowania programu. Tworzony jest plik .pdb podczas konstruowania z **/debug**. Możesz tworzyć aplikacje przy użyciu **/Debug: full** lub **/debug:pdbonly**. Kompilowanie z użyciem **/Debug: full** generuje kod do debugowania. Kompilowanie z użyciem **/debug:pdbonly** generuje pliki .pdb, ale nie generuje `DebuggableAttribute` który informuje kompilator JIT, dostępne są informacje debugowania. Użyj **/debug:pdbonly** Jeśli chcesz wygenerować pliki .pdb dla kompilacji wydania, które nie chcesz debugować. Aby uzyskać więcej informacji, zobacz [/Debug (opcje kompilatora C#)](/dotnet/csharp/language-reference/compiler-options/debug-compiler-option) lub [/Debug (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/debug).  
   
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Debuger używa ścieżki do pliku .pdb w pliku EXE lub DLL do znajdowania pliku project.pdb. Jeśli debuger nie może odnaleźć pliku .pdb w tej lokalizacji lub jeśli ścieżka jest nieprawidłowa, debuger przeszukuje ścieżkę zawierającą plik EXE, a następnie ścieżki symboli określone w **opcje** okno dialogowe. Ta ścieżka jest folderem **debugowanie** folderu w **symbole** węzła. Debuger nie załaduje pliku .pdb, który nie pasuje do debugowanego pliku wykonywalnego. Jeśli debuger nie może odnaleźć pliku .pdb, **Znajdź symbole** pojawi się okno dialogowe, które pozwala wyszukiwać symbole lub dodać dodatkowe lokalizacje do ścieżki wyszukiwania.  
+[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Debuger używa ścieżki do pliku .pdb w pliku EXE lub DLL do znajdowania pliku project.pdb. Jeśli debuger nie może odnaleźć pliku .pdb w tej lokalizacji lub jeśli ścieżka jest nieprawidłowa, debuger przeszukuje ścieżkę zawierającą plik EXE, a następnie ścieżki symboli określone w **opcje** okno dialogowe. Ta ścieżka jest folderem **debugowanie** folderu w **symbole** węzła. Debuger nie załaduje pliku .pdb, który nie pasuje do debugowanego pliku wykonywalnego. Jeśli debuger nie może odnaleźć pliku .pdb, **Znajdź symbole** pojawi się okno dialogowe, które pozwala wyszukiwać symbole lub dodać dodatkowe lokalizacje do ścieżki wyszukiwania.  
   
- **Aplikacje sieci Web**  
+**Aplikacje sieci Web**  
   
- Plik konfiguracyjny aplikacji (Web.config) musi być ustawiony w tryb debugowania. Tryb debugowania powoduje, że ASP.NET generuje symbole dla dynamicznie generowanych plików i umożliwia debugerowi dołączenie do aplikacji ASP.NET. Program Visual Studio automatycznie ustawia to podczas uruchamiania debugowania, jeśli projekt jest utworzony z szablonu projektów sieci Web.  
+Plik konfiguracyjny aplikacji (Web.config) musi być ustawiony w tryb debugowania. Tryb debugowania powoduje, że ASP.NET generuje symbole dla dynamicznie generowanych plików i umożliwia debugerowi dołączenie do aplikacji ASP.NET. Program Visual Studio automatycznie ustawia to podczas uruchamiania debugowania, jeśli projekt jest utworzony z szablonu projektów sieci Web.  
   
 ##  <a name="BKMK_Find_source_files"></a> Znajdowanie plików źródłowych  
   
